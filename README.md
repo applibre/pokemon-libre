@@ -53,15 +53,16 @@ La app oficial de Pokémon para catalogar cartas cerró en 2023 avisando de que 
 
 Las 876 cartas están descargadas en el repositorio, en dos tamaños (245 px para la rejilla, 600 px para la ficha). No se enlaza a ningún servidor ajeno: la API que usaba medio sector cerró y pasó a ser de pago, y una colección no puede quedarse sin fotos por eso.
 
-De las 876, **835 tienen su foto real**. Las 41 restantes son promos y kits de entrenamiento que no existen en ninguna fuente pública; llevan una ficha con su nombre, colección y número, y se marcan igual que las demás.
+De las 876, **869 tienen su foto real** (TCGdex, pokemontcg.io y Bulbagarden Archives, siempre comprobando que nombre, número y colección coinciden). Las 7 restantes —McDonald's 2023 y 2024, el Poké Card Creator Pack, el holo H9 de Skyridge y dos Pikachu del HS Trainer Kit— no existen escaneadas en ninguna fuente pública; llevan una ficha con su nombre, colección y número, y se marcan igual que las demás.
 
 ## Cómo se genera el catálogo
 
-Tres pasos, todos con caché para poder repetirlos sin castigar a la fuente:
+Cuatro pasos, todos con caché para poder repetirlos sin castigar a la fuente:
 
 ```bash
 node scripts/catalogo.mjs        # baja las cartas de TCGdex por número de Pokédex
-node scripts/rescate-imagenes.mjs # busca las que faltan en la otra fuente
+node scripts/rescate-imagenes.mjs # busca las que faltan en pokemontcg.io
+node scripts/rescate-bulbapedia.mjs # y las que siguen faltando, en Bulbagarden Archives
 python scripts/bajar-imagenes.py  # descarga las imágenes al repositorio
 ```
 
