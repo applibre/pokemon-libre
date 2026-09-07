@@ -53,7 +53,7 @@ La app oficial de Pokémon para catalogar cartas cerró en 2023 avisando de que 
 
 Las 876 cartas están descargadas en el repositorio, en dos tamaños (245 px para la rejilla, 600 px para la ficha). No se enlaza a ningún servidor ajeno: la API que usaba medio sector cerró y pasó a ser de pago, y una colección no puede quedarse sin fotos por eso.
 
-De las 876, **867 tienen su foto real** (TCGdex, pokemontcg.io y Bulbagarden Archives, siempre comprobando que nombre, número y colección coinciden). Las 9 restantes —McDonald's 2023 y 2024, el Poké Card Creator Pack, el holo H9 de Skyridge, dos Pikachu del HS Trainer Kit y los dos Pikachu Libre del XY Trainer Kit (de los que Bulbapedia solo tiene el promo japonés, que es otra carta)— no existen escaneadas en ninguna fuente pública; llevan una ficha con su nombre, colección y número, y se marcan igual que las demás.
+**Las 876 tienen su foto real.** Las 774 más comunes vienen de TCGdex; las otras 102 —promos, kits de entrenamiento, McDonald's, sets de 2026— hubo que rescatarlas una a una de pokemontcg.io, Bulbagarden Archives, Limitless, pkmncards, Pokellector y las fichas de producto de TCGplayer, y **revisarlas a ojo**: dos de las que ofrecía Bulbapedia eran escaneos japoneses de la misma carta y se descartaron. La regla no cambia: solo se acepta una imagen si nombre, número y colección coinciden.
 
 ## Cómo se genera el catálogo
 
@@ -63,6 +63,7 @@ Cuatro pasos, todos con caché para poder repetirlos sin castigar a la fuente:
 node scripts/catalogo.mjs        # baja las cartas de TCGdex por número de Pokédex
 node scripts/rescate-imagenes.mjs # busca las que faltan en pokemontcg.io
 node scripts/rescate-bulbapedia.mjs # y las que siguen faltando, en Bulbagarden Archives
+# (las últimas se localizaron a mano en Limitless, pkmncards, Pokellector y TCGplayer: están en scripts/imagenes-rescatadas.json)
 python scripts/bajar-imagenes.py  # descarga las imágenes al repositorio
 ```
 
@@ -93,7 +94,7 @@ node --test tests/dominio.test.js
 | `js/estado.js` | Un solo sitio donde cambian los datos, con aviso a las vistas |
 | `js/vistas/` | Una pantalla por fichero |
 | `scripts/` | El generador del catálogo |
-| `tests/` | 41 pruebas |
+| `tests/` | 41 pruebas, incluida una que exige que ninguna carta se quede sin foto |
 
 Licencia MIT: cópialo, cámbiale los Pokémon, publícalo.
 

@@ -88,6 +88,15 @@ def fuente(tam):
     return ImageFont.load_default()
 
 
+def es_ficha_dibujada(ruta):
+    """Las fichas dibujadas llevan un comentario EXIF que las identifica."""
+    try:
+        im = Image.open(ruta)
+        return b'ficha-dibujada' in (im.info.get('exif') or b'')
+    except Exception:
+        return False
+
+
 def ficha_dibujada(carta, sets, destino, ancho):
     """Para las cartas que no existen en ninguna fuente. No es un hueco
        gris: lleva su nombre, su set y su número, para poder reconocerla
@@ -131,7 +140,9 @@ def ficha_dibujada(carta, sets, destino, ancho):
     d.text((ancho / 2, alto * 0.86), 'sin imagen disponible',
            font=fuente(round(ancho * 0.042)), fill=(104, 100, 140), anchor='ma')
 
-    im.save(destino, 'WEBP', quality=85, method=5)
+    exif = Image.Exif()
+    exif[0x9286] = 'ficha-dibujada'      # UserComment: marca para reconocerlas
+    im.save(destino, 'WEBP', quality=85, method=5, exif=exif.tobytes())
 
 
 def main():
@@ -146,6 +157,7 @@ def main():
     print(f'Cartas: {len(cartas)}  ·  rescatadas aparte: {len(rescate)}\n')
 
     cuenta = {'tcgdex': 0, 'rescate': 0, 'ficha': 0, 'ya': 0, 'error': 0}
+    sin_foto = []          # ids que acaban con ficha dibujada
     bytes_tot = [0]
 
     def una(carta):
@@ -155,6 +167,9 @@ def main():
         grande = os.path.join(GRANDES, seguro + '.webp')
 
         if not REHACER and os.path.exists(chico) and os.path.exists(grande):
+            # las fichas dibujadas se reconocen por su marca en el fichero
+            if es_ficha_dibujada(chico):
+                sin_foto.append(cid)
             cuenta['ya'] += 1
             bytes_tot[0] += os.path.getsize(chico) + os.path.getsize(grande)
             return (cid, 'ya')
@@ -180,7 +195,8 @@ def main():
                 cuenta['rescate'] += 1
                 return (cid, 'rescate')
 
-        # 3 · ficha dibujada
+        # 3 · ficha dibujada (y se deja constancia)
+        sin_foto.append(cid)
         ficha_dibujada(carta, sets, chico, ANCHO_CHICO)
         ficha_dibujada(carta, sets, grande, ANCHO_GRANDE)
         bytes_tot[0] += os.path.getsize(chico) + os.path.getsize(grande)
@@ -234,7 +250,13 @@ def main():
     # su id, así que la app deduce la ruta sola y este script se puede
     # volver a ejecutar mil veces sin estropear nada.
 
+    sin_foto = sorted(set(sin_foto))
+    json.dump(sin_foto, open(os.path.join(AQUI, 'sin-foto.json'), 'w', encoding='utf-8'), indent=1)
     print('─' * 52)
+    print(f"SIN FOTO (fichas dibujadas en disco): {len(sin_foto)}")
+    for cid in sin_foto:
+        c = next((x for x in cartas if x['id'] == cid), None)
+        if c: print(f"   · {cid:<18} {c['n']:<26} {sets.get(c['s'], {}).get('n', '')}")
     print(f"De TCGdex        {cuenta['tcgdex']}")
     print(f"Rescatadas       {cuenta['rescate']}")
     print(f"Ficha dibujada   {cuenta['ficha']}")

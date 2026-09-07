@@ -54,12 +54,12 @@ test('toda carta tiene su imagen descargada, en los dos tamaños', () => {
   assert.strictEqual(faltan.length, 0, `sin fichero: ${faltan.slice(0, 6).join(', ')}`);
 });
 
-test('la mayoría de las cartas tiene su foto real, no una ficha dibujada', () => {
-  const conFoto = CARTAS.filter((c) => c.img).length;
-  const rescatadas = Object.keys(require('../scripts/imagenes-rescatadas.json')).length;
-  const reales = conFoto + rescatadas;
-  assert.ok(reales / CARTAS.length > 0.9,
-    `solo ${reales} de ${CARTAS.length} tienen foto real`);
+test('ninguna carta se queda sin su foto real', () => {
+  /* Arturo lo dejó claro: una carta que existe pero se ve vacía no
+     tiene sentido. bajar-imagenes.py apunta en sin-foto.json las que
+     acaban con ficha dibujada; tiene que estar vacío. */
+  const sinFoto = require('../scripts/sin-foto.json');
+  assert.deepStrictEqual(sinFoto, [], `sin foto: ${sinFoto.join(', ')}`);
 });
 
 test('el catálogo no enlaza a ningún servidor', () => {

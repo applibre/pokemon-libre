@@ -30,6 +30,8 @@ await writeFile(path.join(RAIZ, 'index.html'), html);
 
 const sw = (await readFile(path.join(RAIZ, 'sw.js'), 'utf8'))
   .replace(/const CACHE = '[^']+'/, `const CACHE = 'pokemon-libre-${sello}'`)
+  // las imágenes también: si se corrige una foto, no puede quedarse la vieja
+  .replace(/const IMAGENES = '[^']+'/, `const IMAGENES = 'pokemon-libre-img-${sello}'`)
   // el armazón que se guarda al instalar debe pedir las mismas direcciones
   .replace(/(\s')([^']+\.(?:css|js))(?:\?v=[^']*)?(')/g, (_, a, r, b) => a + conVersion(r) + b);
 await writeFile(path.join(RAIZ, 'sw.js'), sw);
