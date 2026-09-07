@@ -53,7 +53,7 @@ La app oficial de Pokémon para catalogar cartas cerró en 2023 avisando de que 
 
 Las 876 cartas están descargadas en el repositorio, en dos tamaños (245 px para la rejilla, 600 px para la ficha). No se enlaza a ningún servidor ajeno: la API que usaba medio sector cerró y pasó a ser de pago, y una colección no puede quedarse sin fotos por eso.
 
-De las 876, **869 tienen su foto real** (TCGdex, pokemontcg.io y Bulbagarden Archives, siempre comprobando que nombre, número y colección coinciden). Las 7 restantes —McDonald's 2023 y 2024, el Poké Card Creator Pack, el holo H9 de Skyridge y dos Pikachu del HS Trainer Kit— no existen escaneadas en ninguna fuente pública; llevan una ficha con su nombre, colección y número, y se marcan igual que las demás.
+De las 876, **867 tienen su foto real** (TCGdex, pokemontcg.io y Bulbagarden Archives, siempre comprobando que nombre, número y colección coinciden). Las 9 restantes —McDonald's 2023 y 2024, el Poké Card Creator Pack, el holo H9 de Skyridge, dos Pikachu del HS Trainer Kit y los dos Pikachu Libre del XY Trainer Kit (de los que Bulbapedia solo tiene el promo japonés, que es otra carta)— no existen escaneadas en ninguna fuente pública; llevan una ficha con su nombre, colección y número, y se marcan igual que las demás.
 
 ## Cómo se genera el catálogo
 

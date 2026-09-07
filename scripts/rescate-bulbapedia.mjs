@@ -129,7 +129,8 @@ async function main() {
   const ruta = path.join(AQUI, 'imagenes-rescatadas.json');
   const rescatadas = JSON.parse(await readFile(ruta, 'utf8').catch(() => '{}'));
 
-  const sin = cat.cartas.filter((c) => !c.img && !rescatadas[c.id]);
+  const rechazados = JSON.parse(await readFile(path.join(AQUI, 'rechazados.json'), 'utf8').catch(() => '{}'));
+  const sin = cat.cartas.filter((c) => !c.img && !rescatadas[c.id] && !rechazados[c.id]);
   console.log(`Sin foto: ${sin.length}\n`);
 
   // Las imágenes de la página del set, una sola vez por set
