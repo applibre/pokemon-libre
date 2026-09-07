@@ -18,7 +18,6 @@
 
 import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
-import { impresionesDe } from './impresiones.mjs';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -262,18 +261,16 @@ async function main() {
       ill: c.illustrator || '',
     };
 
-    /* Lo que hace interesante a una carta y no cambia con el tiempo: de
-       cuándo es, quién la dibujó, en qué impresiones salió y qué dice.
-       El precio se mira en la tienda, que es donde está vivo. */
-    const imp = impresionesDe(c);
-    if (imp.length) ficha.imp = imp;
-    if (c.description) ficha.txt = c.description;
+    /* Lo que se enseña en la ficha y no caduca: etapa, de quién
+       evoluciona, puntos de salud y tipo. Ni impresiones ni texto de la
+       carta: Arturo los quitó, no le servían. */
     const ficha_juego = {};
     if (c.stage) ficha_juego.e = c.stage;
     if (c.evolveFrom) ficha_juego.de = c.evolveFrom;
     if (c.hp) ficha_juego.ps = c.hp;
     if (c.types?.length) ficha_juego.t = c.types;
     if (Object.keys(ficha_juego).length) ficha.j = ficha_juego;
+
     /* Precio orientativo de las dos casas: Cardmarket en euros (la
        referencia en Europa) y TCGplayer en dólares (el mercado grande).
        El manifiesto guarda la fecha: un precio sin fecha engaña. */
@@ -325,7 +322,6 @@ async function main() {
       id: e.id, n: e.n, p: suyos, s: e.set, num: e.num,
       r: e.r || '', v: ['normal'], img: null, ill: e.ill || '',
     };
-    if (e.txt) ficha.txt = e.txt;
     const j = {};
     if (e.etapa) j.e = e.etapa;
     if (e.de) j.de = e.de;
@@ -349,25 +345,37 @@ async function main() {
 `);
   }
 
-  /* 5.5 · cuántas cartas de cada rareza tiene su colección
-     «Rare» suena a poco si no sabes que solo 30 de las 62 cartas de
-     Fossil lo son. Se pregunta una vez por cada pareja colección+rareza
-     que usan nuestras cartas, y queda en la caché. */
-  const parejas = [...new Set(cartas.filter((c) => c.r).map((c) => `${c.s}|${c.r}`))];
-  process.stdout.write('Rarezas: ');
-  const cuentas = await enTandas(parejas, 5, async (par) => {
-    const [sid, rar] = par.split('|');
-    const lista = await conCache(`rareza-${sid}-${rar}`,
-      () => pedir(`${API}/cards?set=eq:${encodeURIComponent(sid)}&rarity=eq:${encodeURIComponent(rar)}`));
-    return { par, n: Array.isArray(lista) ? lista.length : 0 };
-  }, (n, t) => process.stdout.write(`
-Rarezas: ${n}/${t}`));
-  console.log('');
-  const porRareza = new Map(cuentas.filter(Boolean).map((x) => [x.par, x.n]));
-  for (const c of cartas) {
-    const n = porRareza.get(`${c.s}|${c.r}`);
-    if (n) c.rn = n;      // cuántas cartas de esa rareza hay en la colección
+  /* 5.6 · el número tal y como está impreso en la carta
+     Lo que se enseñaba («SM108/248», «TG03/30», «H09/144») no aparece en
+     ninguna carta. Las promos no llevan total, las subcolecciones llevan
+     el suyo con sus letras (TG03/TG30) y el Classic Collection lleva el
+     número de la carta original. Comprobado mirando las fotos. */
+  const impresos = JSON.parse(await readFile(path.join(AQUI, 'numeros-impresos.json'), 'utf8').catch(() => '{}'));
+  const esPromo = (nombre) => /\bpromos?\b/i.test(nombre || '');
+  // cuántas cartas hay con cada prefijo de letras en cada colección
+  const prefijos = {};
+  for (const s of setsFichas) {
+    if (digitales.has(s.id)) continue;
+    const cuenta = {};
+    for (const c of s.cards || []) {
+      const m = /^([A-Za-z]+)\d/.exec(String(c.localId || ''));
+      if (m) cuenta[m[1]] = (cuenta[m[1]] || 0) + 1;
+    }
+    prefijos[s.id] = cuenta;
   }
+
+  let arreglados = 0;
+  for (const c of cartas) {
+    if (impresos[c.id]) { c.ni = impresos[c.id]; arreglados++; continue; }
+    const set = sets[c.s];
+    if (!set) continue;
+    if (esPromo(set.n)) { c.ni = String(c.num); arreglados++; continue; }
+    const m = /^([A-Za-z]+)\d/.exec(String(c.num));
+    const n = m && (prefijos[c.s] || {})[m[1]];
+    if (n) { c.ni = `${c.num}/${m[1]}${n}`; arreglados++; }
+  }
+  console.log(`Números impresos ${arreglados} cartas con numeración propia
+`);
 
   /* 6 · escribir */
   const json = JSON.stringify({ sets, cartas });

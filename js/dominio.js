@@ -246,10 +246,10 @@ const Dominio = (() => {
   };
 
   /* ---------- datos de la carta ----------
-     Lo que hace interesante a una carta y no caduca: de cuándo es, quién
-     la dibujó, en qué impresiones salió y cuántas cartas de su rareza
-     tenía esa colección. El precio no está aquí a propósito: cambia cada
-     día y se mira en la tienda, con el botón de la ficha. */
+     De cuándo es, quién la dibujó y qué es dentro del juego. El precio no
+     está a propósito: cambia cada día y se mira en la tienda, con el
+     botón de la ficha. Cada número lleva al lado qué cuenta, porque en la
+     misma pantalla ya hay otro («60/64») y se confunden. */
 
   const MES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
     'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
@@ -280,21 +280,20 @@ const Dominio = (() => {
   }
 
   /** Las filas de la ficha, ya escritas. Sin precios. */
-  function datosDeCarta(carta, sets, cartasDelPokemon) {
+  function datosDeCarta(carta, sets, cartasDelPokemon, nombrePokemon) {
     const set = sets[carta.s] || {};
     const filas = [];
 
-    if (carta.r) {
-      filas.push(['Rareza', carta.rn && set.tot
-        ? `${carta.r} · ${carta.rn} de ${set.tot} en ${set.n}`
-        : carta.r]);
-    }
+    // La rareza va sola. Antes decía «Common · 16 de 64 en Jungle» y ese
+    // 64 se confundía con el 60/64 de la carta: dos cosas distintas con
+    // el mismo número al lado no se pueden poner juntas.
+    if (carta.r) filas.push(['Rareza', carta.r]);
     if (carta.ill) filas.push(['Ilustración', carta.ill]);
     if (set.rel) filas.push(['Salió en', mesYAnio(set.rel)]);
 
     if (cartasDelPokemon && cartasDelPokemon.length > 1) {
       const p = puestoPorEdad(cartasDelPokemon, carta);
-      if (p) filas.push(['Antigüedad', `la ${p.puesto}.ª más antigua de ${p.total}`]);
+      if (p) filas.push(['Antigüedad', `la ${p.puesto}.ª más antigua de las ${p.total} de ${nombrePokemon || carta.n}`]);
     }
 
     const j = carta.j || {};
@@ -311,9 +310,18 @@ const Dominio = (() => {
   /* ---------- formato ---------- */
 
   const anioDeSet = (set) => (set && set.rel ? set.rel.slice(0, 4) : '');
+  /* El número como está impreso en la carta. Las promos no llevan total,
+     las subcolecciones llevan el suyo («TG03/TG30») y unas pocas llevan el
+     de otra edición: todo eso viene resuelto del catálogo en `ni`. Si el
+     número va con ceros delante, el total se rellena igual («003/034»). */
   const numeroCompleto = (carta, sets) => {
+    if (carta.ni) return carta.ni;
     const s = sets[carta.s];
-    return s && s.tot ? `${carta.num}/${s.tot}` : String(carta.num);
+    if (!s || !s.tot) return String(carta.num);
+    const num = String(carta.num);
+    let tot = String(s.tot);
+    if (/^0\d/.test(num) && tot.length < num.length) tot = tot.padStart(num.length, '0');
+    return `${num}/${tot}`;
   };
   const euros = (n) => (n == null ? '' : `${n.toFixed(2).replace('.', ',')} €`);
   const dolares = (n) => (n == null ? '' : `$${n.toFixed(2)}`);

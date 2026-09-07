@@ -390,8 +390,53 @@ test('la mayoría de las cartas tiene enlace directo a TCGplayer', () => {
   for (const c of CARTAS) if (c.tp_id) assert.ok(Number.isInteger(c.tp_id) && c.tp_id > 0, `${c.id}: id raro ${c.tp_id}`);
 });
 
+/* El número que enseña la app tiene que ser el que está impreso en la
+   carta. No lo era: las promos no llevan total y salían «SM108/248», las
+   subcolecciones llevan el suyo con letras y salían «TG03/30». Cada caso
+   de aquí se comprobó mirando la foto de esa carta. */
 test('el número se enseña como en la carta', () => {
-  assert.strictEqual(D.numeroCompleto(porId.get('base1-4'), SETS), '4/102');
+  const casos = [
+    ['base1-4', '4/102'],          // normal
+    ['base2-60', '60/64'],
+    ['base3-5', '5/62'],
+    ['smp-SM108', 'SM108'],        // las promos no llevan total
+    ['xyp-XY17', 'XY17'],
+    ['svp-027', '027'],
+    ['mep-013', '013'],
+    ['swsh11tg-TG03', 'TG03/TG30'],  // las subcolecciones, el suyo
+    ['g1-RC3', 'RC3/RC32'],
+    ['sma-SV6', 'SV6/SV94'],
+    ['ecard3-H09', 'H09/H32'],
+    ['swsh12.5gg-GG30', 'GG30/GG70'],
+    ['bw11-RC7', 'RC7/RC25'],
+    ['cel25cc-CC001', '2/102'],    // lleva el de la carta original
+    ['np-35', '035'],              // con ceros delante
+    ['fut2020-1', '001/005'],
+    ['clc-003', '003/034'],
+  ];
+  for (const [id, esperado] of casos) {
+    const c = porId.get(id);
+    if (!c) continue;
+    assert.strictEqual(D.numeroCompleto(c, SETS), esperado, `${id}: enseña otro número`);
+  }
+});
+
+test('ninguna carta enseña un total que no está impreso', () => {
+  for (const c of CARTAS) {
+    const set = SETS[c.s] || {};
+    if (!/promos?/i.test(set.n || '')) continue;
+    assert.ok(!D.numeroCompleto(c, SETS).includes('/'),
+      `${c.id}: las promos no llevan total y enseña ${D.numeroCompleto(c, SETS)}`);
+  }
+});
+
+test('la ficha no enseña precios ni textos en inglés', () => {
+  const c = porId.get('base2-60');
+  const filas = D.datosDeCarta(c, SETS, CARTAS.filter((x) => x.p.includes('pikachu')), 'Pikachu');
+  const texto = JSON.stringify(filas);
+  assert.ok(!/€|\$|precio/i.test(texto), 'hay precios en la ficha');
+  assert.ok(filas.some(([k]) => k === 'Ilustración'), 'falta quién la dibujó');
+  assert.ok(!c.txt && !c.imp, 'el catálogo sigue trayendo texto o impresiones');
 });
 
 test('los precios se escriben a la española y a la americana', () => {

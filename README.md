@@ -34,7 +34,9 @@ Se reúnen por **número de Pokédex**, no por nombre: así entran «Reshiram & 
 
 **Lo que te falta, listo para la tienda.** Por Pokémon o de todo, con el precio orientativo y un botón para mandarlo por WhatsApp o copiarlo.
 
-**Lo que hace especial a cada carta.** Quién la dibujó, de qué mes es, cuántas cartas de su rareza tenía esa colección, en qué puesto queda por antigüedad y **en qué impresiones salió**: 1.ª edición, shadowless, mejillas rojas, sellos de campeonato. Eso es lo que explica por qué una vale lo que vale, y no caduca.
+**Los datos de la carta, no su precio.** Quién la dibujó, de qué mes es, su rareza, en qué puesto queda por antigüedad y qué es dentro del juego. El precio no está: cambia cada día y para saberlo hay que abrir la tienda de todos modos.
+
+**El número que enseña es el que lleva impreso.** Las promos no llevan total, así que sale «SM108» y no «SM108/248»; las subcolecciones llevan el suyo, «TG03/TG30»; y las del Classic Collection de Celebrations llevan el de la carta original. Cada caso se comprobó mirando la foto y hay una prueba que lo fija.
 
 **El precio de hoy, a un toque.** Cada carta abre **su** página —no un buscador— en TCGplayer y en TCG Collector, que es donde se ve lo que vale ahora mismo. Los enlaces no se escriben a ojo: se localizan uno a uno al generar el catálogo y se comprueban abriendo la página y leyendo su título (`python scripts/verificar-enlaces.py`). Si de una carta no hay página propia, el botón lo dice y abre una búsqueda con su nombre, colección y número.
 

@@ -103,7 +103,7 @@ const Cartas = (() => {
       <img class="set-logo" src="data/sets/${esc(g.id)}.webp" alt=""
         loading="lazy" onerror="this.remove()">
       <b>${esc(g.set.n)}</b>
-      <span>${esc(Dominio.anioDeSet(g.set))} · ${g.cartas.length}</span>
+      <span>${esc(Dominio.anioDeSet(g.set))} · ${g.cartas.length} ${g.cartas.length === 1 ? 'carta' : 'cartas'}</span>
     </div>
     <div class="rejilla">${g.cartas.map(cartaHTML).join('')}</div>`;
 
@@ -212,7 +212,8 @@ const Cartas = (() => {
     const sets = Estado.sets();
     const set = sets[c.s] || {};
     const enlaces = Dominio.enlaces(c, sets);
-    const datos = Dominio.datosDeCarta(c, sets, Estado.cartasDe(c.p[0]));
+    const poke = Estado.pokemonPorId(c.p[0]);
+    const datos = Dominio.datosDeCarta(c, sets, Estado.cartasDe(c.p[0]), poke && poke.nombre);
 
     hoja({
       titulo: c.n,
@@ -226,14 +227,6 @@ const Cartas = (() => {
         <div class="datos">
           ${datos.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}
         </div>
-
-        ${c.imp && c.imp.length > 1 ? `<div class="impresiones">
-          <h3>Cómo se imprimió</h3>
-          <ul>${c.imp.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
-          <p class="pista chica">Son formas distintas de la misma carta. Las raras suben el precio.</p>
-        </div>` : ''}
-
-        ${c.txt ? `<p class="texto-carta">${esc(c.txt)}</p>` : ''}
 
         <a class="btn ${enlaces.tcgplayer.directo ? 'principal' : ''}" href="${enlaces.tcgplayer.url}"
           target="_blank" rel="noopener">${esc(enlaces.tcgplayer.texto)}</a>
