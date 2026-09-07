@@ -1,0 +1,3406 @@
+{
+ "base1-2": {
+  "tc": 126,
+  "slug": "blastoise-base-set-2-102"
+ },
+ "base1-4": {
+  "tc": 211,
+  "slug": "charizard-base-set-4-102"
+ },
+ "base1-14": {
+  "tc": 1445,
+  "slug": "raichu-base-set-14-102"
+ },
+ "base1-15": {
+  "tc": 1872,
+  "slug": "venusaur-base-set-15-102"
+ },
+ "base1-24": {
+  "tc": 223,
+  "slug": "charmeleon-base-set-24-102"
+ },
+ "base1-29": {
+  "tc": 717,
+  "slug": "haunter-base-set-29-102"
+ },
+ "base1-30": {
+  "tc": 794,
+  "slug": "ivysaur-base-set-30-102"
+ },
+ "base1-42": {
+  "tc": 1916,
+  "slug": "wartortle-base-set-42-102"
+ },
+ "base1-44": {
+  "tc": 172,
+  "slug": "bulbasaur-base-set-44-102"
+ },
+ "base1-46": {
+  "tc": 217,
+  "slug": "charmander-base-set-46-102"
+ },
+ "base1-50": {
+  "tc": 605,
+  "slug": "gastly-base-set-50-102"
+ },
+ "base1-58": {
+  "tc": 1323,
+  "slug": "pikachu-base-set-58-102"
+ },
+ "base1-63": {
+  "tc": 1690,
+  "slug": "squirtle-base-set-63-102"
+ },
+ "base2-11": {
+  "tc": 1669,
+  "slug": "snorlax-jungle-11-64"
+ },
+ "base2-27": {
+  "tc": 1670,
+  "slug": "snorlax-jungle-27-64"
+ },
+ "base2-60": {
+  "tc": 1324,
+  "slug": "pikachu-jungle-60-64"
+ },
+ "basep-1": {
+  "tc": 42787,
+  "slug": "pikachu-my-first-battle-pikachu-no-001"
+ },
+ "basep-4": {
+  "tc": 1319,
+  "slug": "pikachu-wizards-of-the-coast-promos-4"
+ },
+ "basep-13": {
+  "tc": 1871,
+  "slug": "venusaur-wizards-of-the-coast-promos-13"
+ },
+ "basep-24": {
+  "tc": 1,
+  "slug": "s-pikachu-wizards-of-the-coast-promos-24"
+ },
+ "basep-25": {
+  "tc": 583,
+  "slug": "flying-pikachu-wizards-of-the-coast-promos-25"
+ },
+ "basep-26": {
+  "tc": 1321,
+  "slug": "pikachu-wizards-of-the-coast-promos-26"
+ },
+ "basep-27": {
+  "tc": 1322,
+  "slug": "pikachu-wizards-of-the-coast-promos-27"
+ },
+ "basep-28": {
+  "tc": 1736,
+  "slug": "surfing-pikachu-wizards-of-the-coast-promos-28"
+ },
+ "basep-35": {
+  "tc": 1304,
+  "slug": "pichu-wizards-of-the-coast-promos-35"
+ },
+ "basep-49": {
+  "tc": 1671,
+  "slug": "snorlax-wizards-of-the-coast-promos-49"
+ },
+ "base3-5": {
+  "tc": 610,
+  "slug": "gengar-fossil-5-62"
+ },
+ "base3-6": {
+  "tc": 715,
+  "slug": "haunter-fossil-6-62"
+ },
+ "base3-14": {
+  "tc": 1446,
+  "slug": "raichu-fossil-14-62"
+ },
+ "base3-20": {
+  "tc": 615,
+  "slug": "gengar-fossil-20-62"
+ },
+ "base3-21": {
+  "tc": 716,
+  "slug": "haunter-fossil-21-62"
+ },
+ "base3-29": {
+  "tc": 1451,
+  "slug": "raichu-fossil-29-62"
+ },
+ "base3-33": {
+  "tc": 604,
+  "slug": "gastly-fossil-33-62"
+ },
+ "base4-2": {
+  "tc": 9462,
+  "slug": "blastoise-base-set-2-2-130"
+ },
+ "base4-4": {
+  "tc": 9437,
+  "slug": "charizard-base-set-2-4-130"
+ },
+ "base4-16": {
+  "tc": 9442,
+  "slug": "raichu-base-set-2-16-130"
+ },
+ "base4-18": {
+  "tc": 9431,
+  "slug": "venusaur-base-set-2-18-130"
+ },
+ "base4-30": {
+  "tc": 9443,
+  "slug": "snorlax-base-set-2-30-130"
+ },
+ "base4-35": {
+  "tc": 9352,
+  "slug": "charmeleon-base-set-2-35-130"
+ },
+ "base4-43": {
+  "tc": 9414,
+  "slug": "haunter-base-set-2-43-130"
+ },
+ "base4-44": {
+  "tc": 9402,
+  "slug": "ivysaur-base-set-2-44-130"
+ },
+ "base4-63": {
+  "tc": 9425,
+  "slug": "wartortle-base-set-2-63-130"
+ },
+ "base4-67": {
+  "tc": 9470,
+  "slug": "bulbasaur-base-set-2-67-130"
+ },
+ "base4-69": {
+  "tc": 9358,
+  "slug": "charmander-base-set-2-69-130"
+ },
+ "base4-75": {
+  "tc": 9360,
+  "slug": "gastly-base-set-2-75-130"
+ },
+ "base4-87": {
+  "tc": 9455,
+  "slug": "pikachu-base-set-2-87-130"
+ },
+ "base4-93": {
+  "tc": 9416,
+  "slug": "squirtle-base-set-2-93-130"
+ },
+ "base5-3": {
+  "tc": 293,
+  "slug": "dark-blastoise-team-rocket-3-82"
+ },
+ "base5-4": {
+  "tc": 296,
+  "slug": "dark-charizard-team-rocket-4-82"
+ },
+ "base5-20": {
+  "tc": 295,
+  "slug": "dark-blastoise-team-rocket-20-82"
+ },
+ "base5-21": {
+  "tc": 297,
+  "slug": "dark-charizard-team-rocket-21-82"
+ },
+ "base5-32": {
+  "tc": 298,
+  "slug": "dark-charmeleon-team-rocket-32-82"
+ },
+ "base5-46": {
+  "tc": 364,
+  "slug": "dark-wartortle-team-rocket-46-82"
+ },
+ "base5-50": {
+  "tc": 218,
+  "slug": "charmander-team-rocket-50-82"
+ },
+ "base5-68": {
+  "tc": 1691,
+  "slug": "squirtle-team-rocket-68-82"
+ },
+ "base5-83": {
+  "tc": 347,
+  "slug": "dark-raichu-team-rocket-83-82"
+ },
+ "neo1-12": {
+  "tc": 1301,
+  "slug": "pichu-neo-genesis-12-111"
+ },
+ "neo1-70": {
+  "tc": 1325,
+  "slug": "pikachu-neo-genesis-70-111"
+ },
+ "si1-5": {
+  "tc": 793,
+  "slug": "ivysaur-southern-islands-5-18"
+ },
+ "si1-15": {
+  "tc": 1915,
+  "slug": "wartortle-southern-islands-15-18"
+ },
+ "neo3-21": {
+  "tc": 1447,
+  "slug": "raichu-neo-revelation-21-64"
+ },
+ "neo4-6": {
+  "tc": 316,
+  "slug": "dark-gengar-neo-destiny-6-105"
+ },
+ "neo4-36": {
+  "tc": 323,
+  "slug": "dark-haunter-neo-destiny-36-105"
+ },
+ "neo4-65": {
+  "tc": 607,
+  "slug": "gastly-neo-destiny-65-105"
+ },
+ "neo4-107": {
+  "tc": 1610,
+  "slug": "shining-charizard-neo-destiny-107-105"
+ },
+ "neo4-111": {
+  "tc": 1616,
+  "slug": "shining-raichu-neo-destiny-111-105"
+ },
+ "lc-3": {
+  "tc": 210,
+  "slug": "charizard-legendary-collection-3-110"
+ },
+ "lc-4": {
+  "tc": 294,
+  "slug": "dark-blastoise-legendary-collection-4-110"
+ },
+ "lc-7": {
+  "tc": 346,
+  "slug": "dark-raichu-legendary-collection-7-110"
+ },
+ "lc-11": {
+  "tc": 613,
+  "slug": "gengar-legendary-collection-11-110"
+ },
+ "lc-18": {
+  "tc": 1873,
+  "slug": "venusaur-legendary-collection-18-110"
+ },
+ "lc-37": {
+  "tc": 224,
+  "slug": "charmeleon-legendary-collection-37-110"
+ },
+ "lc-39": {
+  "tc": 363,
+  "slug": "dark-wartortle-legendary-collection-39-110"
+ },
+ "lc-46": {
+  "tc": 718,
+  "slug": "haunter-legendary-collection-46-110"
+ },
+ "lc-47": {
+  "tc": 795,
+  "slug": "ivysaur-legendary-collection-47-110"
+ },
+ "lc-64": {
+  "tc": 1672,
+  "slug": "snorlax-legendary-collection-64-110"
+ },
+ "lc-68": {
+  "tc": 173,
+  "slug": "bulbasaur-legendary-collection-68-110"
+ },
+ "lc-70": {
+  "tc": 219,
+  "slug": "charmander-legendary-collection-70-110"
+ },
+ "lc-76": {
+  "tc": 608,
+  "slug": "gastly-legendary-collection-76-110"
+ },
+ "lc-86": {
+  "tc": 1328,
+  "slug": "pikachu-legendary-collection-86-110"
+ },
+ "lc-95": {
+  "tc": 1692,
+  "slug": "squirtle-legendary-collection-95-110"
+ },
+ "ecard1-4": {
+  "tc": 127,
+  "slug": "blastoise-expedition-base-set-4-165"
+ },
+ "ecard1-6": {
+  "tc": 212,
+  "slug": "charizard-expedition-base-set-6-165"
+ },
+ "ecard1-13": {
+  "tc": 614,
+  "slug": "gengar-expedition-base-set-13-165"
+ },
+ "ecard1-22": {
+  "tc": 1303,
+  "slug": "pichu-expedition-base-set-22-165"
+ },
+ "ecard1-25": {
+  "tc": 1448,
+  "slug": "raichu-expedition-base-set-25-165"
+ },
+ "ecard1-30": {
+  "tc": 1874,
+  "slug": "venusaur-expedition-base-set-30-165"
+ },
+ "ecard1-36": {
+  "tc": 128,
+  "slug": "blastoise-expedition-base-set-36-165"
+ },
+ "ecard1-37": {
+  "tc": 129,
+  "slug": "blastoise-expedition-base-set-37-165"
+ },
+ "ecard1-39": {
+  "tc": 213,
+  "slug": "charizard-expedition-base-set-39-165"
+ },
+ "ecard1-40": {
+  "tc": 214,
+  "slug": "charizard-expedition-base-set-40-165"
+ },
+ "ecard1-48": {
+  "tc": 616,
+  "slug": "gengar-expedition-base-set-48-165"
+ },
+ "ecard1-58": {
+  "tc": 1305,
+  "slug": "pichu-expedition-base-set-58-165"
+ },
+ "ecard1-61": {
+  "tc": 1452,
+  "slug": "raichu-expedition-base-set-61-165"
+ },
+ "ecard1-67": {
+  "tc": 1875,
+  "slug": "venusaur-expedition-base-set-67-165"
+ },
+ "ecard1-68": {
+  "tc": 1876,
+  "slug": "venusaur-expedition-base-set-68-165"
+ },
+ "ecard1-73": {
+  "tc": 225,
+  "slug": "charmeleon-expedition-base-set-73-165"
+ },
+ "ecard1-80": {
+  "tc": 720,
+  "slug": "haunter-expedition-base-set-80-165"
+ },
+ "ecard1-82": {
+  "tc": 796,
+  "slug": "ivysaur-expedition-base-set-82-165"
+ },
+ "ecard1-92": {
+  "tc": 1917,
+  "slug": "wartortle-expedition-base-set-92-165"
+ },
+ "ecard1-94": {
+  "tc": 174,
+  "slug": "bulbasaur-expedition-base-set-94-165"
+ },
+ "ecard1-95": {
+  "tc": 175,
+  "slug": "bulbasaur-expedition-base-set-95-165"
+ },
+ "ecard1-97": {
+  "tc": 220,
+  "slug": "charmander-expedition-base-set-97-165"
+ },
+ "ecard1-98": {
+  "tc": 221,
+  "slug": "charmander-expedition-base-set-98-165"
+ },
+ "ecard1-109": {
+  "tc": 609,
+  "slug": "gastly-expedition-base-set-109-165"
+ },
+ "ecard1-124": {
+  "tc": 1329,
+  "slug": "pikachu-expedition-base-set-124-165"
+ },
+ "ecard1-131": {
+  "tc": 1693,
+  "slug": "squirtle-expedition-base-set-131-165"
+ },
+ "ecard1-132": {
+  "tc": 1694,
+  "slug": "squirtle-expedition-base-set-132-165"
+ },
+ "bog-6": {
+  "tc": 9848,
+  "slug": "dark-ivysaur-best-of-game-6"
+ },
+ "bog-7": {
+  "tc": 360,
+  "slug": "dark-venusaur-best-of-game-7"
+ },
+ "ecard3-10": {
+  "tc": 612,
+  "slug": "gengar-skyridge-10-144"
+ },
+ "ecard3-27": {
+  "tc": 1450,
+  "slug": "raichu-skyridge-27-144"
+ },
+ "ecard3-57": {
+  "tc": 606,
+  "slug": "gastly-skyridge-57-144"
+ },
+ "ecard3-63": {
+  "tc": 719,
+  "slug": "haunter-skyridge-63-144"
+ },
+ "ecard3-84": {
+  "tc": 1327,
+  "slug": "pikachu-skyridge-84-144"
+ },
+ "ecard3-100": {
+  "tc": 1673,
+  "slug": "snorlax-skyridge-100-144"
+ },
+ "ecard3-146": {
+  "tc": 215,
+  "slug": "charizard-skyridge-146-144"
+ },
+ "ecard3-H09": {
+  "tc": 611,
+  "slug": "gengar-skyridge-h9-h32"
+ },
+ "ecard3-H25": {
+  "tc": 1449,
+  "slug": "raichu-skyridge-h25-h32"
+ },
+ "ex2-20": {
+  "tc": 1302,
+  "slug": "pichu-ex-sandstorm-20-100"
+ },
+ "ex2-72": {
+  "tc": 1326,
+  "slug": "pikachu-ex-sandstorm-72-100"
+ },
+ "ex2-98": {
+  "tc": 1453,
+  "slug": "raichu-ex-ex-sandstorm-98-100"
+ },
+ "np-12": {
+  "tc": 1320,
+  "slug": "pikachu-nintendo-promos-012"
+ },
+ "np-35": {
+  "tc": 3426,
+  "slug": "pikachu-nintendo-promos-035"
+ },
+ "ex3-98": {
+  "tc": 222,
+  "slug": "charmander-ex-dragon-98-97"
+ },
+ "ex3-99": {
+  "tc": 226,
+  "slug": "charmeleon-ex-dragon-99-97"
+ },
+ "ex3-100": {
+  "tc": 216,
+  "slug": "charizard-ex-dragon-100-97"
+ },
+ "ex4-13": {
+  "tc": 1996,
+  "slug": "raichu-ex-team-magma-vs-team-aqua-13-95"
+ },
+ "ex4-39": {
+  "tc": 2022,
+  "slug": "bulbasaur-ex-team-magma-vs-team-aqua-39-95"
+ },
+ "ex4-43": {
+  "tc": 2026,
+  "slug": "pikachu-ex-team-magma-vs-team-aqua-43-95"
+ },
+ "ex4-46": {
+  "tc": 2029,
+  "slug": "squirtle-ex-team-magma-vs-team-aqua-46-95"
+ },
+ "ex5.5-5": {
+  "tc": 9853,
+  "slug": "pikachu-poke-card-creator-pack-5-5"
+ },
+ "tk-ex-latio-6": {
+  "tc": 2339,
+  "slug": "pikachu-ex-trainer-kit-latios-6-10"
+ },
+ "ex6-12": {
+  "tc": 2195,
+  "slug": "raichu-ex-firered-and-leafgreen-12-112"
+ },
+ "ex6-15": {
+  "tc": 2198,
+  "slug": "snorlax-ex-firered-and-leafgreen-15-112"
+ },
+ "ex6-31": {
+  "tc": 2214,
+  "slug": "charmeleon-ex-firered-and-leafgreen-31-112"
+ },
+ "ex6-34": {
+  "tc": 2217,
+  "slug": "haunter-ex-firered-and-leafgreen-34-112"
+ },
+ "ex6-35": {
+  "tc": 2218,
+  "slug": "ivysaur-ex-firered-and-leafgreen-35-112"
+ },
+ "ex6-50": {
+  "tc": 2233,
+  "slug": "wartortle-ex-firered-and-leafgreen-50-112"
+ },
+ "ex6-54": {
+  "tc": 2237,
+  "slug": "bulbasaur-ex-firered-and-leafgreen-54-112"
+ },
+ "ex6-55": {
+  "tc": 2238,
+  "slug": "bulbasaur-ex-firered-and-leafgreen-55-112"
+ },
+ "ex6-57": {
+  "tc": 2240,
+  "slug": "charmander-ex-firered-and-leafgreen-57-112"
+ },
+ "ex6-58": {
+  "tc": 2241,
+  "slug": "charmander-ex-firered-and-leafgreen-58-112"
+ },
+ "ex6-63": {
+  "tc": 2246,
+  "slug": "gastly-ex-firered-and-leafgreen-63-112"
+ },
+ "ex6-74": {
+  "tc": 2257,
+  "slug": "pikachu-ex-firered-and-leafgreen-74-112"
+ },
+ "ex6-82": {
+  "tc": 2265,
+  "slug": "squirtle-ex-firered-and-leafgreen-82-112"
+ },
+ "ex6-83": {
+  "tc": 2266,
+  "slug": "squirtle-ex-firered-and-leafgreen-83-112"
+ },
+ "ex6-104": {
+  "tc": 2287,
+  "slug": "blastoise-ex-ex-firered-and-leafgreen-104-112"
+ },
+ "ex6-105": {
+  "tc": 2288,
+  "slug": "charizard-ex-ex-firered-and-leafgreen-105-112"
+ },
+ "ex6-108": {
+  "tc": 2291,
+  "slug": "gengar-ex-ex-firered-and-leafgreen-108-112"
+ },
+ "ex6-112": {
+  "tc": 2295,
+  "slug": "venusaur-ex-ex-firered-and-leafgreen-112-112"
+ },
+ "ex6-113": {
+  "tc": 2296,
+  "slug": "charmander-ex-firered-and-leafgreen-113-112"
+ },
+ "ex7-110": {
+  "tc": 2453,
+  "slug": "charmeleon-ex-team-rocket-returns-110-109"
+ },
+ "ex9-59": {
+  "tc": 2627,
+  "slug": "pichu-ex-emerald-59-106"
+ },
+ "ex9-60": {
+  "tc": 2628,
+  "slug": "pikachu-ex-emerald-60-106"
+ },
+ "ex9-97": {
+  "tc": 2665,
+  "slug": "raichu-ex-ex-emerald-97-106"
+ },
+ "pop2-6": {
+  "tc": 2828,
+  "slug": "venusaur-pop-series-2-6-17"
+ },
+ "pop2-7": {
+  "tc": 2829,
+  "slug": "ivysaur-pop-series-2-7-17"
+ },
+ "pop2-12": {
+  "tc": 2834,
+  "slug": "bulbasaur-pop-series-2-12-17"
+ },
+ "pop2-16": {
+  "tc": 2838,
+  "slug": "pikachu-pop-series-2-16-17"
+ },
+ "ex12-5": {
+  "tc": 2958,
+  "slug": "gengar-ex-legend-maker-5-92"
+ },
+ "ex12-35": {
+  "tc": 2988,
+  "slug": "haunter-ex-legend-maker-35-92"
+ },
+ "ex12-52": {
+  "tc": 3005,
+  "slug": "gastly-ex-legend-maker-52-92"
+ },
+ "ex12-93": {
+  "tc": 3046,
+  "slug": "pikachu-ex-legend-maker-93-92"
+ },
+ "tk-ex-m-2": {
+  "tc": 3055,
+  "slug": "charmander-ex-trainer-kit-2-minun-2-12"
+ },
+ "tk-ex-m-3": {
+  "tc": 3057,
+  "slug": "charmeleon-ex-trainer-kit-2-minun-3-12"
+ },
+ "pop3-1": {
+  "tc": 3076,
+  "slug": "blastoise-pop-series-3-1-17"
+ },
+ "pop3-14": {
+  "tc": 3089,
+  "slug": "ivysaur-pop-series-3-14-17"
+ },
+ "pop3-16": {
+  "tc": 3091,
+  "slug": "pichu-bros-pop-series-3-16-17"
+ },
+ "ex13-15": {
+  "tc": 3107,
+  "slug": "raichu-ex-holon-phantoms-15-110"
+ },
+ "ex13-51": {
+  "tc": 3143,
+  "slug": "raichu-ex-holon-phantoms-51-110"
+ },
+ "ex13-76": {
+  "tc": 3168,
+  "slug": "pichu-ex-holon-phantoms-76-110"
+ },
+ "ex13-78": {
+  "tc": 3170,
+  "slug": "pikachu-ex-holon-phantoms-78-110"
+ },
+ "ex13-79": {
+  "tc": 3171,
+  "slug": "pikachu-ex-holon-phantoms-79-110"
+ },
+ "pop4-13": {
+  "tc": 3316,
+  "slug": "pikachu-pop-series-4-13-17"
+ },
+ "pop4-14": {
+  "tc": 3317,
+  "slug": "squirtle-pop-series-4-14-17"
+ },
+ "ex14-2": {
+  "tc": 3205,
+  "slug": "blastoise-ex-crystal-guardians-2-100"
+ },
+ "ex14-4": {
+  "tc": 3207,
+  "slug": "charizard-ex-crystal-guardians-4-100"
+ },
+ "ex14-14": {
+  "tc": 3217,
+  "slug": "blastoise-ex-crystal-guardians-14-100"
+ },
+ "ex14-28": {
+  "tc": 3231,
+  "slug": "venusaur-ex-crystal-guardians-28-100"
+ },
+ "ex14-29": {
+  "tc": 3232,
+  "slug": "charmeleon-ex-crystal-guardians-29-100"
+ },
+ "ex14-30": {
+  "tc": 3233,
+  "slug": "charmeleon-ex-crystal-guardians-30-100"
+ },
+ "ex14-34": {
+  "tc": 3237,
+  "slug": "ivysaur-ex-crystal-guardians-34-100"
+ },
+ "ex14-35": {
+  "tc": 3238,
+  "slug": "ivysaur-ex-crystal-guardians-35-100"
+ },
+ "ex14-42": {
+  "tc": 3245,
+  "slug": "wartortle-ex-crystal-guardians-42-100"
+ },
+ "ex14-43": {
+  "tc": 3246,
+  "slug": "wartortle-ex-crystal-guardians-43-100"
+ },
+ "ex14-45": {
+  "tc": 3248,
+  "slug": "bulbasaur-ex-crystal-guardians-45-100"
+ },
+ "ex14-46": {
+  "tc": 3249,
+  "slug": "bulbasaur-ex-crystal-guardians-46-100"
+ },
+ "ex14-48": {
+  "tc": 3251,
+  "slug": "charmander-ex-crystal-guardians-48-100"
+ },
+ "ex14-49": {
+  "tc": 3252,
+  "slug": "charmander-ex-crystal-guardians-49-100"
+ },
+ "ex14-63": {
+  "tc": 3266,
+  "slug": "squirtle-ex-crystal-guardians-63-100"
+ },
+ "ex14-64": {
+  "tc": 3267,
+  "slug": "squirtle-ex-crystal-guardians-64-100"
+ },
+ "ex15-10": {
+  "tc": 3334,
+  "slug": "snorlax-ex-dragon-frontiers-10-101"
+ },
+ "ex16-6": {
+  "tc": 3434,
+  "slug": "charizard-ex-power-keepers-6-108"
+ },
+ "ex16-12": {
+  "tc": 3440,
+  "slug": "raichu-ex-power-keepers-12-108"
+ },
+ "ex16-21": {
+  "tc": 3449,
+  "slug": "pichu-ex-power-keepers-21-108"
+ },
+ "ex16-28": {
+  "tc": 3456,
+  "slug": "charmeleon-ex-power-keepers-28-108"
+ },
+ "ex16-48": {
+  "tc": 3476,
+  "slug": "charmander-ex-power-keepers-48-108"
+ },
+ "ex16-57": {
+  "tc": 3485,
+  "slug": "pikachu-ex-power-keepers-57-108"
+ },
+ "pop5-5": {
+  "tc": 3541,
+  "slug": "charmeleon-pop-series-5-5-17"
+ },
+ "pop5-10": {
+  "tc": 3546,
+  "slug": "charmander-pop-series-5-10-17"
+ },
+ "pop5-12": {
+  "tc": 3548,
+  "slug": "pikachu-pop-series-5-12-17"
+ },
+ "pop5-13": {
+  "tc": 3549,
+  "slug": "pikachu-pop-series-5-13-17"
+ },
+ "dp1-27": {
+  "tc": 3580,
+  "slug": "gengar-diamond-and-pearl-27-130"
+ },
+ "dp1-33": {
+  "tc": 3586,
+  "slug": "munchlax-diamond-and-pearl-33-130"
+ },
+ "dp1-37": {
+  "tc": 3590,
+  "slug": "snorlax-diamond-and-pearl-37-130"
+ },
+ "dp1-50": {
+  "tc": 3603,
+  "slug": "haunter-diamond-and-pearl-50-130"
+ },
+ "dp1-82": {
+  "tc": 3635,
+  "slug": "gastly-diamond-and-pearl-82-130"
+ },
+ "dpp-DP16": {
+  "tc": 4351,
+  "slug": "pikachu-diamond-and-pearl-promos-dp16"
+ },
+ "dpp-DP21": {
+  "tc": 4356,
+  "slug": "raichu-diamond-and-pearl-promos-dp21"
+ },
+ "dp2-15": {
+  "tc": 3698,
+  "slug": "raichu-mysterious-treasures-15-123"
+ },
+ "dp2-93": {
+  "tc": 3774,
+  "slug": "pichu-mysterious-treasures-93-123"
+ },
+ "dp2-94": {
+  "tc": 3775,
+  "slug": "pikachu-mysterious-treasures-94-123"
+ },
+ "pop6-9": {
+  "tc": 9914,
+  "slug": "pikachu-pop-series-6-9-17"
+ },
+ "dp3-2": {
+  "tc": 3806,
+  "slug": "blastoise-secret-wonders-2-132"
+ },
+ "dp3-3": {
+  "tc": 3807,
+  "slug": "charizard-secret-wonders-3-132"
+ },
+ "dp3-20": {
+  "tc": 3824,
+  "slug": "venusaur-secret-wonders-20-132"
+ },
+ "dp3-46": {
+  "tc": 3850,
+  "slug": "charmeleon-secret-wonders-46-132"
+ },
+ "dp3-51": {
+  "tc": 3855,
+  "slug": "ivysaur-secret-wonders-51-132"
+ },
+ "dp3-75": {
+  "tc": 3879,
+  "slug": "wartortle-secret-wonders-75-132"
+ },
+ "dp3-77": {
+  "tc": 3881,
+  "slug": "bulbasaur-secret-wonders-77-132"
+ },
+ "dp3-82": {
+  "tc": 3886,
+  "slug": "charmander-secret-wonders-82-132"
+ },
+ "dp3-112": {
+  "tc": 3913,
+  "slug": "squirtle-secret-wonders-112-132"
+ },
+ "dp5-45": {
+  "tc": 4137,
+  "slug": "raichu-majestic-dawn-45-100"
+ },
+ "dp5-68": {
+  "tc": 4159,
+  "slug": "munchlax-majestic-dawn-68-100"
+ },
+ "dp5-70": {
+  "tc": 4161,
+  "slug": "pikachu-majestic-dawn-70-100"
+ },
+ "dp7-8": {
+  "tc": 4367,
+  "slug": "raichu-stormfront-8-100"
+ },
+ "dp7-18": {
+  "tc": 4377,
+  "slug": "gengar-stormfront-18-100"
+ },
+ "dp7-40": {
+  "tc": 4399,
+  "slug": "haunter-stormfront-40-100"
+ },
+ "dp7-45": {
+  "tc": 4404,
+  "slug": "pichu-stormfront-45-100"
+ },
+ "dp7-62": {
+  "tc": 4420,
+  "slug": "gastly-stormfront-62-100"
+ },
+ "dp7-70": {
+  "tc": 4427,
+  "slug": "pikachu-stormfront-70-100"
+ },
+ "dp7-101": {
+  "tc": 4458,
+  "slug": "charmander-stormfront-101-100"
+ },
+ "dp7-102": {
+  "tc": 4459,
+  "slug": "charmeleon-stormfront-102-100"
+ },
+ "dp7-103": {
+  "tc": 4460,
+  "slug": "charizard-stormfront-103-100"
+ },
+ "pl1-2": {
+  "tc": 4491,
+  "slug": "blastoise-platinum-2-127"
+ },
+ "pl1-65": {
+  "tc": 4554,
+  "slug": "wartortle-platinum-65-127"
+ },
+ "pl1-96": {
+  "tc": 4585,
+  "slug": "squirtle-platinum-96-127"
+ },
+ "pop9-3": {
+  "tc": 4745,
+  "slug": "raichu-pop-series-9-3-17"
+ },
+ "pop9-11": {
+  "tc": 4753,
+  "slug": "pichu-pop-series-9-11-17"
+ },
+ "pop9-15": {
+  "tc": 4757,
+  "slug": "pikachu-pop-series-9-15-17"
+ },
+ "pl2-31": {
+  "tc": 4653,
+  "slug": "raichu-gl-rising-rivals-31-111"
+ },
+ "pl2-33": {
+  "tc": 4655,
+  "slug": "snorlax-rising-rivals-33-111"
+ },
+ "pl2-40": {
+  "tc": 4662,
+  "slug": "gengar-gl-rising-rivals-40-111"
+ },
+ "pl2-69": {
+  "tc": 4691,
+  "slug": "munchlax-rising-rivals-69-111"
+ },
+ "pl2-70": {
+  "tc": 4692,
+  "slug": "munchlax-rising-rivals-70-111"
+ },
+ "pl2-81": {
+  "tc": 4703,
+  "slug": "snorlax-rising-rivals-81-111"
+ },
+ "pl2-111": {
+  "tc": 4733,
+  "slug": "snorlax-lv-x-rising-rivals-111-111"
+ },
+ "pl2-112": {
+  "tc": 4734,
+  "slug": "pikachu-rising-rivals-112-111"
+ },
+ "pl2-113": {
+  "tc": 4735,
+  "slug": "flying-pikachu-rising-rivals-113-111"
+ },
+ "pl2-114": {
+  "tc": 4736,
+  "slug": "surfing-pikachu-rising-rivals-114-111"
+ },
+ "pl3-13": {
+  "tc": 4782,
+  "slug": "venusaur-supreme-victors-13-147"
+ },
+ "pl3-20": {
+  "tc": 4789,
+  "slug": "charizard-g-supreme-victors-20-147"
+ },
+ "pl3-62": {
+  "tc": 4830,
+  "slug": "ivysaur-supreme-victors-62-147"
+ },
+ "pl3-77": {
+  "tc": 4845,
+  "slug": "raichu-supreme-victors-77-147"
+ },
+ "pl3-93": {
+  "tc": 4861,
+  "slug": "bulbasaur-supreme-victors-93-147"
+ },
+ "pl3-120": {
+  "tc": 4888,
+  "slug": "pikachu-supreme-victors-120-147"
+ },
+ "pl3-143": {
+  "tc": 4911,
+  "slug": "charizard-g-lv-x-supreme-victors-143-147"
+ },
+ "pl4-1": {
+  "tc": 4927,
+  "slug": "charizard-arceus-1-99"
+ },
+ "pl4-16": {
+  "tc": 4942,
+  "slug": "gengar-arceus-16-99"
+ },
+ "pl4-17": {
+  "tc": 4943,
+  "slug": "gengar-arceus-17-99"
+ },
+ "pl4-25": {
+  "tc": 4951,
+  "slug": "pichu-arceus-25-99"
+ },
+ "pl4-27": {
+  "tc": 4953,
+  "slug": "raichu-arceus-27-99"
+ },
+ "pl4-35": {
+  "tc": 4961,
+  "slug": "charmeleon-arceus-35-99"
+ },
+ "pl4-36": {
+  "tc": 4962,
+  "slug": "gastly-arceus-36-99"
+ },
+ "pl4-41": {
+  "tc": 4967,
+  "slug": "haunter-arceus-41-99"
+ },
+ "pl4-42": {
+  "tc": 4968,
+  "slug": "haunter-arceus-42-99"
+ },
+ "pl4-59": {
+  "tc": 4985,
+  "slug": "charmander-arceus-59-99"
+ },
+ "pl4-64": {
+  "tc": 4990,
+  "slug": "gastly-arceus-64-99"
+ },
+ "pl4-71": {
+  "tc": 4997,
+  "slug": "pikachu-arceus-71-99"
+ },
+ "pl4-97": {
+  "tc": 5023,
+  "slug": "gengar-lv-x-arceus-97-99"
+ },
+ "ru1-1": {
+  "tc": 5167,
+  "slug": "venusaur-pokemon-rumble-1-16"
+ },
+ "ru1-7": {
+  "tc": 5173,
+  "slug": "pikachu-pokemon-rumble-7-16"
+ },
+ "hgss1-10": {
+  "tc": 5047,
+  "slug": "raichu-heartgold-and-soulsilver-10-123"
+ },
+ "hgss1-28": {
+  "tc": 5065,
+  "slug": "pichu-heartgold-and-soulsilver-28-123"
+ },
+ "hgss1-78": {
+  "tc": 5115,
+  "slug": "pikachu-heartgold-and-soulsilver-78-123"
+ },
+ "hgssp-HGSS03": {
+  "tc": 5372,
+  "slug": "pikachu-heartgold-and-soulsilver-promos-hgss03"
+ },
+ "tk-hs-r-2": {
+  "tc": 12634,
+  "slug": "pikachu-hgss-trainer-kit-raichu-2-30"
+ },
+ "tk-hs-r-16": {
+  "tc": 12640,
+  "slug": "pikachu-hgss-trainer-kit-raichu-16-30"
+ },
+ "tk-hs-r-19": {
+  "tc": 12650,
+  "slug": "raichu-hgss-trainer-kit-raichu-19-30"
+ },
+ "tk-hs-r-30": {
+  "tc": 12654,
+  "slug": "raichu-hgss-trainer-kit-raichu-30-30"
+ },
+ "hgss2-13": {
+  "tc": 5195,
+  "slug": "blastoise-unleashed-13-95"
+ },
+ "hgss2-42": {
+  "tc": 5224,
+  "slug": "wartortle-unleashed-42-95"
+ },
+ "hgss2-63": {
+  "tc": 5245,
+  "slug": "squirtle-unleashed-63-95"
+ },
+ "hgss3-33": {
+  "tc": 5311,
+  "slug": "raichu-undaunted-33-90"
+ },
+ "hgss3-61": {
+  "tc": 5339,
+  "slug": "pikachu-undaunted-61-90"
+ },
+ "hgss3-83": {
+  "tc": 5361,
+  "slug": "raichu-undaunted-83-90"
+ },
+ "hgss4-35": {
+  "tc": 5418,
+  "slug": "haunter-triumphant-35-102"
+ },
+ "hgss4-63": {
+  "tc": 5446,
+  "slug": "gastly-triumphant-63-102"
+ },
+ "hgss4-94": {
+  "tc": 5477,
+  "slug": "gengar-triumphant-94-102"
+ },
+ "col1-33": {
+  "tc": 5558,
+  "slug": "snorlax-call-of-legends-33-95"
+ },
+ "bw1-115": {
+  "tc": 5746,
+  "slug": "pikachu-black-and-white-115-114"
+ },
+ "bwp-BW54": {
+  "tc": 6528,
+  "slug": "pikachu-black-and-white-promos-bw54"
+ },
+ "bwp-BW77": {
+  "tc": 9859,
+  "slug": "pikachu-black-and-white-promos-bw77"
+ },
+ "bwp-BW78": {
+  "tc": 9858,
+  "slug": "raichu-black-and-white-promos-bw78"
+ },
+ "bw4-39": {
+  "tc": 6030,
+  "slug": "pikachu-next-destinies-39-99"
+ },
+ "bw4-40": {
+  "tc": 6031,
+  "slug": "raichu-next-destinies-40-99"
+ },
+ "bw5-1": {
+  "tc": 6107,
+  "slug": "bulbasaur-dark-explorers-1-108"
+ },
+ "bw5-2": {
+  "tc": 6108,
+  "slug": "ivysaur-dark-explorers-2-108"
+ },
+ "bw5-3": {
+  "tc": 6109,
+  "slug": "venusaur-dark-explorers-3-108"
+ },
+ "bw7-18": {
+  "tc": 6391,
+  "slug": "charmander-boundaries-crossed-18-149"
+ },
+ "bw7-19": {
+  "tc": 6392,
+  "slug": "charmeleon-boundaries-crossed-19-149"
+ },
+ "bw7-20": {
+  "tc": 6393,
+  "slug": "charizard-boundaries-crossed-20-149"
+ },
+ "bw7-29": {
+  "tc": 6402,
+  "slug": "squirtle-boundaries-crossed-29-149"
+ },
+ "bw7-30": {
+  "tc": 6403,
+  "slug": "wartortle-boundaries-crossed-30-149"
+ },
+ "bw7-31": {
+  "tc": 6404,
+  "slug": "blastoise-boundaries-crossed-31-149"
+ },
+ "bw7-50": {
+  "tc": 6423,
+  "slug": "pikachu-boundaries-crossed-50-149"
+ },
+ "bw7-109": {
+  "tc": 6481,
+  "slug": "snorlax-boundaries-crossed-109-149"
+ },
+ "bw8-24": {
+  "tc": 6556,
+  "slug": "squirtle-plasma-storm-24-135"
+ },
+ "bw8-101": {
+  "tc": 6633,
+  "slug": "snorlax-plasma-storm-101-135"
+ },
+ "bw8-136": {
+  "tc": 6668,
+  "slug": "charizard-plasma-storm-136-135"
+ },
+ "bw8-137": {
+  "tc": 6669,
+  "slug": "blastoise-plasma-storm-137-135"
+ },
+ "bw10-14": {
+  "tc": 6833,
+  "slug": "squirtle-plasma-blast-14-101"
+ },
+ "bw10-15": {
+  "tc": 6834,
+  "slug": "wartortle-plasma-blast-15-101"
+ },
+ "bw10-16": {
+  "tc": 6835,
+  "slug": "blastoise-plasma-blast-16-101"
+ },
+ "xyp-XY17": {
+  "tc": 7652,
+  "slug": "charizard-ex-xy-promos-xy17"
+ },
+ "xyp-XY28": {
+  "tc": 7784,
+  "slug": "venusaur-ex-xy-promos-xy28"
+ },
+ "xyp-XY29": {
+  "tc": 7785,
+  "slug": "charizard-ex-xy-promos-xy29"
+ },
+ "xyp-XY30": {
+  "tc": 7786,
+  "slug": "blastoise-ex-xy-promos-xy30"
+ },
+ "xyp-XY84": {
+  "tc": 8412,
+  "slug": "pikachu-ex-xy-promos-xy84"
+ },
+ "xyp-XY89": {
+  "tc": 8417,
+  "slug": "pikachu-xy-promos-xy89"
+ },
+ "xyp-XY95": {
+  "tc": 8549,
+  "slug": "pikachu-xy-promos-xy95"
+ },
+ "xyp-XY121": {
+  "tc": 8562,
+  "slug": "charizard-ex-xy-promos-xy121"
+ },
+ "xyp-XY122": {
+  "tc": 9580,
+  "slug": "blastoise-ex-xy-promos-xy122"
+ },
+ "xyp-XY123": {
+  "tc": 9601,
+  "slug": "venusaur-ex-xy-promos-xy123"
+ },
+ "xyp-XY124": {
+  "tc": 9607,
+  "slug": "pikachu-ex-xy-promos-xy124"
+ },
+ "xyp-XY132": {
+  "tc": 9613,
+  "slug": "gastly-xy-promos-xy132"
+ },
+ "xyp-XY166": {
+  "tc": 9642,
+  "slug": "m-gengar-ex-xy-promos-xy166"
+ },
+ "xyp-XY174": {
+  "tc": 9650,
+  "slug": "pikachu-ex-xy-promos-xy174"
+ },
+ "xyp-XY179": {
+  "tc": 9655,
+  "slug": "snorlax-xy-promos-xy179"
+ },
+ "xyp-XY202": {
+  "tc": 9677,
+  "slug": "pikachu-xy-promos-xy202"
+ },
+ "bw11-17": {
+  "tc": 6941,
+  "slug": "charmander-legendary-treasures-17-113"
+ },
+ "bw11-18": {
+  "tc": 6942,
+  "slug": "charmeleon-legendary-treasures-18-113"
+ },
+ "bw11-19": {
+  "tc": 6943,
+  "slug": "charizard-legendary-treasures-19-113"
+ },
+ "bw11-RC7": {
+  "tc": 7046,
+  "slug": "pikachu-legendary-treasures-rc7-rc25"
+ },
+ "xy0-26": {
+  "tc": 7270,
+  "slug": "snorlax-kalos-starter-set-26-39"
+ },
+ "xy1-1": {
+  "tc": 7079,
+  "slug": "venusaur-ex-xy-1-146"
+ },
+ "xy1-2": {
+  "tc": 7080,
+  "slug": "m-venusaur-ex-xy-2-146"
+ },
+ "xy1-29": {
+  "tc": 7107,
+  "slug": "blastoise-ex-xy-29-146"
+ },
+ "xy1-30": {
+  "tc": 7108,
+  "slug": "m-blastoise-ex-xy-30-146"
+ },
+ "xy1-42": {
+  "tc": 7120,
+  "slug": "pikachu-xy-42-146"
+ },
+ "xy1-43": {
+  "tc": 7121,
+  "slug": "raichu-xy-43-146"
+ },
+ "xy1-141": {
+  "tc": 7219,
+  "slug": "venusaur-ex-xy-141-146"
+ },
+ "xy1-142": {
+  "tc": 7220,
+  "slug": "blastoise-ex-xy-142-146"
+ },
+ "xy2-11": {
+  "tc": 7420,
+  "slug": "charizard-ex-flashfire-11-106"
+ },
+ "xy2-12": {
+  "tc": 7421,
+  "slug": "charizard-ex-flashfire-12-106"
+ },
+ "xy2-13": {
+  "tc": 7422,
+  "slug": "m-charizard-ex-flashfire-13-106"
+ },
+ "xy2-69": {
+  "tc": 7478,
+  "slug": "m-charizard-ex-flashfire-69-106"
+ },
+ "xy2-80": {
+  "tc": 7489,
+  "slug": "snorlax-flashfire-80-106"
+ },
+ "xy2-100": {
+  "tc": 7509,
+  "slug": "charizard-ex-flashfire-100-106"
+ },
+ "xy2-107": {
+  "tc": 7516,
+  "slug": "m-charizard-ex-flashfire-107-106"
+ },
+ "xy2-108": {
+  "tc": 7517,
+  "slug": "m-charizard-ex-flashfire-108-106"
+ },
+ "2014xy-5": {
+  "tc": 7523,
+  "slug": "pikachu-mcdonalds-collection-2014-5-12"
+ },
+ "xy3-27": {
+  "tc": 7557,
+  "slug": "pikachu-furious-fists-27-111"
+ },
+ "xy3-28": {
+  "tc": 7558,
+  "slug": "raichu-furious-fists-28-111"
+ },
+ "xy4-34": {
+  "tc": 7689,
+  "slug": "gengar-ex-phantom-forces-34-119"
+ },
+ "xy4-35": {
+  "tc": 7690,
+  "slug": "m-gengar-ex-phantom-forces-35-119"
+ },
+ "xy4-114": {
+  "tc": 7769,
+  "slug": "gengar-ex-phantom-forces-114-119"
+ },
+ "xy4-121": {
+  "tc": 7776,
+  "slug": "m-gengar-ex-phantom-forces-121-119"
+ },
+ "xy6-20": {
+  "tc": 8045,
+  "slug": "pikachu-roaring-skies-20-108"
+ },
+ "xy8-48": {
+  "tc": 8283,
+  "slug": "pikachu-breakthrough-48-162"
+ },
+ "xy8-49": {
+  "tc": 8284,
+  "slug": "raichu-breakthrough-49-162"
+ },
+ "xy8-50": {
+  "tc": 8285,
+  "slug": "raichu-break-breakthrough-50-162"
+ },
+ "xy8-58": {
+  "tc": 8293,
+  "slug": "gastly-breakthrough-58-162"
+ },
+ "xy8-59": {
+  "tc": 8294,
+  "slug": "haunter-breakthrough-59-162"
+ },
+ "xy8-60": {
+  "tc": 8295,
+  "slug": "gengar-breakthrough-60-162"
+ },
+ "xy8-118": {
+  "tc": 8353,
+  "slug": "snorlax-breakthrough-118-162"
+ },
+ "2015xy-6": {
+  "tc": 11947,
+  "slug": "pikachu-mcdonalds-collection-2015-6-12"
+ },
+ "g1-1": {
+  "tc": 8567,
+  "slug": "venusaur-ex-generations-1-83"
+ },
+ "g1-2": {
+  "tc": 8568,
+  "slug": "m-venusaur-ex-generations-2-83"
+ },
+ "g1-11": {
+  "tc": 8577,
+  "slug": "charizard-ex-generations-11-83"
+ },
+ "g1-12": {
+  "tc": 8578,
+  "slug": "m-charizard-ex-generations-12-83"
+ },
+ "g1-17": {
+  "tc": 8583,
+  "slug": "blastoise-ex-generations-17-83"
+ },
+ "g1-18": {
+  "tc": 8584,
+  "slug": "m-blastoise-ex-generations-18-83"
+ },
+ "g1-26": {
+  "tc": 8592,
+  "slug": "pikachu-generations-26-83"
+ },
+ "g1-27": {
+  "tc": 8593,
+  "slug": "raichu-generations-27-83"
+ },
+ "g1-33": {
+  "tc": 8599,
+  "slug": "gastly-generations-33-83"
+ },
+ "g1-34": {
+  "tc": 8600,
+  "slug": "haunter-generations-34-83"
+ },
+ "g1-35": {
+  "tc": 8601,
+  "slug": "gengar-generations-35-83"
+ },
+ "g1-58": {
+  "tc": 8624,
+  "slug": "snorlax-generations-58-83"
+ },
+ "g1-RC3": {
+  "tc": 8652,
+  "slug": "charmander-generations-rc3-rc32"
+ },
+ "g1-RC4": {
+  "tc": 8653,
+  "slug": "charmeleon-generations-rc4-rc32"
+ },
+ "g1-RC5": {
+  "tc": 8654,
+  "slug": "charizard-generations-rc5-rc32"
+ },
+ "g1-RC9": {
+  "tc": 8658,
+  "slug": "raichu-generations-rc9-rc32"
+ },
+ "g1-RC29": {
+  "tc": 8678,
+  "slug": "pikachu-generations-rc29-rc32"
+ },
+ "tk-xy-p-14": {
+  "tc": 10144,
+  "slug": "pikachu-libre-xy-trainer-kit-pikachu-libre-14-30"
+ },
+ "tk-xy-p-30": {
+  "tc": 12667,
+  "slug": "pikachu-libre-xy-trainer-kit-pikachu-libre-30-30"
+ },
+ "xy10-77": {
+  "tc": 9174,
+  "slug": "snorlax-fates-collide-77-124"
+ },
+ "2016xy-6": {
+  "tc": 11967,
+  "slug": "pikachu-mcdonalds-collection-2016-6-12"
+ },
+ "xy12-1": {
+  "tc": 8976,
+  "slug": "venusaur-ex-evolutions-1-108"
+ },
+ "xy12-2": {
+  "tc": 8977,
+  "slug": "m-venusaur-ex-evolutions-2-108"
+ },
+ "xy12-9": {
+  "tc": 8984,
+  "slug": "charmander-evolutions-9-108"
+ },
+ "xy12-10": {
+  "tc": 8985,
+  "slug": "charmeleon-evolutions-10-108"
+ },
+ "xy12-11": {
+  "tc": 8986,
+  "slug": "charizard-evolutions-11-108"
+ },
+ "xy12-12": {
+  "tc": 8987,
+  "slug": "charizard-ex-evolutions-12-108"
+ },
+ "xy12-13": {
+  "tc": 8988,
+  "slug": "m-charizard-ex-evolutions-13-108"
+ },
+ "xy12-21": {
+  "tc": 8996,
+  "slug": "blastoise-ex-evolutions-21-108"
+ },
+ "xy12-22": {
+  "tc": 8997,
+  "slug": "m-blastoise-ex-evolutions-22-108"
+ },
+ "xy12-35": {
+  "tc": 9010,
+  "slug": "pikachu-evolutions-35-108"
+ },
+ "xy12-36": {
+  "tc": 9011,
+  "slug": "raichu-evolutions-36-108"
+ },
+ "xy12-47": {
+  "tc": 9022,
+  "slug": "gastly-evolutions-47-108"
+ },
+ "xy12-48": {
+  "tc": 9023,
+  "slug": "haunter-evolutions-48-108"
+ },
+ "xy12-100": {
+  "tc": 9075,
+  "slug": "m-venusaur-ex-evolutions-100-108"
+ },
+ "xy12-101": {
+  "tc": 9076,
+  "slug": "m-charizard-ex-evolutions-101-108"
+ },
+ "xy12-102": {
+  "tc": 9077,
+  "slug": "m-blastoise-ex-evolutions-102-108"
+ },
+ "xy12-110": {
+  "tc": 9485,
+  "slug": "flying-pikachu-evolutions-110-108"
+ },
+ "xy12-111": {
+  "tc": 9484,
+  "slug": "surfing-pikachu-evolutions-111-108"
+ },
+ "smp-SM04": {
+  "tc": 9864,
+  "slug": "pikachu-sun-and-moon-promos-sm04"
+ },
+ "smp-SM05": {
+  "tc": 9865,
+  "slug": "snorlax-gx-sun-and-moon-promos-sm05"
+ },
+ "smp-SM60": {
+  "tc": 9997,
+  "slug": "charizard-gx-sun-and-moon-promos-sm60"
+ },
+ "smp-SM65": {
+  "tc": 10523,
+  "slug": "alolan-raichu-sun-and-moon-promos-sm65"
+ },
+ "smp-SM72": {
+  "tc": 10934,
+  "slug": "alolan-raichu-sun-and-moon-promos-sm72"
+ },
+ "smp-SM76": {
+  "tc": 10008,
+  "slug": "pikachu-sun-and-moon-promos-sm76"
+ },
+ "smp-SM81": {
+  "tc": 10003,
+  "slug": "pikachu-sun-and-moon-promos-sm81"
+ },
+ "smp-SM86": {
+  "tc": 10926,
+  "slug": "pikachu-sun-and-moon-promos-sm86"
+ },
+ "smp-SM90": {
+  "tc": 10497,
+  "slug": "raichu-gx-sun-and-moon-promos-sm90"
+ },
+ "smp-SM98": {
+  "tc": 10000,
+  "slug": "pikachu-sun-and-moon-promos-sm98"
+ },
+ "smp-SM157": {
+  "tc": 11848,
+  "slug": "pikachu-sun-and-moon-promos-sm157"
+ },
+ "smp-SM158": {
+  "tc": 12528,
+  "slug": "charizard-sun-and-moon-promos-sm158"
+ },
+ "smp-SM162": {
+  "tc": 12202,
+  "slug": "pikachu-sun-and-moon-promos-sm162"
+ },
+ "smp-SM170": {
+  "tc": 12615,
+  "slug": "detective-pikachu-sun-and-moon-promos-sm170"
+ },
+ "smp-SM183": {
+  "tc": 12604,
+  "slug": "pikachu-sun-and-moon-promos-sm183"
+ },
+ "smp-SM189": {
+  "tc": 13275,
+  "slug": "blastoise-gx-sun-and-moon-promos-sm189"
+ },
+ "smp-SM190": {
+  "tc": 12570,
+  "slug": "detective-pikachu-sun-and-moon-promos-sm190"
+ },
+ "smp-SM194": {
+  "tc": 12274,
+  "slug": "detective-pikachu-sun-and-moon-promos-sm194"
+ },
+ "smp-SM195": {
+  "tc": 12569,
+  "slug": "charizard-gx-sun-and-moon-promos-sm195"
+ },
+ "smp-SM198": {
+  "tc": 12597,
+  "slug": "bulbasaur-sun-and-moon-promos-sm198"
+ },
+ "smp-SM206": {
+  "tc": 13283,
+  "slug": "pikachu-sun-and-moon-promos-sm206"
+ },
+ "smp-SM211": {
+  "tc": 13182,
+  "slug": "charizard-gx-sun-and-moon-promos-sm211"
+ },
+ "smp-SM213": {
+  "tc": 13183,
+  "slug": "raichu-gx-sun-and-moon-promos-sm213"
+ },
+ "smp-SM226": {
+  "tc": 14752,
+  "slug": "charizard-sun-and-moon-promos-sm226"
+ },
+ "smp-SM227": {
+  "tc": 14753,
+  "slug": "pikachu-sun-and-moon-promos-sm227"
+ },
+ "smp-SM232": {
+  "tc": 14745,
+  "slug": "pikachu-gx-sun-and-moon-promos-sm232"
+ },
+ "smp-SM234": {
+  "tc": 14742,
+  "slug": "pikachu-sun-and-moon-promos-sm234"
+ },
+ "tk-sm-r-14": {
+  "tc": 11819,
+  "slug": "pikachu-sm-trainer-kit-alolan-raichu-14-30"
+ },
+ "tk-sm-r-17": {
+  "tc": 11817,
+  "slug": "alolan-raichu-sm-trainer-kit-alolan-raichu-17-30"
+ },
+ "tk-sm-r-29": {
+  "tc": 11818,
+  "slug": "pikachu-sm-trainer-kit-alolan-raichu-29-30"
+ },
+ "tk-sm-r-30": {
+  "tc": 11816,
+  "slug": "alolan-raichu-sm-trainer-kit-alolan-raichu-30-30"
+ },
+ "2017sm-5": {
+  "tc": 11958,
+  "slug": "pikachu-mcdonalds-collection-2017-5-12"
+ },
+ "sm3-18": {
+  "tc": 9696,
+  "slug": "charmander-burning-shadows-18-147"
+ },
+ "sm3-19": {
+  "tc": 9697,
+  "slug": "charmeleon-burning-shadows-19-147"
+ },
+ "sm3-20": {
+  "tc": 9698,
+  "slug": "charizard-gx-burning-shadows-20-147"
+ },
+ "sm3-40": {
+  "tc": 9718,
+  "slug": "pikachu-burning-shadows-40-147"
+ },
+ "sm3-41": {
+  "tc": 9719,
+  "slug": "raichu-burning-shadows-41-147"
+ },
+ "sm3-150": {
+  "tc": 9791,
+  "slug": "charizard-gx-burning-shadows-150-147"
+ },
+ "sm3.5-1": {
+  "tc": 9915,
+  "slug": "bulbasaur-shining-legends-1-73"
+ },
+ "sm3.5-2": {
+  "tc": 9916,
+  "slug": "ivysaur-shining-legends-2-73"
+ },
+ "sm3.5-3": {
+  "tc": 9917,
+  "slug": "venusaur-shining-legends-3-73"
+ },
+ "sm3.5-28": {
+  "tc": 9942,
+  "slug": "pikachu-shining-legends-28-73"
+ },
+ "sm3.5-29": {
+  "tc": 9943,
+  "slug": "raichu-gx-shining-legends-29-73"
+ },
+ "sm3.5-75": {
+  "tc": 9988,
+  "slug": "raichu-gx-shining-legends-75-73"
+ },
+ "sm4-30": {
+  "tc": 10040,
+  "slug": "pikachu-crimson-invasion-30-111"
+ },
+ "sm4-31": {
+  "tc": 10041,
+  "slug": "alolan-raichu-crimson-invasion-31-111"
+ },
+ "sm4-36": {
+  "tc": 10046,
+  "slug": "gastly-crimson-invasion-36-111"
+ },
+ "sm4-37": {
+  "tc": 10047,
+  "slug": "haunter-crimson-invasion-37-111"
+ },
+ "sm4-38": {
+  "tc": 10048,
+  "slug": "gengar-crimson-invasion-38-111"
+ },
+ "sm7.5-1": {
+  "tc": 10998,
+  "slug": "charmander-dragon-majesty-1-70"
+ },
+ "sm7.5-2": {
+  "tc": 10999,
+  "slug": "charmeleon-dragon-majesty-2-70"
+ },
+ "sm7.5-3": {
+  "tc": 11000,
+  "slug": "charizard-dragon-majesty-3-70"
+ },
+ "2018sm-4": {
+  "tc": 13175,
+  "slug": "pikachu-mcdonalds-collection-2018-4-12"
+ },
+ "sm9-11": {
+  "tc": 11997,
+  "slug": "charmander-team-up-11-181"
+ },
+ "sm9-12": {
+  "tc": 11998,
+  "slug": "charmander-team-up-12-181"
+ },
+ "sm9-13": {
+  "tc": 11999,
+  "slug": "charmeleon-team-up-13-181"
+ },
+ "sm9-14": {
+  "tc": 12000,
+  "slug": "charizard-team-up-14-181"
+ },
+ "sm9-22": {
+  "tc": 12008,
+  "slug": "squirtle-team-up-22-181"
+ },
+ "sm9-23": {
+  "tc": 12009,
+  "slug": "squirtle-team-up-23-181"
+ },
+ "sm9-24": {
+  "tc": 12010,
+  "slug": "wartortle-team-up-24-181"
+ },
+ "sm9-25": {
+  "tc": 12011,
+  "slug": "blastoise-team-up-25-181"
+ },
+ "det1-1": {
+  "tc": 12270,
+  "slug": "bulbasaur-detective-pikachu-1-18"
+ },
+ "det1-4": {
+  "tc": 12272,
+  "slug": "charmander-detective-pikachu-4-18"
+ },
+ "det1-5": {
+  "tc": 12276,
+  "slug": "charizard-detective-pikachu-5-18"
+ },
+ "det1-10": {
+  "tc": 12280,
+  "slug": "detective-pikachu-detective-pikachu-10-18"
+ },
+ "sm10-33": {
+  "tc": 12323,
+  "slug": "squirtle-unbroken-bonds-33-214"
+ },
+ "sm10-34": {
+  "tc": 12324,
+  "slug": "wartortle-unbroken-bonds-34-214"
+ },
+ "sm10-35": {
+  "tc": 12325,
+  "slug": "blastoise-gx-unbroken-bonds-35-214"
+ },
+ "sm10-54": {
+  "tc": 12344,
+  "slug": "pikachu-unbroken-bonds-54-214"
+ },
+ "sm10-55": {
+  "tc": 12345,
+  "slug": "raichu-unbroken-bonds-55-214"
+ },
+ "sm10-67": {
+  "tc": 12357,
+  "slug": "gastly-unbroken-bonds-67-214"
+ },
+ "sm10-68": {
+  "tc": 12358,
+  "slug": "gastly-unbroken-bonds-68-214"
+ },
+ "sm10-69": {
+  "tc": 12359,
+  "slug": "haunter-unbroken-bonds-69-214"
+ },
+ "sm10-70": {
+  "tc": 12360,
+  "slug": "gengar-unbroken-bonds-70-214"
+ },
+ "sm10-158": {
+  "tc": 12448,
+  "slug": "snorlax-unbroken-bonds-158-214"
+ },
+ "sm10-218": {
+  "tc": 12524,
+  "slug": "blastoise-gx-unbroken-bonds-218-214"
+ },
+ "sm11-55": {
+  "tc": 12940,
+  "slug": "pikachu-unified-minds-55-236"
+ },
+ "sm11-56": {
+  "tc": 12941,
+  "slug": "pikachu-unified-minds-56-236"
+ },
+ "sm11-57": {
+  "tc": 12942,
+  "slug": "alolan-raichu-unified-minds-57-236"
+ },
+ "sm11-173": {
+  "tc": 13058,
+  "slug": "munchlax-unified-minds-173-236"
+ },
+ "sm115-7": {
+  "tc": 13194,
+  "slug": "charmander-hidden-fates-7-68"
+ },
+ "sm115-8": {
+  "tc": 13195,
+  "slug": "charmeleon-hidden-fates-8-68"
+ },
+ "sm115-9": {
+  "tc": 13196,
+  "slug": "charizard-gx-hidden-fates-9-68"
+ },
+ "sm115-19": {
+  "tc": 13206,
+  "slug": "pikachu-hidden-fates-19-68"
+ },
+ "sm115-20": {
+  "tc": 13207,
+  "slug": "raichu-gx-hidden-fates-20-68"
+ },
+ "sm115-50": {
+  "tc": 13237,
+  "slug": "snorlax-hidden-fates-50-68"
+ },
+ "2019sm-6": {
+  "tc": 14770,
+  "slug": "pikachu-mcdonalds-collection-2019-6-12"
+ },
+ "2019sm-7": {
+  "tc": 14771,
+  "slug": "gastly-mcdonalds-collection-2019-7-12"
+ },
+ "sm12-66": {
+  "tc": 14510,
+  "slug": "pikachu-cosmic-eclipse-66-236"
+ },
+ "sm12-67": {
+  "tc": 14511,
+  "slug": "raichu-cosmic-eclipse-67-236"
+ },
+ "sm12-241": {
+  "tc": 14685,
+  "slug": "pikachu-cosmic-eclipse-241-236"
+ },
+ "swshp-SWSH020": {
+  "tc": 15454,
+  "slug": "pikachu-sword-and-shield-promos-swsh020"
+ },
+ "swshp-SWSH032": {
+  "tc": 15223,
+  "slug": "snorlax-sword-and-shield-promos-swsh032"
+ },
+ "swshp-SWSH039": {
+  "tc": 15513,
+  "slug": "pikachu-sword-and-shield-promos-swsh039"
+ },
+ "swshp-SWSH050": {
+  "tc": 16579,
+  "slug": "charizard-v-sword-and-shield-promos-swsh050"
+ },
+ "swshp-SWSH052": {
+  "tc": 16582,
+  "slug": "gengar-sword-and-shield-promos-swsh052"
+ },
+ "swshp-SWSH061": {
+  "tc": 33774,
+  "slug": "pikachu-v-sword-and-shield-promos-swsh061"
+ },
+ "swshp-SWSH062": {
+  "tc": 35674,
+  "slug": "pikachu-vmax-sword-and-shield-promos-swsh062"
+ },
+ "swshp-SWSH063": {
+  "tc": 15980,
+  "slug": "pikachu-v-sword-and-shield-promos-swsh063"
+ },
+ "swshp-SWSH066": {
+  "tc": 16839,
+  "slug": "charizard-sword-and-shield-promos-swsh066"
+ },
+ "swshp-SWSH068": {
+  "tc": 16841,
+  "slug": "snorlax-sword-and-shield-promos-swsh068"
+ },
+ "swshp-SWSH074": {
+  "tc": 16853,
+  "slug": "special-delivery-pikachu-sword-and-shield-promos-swsh074"
+ },
+ "swshp-SWSH075": {
+  "tc": 16854,
+  "slug": "special-delivery-charizard-sword-and-shield-promos-swsh075"
+ },
+ "swshp-SWSH092": {
+  "tc": 34013,
+  "slug": "charmander-sword-and-shield-promos-swsh092"
+ },
+ "swshp-SWSH100": {
+  "tc": 33100,
+  "slug": "venusaur-v-sword-and-shield-promos-swsh100"
+ },
+ "swshp-SWSH101": {
+  "tc": 33101,
+  "slug": "blastoise-v-sword-and-shield-promos-swsh101"
+ },
+ "swshp-SWSH102": {
+  "tc": 34017,
+  "slug": "venusaur-vmax-sword-and-shield-promos-swsh102"
+ },
+ "swshp-SWSH103": {
+  "tc": 34018,
+  "slug": "blastoise-vmax-sword-and-shield-promos-swsh103"
+ },
+ "swshp-SWSH119": {
+  "tc": 34820,
+  "slug": "snorlax-sword-and-shield-promos-swsh119"
+ },
+ "swshp-SWSH139": {
+  "tc": 35666,
+  "slug": "pikachu-v-union-sword-and-shield-promos-swsh139"
+ },
+ "swshp-SWSH140": {
+  "tc": 35667,
+  "slug": "pikachu-v-union-sword-and-shield-promos-swsh140"
+ },
+ "swshp-SWSH141": {
+  "tc": 35668,
+  "slug": "pikachu-v-union-sword-and-shield-promos-swsh141"
+ },
+ "swshp-SWSH142": {
+  "tc": 35669,
+  "slug": "pikachu-v-union-sword-and-shield-promos-swsh142"
+ },
+ "swshp-SWSH143": {
+  "tc": 35679,
+  "slug": "pikachu-v-sword-and-shield-promos-swsh143"
+ },
+ "swshp-SWSH145": {
+  "tc": 35680,
+  "slug": "pikachu-v-sword-and-shield-promos-swsh145"
+ },
+ "swshp-SWSH153": {
+  "tc": 38753,
+  "slug": "pikachu-sword-and-shield-promos-swsh153"
+ },
+ "swshp-SWSH198": {
+  "tc": 37422,
+  "slug": "pikachu-v-sword-and-shield-promos-swsh198"
+ },
+ "swshp-SWSH231": {
+  "tc": 38514,
+  "slug": "bulbasaur-sword-and-shield-promos-swsh231"
+ },
+ "swshp-SWSH232": {
+  "tc": 38515,
+  "slug": "charmander-sword-and-shield-promos-swsh232"
+ },
+ "swshp-SWSH233": {
+  "tc": 38516,
+  "slug": "squirtle-sword-and-shield-promos-swsh233"
+ },
+ "swshp-SWSH234": {
+  "tc": 38517,
+  "slug": "pikachu-sword-and-shield-promos-swsh234"
+ },
+ "swshp-SWSH241": {
+  "tc": 39096,
+  "slug": "gengar-sword-and-shield-promos-swsh241"
+ },
+ "swshp-SWSH260": {
+  "tc": 39132,
+  "slug": "charizard-v-sword-and-shield-promos-swsh260"
+ },
+ "swshp-SWSH261": {
+  "tc": 39133,
+  "slug": "charizard-vmax-sword-and-shield-promos-swsh261"
+ },
+ "swshp-SWSH262": {
+  "tc": 39134,
+  "slug": "charizard-vstar-sword-and-shield-promos-swsh262"
+ },
+ "swshp-SWSH285": {
+  "tc": 40398,
+  "slug": "pikachu-v-sword-and-shield-promos-swsh285"
+ },
+ "swshp-SWSH286": {
+  "tc": 40399,
+  "slug": "pikachu-vmax-sword-and-shield-promos-swsh286"
+ },
+ "swshp-SWSH303": {
+  "tc": 39843,
+  "slug": "bulbasaur-sword-and-shield-promos-swsh303"
+ },
+ "swsh1-65": {
+  "tc": 15007,
+  "slug": "pikachu-sword-and-shield-065-202"
+ },
+ "swsh1-66": {
+  "tc": 15008,
+  "slug": "raichu-sword-and-shield-066-202"
+ },
+ "swsh1-83": {
+  "tc": 15161,
+  "slug": "gastly-sword-and-shield-083-202"
+ },
+ "swsh1-84": {
+  "tc": 15025,
+  "slug": "haunter-sword-and-shield-084-202"
+ },
+ "swsh1-85": {
+  "tc": 15026,
+  "slug": "gengar-sword-and-shield-085-202"
+ },
+ "swsh1-140": {
+  "tc": 15078,
+  "slug": "snorlax-sword-and-shield-140-202"
+ },
+ "swsh1-141": {
+  "tc": 15079,
+  "slug": "snorlax-v-sword-and-shield-141-202"
+ },
+ "swsh1-142": {
+  "tc": 15080,
+  "slug": "snorlax-vmax-sword-and-shield-142-202"
+ },
+ "swsh1-197": {
+  "tc": 15135,
+  "slug": "snorlax-v-sword-and-shield-197-202"
+ },
+ "swsh1-206": {
+  "tc": 15144,
+  "slug": "snorlax-vmax-sword-and-shield-206-202"
+ },
+ "swsh2-141": {
+  "tc": 15385,
+  "slug": "snorlax-rebel-clash-141-192"
+ },
+ "swsh3-19": {
+  "tc": 15781,
+  "slug": "charizard-v-darkness-ablaze-019-189"
+ },
+ "swsh3-20": {
+  "tc": 15782,
+  "slug": "charizard-vmax-darkness-ablaze-020-189"
+ },
+ "swsh3.5-1": {
+  "tc": 16221,
+  "slug": "venusaur-v-champions-path-001-073"
+ },
+ "swsh3.5-74": {
+  "tc": 16294,
+  "slug": "charizard-vmax-champions-path-074-073"
+ },
+ "swsh3.5-79": {
+  "tc": 16299,
+  "slug": "charizard-v-champions-path-079-073"
+ },
+ "swsh4-23": {
+  "tc": 16655,
+  "slug": "charmander-vivid-voltage-023-185"
+ },
+ "swsh4-24": {
+  "tc": 16656,
+  "slug": "charmeleon-vivid-voltage-024-185"
+ },
+ "swsh4-25": {
+  "tc": 16657,
+  "slug": "charizard-vivid-voltage-025-185"
+ },
+ "swsh4-43": {
+  "tc": 16675,
+  "slug": "pikachu-v-vivid-voltage-043-185"
+ },
+ "swsh4-44": {
+  "tc": 16676,
+  "slug": "pikachu-vmax-vivid-voltage-044-185"
+ },
+ "swsh4-131": {
+  "tc": 16763,
+  "slug": "snorlax-vivid-voltage-131-185"
+ },
+ "swsh4-170": {
+  "tc": 16802,
+  "slug": "pikachu-v-vivid-voltage-170-185"
+ },
+ "swsh4-188": {
+  "tc": 16820,
+  "slug": "pikachu-vmax-vivid-voltage-188-185"
+ },
+ "2021swsh-1": {
+  "tc": 33554,
+  "slug": "bulbasaur-mcdonalds-collection-2021-1-25"
+ },
+ "2021swsh-9": {
+  "tc": 33562,
+  "slug": "charmander-mcdonalds-collection-2021-9-25"
+ },
+ "2021swsh-17": {
+  "tc": 33570,
+  "slug": "squirtle-mcdonalds-collection-2021-17-25"
+ },
+ "2021swsh-25": {
+  "tc": 33578,
+  "slug": "pikachu-mcdonalds-collection-2021-25-25"
+ },
+ "swsh6-55": {
+  "tc": 34634,
+  "slug": "gastly-chilling-reign-055-198"
+ },
+ "swsh6-56": {
+  "tc": 34635,
+  "slug": "haunter-chilling-reign-056-198"
+ },
+ "swsh6-57": {
+  "tc": 34636,
+  "slug": "gengar-chilling-reign-057-198"
+ },
+ "swsh6-224": {
+  "tc": 34803,
+  "slug": "snorlax-chilling-reign-224-198"
+ },
+ "swsh7-49": {
+  "tc": 35184,
+  "slug": "pikachu-evolving-skies-049-203"
+ },
+ "swsh7-50": {
+  "tc": 35185,
+  "slug": "raichu-evolving-skies-050-203"
+ },
+ "cel25-5": {
+  "tc": 35588,
+  "slug": "pikachu-celebrations-005-025"
+ },
+ "cel25-6": {
+  "tc": 35589,
+  "slug": "flying-pikachu-v-celebrations-006-025"
+ },
+ "cel25-7": {
+  "tc": 35590,
+  "slug": "flying-pikachu-vmax-celebrations-007-025"
+ },
+ "cel25-8": {
+  "tc": 35591,
+  "slug": "surfing-pikachu-v-celebrations-008-025"
+ },
+ "cel25-9": {
+  "tc": 35592,
+  "slug": "surfing-pikachu-vmax-celebrations-009-025"
+ },
+ "swsh8-86": {
+  "tc": 35843,
+  "slug": "pikachu-v-fusion-strike-086-264"
+ },
+ "swsh8-156": {
+  "tc": 35913,
+  "slug": "gengar-v-fusion-strike-156-264"
+ },
+ "swsh8-157": {
+  "tc": 35914,
+  "slug": "gengar-vmax-fusion-strike-157-264"
+ },
+ "swsh8-206": {
+  "tc": 35963,
+  "slug": "snorlax-fusion-strike-206-264"
+ },
+ "swsh8-271": {
+  "tc": 36028,
+  "slug": "gengar-vmax-fusion-strike-271-264"
+ },
+ "swsh9-017": {
+  "tc": 37074,
+  "slug": "charizard-v-brilliant-stars-017-172"
+ },
+ "swsh9-018": {
+  "tc": 37075,
+  "slug": "charizard-vstar-brilliant-stars-018-172"
+ },
+ "swsh9-045": {
+  "tc": 37102,
+  "slug": "raichu-v-brilliant-stars-045-172"
+ },
+ "swsh9-153": {
+  "tc": 37210,
+  "slug": "charizard-v-brilliant-stars-153-172"
+ },
+ "swsh9-154": {
+  "tc": 37211,
+  "slug": "charizard-v-brilliant-stars-154-172"
+ },
+ "swsh9-157": {
+  "tc": 37214,
+  "slug": "pikachu-v-brilliant-stars-157-172"
+ },
+ "swsh9-158": {
+  "tc": 37215,
+  "slug": "raichu-v-brilliant-stars-158-172"
+ },
+ "swsh9-174": {
+  "tc": 37231,
+  "slug": "charizard-vstar-brilliant-stars-174-172"
+ },
+ "swsh10.5-001": {
+  "tc": 38416,
+  "slug": "bulbasaur-pokemon-go-001-078"
+ },
+ "swsh10.5-002": {
+  "tc": 38417,
+  "slug": "ivysaur-pokemon-go-002-078"
+ },
+ "swsh10.5-003": {
+  "tc": 38418,
+  "slug": "venusaur-pokemon-go-003-078"
+ },
+ "swsh10.5-004": {
+  "tc": 38419,
+  "slug": "radiant-venusaur-pokemon-go-004-078"
+ },
+ "swsh10.5-008": {
+  "tc": 38423,
+  "slug": "charmander-pokemon-go-008-078"
+ },
+ "swsh10.5-009": {
+  "tc": 38424,
+  "slug": "charmeleon-pokemon-go-009-078"
+ },
+ "swsh10.5-010": {
+  "tc": 38425,
+  "slug": "charizard-pokemon-go-010-078"
+ },
+ "swsh10.5-011": {
+  "tc": 38426,
+  "slug": "radiant-charizard-pokemon-go-011-078"
+ },
+ "swsh10.5-015": {
+  "tc": 38430,
+  "slug": "squirtle-pokemon-go-015-078"
+ },
+ "swsh10.5-016": {
+  "tc": 38431,
+  "slug": "wartortle-pokemon-go-016-078"
+ },
+ "swsh10.5-017": {
+  "tc": 38432,
+  "slug": "blastoise-pokemon-go-017-078"
+ },
+ "swsh10.5-018": {
+  "tc": 38433,
+  "slug": "radiant-blastoise-pokemon-go-018-078"
+ },
+ "swsh10.5-027": {
+  "tc": 38442,
+  "slug": "pikachu-pokemon-go-027-078"
+ },
+ "swsh10.5-028": {
+  "tc": 38443,
+  "slug": "pikachu-pokemon-go-028-078"
+ },
+ "swsh10.5-055": {
+  "tc": 38470,
+  "slug": "snorlax-pokemon-go-055-078"
+ },
+ "2022swsh-7": {
+  "tc": 38745,
+  "slug": "pikachu-mcdonalds-match-battle-2022-7-15"
+ },
+ "swsh11-052": {
+  "tc": 38899,
+  "slug": "pikachu-lost-origin-052-196"
+ },
+ "swsh11-053": {
+  "tc": 38900,
+  "slug": "raichu-lost-origin-053-196"
+ },
+ "swsh11-064": {
+  "tc": 38911,
+  "slug": "gastly-lost-origin-064-196"
+ },
+ "swsh11-065": {
+  "tc": 38912,
+  "slug": "haunter-lost-origin-065-196"
+ },
+ "swsh11-066": {
+  "tc": 38913,
+  "slug": "gengar-lost-origin-066-196"
+ },
+ "swsh11-143": {
+  "tc": 38990,
+  "slug": "snorlax-lost-origin-143-196"
+ },
+ "swsh12-049": {
+  "tc": 39286,
+  "slug": "pikachu-silver-tempest-049-195"
+ },
+ "swsh12-050": {
+  "tc": 39287,
+  "slug": "raichu-silver-tempest-050-195"
+ },
+ "swsh12.5-018": {
+  "tc": 39866,
+  "slug": "charizard-v-crown-zenith-018-159"
+ },
+ "swsh12.5-019": {
+  "tc": 39867,
+  "slug": "charizard-vstar-crown-zenith-019-159"
+ },
+ "swsh12.5-020": {
+  "tc": 39868,
+  "slug": "radiant-charizard-crown-zenith-020-159"
+ },
+ "swsh12.5-109": {
+  "tc": 39957,
+  "slug": "snorlax-crown-zenith-109-159"
+ },
+ "swsh12.5-160": {
+  "tc": 40008,
+  "slug": "pikachu-crown-zenith-160-159"
+ },
+ "svp-027": {
+  "tc": 41489,
+  "slug": "pikachu-scarlet-and-violet-promos-027"
+ },
+ "svp-044": {
+  "tc": 42348,
+  "slug": "charmander-scarlet-and-violet-promos-044"
+ },
+ "svp-046": {
+  "tc": 42577,
+  "slug": "bulbasaur-scarlet-and-violet-promos-046"
+ },
+ "svp-047": {
+  "tc": 42578,
+  "slug": "charmander-scarlet-and-violet-promos-047"
+ },
+ "svp-048": {
+  "tc": 42579,
+  "slug": "squirtle-scarlet-and-violet-promos-048"
+ },
+ "svp-051": {
+  "tc": 42580,
+  "slug": "snorlax-scarlet-and-violet-promos-051"
+ },
+ "svp-056": {
+  "tc": 42811,
+  "slug": "charizard-ex-scarlet-and-violet-promos-056"
+ },
+ "svp-074": {
+  "tc": 44420,
+  "slug": "charizard-ex-scarlet-and-violet-promos-074"
+ },
+ "svp-085": {
+  "tc": 42756,
+  "slug": "pikachu-with-grey-felt-hat-scarlet-and-violet-promos-085"
+ },
+ "svp-088": {
+  "tc": 44489,
+  "slug": "pikachu-scarlet-and-violet-promos-088"
+ },
+ "svp-101": {
+  "tc": 43278,
+  "slug": "pikachu-scarlet-and-violet-promos-101"
+ },
+ "svp-106": {
+  "tc": 45416,
+  "slug": "pikachu-ex-scarlet-and-violet-promos-106"
+ },
+ "svp-122": {
+  "tc": 45272,
+  "slug": "snorlax-scarlet-and-violet-promos-122"
+ },
+ "svp-161": {
+  "tc": 46184,
+  "slug": "charizard-ex-scarlet-and-violet-promos-161"
+ },
+ "svp-190": {
+  "tc": 45755,
+  "slug": "pikachu-scarlet-and-violet-promos-190"
+ },
+ "svp-196": {
+  "tc": 48105,
+  "slug": "charizard-ex-scarlet-and-violet-promos-196"
+ },
+ "svp-214": {
+  "tc": 47579,
+  "slug": "pikachu-scarlet-and-violet-promos-214"
+ },
+ "svp-225": {
+  "tc": 50786,
+  "slug": "pikachu-scarlet-and-violet-promos-225"
+ },
+ "sv02-062": {
+  "tc": 41263,
+  "slug": "pikachu-paldea-evolved-062-193"
+ },
+ "sv02-063": {
+  "tc": 41264,
+  "slug": "pikachu-ex-paldea-evolved-063-193"
+ },
+ "sv02-064": {
+  "tc": 41265,
+  "slug": "raichu-paldea-evolved-064-193"
+ },
+ "sv02-211": {
+  "tc": 41412,
+  "slug": "raichu-paldea-evolved-211-193"
+ },
+ "2023sv-6": {
+  "tc": 66874,
+  "slug": "pikachu-pikachu-world-collection-no-006"
+ },
+ "sv03-026": {
+  "tc": 42135,
+  "slug": "charmander-obsidian-flames-026-197"
+ },
+ "sv03-027": {
+  "tc": 42136,
+  "slug": "charmeleon-obsidian-flames-027-197"
+ },
+ "sv03-125": {
+  "tc": 42234,
+  "slug": "charizard-ex-obsidian-flames-125-197"
+ },
+ "sv03-215": {
+  "tc": 42324,
+  "slug": "charizard-ex-obsidian-flames-215-197"
+ },
+ "sv03-223": {
+  "tc": 42332,
+  "slug": "charizard-ex-obsidian-flames-223-197"
+ },
+ "sv03-228": {
+  "tc": 42337,
+  "slug": "charizard-ex-obsidian-flames-228-197"
+ },
+ "sv03.5-001": {
+  "tc": 42370,
+  "slug": "bulbasaur-scarlet-and-violet-151-001-165"
+ },
+ "sv03.5-002": {
+  "tc": 42371,
+  "slug": "ivysaur-scarlet-and-violet-151-002-165"
+ },
+ "sv03.5-003": {
+  "tc": 42372,
+  "slug": "venusaur-ex-scarlet-and-violet-151-003-165"
+ },
+ "sv03.5-004": {
+  "tc": 42373,
+  "slug": "charmander-scarlet-and-violet-151-004-165"
+ },
+ "sv03.5-005": {
+  "tc": 42374,
+  "slug": "charmeleon-scarlet-and-violet-151-005-165"
+ },
+ "sv03.5-006": {
+  "tc": 42375,
+  "slug": "charizard-ex-scarlet-and-violet-151-006-165"
+ },
+ "sv03.5-007": {
+  "tc": 42376,
+  "slug": "squirtle-scarlet-and-violet-151-007-165"
+ },
+ "sv03.5-008": {
+  "tc": 42377,
+  "slug": "wartortle-scarlet-and-violet-151-008-165"
+ },
+ "sv03.5-009": {
+  "tc": 42378,
+  "slug": "blastoise-ex-scarlet-and-violet-151-009-165"
+ },
+ "sv03.5-025": {
+  "tc": 42394,
+  "slug": "pikachu-scarlet-and-violet-151-025-165"
+ },
+ "sv03.5-026": {
+  "tc": 42395,
+  "slug": "raichu-scarlet-and-violet-151-026-165"
+ },
+ "sv03.5-092": {
+  "tc": 42461,
+  "slug": "gastly-scarlet-and-violet-151-092-165"
+ },
+ "sv03.5-093": {
+  "tc": 42462,
+  "slug": "haunter-scarlet-and-violet-151-093-165"
+ },
+ "sv03.5-094": {
+  "tc": 42463,
+  "slug": "gengar-scarlet-and-violet-151-094-165"
+ },
+ "sv03.5-143": {
+  "tc": 42512,
+  "slug": "snorlax-scarlet-and-violet-151-143-165"
+ },
+ "sv03.5-166": {
+  "tc": 42535,
+  "slug": "bulbasaur-scarlet-and-violet-151-166-165"
+ },
+ "sv03.5-167": {
+  "tc": 42536,
+  "slug": "ivysaur-scarlet-and-violet-151-167-165"
+ },
+ "sv03.5-168": {
+  "tc": 42537,
+  "slug": "charmander-scarlet-and-violet-151-168-165"
+ },
+ "sv03.5-169": {
+  "tc": 42538,
+  "slug": "charmeleon-scarlet-and-violet-151-169-165"
+ },
+ "sv03.5-170": {
+  "tc": 42539,
+  "slug": "squirtle-scarlet-and-violet-151-170-165"
+ },
+ "sv03.5-171": {
+  "tc": 42540,
+  "slug": "wartortle-scarlet-and-violet-151-171-165"
+ },
+ "sv03.5-173": {
+  "tc": 42542,
+  "slug": "pikachu-scarlet-and-violet-151-173-165"
+ },
+ "sv03.5-182": {
+  "tc": 42551,
+  "slug": "venusaur-ex-scarlet-and-violet-151-182-165"
+ },
+ "sv03.5-183": {
+  "tc": 42552,
+  "slug": "charizard-ex-scarlet-and-violet-151-183-165"
+ },
+ "sv03.5-184": {
+  "tc": 42553,
+  "slug": "blastoise-ex-scarlet-and-violet-151-184-165"
+ },
+ "sv03.5-198": {
+  "tc": 42567,
+  "slug": "venusaur-ex-scarlet-and-violet-151-198-165"
+ },
+ "sv03.5-199": {
+  "tc": 42568,
+  "slug": "charizard-ex-scarlet-and-violet-151-199-165"
+ },
+ "sv03.5-200": {
+  "tc": 42569,
+  "slug": "blastoise-ex-scarlet-and-violet-151-200-165"
+ },
+ "mfb-1": {
+  "tc": 42763,
+  "slug": "bulbasaur-my-first-battle-bulbasaur-no-001"
+ },
+ "sv04.5-007": {
+  "tc": 43927,
+  "slug": "charmander-paldean-fates-007-091"
+ },
+ "sv04.5-008": {
+  "tc": 43928,
+  "slug": "charmeleon-paldean-fates-008-091"
+ },
+ "sv04.5-018": {
+  "tc": 43938,
+  "slug": "pikachu-paldean-fates-018-091"
+ },
+ "sv04.5-019": {
+  "tc": 43939,
+  "slug": "raichu-paldean-fates-019-091"
+ },
+ "sv04.5-054": {
+  "tc": 43974,
+  "slug": "charizard-ex-paldean-fates-054-091"
+ },
+ "sv04.5-055": {
+  "tc": 43975,
+  "slug": "gastly-paldean-fates-055-091"
+ },
+ "sv04.5-056": {
+  "tc": 43976,
+  "slug": "haunter-paldean-fates-056-091"
+ },
+ "sv04.5-057": {
+  "tc": 43977,
+  "slug": "gengar-paldean-fates-057-091"
+ },
+ "sv04.5-109": {
+  "tc": 44029,
+  "slug": "charmander-paldean-fates-109-091"
+ },
+ "sv04.5-110": {
+  "tc": 44030,
+  "slug": "charmeleon-paldean-fates-110-091"
+ },
+ "sv04.5-131": {
+  "tc": 44051,
+  "slug": "pikachu-paldean-fates-131-091"
+ },
+ "sv04.5-132": {
+  "tc": 44052,
+  "slug": "raichu-paldean-fates-132-091"
+ },
+ "sv04.5-202": {
+  "tc": 44122,
+  "slug": "snorlax-paldean-fates-202-091"
+ },
+ "sv04.5-234": {
+  "tc": 44154,
+  "slug": "charizard-ex-paldean-fates-234-091"
+ },
+ "sv05-051": {
+  "tc": 44541,
+  "slug": "pikachu-temporal-forces-051-162"
+ },
+ "sv05-052": {
+  "tc": 44542,
+  "slug": "raichu-temporal-forces-052-162"
+ },
+ "sv05-102": {
+  "tc": 44592,
+  "slug": "gastly-temporal-forces-102-162"
+ },
+ "sv05-103": {
+  "tc": 44593,
+  "slug": "haunter-temporal-forces-103-162"
+ },
+ "sv05-104": {
+  "tc": 44594,
+  "slug": "gengar-ex-temporal-forces-104-162"
+ },
+ "sv05-177": {
+  "tc": 44667,
+  "slug": "gastly-temporal-forces-177-162"
+ },
+ "sv05-193": {
+  "tc": 44683,
+  "slug": "gengar-ex-temporal-forces-193-162"
+ },
+ "sv06-136": {
+  "tc": 45173,
+  "slug": "snorlax-twilight-masquerade-136-167"
+ },
+ "sv07-001": {
+  "tc": 45986,
+  "slug": "venusaur-ex-stellar-crown-001-142"
+ },
+ "sv07-030": {
+  "tc": 46015,
+  "slug": "blastoise-ex-stellar-crown-030-142"
+ },
+ "sv07-143": {
+  "tc": 46128,
+  "slug": "bulbasaur-stellar-crown-143-142"
+ },
+ "sv07-148": {
+  "tc": 46133,
+  "slug": "squirtle-stellar-crown-148-142"
+ },
+ "sv08-057": {
+  "tc": 46395,
+  "slug": "pikachu-ex-surging-sparks-057-191"
+ },
+ "sv08-144": {
+  "tc": 46482,
+  "slug": "snorlax-surging-sparks-144-191"
+ },
+ "sv08-219": {
+  "tc": 46557,
+  "slug": "pikachu-ex-surging-sparks-219-191"
+ },
+ "sv08-238": {
+  "tc": 46576,
+  "slug": "pikachu-ex-surging-sparks-238-191"
+ },
+ "sv08-247": {
+  "tc": 46585,
+  "slug": "pikachu-ex-surging-sparks-247-191"
+ },
+ "2024sv-1": {
+  "tc": 47224,
+  "slug": "charizard-mcdonalds-dragon-discovery-2024-001-015"
+ },
+ "2024sv-2": {
+  "tc": 66870,
+  "slug": "pikachu-pikachu-world-collection-no-002"
+ },
+ "sv08.5-028": {
+  "tc": 47062,
+  "slug": "pikachu-ex-prismatic-evolutions-028-131"
+ },
+ "sv08.5-076": {
+  "tc": 47110,
+  "slug": "snorlax-ex-prismatic-evolutions-076-131"
+ },
+ "sv08.5-179": {
+  "tc": 47213,
+  "slug": "pikachu-ex-prismatic-evolutions-179-131"
+ },
+ "me01-001": {
+  "tc": 51065,
+  "slug": "bulbasaur-mega-evolution-001-132"
+ },
+ "me01-002": {
+  "tc": 51066,
+  "slug": "ivysaur-mega-evolution-002-132"
+ },
+ "me01-003": {
+  "tc": 51067,
+  "slug": "mega-venusaur-ex-mega-evolution-003-132"
+ },
+ "me01-133": {
+  "tc": 51197,
+  "slug": "bulbasaur-mega-evolution-133-132"
+ },
+ "me01-134": {
+  "tc": 51198,
+  "slug": "ivysaur-mega-evolution-134-132"
+ },
+ "me01-155": {
+  "tc": 51219,
+  "slug": "mega-venusaur-ex-mega-evolution-155-132"
+ },
+ "me01-177": {
+  "tc": 51241,
+  "slug": "mega-venusaur-ex-mega-evolution-177-132"
+ },
+ "mep-013": {
+  "tc": 51764,
+  "slug": "mega-venusaur-ex-mega-evolution-promos-013"
+ },
+ "mep-023": {
+  "tc": 51767,
+  "slug": "mega-charizard-x-ex-mega-evolution-promos-023"
+ },
+ "mep-027": {
+  "tc": 51488,
+  "slug": "haunter-mega-evolution-promos-027"
+ },
+ "mep-029": {
+  "tc": 55109,
+  "slug": "mega-charizard-x-ex-mega-evolution-promos-029"
+ },
+ "mep-030": {
+  "tc": 55107,
+  "slug": "mega-charizard-y-ex-mega-evolution-promos-030"
+ },
+ "mep-037": {
+  "tc": 57850,
+  "slug": "bulbasaur-mega-evolution-promos-037"
+ },
+ "mep-038": {
+  "tc": 57851,
+  "slug": "charmander-mega-evolution-promos-038"
+ },
+ "mep-039": {
+  "tc": 57853,
+  "slug": "squirtle-mega-evolution-promos-039"
+ },
+ "mep-073": {
+  "tc": 66938,
+  "slug": "mega-gengar-ex-mega-evolution-promos-073"
+ },
+ "mep-079": {
+  "tc": 66696,
+  "slug": "charmeleon-mega-evolution-promos-079"
+ },
+ "me02-011": {
+  "tc": 51509,
+  "slug": "charmander-phantasmal-flames-011-094"
+ },
+ "me02-012": {
+  "tc": 51510,
+  "slug": "charmeleon-phantasmal-flames-012-094"
+ },
+ "me02-013": {
+  "tc": 51448,
+  "slug": "mega-charizard-x-ex-phantasmal-flames-013-094"
+ },
+ "me02-054": {
+  "tc": 51468,
+  "slug": "gastly-phantasmal-flames-054-094"
+ },
+ "me02-055": {
+  "tc": 51469,
+  "slug": "haunter-phantasmal-flames-055-094"
+ },
+ "me02-056": {
+  "tc": 51470,
+  "slug": "mega-gengar-ex-phantasmal-flames-056-094"
+ },
+ "me02-109": {
+  "tc": 51567,
+  "slug": "mega-charizard-x-ex-phantasmal-flames-109-094"
+ },
+ "me02-125": {
+  "tc": 51583,
+  "slug": "mega-charizard-x-ex-phantasmal-flames-125-094"
+ },
+ "me02-130": {
+  "tc": 51588,
+  "slug": "mega-charizard-x-ex-phantasmal-flames-130-094"
+ },
+ "B1a-001": {
+  "tc": 42763,
+  "slug": "bulbasaur-my-first-battle-bulbasaur-no-001"
+ },
+ "me02.5-020": {
+  "tc": 53609,
+  "slug": "charmander-ascended-heroes-020-217"
+ },
+ "me02.5-021": {
+  "tc": 53610,
+  "slug": "charmeleon-ascended-heroes-021-217"
+ },
+ "me02.5-022": {
+  "tc": 53611,
+  "slug": "mega-charizard-y-ex-ascended-heroes-022-217"
+ },
+ "me02.5-055": {
+  "tc": 53644,
+  "slug": "pikachu-ascended-heroes-055-217"
+ },
+ "me02.5-056": {
+  "tc": 53645,
+  "slug": "raichu-ascended-heroes-056-217"
+ },
+ "me02.5-057": {
+  "tc": 53646,
+  "slug": "pikachu-ex-ascended-heroes-057-217"
+ },
+ "me02.5-123": {
+  "tc": 53712,
+  "slug": "gastly-ascended-heroes-123-217"
+ },
+ "me02.5-124": {
+  "tc": 53713,
+  "slug": "haunter-ascended-heroes-124-217"
+ },
+ "me02.5-125": {
+  "tc": 53714,
+  "slug": "mega-gengar-ex-ascended-heroes-125-217"
+ },
+ "me02.5-269": {
+  "tc": 53858,
+  "slug": "mega-gengar-ex-ascended-heroes-269-217"
+ },
+ "me02.5-276": {
+  "tc": 53865,
+  "slug": "pikachu-ex-ascended-heroes-276-217"
+ },
+ "me02.5-277": {
+  "tc": 53866,
+  "slug": "pikachu-ex-ascended-heroes-277-217"
+ },
+ "me02.5-284": {
+  "tc": 53873,
+  "slug": "mega-gengar-ex-ascended-heroes-284-217"
+ },
+ "me02.5-294": {
+  "tc": 53883,
+  "slug": "mega-charizard-y-ex-ascended-heroes-294-217"
+ },
+ "me03-048": {
+  "tc": 59006,
+  "slug": "gastly-perfect-order-048-088"
+ },
+ "me03-049": {
+  "tc": 59007,
+  "slug": "haunter-perfect-order-049-088"
+ },
+ "me03-050": {
+  "tc": 59008,
+  "slug": "gengar-perfect-order-050-088"
+ },
+ "me03-063": {
+  "tc": 59021,
+  "slug": "snorlax-perfect-order-063-088"
+ },
+ "mfb-2": {
+  "tc": 42765,
+  "slug": "ivysaur-my-first-battle-bulbasaur-no-004"
+ },
+ "mfb-9": {
+  "tc": 42775,
+  "slug": "charmander-my-first-battle-charmander-no-001"
+ },
+ "mfb-10": {
+  "tc": 42777,
+  "slug": "charmeleon-my-first-battle-charmander-no-004"
+ },
+ "mfb-17": {
+  "tc": 42787,
+  "slug": "pikachu-my-first-battle-pikachu-no-001"
+ },
+ "mfb-18": {
+  "tc": 42789,
+  "slug": "raichu-my-first-battle-pikachu-no-004"
+ },
+ "mfb-25": {
+  "tc": 42799,
+  "slug": "squirtle-my-first-battle-squirtle-no-001"
+ },
+ "mfb-26": {
+  "tc": 42801,
+  "slug": "wartortle-my-first-battle-squirtle-no-004"
+ },
+ "cel25cc-CC001": {
+  "tc": 35610,
+  "slug": "blastoise-celebrations-2-102"
+ },
+ "cel25cc-CC002": {
+  "tc": 35611,
+  "slug": "charizard-celebrations-4-102"
+ },
+ "cel25cc-CC003": {
+  "tc": 35609,
+  "slug": "venusaur-celebrations-15-102"
+ },
+ "cel25cc-CC008": {
+  "tc": 35613,
+  "slug": "s-pikachu-celebrations-24"
+ },
+ "mep-Museum": {
+  "tc": 54348,
+  "slug": "pikachu-at-the-museum-mega-evolution-promos-no-500"
+ },
+ "gym1-14": {
+  "tc": 1531,
+  "slug": "sabrinas-gengar-gym-heroes-14-132"
+ },
+ "gym1-28": {
+  "tc": 965,
+  "slug": "lt-surges-raichu-gym-heroes-28-132"
+ },
+ "gym1-33": {
+  "tc": 1511,
+  "slug": "rockets-snorlax-gym-heroes-33-132"
+ },
+ "gym1-58": {
+  "tc": 1535,
+  "slug": "sabrinas-haunter-gym-heroes-58-132"
+ },
+ "gym1-61": {
+  "tc": 100,
+  "slug": "blaines-charmander-gym-heroes-61-132"
+ },
+ "gym1-81": {
+  "tc": 962,
+  "slug": "lt-surges-pikachu-gym-heroes-81-132"
+ },
+ "gym1-93": {
+  "tc": 1527,
+  "slug": "sabrinas-gastly-gym-heroes-93-132"
+ },
+ "gym2-2": {
+  "tc": 101,
+  "slug": "blaines-charizard-gym-challenge-2-132"
+ },
+ "gym2-4": {
+  "tc": 520,
+  "slug": "erikas-venusaur-gym-challenge-4-132"
+ },
+ "gym2-11": {
+  "tc": 964,
+  "slug": "lt-surges-raichu-gym-challenge-11-132"
+ },
+ "gym2-29": {
+  "tc": 1532,
+  "slug": "sabrinas-gengar-gym-challenge-29-132"
+ },
+ "gym2-31": {
+  "tc": 103,
+  "slug": "blaines-charmeleon-gym-challenge-31-132"
+ },
+ "gym2-39": {
+  "tc": 499,
+  "slug": "erikas-bulbasaur-gym-challenge-39-132"
+ },
+ "gym2-41": {
+  "tc": 510,
+  "slug": "erikas-ivysaur-gym-challenge-41-132"
+ },
+ "gym2-55": {
+  "tc": 1534,
+  "slug": "sabrinas-haunter-gym-challenge-55-132"
+ },
+ "gym2-60": {
+  "tc": 102,
+  "slug": "blaines-charmander-gym-challenge-60-132"
+ },
+ "gym2-84": {
+  "tc": 963,
+  "slug": "lt-surges-pikachu-gym-challenge-84-132"
+ },
+ "gym2-96": {
+  "tc": 1528,
+  "slug": "sabrinas-gastly-gym-challenge-96-132"
+ },
+ "gym2-97": {
+  "tc": 1529,
+  "slug": "sabrinas-gastly-gym-challenge-97-132"
+ },
+ "ex7-104": {
+  "tc": 2447,
+  "slug": "rockets-snorlax-ex-ex-team-rocket-returns-104-109"
+ },
+ "smp-SM108": {
+  "tc": 10902,
+  "slug": "ashs-pikachu-sun-and-moon-promos-sm108"
+ },
+ "smp-SM109": {
+  "tc": 10903,
+  "slug": "ashs-pikachu-sun-and-moon-promos-sm109"
+ },
+ "smp-SM110": {
+  "tc": 10919,
+  "slug": "ashs-pikachu-sun-and-moon-promos-sm110"
+ },
+ "smp-SM111": {
+  "tc": 10948,
+  "slug": "ashs-pikachu-sun-and-moon-promos-sm111"
+ },
+ "smp-SM112": {
+  "tc": 10949,
+  "slug": "ashs-pikachu-sun-and-moon-promos-sm112"
+ },
+ "smp-SM113": {
+  "tc": 10950,
+  "slug": "ashs-pikachu-sun-and-moon-promos-sm113"
+ },
+ "smp-SM114": {
+  "tc": 10951,
+  "slug": "ashs-pikachu-sun-and-moon-promos-sm114"
+ },
+ "smp-SM167": {
+  "tc": 12602,
+  "slug": "celebi-and-venusaur-gx-sun-and-moon-promos-sm167"
+ },
+ "smp-SM168": {
+  "tc": 12571,
+  "slug": "pikachu-and-zekrom-gx-sun-and-moon-promos-sm168"
+ },
+ "smp-SM169": {
+  "tc": 12603,
+  "slug": "eevee-and-snorlax-gx-sun-and-moon-promos-sm169"
+ },
+ "smp-SM201": {
+  "tc": 13279,
+  "slug": "reshiram-and-charizard-gx-sun-and-moon-promos-sm201"
+ },
+ "smp-SM229": {
+  "tc": 14735,
+  "slug": "venusaur-and-snivy-gx-sun-and-moon-promos-sm229"
+ },
+ "smp-SM230": {
+  "tc": 14755,
+  "slug": "charizard-and-braixen-gx-sun-and-moon-promos-sm230"
+ },
+ "smp-SM247": {
+  "tc": 35686,
+  "slug": "reshiram-and-charizard-gx-sun-and-moon-promos-sm247"
+ },
+ "smp-SM248": {
+  "tc": 35685,
+  "slug": "pikachu-and-zekrom-gx-sun-and-moon-promos-sm248"
+ },
+ "sm9-1": {
+  "tc": 11987,
+  "slug": "celebi-and-venusaur-gx-team-up-1-181"
+ },
+ "sm9-33": {
+  "tc": 12019,
+  "slug": "pikachu-and-zekrom-gx-team-up-33-181"
+ },
+ "sm9-53": {
+  "tc": 12039,
+  "slug": "gengar-and-mimikyu-gx-team-up-53-181"
+ },
+ "sm9-120": {
+  "tc": 12106,
+  "slug": "eevee-and-snorlax-gx-team-up-120-181"
+ },
+ "sm9-159": {
+  "tc": 12145,
+  "slug": "celebi-and-venusaur-gx-team-up-159-181"
+ },
+ "sm9-162": {
+  "tc": 12148,
+  "slug": "pikachu-and-zekrom-gx-team-up-162-181"
+ },
+ "sm9-164": {
+  "tc": 12150,
+  "slug": "gengar-and-mimikyu-gx-team-up-164-181"
+ },
+ "sm9-165": {
+  "tc": 12151,
+  "slug": "gengar-and-mimikyu-gx-team-up-165-181"
+ },
+ "sm9-171": {
+  "tc": 12157,
+  "slug": "eevee-and-snorlax-gx-team-up-171-181"
+ },
+ "sm9-182": {
+  "tc": 12231,
+  "slug": "celebi-and-venusaur-gx-team-up-182-181"
+ },
+ "sm9-184": {
+  "tc": 12233,
+  "slug": "pikachu-and-zekrom-gx-team-up-184-181"
+ },
+ "sm9-186": {
+  "tc": 12235,
+  "slug": "gengar-and-mimikyu-gx-team-up-186-181"
+ },
+ "sm9-191": {
+  "tc": 12240,
+  "slug": "eevee-and-snorlax-gx-team-up-191-181"
+ },
+ "sm10-20": {
+  "tc": 12310,
+  "slug": "reshiram-and-charizard-gx-unbroken-bonds-20-214"
+ },
+ "sm10-194": {
+  "tc": 12487,
+  "slug": "reshiram-and-charizard-gx-unbroken-bonds-194-214"
+ },
+ "sm10-217": {
+  "tc": 12523,
+  "slug": "reshiram-and-charizard-gx-unbroken-bonds-217-214"
+ },
+ "sm11-54": {
+  "tc": 12939,
+  "slug": "raichu-and-alolan-raichu-gx-unified-minds-54-236"
+ },
+ "sm11-220": {
+  "tc": 13105,
+  "slug": "raichu-and-alolan-raichu-gx-unified-minds-220-236"
+ },
+ "sm11-221": {
+  "tc": 13106,
+  "slug": "raichu-and-alolan-raichu-gx-unified-minds-221-236"
+ },
+ "sm11-241": {
+  "tc": 13126,
+  "slug": "raichu-and-alolan-raichu-gx-unified-minds-241-236"
+ },
+ "sm12-1": {
+  "tc": 14445,
+  "slug": "venusaur-and-snivy-gx-cosmic-eclipse-1-236"
+ },
+ "sm12-22": {
+  "tc": 14466,
+  "slug": "charizard-and-braixen-gx-cosmic-eclipse-22-236"
+ },
+ "sm12-38": {
+  "tc": 14482,
+  "slug": "blastoise-and-piplup-gx-cosmic-eclipse-38-236"
+ },
+ "sm12-210": {
+  "tc": 14654,
+  "slug": "venusaur-and-snivy-gx-cosmic-eclipse-210-236"
+ },
+ "sm12-212": {
+  "tc": 14656,
+  "slug": "charizard-and-braixen-gx-cosmic-eclipse-212-236"
+ },
+ "sm12-214": {
+  "tc": 14658,
+  "slug": "blastoise-and-piplup-gx-cosmic-eclipse-214-236"
+ },
+ "sm12-215": {
+  "tc": 14659,
+  "slug": "blastoise-and-piplup-gx-cosmic-eclipse-215-236"
+ },
+ "sm12-249": {
+  "tc": 14693,
+  "slug": "venusaur-and-snivy-gx-cosmic-eclipse-249-236"
+ },
+ "sm12-251": {
+  "tc": 14695,
+  "slug": "charizard-and-braixen-gx-cosmic-eclipse-251-236"
+ },
+ "sm12-253": {
+  "tc": 14697,
+  "slug": "blastoise-and-piplup-gx-cosmic-eclipse-253-236"
+ },
+ "swshp-SWSH133": {
+  "tc": 35664,
+  "slug": "lances-charizard-v-sword-and-shield-promos-swsh133"
+ },
+ "svp-184": {
+  "tc": 47906,
+  "slug": "hops-snorlax-scarlet-and-violet-promos-184"
+ },
+ "svp-500": {
+  "tc": 46604,
+  "slug": "terapagos-and-friends-scarlet-and-violet-promos-no-500"
+ },
+ "sv09-117": {
+  "tc": 48029,
+  "slug": "hops-snorlax-journey-together-117-159"
+ },
+ "sv10-071": {
+  "tc": 48803,
+  "slug": "ethans-pichu-destined-rivals-071-182"
+ },
+ "dp7-99": {
+  "tc": 4456,
+  "slug": "raichu-lv-x-stormfront-99-100"
+ },
+ "sma-SV6": {
+  "tc": 13490,
+  "slug": "charmander-hidden-fates-sv6-sv94"
+ },
+ "sma-SV7": {
+  "tc": 13491,
+  "slug": "charmeleon-hidden-fates-sv7-sv94"
+ },
+ "sma-SV49": {
+  "tc": 13531,
+  "slug": "charizard-gx-hidden-fates-sv49-sv94"
+ },
+ "fut2020-1": {
+  "tc": 15983,
+  "slug": "pikachu-on-the-ball-pokemon-futsal-001-005"
+ },
+ "swsh4.5sv-SV107": {
+  "tc": 33758,
+  "slug": "charizard-vmax-shining-fates-sv107-sv122"
+ },
+ "swsh11tg-TG03": {
+  "tc": 39067,
+  "slug": "charizard-lost-origin-tg03-tg30"
+ },
+ "swsh11tg-TG05": {
+  "tc": 39069,
+  "slug": "pikachu-lost-origin-tg05-tg30"
+ },
+ "swsh11tg-TG06": {
+  "tc": 39070,
+  "slug": "gengar-lost-origin-tg06-tg30"
+ },
+ "swsh11tg-TG10": {
+  "tc": 39074,
+  "slug": "snorlax-lost-origin-tg10-tg30"
+ },
+ "swsh11tg-TG16": {
+  "tc": 39080,
+  "slug": "pikachu-v-lost-origin-tg16-tg30"
+ },
+ "swsh11tg-TG17": {
+  "tc": 39081,
+  "slug": "pikachu-vmax-lost-origin-tg17-tg30"
+ },
+ "swsh11tg-TG29": {
+  "tc": 39093,
+  "slug": "pikachu-vmax-lost-origin-tg29-tg30"
+ },
+ "swsh12.5gg-GG30": {
+  "tc": 40038,
+  "slug": "pikachu-crown-zenith-gg30-gg70"
+ }
+}

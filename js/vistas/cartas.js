@@ -213,18 +213,21 @@ const Cartas = (() => {
         <div class="datos">
           ${c.r ? `<div><dt>Rareza</dt><dd>${esc(c.r)}</dd></div>` : ''}
           ${c.ill ? `<div><dt>Ilustración</dt><dd>${esc(c.ill)}</dd></div>` : ''}
-          ${verPrecios && c.eur ? `<div><dt>Cardmarket</dt><dd>${esc(Dominio.euros(c.eur))}</dd></div>` : ''}
-          ${verPrecios && c.usd ? `<div><dt>TCGplayer</dt><dd>${esc(Dominio.dolares(c.usd))}</dd></div>` : ''}
+          ${verPrecios && c.eur ? `<div><dt>Precio en Europa</dt><dd>${esc(Dominio.euros(c.eur))}</dd></div>` : ''}
+          ${verPrecios && c.usd ? `<div><dt>Precio en EE. UU.</dt><dd>${esc(Dominio.dolares(c.usd))}</dd></div>` : ''}
         </div>
 
         ${verPrecios ? `<p class="pista chica" style="margin:-6px 0 12px">
-          Precio orientativo del ${esc(Estado.man().preciosDe || Estado.man().generado)}. Cambia a diario.</p>` : ''}
+          Orientativo, del ${esc(Estado.man().preciosDe || Estado.man().generado)} (Cardmarket y TCGplayer). Cambia a diario:
+          abre la carta en la tienda para ver el precio de hoy.</p>` : ''}
 
         <a class="btn ${enlaces.tcgplayer.directo ? 'principal' : ''}" href="${enlaces.tcgplayer.url}"
           target="_blank" rel="noopener">${esc(enlaces.tcgplayer.texto)}</a>
-        <a class="btn" href="${enlaces.cardmarket.url}" target="_blank" rel="noopener">${esc(enlaces.cardmarket.texto)}</a>
-        ${enlaces.tcgplayer.directo ? '' : `<p class="pista chica" style="margin-top:8px">Esta carta no tiene
-          página propia en TCGplayer en nuestros datos: el enlace abre una búsqueda con su nombre, colección y número.</p>`}`,
+        <a class="btn ${enlaces.tcgcollector.directo && !enlaces.tcgplayer.directo ? 'principal' : ''}" href="${enlaces.tcgcollector.url}"
+          target="_blank" rel="noopener" style="margin-top:8px">${esc(enlaces.tcgcollector.texto)}</a>
+        ${enlaces.tcgplayer.directo || enlaces.tcgcollector.directo ? '' : `<p class="pista chica" style="margin-top:8px">
+          Esta carta no tiene página propia en ninguna de las dos tiendas en nuestros datos: los enlaces
+          abren una búsqueda con su nombre, colección y número.</p>`}`,
       listo(cuerpo) { pintarVariantes(cuerpo, c); },
     });
   }

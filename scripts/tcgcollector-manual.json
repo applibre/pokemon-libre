@@ -1,0 +1,83 @@
+{
+ "_nota": "Cartas que el buscador de TCG Collector no da con nombre y número porque allí llevan otra numeración. Localizadas a mano y comprobadas a ojo (scripts/.cache/mfb/comparar.png). 'num' es el número que enseña SU página, para que verificar-enlaces.py lo compruebe.",
+ "mfb-1": {
+  "tc": 42763,
+  "slug": "bulbasaur-my-first-battle-bulbasaur-no-001",
+  "num": "001"
+ },
+ "mfb-2": {
+  "tc": 42765,
+  "slug": "ivysaur-my-first-battle-bulbasaur-no-004",
+  "num": "004"
+ },
+ "mfb-9": {
+  "tc": 42775,
+  "slug": "charmander-my-first-battle-charmander-no-001",
+  "num": "001"
+ },
+ "mfb-10": {
+  "tc": 42777,
+  "slug": "charmeleon-my-first-battle-charmander-no-004",
+  "num": "004"
+ },
+ "mfb-17": {
+  "tc": 42787,
+  "slug": "pikachu-my-first-battle-pikachu-no-001",
+  "num": "001"
+ },
+ "mfb-18": {
+  "tc": 42789,
+  "slug": "raichu-my-first-battle-pikachu-no-004",
+  "num": "004"
+ },
+ "mfb-25": {
+  "tc": 42799,
+  "slug": "squirtle-my-first-battle-squirtle-no-001",
+  "num": "001"
+ },
+ "mfb-26": {
+  "tc": 42801,
+  "slug": "wartortle-my-first-battle-squirtle-no-004",
+  "num": "004"
+ },
+ "cel25cc-CC001": {
+  "tc": 35610,
+  "slug": "blastoise-celebrations-2-102",
+  "num": "2"
+ },
+ "cel25cc-CC002": {
+  "tc": 35611,
+  "slug": "charizard-celebrations-4-102",
+  "num": "4"
+ },
+ "cel25cc-CC003": {
+  "tc": 35609,
+  "slug": "venusaur-celebrations-15-102",
+  "num": "15"
+ },
+ "cel25cc-CC008": {
+  "tc": 35613,
+  "slug": "s-pikachu-celebrations-24",
+  "num": "24"
+ },
+ "mep-Museum": {
+  "tc": 54348,
+  "slug": "pikachu-at-the-museum-mega-evolution-promos-no-500",
+  "num": "500"
+ },
+ "ex13-104": {
+  "tc": 3196,
+  "slug": "pikachu-star-ex-holon-phantoms-104-110",
+  "num": "104"
+ },
+ "ex15-100": {
+  "tc": 3424,
+  "slug": "charizard-star-ex-dragon-frontiers-100-101",
+  "num": "100"
+ },
+ "dpp-DP45": {
+  "tc": 4922,
+  "slug": "charizard-g-lv-x-diamond-and-pearl-promos-dp45",
+  "num": "DP45"
+ }
+}

@@ -239,6 +239,19 @@ def main():
         hechos = sum(1 for ok in ex.map(un_set, pendientes) if ok)
     print(f'Logos de set     {hechos} de {len(pendientes)}')
 
+    # Fotos de cartas que ya no están en el catálogo (una colección que
+    # resultó no ser de cartón, un Pokémon que se quitó de objetivos.json):
+    # se borran para que el repositorio no cargue con lo que nadie ve.
+    vivos = {c['id'] for c in cartas}
+    sobras = 0
+    for carpeta in (os.path.join(DATOS, 'cartas'), os.path.join(DATOS, 'cartas', 'g')):
+        for f in os.listdir(carpeta):
+            if f.endswith('.webp') and f[:-5] not in vivos:
+                os.remove(os.path.join(carpeta, f))
+                sobras += 1
+    if sobras:
+        print(f'Fotos huérfanas  {sobras} borradas')
+
     # El catálogo se limpia de enlaces externos: los ficheros ya están aquí
     for s in sets.values():
         s.pop('logo', None)

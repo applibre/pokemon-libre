@@ -14,17 +14,17 @@ Es un hueco real: las apps del mercado piensan por colección —bloque, set, ca
 
 ## Qué trae
 
-**876 cartas** de 17 Pokémon, repartidas en **139 colecciones** publicadas entre enero de 1999 y marzo de 2026:
+**853 cartas** de 17 Pokémon, repartidas en **136 colecciones** publicadas entre enero de 1999 y marzo de 2026:
 
 | | |
 |---|---|
-| Pikachu 194 · Gengar 51 · Snorlax 56 | los tres que empezaron esto |
-| Charmander 48 · Charmeleon 38 · Charizard 116 | la línea de fuego |
-| Bulbasaur 31 · Ivysaur 23 · Venusaur 53 | la de planta |
-| Squirtle 31 · Wartortle 21 · Blastoise 49 | la de agua |
-| Gastly 35 · Haunter 32 · Pichu 16 · Raichu 77 · Munchlax 5 | las preevoluciones, opcionales |
+| Pikachu 192 · Gengar 51 · Snorlax 56 | los tres que empezaron esto |
+| Charmander 47 · Charmeleon 37 · Charizard 111 | la línea de fuego |
+| Bulbasaur 30 · Ivysaur 22 · Venusaur 49 | la de planta |
+| Squirtle 30 · Wartortle 20 · Blastoise 45 | la de agua |
+| Gastly 35 · Haunter 32 · Pichu 15 · Raichu 76 · Munchlax 5 | las preevoluciones, opcionales |
 
-Se reúnen por **número de Pokédex**, no por nombre: así entran «Reshiram & Charizard GX» o «Sabrina's Gengar», y se quedan fuera los Entrenadores que solo llevan el nombre.
+Se reúnen por **número de Pokédex**, no por nombre: así entran «Reshiram & Charizard GX» o «Sabrina's Gengar», y se quedan fuera los Entrenadores que solo llevan el nombre. Fuera también las de **Pokémon TCG Pocket**: son del juego de móvil y no existen en cartón.
 
 ## Qué hace
 
@@ -34,7 +34,9 @@ Se reúnen por **número de Pokédex**, no por nombre: así entran «Reshiram & 
 
 **Lo que te falta, listo para la tienda.** Por Pokémon o de todo, con el precio orientativo y un botón para mandarlo por WhatsApp o copiarlo.
 
-**Funciona sin internet.** Las 876 cartas y sus imágenes viven dentro de la app.
+**El precio de hoy, a un toque.** Cada carta abre **su** página —no un buscador— en TCGplayer y en TCG Collector, que es donde se ve lo que vale ahora mismo. Los enlaces no se escriben a ojo: se localizan uno a uno al generar el catálogo y se comprueban abriendo la página y leyendo su título (`python scripts/verificar-enlaces.py`). Si de una carta no hay página propia, el botón lo dice y abre una búsqueda con su nombre, colección y número.
+
+**Funciona sin internet.** Las 853 cartas y sus imágenes viven dentro de la app.
 
 ## Lo que no hace
 
@@ -51,9 +53,9 @@ La app oficial de Pokémon para catalogar cartas cerró en 2023 avisando de que 
 
 ## Las imágenes
 
-Las 876 cartas están descargadas en el repositorio, en dos tamaños (245 px para la rejilla, 600 px para la ficha). No se enlaza a ningún servidor ajeno: la API que usaba medio sector cerró y pasó a ser de pago, y una colección no puede quedarse sin fotos por eso.
+Las 853 cartas están descargadas en el repositorio, en dos tamaños (245 px para la rejilla, 600 px para la ficha). No se enlaza a ningún servidor ajeno: la API que usaba medio sector cerró y pasó a ser de pago, y una colección no puede quedarse sin fotos por eso.
 
-**Las 876 tienen su foto real.** Las 774 más comunes vienen de TCGdex; las otras 102 —promos, kits de entrenamiento, McDonald's, sets de 2026— hubo que rescatarlas una a una de pokemontcg.io, Bulbagarden Archives, Limitless, pkmncards, Pokellector y las fichas de producto de TCGplayer, y **revisarlas a ojo**: dos de las que ofrecía Bulbapedia eran escaneos japoneses de la misma carta y se descartaron. La regla no cambia: solo se acepta una imagen si nombre, número y colección coinciden.
+**Las 853 tienen su foto real.** Las 751 más comunes vienen de TCGdex; las otras 102 —promos, kits de entrenamiento, McDonald's, sets de 2026— hubo que rescatarlas una a una de pokemontcg.io, Bulbagarden Archives, Limitless, pkmncards, Pokellector y las fichas de producto de TCGplayer, y **revisarlas a ojo**: dos de las que ofrecía Bulbapedia eran escaneos japoneses de la misma carta y se descartaron. La regla no cambia: solo se acepta una imagen si nombre, número y colección coinciden.
 
 ## Cómo se genera el catálogo
 
@@ -65,6 +67,8 @@ node scripts/rescate-imagenes.mjs # busca las que faltan en pokemontcg.io
 node scripts/rescate-bulbapedia.mjs # y las que siguen faltando, en Bulbagarden Archives
 # (las últimas se localizaron a mano en Limitless, pkmncards, Pokellector y TCGplayer: están en scripts/imagenes-rescatadas.json)
 python scripts/bajar-imagenes.py  # descarga las imágenes al repositorio
+python scripts/tcgcollector.py    # localiza la página de cada carta en TCG Collector
+python scripts/verificar-enlaces.py # abre cada enlace y comprueba que es esa carta
 ```
 
 Para añadir un Pokémon basta con una línea en `scripts/objetivos.json`.
@@ -94,7 +98,7 @@ node --test tests/dominio.test.js
 | `js/estado.js` | Un solo sitio donde cambian los datos, con aviso a las vistas |
 | `js/vistas/` | Una pantalla por fichero |
 | `scripts/` | El generador del catálogo |
-| `tests/` | 41 pruebas, incluida una que exige que ninguna carta se quede sin foto |
+| `tests/` | pruebas sobre el catálogo de verdad, incluidas una que exige que ninguna carta se quede sin foto y otra que ninguna enlace a Cardmarket |
 
 Licencia MIT: cópialo, cámbiale los Pokémon, publícalo.
 

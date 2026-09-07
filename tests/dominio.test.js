@@ -351,6 +351,39 @@ test('sin identificador, el enlace es una búsqueda y se dice', () => {
   assert.ok(!/[ ]/.test(e.tcgplayer.url), 'la URL lleva espacios sin codificar');
 });
 
+test('con identificador, el enlace de TCG Collector abre la página de esa carta', () => {
+  const con = CARTAS.find((c) => c.tc_id);
+  if (!con) return;   // aún no localizadas
+  const e = D.enlaces(con, SETS);
+  assert.strictEqual(e.tcgcollector.url, `https://www.tcgcollector.com/cards/${con.tc_id}/${con.tc_slug}`);
+  assert.strictEqual(e.tcgcollector.directo, true);
+});
+
+/* Una dirección de TCG Collector siempre empieza por el nombre de la
+   carta. Si no empieza por él es que apunta a otra carta, y eso es peor
+   que no tener enlace: mandaría a comprar la que no es. */
+test('todas las direcciones de TCG Collector empiezan por el nombre de su carta', () => {
+  // como escribe TCG Collector: «Sabrina's Gengar» → sabrinas-gengar
+  const flojo = (t) => D.normaliza(String(t)
+    .replace(/&/g, ' and ').replace(/[☆★]/g, ' star ').replace(/['_]/g, '')).replace(/ /g, '-');
+  for (const c of CARTAS) {
+    if (!c.tc_id) continue;
+    assert.ok(Number.isInteger(c.tc_id) && c.tc_id > 0, `${c.id}: id raro ${c.tc_id}`);
+    assert.ok(typeof c.tc_slug === 'string' && c.tc_slug.length > 3, `${c.id}: dirección vacía`);
+    assert.ok(c.tc_slug.startsWith(flojo(c.n) + '-'), `${c.id}: «${c.tc_slug}» no empieza por «${c.n}»`);
+  }
+});
+
+test('la mayoría de las cartas tiene enlace directo a TCG Collector', () => {
+  const directos = CARTAS.filter((c) => c.tc_id).length;
+  assert.ok(directos / CARTAS.length > 0.9, `solo ${directos} de ${CARTAS.length}`);
+});
+
+test('ninguna carta enlaza a Cardmarket', () => {
+  const e = D.enlaces(porId.get('base3-5'), SETS);
+  assert.ok(!JSON.stringify(e).includes('cardmarket.com'));
+});
+
 test('la mayoría de las cartas tiene enlace directo a TCGplayer', () => {
   const directos = CARTAS.filter((c) => c.tp_id).length;
   assert.ok(directos / CARTAS.length > 0.8, `solo ${directos} de ${CARTAS.length}`);

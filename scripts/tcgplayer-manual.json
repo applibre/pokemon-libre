@@ -1,0 +1,78 @@
+{
+ "_nota": "Cartas que el buscador de TCGplayer no da por nombre y número, porque allí la colección se llama de otra manera o sus productos no llevan número. Localizadas a mano, abriendo la ficha de producto y comprobando nombre, colección y fecha. 'nombre' y 'set' son lo que enseña SU ficha, para que scripts/verificar-enlaces.py confirme que sigue siendo esa.",
+ "mfb-1": {
+  "tp": 523985,
+  "nombre": "Bulbasaur",
+  "set": "My First Battle"
+ },
+ "mfb-2": {
+  "tp": 524007,
+  "nombre": "Ivysaur",
+  "set": "My First Battle"
+ },
+ "mfb-9": {
+  "tp": 524082,
+  "nombre": "Charmander",
+  "set": "My First Battle"
+ },
+ "mfb-10": {
+  "tp": 524085,
+  "nombre": "Charmeleon",
+  "set": "My First Battle"
+ },
+ "mfb-17": {
+  "tp": 524060,
+  "nombre": "Pikachu",
+  "set": "My First Battle"
+ },
+ "mfb-18": {
+  "tp": 524062,
+  "nombre": "Raichu",
+  "set": "My First Battle"
+ },
+ "mfb-25": {
+  "tp": 524047,
+  "nombre": "Squirtle",
+  "set": "My First Battle"
+ },
+ "mfb-26": {
+  "tp": 524048,
+  "nombre": "Wartortle",
+  "set": "My First Battle"
+ },
+ "cel25cc-CC001": {
+  "tp": 250319,
+  "nombre": "Blastoise",
+  "set": "Celebrations: Classic Collection"
+ },
+ "cel25cc-CC002": {
+  "tp": 250320,
+  "nombre": "Charizard",
+  "set": "Celebrations: Classic Collection"
+ },
+ "cel25cc-CC003": {
+  "tp": 250321,
+  "nombre": "Venusaur",
+  "set": "Celebrations: Classic Collection"
+ },
+ "cel25cc-CC008": {
+  "tp": 250325,
+  "nombre": "______'s Pikachu",
+  "set": "Celebrations: Classic Collection"
+ },
+ "xyp-XY202": {
+  "tp": 127434,
+  "nombre": "Pikachu - XY202 (Pokemon League)",
+  "set": "League & Championship Cards"
+ },
+ "dpp-DP45": {
+  "tp": 84202,
+  "nombre": "Charizard G LV.X - DP45",
+  "set": "Diamond and Pearl Promos"
+ },
+ "fut2020-1": {
+  "tp": 223761,
+  "nombre": "Pikachu on the Ball - 001/005 (Pokemon Futsal)",
+  "set": "Miscellaneous Cards & Products"
+ }
+}

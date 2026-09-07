@@ -147,6 +147,16 @@ async function main() {
   await mkdir(DATOS, { recursive: true });
 
   const objetivos = JSON.parse(await readFile(path.join(AQUI, 'objetivos.json'), 'utf8'));
+  const tcgcollector = JSON.parse(await readFile(path.join(AQUI, 'tcgcollector.json'), 'utf8').catch(() => '{}'));
+  const tcgplayerExtra = JSON.parse(await readFile(path.join(AQUI, 'tcgplayer.json'), 'utf8').catch(() => '{}'));
+  /* Las que ningún buscador da con nombre y número: localizadas a mano,
+     comprobadas abriendo su página, y con la última palabra sobre las
+     automáticas. */
+  const aMano = async (f) => Object.fromEntries(Object.entries(
+    JSON.parse(await readFile(path.join(AQUI, f), 'utf8').catch(() => '{}')))
+    .filter(([k]) => !k.startsWith('_')));
+  Object.assign(tcgcollector, await aMano('tcgcollector-manual.json'));
+  Object.assign(tcgplayerExtra, await aMano('tcgplayer-manual.json'));
   const pokemon = [
     ...objetivos.principales.map((p) => ({ ...p, principal: true })),
     ...objetivos.familias.map((p) => ({ ...p, principal: false })),
@@ -179,12 +189,12 @@ async function main() {
   )).filter(Boolean);
   console.log('\n');
 
-  const soloPokemon = fichas.filter((c) => c.category === 'Pokemon');
-  const descartadas = fichas.length - soloPokemon.length;
+  const cartasPokemon = fichas.filter((c) => c.category === 'Pokemon');
+  const descartadas = fichas.length - cartasPokemon.length;
   if (descartadas) console.log(`Descartados ${descartadas} Entrenadores/Energías con nombre de Pokémon\n`);
 
   /* 3 · los sets, con su fecha (la lista breve no la trae) */
-  const setsIds = [...new Set(soloPokemon.map((c) => c.set.id))].sort();
+  const setsIds = [...new Set(cartasPokemon.map((c) => c.set.id))].sort();
   process.stdout.write('Sets: ');
   const setsFichas = (await enTandas(setsIds, 5,
     (id) => conCache(`set-${id}`, () => pedir(`${API}/sets/${id}`)),
@@ -192,8 +202,19 @@ async function main() {
   )).filter(Boolean);
   console.log('\n');
 
+  /* Fuera las cartas de Pokémon TCG Pocket: son del juego de móvil, no
+     existen en cartón y no se pueden comprar ni coleccionar. Se mira la
+     serie de cada set y no su identificador, porque los nuevos (B1, B1a,
+     B2…) ya no empiezan por A y se colaban en el catálogo. */
+  const digitales = new Set(setsFichas.filter((s) => s.serie?.id === 'tcgp').map((s) => s.id));
+  const soloPokemon = cartasPokemon.filter((c) => !digitales.has(c.set.id));
+  if (digitales.size) {
+    console.log(`Fuera ${cartasPokemon.length - soloPokemon.length} cartas de Pokémon TCG Pocket`
+      + ` (${[...digitales].join(', ')}): son digitales\n`);
+  }
+
   const sets = {};
-  for (const s of setsFichas) {
+  for (const s of setsFichas.filter((s) => !digitales.has(s.id))) {
     sets[s.id] = {
       n: s.name,
       rel: s.releaseDate || '',
@@ -262,6 +283,11 @@ async function main() {
       .filter((v) => v && typeof v === 'object' && v.productId)
       .map((v) => v.productId);
     if (tpIds.length) ficha.tp_id = Math.min(...tpIds);
+    // y si TCGdex no lo trae (promos, kits, novedades), el que localizó
+    // scripts/tcgplayer.py en el buscador de la propia tienda
+    else if (tcgplayerExtra[c.id]) ficha.tp_id = tcgplayerExtra[c.id].tp;
+    // TCG Collector: localizado una vez por scripts/tcgcollector.py
+    if (tcgcollector[c.id]) { ficha.tc_id = tcgcollector[c.id].tc; ficha.tc_slug = tcgcollector[c.id].slug; }
     return ficha;
   }).sort((a, b) =>
     (sets[a.s]?.o ?? 9999) - (sets[b.s]?.o ?? 9999)
@@ -293,7 +319,7 @@ async function main() {
     (conRespaldo ? ` + ${conRespaldo} de respaldo` : '') +
     (sinImagen ? ` · ${sinImagen} SIN IMAGEN` : ' · ninguna sin imagen'));
   console.log(`Con precio      ${cartas.filter((c) => c.eur).length} en euros · ${cartas.filter((c) => c.usd).length} en dólares`);
-  console.log(`Enlace directo   Cardmarket ${cartas.filter((c) => c.cm_id).length} · TCGplayer ${cartas.filter((c) => c.tp_id).length}`);
+  console.log(`Enlace directo   TCGplayer ${cartas.filter((c) => c.tp_id).length} · TCG Collector ${cartas.filter((c) => c.tc_id).length}`);
   console.log(`catalogo.json   ${kb(json.length)}   versión ${hash}`);
   console.log('─'.repeat(52));
 

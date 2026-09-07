@@ -11,7 +11,7 @@ const Faltan = (() => {
   let elegido = null;   // null = todos
   let tope = 0;         // cuántas se están enseñando
 
-  /* Con «Todos» pueden faltar 876 cartas: pintarlas de golpe son más de
+  /* Con «Todos» pueden faltar 853 cartas: pintarlas de golpe son más de
      200 KB de HTML y el móvil se arrastra. Se enseñan por tandas. */
   const TANDA = 120;
 
@@ -47,7 +47,7 @@ const Faltan = (() => {
         <div class="resumen">
           <div class="gr">${faltan.length} <small>cartas</small></div>
           ${verPrecios && coste.eur ? `<p>Rondarían <b>${esc(Dominio.euros(coste.eur))}</b>
-            según Cardmarket · ${coste.conPrecio} de ${coste.cartas} tienen precio conocido</p>`
+            precio orientativo · ${coste.conPrecio} de ${coste.cartas} tienen precio conocido</p>`
             : '<p>Lo que te queda para completar</p>'}
         </div>
 

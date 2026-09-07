@@ -9,14 +9,14 @@
    El nombre del depósito sube en cada despliegue: así el navegador
    tira lo viejo en vez de servir una versión a medias. */
 
-const CACHE = 'pokemon-libre-2609070412';
-const IMAGENES = 'pokemon-libre-img-2609070412';  // el sello lo pone scripts/version.mjs
+const CACHE = 'pokemon-libre-2609070615';
+const IMAGENES = 'pokemon-libre-img-2609070615';  // el sello lo pone scripts/version.mjs
 
 const ARMAZON = [
-  './', 'index.html', 'css/style.css?v=2609070412',
-  'js/dominio.js?v=2609070412', 'js/almacen.js?v=2609070412', 'js/estado.js?v=2609070412', 'js/interfaz.js?v=2609070412',
-  'js/vistas/inicio.js?v=2609070412', 'js/vistas/cartas.js?v=2609070412', 'js/vistas/faltan.js?v=2609070412', 'js/vistas/ajustes.js?v=2609070412',
-  'js/app.js?v=2609070412', 'manifest.json', 'data/catalogo.json', 'data/manifiesto.json',
+  './', 'index.html', 'css/style.css?v=2609070615',
+  'js/dominio.js?v=2609070615', 'js/almacen.js?v=2609070615', 'js/estado.js?v=2609070615', 'js/interfaz.js?v=2609070615',
+  'js/vistas/inicio.js?v=2609070615', 'js/vistas/cartas.js?v=2609070615', 'js/vistas/faltan.js?v=2609070615', 'js/vistas/ajustes.js?v=2609070615',
+  'js/app.js?v=2609070615', 'manifest.json', 'data/catalogo.json', 'data/manifiesto.json',
   'icono-192.png', 'icono-512.png',
 ];
 

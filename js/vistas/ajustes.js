@@ -29,7 +29,7 @@ const Ajustes = (() => {
           <input type="checkbox" class="interruptor" id="ver-familias" ${d.ajustes.verFamilias ? 'checked' : ''}>
         </label>
         <label class="fila">
-          <span>Precios orientativos<small>Cardmarket y TCGplayer</small></span>
+          <span>Precios orientativos<small>Europa y EE. UU., del día que se generó el catálogo</small></span>
           <input type="checkbox" class="interruptor" id="ver-precios" ${d.ajustes.verPrecios ? 'checked' : ''}>
         </label>
       </div>

@@ -141,7 +141,7 @@ const Dominio = (() => {
   }
 
   /* ---------- búsqueda y filtros ----------
-     Un filtro lineal sobre 876 cartas tarda menos de un milisegundo:
+     Un filtro lineal sobre 853 cartas tarda menos de un milisegundo:
      no hace falta ninguna librería de búsqueda. */
 
   function filtrar(cartas, coleccion, filtros = {}) {
@@ -224,9 +224,12 @@ const Dominio = (() => {
   }
 
   /* ---------- enlaces a las tiendas ----------
-     Con identificador de producto, el enlace abre la página de ESA
-     carta, con su precio en tiempo real. Sin él, no queda otra que un
-     buscador con el nombre, la colección y el número — y se dice. */
+     Con identificador, el enlace abre la página de ESA carta con su
+     precio en tiempo real: TCGplayer (id de producto, lo da TCGdex) y
+     TCG Collector (localizado una vez por scripts/tcgcollector.py).
+     Sin él, un buscador con nombre, colección y número — y se dice.
+     Cardmarket se descartó: bloquea a los robots y no se pudo
+     verificar que su enlace por id lleve a la carta. */
 
   const enlaces = (carta, sets) => {
     const set = sets[carta.s];
@@ -236,9 +239,9 @@ const Dominio = (() => {
       tcgplayer: carta.tp_id
         ? { url: `https://www.tcgplayer.com/product/${carta.tp_id}`, directo: true, texto: 'Ver precio en TCGplayer' }
         : { url: `https://www.tcgplayer.com/search/pokemon/product?q=${q}`, directo: false, texto: 'Buscar en TCGplayer' },
-      cardmarket: carta.cm_id
-        ? { url: `https://www.cardmarket.com/en/Pokemon/Products/Search?searchString=${q}`, directo: false, texto: 'Buscar en Cardmarket', id: carta.cm_id }
-        : { url: `https://www.cardmarket.com/en/Pokemon/Products/Search?searchString=${q}`, directo: false, texto: 'Buscar en Cardmarket' },
+      tcgcollector: carta.tc_id
+        ? { url: `https://www.tcgcollector.com/cards/${carta.tc_id}/${carta.tc_slug}`, directo: true, texto: 'Ver en TCG Collector' }
+        : { url: `https://www.tcgcollector.com/cards/intl?cardSearch=${q}`, directo: false, texto: 'Buscar en TCG Collector' },
     };
   };
 

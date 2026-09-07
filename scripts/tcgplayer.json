@@ -1,0 +1,656 @@
+{
+ "mfb-1": {
+  "tp": 523985,
+  "nombre": "Bulbasaur",
+  "set": "My First Battle",
+  "num": ""
+ },
+ "mfb-2": {
+  "tp": 524007,
+  "nombre": "Ivysaur",
+  "set": "My First Battle",
+  "num": ""
+ },
+ "mfb-9": {
+  "tp": 524082,
+  "nombre": "Charmander",
+  "set": "My First Battle",
+  "num": ""
+ },
+ "mfb-10": {
+  "tp": 524085,
+  "nombre": "Charmeleon",
+  "set": "My First Battle",
+  "num": ""
+ },
+ "mfb-17": {
+  "tp": 524060,
+  "nombre": "Pikachu",
+  "set": "My First Battle",
+  "num": ""
+ },
+ "mfb-18": {
+  "tp": 524062,
+  "nombre": "Raichu",
+  "set": "My First Battle",
+  "num": ""
+ },
+ "mfb-25": {
+  "tp": 524047,
+  "nombre": "Squirtle",
+  "set": "My First Battle",
+  "num": ""
+ },
+ "mfb-26": {
+  "tp": 524048,
+  "nombre": "Wartortle",
+  "set": "My First Battle",
+  "num": ""
+ },
+ "cel25cc-CC001": {
+  "tp": 250319,
+  "nombre": "Blastoise",
+  "set": "Celebrations: Classic Collection",
+  "num": ""
+ },
+ "cel25cc-CC002": {
+  "tp": 250320,
+  "nombre": "Charizard",
+  "set": "Celebrations: Classic Collection",
+  "num": ""
+ },
+ "cel25cc-CC003": {
+  "tp": 250321,
+  "nombre": "Venusaur",
+  "set": "Celebrations: Classic Collection",
+  "num": ""
+ },
+ "cel25cc-CC008": {
+  "tp": 250325,
+  "nombre": "______'s Pikachu",
+  "set": "Celebrations: Classic Collection",
+  "num": ""
+ },
+ "xyp-XY202": {
+  "tp": 127434,
+  "nombre": "Pikachu - XY202 (Pokemon League)",
+  "set": "League & Championship Cards",
+  "num": ""
+ },
+ "dpp-DP45": {
+  "tp": 84202,
+  "nombre": "Charizard G LV.X - DP45",
+  "set": "Diamond and Pearl Promos",
+  "num": ""
+ },
+ "fut2020-1": {
+  "tp": 223761,
+  "nombre": "Pikachu on the Ball - 001/005 (Pokemon Futsal)",
+  "set": "Miscellaneous Cards & Products",
+  "num": ""
+ },
+ "basep-1": {
+  "tp": 121772,
+  "nombre": "Pikachu (1)",
+  "set": "WoTC Promo",
+  "num": "01/53"
+ },
+ "basep-4": {
+  "tp": 88066,
+  "nombre": "Pikachu (Movie Promo)",
+  "set": "WoTC Promo",
+  "num": "04/53"
+ },
+ "basep-13": {
+  "tp": 90311,
+  "nombre": "Venusaur",
+  "set": "WoTC Promo",
+  "num": "13/53"
+ },
+ "basep-24": {
+  "tp": 90784,
+  "nombre": "______'s Pikachu",
+  "set": "WoTC Promo",
+  "num": "24/53"
+ },
+ "basep-25": {
+  "tp": 85534,
+  "nombre": "Flying Pikachu",
+  "set": "WoTC Promo",
+  "num": "25/53"
+ },
+ "basep-26": {
+  "tp": 88068,
+  "nombre": "Pikachu (SNAP Promo)",
+  "set": "WoTC Promo",
+  "num": "26/53"
+ },
+ "basep-27": {
+  "tp": 88069,
+  "nombre": "Pikachu (27)",
+  "set": "WoTC Promo",
+  "num": "27/53"
+ },
+ "basep-28": {
+  "tp": 89643,
+  "nombre": "Surfing Pikachu",
+  "set": "WoTC Promo",
+  "num": "28/53"
+ },
+ "basep-35": {
+  "tp": 88014,
+  "nombre": "Pichu",
+  "set": "WoTC Promo",
+  "num": "35/53"
+ },
+ "basep-49": {
+  "tp": 89385,
+  "nombre": "Snorlax",
+  "set": "WoTC Promo",
+  "num": "49/53"
+ },
+ "ecard3-H09": {
+  "tp": 85668,
+  "nombre": "Gengar (H9)",
+  "set": "Skyridge",
+  "num": "H09/H32"
+ },
+ "ecard3-H25": {
+  "tp": 88502,
+  "nombre": "Raichu (H25)",
+  "set": "Skyridge",
+  "num": "H25/H32"
+ },
+ "ex12-93": {
+  "tp": 88107,
+  "nombre": "Pikachu (Delta Species)",
+  "set": "EX Legend Maker",
+  "num": "93/92"
+ },
+ "ex13-15": {
+  "tp": 88524,
+  "nombre": "Raichu (Delta Species)",
+  "set": "EX Holon Phantoms",
+  "num": "15/110"
+ },
+ "ex13-76": {
+  "tp": 88023,
+  "nombre": "Pichu (Delta Species)",
+  "set": "EX Holon Phantoms",
+  "num": "76/110"
+ },
+ "ex13-79": {
+  "tp": 88108,
+  "nombre": "Pikachu (Delta Species)",
+  "set": "EX Holon Phantoms",
+  "num": "79/110"
+ },
+ "ex13-104": {
+  "tp": 88111,
+  "nombre": "Pikachu Star",
+  "set": "EX Holon Phantoms",
+  "num": "104/110"
+ },
+ "ex14-2": {
+  "tp": 83899,
+  "nombre": "Blastoise (Delta Species)",
+  "set": "EX Crystal Guardians",
+  "num": "2/100"
+ },
+ "ex14-4": {
+  "tp": 84195,
+  "nombre": "Charizard (Delta Species)",
+  "set": "EX Crystal Guardians",
+  "num": "4/100"
+ },
+ "ex14-30": {
+  "tp": 84236,
+  "nombre": "Charmeleon (Delta Species)",
+  "set": "EX Crystal Guardians",
+  "num": "30/100"
+ },
+ "ex14-49": {
+  "tp": 84220,
+  "nombre": "Charmander (Delta Species)",
+  "set": "EX Crystal Guardians",
+  "num": "49/100"
+ },
+ "ex15-10": {
+  "tp": 89395,
+  "nombre": "Snorlax (Delta Species)",
+  "set": "EX Dragon Frontiers",
+  "num": "10/101"
+ },
+ "ex15-100": {
+  "tp": 84198,
+  "nombre": "Charizard Star (Delta Species)",
+  "set": "EX Dragon Frontiers",
+  "num": "100/101"
+ },
+ "dpp-DP16": {
+  "tp": 88089,
+  "nombre": "Pikachu - DP16",
+  "set": "Diamond and Pearl Promos",
+  "num": "DP16"
+ },
+ "dpp-DP21": {
+  "tp": 88512,
+  "nombre": "Raichu - DP21",
+  "set": "Diamond and Pearl Promos",
+  "num": "DP21"
+ },
+ "bwp-BW54": {
+  "tp": 202379,
+  "nombre": "Pikachu - BW54",
+  "set": "Black and White Promos",
+  "num": "BW54"
+ },
+ "xyp-XY17": {
+  "tp": 96379,
+  "nombre": "Charizard EX - XY17",
+  "set": "XY Promos",
+  "num": "XY17"
+ },
+ "xyp-XY28": {
+  "tp": 96391,
+  "nombre": "Venusaur EX - XY28",
+  "set": "XY Promos",
+  "num": "XY28"
+ },
+ "xyp-XY29": {
+  "tp": 96392,
+  "nombre": "Charizard EX - XY29",
+  "set": "XY Promos",
+  "num": "XY29"
+ },
+ "xyp-XY30": {
+  "tp": 96393,
+  "nombre": "Blastoise EX - XY30",
+  "set": "XY Promos",
+  "num": "XY30"
+ },
+ "xyp-XY84": {
+  "tp": 108614,
+  "nombre": "Pikachu EX - XY84",
+  "set": "XY Promos",
+  "num": "XY84"
+ },
+ "xyp-XY89": {
+  "tp": 108619,
+  "nombre": "Pikachu (Collector Chest)",
+  "set": "XY Promos",
+  "num": "XY89"
+ },
+ "xyp-XY95": {
+  "tp": 114004,
+  "nombre": "Pikachu",
+  "set": "XY Promos",
+  "num": "XY95"
+ },
+ "xyp-XY122": {
+  "tp": 118862,
+  "nombre": "Blastoise EX - XY122",
+  "set": "XY Promos",
+  "num": "XY122"
+ },
+ "xyp-XY123": {
+  "tp": 120701,
+  "nombre": "Venusaur EX - XY123",
+  "set": "XY Promos",
+  "num": "XY123"
+ },
+ "xyp-XY124": {
+  "tp": 123436,
+  "nombre": "Pikachu EX - XY124",
+  "set": "XY Promos",
+  "num": "XY124"
+ },
+ "xyp-XY132": {
+  "tp": 118873,
+  "nombre": "Gastly",
+  "set": "XY Promos",
+  "num": "XY132"
+ },
+ "xyp-XY166": {
+  "tp": 125253,
+  "nombre": "M Gengar EX",
+  "set": "XY Promos",
+  "num": "XY166"
+ },
+ "xyp-XY174": {
+  "tp": 123454,
+  "nombre": "Pikachu EX - XY174",
+  "set": "XY Promos",
+  "num": "XY174"
+ },
+ "xyp-XY179": {
+  "tp": 126028,
+  "nombre": "Snorlax - XY179",
+  "set": "XY Promos",
+  "num": "XY179"
+ },
+ "bw11-RC7": {
+  "tp": 88105,
+  "nombre": "Pikachu",
+  "set": "Legendary Treasures: Radiant Collection",
+  "num": "RC7/RC25"
+ },
+ "g1-RC3": {
+  "tp": 113744,
+  "nombre": "Charmander",
+  "set": "Generations: Radiant Collection",
+  "num": "RC3/RC32"
+ },
+ "g1-RC4": {
+  "tp": 113745,
+  "nombre": "Charmeleon",
+  "set": "Generations: Radiant Collection",
+  "num": "RC4/RC32"
+ },
+ "g1-RC5": {
+  "tp": 113746,
+  "nombre": "Charizard",
+  "set": "Generations: Radiant Collection",
+  "num": "RC5/RC32"
+ },
+ "g1-RC9": {
+  "tp": 113751,
+  "nombre": "Raichu",
+  "set": "Generations: Radiant Collection",
+  "num": "RC9/RC32"
+ },
+ "g1-RC29": {
+  "tp": 113771,
+  "nombre": "Pikachu (Full Art)",
+  "set": "Generations: Radiant Collection",
+  "num": "RC29/RC32"
+ },
+ "sma-SV6": {
+  "tp": 197744,
+  "nombre": "Charmander",
+  "set": "Hidden Fates: Shiny Vault",
+  "num": "SV6/SV94"
+ },
+ "sma-SV7": {
+  "tp": 197745,
+  "nombre": "Charmeleon",
+  "set": "Hidden Fates: Shiny Vault",
+  "num": "SV7/SV94"
+ },
+ "sma-SV49": {
+  "tp": 197780,
+  "nombre": "Charizard GX",
+  "set": "Hidden Fates: Shiny Vault",
+  "num": "SV49/SV94"
+ },
+ "2021swsh-1": {
+  "tp": 232316,
+  "nombre": "Bulbasaur - 1/25",
+  "set": "McDonald's 25th Anniversary Promos",
+  "num": "001/025"
+ },
+ "2021swsh-9": {
+  "tp": 232324,
+  "nombre": "Charmander - 9/25",
+  "set": "McDonald's 25th Anniversary Promos",
+  "num": "009/025"
+ },
+ "2021swsh-17": {
+  "tp": 232331,
+  "nombre": "Squirtle - 17/25",
+  "set": "McDonald's 25th Anniversary Promos",
+  "num": "017/025"
+ },
+ "2021swsh-25": {
+  "tp": 232339,
+  "nombre": "Pikachu - 25/25",
+  "set": "McDonald's 25th Anniversary Promos",
+  "num": "025/025"
+ },
+ "swsh4.5sv-SV107": {
+  "tp": 232496,
+  "nombre": "Charizard VMAX",
+  "set": "Shining Fates: Shiny Vault",
+  "num": "SV107/SV122"
+ },
+ "2022swsh-7": {
+  "tp": 282523,
+  "nombre": "Pikachu - 7/15",
+  "set": "McDonald's Promos 2022",
+  "num": "007/015"
+ },
+ "swsh11tg-TG03": {
+  "tp": 284251,
+  "nombre": "Charizard",
+  "set": "SWSH11: Lost Origin Trainer Gallery",
+  "num": "TG03/TG30"
+ },
+ "swsh11tg-TG05": {
+  "tp": 284258,
+  "nombre": "Pikachu",
+  "set": "SWSH11: Lost Origin Trainer Gallery",
+  "num": "TG05/TG30"
+ },
+ "swsh11tg-TG06": {
+  "tp": 284266,
+  "nombre": "Gengar",
+  "set": "SWSH11: Lost Origin Trainer Gallery",
+  "num": "TG06/TG30"
+ },
+ "swsh11tg-TG10": {
+  "tp": 284270,
+  "nombre": "Snorlax",
+  "set": "SWSH11: Lost Origin Trainer Gallery",
+  "num": "TG10/TG30"
+ },
+ "swsh11tg-TG16": {
+  "tp": 284278,
+  "nombre": "Pikachu V",
+  "set": "SWSH11: Lost Origin Trainer Gallery",
+  "num": "TG16/TG30"
+ },
+ "swsh11tg-TG17": {
+  "tp": 284283,
+  "nombre": "Pikachu VMAX",
+  "set": "SWSH11: Lost Origin Trainer Gallery",
+  "num": "TG17/TG30"
+ },
+ "swsh11tg-TG29": {
+  "tp": 284302,
+  "nombre": "Pikachu VMAX (Secret)",
+  "set": "SWSH11: Lost Origin Trainer Gallery",
+  "num": "TG29/TG30"
+ },
+ "swsh12.5gg-GG30": {
+  "tp": 478058,
+  "nombre": "Pikachu",
+  "set": "SWSH: Crown Zenith: Galarian Gallery",
+  "num": "GG30/GG70"
+ },
+ "svp-027": {
+  "tp": 500263,
+  "nombre": "Pikachu - 027",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "027"
+ },
+ "svp-044": {
+  "tp": 512035,
+  "nombre": "Charmander - 044",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "044"
+ },
+ "svp-046": {
+  "tp": 517271,
+  "nombre": "Bulbasaur - 046 (Cosmos Holo)",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "046"
+ },
+ "svp-047": {
+  "tp": 517272,
+  "nombre": "Charmander - 047 (Cosmos Holo)",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "047"
+ },
+ "svp-048": {
+  "tp": 517273,
+  "nombre": "Squirtle - 048 (Cosmos Holo)",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "048"
+ },
+ "svp-051": {
+  "tp": 517175,
+  "nombre": "Snorlax - 051",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "051"
+ },
+ "svp-056": {
+  "tp": 521697,
+  "nombre": "Charizard ex - 056",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "056"
+ },
+ "svp-074": {
+  "tp": 538687,
+  "nombre": "Charizard ex - 074",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "074"
+ },
+ "svp-085": {
+  "tp": 518861,
+  "nombre": "Pikachu with Grey Felt Hat",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "085"
+ },
+ "svp-088": {
+  "tp": 542481,
+  "nombre": "Pikachu - 088",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "088"
+ },
+ "svp-101": {
+  "tp": 528365,
+  "nombre": "Pikachu - 101",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "101"
+ },
+ "svp-122": {
+  "tp": 554297,
+  "nombre": "Snorlax - 122",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "122"
+ },
+ "svp-161": {
+  "tp": 586831,
+  "nombre": "Charizard ex - 161",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "161"
+ },
+ "svp-184": {
+  "tp": 623238,
+  "nombre": "Hop's Snorlax - 184 (Prerelease)",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "184"
+ },
+ "svp-190": {
+  "tp": 562088,
+  "nombre": "Pikachu - 190",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "190"
+ },
+ "svp-196": {
+  "tp": 641610,
+  "nombre": "Charizard ex -196",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "196"
+ },
+ "svp-214": {
+  "tp": 620106,
+  "nombre": "Pikachu - 214 (Illustration Contest 2024)",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "214"
+ },
+ "svp-225": {
+  "tp": 648631,
+  "nombre": "Pikachu - 225 (World Championship 2025)",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "225"
+ },
+ "2023sv-6": {
+  "tp": 516517,
+  "nombre": "Pikachu",
+  "set": "McDonald's Promos 2023",
+  "num": "006/015"
+ },
+ "2024sv-1": {
+  "tp": 614370,
+  "nombre": "Charizard",
+  "set": "McDonald's Promos 2024",
+  "num": "001/015"
+ },
+ "2024sv-2": {
+  "tp": 614371,
+  "nombre": "Pikachu",
+  "set": "McDonald's Promos 2024",
+  "num": "002/015"
+ },
+ "mep-013": {
+  "tp": 666905,
+  "nombre": "Mega Venusaur ex - 013",
+  "set": "ME: Mega Evolution Promo",
+  "num": "013"
+ },
+ "mep-023": {
+  "tp": 659612,
+  "nombre": "Mega Charizard X ex - 023",
+  "set": "ME: Mega Evolution Promo",
+  "num": "023"
+ },
+ "mep-027": {
+  "tp": 659232,
+  "nombre": "Haunter  - 027",
+  "set": "ME: Mega Evolution Promo",
+  "num": "027"
+ },
+ "mep-029": {
+  "tp": 680639,
+  "nombre": "Mega Charizard X ex - 029",
+  "set": "ME: Mega Evolution Promo",
+  "num": "029"
+ },
+ "mep-030": {
+  "tp": 680640,
+  "nombre": "Mega Charizard Y ex - 030",
+  "set": "ME: Mega Evolution Promo",
+  "num": "030"
+ },
+ "mep-037": {
+  "tp": 684461,
+  "nombre": "Bulbasaur - 037",
+  "set": "ME: Mega Evolution Promo",
+  "num": "037"
+ },
+ "mep-038": {
+  "tp": 684462,
+  "nombre": "Charmander - 038",
+  "set": "ME: Mega Evolution Promo",
+  "num": "038"
+ },
+ "mep-039": {
+  "tp": 684463,
+  "nombre": "Squirtle - 039",
+  "set": "ME: Mega Evolution Promo",
+  "num": "039"
+ },
+ "mep-073": {
+  "tp": 696608,
+  "nombre": "Mega Gengar ex - 073",
+  "set": "ME: Mega Evolution Promo",
+  "num": "073"
+ },
+ "mep-079": {
+  "tp": 694693,
+  "nombre": "Charmeleon - 079 (Cosmos Holo)",
+  "set": "ME: Mega Evolution Promo",
+  "num": "079"
+ }
+}
