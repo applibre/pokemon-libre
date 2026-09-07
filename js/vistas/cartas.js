@@ -77,6 +77,7 @@ const Cartas = (() => {
       : `<div class="rejilla">${Dominio.ordenar(lista).map(cartaHTML).join('')}</div>`;
 
     engancharCartas(cuerpo);
+    prepararImagenes(cuerpo);
   }
 
   function pintarFiltros(todas, col) {
@@ -113,10 +114,32 @@ const Cartas = (() => {
     return `<button class="carta ${tengo ? 'tengo' : 'falta'}" data-c="${esc(c.id)}"
       aria-label="${esc(c.n)}, ${esc(sets[c.s] ? sets[c.s].n : c.s)}, ${esc(Dominio.numeroCompleto(c, sets))}${tengo ? ', la tienes' : ', te falta'}"
       aria-pressed="${tengo}">
-      <img src="data/cartas/${esc(c.id)}.webp" alt="" loading="lazy" decoding="async" width="245" height="337">
+      <img data-src="data/cartas/${esc(c.id)}.webp" alt="" decoding="async" width="245" height="337">
       <span class="tic">✓</span>
       ${n > 1 ? `<span class="cant">×${n}</span>` : ''}
     </button>`;
+  }
+
+  /* ---------- carga diferida de las imágenes ----------
+     El loading="lazy" del navegador no llega a pedir las imágenes
+     cuando la tarjeta lleva content-visibility: auto — comprobado en
+     la app publicada, donde salían todas en blanco. Así que la carga
+     se lleva a mano: se piden cuando faltan 500 px para que asomen. */
+
+  let vigia = null;
+
+  function prepararImagenes(cuerpo) {
+    if (vigia) vigia.disconnect();
+    vigia = new IntersectionObserver((entradas) => {
+      for (const e of entradas) {
+        if (!e.isIntersecting) continue;
+        const img = e.target;
+        if (img.dataset.src) { img.src = img.dataset.src; delete img.dataset.src; }
+        vigia.unobserve(img);
+      }
+    }, { root: cuerpo, rootMargin: '500px 0px' });
+
+    cuerpo.querySelectorAll('img[data-src]').forEach((i) => vigia.observe(i));
   }
 
   /* Un toque marca; mantener pulsado abre la ficha. Así se puede
