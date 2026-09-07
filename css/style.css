@@ -232,10 +232,11 @@ button { font: inherit; color: inherit; cursor: pointer; }
   border: 0; padding: 0; background: none;
   position: relative; display: block;
   border-radius: var(--r-sm); overflow: hidden;
-  /* content-visibility deja fuera del cálculo lo que no se ve:
-     con 900 cartas es la diferencia entre fluido y a tirones */
-  content-visibility: auto;
-  contain-intrinsic-size: auto 165px;
+  /* Aquí NO va content-visibility: auto. Aplaza la descarga de todo lo
+     que hay dentro, así que las imágenes no llegaban a pedirse nunca y
+     la rejilla salía en blanco (comprobado en la app publicada).
+     De no pedir lo que no se ve ya se encarga el observador de
+     js/vistas/cartas.js, que además es predecible. */
 }
 .carta img {
   display: block; width: 100%;

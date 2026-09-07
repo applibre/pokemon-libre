@@ -9,7 +9,7 @@
    El nombre del depósito sube en cada despliegue: así el navegador
    tira lo viejo en vez de servir una versión a medias. */
 
-const CACHE = 'pokemon-libre-v2';
+const CACHE = 'pokemon-libre-v3';
 const IMAGENES = 'pokemon-libre-img-v1';
 
 const ARMAZON = [
