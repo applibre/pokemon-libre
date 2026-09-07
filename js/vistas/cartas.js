@@ -200,8 +200,8 @@ const Cartas = (() => {
           Precio orientativo del ${esc(Estado.man().preciosDe || Estado.man().generado)}. Cambia a diario.</p>` : ''}
 
         <div class="botones">
-          <a class="btn" href="${enlaces.cardmarket}" target="_blank" rel="noopener">Buscar en Cardmarket</a>
-          <a class="btn" href="${enlaces.tcgplayer}" target="_blank" rel="noopener">TCGplayer</a>
+          <a class="btn" href="${enlaces.cardmarket}" target="_blank" rel="noopener">Ver en Cardmarket</a>
+          <a class="btn" href="${enlaces.tcgplayer}" target="_blank" rel="noopener">Ver en TCGplayer</a>
         </div>`,
       listo(cuerpo) { pintarVariantes(cuerpo, c); },
     });

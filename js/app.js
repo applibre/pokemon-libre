@@ -39,11 +39,18 @@ const App = (() => {
     ir('inicio');
   }
 
+  /* Entrar en un Pokémon añade una entrada al historial: así el botón
+     «atrás» del móvil vuelve al inicio en vez de salir de la app, que es
+     lo que hacía antes y lo que hace sentir rota a una web instalada.
+     Cambiar entre inicio, faltan y ajustes solo sustituye la entrada. */
   const marcarDireccion = (d) => {
-    const nueva = d && d !== 'inicio' ? `#${d}` : ' ';
-    if (location.hash.replace(/^#/, '') !== (d === 'inicio' ? '' : d)) {
-      history.replaceState(null, '', nueva === ' ' ? location.pathname : nueva);
-    }
+    const actualHash = location.hash.replace(/^#/, '');
+    const objetivo = d === 'inicio' ? '' : d;
+    if (actualHash === objetivo) return;
+    const url = objetivo ? `#${objetivo}` : location.pathname + location.search;
+    const profundiza = objetivo && !['faltan', 'ajustes'].includes(objetivo);
+    if (profundiza) history.pushState(null, '', url);
+    else history.replaceState(null, '', url);
   };
 
   function aplicarTema() {
@@ -61,6 +68,12 @@ const App = (() => {
   }
 
   async function iniciar() {
+    /* ?tema=claro|oscuro|auto en la dirección fija el tema. Sirve para
+       compartir un enlace con un aspecto concreto y para probarlo. */
+    const temaPedido = new URLSearchParams(location.search).get('tema');
+    if (['claro', 'oscuro', 'auto'].includes(temaPedido)) {
+      Estado.cambiar((d) => { d.ajustes.tema = temaPedido; });
+    }
     aplicarTema();
 
     try {

@@ -90,7 +90,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-button { font: inherit; color: inherit; cursor: pointer; }
+button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulation; }
 .oculto { display: none !important; }
 :focus-visible { outline: 2px solid var(--violeta); outline-offset: 2px; }
 
@@ -232,6 +232,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
   border: 0; padding: 0; background: none;
   position: relative; display: block;
   border-radius: var(--r-sm); overflow: hidden;
+  /* marcar un fajo deprisa: sin retardo de doble toque, sin que el
+     toque largo seleccione texto ni saque el menú de guardar imagen */
+  touch-action: manipulation;
+  user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;
   /* Aquí NO va content-visibility: auto. Aplaza la descarga de todo lo
      que hay dentro, así que las imágenes no llegaban a pedirse nunca y
      la rejilla salía en blanco (comprobado en la app publicada).
@@ -288,8 +292,13 @@ button { font: inherit; color: inherit; cursor: pointer; }
   height: 22px; width: auto; max-width: 74px; object-fit: contain;
   flex: 0 0 auto; align-self: center;
 }
-:root[data-tema="oscuro"] .set-logo,
-:root:not([data-tema="claro"]) .set-logo { filter: brightness(1.35) contrast(1.05); }
+/* Sobre fondo oscuro los logos, pensados para papel blanco, se apagan:
+   se aclaran un poco. Solo en oscuro de verdad — en automático con el
+   sistema en claro este filtro los lavaba. */
+:root[data-tema="oscuro"] .set-logo { filter: brightness(1.35) contrast(1.05); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema="claro"]) .set-logo { filter: brightness(1.35) contrast(1.05); }
+}
 .set-cab span { font-family: var(--fm); font-size: 11.5px; color: var(--tx3); white-space: nowrap; }
 
 .vacio { text-align: center; color: var(--tx3); font-size: 14px; padding: 40px 20px; }
@@ -326,6 +335,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   border: 1px solid var(--line2); border-radius: var(--r-md);
   background: var(--surface); font-size: 15px; font-weight: 600;
 }
+a.btn { text-decoration: none; color: inherit; }
 .btn.principal { background: var(--tx); color: var(--paper); border-color: var(--tx); }
 .btn.peligro { color: var(--mal); border-color: var(--mal); }
 .btn + .btn { margin-top: 8px; }
