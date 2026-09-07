@@ -9,14 +9,14 @@
    El nombre del depósito sube en cada despliegue: así el navegador
    tira lo viejo en vez de servir una versión a medias. */
 
-const CACHE = 'pokemon-libre-v4';
+const CACHE = 'pokemon-libre-2609070308';
 const IMAGENES = 'pokemon-libre-img-v1';
 
 const ARMAZON = [
-  './', 'index.html', 'css/style.css',
-  'js/dominio.js', 'js/almacen.js', 'js/estado.js', 'js/interfaz.js',
-  'js/vistas/inicio.js', 'js/vistas/cartas.js', 'js/vistas/faltan.js', 'js/vistas/ajustes.js',
-  'js/app.js', 'manifest.json', 'data/catalogo.json', 'data/manifiesto.json',
+  './', 'index.html', 'css/style.css?v=2609070308',
+  'js/dominio.js?v=2609070308', 'js/almacen.js?v=2609070308', 'js/estado.js?v=2609070308', 'js/interfaz.js?v=2609070308',
+  'js/vistas/inicio.js?v=2609070308', 'js/vistas/cartas.js?v=2609070308', 'js/vistas/faltan.js?v=2609070308', 'js/vistas/ajustes.js?v=2609070308',
+  'js/app.js?v=2609070308', 'manifest.json', 'data/catalogo.json', 'data/manifiesto.json',
   'icono-192.png', 'icono-512.png',
 ];
 
