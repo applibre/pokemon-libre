@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#EEF0F4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#100F1C" media="(prefers-color-scheme: dark)">
+<meta name="description" content="Todas las cartas de tus Pokémon, de todos los sets. Marca las que tienes y descubre las que te faltan. Sin cuenta y sin anuncios.">
+<title>Pokémon Libre · tu colección de cartas</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icono-192.png">
+<link rel="apple-touch-icon" href="icono-192.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ CARGANDO ============ -->
+<div id="cargando" class="cargando">
+  <div class="pulso"></div>
+  <p>Abriendo el álbum…</p>
+</div>
+
+<!-- ============ INICIO: tus Pokémon ============ -->
+<section id="p-inicio" class="pantalla" aria-label="Tus Pokémon">
+  <header class="barra">
+    <h1 class="titulo">Mi colección</h1>
+    <button class="icono" id="ir-ajustes" aria-label="Ajustes">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v2.6M12 18.9v2.6M21.5 12h-2.6M5.1 12H2.5M18.7 5.3l-1.8 1.8M7.1 16.9l-1.8 1.8M18.7 18.7l-1.8-1.8M7.1 7.1L5.3 5.3"/></svg>
+    </button>
+  </header>
+  <div class="cuerpo" id="inicio-cuerpo"></div>
+</section>
+
+<!-- ============ CARTAS de un Pokémon ============ -->
+<section id="p-cartas" class="pantalla" aria-label="Cartas">
+  <header class="barra">
+    <button class="icono" id="volver" aria-label="Volver">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <div class="barra-medio">
+      <h1 class="titulo" id="cartas-titulo"></h1>
+      <p class="subtitulo" id="cartas-sub"></p>
+    </div>
+    <button class="icono" id="buscar-abrir" aria-label="Buscar">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+    </button>
+  </header>
+
+  <div class="buscador oculto" id="buscador">
+    <input type="search" id="buscar" placeholder="Nombre, set o número…" autocomplete="off" enterkeyhint="search">
+    <button class="icono" id="buscar-cerrar" aria-label="Cerrar la búsqueda">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+
+  <div class="filtros" id="filtros"></div>
+  <div class="cuerpo" id="cartas-cuerpo"></div>
+</section>
+
+<!-- ============ ME FALTAN ============ -->
+<section id="p-faltan" class="pantalla" aria-label="Lo que me falta">
+  <header class="barra"><h1 class="titulo">Me faltan</h1></header>
+  <div class="cuerpo" id="faltan-cuerpo"></div>
+</section>
+
+<!-- ============ AJUSTES ============ -->
+<section id="p-ajustes" class="pantalla" aria-label="Ajustes">
+  <header class="barra">
+    <button class="icono" id="ajustes-volver" aria-label="Volver">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <h1 class="titulo">Ajustes</h1>
+  </header>
+  <div class="cuerpo" id="ajustes-cuerpo"></div>
+</section>
+
+<!-- ============ NAVEGACIÓN ============ -->
+<nav class="nav" id="nav" aria-label="Secciones">
+  <button data-ir="inicio" class="viva" aria-current="page">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="7" height="16" rx="1.6"/><rect x="13.5" y="4" width="7" height="16" rx="1.6"/></svg>
+    <span>Colección</span>
+  </button>
+  <button data-ir="faltan">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h9"/><circle cx="19" cy="18" r="2.5"/></svg>
+    <span>Me faltan</span>
+  </button>
+</nav>
+
+<!-- ============ FICHA DE CARTA ============ -->
+<div class="velo" id="velo"></div>
+<div class="hoja" id="hoja" role="dialog" aria-modal="true" aria-labelledby="hoja-titulo">
+  <div class="asa" aria-hidden="true"></div>
+  <h2 id="hoja-titulo"></h2>
+  <p id="hoja-sub" class="hoja-sub oculto"></p>
+  <div id="hoja-cuerpo"></div>
+</div>
+
+<div class="tosti" id="tosti" role="status" aria-live="polite"></div>
+
+<script src="js/dominio.js"></script>
+<script src="js/almacen.js"></script>
+<script src="js/estado.js"></script>
+<script src="js/interfaz.js"></script>
+<script src="js/vistas/inicio.js"></script>
+<script src="js/vistas/cartas.js"></script>
+<script src="js/vistas/faltan.js"></script>
+<script src="js/vistas/ajustes.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

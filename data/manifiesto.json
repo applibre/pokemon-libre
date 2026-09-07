@@ -1,0 +1,151 @@
+{
+ "version": "c7d478867ec9",
+ "generado": "2026-09-07",
+ "preciosDe": "2026-09-07",
+ "cartas": 876,
+ "sets": 139,
+ "pokemon": [
+  {
+   "dex": 25,
+   "id": "pikachu",
+   "nombre": "Pikachu",
+   "tipo": "electrico",
+   "principal": true
+  },
+  {
+   "dex": 94,
+   "id": "gengar",
+   "nombre": "Gengar",
+   "tipo": "fantasma",
+   "principal": true
+  },
+  {
+   "dex": 143,
+   "id": "snorlax",
+   "nombre": "Snorlax",
+   "tipo": "normal",
+   "principal": true
+  },
+  {
+   "dex": 4,
+   "id": "charmander",
+   "nombre": "Charmander",
+   "tipo": "fuego",
+   "linea": "charmander",
+   "orden": 1,
+   "principal": true
+  },
+  {
+   "dex": 5,
+   "id": "charmeleon",
+   "nombre": "Charmeleon",
+   "tipo": "fuego",
+   "linea": "charmander",
+   "orden": 2,
+   "principal": true
+  },
+  {
+   "dex": 6,
+   "id": "charizard",
+   "nombre": "Charizard",
+   "tipo": "fuego",
+   "linea": "charmander",
+   "orden": 3,
+   "principal": true
+  },
+  {
+   "dex": 1,
+   "id": "bulbasaur",
+   "nombre": "Bulbasaur",
+   "tipo": "planta",
+   "linea": "bulbasaur",
+   "orden": 1,
+   "principal": true
+  },
+  {
+   "dex": 2,
+   "id": "ivysaur",
+   "nombre": "Ivysaur",
+   "tipo": "planta",
+   "linea": "bulbasaur",
+   "orden": 2,
+   "principal": true
+  },
+  {
+   "dex": 3,
+   "id": "venusaur",
+   "nombre": "Venusaur",
+   "tipo": "planta",
+   "linea": "bulbasaur",
+   "orden": 3,
+   "principal": true
+  },
+  {
+   "dex": 7,
+   "id": "squirtle",
+   "nombre": "Squirtle",
+   "tipo": "agua",
+   "linea": "squirtle",
+   "orden": 1,
+   "principal": true
+  },
+  {
+   "dex": 8,
+   "id": "wartortle",
+   "nombre": "Wartortle",
+   "tipo": "agua",
+   "linea": "squirtle",
+   "orden": 2,
+   "principal": true
+  },
+  {
+   "dex": 9,
+   "id": "blastoise",
+   "nombre": "Blastoise",
+   "tipo": "agua",
+   "linea": "squirtle",
+   "orden": 3,
+   "principal": true
+  },
+  {
+   "dex": 92,
+   "id": "gastly",
+   "nombre": "Gastly",
+   "tipo": "fantasma",
+   "de": "gengar",
+   "principal": false
+  },
+  {
+   "dex": 93,
+   "id": "haunter",
+   "nombre": "Haunter",
+   "tipo": "fantasma",
+   "de": "gengar",
+   "principal": false
+  },
+  {
+   "dex": 172,
+   "id": "pichu",
+   "nombre": "Pichu",
+   "tipo": "electrico",
+   "de": "pikachu",
+   "principal": false
+  },
+  {
+   "dex": 26,
+   "id": "raichu",
+   "nombre": "Raichu",
+   "tipo": "electrico",
+   "de": "pikachu",
+   "principal": false
+  },
+  {
+   "dex": 446,
+   "id": "munchlax",
+   "nombre": "Munchlax",
+   "tipo": "normal",
+   "de": "snorlax",
+   "principal": false
+  }
+ ]
+}

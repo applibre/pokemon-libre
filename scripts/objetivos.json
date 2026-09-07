@@ -1,0 +1,30 @@
+{
+  "_comentario": "Los Pokémon que se coleccionan. Se reúnen por número de Pokédex, no por nombre: así entran las cartas compartidas (Reshiram & Charizard GX) y las que solo llevan al Pokémon en la ilustración, y se quedan fuera los Entrenadores que llevan el nombre (Gengar Spirit Link). Para añadir un Pokémon basta con una línea más.",
+
+  "principales": [
+    { "dex": 25,  "id": "pikachu",    "nombre": "Pikachu",    "tipo": "electrico" },
+    { "dex": 94,  "id": "gengar",     "nombre": "Gengar",     "tipo": "fantasma" },
+    { "dex": 143, "id": "snorlax",    "nombre": "Snorlax",    "tipo": "normal" },
+
+    { "dex": 4,   "id": "charmander", "nombre": "Charmander", "tipo": "fuego",   "linea": "charmander", "orden": 1 },
+    { "dex": 5,   "id": "charmeleon", "nombre": "Charmeleon", "tipo": "fuego",   "linea": "charmander", "orden": 2 },
+    { "dex": 6,   "id": "charizard",  "nombre": "Charizard",  "tipo": "fuego",   "linea": "charmander", "orden": 3 },
+
+    { "dex": 1,   "id": "bulbasaur",  "nombre": "Bulbasaur",  "tipo": "planta",  "linea": "bulbasaur",  "orden": 1 },
+    { "dex": 2,   "id": "ivysaur",    "nombre": "Ivysaur",    "tipo": "planta",  "linea": "bulbasaur",  "orden": 2 },
+    { "dex": 3,   "id": "venusaur",   "nombre": "Venusaur",   "tipo": "planta",  "linea": "bulbasaur",  "orden": 3 },
+
+    { "dex": 7,   "id": "squirtle",   "nombre": "Squirtle",   "tipo": "agua",    "linea": "squirtle",   "orden": 1 },
+    { "dex": 8,   "id": "wartortle",  "nombre": "Wartortle",  "tipo": "agua",    "linea": "squirtle",   "orden": 2 },
+    { "dex": 9,   "id": "blastoise",  "nombre": "Blastoise",  "tipo": "agua",    "linea": "squirtle",   "orden": 3 }
+  ],
+
+  "_familias": "Preevoluciones que Arturo no pidió. Se generan igual en el catálogo pero llegan apagadas: se encienden con un interruptor en Ajustes, sin volver a generar nada.",
+  "familias": [
+    { "dex": 92,  "id": "gastly",   "nombre": "Gastly",   "tipo": "fantasma",  "de": "gengar" },
+    { "dex": 93,  "id": "haunter",  "nombre": "Haunter",  "tipo": "fantasma",  "de": "gengar" },
+    { "dex": 172, "id": "pichu",    "nombre": "Pichu",    "tipo": "electrico", "de": "pikachu" },
+    { "dex": 26,  "id": "raichu",   "nombre": "Raichu",   "tipo": "electrico", "de": "pikachu" },
+    { "dex": 446, "id": "munchlax", "nombre": "Munchlax", "tipo": "normal",    "de": "snorlax" }
+  ]
+}

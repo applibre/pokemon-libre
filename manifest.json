@@ -1,0 +1,43 @@
+{
+  "name": "Pokémon Libre · tu colección de cartas",
+  "short_name": "Pokémon Libre",
+  "description": "Todas las cartas de tus Pokémon, de todos los sets. Marca las que tienes y descubre las que te faltan. Sin cuenta y sin anuncios.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#EEF0F4",
+  "theme_color": "#EEF0F4",
+  "lang": "es",
+  "dir": "ltr",
+  "categories": [
+    "utilities",
+    "lifestyle"
+  ],
+  "icons": [
+    {
+      "src": "icono-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icono-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icono-mask-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icono-mask-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
