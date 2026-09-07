@@ -19,11 +19,12 @@ import { fileURLToPath } from 'node:url';
 const AQUI = path.dirname(fileURLToPath(import.meta.url));
 const RAIZ = path.join(AQUI, '..');
 const API = 'https://bulbapedia.bulbagarden.net/w/api.php';
+const ARCHIVES = 'https://archives.bulbagarden.net/w/api.php';
 
 const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function api(params) {
-  const u = `${API}?${new URLSearchParams({ ...params, format: 'json' })}`;
+async function api(params, base = API) {
+  const u = `${base}?${new URLSearchParams({ ...params, format: 'json' })}`;
   const r = await fetch(u, {
     headers: { 'User-Agent': 'PokemonLibre/1.0 (coleccion personal; applibre)' },
     signal: AbortSignal.timeout(40000),
@@ -48,11 +49,11 @@ const SETS = {
                   cortos: ["McDonald's Collection 2023"] },
   '2024sv':     { marca: ['mcdonaldscollection2024'], pagina: "McDonald's Collection 2024",
                   cortos: ["McDonald's Collection 2024"] },
-  'tk-hs-r':    { marca: ['hstrainerkit', 'trainerkit'], pagina: 'HS Trainer Kit',
+  'tk-hs-r':    { marca: ['raichuhalfdeck', 'hstrainerkit'], excluye: ['alolan'], pagina: 'HS Trainer Kit',
                   cortos: ['HS Trainer Kit Raichu', 'HS Trainer Kit', 'HS Trainer Kit: Raichu'] },
-  'tk-xy-p':    { marca: ['xytrainerkit', 'trainerkit'], pagina: 'XY Trainer Kit: Pikachu Libre & Suicune',
+  'tk-xy-p':    { marca: ['pikachulibrehalfdeck', 'xytrainerkit'], pagina: 'XY Trainer Kit: Pikachu Libre & Suicune',
                   cortos: ['XY Trainer Kit: Pikachu Libre', 'XY Trainer Kit Pikachu Libre', 'XY Trainer Kit'] },
-  'tk-sm-r':    { marca: ['smtrainerkit', 'sunmoontrainerkit', 'trainerkit'], pagina: 'Sun & Moon Trainer Kit: Lycanroc & Alolan Raichu',
+  'tk-sm-r':    { marca: ['alolanraichuhalfdeck', 'smtrainerkit'], pagina: 'Sun & Moon Trainer Kit: Lycanroc & Alolan Raichu',
                   cortos: ['Sun & Moon Trainer Kit: Alolan Raichu', 'Sun & Moon Trainer Kit Alolan Raichu', 'SM Trainer Kit Alolan Raichu', 'Sun & Moon Trainer Kit'] },
   'ecard3':     { marca: ['skyridge'], pagina: 'Skyridge',
                   cortos: ['Skyridge'] },
@@ -78,20 +79,49 @@ function encaja(fichero, carta) {
   const nombre = plano(carta.n);
   if (!f.includes(nombre)) return false;
   if (!set.marca.some((m) => f.includes(m))) return false;
-  return numeros(carta.num).some((n) => f.endsWith(n) || f.includes(n));
+  if ((set.excluye || []).some((x) => f.includes(x))) return false;
+  if (numeros(carta.num).some((n) => f.endsWith(n) || f.includes(n))) return true;
+  // promos sin número impreso: solo si el fichero es exactamente nombre+marca
+  return set.marca.some((m) => f === nombre + m);
+}
+
+/* Lista de TODOS los ficheros de Bulbapedia que empiezan por el nombre
+   de la carta (sin espacios). Es la vía para los sets que no tienen
+   página por carta: kits de entrenamiento, McDonald's, My First Battle. */
+const cachePrefijo = new Map();
+async function ficherosPorPrefijo(nombre) {
+  const prefijo = nombre.replace(/[^A-Za-z0-9]/g, '');
+  if (cachePrefijo.has(prefijo)) return cachePrefijo.get(prefijo);
+  const todos = [];
+  let cont = null;
+  for (let i = 0; i < 12; i++) {
+    // las imágenes viven en el wiki Archives, no en Bulbapedia
+    const r = await api({ action: 'query', list: 'allimages', aiprefix: prefijo, ailimit: 500,
+      ...(cont ? { aicontinue: cont } : {}) }, ARCHIVES);
+    todos.push(...(r.query?.allimages || []).map((x) => x.name));
+    cont = r.continue?.aicontinue;
+    if (!cont) break;
+    await dormir(200);
+  }
+  cachePrefijo.set(prefijo, todos);
+  return todos;
 }
 
 async function imagenesDe(titulo) {
-  const r = await api({ action: 'query', titles: titulo, prop: 'images', imlimit: 200 });
+  const r = await api({ action: 'query', titles: titulo, prop: 'images', imlimit: 300, redirects: 1 });
   const paginas = Object.values(r.query?.pages || {});
   return paginas.flatMap((p) => (p.images || []).map((i) => i.title));
 }
 
 async function urlDe(fichero) {
-  const r = await api({ action: 'query', titles: fichero, prop: 'imageinfo', iiprop: 'url|size' });
-  const p = Object.values(r.query?.pages || {})[0];
-  const ii = p?.imageinfo?.[0];
-  return ii && ii.width >= 200 ? ii.url : null;
+  const titulo = fichero.startsWith('File:') ? fichero : `File:${fichero}`;
+  for (const base of [ARCHIVES, API]) {
+    const r = await api({ action: 'query', titles: titulo, prop: 'imageinfo', iiprop: 'url|size' }, base);
+    const p = Object.values(r.query?.pages || {})[0];
+    const ii = p?.imageinfo?.[0];
+    if (ii && ii.width >= 200) return ii.url;
+  }
+  return null;
 }
 
 async function main() {
@@ -144,6 +174,13 @@ async function main() {
             await dormir(150);
           }
         }
+      } catch (_) {}
+    }
+
+    if (!candidatos.length && SETS[c.s]) {
+      try {
+        const lista = await ficherosPorPrefijo(c.n);
+        candidatos = lista.filter((f) => encaja(f, c));
       } catch (_) {}
     }
 
