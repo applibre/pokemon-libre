@@ -245,6 +245,69 @@ const Dominio = (() => {
     };
   };
 
+  /* ---------- datos de la carta ----------
+     Lo que hace interesante a una carta y no caduca: de cuándo es, quién
+     la dibujó, en qué impresiones salió y cuántas cartas de su rareza
+     tenía esa colección. El precio no está aquí a propósito: cambia cada
+     día y se mira en la tienda, con el botón de la ficha. */
+
+  const MES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+    'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+
+  /** '1999-06-16' → 'junio de 1999' */
+  function mesYAnio(rel) {
+    if (!rel) return '';
+    const [a, m] = String(rel).split('-');
+    return MES[Number(m) - 1] ? `${MES[Number(m) - 1]} de ${a}` : a;
+  }
+
+  const ETAPA = {
+    Basic: 'Básica', Stage1: 'Fase 1', Stage2: 'Fase 2',
+    'Stage 1': 'Fase 1', 'Stage 2': 'Fase 2', VMAX: 'VMAX', VSTAR: 'VSTAR',
+  };
+  const TIPO_ES = {
+    Grass: 'Planta', Fire: 'Fuego', Water: 'Agua', Lightning: 'Rayo',
+    Psychic: 'Psíquico', Fighting: 'Lucha', Darkness: 'Oscuro', Metal: 'Metal',
+    Dragon: 'Dragón', Colorless: 'Incoloro', Fairy: 'Hada',
+  };
+
+  /** El puesto de la carta por antigüedad entre las de su Pokémon:
+      «la 2.ª de 194». Se cuenta desde la más vieja. */
+  function puestoPorEdad(cartasDelPokemon, carta) {
+    const orden = ordenar(cartasDelPokemon);
+    const i = orden.findIndex((c) => c.id === carta.id);
+    return i < 0 ? null : { puesto: i + 1, total: orden.length };
+  }
+
+  /** Las filas de la ficha, ya escritas. Sin precios. */
+  function datosDeCarta(carta, sets, cartasDelPokemon) {
+    const set = sets[carta.s] || {};
+    const filas = [];
+
+    if (carta.r) {
+      filas.push(['Rareza', carta.rn && set.tot
+        ? `${carta.r} · ${carta.rn} de ${set.tot} en ${set.n}`
+        : carta.r]);
+    }
+    if (carta.ill) filas.push(['Ilustración', carta.ill]);
+    if (set.rel) filas.push(['Salió en', mesYAnio(set.rel)]);
+
+    if (cartasDelPokemon && cartasDelPokemon.length > 1) {
+      const p = puestoPorEdad(cartasDelPokemon, carta);
+      if (p) filas.push(['Antigüedad', `la ${p.puesto}.ª más antigua de ${p.total}`]);
+    }
+
+    const j = carta.j || {};
+    const juego = [];
+    if (j.e) juego.push(ETAPA[j.e] || j.e);
+    if (j.de) juego.push(`evoluciona de ${j.de}`);
+    if (j.ps) juego.push(`${j.ps} PS`);
+    if (j.t && j.t.length) juego.push(j.t.map((t) => TIPO_ES[t] || t).join(' y '));
+    if (juego.length) filas.push(['La carta', juego.join(' · ')]);
+
+    return filas;
+  }
+
   /* ---------- formato ---------- */
 
   const anioDeSet = (set) => (set && set.rel ? set.rel.slice(0, 4) : '');
@@ -262,6 +325,7 @@ const Dominio = (() => {
     progreso, progresoPorPokemon,
     indexar, filtrar, ordenar, porSet,
     listaDeFaltantes, costeDeFaltantes, enlaces,
+    mesYAnio, puestoPorEdad, datosDeCarta,
     anioDeSet, numeroCompleto, euros, dolares,
   };
 })();

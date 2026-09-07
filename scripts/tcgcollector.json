@@ -3402,5 +3402,81 @@
  "swsh12.5gg-GG30": {
   "tc": 40038,
   "slug": "pikachu-crown-zenith-gg30-gg70"
+ },
+ "ex13-104": {
+  "tc": 3196,
+  "slug": "pikachu-star-ex-holon-phantoms-104-110"
+ },
+ "ex15-100": {
+  "tc": 3424,
+  "slug": "charizard-star-ex-dragon-frontiers-100-101"
+ },
+ "dpp-DP45": {
+  "tc": 4922,
+  "slug": "charizard-g-lv-x-diamond-and-pearl-promos-dp45"
+ },
+ "bt-4": {
+  "tc": 14722,
+  "slug": "venusaur-box-toppers-e-card-series-4-12"
+ },
+ "bt-9": {
+  "tc": 14727,
+  "slug": "charizard-box-toppers-e-card-series-9-12"
+ },
+ "wc-1": {
+  "tc": 66869,
+  "slug": "pikachu-pikachu-world-collection-no-001"
+ },
+ "sm3-18a": {
+  "tc": 12586,
+  "slug": "charmander-yellow-a-alternate-18a-147"
+ },
+ "clb-001": {
+  "tc": 43805,
+  "slug": "squirtle-pokemon-tcg-classic-blastoise-001-034"
+ },
+ "clb-002": {
+  "tc": 43806,
+  "slug": "wartortle-pokemon-tcg-classic-blastoise-002-034"
+ },
+ "clb-003": {
+  "tc": 43807,
+  "slug": "blastoise-pokemon-tcg-classic-blastoise-003-034"
+ },
+ "clc-001": {
+  "tc": 43839,
+  "slug": "charmander-pokemon-tcg-classic-charizard-001-034"
+ },
+ "clc-002": {
+  "tc": 43840,
+  "slug": "charmeleon-pokemon-tcg-classic-charizard-002-034"
+ },
+ "clc-003": {
+  "tc": 43841,
+  "slug": "charizard-pokemon-tcg-classic-charizard-003-034"
+ },
+ "clc-008": {
+  "tc": 43846,
+  "slug": "pikachu-pokemon-tcg-classic-charizard-008-034"
+ },
+ "clc-009": {
+  "tc": 43847,
+  "slug": "raichu-pokemon-tcg-classic-charizard-009-034"
+ },
+ "clv-001": {
+  "tc": 43873,
+  "slug": "bulbasaur-pokemon-tcg-classic-venusaur-001-034"
+ },
+ "clv-002": {
+  "tc": 43874,
+  "slug": "ivysaur-pokemon-tcg-classic-venusaur-002-034"
+ },
+ "clv-003": {
+  "tc": 43875,
+  "slug": "venusaur-pokemon-tcg-classic-venusaur-003-034"
+ },
+ "clv-016": {
+  "tc": 43888,
+  "slug": "snorlax-pokemon-tcg-classic-venusaur-016-034"
  }
 }

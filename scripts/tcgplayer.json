@@ -652,5 +652,65 @@
   "nombre": "Charmeleon - 079 (Cosmos Holo)",
   "set": "ME: Mega Evolution Promo",
   "num": "079"
+ },
+ "wc-1": {
+  "tp": 161750,
+  "nombre": "Pikachu (Ivy)",
+  "set": "Pikachu World Collection Promos",
+  "num": "1"
+ },
+ "clb-001": {
+  "tp": 527985,
+  "nombre": "Squirtle",
+  "set": "Trading Card Game Classic",
+  "num": "001/034"
+ },
+ "clb-002": {
+  "tp": 527987,
+  "nombre": "Wartortle",
+  "set": "Trading Card Game Classic",
+  "num": "002/034"
+ },
+ "clb-003": {
+  "tp": 527988,
+  "nombre": "Blastoise",
+  "set": "Trading Card Game Classic",
+  "num": "003/034"
+ },
+ "clc-002": {
+  "tp": 527937,
+  "nombre": "Charmeleon",
+  "set": "Trading Card Game Classic",
+  "num": "002/034"
+ },
+ "clc-003": {
+  "tp": 527938,
+  "nombre": "Charizard",
+  "set": "Trading Card Game Classic",
+  "num": "003/034"
+ },
+ "clv-001": {
+  "tp": 527883,
+  "nombre": "Bulbasaur",
+  "set": "Trading Card Game Classic",
+  "num": "001/034"
+ },
+ "clv-002": {
+  "tp": 527884,
+  "nombre": "Ivysaur",
+  "set": "Trading Card Game Classic",
+  "num": "002/034"
+ },
+ "clv-003": {
+  "tp": 527885,
+  "nombre": "Venusaur",
+  "set": "Trading Card Game Classic",
+  "num": "003/034"
+ },
+ "clv-016": {
+  "tp": 527903,
+  "nombre": "Snorlax",
+  "set": "Trading Card Game Classic",
+  "num": "016/034"
  }
 }

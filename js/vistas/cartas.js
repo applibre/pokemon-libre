@@ -212,7 +212,7 @@ const Cartas = (() => {
     const sets = Estado.sets();
     const set = sets[c.s] || {};
     const enlaces = Dominio.enlaces(c, sets);
-    const verPrecios = Estado.leer().ajustes.verPrecios;
+    const datos = Dominio.datosDeCarta(c, sets, Estado.cartasDe(c.p[0]));
 
     hoja({
       titulo: c.n,
@@ -224,23 +224,24 @@ const Cartas = (() => {
         <div class="variantes" id="variantes"></div>
 
         <div class="datos">
-          ${c.r ? `<div><dt>Rareza</dt><dd>${esc(c.r)}</dd></div>` : ''}
-          ${c.ill ? `<div><dt>Ilustración</dt><dd>${esc(c.ill)}</dd></div>` : ''}
-          ${verPrecios && c.eur ? `<div><dt>Precio en Europa</dt><dd>${esc(Dominio.euros(c.eur))}</dd></div>` : ''}
-          ${verPrecios && c.usd ? `<div><dt>Precio en EE. UU.</dt><dd>${esc(Dominio.dolares(c.usd))}</dd></div>` : ''}
+          ${datos.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}
         </div>
 
-        ${verPrecios ? `<p class="pista chica" style="margin:-6px 0 12px">
-          Orientativo, del ${esc(Estado.man().preciosDe || Estado.man().generado)} (Cardmarket y TCGplayer). Cambia a diario:
-          abre la carta en la tienda para ver el precio de hoy.</p>` : ''}
+        ${c.imp && c.imp.length > 1 ? `<div class="impresiones">
+          <h3>Cómo se imprimió</h3>
+          <ul>${c.imp.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>
+          <p class="pista chica">Son formas distintas de la misma carta. Las raras suben el precio.</p>
+        </div>` : ''}
+
+        ${c.txt ? `<p class="texto-carta">${esc(c.txt)}</p>` : ''}
 
         <a class="btn ${enlaces.tcgplayer.directo ? 'principal' : ''}" href="${enlaces.tcgplayer.url}"
           target="_blank" rel="noopener">${esc(enlaces.tcgplayer.texto)}</a>
         <a class="btn ${enlaces.tcgcollector.directo && !enlaces.tcgplayer.directo ? 'principal' : ''}" href="${enlaces.tcgcollector.url}"
           target="_blank" rel="noopener" style="margin-top:8px">${esc(enlaces.tcgcollector.texto)}</a>
-        ${enlaces.tcgplayer.directo || enlaces.tcgcollector.directo ? '' : `<p class="pista chica" style="margin-top:8px">
-          Esta carta no tiene página propia en ninguna de las dos tiendas en nuestros datos: los enlaces
-          abren una búsqueda con su nombre, colección y número.</p>`}`,
+        <p class="pista chica" style="margin-top:8px">${enlaces.tcgplayer.directo || enlaces.tcgcollector.directo
+          ? 'El precio cambia a diario: se mira en la tienda, no aquí.'
+          : 'Esta carta no tiene página propia en ninguna de las dos tiendas: los enlaces abren una búsqueda con su nombre, colección y número.'}</p>`,
       listo(cuerpo) { pintarVariantes(cuerpo, c); },
     });
   }

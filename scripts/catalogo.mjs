@@ -18,6 +18,7 @@
 
 import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
+import { impresionesDe } from './impresiones.mjs';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -260,6 +261,19 @@ async function main() {
       img: c.image ? c.image.replace(`${ASSETS}/`, '') : null,
       ill: c.illustrator || '',
     };
+
+    /* Lo que hace interesante a una carta y no cambia con el tiempo: de
+       cuándo es, quién la dibujó, en qué impresiones salió y qué dice.
+       El precio se mira en la tienda, que es donde está vivo. */
+    const imp = impresionesDe(c);
+    if (imp.length) ficha.imp = imp;
+    if (c.description) ficha.txt = c.description;
+    const ficha_juego = {};
+    if (c.stage) ficha_juego.e = c.stage;
+    if (c.evolveFrom) ficha_juego.de = c.evolveFrom;
+    if (c.hp) ficha_juego.ps = c.hp;
+    if (c.types?.length) ficha_juego.t = c.types;
+    if (Object.keys(ficha_juego).length) ficha.j = ficha_juego;
     /* Precio orientativo de las dos casas: Cardmarket en euros (la
        referencia en Europa) y TCGplayer en dólares (el mercado grande).
        El manifiesto guarda la fecha: un precio sin fecha engaña. */
@@ -292,6 +306,68 @@ async function main() {
   }).sort((a, b) =>
     (sets[a.s]?.o ?? 9999) - (sets[b.s]?.o ?? 9999)
     || String(a.num).localeCompare(String(b.num), 'en', { numeric: true }));
+
+  /* 5.4 · las que TCGdex no tiene
+     Le faltan productos ingleses enteros: el TCG Classic de 2023, los box
+     topper, la World Collection. Se leen de pkmncards con
+     scripts/cartas-extra.py y entran aquí con la misma forma que las
+     demás; sus imágenes van en imagenes-rescatadas.json. */
+  const extra = JSON.parse(await readFile(path.join(AQUI, 'cartas-extra.json'), 'utf8').catch(() => '[]'));
+  let anadidas = 0;
+  for (const e of extra) {
+    if (cartas.some((c) => c.id === e.id)) continue;
+    const suyos = pokemon.filter((p) => p.nombre.toLowerCase() === String(e.n).toLowerCase()).map((p) => p.id);
+    if (!suyos.length) { console.log(`  ! ${e.id}: ${e.n} no es de los nuestros`); continue; }
+    if (e.set_n && !sets[e.set]) {
+      sets[e.set] = { n: e.set_n, rel: e.rel || '', tot: e.tot || 0 };
+    }
+    const ficha = {
+      id: e.id, n: e.n, p: suyos, s: e.set, num: e.num,
+      r: e.r || '', v: ['normal'], img: null, ill: e.ill || '',
+    };
+    if (e.txt) ficha.txt = e.txt;
+    const j = {};
+    if (e.etapa) j.e = e.etapa;
+    if (e.de) j.de = e.de;
+    if (e.ps) j.ps = e.ps;
+    if (Object.keys(j).length) ficha.j = j;
+    // los enlaces a las tiendas se asignan aquí también: estas cartas
+    // entran después del reparto general y si no se quedarían sin ellos
+    if (tcgplayerExtra[e.id]) ficha.tp_id = tcgplayerExtra[e.id].tp;
+    if (tcgcollector[e.id]) { ficha.tc_id = tcgcollector[e.id].tc; ficha.tc_slug = tcgcollector[e.id].slug; }
+    cartas.push(ficha);
+    anadidas++;
+  }
+  if (anadidas) {
+    // el orden de las colecciones se rehace: han entrado algunas nuevas
+    const orden2 = Object.keys(sets).sort((a, b) =>
+      (sets[a].rel || '9999').localeCompare(sets[b].rel || '9999') || a.localeCompare(b));
+    orden2.forEach((id, i) => { sets[id].o = i; });
+    cartas.sort((a, b) => (sets[a.s]?.o ?? 9999) - (sets[b.s]?.o ?? 9999)
+      || String(a.num).localeCompare(String(b.num), 'en', { numeric: true }));
+    console.log(`De pkmncards     ${anadidas} cartas que TCGdex no tiene
+`);
+  }
+
+  /* 5.5 · cuántas cartas de cada rareza tiene su colección
+     «Rare» suena a poco si no sabes que solo 30 de las 62 cartas de
+     Fossil lo son. Se pregunta una vez por cada pareja colección+rareza
+     que usan nuestras cartas, y queda en la caché. */
+  const parejas = [...new Set(cartas.filter((c) => c.r).map((c) => `${c.s}|${c.r}`))];
+  process.stdout.write('Rarezas: ');
+  const cuentas = await enTandas(parejas, 5, async (par) => {
+    const [sid, rar] = par.split('|');
+    const lista = await conCache(`rareza-${sid}-${rar}`,
+      () => pedir(`${API}/cards?set=eq:${encodeURIComponent(sid)}&rarity=eq:${encodeURIComponent(rar)}`));
+    return { par, n: Array.isArray(lista) ? lista.length : 0 };
+  }, (n, t) => process.stdout.write(`
+Rarezas: ${n}/${t}`));
+  console.log('');
+  const porRareza = new Map(cuentas.filter(Boolean).map((x) => [x.par, x.n]));
+  for (const c of cartas) {
+    const n = porRareza.get(`${c.s}|${c.r}`);
+    if (n) c.rn = n;      // cuántas cartas de esa rareza hay en la colección
+  }
 
   /* 6 · escribir */
   const json = JSON.stringify({ sets, cartas });
