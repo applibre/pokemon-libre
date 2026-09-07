@@ -228,6 +228,21 @@ button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulat
 }
 @media (min-width: 520px) { .rejilla { grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); } }
 
+/* Cada hueco de la rejilla lleva la carta y, encima, el botón de su
+   ficha. La celda es la que ocupa la casilla; la carta la rellena. */
+.celda { position: relative; }
+.celda .detalle {
+  position: absolute; left: 4px; bottom: 4px; z-index: 2;
+  width: 27px; height: 27px; padding: 0; border: 0; border-radius: 50%;
+  background: rgba(18,16,38,.78); color: #fff;
+  font-size: 15px; font-weight: 800; font-style: italic; line-height: 1;
+  display: grid; place-items: center;
+  box-shadow: 0 1px 5px rgba(0,0,0,.4);
+  touch-action: manipulation;
+}
+.celda .detalle:active { transform: scale(.88); }
+.ayuda { margin: 0 0 10px; }
+
 .carta {
   border: 0; padding: 0; background: none;
   position: relative; display: block;

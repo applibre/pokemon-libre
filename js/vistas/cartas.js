@@ -72,9 +72,10 @@ const Cartas = (() => {
       return;
     }
 
-    cuerpo.innerHTML = agrupar
-      ? Dominio.porSet(lista, Estado.sets()).map(grupoHTML).join('')
-      : `<div class="rejilla">${Dominio.ordenar(lista).map(cartaHTML).join('')}</div>`;
+    cuerpo.innerHTML = `<p class="pista chica ayuda">Toca la carta para marcar que la tienes · el botón <b>i</b> abre su ficha</p>`
+      + (agrupar
+        ? Dominio.porSet(lista, Estado.sets()).map(grupoHTML).join('')
+        : `<div class="rejilla">${Dominio.ordenar(lista).map(cartaHTML).join('')}</div>`);
 
     engancharCartas(cuerpo);
     prepararImagenes(cuerpo);
@@ -106,19 +107,27 @@ const Cartas = (() => {
     </div>
     <div class="rejilla">${g.cartas.map(cartaHTML).join('')}</div>`;
 
+  /* Dos acciones por carta, y las dos tienen que verse: tocar la marca,
+     el botón «i» abre su ficha. Antes la ficha solo salía con el toque
+     largo y nadie lo adivinaba. El botón va fuera del botón de la carta
+     porque un botón dentro de otro no es HTML válido. */
   function cartaHTML(c) {
     const col = Estado.coleccion();
     const tengo = Dominio.tengo(col, c.id);
     const n = Dominio.cuantas(col, c.id);
     const sets = Estado.sets();
-    return `<button class="carta ${tengo ? 'tengo' : 'falta'}" data-c="${esc(c.id)}"
-      aria-label="${esc(c.n)}, ${esc(sets[c.s] ? sets[c.s].n : c.s)}, ${esc(Dominio.numeroCompleto(c, sets))}${tengo ? ', la tienes' : ', te falta'}"
-      aria-pressed="${tengo}">
-      <img data-src="data/cartas/${esc(c.id)}.webp" alt="" decoding="async" width="245" height="337">
-      <span class="tic">✓</span>
-      <span class="nombre-carta" aria-hidden="true">${esc(c.n)}<small>${esc(Dominio.numeroCompleto(c, sets))}</small></span>
-      ${n > 1 ? `<span class="cant">×${n}</span>` : ''}
-    </button>`;
+    const donde = `${esc(c.n)}, ${esc(sets[c.s] ? sets[c.s].n : c.s)}, ${esc(Dominio.numeroCompleto(c, sets))}`;
+    return `<div class="celda">
+      <button class="carta ${tengo ? 'tengo' : 'falta'}" data-c="${esc(c.id)}"
+        aria-label="${donde}${tengo ? ', la tienes' : ', te falta'}"
+        aria-pressed="${tengo}">
+        <img data-src="data/cartas/${esc(c.id)}.webp" alt="" decoding="async" width="245" height="337">
+        <span class="tic">✓</span>
+        <span class="nombre-carta" aria-hidden="true">${esc(c.n)}<small>${esc(Dominio.numeroCompleto(c, sets))}</small></span>
+        ${n > 1 ? `<span class="cant">×${n}</span>` : ''}
+      </button>
+      <button class="detalle" data-i="${esc(c.id)}" aria-label="Ver la ficha de ${donde}">i</button>
+    </div>`;
   }
 
   /* ---------- carga diferida de las imágenes ----------
@@ -166,6 +175,10 @@ const Cartas = (() => {
   /* Un toque marca; mantener pulsado abre la ficha. Así se puede
      pasar un fajo entero de cartas sin abrir nada. */
   function engancharCartas(cuerpo) {
+    cuerpo.querySelectorAll('[data-i]').forEach((b) => {
+      b.onclick = (e) => { e.stopPropagation(); vibrar(); abrirFicha(b.dataset.i); };
+    });
+
     cuerpo.querySelectorAll('.carta').forEach((b) => {
       let temporizador = null;
       let largo = false;
