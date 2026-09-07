@@ -272,6 +272,15 @@ button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulat
 }
 .carta .tic { display: none; }
 .carta.tengo .tic { display: grid; }
+/* si la foto no llega ni reintentando, la carta enseña su nombre */
+.carta .nombre-carta { display: none; }
+.carta.sin-foto .nombre-carta {
+  display: grid; place-content: center; gap: 4px; text-align: center;
+  position: absolute; inset: 0; padding: 8px;
+  font-size: 11px; font-weight: 700; line-height: 1.2; color: var(--tx2);
+  background: var(--sunk); border-radius: var(--r-sm);
+}
+.carta.sin-foto .nombre-carta small { font-family: var(--fm); font-weight: 400; font-size: 10px; color: var(--tx3); }
 .carta .cant {
   position: absolute; bottom: 5px; right: 5px;
   font-family: var(--fm); font-size: 10px; font-weight: 600;

@@ -9,14 +9,14 @@
    El nombre del depósito sube en cada despliegue: así el navegador
    tira lo viejo en vez de servir una versión a medias. */
 
-const CACHE = 'pokemon-libre-2609070321';
+const CACHE = 'pokemon-libre-2609070333';
 const IMAGENES = 'pokemon-libre-img-v1';
 
 const ARMAZON = [
-  './', 'index.html', 'css/style.css?v=2609070321',
-  'js/dominio.js?v=2609070321', 'js/almacen.js?v=2609070321', 'js/estado.js?v=2609070321', 'js/interfaz.js?v=2609070321',
-  'js/vistas/inicio.js?v=2609070321', 'js/vistas/cartas.js?v=2609070321', 'js/vistas/faltan.js?v=2609070321', 'js/vistas/ajustes.js?v=2609070321',
-  'js/app.js?v=2609070321', 'manifest.json', 'data/catalogo.json', 'data/manifiesto.json',
+  './', 'index.html', 'css/style.css?v=2609070333',
+  'js/dominio.js?v=2609070333', 'js/almacen.js?v=2609070333', 'js/estado.js?v=2609070333', 'js/interfaz.js?v=2609070333',
+  'js/vistas/inicio.js?v=2609070333', 'js/vistas/cartas.js?v=2609070333', 'js/vistas/faltan.js?v=2609070333', 'js/vistas/ajustes.js?v=2609070333',
+  'js/app.js?v=2609070333', 'manifest.json', 'data/catalogo.json', 'data/manifiesto.json',
   'icono-192.png', 'icono-512.png',
 ];
 

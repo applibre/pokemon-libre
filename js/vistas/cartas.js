@@ -116,6 +116,7 @@ const Cartas = (() => {
       aria-pressed="${tengo}">
       <img data-src="data/cartas/${esc(c.id)}.webp" alt="" decoding="async" width="245" height="337">
       <span class="tic">✓</span>
+      <span class="nombre-carta" aria-hidden="true">${esc(c.n)}<small>${esc(Dominio.numeroCompleto(c, sets))}</small></span>
       ${n > 1 ? `<span class="cant">×${n}</span>` : ''}
     </button>`;
   }
@@ -128,13 +129,33 @@ const Cartas = (() => {
 
   let vigia = null;
 
+  /* Con wifi floja una imagen puede fallar. Antes se quedaba en blanco
+     para siempre; ahora se reintenta dos veces con pausa y, si aun así
+     no llega, se enseña el nombre de la carta para poder marcarla. */
+  function cargar(img) {
+    const ruta = img.dataset.src;
+    delete img.dataset.src;
+    let intentos = 0;
+    img.onerror = () => {
+      intentos++;
+      if (intentos <= 2) {
+        setTimeout(() => { img.src = `${ruta}${ruta.includes('?') ? '&' : '?'}r=${intentos}`; }, 900 * intentos);
+        return;
+      }
+      img.onerror = null;
+      img.removeAttribute('src');
+      img.closest('.carta').classList.add('sin-foto');
+    };
+    img.src = ruta;
+  }
+
   function prepararImagenes(cuerpo) {
     if (vigia) vigia.disconnect();
     vigia = new IntersectionObserver((entradas) => {
       for (const e of entradas) {
         if (!e.isIntersecting) continue;
         const img = e.target;
-        if (img.dataset.src) { img.src = img.dataset.src; delete img.dataset.src; }
+        if (img.dataset.src) { cargar(img); }
         vigia.unobserve(img);
       }
     }, { root: cuerpo, rootMargin: '500px 0px' });
