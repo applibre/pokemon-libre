@@ -253,6 +253,15 @@ async function main() {
         .map((v) => v.marketPrice);
       if (precios.length) ficha.usd = Math.round(Math.min(...precios) * 100) / 100;
     }
+
+    /* Identificadores de producto en cada tienda: con ellos el enlace
+       abre la página de ESA carta, con su precio en tiempo real, en vez
+       de un buscador genérico. */
+    if (cm?.idProduct) ficha.cm_id = cm.idProduct;
+    const tpIds = Object.values(tp || {})
+      .filter((v) => v && typeof v === 'object' && v.productId)
+      .map((v) => v.productId);
+    if (tpIds.length) ficha.tp_id = Math.min(...tpIds);
     return ficha;
   }).sort((a, b) =>
     (sets[a.s]?.o ?? 9999) - (sets[b.s]?.o ?? 9999)
@@ -284,6 +293,7 @@ async function main() {
     (conRespaldo ? ` + ${conRespaldo} de respaldo` : '') +
     (sinImagen ? ` · ${sinImagen} SIN IMAGEN` : ' · ninguna sin imagen'));
   console.log(`Con precio      ${cartas.filter((c) => c.eur).length} en euros · ${cartas.filter((c) => c.usd).length} en dólares`);
+  console.log(`Enlace directo   Cardmarket ${cartas.filter((c) => c.cm_id).length} · TCGplayer ${cartas.filter((c) => c.tp_id).length}`);
   console.log(`catalogo.json   ${kb(json.length)}   versión ${hash}`);
   console.log('─'.repeat(52));
 

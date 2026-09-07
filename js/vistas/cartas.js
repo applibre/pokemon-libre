@@ -220,10 +220,11 @@ const Cartas = (() => {
         ${verPrecios ? `<p class="pista chica" style="margin:-6px 0 12px">
           Precio orientativo del ${esc(Estado.man().preciosDe || Estado.man().generado)}. Cambia a diario.</p>` : ''}
 
-        <div class="botones">
-          <a class="btn" href="${enlaces.cardmarket}" target="_blank" rel="noopener">Ver en Cardmarket</a>
-          <a class="btn" href="${enlaces.tcgplayer}" target="_blank" rel="noopener">Ver en TCGplayer</a>
-        </div>`,
+        <a class="btn ${enlaces.tcgplayer.directo ? 'principal' : ''}" href="${enlaces.tcgplayer.url}"
+          target="_blank" rel="noopener">${esc(enlaces.tcgplayer.texto)}</a>
+        <a class="btn" href="${enlaces.cardmarket.url}" target="_blank" rel="noopener">${esc(enlaces.cardmarket.texto)}</a>
+        ${enlaces.tcgplayer.directo ? '' : `<p class="pista chica" style="margin-top:8px">Esta carta no tiene
+          página propia en TCGplayer en nuestros datos: el enlace abre una búsqueda con su nombre, colección y número.</p>`}`,
       listo(cuerpo) { pintarVariantes(cuerpo, c); },
     });
   }

@@ -336,12 +336,25 @@ test('el coste de lo que falta suma solo lo que tiene precio', () => {
 
 /* ================= enlaces y formato ================= */
 
-test('los enlaces a las tiendas llevan la carta buscada', () => {
-  const e = D.enlaces(porId.get('base1-4'), SETS);
-  assert.ok(e.cardmarket.includes('cardmarket.com'));
-  assert.ok(e.cardmarket.includes('Charizard'));
-  assert.ok(e.tcgplayer.includes('tcgplayer.com'));
-  assert.ok(!/[ ]/.test(e.cardmarket), 'la URL lleva espacios sin codificar');
+test('con identificador, el enlace de TCGplayer abre la página de esa carta', () => {
+  const e = D.enlaces(porId.get('base3-5'), SETS);   // Gengar de Fossil: id 106521
+  assert.strictEqual(e.tcgplayer.url, 'https://www.tcgplayer.com/product/106521');
+  assert.strictEqual(e.tcgplayer.directo, true);
+});
+
+test('sin identificador, el enlace es una búsqueda y se dice', () => {
+  const sinId = CARTAS.find((c) => !c.tp_id);
+  const e = D.enlaces(sinId, SETS);
+  assert.ok(e.tcgplayer.url.includes('/search/'));
+  assert.strictEqual(e.tcgplayer.directo, false);
+  assert.ok(e.tcgplayer.texto.startsWith('Buscar'));
+  assert.ok(!/[ ]/.test(e.tcgplayer.url), 'la URL lleva espacios sin codificar');
+});
+
+test('la mayoría de las cartas tiene enlace directo a TCGplayer', () => {
+  const directos = CARTAS.filter((c) => c.tp_id).length;
+  assert.ok(directos / CARTAS.length > 0.8, `solo ${directos} de ${CARTAS.length}`);
+  for (const c of CARTAS) if (c.tp_id) assert.ok(Number.isInteger(c.tp_id) && c.tp_id > 0, `${c.id}: id raro ${c.tp_id}`);
 });
 
 test('el número se enseña como en la carta', () => {

@@ -223,14 +223,22 @@ const Dominio = (() => {
     };
   }
 
-  /* ---------- enlaces a las tiendas ---------- */
+  /* ---------- enlaces a las tiendas ----------
+     Con identificador de producto, el enlace abre la página de ESA
+     carta, con su precio en tiempo real. Sin él, no queda otra que un
+     buscador con el nombre, la colección y el número — y se dice. */
 
   const enlaces = (carta, sets) => {
     const set = sets[carta.s];
     const busca = `${carta.n} ${set ? set.n : ''} ${carta.num}`.trim();
+    const q = encodeURIComponent(busca);
     return {
-      cardmarket: `https://www.cardmarket.com/es/Pokemon/Products/Search?searchString=${encodeURIComponent(busca)}`,
-      tcgplayer: `https://www.tcgplayer.com/search/pokemon/product?q=${encodeURIComponent(busca)}`,
+      tcgplayer: carta.tp_id
+        ? { url: `https://www.tcgplayer.com/product/${carta.tp_id}`, directo: true, texto: 'Ver precio en TCGplayer' }
+        : { url: `https://www.tcgplayer.com/search/pokemon/product?q=${q}`, directo: false, texto: 'Buscar en TCGplayer' },
+      cardmarket: carta.cm_id
+        ? { url: `https://www.cardmarket.com/en/Pokemon/Products/Search?searchString=${q}`, directo: false, texto: 'Buscar en Cardmarket', id: carta.cm_id }
+        : { url: `https://www.cardmarket.com/en/Pokemon/Products/Search?searchString=${q}`, directo: false, texto: 'Buscar en Cardmarket' },
     };
   };
 
