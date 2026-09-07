@@ -9,7 +9,7 @@
    El nombre del depósito sube en cada despliegue: así el navegador
    tira lo viejo en vez de servir una versión a medias. */
 
-const CACHE = 'pokemon-libre-v3';
+const CACHE = 'pokemon-libre-v4';
 const IMAGENES = 'pokemon-libre-img-v1';
 
 const ARMAZON = [
@@ -55,7 +55,20 @@ self.addEventListener('fetch', (e) => {
     return;
   }
 
+  /* El resto (armazón, catálogo): primero la red, y si no hay, la copia.
+     Al revés —copia primero— la app se queda congelada en la versión
+     que se instaló el primer día y ninguna corrección llega jamás.
+     Pasó de verdad: se publicó un arreglo y el navegador siguió
+     ejecutando el código viejo. */
   e.respondWith(
-    caches.match(e.request).then((r) => r || fetch(e.request).catch(() => caches.match('index.html')))
+    fetch(e.request)
+      .then((res) => {
+        if (res.ok) {
+          const copia = res.clone();
+          caches.open(CACHE).then((c) => c.put(e.request, copia));
+        }
+        return res;
+      })
+      .catch(() => caches.match(e.request).then((r) => r || caches.match('index.html')))
   );
 });
