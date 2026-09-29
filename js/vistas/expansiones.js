@@ -35,7 +35,9 @@ const Expansiones = (() => {
         cartas,
         ...Dominio.progreso(cartas, col),
       }))
-      .sort((a, b) => (a.set.rel || '9999').localeCompare(b.set.rel || '9999') || a.id.localeCompare(b.id));
+      // por el orden que les dio el catálogo: las inglesas por fecha y
+      // detrás las japonesas, que no traen fecha, en su propio orden
+      .sort((a, b) => (a.set.o ?? 9999) - (b.set.o ?? 9999));
   }
 
   function pintar() {
@@ -43,22 +45,25 @@ const Expansiones = (() => {
     const t = Dominio.normaliza(filtro);
     const vistas = t ? todas.filter((g) => Dominio.normaliza(g.set.n).includes(t)) : todas;
 
-    const hechas = todas.filter((g) => g.faltan === 0).length;
-    $('#exp-sub').textContent = `${todas.length} colecciones · ${hechas} completas`;
+    const japonesas = todas.filter((g) => g.set.ja).length;
+    $('#exp-sub').textContent = japonesas
+      ? `${todas.length} colecciones · ${japonesas} japonesas`
+      : `${todas.length} colecciones`;
 
     if (!vistas.length) {
       $('#exp-cuerpo').innerHTML = '<p class="vacio">Ninguna colección se llama así.</p>';
       return;
     }
 
-    let decada = '';
+    let rotulo = '';
     const trozos = [];
     for (const g of vistas) {
       const anio = Dominio.anioDeSet(g.set);
-      const d = anio ? `${anio.slice(0, 3)}0` : '';
-      if (!t && d && d !== decada) {
-        decada = d;
-        trozos.push(`<p class="grupo-titulo">${esc(d)}</p>`);
+      // las inglesas se agrupan por década; las japonesas, todas juntas
+      const r = g.set.ja ? 'En japonés' : (anio ? `${anio.slice(0, 3)}0` : '');
+      if (!t && r && r !== rotulo) {
+        rotulo = r;
+        trozos.push(`<p class="grupo-titulo">${esc(r)}</p>`);
       }
       trozos.push(filaHTML(g, anio));
     }
@@ -73,7 +78,7 @@ const Expansiones = (() => {
     <button class="exp ${g.faltan === 0 ? 'completa' : ''}" data-set="${esc(g.id)}">
       <img class="exp-logo" src="data/sets/${esc(g.id)}.webp" alt="" loading="lazy" onerror="this.remove()">
       <span class="exp-nombre">${esc(g.set.n)}</span>
-      <span class="exp-anio">${esc(anio)}</span>
+      <span class="exp-anio">${g.set.ja ? `<b class="jp">JP</b> ${esc(g.set.cod || '')}` : esc(anio)}</span>
       <span class="exp-via"><i style="width:${g.parte * 100}%"></i></span>
       <span class="exp-cuenta">${g.tengo}<small>/${g.total}</small></span>
     </button>`;

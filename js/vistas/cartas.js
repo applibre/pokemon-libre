@@ -142,6 +142,7 @@ const Cartas = (() => {
         aria-label="${donde}${tengo ? ', la tienes' : ', te falta'}"
         aria-pressed="${tengo}">
         <img data-src="data/cartas/${esc(c.id)}.webp" alt="" decoding="async" width="245" height="337">
+        ${c.l === 'ja' ? '<b class="jp">JP</b>' : ''}
         <span class="tic">✓</span>
         <span class="nombre-carta" aria-hidden="true">${esc(c.n)}<small>${esc(Dominio.numeroCompleto(c, sets))}</small></span>
         ${n > 1 ? `<span class="cant">×${n}</span>` : ''}
@@ -241,7 +242,7 @@ const Cartas = (() => {
 
     hoja({
       titulo: c.n,
-      sub: `${set.n || c.s} · ${Dominio.numeroCompleto(c, sets)}${set.rel ? ` · ${Dominio.anioDeSet(set)}` : ''}`,
+      sub: `${c.l === 'ja' ? 'Japonesa · ' : ''}${set.n || c.s} · ${Dominio.numeroCompleto(c, sets)}${set.rel ? ` · ${Dominio.anioDeSet(set)}` : ''}`,
       html: `
         <div class="ficha-carta c3d-llega" id="ficha-carta">
           <img src="data/cartas/g/${esc(c.id)}.webp" alt="${esc(c.n)}"

@@ -365,7 +365,7 @@ async function main() {
   for (const c of Object.values(japo)) {
     if (!c || !c.n || !c.img || c.fuera) continue;
     if (NO_ES_POKEMON.test(c.n)) continue;
-    const suyos = pokemon.filter((p) => new RegExp('\b' + p.nombre + '\b', 'i').test(c.n)).map((p) => p.id);
+    const suyos = pokemon.filter((p) => new RegExp('\\b' + p.nombre + '\\b', 'i').test(c.n)).map((p) => p.id);
     if (!suyos.length) continue;
 
     const sid = 'ja-' + c.set_tc;

@@ -52,9 +52,10 @@ def get(u, timeout=40):
 
 def partir_titulo(titulo):
     """'Gengar (Fossil 5/62) (International TCG) – TCG Collector'
-       -> ('Gengar', 'Fossil', '5', '62'). Devuelve None si no tiene esa forma."""
+       -> ('Gengar', 'Fossil', '5', '62'). Las japonesas dicen «Japanese TCG»
+       en lugar de «International TCG». Devuelve None si no tiene esa forma."""
     t = html.unescape(titulo).strip()
-    t = re.sub(r'\s*\(International TCG\).*$', '', t)
+    t = re.sub(r'\s*\((?:International|Japanese) TCG\).*$', '', t)
     m = re.match(r'^(.*?) \((.*?)\s+(?:No\.\s*)?([A-Za-z0-9]+)(?:/([A-Za-z0-9]+))?\)$', t)
     return m.groups() if m else None
 

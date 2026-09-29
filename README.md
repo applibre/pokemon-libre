@@ -14,7 +14,7 @@ Es un hueco real: las apps del mercado piensan por colección —bloque, set, ca
 
 ## Qué trae
 
-**869 cartas** de 17 Pokémon, repartidas en **141 colecciones** publicadas entre enero de 1999 y marzo de 2026:
+**1783 cartas** de 17 Pokémon en **328 colecciones**: 869 en inglés desde el Base Set de 1999, y **914 en japonés** repartidas en 187 expansiones que en su mayoría nunca salieron de Japón.
 
 | | |
 |---|---|
@@ -34,13 +34,19 @@ Se reúnen por **número de Pokédex**, no por nombre: así entran «Reshiram & 
 
 **Lo que te falta, listo para la tienda.** Por Pokémon o de todo, con el precio orientativo y un botón para mandarlo por WhatsApp o copiarlo.
 
+**La carta se mira en 3D.** Al abrirla llega girando y luego se inclina con el dedo, con la luz pasándole por encima; las holo y las raras llevan una capa de foil que cambia de color según cómo se mire. Es el efecto de cuando se abre un sobre, aplicado a lo que ya tienes.
+
+**En inglés y en japonés.** La misma carta existe en los dos, y muchas japonesas nunca salieron de Japón. En Ajustes se elige ver unas, otras o las dos.
+
+**Por expansiones, de la más antigua a la más moderna.** La otra forma de entrar, además de por Pokémon.
+
 **Los datos de la carta, no su precio.** Quién la dibujó, de qué mes es, su rareza, en qué puesto queda por antigüedad y qué es dentro del juego. El precio no está: cambia cada día y para saberlo hay que abrir la tienda de todos modos.
 
 **El número que enseña es el que lleva impreso.** Las promos no llevan total, así que sale «SM108» y no «SM108/248»; las subcolecciones llevan el suyo, «TG03/TG30»; y las del Classic Collection de Celebrations llevan el de la carta original. Cada caso se comprobó mirando la foto y hay una prueba que lo fija.
 
 **El precio de hoy, a un toque.** Cada carta abre **su** página —no un buscador— en TCGplayer y en TCG Collector, que es donde se ve lo que vale ahora mismo. Los enlaces no se escriben a ojo: se localizan uno a uno al generar el catálogo y se comprueban abriendo la página y leyendo su título (`python scripts/verificar-enlaces.py`). Si de una carta no hay página propia, el botón lo dice y abre una búsqueda con su nombre, colección y número.
 
-**Funciona sin internet.** Las 869 cartas y sus imágenes viven dentro de la app.
+**Funciona sin internet.** Las 1783 cartas y sus imágenes viven dentro de la app, con su tipografía.
 
 ## Lo que no hace
 
@@ -57,9 +63,9 @@ La app oficial de Pokémon para catalogar cartas cerró en 2023 avisando de que 
 
 ## Las imágenes
 
-Las 869 cartas están descargadas en el repositorio, en dos tamaños (245 px para la rejilla, 600 px para la ficha). No se enlaza a ningún servidor ajeno: la API que usaba medio sector cerró y pasó a ser de pago, y una colección no puede quedarse sin fotos por eso.
+Las 1783 cartas están descargadas en el repositorio, en dos tamaños (245 px para la rejilla, 600 px para la ficha). No se enlaza a ningún servidor ajeno: la API que usaba medio sector cerró y pasó a ser de pago, y una colección no puede quedarse sin fotos por eso.
 
-**Las 869 tienen su foto real.** Las 751 más comunes vienen de TCGdex; las otras 118 —promos, kits de entrenamiento, McDonald's, sets de 2026— hubo que rescatarlas una a una de pokemontcg.io, Bulbagarden Archives, Limitless, pkmncards, Pokellector y las fichas de producto de TCGplayer, y **revisarlas a ojo**: dos de las que ofrecía Bulbapedia eran escaneos japoneses de la misma carta y se descartaron. La regla no cambia: solo se acepta una imagen si nombre, número y colección coinciden.
+**Las 1783 tienen su foto real.** Las 751 más comunes vienen de TCGdex; las otras 118 —promos, kits de entrenamiento, McDonald's, sets de 2026— hubo que rescatarlas una a una de pokemontcg.io, Bulbagarden Archives, Limitless, pkmncards, Pokellector y las fichas de producto de TCGplayer, y **revisarlas a ojo**: dos de las que ofrecía Bulbapedia eran escaneos japoneses de la misma carta y se descartaron. La regla no cambia: solo se acepta una imagen si nombre, número y colección coinciden.
 
 ## Cómo se genera el catálogo
 
@@ -67,6 +73,9 @@ Cuatro pasos, todos con caché para poder repetirlos sin castigar a la fuente:
 
 ```bash
 python scripts/cartas-extra.py   # las que TCGdex no tiene, leídas de pkmncards
+python scripts/japonesas.py sets   # las expansiones japonesas
+python scripts/japonesas.py cartas # recorre cada una buscando las nuestras
+python scripts/japonesas.py fichas # abre cada carta: nombre e imagen
 node scripts/catalogo.mjs        # baja las cartas de TCGdex por número de Pokédex
 node scripts/rescate-imagenes.mjs # busca las que faltan en pokemontcg.io
 node scripts/rescate-bulbapedia.mjs # y las que siguen faltando, en Bulbagarden Archives
@@ -77,6 +86,8 @@ python scripts/verificar-enlaces.py # abre cada enlace y comprueba que es esa ca
 ```
 
 Para añadir un Pokémon basta con una línea en `scripts/objetivos.json`.
+
+Lo japonés va aparte porque TCGdex lo tiene a medias: da 20 Gengar cuando hay 101. Se trae de TCG Collector recorriendo sus 462 expansiones japonesas una a una, porque su buscador no deja pasar de la primera página. De 1782 candidatas se quedaron 914: las otras 860 eran cartas de otros Pokémon que vivían en expansiones llamadas «Intro Pack (Bulbasaur)» o «Pokémon TCG Classic (Charizard)», y se caen al leer el nombre de cada ficha. Todas revisadas en hojas de contacto (`python scripts/hoja-contacto.py ja`).
 
 Y para saber si falta alguna: `python scripts/auditar-pkmncards.py` compara el catálogo, carta a carta, contra pkmncards. Así aparecieron el Pokémon TCG Classic de 2023, los box topper de 2003 y la World Collection, que TCGdex no tiene. De la World Collection solo entra la inglesa: las otras ocho son la misma carta en otros idiomas.
 

@@ -384,10 +384,28 @@ test('ninguna carta enlaza a Cardmarket', () => {
   assert.ok(!JSON.stringify(e).includes('cardmarket.com'));
 });
 
-test('la mayoría de las cartas tiene enlace directo a TCGplayer', () => {
-  const directos = CARTAS.filter((c) => c.tp_id).length;
-  assert.ok(directos / CARTAS.length > 0.8, `solo ${directos} de ${CARTAS.length}`);
+/* TCGplayer es el mercado americano: vende las inglesas. Las japonesas
+   se compran en otro sitio y su botón abre una búsqueda, que es lo
+   honesto. Por eso la cuenta va solo sobre las inglesas. */
+test('la mayoría de las cartas inglesas tiene enlace directo a TCGplayer', () => {
+  const inglesas = CARTAS.filter((c) => c.l !== 'ja');
+  const directos = inglesas.filter((c) => c.tp_id).length;
+  assert.ok(directos / inglesas.length > 0.8, `solo ${directos} de ${inglesas.length}`);
   for (const c of CARTAS) if (c.tp_id) assert.ok(Number.isInteger(c.tp_id) && c.tp_id > 0, `${c.id}: id raro ${c.tp_id}`);
+});
+
+test('las japonesas están marcadas y todas enlazan a su página', () => {
+  const ja = CARTAS.filter((c) => c.l === 'ja');
+  if (!ja.length) return;   // aún no traídas
+  for (const c of ja) {
+    assert.ok(c.id.startsWith('ja-'), `${c.id}: identificador sin marcar`);
+    assert.ok(c.tc_id, `${c.id}: sin página en TCG Collector`);
+    assert.ok((SETS[c.s] || {}).ja, `${c.id}: su colección no está marcada como japonesa`);
+  }
+  // y ninguna inglesa se ha colado con la marca
+  for (const c of CARTAS) {
+    if (c.id.startsWith('ja-')) assert.strictEqual(c.l, 'ja', `${c.id}: japonesa sin marca`);
+  }
 });
 
 /* El número que enseña la app tiene que ser el que está impreso en la
