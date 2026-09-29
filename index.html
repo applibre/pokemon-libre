@@ -10,7 +10,7 @@
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icono-192.png">
 <link rel="apple-touch-icon" href="icono-192.png">
-<link rel="stylesheet" href="css/style.css?v=2609071657">
+<link rel="stylesheet" href="css/style.css?v=2609291731">
 </head>
 <body>
 
@@ -29,6 +29,20 @@
     </button>
   </header>
   <div class="cuerpo" id="inicio-cuerpo"></div>
+</section>
+
+<!-- ============ EXPANSIONES ============ -->
+<section id="p-expansiones" class="pantalla" aria-label="Expansiones">
+  <header class="barra">
+    <div class="barra-medio">
+      <h1 class="titulo">Expansiones</h1>
+      <p class="subtitulo" id="exp-sub"></p>
+    </div>
+  </header>
+  <div class="buscador" id="exp-buscador">
+    <input type="search" id="exp-buscar" placeholder="Buscar una colección…" autocomplete="off" enterkeyhint="search">
+  </div>
+  <div class="cuerpo" id="exp-cuerpo"></div>
 </section>
 
 <!-- ============ CARTAS de un Pokémon ============ -->
@@ -80,6 +94,10 @@
     <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="7" height="16" rx="1.6"/><rect x="13.5" y="4" width="7" height="16" rx="1.6"/></svg>
     <span>Colección</span>
   </button>
+  <button data-ir="expansiones">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M9 5v14"/></svg>
+    <span>Expansiones</span>
+  </button>
   <button data-ir="faltan">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h9"/><circle cx="19" cy="18" r="2.5"/></svg>
     <span>Me faltan</span>
@@ -97,14 +115,16 @@
 
 <div class="tosti" id="tosti" role="status" aria-live="polite"></div>
 
-<script src="js/dominio.js?v=2609071657"></script>
-<script src="js/almacen.js?v=2609071657"></script>
-<script src="js/estado.js?v=2609071657"></script>
-<script src="js/interfaz.js?v=2609071657"></script>
-<script src="js/vistas/inicio.js?v=2609071657"></script>
-<script src="js/vistas/cartas.js?v=2609071657"></script>
-<script src="js/vistas/faltan.js?v=2609071657"></script>
-<script src="js/vistas/ajustes.js?v=2609071657"></script>
-<script src="js/app.js?v=2609071657"></script>
+<script src="js/dominio.js?v=2609291731"></script>
+<script src="js/almacen.js?v=2609291731"></script>
+<script src="js/carta3d.js?v=2609291731"></script>
+<script src="js/estado.js?v=2609291731"></script>
+<script src="js/interfaz.js?v=2609291731"></script>
+<script src="js/vistas/inicio.js?v=2609291731"></script>
+<script src="js/vistas/cartas.js?v=2609291731"></script>
+<script src="js/vistas/expansiones.js?v=2609291731"></script>
+<script src="js/vistas/faltan.js?v=2609291731"></script>
+<script src="js/vistas/ajustes.js?v=2609291731"></script>
+<script src="js/app.js?v=2609291731"></script>
 </body>
 </html>

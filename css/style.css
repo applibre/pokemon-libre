@@ -6,74 +6,87 @@
    hueco vacío de un álbum.
    =========================================================== */
 
+/* La fuente viaja dentro de la app: sin internet tiene que verse igual. */
+@font-face {
+  font-family: "Jakarta";
+  src: url("fuentes/jakarta.woff2") format("woff2");
+  font-weight: 400 800;
+  font-display: swap;
+}
+
 :root {
-  --paper:   #EEF0F4;
-  --surface: #FAFBFD;
-  --sunk:    #E2E5EC;
-  --tx:      #17162A;
-  --tx2:     #4E4D66;
-  --tx3:     #807F97;
-  --line:    #D4D7E1;
-  --line2:   #BDC1CF;
+  /* Claro por defecto: papel, tarjeta blanca y un solo azul en lo que se
+     puede tocar. El oro se reserva para lo que ya tienes. */
+  --paper:   #f2f5f9;
+  --surface: #ffffff;
+  --sunk:    #e8ecf3;
+  --tx:      #101420;
+  --tx2:     #4a5264;
+  --tx3:     #7c8496;
+  --line:    #dde3ec;
+  --line2:   #c6cedb;
 
-  --violeta: #5B4BDB;
-  --oro:     #C9930A;
-  --oro-viva:#E9B21E;
-  --mal:     #B4471B;
+  --violeta: #3a5ce0;
+  --oro:     #b07f0a;
+  --oro-viva:#e8b520;
+  --mal:     #c0431c;
 
-  /* colores de tipo, para las fichas de inicio */
   --t-fuego:     #D9532B;
   --t-planta:    #3E9B4F;
   --t-agua:      #2E7DC9;
-  --t-electrico: #D9A400;
+  --t-electrico: #C99100;
   --t-fantasma:  #6B4BA8;
   --t-normal:    #8A8A9E;
 
-  --r-sm: 7px;
-  --r-md: 12px;
-  --r-lg: 18px;
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
 
   --nav-h: 58px;
   --sai: env(safe-area-inset-top, 0px);
   --sae: env(safe-area-inset-bottom, 0px);
 
-  --f: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  --f: "Jakarta", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
   --fm: ui-monospace, "SF Mono", "Cascadia Mono", Consolas, monospace;
+
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-tema="claro"]) {
-    --paper:   #100F1C;
-    --surface: #191827;
-    --sunk:    #21202F;
-    --tx:      #ECEBF5;
-    --tx2:     #A9A8BE;
-    --tx3:     #7B7A92;
-    --line:    #2B2A3C;
-    --line2:   #3A3950;
-    --violeta: #9D91F0;
-    --oro:     #E9B21E;
-    --oro-viva:#F5C63F;
-    --mal:     #E48A5F;
+    --paper:   #0c0f16;
+    --surface: #141922;
+    --sunk:    #1c222d;
+    --tx:      #eef1f7;
+    --tx2:     #a6aec1;
+    --tx3:     #767e91;
+    --line:    #242c3a;
+    --line2:   #333c4c;
+    --violeta: #8aa0ff;
+    --oro:     #e8b520;
+    --oro-viva:#ffd451;
+    --mal:     #e48a5f;
     --t-fuego: #F07A55; --t-planta: #6BC77C; --t-agua: #66A7EE;
     --t-electrico: #F0C43A; --t-fantasma: #A98BE0; --t-normal: #A5A4BA;
+    color-scheme: dark;
   }
 }
 :root[data-tema="oscuro"] {
-  --paper:   #100F1C;
-  --surface: #191827;
-  --sunk:    #21202F;
-  --tx:      #ECEBF5;
-  --tx2:     #A9A8BE;
-  --tx3:     #7B7A92;
-  --line:    #2B2A3C;
-  --line2:   #3A3950;
-  --violeta: #9D91F0;
-  --oro:     #E9B21E;
-  --oro-viva:#F5C63F;
-  --mal:     #E48A5F;
+  --paper:   #0c0f16;
+  --surface: #141922;
+  --sunk:    #1c222d;
+  --tx:      #eef1f7;
+  --tx2:     #a6aec1;
+  --tx3:     #767e91;
+  --line:    #242c3a;
+  --line2:   #333c4c;
+  --violeta: #8aa0ff;
+  --oro:     #e8b520;
+  --oro-viva:#ffd451;
+  --mal:     #e48a5f;
   --t-fuego: #F07A55; --t-planta: #6BC77C; --t-agua: #66A7EE;
   --t-electrico: #F0C43A; --t-fantasma: #A98BE0; --t-normal: #A5A4BA;
+  color-scheme: dark;
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -154,7 +167,7 @@ button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulat
 
 /* ---------- inicio: fichas de Pokémon ---------- */
 
-.pokes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.pokes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 @media (min-width: 560px) { .pokes { grid-template-columns: repeat(3, 1fr); } }
 @media (min-width: 820px) { .pokes { grid-template-columns: repeat(4, 1fr); } }
 
@@ -180,14 +193,17 @@ button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulat
 .poke.completo .nom::after { content: " ✓"; color: var(--oro); }
 .poke:active { transform: scale(.985); }
 
+/* Rótulo de sección: pequeño, en mayúsculas y en el color de la app.
+   Ordena la página sin necesidad de líneas ni cajas. */
 .grupo-titulo {
-  font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
-  color: var(--tx3); margin: 22px 2px 10px;
+  font-family: var(--fm); font-size: 11px; font-weight: 500;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--violeta); margin: 26px 2px 10px;
 }
 .grupo-titulo:first-child { margin-top: 6px; }
 
 .resumen {
-  border: 1px solid var(--line); border-radius: var(--r-md);
+  border: 1px solid var(--line); border-radius: var(--r-lg);
   background: var(--surface); padding: 14px 15px; margin: 6px 0 4px;
   display: grid; gap: 8px;
 }
@@ -217,7 +233,11 @@ button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulat
   background: var(--surface); font-size: 13px; font-weight: 600; color: var(--tx2);
   white-space: nowrap;
 }
-.filtros button.viva { background: var(--tx); border-color: var(--tx); color: var(--paper); }
+.filtros button.viva { background: var(--violeta); border-color: var(--violeta); color: #fff; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema="claro"]) .filtros button.viva { color: #0c0f16; }
+}
+:root[data-tema="oscuro"] .filtros button.viva { color: #0c0f16; }
 
 /* ---------- rejilla de cartas ---------- */
 
@@ -271,7 +291,12 @@ button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulat
 }
 /* las que faltan, apagadas: el hueco vacío del álbum. Lo justo para
    distinguirlas de un vistazo, no tanto como para no poder mirarlas */
-.carta.falta img { opacity: .6; filter: grayscale(.42); }
+/* la que falta, apagada lo justo para distinguirla de un vistazo */
+.carta.falta img { opacity: .72; filter: grayscale(.3); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema="claro"]) .carta.falta img { opacity: .6; filter: grayscale(.42); }
+}
+:root[data-tema="oscuro"] .carta.falta img { opacity: .6; filter: grayscale(.42); }
 .carta.falta::after {
   content: ""; position: absolute; inset: 0;
   border-radius: var(--r-sm); border: 1px dashed var(--line2);
@@ -329,10 +354,12 @@ button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulat
 
 /* ---------- ficha de la carta ---------- */
 
-.ficha-img {
-  display: block; width: min(72%, 260px); margin: 0 auto 14px;
+.ficha-carta {
+  width: min(72%, 260px); margin: 0 auto 16px;
   border-radius: 10px; box-shadow: 0 6px 22px rgba(10,8,30,.28);
+  overflow: hidden;
 }
+.ficha-carta img { display: block; width: 100%; border-radius: inherit; }
 .datos { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; margin-bottom: 14px; }
 .datos div { background: var(--surface); padding: 9px 13px; display: flex; justify-content: space-between; gap: 12px; font-size: 14px; }
 .datos dt { color: var(--tx3); margin: 0; }
@@ -389,7 +416,7 @@ a.btn { text-decoration: none; color: inherit; }
 .nav {
   position: fixed; left: 0; right: 0; bottom: 0;
   height: calc(var(--nav-h) + var(--sae)); padding-bottom: var(--sae);
-  display: grid; grid-template-columns: repeat(2, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   background: var(--surface); border-top: 1px solid var(--line); z-index: 30;
 }
 .nav button {
@@ -415,6 +442,103 @@ a.btn { text-decoration: none; color: inherit; }
 .hoja .asa { width: 38px; height: 4px; border-radius: 2px; background: var(--line2); margin: 4px auto 12px; }
 .hoja h2 { margin: 0 0 3px; font-size: 19px; font-weight: 700; }
 .hoja-sub { margin: 0 0 14px; font-size: 13px; color: var(--tx3); }
+
+
+/* ---------- la carta en 3D ----------
+   El efecto del sobre: la carta llega girando, se inclina con el dedo y
+   la luz le pasa por encima. Las cuatro variables las escribe
+   js/carta3d.js; aquí solo se usan. Todo con transform y opacity, que
+   son las dos cosas que el navegador mueve sin repintar. */
+
+.c3d {
+  --rx: 0deg; --ry: 0deg; --mx: 50%; --my: 50%;
+  position: relative; display: block;
+  transform-style: preserve-3d;
+  transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry));
+  transition: transform .5s cubic-bezier(.22,.8,.3,1), box-shadow .5s;
+  will-change: transform;
+  touch-action: manipulation;
+}
+.c3d.c3d-viva { transition: transform .08s linear, box-shadow .2s; }
+
+/* el reflejo que sigue al dedo */
+.c3d-luz {
+  position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background: radial-gradient(60% 60% at var(--mx) var(--my),
+    rgba(255,255,255,.42) 0%, rgba(255,255,255,.10) 38%, transparent 68%);
+  opacity: 0; transition: opacity .35s;
+  mix-blend-mode: soft-light;
+}
+.c3d.c3d-viva .c3d-luz { opacity: 1; }
+
+/* el foil de las holo: cambia de color según cómo se mire */
+.c3d-holo {
+  position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  opacity: 0; transition: opacity .35s;
+  background:
+    repeating-linear-gradient(115deg,
+      rgba(255,119,115,.28) 0%, rgba(255,237,95,.28) 7%, rgba(168,255,95,.28) 14%,
+      rgba(131,255,247,.28) 21%, rgba(120,148,255,.28) 28%, rgba(216,117,255,.28) 35%,
+      rgba(255,119,115,.28) 42%);
+  background-size: 300% 300%;
+  background-position: var(--mx) var(--my);
+  mix-blend-mode: overlay;
+  filter: saturate(1.4);
+}
+/* La ilustración manda: el foil se ve, pero no tapa la carta. */
+.c3d.c3d-viva .c3d-holo { opacity: .5; }
+.c3d-foil .c3d-holo { mix-blend-mode: color-dodge; filter: brightness(.55) contrast(1.8) saturate(1.5); }
+.c3d-foil.c3d-viva .c3d-holo { opacity: .62; }
+
+.c3d.c3d-viva { box-shadow: 0 18px 44px rgba(10,8,30,.42); }
+
+/* la llegada: como cuando la carta sale del sobre */
+@keyframes c3d-llega {
+  0%   { transform: perspective(900px) rotateY(-26deg) rotateX(7deg) scale(.9); opacity: 0; }
+  60%  { opacity: 1; }
+  100% { transform: perspective(900px) rotateY(0) rotateX(0) scale(1); opacity: 1; }
+}
+.c3d-llega { animation: c3d-llega .72s cubic-bezier(.22,.9,.28,1) both; }
+
+/* y un destello que la recorre una sola vez al llegar */
+@keyframes c3d-destello { from { transform: translateX(-130%); } to { transform: translateX(130%); } }
+.c3d-llega::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,.62) 50%, transparent 60%);
+  animation: c3d-destello .9s .34s ease-out 1 both;
+}
+
+/* las cartas de la rejilla aparecen subiendo, una detrás de otra */
+@keyframes c3d-asoma { from { opacity: 0; transform: translateY(10px) scale(.97); } to { opacity: 1; transform: none; } }
+.carta img.llegando { animation: c3d-asoma .42s ease-out both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .c3d, .c3d-llega, .carta img.llegando { animation: none !important; transform: none !important; }
+  .c3d-luz, .c3d-holo { display: none; }
+}
+
+/* ---------- lista de expansiones ---------- */
+
+.expansiones { display: grid; gap: 7px; }
+.exp {
+  display: grid; grid-template-columns: 34px 1fr auto; grid-template-rows: auto auto;
+  gap: 2px 11px; align-items: center; text-align: left;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md);
+  padding: 11px 13px; width: 100%; color: inherit;
+  touch-action: manipulation; transition: border-color .15s, transform .1s;
+}
+.exp:active { transform: scale(.985); }
+.exp.completa { border-color: var(--oro); }
+.exp-logo { grid-row: 1 / 3; width: 34px; height: 34px; object-fit: contain; }
+.exp-nombre { font-weight: 700; font-size: 15px; line-height: 1.25; }
+.exp-anio { grid-column: 3; grid-row: 1; font-family: var(--fm); font-size: 12px; color: var(--tx3); }
+.exp-via {
+  grid-column: 2; grid-row: 2; height: 4px; border-radius: 999px;
+  background: var(--sunk); overflow: hidden; margin-top: 3px;
+}
+.exp-via i { display: block; height: 100%; background: var(--oro-viva); border-radius: 999px; transition: width .3s ease; }
+.exp-cuenta { grid-column: 3; grid-row: 2; font-family: var(--fm); font-size: 13px; font-weight: 600; }
+.exp-cuenta small { color: var(--tx3); font-weight: 400; }
 
 /* ---------- avisos ---------- */
 

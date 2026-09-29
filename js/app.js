@@ -6,7 +6,7 @@ const App = (() => {
 
   const { $, $$, tosti } = UI;
 
-  const PANTALLAS = ['inicio', 'cartas', 'faltan', 'ajustes'];
+  const PANTALLAS = ['inicio', 'expansiones', 'cartas', 'faltan', 'ajustes'];
   let actual = null;
 
   function ir(nombre) {
@@ -14,7 +14,9 @@ const App = (() => {
 
     // la barra de abajo solo marca las dos secciones que tiene
     $$('.nav button').forEach((b) => {
-      const suya = b.dataset.ir === nombre || (nombre === 'cartas' && b.dataset.ir === 'inicio');
+      // al ver las cartas se queda marcada la sección de la que vienes
+      const desde = nombre === 'cartas' ? (Cartas.modo() === 'set' ? 'expansiones' : 'inicio') : nombre;
+      const suya = b.dataset.ir === desde;
       b.classList.toggle('viva', suya);
       if (suya) b.setAttribute('aria-current', 'page');
       else b.removeAttribute('aria-current');
@@ -24,6 +26,7 @@ const App = (() => {
     if (nombre !== 'cartas') marcarDireccion(nombre);
     if (nombre === 'inicio') Inicio.pintar();
     if (nombre === 'cartas') Cartas.pintar();
+    if (nombre === 'expansiones') Expansiones.pintar();
     if (nombre === 'faltan') Faltan.pintar();
     if (nombre === 'ajustes') Ajustes.pintar();
   }
@@ -34,7 +37,8 @@ const App = (() => {
   function desdeLaDireccion() {
     const d = decodeURIComponent(location.hash.replace(/^#/, '')).trim();
     if (!d) { ir('inicio'); return; }
-    if (d === 'faltan' || d === 'ajustes' || d === 'inicio') { ir(d); return; }
+    if (d === 'faltan' || d === 'ajustes' || d === 'inicio' || d === 'expansiones') { ir(d); return; }
+    if (d.startsWith('set-') && Estado.sets()[d.slice(4)]) { Cartas.abrirSet(d.slice(4)); return; }
     if (Estado.pokemonPorId(d)) { Cartas.abrir(d); return; }
     ir('inicio');
   }
@@ -48,7 +52,7 @@ const App = (() => {
     const objetivo = d === 'inicio' ? '' : d;
     if (actualHash === objetivo) return;
     const url = objetivo ? `#${objetivo}` : location.pathname + location.search;
-    const profundiza = objetivo && !['faltan', 'ajustes'].includes(objetivo);
+    const profundiza = objetivo && !['faltan', 'ajustes', 'expansiones'].includes(objetivo);
     if (profundiza) history.pushState(null, '', url);
     else history.replaceState(null, '', url);
   };
@@ -87,6 +91,7 @@ const App = (() => {
 
     Inicio.iniciar();
     Cartas.iniciar();
+    Expansiones.iniciar();
     Faltan.iniciar();
     Ajustes.iniciar();
 

@@ -10,12 +10,15 @@ const Cartas = (() => {
 
   const { $, esc, hoja, cerrarHoja, tosti, vibrar } = UI;
 
-  let pokemonId = null;
+  /* La rejilla sirve para dos cosas: todas las cartas de un Pokémon, o
+     todas las de una expansión. Cambia de dónde sale la lista y poco
+     más, así que el modo se guarda aquí y el resto no se entera. */
+  let modo = { tipo: 'pokemon', id: null };
   let filtros = { texto: '', estado: 'todas' };
   let agrupar = true;
 
   function iniciar() {
-    $('#volver').onclick = () => App.ir('inicio');
+    $('#volver').onclick = () => App.ir(modo.tipo === 'set' ? 'expansiones' : 'inicio');
 
     $('#buscar-abrir').onclick = () => {
       const b = $('#buscador');
@@ -38,26 +41,43 @@ const Cartas = (() => {
     Estado.escuchar(() => { if ($('#p-cartas').classList.contains('viva')) pintar(); });
   }
 
-  function abrir(id) {
-    pokemonId = id;
+  function abrir(id) { entrar({ tipo: 'pokemon', id }, id); }
+
+  /** Todas las cartas de una expansión, en orden de número. */
+  function abrirSet(id) { entrar({ tipo: 'set', id }, 'set-' + id); }
+
+  function entrar(nuevo, direccion) {
+    modo = nuevo;
+    agrupar = nuevo.tipo === 'pokemon';
     filtros = { texto: '', estado: 'todas' };
     $('#buscar').value = '';
     $('#buscador').classList.add('oculto');
     App.ir('cartas');
-    App.marcarDireccion(id);
+    App.marcarDireccion(direccion);
     $('#cartas-cuerpo').scrollTop = 0;
+  }
+
+  /** Las cartas del modo en el que estemos. */
+  function delModo() {
+    if (modo.tipo === 'set') return Estado.cartasVisibles().filter((c) => c.s === modo.id);
+    return Estado.cartasDe(modo.id);
   }
 
   /* ---------- pintar ---------- */
 
   function pintar() {
-    if (!pokemonId) return;
-    const poke = Estado.pokemonPorId(pokemonId);
-    const todas = Estado.cartasDe(pokemonId);
+    if (!modo.id) return;
+    const todas = delModo();
     const col = Estado.coleccion();
     const p = Dominio.progreso(todas, col);
 
-    $('#cartas-titulo').textContent = poke ? poke.nombre : pokemonId;
+    if (modo.tipo === 'set') {
+      const s = Estado.sets()[modo.id] || {};
+      $('#cartas-titulo').textContent = s.n || modo.id;
+    } else {
+      const poke = Estado.pokemonPorId(modo.id);
+      $('#cartas-titulo').textContent = poke ? poke.nombre : modo.id;
+    }
     $('#cartas-sub').textContent = `${p.tengo} de ${p.total} · te faltan ${p.faltan}`;
 
     pintarFiltros(todas, col);
@@ -145,6 +165,10 @@ const Cartas = (() => {
     const ruta = img.dataset.src;
     delete img.dataset.src;
     let intentos = 0;
+    img.addEventListener('load', () => {
+      img.classList.add('llegando');
+      img.addEventListener('animationend', () => img.classList.remove('llegando'), { once: true });
+    }, { once: true });
     img.onerror = () => {
       intentos++;
       if (intentos <= 2) {
@@ -219,8 +243,10 @@ const Cartas = (() => {
       titulo: c.n,
       sub: `${set.n || c.s} · ${Dominio.numeroCompleto(c, sets)}${set.rel ? ` · ${Dominio.anioDeSet(set)}` : ''}`,
       html: `
-        <img class="ficha-img" src="data/cartas/g/${esc(c.id)}.webp" alt="${esc(c.n)}"
-          onerror="this.src='data/cartas/${esc(c.id)}.webp'">
+        <div class="ficha-carta c3d-llega" id="ficha-carta">
+          <img src="data/cartas/g/${esc(c.id)}.webp" alt="${esc(c.n)}"
+            onerror="this.src='data/cartas/${esc(c.id)}.webp'">
+        </div>
 
         <div class="variantes" id="variantes"></div>
 
@@ -235,7 +261,15 @@ const Cartas = (() => {
         <p class="pista chica" style="margin-top:8px">${enlaces.tcgplayer.directo || enlaces.tcgcollector.directo
           ? 'El precio cambia a diario: se mira en la tienda, no aquí.'
           : 'Esta carta no tiene página propia en ninguna de las dos tiendas: los enlaces abren una búsqueda con su nombre, colección y número.'}</p>`,
-      listo(cuerpo) { pintarVariantes(cuerpo, c); },
+      listo(cuerpo) {
+        pintarVariantes(cuerpo, c);
+        // la carta llega girando y luego se inclina con el dedo
+        const marco = $('#ficha-carta', cuerpo);
+        if (marco) {
+          Carta3D.montar(marco, Carta3D.nivelDe(c));
+          marco.addEventListener('animationend', () => marco.classList.remove('c3d-llega'), { once: true });
+        }
+      },
     });
   }
 
@@ -267,5 +301,5 @@ const Cartas = (() => {
     dibuja();
   }
 
-  return { iniciar, pintar, abrir, abrirFicha };
+  return { iniciar, pintar, abrir, abrirSet, abrirFicha, modo: () => modo.tipo };
 })();

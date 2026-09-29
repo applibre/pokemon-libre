@@ -1,0 +1,3236 @@
+[
+ {
+  "tc": "11823",
+  "slug": "30th-celebration",
+  "n": "30th Celebration",
+  "cod": "M6a",
+  "era": ""
+ },
+ {
+  "tc": "11822",
+  "slug": "30th-celebration-premium-deck-set-espeon-and-umbreon",
+  "n": "30th Celebration Premium Deck Set: Espeon & Umbreon",
+  "cod": "MF",
+  "era": ""
+ },
+ {
+  "tc": "11930",
+  "slug": "eevee-ex-starter-set-ex",
+  "n": "Eevee ex Starter Set ex",
+  "cod": "MEE",
+  "era": ""
+ },
+ {
+  "tc": "11931",
+  "slug": "sprigatito-and-meowscarada-ex-starter-set-ex",
+  "n": "Sprigatito & Meowscarada ex Starter Set ex",
+  "cod": "MEM",
+  "era": ""
+ },
+ {
+  "tc": "11929",
+  "slug": "storm-emeralda",
+  "n": "Storm Emeralda",
+  "cod": "M6",
+  "era": ""
+ },
+ {
+  "tc": "11932",
+  "slug": "zorua-and-zoroark-ex-starter-set-ex",
+  "n": "Zorua & Zoroark ex Starter Set ex",
+  "cod": "MEZ",
+  "era": ""
+ },
+ {
+  "tc": "11810",
+  "slug": "abyss-eye",
+  "n": "Abyss Eye",
+  "cod": "M5",
+  "era": ""
+ },
+ {
+  "tc": "11800",
+  "slug": "ninja-spinner",
+  "n": "Ninja Spinner",
+  "cod": "M4",
+  "era": ""
+ },
+ {
+  "tc": "11684",
+  "slug": "nullifying-zero",
+  "n": "Nullifying Zero",
+  "cod": "M3",
+  "era": ""
+ },
+ {
+  "tc": "11679",
+  "slug": "start-deck-100-battle-collection",
+  "n": "Start Deck 100 Battle Collection",
+  "cod": "MC",
+  "era": ""
+ },
+ {
+  "tc": "11683",
+  "slug": "start-deck-100-battle-collection-corociao-version",
+  "n": "Start Deck 100 Battle Collection CoroCiao Version",
+  "cod": "MP1",
+  "era": ""
+ },
+ {
+  "tc": "11678",
+  "slug": "mega-dream-ex",
+  "n": "MEGA Dream ex",
+  "cod": "M2a",
+  "era": ""
+ },
+ {
+  "tc": "11675",
+  "slug": "inferno-x",
+  "n": "Inferno X",
+  "cod": "M2",
+  "era": ""
+ },
+ {
+  "tc": "11671",
+  "slug": "mega-diancie-ex-mega-starter-set",
+  "n": "Mega Diancie ex MEGA Starter Set",
+  "cod": "MBD",
+  "era": ""
+ },
+ {
+  "tc": "11670",
+  "slug": "mega-gengar-ex-mega-starter-set",
+  "n": "Mega Gengar ex MEGA Starter Set",
+  "cod": "MBG",
+  "era": ""
+ },
+ {
+  "tc": "11660",
+  "slug": "mega-brave",
+  "n": "Mega Brave",
+  "cod": "M1L",
+  "era": ""
+ },
+ {
+  "tc": "11665",
+  "slug": "mega-evolution-promos",
+  "n": "Mega Evolution Promos",
+  "cod": "MP",
+  "era": ""
+ },
+ {
+  "tc": "11663",
+  "slug": "mega-premium-trainer-box",
+  "n": "MEGA Premium Trainer Box",
+  "cod": "MA",
+  "era": ""
+ },
+ {
+  "tc": "11661",
+  "slug": "mega-symphonia",
+  "n": "Mega Symphonia",
+  "cod": "M1S",
+  "era": ""
+ },
+ {
+  "tc": "11652",
+  "slug": "black-bolt",
+  "n": "Black Bolt",
+  "cod": "SV11B",
+  "era": ""
+ },
+ {
+  "tc": "11653",
+  "slug": "white-flare",
+  "n": "White Flare",
+  "cod": "SV11W",
+  "era": ""
+ },
+ {
+  "tc": "11649",
+  "slug": "the-glory-of-team-rocket",
+  "n": "The Glory of Team Rocket",
+  "cod": "SV10",
+  "era": ""
+ },
+ {
+  "tc": "11648",
+  "slug": "hot-air-arena",
+  "n": "Hot Air Arena",
+  "cod": "SV9a",
+  "era": ""
+ },
+ {
+  "tc": "11647",
+  "slug": "marnies-morpeko-and-grimmsnarl-ex-starter-set-ex",
+  "n": "Marnie's Morpeko & Grimmsnarl ex Starter Set ex",
+  "cod": "SVOM",
+  "era": ""
+ },
+ {
+  "tc": "11646",
+  "slug": "stevens-beldum-and-metagross-ex-starter-set-ex",
+  "n": "Steven's Beldum & Metagross ex Starter Set ex",
+  "cod": "SVOD",
+  "era": ""
+ },
+ {
+  "tc": "11643",
+  "slug": "battle-partners",
+  "n": "Battle Partners",
+  "cod": "SV9",
+  "era": ""
+ },
+ {
+  "tc": "11644",
+  "slug": "battle-partners-deck-build-box",
+  "n": "Battle Partners Deck Build Box",
+  "cod": "SVN",
+  "era": ""
+ },
+ {
+  "tc": "11640",
+  "slug": "terastal-festival-ex",
+  "n": "Terastal Festival ex",
+  "cod": "SV8a",
+  "era": ""
+ },
+ {
+  "tc": "11639",
+  "slug": "generations-starter-decks",
+  "n": "Generations Starter Decks",
+  "cod": "SVM",
+  "era": ""
+ },
+ {
+  "tc": "11638",
+  "slug": "super-electric-breaker",
+  "n": "Super Electric Breaker",
+  "cod": "SV8",
+  "era": ""
+ },
+ {
+  "tc": "11635",
+  "slug": "paradise-dragona",
+  "n": "Paradise Dragona",
+  "cod": "SV7a",
+  "era": ""
+ },
+ {
+  "tc": "11634",
+  "slug": "ceruledge-ex-starter-set-tera-type-stellar",
+  "n": "Ceruledge ex Starter Set Tera Type: Stellar",
+  "cod": "SVLS",
+  "era": ""
+ },
+ {
+  "tc": "11633",
+  "slug": "sylveon-ex-starter-set-tera-type-stellar",
+  "n": "Sylveon ex Starter Set Tera Type: Stellar",
+  "cod": "SVLN",
+  "era": ""
+ },
+ {
+  "tc": "11629",
+  "slug": "stellar-miracle",
+  "n": "Stellar Miracle",
+  "cod": "SV7",
+  "era": ""
+ },
+ {
+  "tc": "11630",
+  "slug": "stellar-miracle-deck-build-box",
+  "n": "Stellar Miracle Deck Build Box",
+  "cod": "SVK",
+  "era": ""
+ },
+ {
+  "tc": "11626",
+  "slug": "night-wanderer",
+  "n": "Night Wanderer",
+  "cod": "SV6a",
+  "era": ""
+ },
+ {
+  "tc": "11627",
+  "slug": "chien-pao-ex-battle-master-deck",
+  "n": "Chien-Pao ex Battle Master Deck",
+  "cod": "SVJP",
+  "era": ""
+ },
+ {
+  "tc": "11628",
+  "slug": "terastal-charizard-ex-battle-master-deck",
+  "n": "Terastal Charizard ex Battle Master Deck",
+  "cod": "SVJL",
+  "era": ""
+ },
+ {
+  "tc": "11624",
+  "slug": "mask-of-change",
+  "n": "Mask of Change",
+  "cod": "SV6",
+  "era": ""
+ },
+ {
+  "tc": "11622",
+  "slug": "crimson-haze",
+  "n": "Crimson Haze",
+  "cod": "SV5a",
+  "era": ""
+ },
+ {
+  "tc": "11623",
+  "slug": "battle-academy",
+  "n": "Battle Academy",
+  "cod": "SVI",
+  "era": ""
+ },
+ {
+  "tc": "11616",
+  "slug": "ancient-koraidon-ex-starter-deck-and-build-set",
+  "n": "Ancient Koraidon ex Starter Deck & Build Set",
+  "cod": "SVHK",
+  "era": ""
+ },
+ {
+  "tc": "11604",
+  "slug": "cyber-judge",
+  "n": "Cyber Judge",
+  "cod": "SV5M",
+  "era": ""
+ },
+ {
+  "tc": "11617",
+  "slug": "future-miraidon-ex-starter-deck-and-build-set",
+  "n": "Future Miraidon ex Starter Deck & Build Set",
+  "cod": "SVHM",
+  "era": ""
+ },
+ {
+  "tc": "11603",
+  "slug": "wild-force",
+  "n": "Wild Force",
+  "cod": "SV5K",
+  "era": ""
+ },
+ {
+  "tc": "11602",
+  "slug": "shiny-treasure-ex",
+  "n": "Shiny Treasure ex",
+  "cod": "SV4a",
+  "era": ""
+ },
+ {
+  "tc": "11597",
+  "slug": "venusaur-charizard-and-blastoise-special-deck-set-ex",
+  "n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
+  "cod": "SVG",
+  "era": ""
+ },
+ {
+  "tc": "11600",
+  "slug": "pokemon-tcg-classic-blastoise",
+  "n": "Pokémon TCG Classic (Blastoise)",
+  "cod": "CLK",
+  "era": ""
+ },
+ {
+  "tc": "11599",
+  "slug": "pokemon-tcg-classic-charizard",
+  "n": "Pokémon TCG Classic (Charizard)",
+  "cod": "CLL",
+  "era": ""
+ },
+ {
+  "tc": "11598",
+  "slug": "pokemon-tcg-classic-venusaur",
+  "n": "Pokémon TCG Classic (Venusaur)",
+  "cod": "CLF",
+  "era": ""
+ },
+ {
+  "tc": "11592",
+  "slug": "ancient-roar",
+  "n": "Ancient Roar",
+  "cod": "SV4K",
+  "era": ""
+ },
+ {
+  "tc": "11593",
+  "slug": "future-flash",
+  "n": "Future Flash",
+  "cod": "SV4M",
+  "era": ""
+ },
+ {
+  "tc": "11585",
+  "slug": "mewtwo-ex-starter-set-terastal",
+  "n": "Mewtwo ex Starter Set Terastal",
+  "cod": "SVEM",
+  "era": ""
+ },
+ {
+  "tc": "11583",
+  "slug": "raging-surf",
+  "n": "Raging Surf",
+  "cod": "SV3a",
+  "era": ""
+ },
+ {
+  "tc": "11586",
+  "slug": "skeledirge-ex-starter-set-terastal",
+  "n": "Skeledirge ex Starter Set Terastal",
+  "cod": "SVEL",
+  "era": ""
+ },
+ {
+  "tc": "11578",
+  "slug": "ruler-of-the-black-flame",
+  "n": "Ruler of the Black Flame",
+  "cod": "SV3",
+  "era": ""
+ },
+ {
+  "tc": "11579",
+  "slug": "ruler-of-the-black-flame-deck-build-box",
+  "n": "Ruler of the Black Flame Deck Build Box",
+  "cod": "SVF",
+  "era": ""
+ },
+ {
+  "tc": "11580",
+  "slug": "world-championships-2023-yokohama-deck-pikachu",
+  "n": "World Championships 2023 Yokohama Deck: Pikachu",
+  "cod": "WCS23",
+  "era": ""
+ },
+ {
+  "tc": "11577",
+  "slug": "ex-starter-decks",
+  "n": "ex Starter Decks",
+  "cod": "SVD",
+  "era": ""
+ },
+ {
+  "tc": "11575",
+  "slug": "pokemon-card-151",
+  "n": "Pokémon Card 151",
+  "cod": "SV2a",
+  "era": ""
+ },
+ {
+  "tc": "11576",
+  "slug": "ex-special-set",
+  "n": "ex Special Set",
+  "cod": "SVP1",
+  "era": ""
+ },
+ {
+  "tc": "11570",
+  "slug": "clay-burst",
+  "n": "Clay Burst",
+  "cod": "SV2D",
+  "era": ""
+ },
+ {
+  "tc": "11569",
+  "slug": "snow-hazard",
+  "n": "Snow Hazard",
+  "cod": "SV2P",
+  "era": ""
+ },
+ {
+  "tc": "11567",
+  "slug": "pikachu-ex-and-pawmot-starter-set-ex",
+  "n": "Pikachu ex & Pawmot Starter Set ex",
+  "cod": "SVC",
+  "era": ""
+ },
+ {
+  "tc": "11566",
+  "slug": "triplet-beat",
+  "n": "Triplet Beat",
+  "cod": "SV1a",
+  "era": ""
+ },
+ {
+  "tc": "11510",
+  "slug": "fuecoco-and-ampharos-ex-starter-set-ex",
+  "n": "Fuecoco & Ampharos ex Starter Set ex",
+  "cod": "SVAL",
+  "era": ""
+ },
+ {
+  "tc": "11512",
+  "slug": "premium-trainer-box-ex",
+  "n": "Premium Trainer Box ex",
+  "cod": "SVB",
+  "era": ""
+ },
+ {
+  "tc": "11511",
+  "slug": "quaxly-and-mimikyu-ex-starter-set-ex",
+  "n": "Quaxly & Mimikyu ex Starter Set ex",
+  "cod": "SVAW",
+  "era": ""
+ },
+ {
+  "tc": "11505",
+  "slug": "scarlet-ex",
+  "n": "Scarlet ex",
+  "cod": "SV1S",
+  "era": ""
+ },
+ {
+  "tc": "11509",
+  "slug": "sprigatito-and-lucario-ex-starter-set-ex",
+  "n": "Sprigatito & Lucario ex Starter Set ex",
+  "cod": "SVAM",
+  "era": ""
+ },
+ {
+  "tc": "11506",
+  "slug": "violet-ex",
+  "n": "Violet ex",
+  "cod": "SV1V",
+  "era": ""
+ },
+ {
+  "tc": "11502",
+  "slug": "scarlet-and-violet-promos",
+  "n": "Scarlet & Violet Promos",
+  "cod": "SVP",
+  "era": ""
+ },
+ {
+  "tc": "11503",
+  "slug": "vstar-universe",
+  "n": "VSTAR Universe",
+  "cod": "S12a",
+  "era": ""
+ },
+ {
+  "tc": "11501",
+  "slug": "charizard-vstar-vs-rayquaza-vmax-special-deck-set",
+  "n": "Charizard VSTAR vs Rayquaza VMAX Special Deck Set",
+  "cod": "SO",
+  "era": ""
+ },
+ {
+  "tc": "11499",
+  "slug": "paradigm-trigger",
+  "n": "Paradigm Trigger",
+  "cod": "S12",
+  "era": ""
+ },
+ {
+  "tc": "11497",
+  "slug": "incandescent-arcana",
+  "n": "Incandescent Arcana",
+  "cod": "S11a",
+  "era": ""
+ },
+ {
+  "tc": "11487",
+  "slug": "vstar-special-set",
+  "n": "VSTAR Special Set",
+  "cod": "SP6",
+  "era": ""
+ },
+ {
+  "tc": "11486",
+  "slug": "deoxys-vstar-and-vmax-high-class-deck",
+  "n": "Deoxys VSTAR & VMAX High-Class Deck",
+  "cod": "SPD",
+  "era": ""
+ },
+ {
+  "tc": "11484",
+  "slug": "lost-abyss",
+  "n": "Lost Abyss",
+  "cod": "S11",
+  "era": ""
+ },
+ {
+  "tc": "11485",
+  "slug": "zeraora-vstar-and-vmax-high-class-deck",
+  "n": "Zeraora VSTAR & VMAX High-Class Deck",
+  "cod": "SPZ",
+  "era": ""
+ },
+ {
+  "tc": "11481",
+  "slug": "pokemon-go",
+  "n": "Pokémon GO",
+  "cod": "S10b",
+  "era": ""
+ },
+ {
+  "tc": "11469",
+  "slug": "dark-phantasma",
+  "n": "Dark Phantasma",
+  "cod": "S10a",
+  "era": ""
+ },
+ {
+  "tc": "11463",
+  "slug": "space-juggler",
+  "n": "Space Juggler",
+  "cod": "S10P",
+  "era": ""
+ },
+ {
+  "tc": "11462",
+  "slug": "time-gazer",
+  "n": "Time Gazer",
+  "cod": "S10D",
+  "era": ""
+ },
+ {
+  "tc": "11467",
+  "slug": "start-deck-100-corocoro-comic-version",
+  "n": "Start Deck 100 CoroCoro Comic Version",
+  "cod": "SN",
+  "era": ""
+ },
+ {
+  "tc": "11456",
+  "slug": "battle-region",
+  "n": "Battle Region",
+  "cod": "S9a",
+  "era": ""
+ },
+ {
+  "tc": "11458",
+  "slug": "darkrai-starter-set-vstar",
+  "n": "Darkrai Starter Set VSTAR",
+  "cod": "SLD",
+  "era": ""
+ },
+ {
+  "tc": "11457",
+  "slug": "lucario-starter-set-vstar",
+  "n": "Lucario Starter Set VSTAR",
+  "cod": "SLL",
+  "era": ""
+ },
+ {
+  "tc": "11452",
+  "slug": "star-birth",
+  "n": "Star Birth",
+  "cod": "S9",
+  "era": ""
+ },
+ {
+  "tc": "11454",
+  "slug": "vstar-premium-trainer-box",
+  "n": "VSTAR Premium Trainer Box",
+  "cod": "SK",
+  "era": ""
+ },
+ {
+  "tc": "11651",
+  "slug": "25th-anniversary-creatures-deck",
+  "n": "25th Anniversary Creatures Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11450",
+  "slug": "start-deck-100",
+  "n": "Start Deck 100",
+  "cod": "SI",
+  "era": ""
+ },
+ {
+  "tc": "11449",
+  "slug": "vmax-climax",
+  "n": "VMAX Climax",
+  "cod": "S8b",
+  "era": ""
+ },
+ {
+  "tc": "11455",
+  "slug": "25th-anniversary-golden-box",
+  "n": "25th Anniversary Golden Box",
+  "cod": "S8a-G",
+  "era": ""
+ },
+ {
+  "tc": "11451",
+  "slug": "zacian-and-zamazenta-vs-eternatus-special-deck-set",
+  "n": "Zacian & Zamazenta vs Eternatus Special Deck Set",
+  "cod": "SJ",
+  "era": ""
+ },
+ {
+  "tc": "11441",
+  "slug": "25th-anniversary-collection",
+  "n": "25th Anniversary Collection",
+  "cod": "S8a",
+  "era": ""
+ },
+ {
+  "tc": "11442",
+  "slug": "promo-card-pack-25th-anniversary-edition",
+  "n": "Promo Card Pack 25th Anniversary Edition",
+  "cod": "S8a-P",
+  "era": ""
+ },
+ {
+  "tc": "11437",
+  "slug": "fusion-arts",
+  "n": "Fusion Arts",
+  "cod": "S8",
+  "era": ""
+ },
+ {
+  "tc": "11444",
+  "slug": "v-union-special-card-sets",
+  "n": "V-UNION Special Card Sets",
+  "cod": "SP5",
+  "era": ""
+ },
+ {
+  "tc": "11430",
+  "slug": "blue-sky-stream",
+  "n": "Blue Sky Stream",
+  "cod": "S7R",
+  "era": ""
+ },
+ {
+  "tc": "11429",
+  "slug": "skyscraping-perfection",
+  "n": "Skyscraping Perfection",
+  "cod": "S7D",
+  "era": ""
+ },
+ {
+  "tc": "11431",
+  "slug": "sword-and-shield-family-pokemon-card-game",
+  "n": "Sword & Shield Family Pokémon Card Game",
+  "cod": "SH",
+  "era": ""
+ },
+ {
+  "tc": "11424",
+  "slug": "eevee-heroes",
+  "n": "Eevee Heroes",
+  "cod": "S6a",
+  "era": ""
+ },
+ {
+  "tc": "11427",
+  "slug": "eevee-heroes-vmax-special-set",
+  "n": "Eevee Heroes VMAX Special Set",
+  "cod": "SP4",
+  "era": ""
+ },
+ {
+  "tc": "11425",
+  "slug": "gengar-vmax-high-class-deck",
+  "n": "Gengar VMAX High-Class Deck",
+  "cod": "SGG",
+  "era": ""
+ },
+ {
+  "tc": "11426",
+  "slug": "inteleon-vmax-high-class-deck",
+  "n": "Inteleon VMAX High-Class Deck",
+  "cod": "SGI",
+  "era": ""
+ },
+ {
+  "tc": "11422",
+  "slug": "jet-black-spirit",
+  "n": "Jet-Black Spirit",
+  "cod": "S6K",
+  "era": ""
+ },
+ {
+  "tc": "11421",
+  "slug": "silver-lance",
+  "n": "Silver Lance",
+  "cod": "S6H",
+  "era": ""
+ },
+ {
+  "tc": "11423",
+  "slug": "silver-lance-and-jet-black-spirit-jumbo-pack-set",
+  "n": "Silver Lance & Jet-Black Spirit Jumbo Pack Set",
+  "cod": "SP3",
+  "era": ""
+ },
+ {
+  "tc": "11412",
+  "slug": "matchless-fighters",
+  "n": "Matchless Fighters",
+  "cod": "S5a",
+  "era": ""
+ },
+ {
+  "tc": "11388",
+  "slug": "rapid-strike-master",
+  "n": "Rapid Strike Master",
+  "cod": "S5R",
+  "era": ""
+ },
+ {
+  "tc": "11411",
+  "slug": "single-strike-and-rapid-strike-premium-trainer-boxes",
+  "n": "Single Strike & Rapid Strike Premium Trainer Boxes",
+  "cod": "SF",
+  "era": ""
+ },
+ {
+  "tc": "11387",
+  "slug": "single-strike-master",
+  "n": "Single Strike Master",
+  "cod": "S5I",
+  "era": ""
+ },
+ {
+  "tc": "11390",
+  "slug": "blastoise-starter-set-vmax",
+  "n": "Blastoise Starter Set VMAX",
+  "cod": "SEK",
+  "era": ""
+ },
+ {
+  "tc": "11393",
+  "slug": "charizard-starter-set-vmax-2",
+  "n": "Charizard Starter Set VMAX 2",
+  "cod": "SC2",
+  "era": ""
+ },
+ {
+  "tc": "11389",
+  "slug": "venusaur-starter-set-vmax",
+  "n": "Venusaur Starter Set VMAX",
+  "cod": "SEF",
+  "era": ""
+ },
+ {
+  "tc": "11383",
+  "slug": "shiny-star-v",
+  "n": "Shiny Star V",
+  "cod": "S4a",
+  "era": ""
+ },
+ {
+  "tc": "11380",
+  "slug": "vmax-special-set",
+  "n": "VMAX Special Set",
+  "cod": "SP2",
+  "era": ""
+ },
+ {
+  "tc": "11379",
+  "slug": "amazing-volt-tackle",
+  "n": "Amazing Volt Tackle",
+  "cod": "S4",
+  "era": ""
+ },
+ {
+  "tc": "11377",
+  "slug": "legendary-heartbeat",
+  "n": "Legendary Heartbeat",
+  "cod": "S3a",
+  "era": ""
+ },
+ {
+  "tc": "11378",
+  "slug": "v-starter-decks",
+  "n": "V Starter Decks",
+  "cod": "SD",
+  "era": ""
+ },
+ {
+  "tc": "11376",
+  "slug": "infinity-zone",
+  "n": "Infinity Zone",
+  "cod": "S3",
+  "era": ""
+ },
+ {
+  "tc": "11375",
+  "slug": "explosive-walker",
+  "n": "Explosive Walker",
+  "cod": "S2a",
+  "era": ""
+ },
+ {
+  "tc": "11391",
+  "slug": "charizard-starter-set-vmax",
+  "n": "Charizard Starter Set VMAX",
+  "cod": "SC",
+  "era": ""
+ },
+ {
+  "tc": "11392",
+  "slug": "grimmsnarl-starter-set-vmax",
+  "n": "Grimmsnarl Starter Set VMAX",
+  "cod": "SC",
+  "era": ""
+ },
+ {
+  "tc": "11374",
+  "slug": "rebellion-crash",
+  "n": "Rebellion Crash",
+  "cod": "S2",
+  "era": ""
+ },
+ {
+  "tc": "11370",
+  "slug": "vmax-rising",
+  "n": "VMAX Rising",
+  "cod": "S1a",
+  "era": ""
+ },
+ {
+  "tc": "11371",
+  "slug": "zacian-and-zamazenta-box",
+  "n": "Zacian + Zamazenta Box",
+  "cod": "SP1",
+  "era": ""
+ },
+ {
+  "tc": "11340",
+  "slug": "shield",
+  "n": "Shield",
+  "cod": "S1H",
+  "era": ""
+ },
+ {
+  "tc": "11339",
+  "slug": "sword",
+  "n": "Sword",
+  "cod": "S1W",
+  "era": ""
+ },
+ {
+  "tc": "11372",
+  "slug": "sword-and-shield-premium-trainer-box",
+  "n": "Sword & Shield Premium Trainer Box",
+  "cod": "SB",
+  "era": ""
+ },
+ {
+  "tc": "11398",
+  "slug": "fighting-starter-set-v",
+  "n": "Fighting Starter Set V",
+  "cod": "SA",
+  "era": ""
+ },
+ {
+  "tc": "11395",
+  "slug": "fire-starter-set-v",
+  "n": "Fire Starter Set V",
+  "cod": "SA",
+  "era": ""
+ },
+ {
+  "tc": "11394",
+  "slug": "grass-starter-set-v",
+  "n": "Grass Starter Set V",
+  "cod": "SA",
+  "era": ""
+ },
+ {
+  "tc": "11397",
+  "slug": "lightning-starter-set-v",
+  "n": "Lightning Starter Set V",
+  "cod": "SA",
+  "era": ""
+ },
+ {
+  "tc": "11396",
+  "slug": "water-starter-set-v",
+  "n": "Water Starter Set V",
+  "cod": "SA",
+  "era": ""
+ },
+ {
+  "tc": "11373",
+  "slug": "sword-and-shield-promos",
+  "n": "Sword & Shield Promos",
+  "cod": "SP",
+  "era": ""
+ },
+ {
+  "tc": "11659",
+  "slug": "extra-regulation-box",
+  "n": "Extra Regulation Box",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11211",
+  "slug": "tag-all-stars",
+  "n": "Tag All Stars",
+  "cod": "SM12a",
+  "era": ""
+ },
+ {
+  "tc": "11185",
+  "slug": "alter-genesis",
+  "n": "Alter Genesis",
+  "cod": "SM12",
+  "era": ""
+ },
+ {
+  "tc": "11176",
+  "slug": "dream-league",
+  "n": "Dream League",
+  "cod": "SM11b",
+  "era": ""
+ },
+ {
+  "tc": "11268",
+  "slug": "remix-bout",
+  "n": "Remix Bout",
+  "cod": "SM11a",
+  "era": ""
+ },
+ {
+  "tc": "11191",
+  "slug": "miracle-twin",
+  "n": "Miracle Twin",
+  "cod": "SM11",
+  "era": ""
+ },
+ {
+  "tc": "11336",
+  "slug": "tag-team-gx-starter-sets",
+  "n": "Tag Team GX Starter Sets",
+  "cod": "SMM",
+  "era": ""
+ },
+ {
+  "tc": "11279",
+  "slug": "great-detective-pikachu",
+  "n": "Great Detective Pikachu",
+  "cod": "SMP2",
+  "era": ""
+ },
+ {
+  "tc": "11298",
+  "slug": "sky-legend",
+  "n": "Sky Legend",
+  "cod": "SM10b",
+  "era": ""
+ },
+ {
+  "tc": "11171",
+  "slug": "gg-end",
+  "n": "GG End",
+  "cod": "SM10a",
+  "era": ""
+ },
+ {
+  "tc": "11337",
+  "slug": "sun-and-moon-family-pokemon-card-game",
+  "n": "Sun & Moon Family Pokémon Card Game",
+  "cod": "SML",
+  "era": ""
+ },
+ {
+  "tc": "11180",
+  "slug": "double-blaze",
+  "n": "Double Blaze",
+  "cod": "SM10",
+  "era": ""
+ },
+ {
+  "tc": "11362",
+  "slug": "tag-team-gx-deck-build-box",
+  "n": "Tag Team GX Deck Build Box",
+  "cod": "SMN",
+  "era": ""
+ },
+ {
+  "tc": "11203",
+  "slug": "full-metal-wall",
+  "n": "Full Metal Wall",
+  "cod": "SM9b",
+  "era": ""
+ },
+ {
+  "tc": "11335",
+  "slug": "trainer-battle-decks",
+  "n": "Trainer Battle Decks",
+  "cod": "SMK",
+  "era": ""
+ },
+ {
+  "tc": "11178",
+  "slug": "night-unison",
+  "n": "Night Unison",
+  "cod": "SM9a",
+  "era": ""
+ },
+ {
+  "tc": "11296",
+  "slug": "tag-bolt",
+  "n": "Tag Bolt",
+  "cod": "SM9",
+  "era": ""
+ },
+ {
+  "tc": "11361",
+  "slug": "tag-team-gx-premium-trainer-box",
+  "n": "Tag Team GX Premium Trainer Box",
+  "cod": "SMJ",
+  "era": ""
+ },
+ {
+  "tc": "11354",
+  "slug": "flareon-gx-vaporeon-gx-and-jolteon-gx-starter-sets",
+  "n": "Flareon-GX, Vaporeon-GX & Jolteon-GX Starter Sets",
+  "cod": "SMI",
+  "era": ""
+ },
+ {
+  "tc": "11217",
+  "slug": "gx-ultra-shiny",
+  "n": "GX Ultra Shiny",
+  "cod": "SM8b",
+  "era": ""
+ },
+ {
+  "tc": "11294",
+  "slug": "dark-order",
+  "n": "Dark Order",
+  "cod": "SM8a",
+  "era": ""
+ },
+ {
+  "tc": "11253",
+  "slug": "super-burst-impact",
+  "n": "Super-Burst Impact",
+  "cod": "SM8",
+  "era": ""
+ },
+ {
+  "tc": "11204",
+  "slug": "fairy-rise",
+  "n": "Fairy Rise",
+  "cod": "SM7b",
+  "era": ""
+ },
+ {
+  "tc": "11338",
+  "slug": "gx-starter-decks",
+  "n": "GX Starter Decks",
+  "cod": "SMH",
+  "era": ""
+ },
+ {
+  "tc": "11285",
+  "slug": "thunderclap-spark",
+  "n": "Thunderclap Spark",
+  "cod": "SM7a",
+  "era": ""
+ },
+ {
+  "tc": "11224",
+  "slug": "sky-splitting-charisma",
+  "n": "Sky-Splitting Charisma",
+  "cod": "SM7",
+  "era": ""
+ },
+ {
+  "tc": "11260",
+  "slug": "champion-road",
+  "n": "Champion Road",
+  "cod": "SM6b",
+  "era": ""
+ },
+ {
+  "tc": "11235",
+  "slug": "dragon-storm",
+  "n": "Dragon Storm",
+  "cod": "SM6a",
+  "era": ""
+ },
+ {
+  "tc": "11305",
+  "slug": "forbidden-light",
+  "n": "Forbidden Light",
+  "cod": "SM6",
+  "era": ""
+ },
+ {
+  "tc": "11353",
+  "slug": "ultra-sun-and-ultra-moon-deck-build-boxes",
+  "n": "Ultra Sun & Ultra Moon Deck Build Boxes",
+  "cod": "SMG",
+  "era": ""
+ },
+ {
+  "tc": "11212",
+  "slug": "ultra-force",
+  "n": "Ultra Force",
+  "cod": "SM5+",
+  "era": ""
+ },
+ {
+  "tc": "11164",
+  "slug": "ultra-moon",
+  "n": "Ultra Moon",
+  "cod": "SM5M",
+  "era": ""
+ },
+ {
+  "tc": "11306",
+  "slug": "ultra-sun",
+  "n": "Ultra Sun",
+  "cod": "SM5S",
+  "era": ""
+ },
+ {
+  "tc": "11358",
+  "slug": "ultra-sun-and-ultra-moon-premium-trainer-box",
+  "n": "Ultra Sun & Ultra Moon Premium Trainer Box",
+  "cod": "SMF",
+  "era": ""
+ },
+ {
+  "tc": "11355",
+  "slug": "solgaleo-gx-and-lunala-gx-legendary-starter-set",
+  "n": "Solgaleo-GX & Lunala-GX Legendary Starter Set",
+  "cod": "SME",
+  "era": ""
+ },
+ {
+  "tc": "11239",
+  "slug": "gx-battle-boost",
+  "n": "GX Battle Boost",
+  "cod": "SM4+",
+  "era": ""
+ },
+ {
+  "tc": "11163",
+  "slug": "awakened-heroes",
+  "n": "Awakened Heroes",
+  "cod": "SM4S",
+  "era": ""
+ },
+ {
+  "tc": "11250",
+  "slug": "ultradimensional-beasts",
+  "n": "Ultradimensional Beasts",
+  "cod": "SM4A",
+  "era": ""
+ },
+ {
+  "tc": "11206",
+  "slug": "shining-legends",
+  "n": "Shining Legends",
+  "cod": "SM3+",
+  "era": ""
+ },
+ {
+  "tc": "11265",
+  "slug": "darkness-that-consumes-light",
+  "n": "Darkness that Consumes Light",
+  "cod": "SM3N",
+  "era": ""
+ },
+ {
+  "tc": "11284",
+  "slug": "to-have-seen-the-battle-rainbow",
+  "n": "To Have Seen the Battle Rainbow",
+  "cod": "SM3H",
+  "era": ""
+ },
+ {
+  "tc": "11309",
+  "slug": "ash-vs-team-rocket-battle-set",
+  "n": "Ash vs Team Rocket Battle Set",
+  "cod": "SMD",
+  "era": ""
+ },
+ {
+  "tc": "11289",
+  "slug": "facing-a-new-trial",
+  "n": "Facing a New Trial",
+  "cod": "SM2+",
+  "era": ""
+ },
+ {
+  "tc": "11277",
+  "slug": "alolan-moonlight",
+  "n": "Alolan Moonlight",
+  "cod": "SM2L",
+  "era": ""
+ },
+ {
+  "tc": "11170",
+  "slug": "islands-await-you",
+  "n": "Islands Await You",
+  "cod": "SM2K",
+  "era": ""
+ },
+ {
+  "tc": "11310",
+  "slug": "tapu-bulu-gx-enhanced-starter-set",
+  "n": "Tapu Bulu-GX Enhanced Starter Set",
+  "cod": "SMC",
+  "era": ""
+ },
+ {
+  "tc": "11272",
+  "slug": "sun-and-moon-enhanced-expansion-pack",
+  "n": "Sun & Moon Enhanced Expansion Pack",
+  "cod": "SM1+",
+  "era": ""
+ },
+ {
+  "tc": "11311",
+  "slug": "rockruff-full-power-deck",
+  "n": "Rockruff Full Power Deck",
+  "cod": "SMP1",
+  "era": ""
+ },
+ {
+  "tc": "11313",
+  "slug": "decidueye-gx-incineroar-gx-and-primarina-gx-starter-sets",
+  "n": "Decidueye-GX, Incineroar-GX & Primarina-GX Starter Sets",
+  "cod": "SMA",
+  "era": ""
+ },
+ {
+  "tc": "11216",
+  "slug": "moon-collection",
+  "n": "Moon Collection",
+  "cod": "SM1M",
+  "era": ""
+ },
+ {
+  "tc": "11312",
+  "slug": "premium-trainer-box",
+  "n": "Premium Trainer Box",
+  "cod": "SMB",
+  "era": ""
+ },
+ {
+  "tc": "11229",
+  "slug": "sun-collection",
+  "n": "Sun Collection",
+  "cod": "SM1S",
+  "era": ""
+ },
+ {
+  "tc": "11308",
+  "slug": "pikachus-new-friends",
+  "n": "Pikachu's New Friends",
+  "cod": "SM0",
+  "era": ""
+ },
+ {
+  "tc": "11175",
+  "slug": "sun-and-moon-promos",
+  "n": "Sun & Moon Promos",
+  "cod": "SMP",
+  "era": ""
+ },
+ {
+  "tc": "11190",
+  "slug": "the-best-of-xy",
+  "n": "The Best of XY",
+  "cod": "XY",
+  "era": ""
+ },
+ {
+  "tc": "11276",
+  "slug": "expansion-pack-20th-anniversary",
+  "n": "Expansion Pack 20th Anniversary",
+  "cod": "CP6",
+  "era": ""
+ },
+ {
+  "tc": "11214",
+  "slug": "mythical-and-legendary-dream-shine-collection",
+  "n": "Mythical & Legendary Dream Shine Collection",
+  "cod": "CP5",
+  "era": ""
+ },
+ {
+  "tc": "11257",
+  "slug": "cruel-traitor",
+  "n": "Cruel Traitor",
+  "cod": "XY11-Br",
+  "era": ""
+ },
+ {
+  "tc": "11195",
+  "slug": "fever-burst-fighter",
+  "n": "Fever-Burst Fighter",
+  "cod": "XY11-Bb",
+  "era": ""
+ },
+ {
+  "tc": "11293",
+  "slug": "ex-m-break-premium-champion-pack",
+  "n": "EX × M × BREAK Premium Champion Pack",
+  "cod": "CP4",
+  "era": ""
+ },
+ {
+  "tc": "11256",
+  "slug": "awakening-psychic-king",
+  "n": "Awakening Psychic King",
+  "cod": "XY10",
+  "era": ""
+ },
+ {
+  "tc": "11348",
+  "slug": "m-audino-ex-mega-battle-deck",
+  "n": "M Audino-EX Mega Battle Deck",
+  "cod": "XYH",
+  "era": ""
+ },
+ {
+  "tc": "11349",
+  "slug": "zygarde-ex-perfect-battle-deck",
+  "n": "Zygarde-EX Perfect Battle Deck",
+  "cod": "XYG",
+  "era": ""
+ },
+ {
+  "tc": "11243",
+  "slug": "20th-anniversary-starter-pack",
+  "n": "20th Anniversary Starter Pack",
+  "cod": "20th",
+  "era": ""
+ },
+ {
+  "tc": "11280",
+  "slug": "pokekyun-collection",
+  "n": "PokéKyun Collection",
+  "cod": "CP3",
+  "era": ""
+ },
+ {
+  "tc": "11237",
+  "slug": "rage-of-the-broken-heavens",
+  "n": "Rage of the Broken Heavens",
+  "cod": "XY9",
+  "era": ""
+ },
+ {
+  "tc": "11347",
+  "slug": "golduck-break-and-palkia-ex-combo-deck",
+  "n": "Golduck BREAK + Palkia-EX Combo Deck",
+  "cod": "XYF",
+  "era": ""
+ },
+ {
+  "tc": "11236",
+  "slug": "blue-shock",
+  "n": "Blue Shock",
+  "cod": "XY8-Bb",
+  "era": ""
+ },
+ {
+  "tc": "11363",
+  "slug": "noivern-break-evolution-pack",
+  "n": "Noivern BREAK Evolution Pack",
+  "cod": "SNPo",
+  "era": ""
+ },
+ {
+  "tc": "11364",
+  "slug": "raichu-break-evolution-pack",
+  "n": "Raichu BREAK Evolution Pack",
+  "cod": "SNPr",
+  "era": ""
+ },
+ {
+  "tc": "11241",
+  "slug": "red-flash",
+  "n": "Red Flash",
+  "cod": "XY8-Br",
+  "era": ""
+ },
+ {
+  "tc": "11346",
+  "slug": "m-master-deck-build-box-power-style",
+  "n": "M Master Deck Build Box Power Style",
+  "cod": "MMB-P",
+  "era": ""
+ },
+ {
+  "tc": "11344",
+  "slug": "m-master-deck-build-box-speed-style",
+  "n": "M Master Deck Build Box Speed Style",
+  "cod": "MMB-S",
+  "era": ""
+ },
+ {
+  "tc": "11367",
+  "slug": "emboar-ex-vs-togekiss-ex-battle-starter-set",
+  "n": "Emboar-EX vs Togekiss-EX Battle Starter Set",
+  "cod": "XYE",
+  "era": ""
+ },
+ {
+  "tc": "11286",
+  "slug": "legendary-shine-collection",
+  "n": "Legendary Shine Collection",
+  "cod": "CP2",
+  "era": ""
+ },
+ {
+  "tc": "11269",
+  "slug": "bandit-ring",
+  "n": "Bandit Ring",
+  "cod": "XY7",
+  "era": ""
+ },
+ {
+  "tc": "11267",
+  "slug": "emerald-break",
+  "n": "Emerald Break",
+  "cod": "XY6",
+  "era": ""
+ },
+ {
+  "tc": "11325",
+  "slug": "m-rayquaza-ex-mega-battle-deck",
+  "n": "M Rayquaza-EX Mega Battle Deck",
+  "cod": "XYD",
+  "era": ""
+ },
+ {
+  "tc": "11292",
+  "slug": "team-magma-vs-team-aqua-double-crisis",
+  "n": "Team Magma vs Team Aqua: Double Crisis",
+  "cod": "CP1",
+  "era": ""
+ },
+ {
+  "tc": "11174",
+  "slug": "gaia-volcano",
+  "n": "Gaia Volcano",
+  "cod": "XY5-Bg",
+  "era": ""
+ },
+ {
+  "tc": "11197",
+  "slug": "tidal-storm",
+  "n": "Tidal Storm",
+  "cod": "XY5-Bt",
+  "era": ""
+ },
+ {
+  "tc": "11359",
+  "slug": "xerneas-ex-and-yveltal-ex-super-legend-set",
+  "n": "Xerneas-EX & Yveltal-EX Super Legend Set",
+  "cod": "XYC",
+  "era": ""
+ },
+ {
+  "tc": "11360",
+  "slug": "dialga-ex-and-aegislash-ex-hyper-metal-chain-deck",
+  "n": "Dialga-EX + Aegislash-EX Hyper Metal Chain Deck",
+  "cod": "XYB",
+  "era": ""
+ },
+ {
+  "tc": "11232",
+  "slug": "phantom-gate",
+  "n": "Phantom Gate",
+  "cod": "XY4",
+  "era": ""
+ },
+ {
+  "tc": "11208",
+  "slug": "rising-fist",
+  "n": "Rising Fist",
+  "cod": "XY3",
+  "era": ""
+ },
+ {
+  "tc": "11326",
+  "slug": "m-charizard-ex-mega-battle-deck",
+  "n": "M Charizard-EX Mega Battle Deck",
+  "cod": "XYA",
+  "era": ""
+ },
+ {
+  "tc": "11273",
+  "slug": "wild-blaze",
+  "n": "Wild Blaze",
+  "cod": "XY2",
+  "era": ""
+ },
+ {
+  "tc": "11315",
+  "slug": "xerneas-half-deck",
+  "n": "Xerneas Half Deck",
+  "cod": "X30",
+  "era": ""
+ },
+ {
+  "tc": "11316",
+  "slug": "yveltal-half-deck",
+  "n": "Yveltal Half Deck",
+  "cod": "Y30",
+  "era": ""
+ },
+ {
+  "tc": "11258",
+  "slug": "collection-x",
+  "n": "Collection X",
+  "cod": "XY1-Bx",
+  "era": ""
+ },
+ {
+  "tc": "11228",
+  "slug": "collection-y",
+  "n": "Collection Y",
+  "cod": "XY1-By",
+  "era": ""
+ },
+ {
+  "tc": "11314",
+  "slug": "xy-beginning-set",
+  "n": "XY Beginning Set",
+  "cod": "HXY",
+  "era": ""
+ },
+ {
+  "tc": "11184",
+  "slug": "xy-promos",
+  "n": "XY Promos",
+  "cod": "XYP",
+  "era": ""
+ },
+ {
+  "tc": "11246",
+  "slug": "ex-battle-boost",
+  "n": "EX Battle Boost",
+  "cod": "EBB",
+  "era": ""
+ },
+ {
+  "tc": "11318",
+  "slug": "mewtwo-vs-genesect-deck-kit-genesect",
+  "n": "Mewtwo vs Genesect Deck Kit (Genesect)",
+  "cod": "MG",
+  "era": ""
+ },
+ {
+  "tc": "11317",
+  "slug": "mewtwo-vs-genesect-deck-kit-mewtwo",
+  "n": "Mewtwo vs Genesect Deck Kit (Mewtwo)",
+  "cod": "MG",
+  "era": ""
+ },
+ {
+  "tc": "11350",
+  "slug": "blastoise-and-kyurem-ex-combo-deck",
+  "n": "Blastoise + Kyurem-EX Combo Deck",
+  "cod": "K+K",
+  "era": ""
+ },
+ {
+  "tc": "11251",
+  "slug": "megalo-cannon",
+  "n": "Megalo Cannon",
+  "cod": "BW9",
+  "era": ""
+ },
+ {
+  "tc": "11263",
+  "slug": "shiny-collection",
+  "n": "Shiny Collection",
+  "cod": "SC",
+  "era": ""
+ },
+ {
+  "tc": "11301",
+  "slug": "spiral-force",
+  "n": "Spiral Force",
+  "cod": "BW8-Brf",
+  "era": ""
+ },
+ {
+  "tc": "11220",
+  "slug": "thunder-knuckle",
+  "n": "Thunder Knuckle",
+  "cod": "BW8-Brn",
+  "era": ""
+ },
+ {
+  "tc": "11319",
+  "slug": "everyones-exciting-battle",
+  "n": "Everyone's Exciting Battle",
+  "cod": "WAK",
+  "era": ""
+ },
+ {
+  "tc": "11320",
+  "slug": "team-plasma-battle-gift-set",
+  "n": "Team Plasma Battle Gift Set",
+  "cod": "PBG",
+  "era": ""
+ },
+ {
+  "tc": "11351",
+  "slug": "black-kyurem-ex-battle-strength-deck",
+  "n": "Black Kyurem-EX Battle Strength Deck",
+  "cod": "BKB",
+  "era": ""
+ },
+ {
+  "tc": "11352",
+  "slug": "white-kyurem-ex-battle-strength-deck",
+  "n": "White Kyurem-EX Battle Strength Deck",
+  "cod": "BKW",
+  "era": ""
+ },
+ {
+  "tc": "11223",
+  "slug": "master-deck-build-box-ex",
+  "n": "Master Deck Build Box EX",
+  "cod": "MDB",
+  "era": ""
+ },
+ {
+  "tc": "11207",
+  "slug": "plasma-gale",
+  "n": "Plasma Gale",
+  "cod": "BW7",
+  "era": ""
+ },
+ {
+  "tc": "11368",
+  "slug": "team-plasma-powered-half-deck",
+  "n": "Team Plasma Powered Half Deck",
+  "cod": "PPD",
+  "era": ""
+ },
+ {
+  "tc": "11307",
+  "slug": "cold-flare",
+  "n": "Cold Flare",
+  "cod": "BW6-Bc",
+  "era": ""
+ },
+ {
+  "tc": "11215",
+  "slug": "freeze-bolt",
+  "n": "Freeze Bolt",
+  "cod": "BW6-Bf",
+  "era": ""
+ },
+ {
+  "tc": "11321",
+  "slug": "keldeo-battle-strength-deck",
+  "n": "Keldeo Battle Strength Deck",
+  "cod": "KLD",
+  "era": ""
+ },
+ {
+  "tc": "11658",
+  "slug": "national-beginning-set",
+  "n": "National Beginning Set",
+  "cod": "HSZ",
+  "era": ""
+ },
+ {
+  "tc": "11245",
+  "slug": "dragon-blade",
+  "n": "Dragon Blade",
+  "cod": "BW5-Brn",
+  "era": ""
+ },
+ {
+  "tc": "11274",
+  "slug": "dragon-blast",
+  "n": "Dragon Blast",
+  "cod": "BW5-Brz",
+  "era": ""
+ },
+ {
+  "tc": "11322",
+  "slug": "garchomp-half-deck",
+  "n": "Garchomp Half Deck",
+  "cod": "GBR",
+  "era": ""
+ },
+ {
+  "tc": "11323",
+  "slug": "hydreigon-half-deck",
+  "n": "Hydreigon Half Deck",
+  "cod": "SZD",
+  "era": ""
+ },
+ {
+  "tc": "11304",
+  "slug": "dragon-selection",
+  "n": "Dragon Selection",
+  "cod": "DS",
+  "era": ""
+ },
+ {
+  "tc": "11230",
+  "slug": "dark-rush",
+  "n": "Dark Rush",
+  "cod": "BW4",
+  "era": ""
+ },
+ {
+  "tc": "11406",
+  "slug": "beginning-set-pikachu",
+  "n": "Beginning Set Pikachu",
+  "cod": "HSP",
+  "era": ""
+ },
+ {
+  "tc": "11369",
+  "slug": "thundurus-vs-tornadus-battle-gift-set",
+  "n": "Thundurus vs Tornadus Battle Gift Set",
+  "cod": "BGS",
+  "era": ""
+ },
+ {
+  "tc": "11356",
+  "slug": "reshiram-ex-battle-strength-deck",
+  "n": "Reshiram-EX Battle Strength Deck",
+  "cod": "BKR",
+  "era": ""
+ },
+ {
+  "tc": "11357",
+  "slug": "zekrom-ex-battle-strength-deck",
+  "n": "Zekrom-EX Battle Strength Deck",
+  "cod": "BKZ",
+  "era": ""
+ },
+ {
+  "tc": "11209",
+  "slug": "hail-blizzard",
+  "n": "Hail Blizzard",
+  "cod": "BW3-Bh",
+  "era": ""
+ },
+ {
+  "tc": "11199",
+  "slug": "psycho-drive",
+  "n": "Psycho Drive",
+  "cod": "BW3-Bp",
+  "era": ""
+ },
+ {
+  "tc": "11403",
+  "slug": "beginning-set-plus",
+  "n": "Beginning Set +",
+  "cod": "HS+",
+  "era": ""
+ },
+ {
+  "tc": "11166",
+  "slug": "red-collection",
+  "n": "Red Collection",
+  "cod": "BW2",
+  "era": ""
+ },
+ {
+  "tc": "11345",
+  "slug": "victini-battle-theme-deck",
+  "n": "Victini Battle Theme Deck",
+  "cod": "BTV",
+  "era": ""
+ },
+ {
+  "tc": "11343",
+  "slug": "cobalion-battle-strength-deck",
+  "n": "Cobalion Battle Strength Deck",
+  "cod": "BKc",
+  "era": ""
+ },
+ {
+  "tc": "11342",
+  "slug": "terrakion-battle-strength-deck",
+  "n": "Terrakion Battle Strength Deck",
+  "cod": "BKt",
+  "era": ""
+ },
+ {
+  "tc": "11341",
+  "slug": "virizion-battle-strength-deck",
+  "n": "Virizion Battle Strength Deck",
+  "cod": "BKv",
+  "era": ""
+ },
+ {
+  "tc": "11167",
+  "slug": "black-collection",
+  "n": "Black Collection",
+  "cod": "BW1-Bb",
+  "era": ""
+ },
+ {
+  "tc": "11202",
+  "slug": "white-collection",
+  "n": "White Collection",
+  "cod": "BW1-Bw",
+  "era": ""
+ },
+ {
+  "tc": "11219",
+  "slug": "black-and-white-promos",
+  "n": "Black & White Promos",
+  "cod": "BWP",
+  "era": ""
+ },
+ {
+  "tc": "11399",
+  "slug": "beginning-set",
+  "n": "Beginning Set",
+  "cod": "HS",
+  "era": ""
+ },
+ {
+  "tc": "11275",
+  "slug": "journey-partners",
+  "n": "Journey Partners",
+  "cod": "CS1",
+  "era": ""
+ },
+ {
+  "tc": "11297",
+  "slug": "clash-at-the-summit",
+  "n": "Clash at the Summit",
+  "cod": "L3",
+  "era": ""
+ },
+ {
+  "tc": "11282",
+  "slug": "lost-link",
+  "n": "Lost Link",
+  "cod": "LL",
+  "era": ""
+ },
+ {
+  "tc": "11226",
+  "slug": "reviving-legends",
+  "n": "Reviving Legends",
+  "cod": "L2",
+  "era": ""
+ },
+ {
+  "tc": "11417",
+  "slug": "steelix-constructed-standard-deck",
+  "n": "Steelix Constructed Standard Deck",
+  "cod": "L2",
+  "era": ""
+ },
+ {
+  "tc": "11619",
+  "slug": "tyranitar-constructed-standard-deck",
+  "n": "Tyranitar Constructed Standard Deck",
+  "cod": "L2",
+  "era": ""
+ },
+ {
+  "tc": "11415",
+  "slug": "battle-starter-deck-blastoise",
+  "n": "Battle Starter Deck (Blastoise)",
+  "cod": "B",
+  "era": ""
+ },
+ {
+  "tc": "11414",
+  "slug": "battle-starter-deck-magmortar",
+  "n": "Battle Starter Deck (Magmortar)",
+  "cod": "B",
+  "era": ""
+ },
+ {
+  "tc": "11416",
+  "slug": "battle-starter-deck-raichu",
+  "n": "Battle Starter Deck (Raichu)",
+  "cod": "B",
+  "era": ""
+ },
+ {
+  "tc": "11413",
+  "slug": "battle-starter-deck-torterra",
+  "n": "Battle Starter Deck (Torterra)",
+  "cod": "B",
+  "era": ""
+ },
+ {
+  "tc": "11620",
+  "slug": "leafeon-vs-metagross-expert-deck-leafeon",
+  "n": "Leafeon vs Metagross Expert Deck (Leafeon)",
+  "cod": "E",
+  "era": ""
+ },
+ {
+  "tc": "11621",
+  "slug": "leafeon-vs-metagross-expert-deck-metagross",
+  "n": "Leafeon vs Metagross Expert Deck (Metagross)",
+  "cod": "E",
+  "era": ""
+ },
+ {
+  "tc": "11259",
+  "slug": "heartgold-collection",
+  "n": "HeartGold Collection",
+  "cod": "L1-Bhg",
+  "era": ""
+ },
+ {
+  "tc": "11300",
+  "slug": "soulsilver-collection",
+  "n": "SoulSilver Collection",
+  "cod": "L1-Bss",
+  "era": ""
+ },
+ {
+  "tc": "11288",
+  "slug": "legend-promos",
+  "n": "LEGEND Promos",
+  "cod": "LP",
+  "era": ""
+ },
+ {
+  "tc": "11196",
+  "slug": "advent-of-arceus",
+  "n": "Advent of Arceus",
+  "cod": "DPt4",
+  "era": ""
+ },
+ {
+  "tc": "11366",
+  "slug": "arceus-lv-x-deck-grass-and-fire",
+  "n": "Arceus LV.X Deck: Grass & Fire",
+  "cod": "DPt4-Sgf",
+  "era": ""
+ },
+ {
+  "tc": "11365",
+  "slug": "arceus-lv-x-deck-lightning-and-psychic",
+  "n": "Arceus LV.X Deck: Lightning & Psychic",
+  "cod": "DPt4-Slp",
+  "era": ""
+ },
+ {
+  "tc": "11329",
+  "slug": "mewtwo-lv-x-collection-pack",
+  "n": "Mewtwo LV.X Collection Pack",
+  "cod": "DPtM",
+  "era": ""
+ },
+ {
+  "tc": "11330",
+  "slug": "regigigas-lv-x-collection-pack",
+  "n": "Regigigas LV.X Collection Pack",
+  "cod": "DPtR",
+  "era": ""
+ },
+ {
+  "tc": "11324",
+  "slug": "shaymin-lv-x-collection-pack",
+  "n": "Shaymin LV.X Collection Pack",
+  "cod": "DPtS",
+  "era": ""
+ },
+ {
+  "tc": "11169",
+  "slug": "beat-of-the-frontier",
+  "n": "Beat of the Frontier",
+  "cod": "DPt3",
+  "era": ""
+ },
+ {
+  "tc": "11565",
+  "slug": "garchomp-vs-charizard-sp-deck-kit-charizard",
+  "n": "Garchomp vs Charizard SP Deck Kit (Charizard)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11564",
+  "slug": "garchomp-vs-charizard-sp-deck-kit-garchomp",
+  "n": "Garchomp vs Charizard SP Deck Kit (Garchomp)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11261",
+  "slug": "bonds-to-the-end-of-time",
+  "n": "Bonds to the End of Time",
+  "cod": "DPt2",
+  "era": ""
+ },
+ {
+  "tc": "11420",
+  "slug": "infernape-vs-gallade-sp-deck-kit-gallade",
+  "n": "Infernape vs Gallade SP Deck Kit (Gallade)",
+  "cod": "Pt",
+  "era": ""
+ },
+ {
+  "tc": "11419",
+  "slug": "infernape-vs-gallade-sp-deck-kit-infernape",
+  "n": "Infernape vs Gallade SP Deck Kit (Infernape)",
+  "cod": "Pt",
+  "era": ""
+ },
+ {
+  "tc": "11445",
+  "slug": "dpt-gift-box-chimchar",
+  "n": "DPt Gift Box (Chimchar)",
+  "cod": "Pt",
+  "era": ""
+ },
+ {
+  "tc": "11448",
+  "slug": "dpt-gift-box-pikachu",
+  "n": "DPt Gift Box (Pikachu)",
+  "cod": "Pt",
+  "era": ""
+ },
+ {
+  "tc": "11447",
+  "slug": "dpt-gift-box-piplup",
+  "n": "DPt Gift Box (Piplup)",
+  "cod": "Pt",
+  "era": ""
+ },
+ {
+  "tc": "11446",
+  "slug": "dpt-gift-box-turtwig",
+  "n": "DPt Gift Box (Turtwig)",
+  "cod": "Pt",
+  "era": ""
+ },
+ {
+  "tc": "11562",
+  "slug": "dpt-entry-pack-dialga",
+  "n": "DPt Entry Pack (Dialga)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11561",
+  "slug": "dpt-entry-pack-giratina",
+  "n": "DPt Entry Pack (Giratina)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11563",
+  "slug": "dpt-entry-pack-palkia",
+  "n": "DPt Entry Pack (Palkia)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11221",
+  "slug": "galactics-conquest",
+  "n": "Galactic's Conquest",
+  "cod": "DPt1",
+  "era": ""
+ },
+ {
+  "tc": "11189",
+  "slug": "platinum-promos",
+  "n": "Platinum Promos",
+  "cod": "DPtP",
+  "era": ""
+ },
+ {
+  "tc": "11607",
+  "slug": "giratina-vs-dialga-deck-kit-dialga",
+  "n": "Giratina vs Dialga Deck Kit (Dialga)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11606",
+  "slug": "giratina-vs-dialga-deck-kit-giratina",
+  "n": "Giratina vs Dialga Deck Kit (Giratina)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11213",
+  "slug": "intense-fight-in-the-destroyed-sky",
+  "n": "Intense Fight in the Destroyed Sky",
+  "cod": "DPS",
+  "era": ""
+ },
+ {
+  "tc": "11255",
+  "slug": "cry-from-the-mysterious",
+  "n": "Cry from the Mysterious",
+  "cod": "DP5",
+  "era": ""
+ },
+ {
+  "tc": "11608",
+  "slug": "heatran-vs-regigigas-deck-kit",
+  "n": "Heatran vs Regigigas Deck Kit",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12136",
+  "slug": "heatran-vs-regigigas-deck-kit-heatran",
+  "n": "Heatran vs Regigigas Deck Kit (Heatran)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12137",
+  "slug": "heatran-vs-regigigas-deck-kit-regigigas",
+  "n": "Heatran vs Regigigas Deck Kit (Regigigas)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11200",
+  "slug": "temple-of-anger",
+  "n": "Temple of Anger",
+  "cod": "DP5",
+  "era": ""
+ },
+ {
+  "tc": "11610",
+  "slug": "entry-pack-08",
+  "n": "Entry Pack '08",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12146",
+  "slug": "dawn-dash",
+  "n": "Dawn Dash",
+  "cod": "DP4",
+  "era": ""
+ },
+ {
+  "tc": "11609",
+  "slug": "magmortar-vs-electivire-deck-kit",
+  "n": "Magmortar vs Electivire Deck Kit",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12135",
+  "slug": "magmortar-vs-electivire-deck-kit-electivire",
+  "n": "Magmortar vs Electivire Deck Kit (Electivire)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12134",
+  "slug": "magmortar-vs-electivire-deck-kit-magmortar",
+  "n": "Magmortar vs Electivire Deck Kit (Magmortar)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12145",
+  "slug": "moonlit-pursuit",
+  "n": "Moonlit Pursuit",
+  "cod": "DP4",
+  "era": ""
+ },
+ {
+  "tc": "11681",
+  "slug": "dialga-and-palkia-lv-x-constructed-standard-decks",
+  "n": "Dialga & Palkia LV.X Constructed Standard Decks",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12130",
+  "slug": "dialga-lv-x-constructed-standard-deck",
+  "n": "Dialga LV.X Constructed Standard Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12131",
+  "slug": "palkia-lv-x-constructed-standard-deck",
+  "n": "Palkia LV.X Constructed Standard Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11231",
+  "slug": "shining-darkness",
+  "n": "Shining Darkness",
+  "cod": "DP3",
+  "era": ""
+ },
+ {
+  "tc": "11682",
+  "slug": "bastiodon-the-defender-and-rampardos-the-attacker-constructed-half-decks",
+  "n": "Bastiodon the Defender & Rampardos the Attacker Constructed Half Decks",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12132",
+  "slug": "bastiodon-the-defender-constructed-half-deck",
+  "n": "Bastiodon the Defender Constructed Half Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12133",
+  "slug": "rampardos-the-attacker-constructed-half-deck",
+  "n": "Rampardos the Attacker Constructed Half Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11210",
+  "slug": "secret-of-the-lakes",
+  "n": "Secret of the Lakes",
+  "cod": "DP2",
+  "era": ""
+ },
+ {
+  "tc": "11234",
+  "slug": "diamond-and-pearl-promos",
+  "n": "Diamond & Pearl Promos",
+  "cod": "DPP",
+  "era": ""
+ },
+ {
+  "tc": "11244",
+  "slug": "space-time-creation",
+  "n": "Space-Time Creation",
+  "cod": "DP1",
+  "era": ""
+ },
+ {
+  "tc": "12129",
+  "slug": "entry-pack",
+  "n": "Entry Pack",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11271",
+  "slug": "world-champions-pack",
+  "n": "World Champions Pack",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11559",
+  "slug": "imprison-gardevoir-ex-constructed-standard-deck",
+  "n": "Imprison! Gardevoir ex Constructed Standard Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11295",
+  "slug": "offense-and-defense-of-the-furthest-ends",
+  "n": "Offense and Defense of the Furthest Ends",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11558",
+  "slug": "shockwave-tyranitar-ex-constructed-standard-deck",
+  "n": "Shockwave! Tyranitar ex Constructed Standard Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11278",
+  "slug": "miracle-crystal",
+  "n": "Miracle Crystal",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11556",
+  "slug": "earths-groudon-ex-constructed-starter-deck",
+  "n": "Earth's Groudon ex Constructed Starter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11557",
+  "slug": "oceans-kyogre-ex-constructed-starter-deck",
+  "n": "Ocean's Kyogre ex Constructed Starter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11299",
+  "slug": "holon-phantom",
+  "n": "Holon Phantom",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11553",
+  "slug": "mew-o-lucario-gift-box-crawdaunt",
+  "n": "Mew • Lucario Gift Box (Crawdaunt)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11552",
+  "slug": "mew-o-lucario-gift-box-lucario",
+  "n": "Mew • Lucario Gift Box (Lucario)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11551",
+  "slug": "mew-o-lucario-gift-box-mew",
+  "n": "Mew • Lucario Gift Box (Mew)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11554",
+  "slug": "mew-o-lucario-gift-box-mightyena",
+  "n": "Mew • Lucario Gift Box (Mightyena)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11555",
+  "slug": "mew-o-lucario-gift-box-pokemon-star",
+  "n": "Mew • Lucario Gift Box (Pokémon ☆)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11186",
+  "slug": "holon-research-tower",
+  "n": "Holon Research Tower",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11433",
+  "slug": "holon-research-tower-fire-quarter-deck",
+  "n": "Holon Research Tower Fire Quarter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11550",
+  "slug": "holon-research-tower-lightning-quarter-deck",
+  "n": "Holon Research Tower Lightning Quarter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11549",
+  "slug": "holon-research-tower-water-quarter-deck",
+  "n": "Holon Research Tower Water Quarter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11546",
+  "slug": "master-kit-bulbasaur",
+  "n": "Master Kit (Bulbasaur)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11548",
+  "slug": "master-kit-side-deck",
+  "n": "Master Kit (Side Deck)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11547",
+  "slug": "master-kit-torchic",
+  "n": "Master Kit (Torchic)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11254",
+  "slug": "mirage-forest",
+  "n": "Mirage Forest",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11418",
+  "slug": "mirages-mew-constructed-starter-deck",
+  "n": "Mirage's Mew Constructed Starter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11193",
+  "slug": "golden-sky-silvery-ocean",
+  "n": "Golden Sky, Silvery Ocean",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11545",
+  "slug": "feraligatr-constructed-starter-deck",
+  "n": "Feraligatr Constructed Starter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11543",
+  "slug": "meganium-constructed-starter-deck",
+  "n": "Meganium Constructed Starter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11544",
+  "slug": "typhlosion-constructed-starter-deck",
+  "n": "Typhlosion Constructed Starter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11542",
+  "slug": "fighting-quick-construction-pack",
+  "n": "Fighting Quick Construction Pack",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11538",
+  "slug": "fire-quick-construction-pack",
+  "n": "Fire Quick Construction Pack",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11537",
+  "slug": "grass-quick-construction-pack",
+  "n": "Grass Quick Construction Pack",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11540",
+  "slug": "lightning-quick-construction-pack",
+  "n": "Lightning Quick Construction Pack",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11541",
+  "slug": "psychic-quick-construction-pack",
+  "n": "Psychic Quick Construction Pack",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11539",
+  "slug": "water-quick-construction-pack",
+  "n": "Water Quick Construction Pack",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11536",
+  "slug": "emerald-gift-box-deoxys",
+  "n": "Emerald Gift Box (Deoxys)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11535",
+  "slug": "emerald-gift-box-rayquaza",
+  "n": "Emerald Gift Box (Rayquaza)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11438",
+  "slug": "black-deck-kit",
+  "n": "Black Deck Kit",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11534",
+  "slug": "silver-deck-kit",
+  "n": "Silver Deck Kit",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11179",
+  "slug": "team-rocket-strikes-back",
+  "n": "Team Rocket Strikes Back",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11181",
+  "slug": "clash-of-the-blue-sky",
+  "n": "Clash of the Blue Sky",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11532",
+  "slug": "deoxys-constructed-starter-deck",
+  "n": "Deoxys Constructed Starter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11533",
+  "slug": "rayquaza-constructed-starter-deck",
+  "n": "Rayquaza Constructed Starter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11225",
+  "slug": "flight-of-legends",
+  "n": "Flight of Legends",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11531",
+  "slug": "venusaur-charizard-and-blastoise-random-constructed-starter-decks",
+  "n": "Venusaur, Charizard & Blastoise Random Constructed Starter Decks",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11194",
+  "slug": "pcg-promos",
+  "n": "PCG Promos",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11526",
+  "slug": "metagross-constructed-starter-deck",
+  "n": "Metagross Constructed Starter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11248",
+  "slug": "undone-seal",
+  "n": "Undone Seal",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11528",
+  "slug": "gift-box-latias",
+  "n": "Gift Box (Latias)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11527",
+  "slug": "gift-box-latios",
+  "n": "Gift Box (Latios)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11530",
+  "slug": "aqua-deck-kit",
+  "n": "Aqua Deck Kit",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11529",
+  "slug": "magma-deck-kit",
+  "n": "Magma Deck Kit",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11233",
+  "slug": "magma-vs-aqua-two-ambitions",
+  "n": "Magma vs Aqua: Two Ambitions",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11524",
+  "slug": "flygon-constructed-starter-deck",
+  "n": "Flygon Constructed Starter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11281",
+  "slug": "rulers-of-the-heavens",
+  "n": "Rulers of the Heavens",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11525",
+  "slug": "salamence-constructed-starter-deck",
+  "n": "Salamence Constructed Starter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11222",
+  "slug": "miracle-of-the-desert",
+  "n": "Miracle of the Desert",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11165",
+  "slug": "adv-expansion-pack",
+  "n": "ADV Expansion Pack",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11523",
+  "slug": "mudkip-constructed-starter-deck",
+  "n": "Mudkip Constructed Starter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11522",
+  "slug": "torchic-constructed-starter-deck",
+  "n": "Torchic Constructed Starter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11521",
+  "slug": "treecko-constructed-starter-deck",
+  "n": "Treecko Constructed Starter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11262",
+  "slug": "adv-promos",
+  "n": "ADV Promos",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11168",
+  "slug": "pokemon-web",
+  "n": "Pokémon Web",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11283",
+  "slug": "pokemon-vs",
+  "n": "Pokémon VS",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12127",
+  "slug": "leaders-pokemon-movie-limited-edition",
+  "n": "Leaders' Pokémon: Movie Limited Edition",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11183",
+  "slug": "mysterious-mountains",
+  "n": "Mysterious Mountains",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11188",
+  "slug": "split-earth",
+  "n": "Split Earth",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11227",
+  "slug": "wind-from-the-sea",
+  "n": "Wind from the Sea",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11218",
+  "slug": "the-town-on-no-map",
+  "n": "The Town on No Map",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11205",
+  "slug": "base-expansion-pack",
+  "n": "Base Expansion Pack",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11520",
+  "slug": "pokemon-e-starter-deck",
+  "n": "Pokémon-e Starter Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11478",
+  "slug": "j-promos",
+  "n": "J Promos",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11198",
+  "slug": "p-promos",
+  "n": "P Promos",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11333",
+  "slug": "intro-pack-neo-chikorita",
+  "n": "Intro Pack Neo (Chikorita)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11334",
+  "slug": "intro-pack-neo-totodile",
+  "n": "Intro Pack Neo (Totodile)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11252",
+  "slug": "darkness-and-to-light",
+  "n": "Darkness, and to Light...",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11173",
+  "slug": "awakening-legends",
+  "n": "Awakening Legends",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11573",
+  "slug": "neo-premium-file-3",
+  "n": "Neo Premium File 3",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11266",
+  "slug": "crossing-the-ruins",
+  "n": "Crossing the Ruins...",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11572",
+  "slug": "neo-premium-file-2",
+  "n": "Neo Premium File 2",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11290",
+  "slug": "gold-silver-to-a-new-world",
+  "n": "Gold, Silver, to a New World...",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11571",
+  "slug": "neo-premium-file-1",
+  "n": "Neo Premium File 1",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11331",
+  "slug": "intro-pack-bulbasaur",
+  "n": "Intro Pack (Bulbasaur)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11332",
+  "slug": "intro-pack-squirtle",
+  "n": "Intro Pack (Squirtle)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11302",
+  "slug": "challenge-from-the-darkness",
+  "n": "Challenge from the Darkness",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12119",
+  "slug": "guren-town-gym-deck",
+  "n": "Guren Town Gym Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12120",
+  "slug": "yamabuki-city-gym-deck",
+  "n": "Yamabuki City Gym Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12124",
+  "slug": "quick-starter-gift-set-green",
+  "n": "Quick Starter Gift Set (Green)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12123",
+  "slug": "quick-starter-gift-set-red",
+  "n": "Quick Starter Gift Set (Red)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11242",
+  "slug": "leaders-stadium",
+  "n": "Leaders' Stadium",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12118",
+  "slug": "kuchiba-city-gym-deck",
+  "n": "Kuchiba City Gym Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12117",
+  "slug": "tamamushi-city-gym-deck",
+  "n": "Tamamushi City Gym Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12116",
+  "slug": "hanada-city-gym-deck",
+  "n": "Hanada City Gym Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12115",
+  "slug": "nivi-city-gym-deck",
+  "n": "Nivi City Gym Deck",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11249",
+  "slug": "team-rocket",
+  "n": "Team Rocket",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11172",
+  "slug": "mystery-of-the-fossils",
+  "n": "Mystery of the Fossils",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11201",
+  "slug": "pokemon-jungle",
+  "n": "Pokémon Jungle",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11182",
+  "slug": "expansion-pack",
+  "n": "Expansion Pack",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11472",
+  "slug": "vending-machine-series-3-green",
+  "n": "Vending Machine Series 3 (Green)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11471",
+  "slug": "vending-machine-series-2-red",
+  "n": "Vending Machine Series 2 (Red)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11470",
+  "slug": "vending-machine-series-1-blue",
+  "n": "Vending Machine Series 1 (Blue)",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11303",
+  "slug": "movie-commemoration-random-pack",
+  "n": "Movie Commemoration Random Pack",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11328",
+  "slug": "11th-movie-commemoration-set",
+  "n": "11th Movie Commemoration Set",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11327",
+  "slug": "10th-movie-commemoration-set",
+  "n": "10th Movie Commemoration Set",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11516",
+  "slug": "movie-commemoration-vs-pack-seas-manaphy",
+  "n": "Movie Commemoration VS Pack: Sea's Manaphy",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11515",
+  "slug": "movie-commemoration-vs-pack-auras-lucario",
+  "n": "Movie Commemoration VS Pack: Aura's Lucario",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11483",
+  "slug": "movie-commemoration-vs-pack-sky-splitting-deoxys",
+  "n": "Movie Commemoration VS Pack: Sky-Splitting Deoxys",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11513",
+  "slug": "movie-commemoration-vs-pack",
+  "n": "Movie Commemoration VS Pack",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11514",
+  "slug": "theater-limited-vs-pack",
+  "n": "Theater Limited VS Pack",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11799",
+  "slug": "mega-evolution-energies",
+  "n": "Mega Evolution Energies",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "111231",
+  "slug": "scarlet-and-violet-energies",
+  "n": "Scarlet & Violet Energies",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "111240",
+  "slug": "2021-energies",
+  "n": "2021 Energies",
+  "cod": "EN21",
+  "era": ""
+ },
+ {
+  "tc": "111239",
+  "slug": "2019-energies",
+  "n": "2019 Energies",
+  "cod": "EN19",
+  "era": ""
+ },
+ {
+  "tc": "111238",
+  "slug": "2018-energies",
+  "n": "2018 Energies",
+  "cod": "EN18",
+  "era": ""
+ },
+ {
+  "tc": "111237",
+  "slug": "2016-energies",
+  "n": "2016 Energies",
+  "cod": "EN16",
+  "era": ""
+ },
+ {
+  "tc": "111241",
+  "slug": "2015-energies",
+  "n": "2015 Energies",
+  "cod": "EN15",
+  "era": ""
+ },
+ {
+  "tc": "111236",
+  "slug": "2013-energies",
+  "n": "2013 Energies",
+  "cod": "EN13",
+  "era": ""
+ },
+ {
+  "tc": "111235",
+  "slug": "2012-energies",
+  "n": "2012 Energies",
+  "cod": "EN12",
+  "era": ""
+ },
+ {
+  "tc": "11798",
+  "slug": "2009-energies",
+  "n": "2009 Energies",
+  "cod": "EN09",
+  "era": ""
+ },
+ {
+  "tc": "111232",
+  "slug": "2006-energies",
+  "n": "2006 Energies",
+  "cod": "EN06",
+  "era": ""
+ },
+ {
+  "tc": "11618",
+  "slug": "pikachu-world-collection",
+  "n": "Pikachu World Collection",
+  "cod": "PW",
+  "era": ""
+ },
+ {
+  "tc": "11240",
+  "slug": "melee-pokemon-scramble",
+  "n": "Melee! Pokémon Scramble",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11818",
+  "slug": "moonlit-pursuit-and-dawn-dash",
+  "n": "Moonlit Pursuit & Dawn Dash",
+  "cod": "DP4",
+  "era": ""
+ },
+ {
+  "tc": "11264",
+  "slug": "ppp-promos",
+  "n": "PPP Promos",
+  "cod": "PPP",
+  "era": ""
+ },
+ {
+  "tc": "11287",
+  "slug": "pokepark-blue",
+  "n": "PokéPark Blue",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11192",
+  "slug": "pokepark-forest",
+  "n": "PokéPark Forest",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11270",
+  "slug": "play-promos",
+  "n": "PLAY Promos",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11238",
+  "slug": "mcdonalds-pokemon-e-minimum-pack",
+  "n": "McDonald's Pokémon-e Minimum Pack",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11479",
+  "slug": "t-promos",
+  "n": "T Promos",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "12128",
+  "slug": "tropical-mega-battle",
+  "n": "Tropical Mega Battle",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11187",
+  "slug": "southern-islands",
+  "n": "Southern Islands",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11473",
+  "slug": "miscellaneous-decks",
+  "n": "Miscellaneous Decks",
+  "cod": "",
+  "era": ""
+ },
+ {
+  "tc": "11410",
+  "slug": "miscellaneous-promos",
+  "n": "Miscellaneous Promos",
+  "cod": "MP",
+  "era": ""
+ }
+]
