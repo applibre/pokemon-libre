@@ -148,6 +148,7 @@ const Cartas = (() => {
         ${n > 1 ? `<span class="cant">×${n}</span>` : ''}
       </button>
       <button class="detalle" data-i="${esc(c.id)}" aria-label="Ver la ficha de ${donde}">i</button>
+      <span class="celda-num" aria-hidden="true">${esc(Dominio.numeroCompleto(c, sets))}</span>
     </div>`;
   }
 

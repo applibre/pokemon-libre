@@ -192,11 +192,15 @@ const Dominio = (() => {
 
   /* ---------- lista de compra ---------- */
 
-  /** Texto llano de las que faltan, para mandar por WhatsApp o
-      llevarlo apuntado a la tienda. */
+  /** Texto llano de las que faltan, para mandar por WhatsApp o llevarlo
+      apuntado a la tienda. Se corta a 250: una lista de dos mil líneas no
+      la lee nadie y WhatsApp ni la manda. */
+  const TOPE_LISTA = 250;
+
   function listaDeFaltantes(cartas, coleccion, sets, titulo) {
-    const faltan = ordenar(cartas.filter((c) => !tengo(coleccion, c.id)));
-    const lineas = [`${titulo} · me faltan ${faltan.length} de ${cartas.length}`, ''];
+    const todas = ordenar(cartas.filter((c) => !tengo(coleccion, c.id)));
+    const faltan = todas.slice(0, TOPE_LISTA);
+    const lineas = [`${titulo} · me faltan ${todas.length} de ${cartas.length}`, ''];
 
     let setActual = null;
     for (const c of faltan) {
@@ -207,6 +211,9 @@ const Dominio = (() => {
       }
       const precio = c.eur ? `  ·  ${c.eur} €` : '';
       lineas.push(`   ${c.num}${c.r ? ` ${c.r}` : ''}  ${c.n}${precio}`);
+    }
+    if (todas.length > faltan.length) {
+      lineas.push('', `… y ${todas.length - faltan.length} más. Filtra por Pokémon para mandarlas por partes.`);
     }
     lineas.push('', 'Pokémon Libre · applibre.github.io/pokemon-libre');
     return lineas.join('\n');
@@ -290,9 +297,15 @@ const Dominio = (() => {
     if (carta.r) filas.push(['Rareza', carta.r]);
     if (carta.ill) filas.push(['Ilustración', carta.ill]);
     if (set.rel) filas.push(['Salió en', mesYAnio(set.rel)]);
+    if (set.ja) filas.push(['Edición', `japonesa${set.cod ? ` · ${set.cod}` : ''}`]);
 
-    if (cartasDelPokemon && cartasDelPokemon.length > 1) {
-      const p = puestoPorEdad(cartasDelPokemon, carta);
+    /* El puesto por antigüedad solo se puede decir de las inglesas: de las
+       japonesas no hay fecha, y ordenarlas al final las haría parecer
+       modernas a todas. Antes decía que un Pikachu de 1996 era el 375.º
+       más antiguo, que es falso. */
+    if (!set.ja && cartasDelPokemon && cartasDelPokemon.length > 1) {
+      const conFecha = cartasDelPokemon.filter((c) => !(sets[c.s] || {}).ja);
+      const p = puestoPorEdad(conFecha, carta);
       if (p) filas.push(['Antigüedad', `la ${p.puesto}.ª más antigua de las ${p.total} de ${nombrePokemon || carta.n}`]);
     }
 

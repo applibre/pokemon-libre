@@ -18,7 +18,7 @@ const Almacen = (() => {
     schemaVersion: VERSION,
     coleccion: {},            // { 'base1-4': { holo: 1 } }
     ajustes: {
-      tema: 'auto',
+      tema: 'claro',    // clara de serie: la app es un album, y un album es blanco
       verFamilias: true,      // las preevoluciones, incluidas
       idioma: 'todo',         // 'en' inglesas · 'ja' japonesas · 'todo' las dos
       verPrecios: true,
@@ -28,7 +28,15 @@ const Almacen = (() => {
     ultimaCopia: null,
   });
 
-  const migraciones = [];     // de la versión 1 a la 2 iría aquí
+  const migraciones = [
+    /* 1 → 2 · La app nació siguiendo al sistema, y a quien tiene el móvil
+       en oscuro le salía un álbum negro. Se pasa a clara una vez; quien
+       quiera oscuro lo elige en Ajustes y ya no se le toca más. */
+    (d) => {
+      if ((d.ajustes || {}).tema === 'auto') d.ajustes.tema = 'claro';
+      return d;
+    },
+  ];
 
   function migrar(d) {
     let v = d.schemaVersion || 1;

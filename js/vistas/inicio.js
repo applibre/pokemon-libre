@@ -43,14 +43,6 @@ const Inicio = (() => {
     });
   }
 
-  /* La carta más antigua de cada Pokémon, asomando detrás de su ficha.
-     Es la que le da cara al bloque: un nombre suelto no dice nada y una
-     carta sí. */
-  const primeraDe = (id) => {
-    const suyas = Dominio.ordenar(Estado.cartasDe(id));
-    return suyas.length ? suyas[0].id : null;
-  };
-
   const bloque = (titulo, lista) => `
     <p class="grupo-titulo">${esc(titulo)}</p>
     <div class="pokes">
@@ -58,7 +50,6 @@ const Inicio = (() => {
         <button class="poke ${p.faltan === 0 ? 'completo' : ''}" data-poke="${esc(p.id)}"
           style="--tipo: var(--t-${esc(p.tipo)})"
           aria-label="${esc(p.nombre)}: tienes ${p.tengo} de ${p.total}">
-          ${primeraDe(p.id) ? `<img class="poke-carta" src="data/cartas/${esc(primeraDe(p.id))}.webp" alt="" loading="lazy" onerror="this.remove()">` : ''}
           <span class="nom">${esc(p.nombre)}</span>
           <span class="via"><i style="width:${p.parte * 100}%"></i></span>
           <span class="cif"><b>${p.tengo}/${p.total}</b><span>${p.porcentaje}%</span></span>

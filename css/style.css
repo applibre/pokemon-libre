@@ -181,18 +181,6 @@ button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulat
   content: ""; position: absolute; inset: 0 auto 0 0; width: 4px;
   background: var(--tipo, var(--tx3));
 }
-/* La carta más antigua, al fondo de su ficha: da color y contexto sin
-   pelearse con el texto, que es lo que hay que leer. */
-.poke-carta {
-  position: absolute; right: -6px; top: 50%; height: 118%; width: auto;
-  transform: translateY(-50%) rotate(4deg);
-  opacity: .16; pointer-events: none;
-  transition: transform .4s cubic-bezier(.22,.8,.3,1), opacity .4s;
-  mask-image: linear-gradient(to left, #000 30%, transparent 92%);
-}
-.poke:active .poke-carta { transform: translateY(-50%) rotate(0deg) scale(1.08); opacity: .26; }
-.poke.completo .poke-carta { opacity: .3; }
-
 .poke .nom { font-size: 16px; font-weight: 700; letter-spacing: -0.01em; }
 .poke .cif {
   font-family: var(--fm); font-size: 12.5px; color: var(--tx2);
@@ -273,6 +261,14 @@ button { font: inherit; color: inherit; cursor: pointer; touch-action: manipulat
   touch-action: manipulation;
 }
 .celda .detalle:active { transform: scale(.88); }
+/* El número, debajo de cada carta: en miniatura no se lee el que trae
+   impreso, y es como se busca una carta en la tienda. */
+.celda-num {
+  display: block; margin-top: 4px; text-align: center;
+  font-family: var(--fm); font-size: 10.5px; color: var(--tx3);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.celda:has(.carta.tengo) .celda-num { color: var(--oro); font-weight: 600; }
 .ayuda { margin: 0 0 10px; }
 
 .carta {

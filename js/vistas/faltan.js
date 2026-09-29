@@ -60,7 +60,7 @@ const Faltan = (() => {
         ${grupos.map((g) => `
           <div class="set-cab">
             <b>${esc(g.set.n)}</b>
-            <span>${esc(Dominio.anioDeSet(g.set))} · ${g.cartas.length}</span>
+            <span>${esc(Dominio.anioDeSet(g.set))} · ${g.cartas.length} ${g.cartas.length === 1 ? 'carta' : 'cartas'}</span>
           </div>
           <div class="tarjeta" style="padding:4px 14px">
             ${g.cartas.map((c) => `

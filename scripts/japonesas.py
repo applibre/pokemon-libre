@@ -159,6 +159,50 @@ def paso_fichas():
     print(f'\nFichas leídas: {hechas} · descartadas por no ser nuestras: {descartadas}')
 
 
+def paso_detalles():
+    """Segunda vuelta: la ficha japonesa trae rareza, ilustrador, puntos
+       de salud y etapa, igual que la inglesa. Sin esto la ficha de una
+       carta japonesa queda casi vacía y no cuenta nada."""
+    salida = json.load(open(CARTAS, encoding='utf-8'))
+    pendientes = [c for k, c in salida.items()
+                  if not k.startswith('_') and c.get('n') and not c.get('fuera') and not c.get('visto')]
+    print('Fichas por completar: ' + str(len(pendientes)), flush=True)
+
+    def tras(texto, etiqueta):
+        m = re.search(re.escape(etiqueta) + r'\s*\|+\s*([^|]{1,60})', texto)
+        return m.group(1).strip() if m else ''
+
+    hechas = 0
+    for i, c in enumerate(pendientes, 1):
+        try:
+            h = get(f"https://www.tcgcollector.com/cards/{c['tc']}/{c['slug']}")
+        except Exception as e:
+            print(f"  ! {c['slug']}: {e}", flush=True)
+            continue
+        texto = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' | ', h)))
+        c['r'] = tras(texto, 'Rarity')
+        c['ill'] = tras(texto, 'Illustrators')
+        ps = tras(texto, 'HP')
+        if ps.isdigit():
+            c['ps'] = int(ps)
+        m = re.search(r'Pok.mon \|+\s*(Basic|Stage 1|Stage 2|VMAX|VSTAR)', texto)
+        if m:
+            c['etapa'] = m.group(1)
+        m = re.search(r'Evolves from \|+\s*([^|]{1,30})', texto)
+        if m:
+            c['de'] = m.group(1).strip()
+        c['visto'] = True
+        hechas += 1
+        if i % 25 == 0:
+            json.dump(salida, open(CARTAS, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+            print(f'  {i}/{len(pendientes)} · completadas {hechas}', flush=True)
+        time.sleep(0.35)
+
+    json.dump(salida, open(CARTAS, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    print('')
+    print('Fichas completadas: ' + str(hechas))
+
+
 if __name__ == '__main__':
     paso = sys.argv[1] if len(sys.argv) > 1 else 'sets'
-    {'sets': paso_sets, 'cartas': paso_cartas, 'fichas': paso_fichas}[paso]()
+    {'sets': paso_sets, 'cartas': paso_cartas, 'fichas': paso_fichas, 'detalles': paso_detalles}[paso]()
