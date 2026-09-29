@@ -376,11 +376,18 @@ async function main() {
     const id = 'ja-' + c.tc;
     if (cartas.some((x) => x.id === id)) continue;
     const trozos = String(c.num || '').split('/');
-    cartas.push({
+    const ficha = {
       id, n: c.n, p: suyos, s: sid, num: trozos[0] || '',
-      r: '', v: ['normal'], img: null, ill: '', l: 'ja',
+      r: (c.r || '').replace(/^[—-]$/, ''), v: ['normal'], img: null, ill: c.ill || '', l: 'ja',
       ni: c.num || '', tc_id: c.tc, tc_slug: c.slug,
-    });
+    };
+    // lo que trae su ficha en TCG Collector, igual que en las inglesas
+    const j = {};
+    if (c.etapa) j.e = c.etapa;
+    if (c.de) j.de = c.de;
+    if (c.ps) j.ps = c.ps;
+    if (Object.keys(j).length) ficha.j = j;
+    cartas.push(ficha);
     if (trozos[1]) sets[sid].tot = Number(trozos[1]) || sets[sid].tot;
     japoPuestas++;
   }

@@ -36,7 +36,7 @@ Se reúnen por **número de Pokédex**, no por nombre: así entran «Reshiram & 
 
 **La carta se mira en 3D.** Al abrirla llega girando y luego se inclina con el dedo, con la luz pasándole por encima; las holo y las raras llevan una capa de foil que cambia de color según cómo se mire. Es el efecto de cuando se abre un sobre, aplicado a lo que ya tienes.
 
-**En inglés y en japonés.** La misma carta existe en los dos, y muchas japonesas nunca salieron de Japón. En Ajustes se elige ver unas, otras o las dos.
+**En inglés y en japonés.** La misma carta existe en los dos, y muchas japonesas nunca salieron de Japón. Las 914 japonesas traen su rareza, quién las ilustró y su ficha de juego, igual que las inglesas. En Ajustes se elige ver unas, otras o las dos.
 
 **Por expansiones, de la más antigua a la más moderna.** La otra forma de entrar, además de por Pokémon.
 

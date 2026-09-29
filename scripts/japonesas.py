@@ -169,7 +169,7 @@ def paso_detalles():
     print('Fichas por completar: ' + str(len(pendientes)), flush=True)
 
     def tras(texto, etiqueta):
-        m = re.search(re.escape(etiqueta) + r'\s*\|+\s*([^|]{1,60})', texto)
+        m = re.search(re.escape(etiqueta) + r'[\s|]+([^|]{1,60})', texto)
         return m.group(1).strip() if m else ''
 
     hechas = 0
@@ -185,10 +185,10 @@ def paso_detalles():
         ps = tras(texto, 'HP')
         if ps.isdigit():
             c['ps'] = int(ps)
-        m = re.search(r'Pok.mon \|+\s*(Basic|Stage 1|Stage 2|VMAX|VSTAR)', texto)
+        m = re.search(r'Pok.mon[\s|]+(Basic|Stage 1|Stage 2|VMAX|VSTAR)', texto)
         if m:
             c['etapa'] = m.group(1)
-        m = re.search(r'Evolves from \|+\s*([^|]{1,30})', texto)
+        m = re.search(r'Evolves from[\s|]+([^|]{1,30})', texto)
         if m:
             c['de'] = m.group(1).strip()
         c['visto'] = True
