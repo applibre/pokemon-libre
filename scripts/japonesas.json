@@ -2113,315 +2113,387 @@
   "slug": "charmeleon-venusaur-charizard-and-blastoise-special-deck-set-ex-008-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "n": "Charmeleon",
+  "num": "008/049",
+  "set_titulo": "Venusaur, Charizard & Blastoise Special Deck Set ex",
+  "img": "https://static.tcgcollector.com/content/images/36/74/a9/3674a9237793bab043e556577d0bf35027650a816048c9f8173c9bc5dc38cf07.jpg"
  },
  "43751": {
   "tc": 43751,
   "slug": "charizard-ex-venusaur-charizard-and-blastoise-special-deck-set-ex-009-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "n": "Charizard ex",
+  "num": "009/049",
+  "set_titulo": "Venusaur, Charizard & Blastoise Special Deck Set ex",
+  "img": "https://static.tcgcollector.com/content/images/1d/fe/9d/1dfe9d0c5ee60681ab10d1035be282ab7777dd9c41def30622c4ae607c010f96.jpg"
  },
  "43752": {
   "tc": 43752,
   "slug": "moltres-venusaur-charizard-and-blastoise-special-deck-set-ex-010-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43753": {
   "tc": 43753,
   "slug": "volcanion-venusaur-charizard-and-blastoise-special-deck-set-ex-011-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43754": {
   "tc": 43754,
   "slug": "charcadet-venusaur-charizard-and-blastoise-special-deck-set-ex-012-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43755": {
   "tc": 43755,
   "slug": "armarouge-venusaur-charizard-and-blastoise-special-deck-set-ex-013-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43756": {
   "tc": 43756,
   "slug": "squirtle-venusaur-charizard-and-blastoise-special-deck-set-ex-014-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "n": "Squirtle",
+  "num": "014/049",
+  "set_titulo": "Venusaur, Charizard & Blastoise Special Deck Set ex",
+  "img": "https://static.tcgcollector.com/content/images/10/31/31/1031312cfd7bd451d72016d3f5c54080a76cf90e8f66db633b199afd8c66bd37.jpg"
  },
  "43757": {
   "tc": 43757,
   "slug": "wartortle-venusaur-charizard-and-blastoise-special-deck-set-ex-015-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "n": "Wartortle",
+  "num": "015/049",
+  "set_titulo": "Venusaur, Charizard & Blastoise Special Deck Set ex",
+  "img": "https://static.tcgcollector.com/content/images/a3/0d/40/a30d40891927c2a647bc05f89508f2de29178ea96dd5572111279f6b3ef1d99f.jpg"
  },
  "43758": {
   "tc": 43758,
   "slug": "blastoise-ex-venusaur-charizard-and-blastoise-special-deck-set-ex-016-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "n": "Blastoise ex",
+  "num": "016/049",
+  "set_titulo": "Venusaur, Charizard & Blastoise Special Deck Set ex",
+  "img": "https://static.tcgcollector.com/content/images/94/82/95/948295e1dd174d107fb7500b778f5ddbd40d523414f12cb184c95f3b2d53e59c.jpg"
  },
  "43759": {
   "tc": 43759,
   "slug": "alomomola-venusaur-charizard-and-blastoise-special-deck-set-ex-017-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43760": {
   "tc": 43760,
   "slug": "keldeo-venusaur-charizard-and-blastoise-special-deck-set-ex-018-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43761": {
   "tc": 43761,
   "slug": "dondozo-venusaur-charizard-and-blastoise-special-deck-set-ex-019-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43762": {
   "tc": 43762,
   "slug": "kangaskhan-venusaur-charizard-and-blastoise-special-deck-set-ex-020-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43763": {
   "tc": 43763,
   "slug": "snorlax-venusaur-charizard-and-blastoise-special-deck-set-ex-021-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "n": "Snorlax",
+  "num": "021/049",
+  "set_titulo": "Venusaur, Charizard & Blastoise Special Deck Set ex",
+  "img": "https://static.tcgcollector.com/content/images/09/a8/15/09a8159bda3e9a07b98a915be2fdfdeef834f0ea49360c044e8d899f10276456.jpg"
  },
  "43764": {
   "tc": 43764,
   "slug": "zigzagoon-venusaur-charizard-and-blastoise-special-deck-set-ex-022-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43765": {
   "tc": 43765,
   "slug": "linoone-venusaur-charizard-and-blastoise-special-deck-set-ex-023-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43766": {
   "tc": 43766,
   "slug": "zangoose-venusaur-charizard-and-blastoise-special-deck-set-ex-024-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43767": {
   "tc": 43767,
   "slug": "minccino-venusaur-charizard-and-blastoise-special-deck-set-ex-025-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43768": {
   "tc": 43768,
   "slug": "cinccino-venusaur-charizard-and-blastoise-special-deck-set-ex-026-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43769": {
   "tc": 43769,
   "slug": "lechonk-venusaur-charizard-and-blastoise-special-deck-set-ex-027-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43770": {
   "tc": 43770,
   "slug": "oinkologne-venusaur-charizard-and-blastoise-special-deck-set-ex-028-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43771": {
   "tc": 43771,
   "slug": "flamigo-venusaur-charizard-and-blastoise-special-deck-set-ex-029-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43772": {
   "tc": 43772,
   "slug": "energy-sticker-venusaur-charizard-and-blastoise-special-deck-set-ex-030-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43773": {
   "tc": 43773,
   "slug": "superior-energy-retrieval-venusaur-charizard-and-blastoise-special-deck-set-ex-031-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43774": {
   "tc": 43774,
   "slug": "super-rod-venusaur-charizard-and-blastoise-special-deck-set-ex-032-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43775": {
   "tc": 43775,
   "slug": "nest-ball-venusaur-charizard-and-blastoise-special-deck-set-ex-033-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43776": {
   "tc": 43776,
   "slug": "ultra-ball-venusaur-charizard-and-blastoise-special-deck-set-ex-034-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43777": {
   "tc": 43777,
   "slug": "rare-candy-venusaur-charizard-and-blastoise-special-deck-set-ex-035-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43778": {
   "tc": 43778,
   "slug": "switch-venusaur-charizard-and-blastoise-special-deck-set-ex-036-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43779": {
   "tc": 43779,
   "slug": "irida-venusaur-charizard-and-blastoise-special-deck-set-ex-037-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43780": {
   "tc": 43780,
   "slug": "saguaro-venusaur-charizard-and-blastoise-special-deck-set-ex-038-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43781": {
   "tc": 43781,
   "slug": "cynthias-ambition-venusaur-charizard-and-blastoise-special-deck-set-ex-039-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43782": {
   "tc": 43782,
   "slug": "gardenias-vigor-venusaur-charizard-and-blastoise-special-deck-set-ex-040-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43783": {
   "tc": 43783,
   "slug": "iono-venusaur-charizard-and-blastoise-special-deck-set-ex-041-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43784": {
   "tc": 43784,
   "slug": "nemona-venusaur-charizard-and-blastoise-special-deck-set-ex-042-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43785": {
   "tc": 43785,
   "slug": "nemona-venusaur-charizard-and-blastoise-special-deck-set-ex-043-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43786": {
   "tc": 43786,
   "slug": "professors-research-venusaur-charizard-and-blastoise-special-deck-set-ex-044-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43787": {
   "tc": 43787,
   "slug": "professors-research-venusaur-charizard-and-blastoise-special-deck-set-ex-045-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43788": {
   "tc": 43788,
   "slug": "bosss-orders-venusaur-charizard-and-blastoise-special-deck-set-ex-046-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43789": {
   "tc": 43789,
   "slug": "mesagoza-venusaur-charizard-and-blastoise-special-deck-set-ex-047-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43790": {
   "tc": 43790,
   "slug": "beach-court-venusaur-charizard-and-blastoise-special-deck-set-ex-048-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43791": {
   "tc": 43791,
   "slug": "magma-basin-venusaur-charizard-and-blastoise-special-deck-set-ex-049-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "fuera": true
  },
  "43792": {
   "tc": 43792,
   "slug": "bulbasaur-venusaur-charizard-and-blastoise-special-deck-set-ex-050-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "n": "Bulbasaur",
+  "num": "050/049",
+  "set_titulo": "Venusaur, Charizard & Blastoise Special Deck Set ex",
+  "img": "https://static.tcgcollector.com/content/images/68/02/3d/68023deb896002614b6a487e03eec38a6de7d6bd130699259116589a45323415.jpg"
  },
  "43793": {
   "tc": 43793,
   "slug": "charmander-venusaur-charizard-and-blastoise-special-deck-set-ex-051-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "n": "Charmander",
+  "num": "051/049",
+  "set_titulo": "Venusaur, Charizard & Blastoise Special Deck Set ex",
+  "img": "https://static.tcgcollector.com/content/images/2a/99/e1/2a99e136753b20cddfa9d6ebc8224aaa741b88e8b8d7bfe4bcefc1c962a5fb75.jpg"
  },
  "43794": {
   "tc": 43794,
   "slug": "squirtle-venusaur-charizard-and-blastoise-special-deck-set-ex-052-049",
   "set_tc": "11597",
   "set_n": "Venusaur, Charizard & Blastoise Special Deck Set ex",
-  "set_cod": "SVG"
+  "set_cod": "SVG",
+  "n": "Squirtle",
+  "num": "052/049",
+  "set_titulo": "Venusaur, Charizard & Blastoise Special Deck Set ex",
+  "img": "https://static.tcgcollector.com/content/images/c8/ba/f4/c8baf400ed8fbd68e7fc749c127968a1b93ccecf6b25eb5d959353bbc706879d.jpg"
  },
  "_11597": {
   "tc": 0,
@@ -2435,238 +2507,281 @@
   "slug": "squirtle-pokemon-tcg-classic-blastoise-001-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "n": "Squirtle",
+  "num": "001/032",
+  "set_titulo": "Pokémon TCG Classic (Blastoise)",
+  "img": "https://static.tcgcollector.com/content/images/1c/c5/a0/1cc5a004d980f9a1368c446b66643a3ba8e9625b599eca7ba61deb4feadf8193.jpg"
  },
  "43283": {
   "tc": 43283,
   "slug": "wartortle-pokemon-tcg-classic-blastoise-002-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "n": "Wartortle",
+  "num": "002/032",
+  "set_titulo": "Pokémon TCG Classic (Blastoise)",
+  "img": "https://static.tcgcollector.com/content/images/6e/19/0e/6e190e6147ca50294131707a8cfabc1a5281e8b070b506c190f4f0bbef47ecdb.jpg"
  },
  "43284": {
   "tc": 43284,
   "slug": "blastoise-pokemon-tcg-classic-blastoise-003-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "n": "Blastoise",
+  "num": "003/032",
+  "set_titulo": "Pokémon TCG Classic (Blastoise)",
+  "img": "https://static.tcgcollector.com/content/images/e3/bd/7a/e3bd7ae59ea232c427fad4bff760ecb4c44111ec422bca4a77b805a0e3d35ff8.jpg"
  },
  "43285": {
   "tc": 43285,
   "slug": "staryu-pokemon-tcg-classic-blastoise-004-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43286": {
   "tc": 43286,
   "slug": "starmie-pokemon-tcg-classic-blastoise-005-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43287": {
   "tc": 43287,
   "slug": "magikarp-pokemon-tcg-classic-blastoise-006-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43288": {
   "tc": 43288,
   "slug": "gyarados-pokemon-tcg-classic-blastoise-007-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43289": {
   "tc": 43289,
   "slug": "lapras-pokemon-tcg-classic-blastoise-008-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43290": {
   "tc": 43290,
   "slug": "articuno-pokemon-tcg-classic-blastoise-009-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43291": {
   "tc": 43291,
   "slug": "suicune-ex-pokemon-tcg-classic-blastoise-010-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43292": {
   "tc": 43292,
   "slug": "drowzee-pokemon-tcg-classic-blastoise-011-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43293": {
   "tc": 43293,
   "slug": "hypno-pokemon-tcg-classic-blastoise-012-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43294": {
   "tc": 43294,
   "slug": "mr-mime-pokemon-tcg-classic-blastoise-013-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43295": {
   "tc": 43295,
   "slug": "mewtwo-pokemon-tcg-classic-blastoise-014-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43296": {
   "tc": 43296,
   "slug": "lt-surges-rattata-pokemon-tcg-classic-blastoise-015-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43297": {
   "tc": 43297,
   "slug": "lt-surges-raticate-pokemon-tcg-classic-blastoise-016-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43298": {
   "tc": 43298,
   "slug": "kangaskhan-pokemon-tcg-classic-blastoise-017-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43299": {
   "tc": 43299,
   "slug": "super-rod-pokemon-tcg-classic-blastoise-018-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43300": {
   "tc": 43300,
   "slug": "ultra-ball-pokemon-tcg-classic-blastoise-019-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43301": {
   "tc": 43301,
   "slug": "computer-search-pokemon-tcg-classic-blastoise-020-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43302": {
   "tc": 43302,
   "slug": "vs-seeker-pokemon-tcg-classic-blastoise-021-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43303": {
   "tc": 43303,
   "slug": "rare-candy-pokemon-tcg-classic-blastoise-022-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43304": {
   "tc": 43304,
   "slug": "switch-pokemon-tcg-classic-blastoise-023-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43305": {
   "tc": 43305,
   "slug": "poke-ball-pokemon-tcg-classic-blastoise-024-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43306": {
   "tc": 43306,
   "slug": "drops-in-the-ocean-pokemon-tcg-classic-blastoise-025-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43307": {
   "tc": 43307,
   "slug": "professor-oak-pokemon-tcg-classic-blastoise-026-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43308": {
   "tc": 43308,
   "slug": "fisherman-pokemon-tcg-classic-blastoise-027-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43309": {
   "tc": 43309,
   "slug": "pokemon-fan-club-pokemon-tcg-classic-blastoise-028-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43310": {
   "tc": 43310,
   "slug": "bosss-orders-pokemon-tcg-classic-blastoise-029-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43311": {
   "tc": 43311,
   "slug": "bill-pokemon-tcg-classic-blastoise-030-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43312": {
   "tc": 43312,
   "slug": "rockets-admin-pokemon-tcg-classic-blastoise-031-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43313": {
   "tc": 43313,
   "slug": "double-colorless-energy-pokemon-tcg-classic-blastoise-032-032",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43314": {
   "tc": 43314,
   "slug": "water-energy-pokemon-tcg-classic-blastoise-no-033",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "43315": {
   "tc": 43315,
   "slug": "psychic-energy-pokemon-tcg-classic-blastoise-no-034",
   "set_tc": "11600",
   "set_n": "Pokémon TCG Classic (Blastoise)",
-  "set_cod": "CLK"
+  "set_cod": "CLK",
+  "fuera": true
  },
  "_11600": {
   "tc": 0,
@@ -2680,238 +2795,287 @@
   "slug": "charmander-pokemon-tcg-classic-charizard-001-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "n": "Charmander",
+  "num": "001/032",
+  "set_titulo": "Pokémon TCG Classic (Charizard)",
+  "img": "https://static.tcgcollector.com/content/images/c3/28/0c/c3280c9dae995e3a9655f17d3f5177e978a3529c35be97b42bfa308637224897.jpg"
  },
  "43317": {
   "tc": 43317,
   "slug": "charmeleon-pokemon-tcg-classic-charizard-002-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "n": "Charmeleon",
+  "num": "002/032",
+  "set_titulo": "Pokémon TCG Classic (Charizard)",
+  "img": "https://static.tcgcollector.com/content/images/e7/48/23/e74823317cf017342563b6fc5d010c90d2beda71b8a8b61c309110d5c8eacd39.jpg"
  },
  "43318": {
   "tc": 43318,
   "slug": "charizard-pokemon-tcg-classic-charizard-003-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "n": "Charizard",
+  "num": "003/032",
+  "set_titulo": "Pokémon TCG Classic (Charizard)",
+  "img": "https://static.tcgcollector.com/content/images/3e/7c/22/3e7c220c637d58407b32ed74b6b8cfbc642e41af47e4ffda8dfb849dee65e78c.jpg"
  },
  "43319": {
   "tc": 43319,
   "slug": "ponyta-pokemon-tcg-classic-charizard-004-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43320": {
   "tc": 43320,
   "slug": "rapidash-pokemon-tcg-classic-charizard-005-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43321": {
   "tc": 43321,
   "slug": "magmar-pokemon-tcg-classic-charizard-006-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43322": {
   "tc": 43322,
   "slug": "ho-oh-ex-pokemon-tcg-classic-charizard-007-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43323": {
   "tc": 43323,
   "slug": "pikachu-pokemon-tcg-classic-charizard-008-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "n": "Pikachu",
+  "num": "008/032",
+  "set_titulo": "Pokémon TCG Classic (Charizard)",
+  "img": "https://static.tcgcollector.com/content/images/c5/84/3c/c5843cf629f64efb8524a6fea5aec77ce2511df24d75bb2fc9af43fe81f9e9df.jpg"
  },
  "43324": {
   "tc": 43324,
   "slug": "raichu-pokemon-tcg-classic-charizard-009-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "n": "Raichu",
+  "num": "009/032",
+  "set_titulo": "Pokémon TCG Classic (Charizard)",
+  "img": "https://static.tcgcollector.com/content/images/4e/6c/48/4e6c48badd5f60578c34ffe61ec3d9ab9bbd4792bdcf4077755b6339e29c1342.jpg"
  },
  "43325": {
   "tc": 43325,
   "slug": "voltorb-pokemon-tcg-classic-charizard-010-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43326": {
   "tc": 43326,
   "slug": "electrode-pokemon-tcg-classic-charizard-011-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43327": {
   "tc": 43327,
   "slug": "zapdos-pokemon-tcg-classic-charizard-012-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43328": {
   "tc": 43328,
   "slug": "clefairy-pokemon-tcg-classic-charizard-013-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43329": {
   "tc": 43329,
   "slug": "clefable-pokemon-tcg-classic-charizard-014-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43330": {
   "tc": 43330,
   "slug": "dunsparce-pokemon-tcg-classic-charizard-015-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43331": {
   "tc": 43331,
   "slug": "stantler-pokemon-tcg-classic-charizard-016-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43332": {
   "tc": 43332,
   "slug": "miltank-pokemon-tcg-classic-charizard-017-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43333": {
   "tc": 43333,
   "slug": "super-scoop-up-pokemon-tcg-classic-charizard-018-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43334": {
   "tc": 43334,
   "slug": "super-rod-pokemon-tcg-classic-charizard-019-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43335": {
   "tc": 43335,
   "slug": "ultra-ball-pokemon-tcg-classic-charizard-020-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43336": {
   "tc": 43336,
   "slug": "computer-search-pokemon-tcg-classic-charizard-021-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43337": {
   "tc": 43337,
   "slug": "vs-seeker-pokemon-tcg-classic-charizard-022-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43338": {
   "tc": 43338,
   "slug": "rare-candy-pokemon-tcg-classic-charizard-023-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43339": {
   "tc": 43339,
   "slug": "switch-pokemon-tcg-classic-charizard-024-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43340": {
   "tc": 43340,
   "slug": "poke-ball-pokemon-tcg-classic-charizard-025-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43341": {
   "tc": 43341,
   "slug": "scorching-charcoal-pokemon-tcg-classic-charizard-026-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43342": {
   "tc": 43342,
   "slug": "professor-oak-pokemon-tcg-classic-charizard-027-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43343": {
   "tc": 43343,
   "slug": "pokemon-fan-club-pokemon-tcg-classic-charizard-028-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43344": {
   "tc": 43344,
   "slug": "bosss-orders-pokemon-tcg-classic-charizard-029-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43345": {
   "tc": 43345,
   "slug": "bill-pokemon-tcg-classic-charizard-030-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43346": {
   "tc": 43346,
   "slug": "rockets-admin-pokemon-tcg-classic-charizard-031-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43347": {
   "tc": 43347,
   "slug": "double-colorless-energy-pokemon-tcg-classic-charizard-032-032",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43348": {
   "tc": 43348,
   "slug": "fire-energy-pokemon-tcg-classic-charizard-no-033",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "43349": {
   "tc": 43349,
   "slug": "lightning-energy-pokemon-tcg-classic-charizard-no-034",
   "set_tc": "11599",
   "set_n": "Pokémon TCG Classic (Charizard)",
-  "set_cod": "CLL"
+  "set_cod": "CLL",
+  "fuera": true
  },
  "_11599": {
   "tc": 0,
@@ -2925,238 +3089,284 @@
   "slug": "bulbasaur-pokemon-tcg-classic-venusaur-001-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "n": "Bulbasaur",
+  "num": "001/032",
+  "set_titulo": "Pokémon TCG Classic (Venusaur)",
+  "img": "https://static.tcgcollector.com/content/images/8d/17/9d/8d179dfaf5982a518266cca8127c1272d0783ec7cfb2b012c6818f4203b43185.jpg"
  },
  "43351": {
   "tc": 43351,
   "slug": "ivysaur-pokemon-tcg-classic-venusaur-002-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "n": "Ivysaur",
+  "num": "002/032",
+  "set_titulo": "Pokémon TCG Classic (Venusaur)",
+  "img": "https://static.tcgcollector.com/content/images/9e/8b/cb/9e8bcbea42cae932351c72f24dc45f1554822915af0ef7ca183071c864995392.jpg"
  },
  "43352": {
   "tc": 43352,
   "slug": "venusaur-pokemon-tcg-classic-venusaur-003-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "n": "Venusaur",
+  "num": "003/032",
+  "set_titulo": "Pokémon TCG Classic (Venusaur)",
+  "img": "https://static.tcgcollector.com/content/images/63/72/b7/6372b735d0747528752e04c47940415601e162a0cf43289542020533b87fe07a.jpg"
  },
  "43353": {
   "tc": 43353,
   "slug": "paras-pokemon-tcg-classic-venusaur-004-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43354": {
   "tc": 43354,
   "slug": "parasect-pokemon-tcg-classic-venusaur-005-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43355": {
   "tc": 43355,
   "slug": "scyther-pokemon-tcg-classic-venusaur-006-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43356": {
   "tc": 43356,
   "slug": "pinsir-pokemon-tcg-classic-venusaur-007-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43357": {
   "tc": 43357,
   "slug": "sandshrew-pokemon-tcg-classic-venusaur-008-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43358": {
   "tc": 43358,
   "slug": "sandslash-pokemon-tcg-classic-venusaur-009-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43359": {
   "tc": 43359,
   "slug": "onix-pokemon-tcg-classic-venusaur-010-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43360": {
   "tc": 43360,
   "slug": "hitmonlee-pokemon-tcg-classic-venusaur-011-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43361": {
   "tc": 43361,
   "slug": "hitmonchan-pokemon-tcg-classic-venusaur-012-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43362": {
   "tc": 43362,
   "slug": "doduo-pokemon-tcg-classic-venusaur-013-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43363": {
   "tc": 43363,
   "slug": "dodrio-pokemon-tcg-classic-venusaur-014-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43364": {
   "tc": 43364,
   "slug": "chansey-pokemon-tcg-classic-venusaur-015-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43365": {
   "tc": 43365,
   "slug": "snorlax-pokemon-tcg-classic-venusaur-016-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "n": "Snorlax",
+  "num": "016/032",
+  "set_titulo": "Pokémon TCG Classic (Venusaur)",
+  "img": "https://static.tcgcollector.com/content/images/17/a1/c9/17a1c9735edf42a45137040981a7f79c68df0f61f650f31c60b733c020833815.jpg"
  },
  "43366": {
   "tc": 43366,
   "slug": "lugia-ex-pokemon-tcg-classic-venusaur-017-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43367": {
   "tc": 43367,
   "slug": "super-rod-pokemon-tcg-classic-venusaur-018-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43368": {
   "tc": 43368,
   "slug": "ultra-ball-pokemon-tcg-classic-venusaur-019-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43369": {
   "tc": 43369,
   "slug": "computer-search-pokemon-tcg-classic-venusaur-020-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43370": {
   "tc": 43370,
   "slug": "vs-seeker-pokemon-tcg-classic-venusaur-021-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43371": {
   "tc": 43371,
   "slug": "rare-candy-pokemon-tcg-classic-venusaur-022-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43372": {
   "tc": 43372,
   "slug": "switch-pokemon-tcg-classic-venusaur-023-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43373": {
   "tc": 43373,
   "slug": "poke-ball-pokemon-tcg-classic-venusaur-024-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43374": {
   "tc": 43374,
   "slug": "sun-seed-pokemon-tcg-classic-venusaur-025-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43375": {
   "tc": 43375,
   "slug": "professor-oak-pokemon-tcg-classic-venusaur-026-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43376": {
   "tc": 43376,
   "slug": "pokemon-fan-club-pokemon-tcg-classic-venusaur-027-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43377": {
   "tc": 43377,
   "slug": "pokemon-nurse-pokemon-tcg-classic-venusaur-028-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43378": {
   "tc": 43378,
   "slug": "bosss-orders-pokemon-tcg-classic-venusaur-029-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43379": {
   "tc": 43379,
   "slug": "bill-pokemon-tcg-classic-venusaur-030-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43380": {
   "tc": 43380,
   "slug": "rockets-admin-pokemon-tcg-classic-venusaur-031-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43381": {
   "tc": 43381,
   "slug": "double-colorless-energy-pokemon-tcg-classic-venusaur-032-032",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43382": {
   "tc": 43382,
   "slug": "grass-energy-pokemon-tcg-classic-venusaur-no-033",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "43383": {
   "tc": 43383,
   "slug": "fighting-energy-pokemon-tcg-classic-venusaur-no-034",
   "set_tc": "11598",
   "set_n": "Pokémon TCG Classic (Venusaur)",
-  "set_cod": "CLF"
+  "set_cod": "CLF",
+  "fuera": true
  },
  "_11598": {
   "tc": 0,
@@ -3170,7 +3380,11 @@
   "slug": "snorlax-doll-ancient-roar-059-066",
   "set_tc": "11592",
   "set_n": "Ancient Roar",
-  "set_cod": "SV4K"
+  "set_cod": "SV4K",
+  "n": "Snorlax Doll",
+  "num": "059/066",
+  "set_titulo": "Ancient Roar",
+  "img": "https://static.tcgcollector.com/content/images/e5/cf/8d/e5cf8d7c30753ebf806e8e1b76a4965a627210cf57ee04a1351fa80e70d7974e.jpg"
  },
  "_11592": {
   "tc": 0,
@@ -3198,14 +3412,22 @@
   "slug": "gastly-raging-surf-033-062",
   "set_tc": "11583",
   "set_n": "Raging Surf",
-  "set_cod": "SV3a"
+  "set_cod": "SV3a",
+  "n": "Gastly",
+  "num": "033/062",
+  "set_titulo": "Raging Surf",
+  "img": "https://static.tcgcollector.com/content/images/01/ee/19/01ee19c09cde140d9fbff90975dd46d0d0bbb2d5cfdbe502c9e88093e06ec612.jpg"
  },
  "42634": {
   "tc": 42634,
   "slug": "haunter-raging-surf-034-062",
   "set_tc": "11583",
   "set_n": "Raging Surf",
-  "set_cod": "SV3a"
+  "set_cod": "SV3a",
+  "n": "Haunter",
+  "num": "034/062",
+  "set_titulo": "Raging Surf",
+  "img": "https://static.tcgcollector.com/content/images/ae/30/fa/ae30faa6bd61bdcba82f9387d6a36ba3555630764fc44feee064d1229e1bb90b.jpg"
  },
  "42635": {
   "tc": 42635,

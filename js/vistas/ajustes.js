@@ -28,6 +28,13 @@ const Ajustes = (() => {
           <span>Preevoluciones<small>Gastly, Haunter, Pichu, Raichu y Munchlax</small></span>
           <input type="checkbox" class="interruptor" id="ver-familias" ${d.ajustes.verFamilias ? 'checked' : ''}>
         </label>
+        <div class="fila fila-alta">
+          <span>Idioma de las cartas<small>La misma carta existe en los dos; muchas japonesas no salieron en inglés</small></span>
+        </div>
+        <div class="segmentos" style="margin:-4px 0 4px">
+          ${[['todo', 'Las dos'], ['en', 'Inglés'], ['ja', 'Japonés']].map(([v, t]) =>
+            `<button data-idioma="${v}" class="${(d.ajustes.idioma || 'todo') === v ? 'viva' : ''}">${t}</button>`).join('')}
+        </div>
         <label class="fila">
           <span>Precios orientativos<small>Europa y EE. UU., del día que se generó el catálogo</small></span>
           <input type="checkbox" class="interruptor" id="ver-precios" ${d.ajustes.verPrecios ? 'checked' : ''}>
@@ -90,6 +97,13 @@ const Ajustes = (() => {
     $('#ver-precios', c).onchange = (e) => {
       Estado.cambiar((d) => { d.ajustes.verPrecios = e.target.checked; });
     };
+
+    c.querySelectorAll('[data-idioma]').forEach((b) => {
+      b.onclick = () => {
+        Estado.cambiar((d) => { d.ajustes.idioma = b.dataset.idioma; });
+        tosti({ todo: 'Cartas en los dos idiomas', en: 'Solo las inglesas', ja: 'Solo las japonesas' }[b.dataset.idioma]);
+      };
+    });
 
     c.querySelectorAll('[data-tema]').forEach((b) => {
       b.onclick = () => {

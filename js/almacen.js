@@ -20,6 +20,7 @@ const Almacen = (() => {
     ajustes: {
       tema: 'auto',
       verFamilias: true,      // las preevoluciones, incluidas
+      idioma: 'todo',         // 'en' inglesas · 'ja' japonesas · 'todo' las dos
       verPrecios: true,
       moneda: 'eur',
     },

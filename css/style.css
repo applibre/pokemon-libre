@@ -529,6 +529,8 @@ a.btn { text-decoration: none; color: inherit; }
   .c3d-luz, .c3d-holo { display: none; }
 }
 
+.fila-alta { align-items: flex-start; }
+
 /* ---------- lista de expansiones ---------- */
 
 .expansiones { display: grid; gap: 7px; }

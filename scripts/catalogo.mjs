@@ -345,6 +345,55 @@ async function main() {
 `);
   }
 
+  /* 5.5 · las japonesas
+     La misma carta existe en japonés, y muchas solo existen en japonés.
+     Se traen con scripts/japonesas.py de TCG Collector, que es el único
+     sitio donde la base japonesa está completa. Entran como cartas
+     aparte, con su propia colección y marcadas con l:'ja', para que la
+     app pueda enseñar unas, otras o las dos. */
+  const japo = JSON.parse(await readFile(path.join(AQUI, 'japonesas.json'), 'utf8').catch(() => '{}'));
+  const japoSets = JSON.parse(await readFile(path.join(AQUI, 'japonesas-sets.json'), 'utf8').catch(() => '[]'));
+
+  // la web las lista de la más nueva a la más vieja: se le da la vuelta
+  const ordenJapo = new Map(japoSets.map((s, i) => [s.tc, japoSets.length - i]));
+  const nombreJapo = new Map(japoSets.map((s) => [s.tc, s]));
+
+  // Entrenadores con nombre de Pokémon: no son cartas del Pokémon
+  const NO_ES_POKEMON = /\b(doll|spirit link|tool|stadium|candy|supporter)\b/i;
+
+  let japoPuestas = 0;
+  for (const c of Object.values(japo)) {
+    if (!c || !c.n || !c.img || c.fuera) continue;
+    if (NO_ES_POKEMON.test(c.n)) continue;
+    const suyos = pokemon.filter((p) => new RegExp('\b' + p.nombre + '\b', 'i').test(c.n)).map((p) => p.id);
+    if (!suyos.length) continue;
+
+    const sid = 'ja-' + c.set_tc;
+    if (!sets[sid]) {
+      const s = nombreJapo.get(c.set_tc) || {};
+      sets[sid] = { n: s.n || c.set_n, rel: '', tot: 0, ja: true, cod: s.cod || c.set_cod || '' };
+    }
+    const id = 'ja-' + c.tc;
+    if (cartas.some((x) => x.id === id)) continue;
+    const trozos = String(c.num || '').split('/');
+    cartas.push({
+      id, n: c.n, p: suyos, s: sid, num: trozos[0] || '',
+      r: '', v: ['normal'], img: null, ill: '', l: 'ja',
+      ni: c.num || '', tc_id: c.tc, tc_slug: c.slug,
+    });
+    if (trozos[1]) sets[sid].tot = Number(trozos[1]) || sets[sid].tot;
+    japoPuestas++;
+  }
+  if (japoPuestas) {
+    // las japonesas van detrás de todas las inglesas, en su propio orden
+    const base = Object.keys(sets).length;
+    for (const [sid, s] of Object.entries(sets)) {
+      if (s.ja) s.o = base + (ordenJapo.get(sid.slice(3)) || 0);
+    }
+    console.log(`En japonés       ${japoPuestas} cartas en ${Object.values(sets).filter((s) => s.ja).length} colecciones
+`);
+  }
+
   /* 5.6 · el número tal y como está impreso en la carta
      Lo que se enseñaba («SM108/248», «TG03/30», «H09/144») no aparece en
      ninguna carta. Las promos no llevan total, las subcolecciones llevan

@@ -70,13 +70,26 @@ const Estado = (() => {
   }
 
   /** Todas las cartas de los Pokémon visibles, sin repetir. */
+  /* Las cartas que se enseñan: depende de si las preevoluciones están
+     puestas y del idioma elegido. Todo lo demás cuenta sobre esto. */
   function cartasVisibles() {
-    if (!catalogo) return [];
     const ids = new Set(pokemonVisibles().map((p) => p.id));
-    return catalogo.cartas.filter((c) => c.p.some((p) => ids.has(p)));
+    const idioma = leer().ajustes.idioma || 'todo';
+    return cat().cartas.filter((c) => {
+      if (!c.p.some((p) => ids.has(p))) return false;
+      if (idioma === 'en') return c.l !== 'ja';
+      if (idioma === 'ja') return c.l === 'ja';
+      return true;
+    });
   }
 
-  const cartasDe = (pokemonId) => (indices ? indices.porPokemon.get(pokemonId) || [] : []);
+  const cartasDe = (pokemonId) => {
+    const suyas = indices ? indices.porPokemon.get(pokemonId) || [] : [];
+    const idioma = leer().ajustes.idioma || 'todo';
+    if (idioma === 'en') return suyas.filter((c) => c.l !== 'ja');
+    if (idioma === 'ja') return suyas.filter((c) => c.l === 'ja');
+    return suyas;
+  };
   const cartaPorId = (id) => (indices ? indices.porId.get(id) : null);
   const pokemonPorId = (id) => (manifiesto ? manifiesto.pokemon.find((p) => p.id === id) : null);
 
