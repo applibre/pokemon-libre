@@ -1,6 +1,7 @@
-# Cada lunes busca cartas nuevas de tus 17 Pokémon (inglés y japonés) y, si hay,
-# abre UNA propuesta (Pull Request) con el resumen. Tú la apruebas y se publica.
-# Solo añade: lo que ya estaba queda idéntico. Si algo no cuadra, falla y avisa.
+# Cada lunes busca cartas nuevas de tus 17 Pokémon (inglés y japonés) y, si hay y
+# todo cuadra, las PUBLICA sola: la app del móvil las recibe al abrirla.
+# Solo añade: lo que ya estaba queda idéntico. Si algo no cuadra (una carta que
+# cambia o desaparece, una foto que falta, una prueba que falla) no publica nada.
 name: Buscar novedades
 
 on:
@@ -15,7 +16,7 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
+  pages: write
 
 concurrency:
   group: novedades
@@ -99,25 +100,27 @@ jobs:
           node pruebas/uso.mjs http://localhost:8410/pokemon-libre/
           node pruebas/offline.mjs http://localhost:8410/pokemon-libre/
 
-      - name: Abrir la propuesta
+      - name: Publicar
         if: steps.buscar.outputs.codigo == '0'
         env:
           GH_TOKEN: ${{ github.token }}
+          SIMULACRO: ${{ inputs.simular && 'si' || '' }}
         run: |
           cat scripts/.cache/resumen.md >> "$GITHUB_STEP_SUMMARY"
           NUEVAS=$(node -p "require('./scripts/.cache/novedades.json').cartas.length")
-          RAMA="novedades/$(date +%F)"
           git config user.name "Novedades de Pokémon Libre"
           git config user.email "actions@users.noreply.github.com"
-          git checkout -b "$RAMA"
           git add -A
           git commit -m "Novedades: $NUEVAS cartas nuevas de tus Pokémon"
-          git push origin "$RAMA"
-          if ! gh pr create --base master --head "$RAMA" \
-               --title "Novedades: $NUEVAS cartas nuevas" \
-               --body-file scripts/.cache/resumen.md; then
-            echo "### No se pudo abrir la propuesta" >> "$GITHUB_STEP_SUMMARY"
-            echo "Activa en Settings → Actions → General → 'Allow GitHub Actions to create and approve pull requests'." >> "$GITHUB_STEP_SUMMARY"
-            echo "Mientras tanto la rama $RAMA ya está subida: https://github.com/${{ github.repository }}/compare/$RAMA" >> "$GITHUB_STEP_SUMMARY"
-            exit 1
+          if [ -n "$SIMULACRO" ]; then
+            # el simulacro no toca la app publicada: sube a una rama aparte para probar el envío
+            git push origin "HEAD:refs/heads/simulacro/${{ github.run_id }}"
+            echo "### Simulacro: se habría publicado (rama simulacro/${{ github.run_id }})" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
           fi
+          # si alguien publicó mientras tanto, se pone encima; si choca, no se publica nada
+          git pull --rebase origin master
+          git push origin HEAD:master
+          # GitHub Pages reconstruye con cada envío; se le pide también por si acaso
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" >/dev/null || true
+          echo "### Publicado: $NUEVAS cartas nuevas. La app del móvil las recibe al abrirla." >> "$GITHUB_STEP_SUMMARY"
