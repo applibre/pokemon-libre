@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@import "./holo/cards.css";
+@import "./holo/base.css";
+@import "./holo/regular-holo.css";
+@import "./holo/rainbow-holo.css";
+@import "./holo/secret-rare.css";
+@import "./holo/reverse-holo.css";
+
+/* ------------------------------------------------------------------
+   Sistema de diseño de Pokémon Libre 2.
+   Una sola fuente de verdad: todo lo demás sale de aquí.
+   Dirección: la limpieza de Pokellector (baldosas iguales, cintas de
+   color, logos oficiales) con la pulcritud de una app de hoy.
+   ------------------------------------------------------------------ */
+:root {
+  --azul:      #2f6fe4;
+  --azul-alto: #4f8df0;
+  --azul-bajo: #1f56c1;
+  --verde:     #23a45e;
+  --verde-bajo:#178048;
+  --naranja:   #f0782a;
+  --oro:       #f1b722;
+  --oro-bajo:  #c98f0a;
+  --tinta:     #14203a;
+  --tinta-2:   #4b5875;
+  --tinta-3:   #7f8ba3;
+  --papel:     #ffffff;
+  --hueco:     #eef3fa;
+  --linea:     #dbe4f0;
+  --placa:     rgba(8, 14, 28, .74);
+
+  --sombra-1: 0 1px 2px rgba(20, 45, 90, .10), 0 4px 14px rgba(20, 45, 90, .08);
+  --sombra-2: 0 2px 4px rgba(20, 45, 90, .12), 0 14px 34px rgba(20, 45, 90, .18);
+
+  --radio-s: 10px;
+  --radio-m: 16px;
+  --radio-l: 22px;
+
+  --f: "Segoe UI Variable", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+
+  /* variables que mueve el efecto holográfico */
+  --pointer-x: 50%;
+  --pointer-y: 50%;
+  --card-scale: 1;
+  --card-opacity: 0;
+  --translate-x: 0px;
+  --translate-y: 0px;
+  --rotate-x: 0deg;
+  --rotate-y: 0deg;
+  --background-x: 50%;
+  --background-y: 50%;
+  --pointer-from-center: 0;
+  --pointer-from-top: 0.5;
+  --pointer-from-left: 0.5;
+}
+
+html, body, #app { height: 100%; }
+body {
+  margin: 0;
+  font-family: var(--f);
+  color: var(--tinta);
+  background: #74c3ea url("/fondo.svg") center top / cover fixed no-repeat;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+}
+button { font: inherit; color: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+img { display: block; }
+
+/* El vuelo de la carta desde su celda hasta la ficha: lo hace el navegador. */
+::view-transition-group(carta) {
+  animation-duration: .46s;
+  animation-timing-function: cubic-bezier(.2, .8, .2, 1);
+}
+::view-transition-old(carta), ::view-transition-new(carta) { animation: none; mix-blend-mode: normal; height: 100%; object-fit: contain; }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: .22s; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) {
+    animation-duration: .001s !important; transition-duration: .001s !important;
+  }
+}

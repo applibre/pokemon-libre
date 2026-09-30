@@ -1,5 +1,9 @@
+
 .DS_Store
 Thumbs.db
 __pycache__/
+app/capturas/
+app/dist/
+app/node_modules/
 node_modules/
 scripts/.cache/
