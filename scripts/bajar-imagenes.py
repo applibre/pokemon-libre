@@ -243,6 +243,10 @@ def main():
     # resultó no ser de cartón, un Pokémon que se quitó de objetivos.json):
     # se borran para que el repositorio no cargue con lo que nadie ve.
     vivos = {c['id'] for c in cartas}
+    # las novedades que esperan tu aprobación en la app también tienen foto
+    ruta_nov = os.path.join(DATOS, 'novedades.json')
+    if os.path.exists(ruta_nov):
+        vivos |= {c['id'] for c in json.load(open(ruta_nov, encoding='utf-8')).get('cartas', [])}
     sobras = 0
     for carpeta in (os.path.join(DATOS, 'cartas'), os.path.join(DATOS, 'cartas', 'g')):
         for f in os.listdir(carpeta):

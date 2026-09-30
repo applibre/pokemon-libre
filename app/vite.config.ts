@@ -85,6 +85,13 @@ export default defineConfig({
           { url: `${DATOS}data/manifiesto.json`, revision: VERSION },
         ],
         runtimeCaching: [
+          // las novedades: siempre se pregunta a la red primero, para enterarse
+          // de la actualización de la semana; sin red, la última que se vio
+          {
+            urlPattern: /\/data\/novedades\.json/,
+            handler: 'NetworkFirst',
+            options: { cacheName: 'pl2-novedades', networkTimeoutSeconds: 6, cacheableResponse: { statuses: [200] } },
+          },
           // las cartas: una vez vistas, se quedan. 3.566 ficheros, ~60 MB
           {
             urlPattern: /\/data\/cartas\//,      // una RegExp llana: una función con variables no viaja al service worker

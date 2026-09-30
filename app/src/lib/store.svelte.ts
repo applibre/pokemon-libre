@@ -17,6 +17,7 @@ export type Carta = {
   tc_id?: number; tc_slug?: string; tp_id?: number
   j?: { e?: string; de?: string; ps?: number; t?: string[] }
 }
+export type Novedades = { generado?: string; cartas: Carta[]; sets?: Record<string, Set>; orden?: Record<string, number> }
 export type Pokemon = { id: string; nombre: string; tipo: string; principal?: boolean }
 
 const numero = (n: string) => parseInt(String(n).replace(/\D/g, ''), 10) || 0
@@ -29,6 +30,14 @@ class Tienda {
   pokemon = $state.raw<Pokemon[]>([])
   man = $state.raw<{ version?: string; cartas?: number; sets?: number; generado?: string }>({})
   datos = $state<Datos>(almacen.leer())
+  /* El catálogo publicado y, aparte, las novedades que el buscador semanal
+     dejó preparadas (data/novedades.json). Una novedad solo entra en la
+     colección cuando tú la apruebas en la app; lo decidido se guarda en
+     ajustes.novedades { idDeCarta: 1 (añadida) | 0 (descartada) }. */
+  base = $state.raw<{ sets: Record<string, Set>; cartas: Carta[] }>({ sets: {}, cartas: [] })
+  novedad = $state.raw<Novedades | null>(null)
+  // sube cada vez que decides una novedad: el aviso se entera al momento
+  private decisiones = $state(0)
 
   private pendiente: ReturnType<typeof setTimeout> | null = null
 
@@ -43,12 +52,74 @@ class Tienda {
       fetch(`${base}data/catalogo.json`).then((r) => r.json()),
       fetch(`${base}data/manifiesto.json`).then((r) => r.json()),
     ])
-    this.sets = cat.sets
-    this.cartas = cat.cartas
+    this.base = { sets: cat.sets, cartas: cat.cartas }
+    // las novedades son opcionales: si no hay fichero o no se lee, la app sigue igual
+    try {
+      const r = await fetch(`${base}data/novedades.json`, { cache: 'no-cache' })
+      const n = r.ok ? await r.json() : null
+      this.novedad = n && Array.isArray(n.cartas) ? n : null
+    } catch { this.novedad = null }
+    this.aplicar()
     this.pokemon = man.pokemon
     this.man = man
     if (!this.datos.creado) this.cambiar((d) => { d.creado = new Date().toISOString().slice(0, 10) })
     this.listo = true
+  }
+
+  private get decididas(): Record<string, number> {
+    void this.decisiones
+    return (this.datos.ajustes.novedades as Record<string, number>) || {}
+  }
+
+  /** El catálogo que se ve: el publicado más las novedades que aprobaste. */
+  aplicar() {
+    const n = this.novedad
+    const conocidas = new Set(this.base.cartas.map((c) => c.id))
+    const si = n ? n.cartas.filter((c) => !conocidas.has(c.id) && this.decididas[c.id] === 1) : []
+    if (!si.length) { this.sets = this.base.sets; this.cartas = this.base.cartas; return }
+    const sets: Record<string, Set> = {}
+    for (const [id, s] of Object.entries({ ...this.base.sets, ...(n!.sets || {}) })) {
+      sets[id] = { ...s, o: n!.orden?.[id] ?? s.o }
+    }
+    this.sets = sets
+    this.cartas = [...this.base.cartas, ...si]
+  }
+
+  /** Las novedades que aún no has decidido, agrupadas por expansión. */
+  get pendientes(): { id: string; set: Set; cartas: Carta[] }[] {
+    const n = this.novedad
+    if (!n) return []
+    const conocidas = new Set(this.base.cartas.map((c) => c.id))
+    const grupos = new Map<string, Carta[]>()
+    for (const c of n.cartas) {
+      if (conocidas.has(c.id) || c.id in this.decididas) continue
+      grupos.set(c.s, [...(grupos.get(c.s) || []), c])
+    }
+    return [...grupos].map(([id, cartas]) => ({ id, set: n.sets?.[id] ?? this.base.sets[id] ?? { n: id }, cartas }))
+  }
+
+  /** Las que descartaste, por si quieres recuperarlas. */
+  get descartadas(): Carta[] {
+    return (this.novedad?.cartas || []).filter((c) => this.decididas[c.id] === 0)
+  }
+
+  decidir(ids: string[], si: boolean) {
+    this.cambiar((d) => {
+      const m = { ...((d.ajustes.novedades as Record<string, number>) || {}) }
+      for (const id of ids) m[id] = si ? 1 : 0
+      d.ajustes.novedades = m
+    })
+    this.decisiones++
+    this.aplicar()
+  }
+
+  olvidarDescartes() {
+    this.cambiar((d) => {
+      const m = { ...((d.ajustes.novedades as Record<string, number>) || {}) }
+      for (const [id, v] of Object.entries(m)) if (v === 0) delete m[id]
+      d.ajustes.novedades = m
+    })
+    this.decisiones++
   }
 
   /** Todo cambio de datos pasa por aquí. */
@@ -68,6 +139,8 @@ class Tienda {
     const base = almacen.inicial()
     this.datos = { ...base, ...(nuevos as Datos), ajustes: { ...base.ajustes, ...(nuevos.ajustes || {}) } }
     this.guardarYa()
+    this.decisiones++
+    this.aplicar()
   }
 
   reiniciar() {

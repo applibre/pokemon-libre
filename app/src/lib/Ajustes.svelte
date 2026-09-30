@@ -150,6 +150,16 @@
     </div>
   </section>
 
+  {#if app.descartadas.length}
+    <section class="panel">
+      <Cinta titulo="Novedades descartadas" />
+      <div class="cuerpo">
+        <div class="fila"><span>Cartas que no quisiste añadir</span><b class="v">{app.descartadas.length}</b></div>
+        <button class="btn" data-recuperar onclick={() => { app.olvidarDescartes(); avisar('Volverán a aparecer en Colección', 'bueno') }}>Volver a preguntarme</button>
+      </div>
+    </section>
+  {/if}
+
   <section class="panel">
     <Cinta titulo="El catálogo" />
     <div class="cuerpo">

@@ -2,6 +2,7 @@
 <script lang="ts">
   import { rutas } from './rutas'
   import Cinta from './Cinta.svelte'
+  import Novedades from './Novedades.svelte'
   import { app, cartasDe, progreso } from './store.svelte'
 
   let { abrir }: { abrir: (id: string) => void } = $props()
@@ -23,6 +24,8 @@
   const total = $derived(bloques.flatMap((b) => b.items).reduce((a, x) => a + x.total, 0))
   const tengo = $derived(bloques.flatMap((b) => b.items).reduce((a, x) => a + x.tengo, 0))
 </script>
+
+<Novedades />
 
 <div class="resumen">
   <div class="cifra"><b>{tengo}</b><span>de {total} cartas</span></div>

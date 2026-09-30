@@ -1,7 +1,8 @@
-# Cada lunes busca cartas nuevas de tus 17 Pokémon (inglés y japonés) y, si hay y
-# todo cuadra, las PUBLICA sola: la app del móvil las recibe al abrirla.
-# Solo añade: lo que ya estaba queda idéntico. Si algo no cuadra (una carta que
-# cambia o desaparece, una foto que falta, una prueba que falla) no publica nada.
+# Cada lunes busca cartas nuevas de tus 17 Pokémon (inglés y japonés). Si hay y todo
+# cuadra, las deja en data/novedades.json y tu app te pregunta al abrirla:
+# «Actualización disponible: Delta Reign · 12 cartas nuevas  [Añadir] [Descartar]».
+# Tu catálogo no cambia hasta que pulsas Añadir. Si algo no cuadra (una carta que
+# cambia o desaparece, una foto que falta, una prueba que falla) no se publica nada.
 name: Buscar novedades
 
 on:
@@ -83,35 +84,42 @@ jobs:
           echo "### La búsqueda falló y no se propone nada. Tu app sigue igual." >> "$GITHUB_STEP_SUMMARY"
           exit 1
 
-      - name: Construir la app con el catálogo nuevo
+      - name: Dejar las novedades esperando tu aprobación
+        id: preparar
         if: steps.buscar.outputs.codigo == '0'
+        run: |
+          set +e
+          node scripts/preparar-novedades.mjs scripts/.cache/catalogo-publicado.json
+          echo "codigo=$?" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Ya estaban esperando
+        if: steps.preparar.outputs.codigo == '3'
+        run: echo "### Nada nuevo desde la última vez: las novedades pendientes siguen esperando en la app" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Probar la app con las novedades
+        if: steps.preparar.outputs.codigo == '0'
         run: |
           cd app
           npm ci
-          node construir.mjs
-
-      - name: Probar la app construida
-        if: steps.buscar.outputs.codigo == '0'
-        run: |
-          cd app
           node pruebas/servir-prod.mjs 8410 &
           sleep 3
           node pruebas/datos.mjs http://localhost:8410/pokemon-libre/
           node pruebas/uso.mjs http://localhost:8410/pokemon-libre/
-          node pruebas/offline.mjs http://localhost:8410/pokemon-libre/
+          node pruebas/novedades.mjs http://localhost:8410/pokemon-libre/
 
       - name: Publicar
-        if: steps.buscar.outputs.codigo == '0'
+        if: steps.preparar.outputs.codigo == '0'
         env:
           GH_TOKEN: ${{ github.token }}
           SIMULACRO: ${{ inputs.simular && 'si' || '' }}
         run: |
           cat scripts/.cache/resumen.md >> "$GITHUB_STEP_SUMMARY"
-          NUEVAS=$(node -p "require('./scripts/.cache/novedades.json').cartas.length")
+          NUEVAS=$(node -p "require('./data/novedades.json').cartas.length")
           git config user.name "Novedades de Pokémon Libre"
           git config user.email "actions@users.noreply.github.com"
           git add -A
-          git commit -m "Novedades: $NUEVAS cartas nuevas de tus Pokémon"
+          git commit -m "Novedades esperando aprobación en la app: $NUEVAS cartas"
           if [ -n "$SIMULACRO" ]; then
             # el simulacro no toca la app publicada: sube a una rama aparte para probar el envío
             git push origin "HEAD:refs/heads/simulacro/${{ github.run_id }}"
@@ -121,6 +129,5 @@ jobs:
           # si alguien publicó mientras tanto, se pone encima; si choca, no se publica nada
           git pull --rebase origin master
           git push origin HEAD:master
-          # GitHub Pages reconstruye con cada envío; se le pide también por si acaso
           gh api -X POST "repos/${{ github.repository }}/pages/builds" >/dev/null || true
-          echo "### Publicado: $NUEVAS cartas nuevas. La app del móvil las recibe al abrirla." >> "$GITHUB_STEP_SUMMARY"
+          echo "### Publicado: tu app te preguntará por $NUEVAS cartas nuevas al abrirla" >> "$GITHUB_STEP_SUMMARY"
