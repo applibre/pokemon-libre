@@ -3,6 +3,11 @@
 // Es la más importante de todas: una colección perdida no se recupera.
 import { chromium } from '@playwright/test'
 import { promises as fs } from 'node:fs'
+import { readFileSync } from 'node:fs'
+// Los números salen del catálogo, no de la memoria: cuando entra una expansión nueva no hay que tocar la prueba.
+const CAT = JSON.parse(readFileSync(new URL('../../data/catalogo.json', import.meta.url), 'utf8'))
+const EN = (id) => CAT.cartas.filter((c) => !c.s.startsWith('ja-') && c.p.includes(id)).length
+const EN_TODAS = CAT.cartas.filter((c) => !c.s.startsWith('ja-')).length
 
 const base = process.argv[2] || 'http://localhost:5173/'
 const nav = await chromium.launch({ channel: 'chrome' })
@@ -25,8 +30,8 @@ await p.goto(base); await p.waitForSelector('.baldosa')
 await p.waitForTimeout(500)
 
 const tarjeta = async (nombre) => (await p.locator('.baldosa', { hasText: nombre }).first().innerText()).replace(/\s+/g, ' ')
-ok((await tarjeta('Charizard')).includes('1 / 113'), `las marcas de la app anterior se ven: Charizard ${await tarjeta('Charizard')}`)
-ok((await tarjeta('Pikachu')).includes('1 / 194'), `Pikachu en inglés cuenta la suya y no la japonesa: ${await tarjeta('Pikachu')}`)
+ok((await tarjeta('Charizard')).includes(`1 / ${EN('charizard')}`), `las marcas de la app anterior se ven: Charizard ${await tarjeta('Charizard')}`)
+ok((await tarjeta('Pikachu')).includes(`1 / ${EN('pikachu')}`), `Pikachu en inglés cuenta la suya y no la japonesa: ${await tarjeta('Pikachu')}`)
 await p.click('.lengua button >> nth=1'); await p.waitForTimeout(400)
 ok((await tarjeta('Pikachu')).includes('1 /'), `y en japonés cuenta la japonesa: ${await tarjeta('Pikachu')}`)
 await p.click('.lengua button >> nth=0')

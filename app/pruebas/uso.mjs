@@ -3,6 +3,11 @@
 // Cada comprobación imprime OK o FALLA: nada se da por bueno sin haberlo hecho.
 import { chromium } from '@playwright/test'
 import { promises as fs } from 'node:fs'
+import { readFileSync } from 'node:fs'
+// Los números salen del catálogo, no de la memoria: cuando entra una expansión nueva no hay que tocar la prueba.
+const CAT = JSON.parse(readFileSync(new URL('../../data/catalogo.json', import.meta.url), 'utf8'))
+const EN = (id) => CAT.cartas.filter((c) => !c.s.startsWith('ja-') && c.p.includes(id)).length
+const EN_TODAS = CAT.cartas.filter((c) => !c.s.startsWith('ja-')).length
 
 const base = process.argv[2] || 'http://localhost:5173/'
 await fs.mkdir('capturas', { recursive: true })
@@ -34,7 +39,7 @@ await p.click('.lengua button >> nth=0')
 await p.locator('.baldosa', { hasText: 'Pikachu' }).first().click()
 await p.waitForSelector('.celda')
 ok(p.url().includes('#/pokemon/pikachu'), 'la dirección lleva #/pokemon/pikachu')
-ok((await p.locator('.celda').count()) === 194, 'Pikachu en inglés: 194 celdas')
+ok((await p.locator('.celda').count()) === EN('pikachu'), `Pikachu en inglés: ${EN('pikachu')} celdas`)
 await foto('3-pikachu')
 
 await p.fill('input[type=search]', 'surfing')
@@ -49,7 +54,7 @@ await p.locator('.celda .check').first().click()
 await p.click('.chips button >> nth=2'); await p.waitForTimeout(400)
 ok((await p.locator('.celda').count()) === 1, 'el filtro «Tengo» enseña solo la que marqué')
 await p.click('.chips button >> nth=1'); await p.waitForTimeout(400)
-ok((await p.locator('.celda').count()) === 193, 'el filtro «Me faltan» enseña las otras 193')
+ok((await p.locator('.celda').count()) === EN('pikachu') - 1, 'el filtro «Me faltan» enseña las otras')
 await p.click('.chips button >> nth=0'); await p.waitForTimeout(300)
 await p.locator('.celda .check').first().click()          // la desmarco
 
@@ -84,13 +89,13 @@ ok(!p.url().includes('#/exp'), 'el botón atrás vuelve de Expansiones')
 await p.click('.barra button >> nth=2'); await p.waitForSelector('.resumen')
 ok(p.url().includes('#/faltan'), 'la barra lleva a Me faltan')
 const faltan = parseInt((await p.locator('.resumen .cifra b').innerText()).replace(/\D/g, ''), 10)
-ok(faltan >= 800 && faltan <= 869, `Me faltan cuenta las cartas en inglés: ${faltan}`)
+ok(faltan >= EN_TODAS - 70 && faltan <= EN_TODAS, `Me faltan cuenta las cartas en inglés: ${faltan}`)
 ok((await p.locator('.celda').count()) <= 120, 'y las enseña por tandas, no todas de golpe')
 await foto('6-faltan')
 await p.click('.mas'); await p.waitForTimeout(500)
 ok((await p.locator('.celda').count()) > 120, '«Ver más» añade otra tanda')
 await p.click('.chips button >> nth=1'); await p.waitForTimeout(500)
-ok((await p.locator('.celda').count()) <= 194, 'el filtro por Pokémon acota la lista')
+ok((await p.locator('.celda').count()) <= EN('pikachu'), 'el filtro por Pokémon acota la lista')
 
 /* ---------- ajustes ---------- */
 await p.click('.barra button >> nth=3'); await p.waitForSelector('.ajustes')

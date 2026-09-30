@@ -178,6 +178,29 @@ async function main() {
     }
     console.log(`  ${p.nombre.padEnd(12)} ${String(contadas).padStart(4)} cartas`);
   }
+  /* 1b · los sets recientes sin número de Pokédex
+     TCGdex tarda en rellenar el dexId de las novedades: «30th Celebration»
+     trae 158 cartas, con 37 Pikachu, Gengar y Snorlax, y ninguna con dexId,
+     y una búsqueda por Pokédex no las ve. Para los sets de la serie Mega
+     Evolution y de la 30th se lee la lista de cartas y se buscan por nombre.
+     Lo que ya trajo la búsqueda por dexId no se toca. */
+  const listaSets = await conCache('sets-lista', () => pedir(`${API}/sets`)) || [];
+  const recientes = listaSets.map((x) => x.id).filter((id) => /^(me\d|30th)/.test(id));
+  const porNombre = new RegExp(`\\b(${pokemon.map((p) => p.nombre).join('|')})\\b`, 'i');
+  let porNombreNuevas = 0;
+  for (const sid of recientes) {
+    const set = await conCache(`set-${sid}`, () => pedir(`${API}/sets/${sid}`));
+    for (const c of set?.cards || []) {
+      const m = porNombre.exec(c.name);
+      if (!m || porCarta.has(c.id)) continue;
+      const suyo = pokemon.find((p) => p.nombre.toLowerCase() === m[1].toLowerCase());
+      porCarta.set(c.id, [suyo.dex]);
+      porNombreNuevas++;
+    }
+  }
+  console.log(`Por nombre, en sets recientes sin dexId: ${porNombreNuevas} cartas
+`);
+
   const ids = [...porCarta.keys()].sort();
   console.log(`\nCartas únicas: ${ids.length}\n`);
 

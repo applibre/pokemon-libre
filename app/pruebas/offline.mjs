@@ -3,6 +3,8 @@
 // Se abre la app con conexión, se espera a que se instale, se corta la red y
 // se comprueba que sigue enseñando las cartas y guardando lo que marcas.
 import { chromium } from '@playwright/test'
+import { readFileSync } from 'node:fs'
+const TOTAL = JSON.parse(readFileSync(new URL('../../data/catalogo.json', import.meta.url), 'utf8')).cartas.length
 
 const base = process.argv[2] || 'http://localhost:8410/pokemon-libre/nueva/'
 const nav = await chromium.launch({ channel: 'chrome' })
@@ -55,7 +57,7 @@ await p.waitForSelector('[data-parar]', { timeout: 10000 })
 await p.waitForSelector('[data-guardar-todo]', { timeout: 90000 }); await p.waitForTimeout(2500)
 const despues = await p.textContent('.fila:has-text("guardadas") .v')
 const n = (t) => Number(t.split(' ')[0])
-ok(n(despues) > n(antes) + 20 && n(despues) === 1783, `«Guardar todas» descarga las cartas (${antes.trim()} → ${despues.trim()})`)
+ok(n(despues) > n(antes) + 20 && n(despues) === TOTAL, `«Guardar todas» descarga las cartas (${antes.trim()} → ${despues.trim()})`)
 console.log(errores.length ? '\nERRORES: ' + errores.join(' | ') : '\nsin errores de JavaScript')
 console.log(fallos ? `${fallos} COMPROBACIONES FALLAN` : 'modo sin internet OK')
 await nav.close()

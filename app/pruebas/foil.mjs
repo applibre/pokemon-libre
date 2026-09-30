@@ -28,7 +28,7 @@ const reparto = await p.evaluate(async () => {
   return por
 })
 const claves = Object.keys(reparto).sort()
-console.log('Reparto de efectos en las 1783 cartas:')
+console.log('Reparto de efectos en todas las cartas:')
 for (const k of claves) console.log(`  ${String(reparto[k].length).padStart(4)}  ${k}`)
 
 const muestras = []

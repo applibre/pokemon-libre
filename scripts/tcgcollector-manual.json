@@ -79,5 +79,25 @@
   "tc": 4922,
   "slug": "charizard-g-lv-x-diamond-and-pearl-promos-dp45",
   "num": "DP45"
+ },
+ "30th-c-001": {
+  "tc": 89675,
+  "slug": "charizard-30th-celebration-4-102",
+  "num": "4"
+ },
+ "30th-c-008": {
+  "tc": 89699,
+  "slug": "pikachu-and-zekrom-gx-30th-celebration-33-181",
+  "num": "33"
+ },
+ "30th-c-014": {
+  "tc": 89676,
+  "slug": "pikachu-30th-celebration-58-102",
+  "num": "58"
+ },
+ "30th-c-018": {
+  "tc": 89700,
+  "slug": "gengar-30th-celebration-94-102",
+  "num": "94"
  }
 }
