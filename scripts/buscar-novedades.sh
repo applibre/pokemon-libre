@@ -37,7 +37,7 @@ salida=$?
 set -e
 if [ "$salida" -eq 0 ]; then
   echo "=== 6 · pruebas del catálogo ==="
-  node --test tests/dominio.test.js 2>&1 | grep -E "^ℹ (tests|pass|fail)"
-  node --test tests/dominio.test.js >/dev/null 2>&1
+  # el código de salida de las pruebas decide: si fallan, no se propone nada
+  node --test tests/dominio.test.js || salida=1
 fi
 exit $salida
