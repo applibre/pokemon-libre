@@ -87,6 +87,10 @@ def paso_cartas():
     sets = json.load(open(SETS, encoding='utf-8'))
     previo = json.load(open(CARTAS, encoding='utf-8')) if os.path.exists(CARTAS) else {}
     hechos = {c['set_tc'] for c in previo.values()} if previo else set()
+    # Las expansiones más nuevas se vuelven a mirar siempre: cuando se recorrieron por primera vez
+    # quizá aún no tenían todas sus cartas publicadas. Lo ya recogido no se duplica.
+    recientes = int(os.environ.get('JP_RECIENTES', '0'))
+    hechos -= {s['tc'] for s in sets[:recientes]}
     salida = dict(previo)
     pendientes = [s for s in sets if s['tc'] not in hechos]
     print(f'Expansiones: {len(sets)} · ya recorridas: {len(hechos)} · pendientes: {len(pendientes)}\n', flush=True)
@@ -127,7 +131,7 @@ def paso_fichas():
     """Abre la página de cada carta: nombre, número y la imagen. El título
        manda: «Gengar (Nullifying Zero 049/080) (Japanese TCG)»."""
     salida = json.load(open(CARTAS, encoding='utf-8'))
-    pendientes = [c for k, c in salida.items() if not k.startswith('_') and not c.get('n')]
+    pendientes = [c for k, c in salida.items() if not k.startswith('_') and not c.get('n') and not c.get('fuera')]
     print(f'Fichas por leer: {len(pendientes)}\n', flush=True)
     hechas = descartadas = 0
     for i, c in enumerate(pendientes, 1):

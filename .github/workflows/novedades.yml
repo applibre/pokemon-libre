@@ -1,0 +1,101 @@
+# Cada lunes busca cartas nuevas de tus 17 Pokémon (inglés y japonés) y, si hay,
+# abre UNA propuesta (Pull Request) con el resumen. Tú la apruebas y se publica.
+# Solo añade: lo que ya estaba queda idéntico. Si algo no cuadra, falla y avisa.
+name: Buscar novedades
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'     # lunes 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: novedades
+  cancel-in-progress: false
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install pillow
+
+      # las fichas ya bajadas no se piden otra vez: es más rápido y trata bien a TCGdex
+      - uses: actions/cache@v4
+        with:
+          path: scripts/.cache
+          key: novedades-${{ github.run_id }}
+          restore-keys: novedades-
+
+      - name: Buscar novedades
+        id: buscar
+        run: |
+          set +e
+          bash scripts/buscar-novedades.sh
+          echo "codigo=$?" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Nada nuevo
+        if: steps.buscar.outputs.codigo == '3'
+        run: echo "### Sin novedades esta semana" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Algo no cuadra
+        if: steps.buscar.outputs.codigo != '0' && steps.buscar.outputs.codigo != '3'
+        run: |
+          echo "### La búsqueda falló y no se propone nada. Tu app sigue igual." >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+
+      - name: Construir la app con el catálogo nuevo
+        if: steps.buscar.outputs.codigo == '0'
+        run: |
+          cd app
+          npm ci
+          node construir.mjs
+
+      - name: Probar la app construida
+        if: steps.buscar.outputs.codigo == '0'
+        run: |
+          cd app
+          node pruebas/servir-prod.mjs 8410 &
+          sleep 3
+          node pruebas/datos.mjs http://localhost:8410/pokemon-libre/
+          node pruebas/uso.mjs http://localhost:8410/pokemon-libre/
+          node pruebas/offline.mjs http://localhost:8410/pokemon-libre/
+
+      - name: Abrir la propuesta
+        if: steps.buscar.outputs.codigo == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cat scripts/.cache/resumen.md >> "$GITHUB_STEP_SUMMARY"
+          NUEVAS=$(node -p "require('./scripts/.cache/novedades.json').cartas.length")
+          RAMA="novedades/$(date +%F)"
+          git config user.name "Novedades de Pokémon Libre"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -b "$RAMA"
+          git add -A
+          git commit -m "Novedades: $NUEVAS cartas nuevas de tus Pokémon"
+          git push origin "$RAMA"
+          if ! gh pr create --base master --head "$RAMA" \
+               --title "Novedades: $NUEVAS cartas nuevas" \
+               --body-file scripts/.cache/resumen.md; then
+            echo "### No se pudo abrir la propuesta" >> "$GITHUB_STEP_SUMMARY"
+            echo "Activa en Settings → Actions → General → 'Allow GitHub Actions to create and approve pull requests'." >> "$GITHUB_STEP_SUMMARY"
+            echo "Mientras tanto la rama $RAMA ya está subida: https://github.com/${{ github.repository }}/compare/$RAMA" >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi

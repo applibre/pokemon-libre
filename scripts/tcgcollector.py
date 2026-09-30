@@ -133,7 +133,8 @@ def main():
     manual = {} if not os.path.exists(MANUAL) else json.load(open(MANUAL, encoding='utf-8'))
     salida = dict(previo)
     salida.update({k: {'tc': v['tc'], 'slug': v['slug']} for k, v in manual.items() if not k.startswith('_')})
-    pendientes = [c for c in cat['cartas'] if c['id'] not in salida]
+    # las japonesas traen su enlace de TCG Collector desde scripts/japonesas.py: aquí solo las inglesas
+    pendientes = [c for c in cat['cartas'] if c['id'] not in salida and not c['id'].startswith('ja-')]
     print(f"Cartas: {len(cat['cartas'])} · ya localizadas: {len(previo)} · a buscar: {len(pendientes)}\n", flush=True)
 
     halladas = 0

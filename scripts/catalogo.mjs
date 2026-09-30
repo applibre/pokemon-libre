@@ -236,7 +236,7 @@ async function main() {
       + ` (${[...digitales].join(', ')}): son digitales\n`);
   }
 
-  const sets = {};
+  let sets = {};
   for (const s of setsFichas.filter((s) => !digitales.has(s.id))) {
     sets[s.id] = {
       n: s.name,
@@ -269,7 +269,7 @@ async function main() {
   }
 
   /* 5 · el catálogo compacto */
-  const cartas = soloPokemon.map((c) => {
+  let cartas = soloPokemon.map((c) => {
     const dexes = porCarta.get(c.id) || [];
     const suyos = pokemon.filter((p) => dexes.includes(p.dex)).map((p) => p.id);
     const ficha = {
@@ -462,6 +462,34 @@ async function main() {
   console.log(`Números impresos ${arreglados} cartas con numeración propia
 `);
 
+  /* 5.7 · modo «solo añadir»  (lo usa el buscador semanal de novedades)
+     Con CATALOGO_BASE apuntando al catálogo publicado, lo que ya estaba se
+     deja EXACTAMENTE como estaba —cartas, precios, enlaces— y solo se
+     suman las cartas y colecciones que no existían. Lo único que se
+     recalcula es el orden de las colecciones, para que la nueva entre en
+     su sitio. Así una semana de novedades nunca puede cambiar lo que ya
+     tenías ni las marcas que hayas puesto, que van por identificador. */
+  let preciosDe = new Date().toISOString().slice(0, 10);
+  if (process.env.CATALOGO_BASE) {
+    const base = JSON.parse(await readFile(process.env.CATALOGO_BASE, 'utf8'));
+    const conocidas = new Set(base.cartas.map((c) => c.id));
+    const nuevas = cartas.filter((c) => !conocidas.has(c.id));
+    const setsFinal = {};
+    for (const [id, s] of Object.entries(sets)) setsFinal[id] = base.sets[id] ? { ...base.sets[id], o: s.o } : s;
+    for (const [id, s] of Object.entries(base.sets)) if (!setsFinal[id]) setsFinal[id] = s;
+    cartas = [...base.cartas, ...nuevas];
+    sets = setsFinal;
+    preciosDe = JSON.parse(await readFile(path.join(DATOS, 'manifiesto.json'), 'utf8').catch(() => '{}')).preciosDe || preciosDe;
+    console.log(`Solo añadir: ${base.cartas.length} cartas que ya había + ${nuevas.length} nuevas\n`);
+    if (process.env.NOVEDADES_SALIDA) {
+      const nuevosSets = Object.keys(sets).filter((id) => !base.sets[id]);
+      await writeFile(process.env.NOVEDADES_SALIDA, JSON.stringify({
+        cartas: nuevas.map((c) => ({ id: c.id, n: c.n, s: c.s, num: c.ni || c.num, set: sets[c.s]?.n, ja: c.l === 'ja', p: c.p })),
+        sets: nuevosSets.map((id) => ({ id, n: sets[id].n, ja: !!sets[id].ja })),
+      }, null, 1));
+    }
+  }
+
   /* 6 · escribir */
   const json = JSON.stringify({ sets, cartas });
   const hash = createHash('sha256').update(json).digest('hex').slice(0, 12);
@@ -470,7 +498,7 @@ async function main() {
   await writeFile(path.join(DATOS, 'manifiesto.json'), JSON.stringify({
     version: hash,
     generado: new Date().toISOString().slice(0, 10),
-    preciosDe: new Date().toISOString().slice(0, 10),
+    preciosDe,
     cartas: cartas.length,
     sets: Object.keys(sets).length,
     pokemon: pokemon.map(({ dex, id, nombre, tipo, linea, orden, de, principal }) =>
