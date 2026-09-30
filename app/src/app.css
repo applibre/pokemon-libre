@@ -5,6 +5,24 @@
 @import "./holo/rainbow-holo.css";
 @import "./holo/secret-rare.css";
 @import "./holo/reverse-holo.css";
+@import "./holo/amazing-rare.css";
+@import "./holo/basic.css";
+@import "./holo/cosmos-holo.css";
+@import "./holo/radiant-holo.css";
+@import "./holo/rainbow-alt.css";
+@import "./holo/shiny-rare.css";
+@import "./holo/shiny-v.css";
+@import "./holo/shiny-vmax.css";
+@import "./holo/swsh-pikachu.css";
+@import "./holo/trainer-full-art.css";
+@import "./holo/trainer-gallery-holo.css";
+@import "./holo/trainer-gallery-secret-rare.css";
+@import "./holo/trainer-gallery-v-max.css";
+@import "./holo/trainer-gallery-v-regular.css";
+@import "./holo/v-full-art.css";
+@import "./holo/v-max.css";
+@import "./holo/v-regular.css";
+@import "./holo/v-star.css";
 
 /* ------------------------------------------------------------------
    Sistema de diseño de Pokémon Libre 2.

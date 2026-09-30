@@ -78,7 +78,7 @@
 
     <div class="carta" style="view-transition-name: carta">
       {#key c.id}
-        <Carta3D src="/data/cartas/g/{c.id}.webp" alt={c.n} foil={foil(c)} etapa={c.j?.e ?? ''} />
+        <Carta3D src="/data/cartas/g/{c.id}.webp" alt={c.n} foil={foil(c)} />
       {/key}
     </div>
 

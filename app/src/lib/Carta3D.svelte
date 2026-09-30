@@ -11,9 +11,9 @@
 <script lang="ts">
   import { Spring } from 'svelte/motion'
 
-  let { src, alt, foil = 'common', tipo = '', etapa = '' }: {
-    src: string; alt: string; foil?: string; tipo?: string; etapa?: string
-  } = $props()
+  import type { Foil } from './foil'
+
+  let { src, alt, foil, tipo = '' }: { src: string; alt: string; foil?: Foil; tipo?: string } = $props()
 
   const suave = { stiffness: 0.066, damping: 0.25 }
   const vuelta = { stiffness: 0.01, damping: 0.06 }
@@ -80,10 +80,10 @@
   class="card interactive {tipo}"
   class:interacting={tocando}
   class:loading={!cargada}
-  data-rarity={foil}
-  data-subtypes={etapa.toLowerCase()}
-  data-supertype="pokémon"
-  data-number="0"
+  data-rarity={foil?.rarity ?? 'common'}
+  data-subtypes={foil?.subtypes ?? ''}
+  data-supertype={foil?.supertype ?? 'pokémon'}
+  data-trainer-gallery={foil?.gallery ? 'true' : 'false'}
   style="{estilo}; --seedx:.31; --seedy:.62; --cosmosbg:120px 380px"
 >
   <div class="card__translater">
