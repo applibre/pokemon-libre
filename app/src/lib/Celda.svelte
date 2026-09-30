@@ -11,7 +11,7 @@
     <img src="/data/cartas/{carta.id}.webp" alt="" loading="lazy" decoding="async" width="245" height="342" />
     <span class="placa">#{numeroImpreso(carta)} · {carta.n}</span>
   </button>
-  <button class="check" onclick={() => alternar(carta.id)} aria-pressed={mia} aria-label={mia ? 'Quitar de mi colección' : 'La tengo'}>
+  <button class="check" onclick={() => alternar(carta)} aria-pressed={mia} aria-label={mia ? 'Quitar de mi colección' : 'La tengo'}>
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 12.5l4.2 4.2 8.8-9" /></svg>
   </button>
   {#if carta.l === 'ja'}<span class="jp">JP</span>{/if}

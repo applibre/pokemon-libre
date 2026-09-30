@@ -1,56 +1,101 @@
 /* ===================================================================
-   Estado de la app: el catálogo, el idioma y las marcas.
+   Estado de la app: el catálogo, el idioma y tu colección.
 
-   Aquí NO hay diseño. Este fichero solo sabe de cartas. Es lo que la
-   fase 1 sustituirá por la lectura de las marcas reales del móvil; en
-   el prototipo las marcas se guardan aparte, en su propia clave, para
-   no tocar nunca lo que ya tienes marcado en la app vieja.
+   Aquí NO hay diseño: este fichero solo sabe de cartas. Lo que cambia
+   (las marcas, los ajustes) pasa siempre por cambiar(), que lo guarda con
+   un respiro: marcar diez cartas seguidas escribe una vez, no diez.
    =================================================================== */
+import * as almacen from './almacen'
+import type { Datos, Idioma, Tema } from './almacen'
 
+export type { Datos, Idioma, Tema }
 export type Set = { n: string; rel?: string; tot?: number; o?: number; ja?: boolean; cod?: string }
 export type Carta = {
   id: string; n: string; p: string[]; s: string; num: string
   r: string; v: string[]; ill: string; l?: 'ja'; ni?: string
+  eur?: number; usd?: number
   tc_id?: number; tc_slug?: string; tp_id?: number
   j?: { e?: string; de?: string; ps?: number; t?: string[] }
 }
 export type Pokemon = { id: string; nombre: string; tipo: string; principal?: boolean }
-export type Idioma = 'en' | 'ja'
-
-const CLAVE = 'pl2-prototipo-marcas'
-
-export const app = $state({
-  listo: false,
-  sets: {} as Record<string, Set>,
-  cartas: [] as Carta[],
-  pokemon: [] as Pokemon[],
-  idioma: 'en' as Idioma,
-  marcas: {} as Record<string, true>,
-})
-
-export async function cargar() {
-  const [cat, man] = await Promise.all([
-    fetch('/data/catalogo.json').then((r) => r.json()),
-    fetch('/data/manifiesto.json').then((r) => r.json()),
-  ])
-  app.sets = cat.sets
-  app.cartas = cat.cartas
-  app.pokemon = man.pokemon
-  try { app.marcas = JSON.parse(localStorage.getItem(CLAVE) || '{}') } catch { app.marcas = {} }
-  app.listo = true
-}
-
-export function alternar(id: string) {
-  if (app.marcas[id]) delete app.marcas[id]
-  else app.marcas[id] = true
-  try { localStorage.setItem(CLAVE, JSON.stringify(app.marcas)) } catch { /* sin almacenamiento */ }
-}
-
-/** Las cartas del idioma elegido. Inglés y japonés son dos colecciones. */
-export const delIdioma = (idioma: Idioma = app.idioma) =>
-  app.cartas.filter((c) => (idioma === 'ja') === (c.l === 'ja'))
 
 const numero = (n: string) => parseInt(String(n).replace(/\D/g, ''), 10) || 0
+
+class Tienda {
+  listo = $state(false)
+  // el catálogo es grande y no cambia: sin reactividad profunda
+  sets = $state.raw<Record<string, Set>>({})
+  cartas = $state.raw<Carta[]>([])
+  pokemon = $state.raw<Pokemon[]>([])
+  man = $state.raw<{ version?: string; cartas?: number; sets?: number; generado?: string }>({})
+  datos = $state<Datos>(almacen.leer())
+
+  private pendiente: ReturnType<typeof setTimeout> | null = null
+
+  /** Inglés y japonés son dos colecciones. 'todo' venía de la app anterior. */
+  get idioma(): Idioma { return this.datos.ajustes.idioma === 'ja' ? 'ja' : 'en' }
+  set idioma(v: Idioma) { this.cambiar((d) => { d.ajustes.idioma = v }) }
+
+  get tema(): Tema { return this.datos.ajustes.tema }
+
+  async cargar(base = '') {
+    const [cat, man] = await Promise.all([
+      fetch(`${base}data/catalogo.json`).then((r) => r.json()),
+      fetch(`${base}data/manifiesto.json`).then((r) => r.json()),
+    ])
+    this.sets = cat.sets
+    this.cartas = cat.cartas
+    this.pokemon = man.pokemon
+    this.man = man
+    if (!this.datos.creado) this.cambiar((d) => { d.creado = new Date().toISOString().slice(0, 10) })
+    this.listo = true
+  }
+
+  /** Todo cambio de datos pasa por aquí. */
+  cambiar(fn: (d: Datos) => void) {
+    fn(this.datos)
+    if (this.pendiente) clearTimeout(this.pendiente)
+    this.pendiente = setTimeout(() => this.guardarYa(), 250)
+  }
+
+  guardarYa() {
+    if (this.pendiente) { clearTimeout(this.pendiente); this.pendiente = null }
+    // $state.snapshot: lo que se guarda es un objeto llano, no el proxy
+    return almacen.guardar($state.snapshot(this.datos) as Datos)
+  }
+
+  reemplazar(nuevos: Partial<Datos>) {
+    const base = almacen.inicial()
+    this.datos = { ...base, ...(nuevos as Datos), ajustes: { ...base.ajustes, ...(nuevos.ajustes || {}) } }
+    this.guardarYa()
+  }
+
+  reiniciar() {
+    almacen.borrarTodo()
+    this.datos = almacen.inicial()
+  }
+
+  /** Los Pokémon que se enseñan: con o sin las preevoluciones. */
+  get pokemonVisibles(): Pokemon[] {
+    return this.datos.ajustes.verFamilias ? this.pokemon : this.pokemon.filter((p) => p.principal)
+  }
+}
+
+export const app = new Tienda()
+
+// no perder el último toque si el móvil cierra la app enseguida
+if (typeof document !== 'undefined') {
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') app.guardarYa() })
+  addEventListener('pagehide', () => app.guardarYa())
+}
+
+/* ------------------------- las cartas ------------------------- */
+
+/** Las cartas del idioma elegido, de los Pokémon que se ven. */
+export function delIdioma(idioma: Idioma = app.idioma) {
+  const ids = new globalThis.Set(app.pokemonVisibles.map((p) => p.id))
+  return app.cartas.filter((c) => (idioma === 'ja') === (c.l === 'ja') && c.p.some((p) => ids.has(p)))
+}
 
 export function ordenar(cartas: Carta[]) {
   return [...cartas].sort((a, b) =>
@@ -70,11 +115,47 @@ export function porSet(cartas: Carta[]) {
   return grupos
 }
 
-export const tengo = (id: string) => !!app.marcas[id]
+/* ----------------------- tu colección ----------------------- */
+/* Forma: { 'base1-4': { holo: 1, firstEdition: 2 } }. Solo se guarda lo que
+   se tiene: ausencia = no la tengo. El progreso cuenta cartas, no ejemplares. */
+
+export const cuantas = (id: string, variante?: string) => {
+  const c = app.datos.coleccion[id]
+  if (!c) return 0
+  return variante ? c[variante] || 0 : Object.values(c).reduce((a, n) => a + n, 0)
+}
+export const tengo = (id: string) => cuantas(id) > 0
+
+/** La variante que se asume al marcar de un toque. */
+export function variantePrincipal(c: Carta) {
+  for (const v of ['normal', 'holo', 'reverse', 'wPromo', 'firstEdition']) if (c.v.includes(v)) return v
+  return c.v[0] || 'normal'
+}
+
+/** Un toque: si la tengo, la quito entera; si no, la marco en su variante principal. */
+export function alternar(c: Carta) {
+  app.cambiar((d) => {
+    if (cuantas(c.id) > 0) delete d.coleccion[c.id]
+    else d.coleccion[c.id] = { [variantePrincipal(c)]: 1 }
+  })
+}
+
+export function ponerVariante(id: string, variante: string, cantidad: number) {
+  app.cambiar((d) => {
+    const c = { ...(d.coleccion[id] || {}) }
+    if (cantidad > 0) c[variante] = Math.min(99, cantidad)
+    else delete c[variante]
+    if (Object.keys(c).length) d.coleccion[id] = c
+    else delete d.coleccion[id]
+  })
+}
+
 export const progreso = (cartas: Carta[]) => {
   const t = cartas.filter((c) => tengo(c.id)).length
-  return { tengo: t, total: cartas.length, parte: cartas.length ? t / cartas.length : 0 }
+  return { tengo: t, total: cartas.length, faltan: cartas.length - t, parte: cartas.length ? t / cartas.length : 0 }
 }
+
+/* --------------------- cómo se enseña una carta --------------------- */
 
 /** El número como está impreso en la carta: lo que resuelve el catálogo
     (promos sin total, subcolecciones con letras) o, si no, número/total. */
@@ -88,21 +169,9 @@ export function numeroImpreso(c: Carta): string {
   return `${num}/${tot}`
 }
 
-/** Los logos que existen de verdad, para no pedir los que no hay. */
-export const logos = $state({ ids: new Set<string>(), series: {} as Record<string, { serie: string; slug: string; s: number; p: number }> })
-fetch('/logos/lista.json').then((r) => r.json()).then((l: string[]) => { logos.ids = new Set(l) }).catch(() => {})
-fetch('/logos/series.json').then((r) => r.json()).then((datos: Record<string, { serie: string; slug: string; s: number; p: number }>) => { logos.series = datos }).catch(() => {})
-
-/** Qué efecto de foil lleva. Aproximado en el prototipo: la fase 3 lo afina
-    con las 23 variantes por rareza. */
-export function foil(c: Carta): string {
-  const r = (c.r || '').toLowerCase()
-  if (/rainbow|hyper/.test(r)) return 'rare rainbow'
-  if (/secret|illustration|special|gold|shiny|ultra|double/.test(r)) return 'rare secret'
-  if (/holo/.test(r) || c.v.includes('holo')) return 'rare holo'
-  return 'common'
+export const NOMBRE_VARIANTE: Record<string, string> = {
+  normal: 'Normal', holo: 'Holo', reverse: 'Reverse holo', firstEdition: '1.ª edición', wPromo: 'Promo',
 }
-
 export const ETAPA: Record<string, string> = {
   Basic: 'Básica', Stage1: 'Fase 1', Stage2: 'Fase 2', 'Stage 1': 'Fase 1', 'Stage 2': 'Fase 2',
 }
@@ -111,4 +180,16 @@ export const mesYAnio = (rel?: string) => {
   if (!rel) return ''
   const [a, m] = rel.split('-')
   return MES[Number(m) - 1] ? `${MES[Number(m) - 1]} de ${a}` : a
+}
+
+/* ---------------------- logos de las expansiones ---------------------- */
+
+export const logos = $state({
+  ids: new globalThis.Set<string>(),
+  series: {} as Record<string, { serie: string; slug: string; s: number; p: number }>,
+})
+export function cargarLogos(base = '') {
+  fetch(`${base}logos/lista.json`).then((r) => r.json()).then((l: string[]) => { logos.ids = new globalThis.Set(l) }).catch(() => {})
+  fetch(`${base}logos/series.json`).then((r) => r.json())
+    .then((d: typeof logos.series) => { logos.series = d }).catch(() => {})
 }

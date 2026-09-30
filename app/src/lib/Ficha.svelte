@@ -2,7 +2,8 @@
      la siguiente. Se abre con el vuelo de la carta desde su celda. -->
 <script lang="ts">
   import Carta3D from './Carta3D.svelte'
-  import { app, tengo, alternar, numeroImpreso, foil, ETAPA, mesYAnio, type Carta } from './store.svelte'
+  import { app, tengo, cuantas, alternar, ponerVariante, numeroImpreso, ETAPA, NOMBRE_VARIANTE, mesYAnio, type Carta } from './store.svelte'
+  import { foil } from './foil'
 
   let { lista, indice, cerrar, ir }: {
     lista: Carta[]; indice: number; cerrar: () => void; ir: (i: number) => void
@@ -88,13 +89,26 @@
 
   <p class="pos">{indice + 1} de {lista.length}</p>
 
+  <!-- cuántas tienes de cada forma en que salió esta carta -->
+  <div class="variantes">
+    {#each c.v as v (v)}
+      {@const n = cuantas(c.id, v)}
+      <div class="variante" class:hay={n > 0}>
+        <button class="menos" onclick={() => ponerVariante(c.id, v, n - 1)} disabled={n === 0} aria-label="Quitar una {NOMBRE_VARIANTE[v] ?? v}">−</button>
+        <span class="n" aria-live="polite">{n}</span>
+        <button class="mas" onclick={() => ponerVariante(c.id, v, n + 1)} aria-label="Añadir una {NOMBRE_VARIANTE[v] ?? v}">+</button>
+        <span class="nom">{NOMBRE_VARIANTE[v] ?? v}</span>
+      </div>
+    {/each}
+  </div>
+
   <dl class="datos">
     {#each filas as [k, v]}
       <div><dt>{k}</dt><dd>{v}</dd></div>
     {/each}
   </dl>
 
-  <button class="tengo" class:mia onclick={() => alternar(c.id)}>
+  <button class="tengo" class:mia onclick={() => alternar(c)}>
     {#if mia}
       <svg viewBox="0 0 24 24"><path d="M5.5 12.5l4.2 4.2 8.8-9" /></svg>La tengo
     {:else}
@@ -149,6 +163,22 @@
   .izq { left: -4px; }
   .der { right: -4px; }
   .pos { margin: 0; text-align: center; font-size: 12px; color: var(--tinta-3); font-weight: 600; letter-spacing: .04em; }
+
+  .variantes { display: grid; gap: 8px; }
+  .variante {
+    display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: var(--radio-m);
+    border: 1px solid var(--linea); background: var(--papel); transition: border-color .2s, background .2s;
+  }
+  .variante.hay { border-color: var(--oro); background: color-mix(in srgb, var(--oro) 9%, var(--papel)); }
+  .variante button {
+    width: 34px; height: 34px; padding: 0; border: 0; border-radius: 50%; background: var(--hueco);
+    font-size: 20px; font-weight: 800; color: var(--azul); display: grid; place-items: center; touch-action: manipulation;
+    transition: transform .12s, background .15s;
+  }
+  .variante button:active { transform: scale(.88); background: var(--linea); }
+  .variante button:disabled { opacity: .35; pointer-events: none; }
+  .variante .n { min-width: 26px; text-align: center; font-size: 18px; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .variante .nom { font-weight: 700; font-size: 15px; margin-left: 2px; }
 
   .datos { margin: 0; border: 1px solid var(--linea); border-radius: var(--radio-m); overflow: hidden; }
   .datos div { display: flex; justify-content: space-between; gap: 14px; padding: 10px 14px; font-size: 14px; }

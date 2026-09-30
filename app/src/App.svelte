@@ -5,13 +5,14 @@
   import Expansiones from './lib/Expansiones.svelte'
   import Grupos from './lib/Grupos.svelte'
   import Ficha from './lib/Ficha.svelte'
-  import { app, cargar, cartasDe, delIdioma, ordenar, progreso, type Carta } from './lib/store.svelte'
+  import { app, cargarLogos, cartasDe, delIdioma, ordenar, progreso, type Carta } from './lib/store.svelte'
 
   /* Las rutas viven en la dirección (#/pokemon/pikachu), así el botón atrás
      del móvil funciona y una pantalla se puede compartir. */
   let ruta = $state(location.hash.replace(/^#\/?/, ''))
   onMount(() => {
-    cargar()
+    app.cargar()
+    cargarLogos()
     const cambia = () => (ruta = location.hash.replace(/^#\/?/, ''))
     addEventListener('hashchange', cambia)
     return () => removeEventListener('hashchange', cambia)
