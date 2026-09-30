@@ -988,5 +988,227 @@
   "nombre": "Venusaur",
   "set": "Shining Legends",
   "num": "3/73"
+ },
+ "ja-29835": {
+  "tp": 183783,
+  "nombre": "Charmander (12)",
+  "set": "SM - Team Up",
+  "num": "12/181"
+ },
+ "ja-38244": {
+  "tp": 274433,
+  "nombre": "Bulbasaur",
+  "set": "Pokemon GO",
+  "num": "001/078"
+ },
+ "ja-38245": {
+  "tp": 274434,
+  "nombre": "Ivysaur",
+  "set": "Pokemon GO",
+  "num": "002/078"
+ },
+ "ja-38246": {
+  "tp": 274435,
+  "nombre": "Venusaur",
+  "set": "Pokemon GO",
+  "num": "003/078"
+ },
+ "ja-38247": {
+  "tp": 274465,
+  "nombre": "Radiant Venusaur",
+  "set": "Pokemon GO",
+  "num": "004/078"
+ },
+ "ja-38251": {
+  "tp": 274436,
+  "nombre": "Charmander",
+  "set": "Pokemon GO",
+  "num": "008/078"
+ },
+ "ja-38252": {
+  "tp": 274438,
+  "nombre": "Charmeleon",
+  "set": "Pokemon GO",
+  "num": "009/078"
+ },
+ "ja-38253": {
+  "tp": 274439,
+  "nombre": "Charizard",
+  "set": "Pokemon GO",
+  "num": "010/078"
+ },
+ "ja-38254": {
+  "tp": 274467,
+  "nombre": "Radiant Charizard",
+  "set": "Pokemon GO",
+  "num": "011/078"
+ },
+ "ja-38258": {
+  "tp": 274445,
+  "nombre": "Squirtle",
+  "set": "Pokemon GO",
+  "num": "015/078"
+ },
+ "ja-38259": {
+  "tp": 274451,
+  "nombre": "Wartortle",
+  "set": "Pokemon GO",
+  "num": "016/078"
+ },
+ "ja-38260": {
+  "tp": 274453,
+  "nombre": "Blastoise",
+  "set": "Pokemon GO",
+  "num": "017/078"
+ },
+ "ja-38261": {
+  "tp": 274468,
+  "nombre": "Radiant Blastoise",
+  "set": "Pokemon GO",
+  "num": "018/078"
+ },
+ "ja-38270": {
+  "tp": 276946,
+  "nombre": "Pikachu (27)",
+  "set": "Pokemon GO",
+  "num": "027/078"
+ },
+ "ja-38271": {
+  "tp": 274461,
+  "nombre": "Pikachu (28)",
+  "set": "Pokemon GO",
+  "num": "028/078"
+ },
+ "ja-41494": {
+  "tp": 502552,
+  "nombre": "Bulbasaur - 001/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "001/165"
+ },
+ "ja-41495": {
+  "tp": 502553,
+  "nombre": "Ivysaur - 002/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "002/165"
+ },
+ "ja-41496": {
+  "tp": 502554,
+  "nombre": "Venusaur ex - 003/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "003/165"
+ },
+ "ja-41497": {
+  "tp": 502555,
+  "nombre": "Charmander - 004/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "004/165"
+ },
+ "ja-41498": {
+  "tp": 502557,
+  "nombre": "Charmeleon - 005/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "005/165"
+ },
+ "ja-41499": {
+  "tp": 502558,
+  "nombre": "Charizard ex - 006/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "006/165"
+ },
+ "ja-41500": {
+  "tp": 502548,
+  "nombre": "Squirtle - 007/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "007/165"
+ },
+ "ja-41501": {
+  "tp": 502550,
+  "nombre": "Wartortle - 008/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "008/165"
+ },
+ "ja-41502": {
+  "tp": 502551,
+  "nombre": "Blastoise ex - 009/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "009/165"
+ },
+ "ja-41518": {
+  "tp": 517033,
+  "nombre": "Pikachu - 025/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "025/165"
+ },
+ "ja-41519": {
+  "tp": 515957,
+  "nombre": "Raichu",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "026/165"
+ },
+ "ja-41585": {
+  "tp": 516661,
+  "nombre": "Gastly",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "092/165"
+ },
+ "ja-41586": {
+  "tp": 516662,
+  "nombre": "Haunter",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "093/165"
+ },
+ "ja-41587": {
+  "tp": 516663,
+  "nombre": "Gengar",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "094/165"
+ },
+ "ja-41636": {
+  "tp": 516706,
+  "nombre": "Snorlax",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "143/165"
+ },
+ "ja-41659": {
+  "tp": 516997,
+  "nombre": "Bulbasaur - 166/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "166/165"
+ },
+ "ja-41660": {
+  "tp": 516998,
+  "nombre": "Ivysaur - 167/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "167/165"
+ },
+ "ja-41661": {
+  "tp": 502556,
+  "nombre": "Charmander - 168/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "168/165"
+ },
+ "ja-41662": {
+  "tp": 517018,
+  "nombre": "Charmeleon - 169/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "169/165"
+ },
+ "ja-41663": {
+  "tp": 502549,
+  "nombre": "Squirtle - 170/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "170/165"
+ },
+ "ja-41664": {
+  "tp": 517038,
+  "nombre": "Wartortle - 171/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "171/165"
+ },
+ "ja-41666": {
+  "tp": 513721,
+  "nombre": "Pikachu - 173/165",
+  "set": "SV: Scarlet & Violet 151",
+  "num": "173/165"
  }
 }

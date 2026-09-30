@@ -3,6 +3,7 @@
 // Cada comprobación imprime OK o FALLA: nada se da por bueno sin haberlo hecho.
 import { chromium } from '@playwright/test'
 import { promises as fs } from 'node:fs'
+import { mantener } from './gestos.mjs'
 import { readFileSync } from 'node:fs'
 // Los números salen del catálogo, no de la memoria: cuando entra una expansión nueva no hay que tocar la prueba.
 const CAT = JSON.parse(readFileSync(new URL('../../data/catalogo.json', import.meta.url), 'utf8'))
@@ -58,8 +59,31 @@ ok((await p.locator('.celda').count()) === EN('pikachu') - 1, 'el filtro «Me fa
 await p.click('.chips button >> nth=0'); await p.waitForTimeout(300)
 await p.locator('.celda .check').first().click()          // la desmarco
 
+/* ---------- los gestos de la carta: toque = marcar, mantener = abrir ---------- */
+{
+  const ver = p.locator('.celda .ver').nth(1)
+  const celda = p.locator('.celda').nth(1)
+  await ver.scrollIntoViewIfNeeded()
+  await ver.click()                                    // un toque rápido
+  await p.waitForTimeout(300)
+  ok((await p.locator('.ficha').count()) === 0, 'un toque rápido NO abre la ficha')
+  ok(await celda.evaluate((e) => e.classList.contains('mia')), 'un toque rápido marca la carta')
+  await ver.click(); await p.waitForTimeout(300)
+  ok(!(await celda.evaluate((e) => e.classList.contains('mia'))), 'otro toque la desmarca')
+  // un arrastre (desplazarse por la lista) que empieza sobre la carta no hace nada
+  const b = await ver.boundingBox()
+  await p.mouse.move(b.x + b.width / 2, b.y + b.height / 2); await p.mouse.down()
+  await p.mouse.move(b.x + b.width / 2, b.y + b.height / 2 + 45, { steps: 6 }); await p.waitForTimeout(700); await p.mouse.up()
+  ok((await p.locator('.ficha').count()) === 0 && !(await celda.evaluate((e) => e.classList.contains('mia'))), 'arrastrar sobre la carta (desplazarse) no la marca ni la abre')
+  // mantenida, abre la ficha y no la marca
+  await mantener(p, ver); await p.waitForSelector('.ficha')
+  ok(!(await celda.evaluate((e) => e.classList.contains('mia'))), 'mantenerla pulsada abre la ficha sin marcarla')
+  await p.click('.ficha [aria-label="Cerrar"], .ficha .cerrar'); await p.waitForTimeout(600)
+  ok((await p.locator('.ficha').count()) === 0, 'y la ficha se cierra')
+}
+
 /* ---------- la ficha ---------- */
-await p.locator('.celda .ver').nth(3).click()
+await mantener(p, p.locator('.celda .ver').nth(3))
 await p.waitForSelector('.ficha'); await p.waitForTimeout(900)
 ok(await p.locator('.ficha .card__front img').isVisible(), 'la ficha abre con la carta grande')
 await foto('4-ficha', 500)

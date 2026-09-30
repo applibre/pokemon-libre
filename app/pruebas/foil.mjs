@@ -1,6 +1,7 @@
 // Una carta de cada clase de foil, inclinada, para mirarlas a ojo.
 //   node pruebas/foil.mjs   ->  capturas/foil/*.png (y un resumen del reparto)
 // Un efecto que deja la carta ilegible es peor que ninguno: aquí se ve.
+import { mantener } from './gestos.mjs'
 import { chromium } from '@playwright/test'
 import { promises as fs } from 'node:fs'
 
@@ -47,8 +48,7 @@ for (const [clave, id] of muestras) {
   await p.goto(base + '#/set/' + carta.s); await p.waitForSelector('.celda')
   const celda = p.locator(`[data-carta="${id}"] .ver`)
   if (!(await celda.count())) { console.log('  (sin celda para', id, ')'); continue }
-  await celda.scrollIntoViewIfNeeded()
-  await celda.click()
+  await mantener(p, celda)
   await p.waitForSelector('.ficha'); await p.waitForTimeout(900)
   const c = await p.locator('.ficha .card__rotator').boundingBox()
   await p.mouse.move(c.x + c.width * 0.3, c.y + c.height * 0.3)

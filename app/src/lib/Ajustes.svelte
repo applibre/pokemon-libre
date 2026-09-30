@@ -136,7 +136,7 @@
   <section class="panel">
     <Cinta titulo="Sin internet" />
     <div class="cuerpo">
-      <div class="fila"><span>Cartas guardadas en el móvil</span><b class="v">{guardadas} de {total}</b></div>
+      <div class="fila"><span>Imágenes guardadas para usar sin internet</span><b class="v">{guardadas} de {total}</b></div>
       <div class="barra" aria-hidden="true"><i style="width:{total ? ((bajando ? Math.max(hechas, guardadas) : guardadas) / total) * 100 : 0}%"></i></div>
       <p class="nota">La app y el catálogo ya funcionan sin conexión. Las imágenes se guardan según las vas viendo; con este botón se guardan todas de una vez (unos 60 MB, conviene con wifi).</p>
       {#if bajando}

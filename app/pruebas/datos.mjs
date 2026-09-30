@@ -3,6 +3,7 @@
 // Es la más importante de todas: una colección perdida no se recupera.
 import { chromium } from '@playwright/test'
 import { promises as fs } from 'node:fs'
+import { mantener } from './gestos.mjs'
 import { readFileSync } from 'node:fs'
 // Los números salen del catálogo, no de la memoria: cuando entra una expansión nueva no hay que tocar la prueba.
 const CAT = JSON.parse(readFileSync(new URL('../../data/catalogo.json', import.meta.url), 'utf8'))
@@ -38,7 +39,7 @@ await p.click('.lengua button >> nth=0')
 
 // abrir la ficha de Charizard del Base Set: sus variantes se leen tal cual
 await p.goto(base + '#/set/base1'); await p.waitForSelector('.celda')
-await p.locator('.celda', { hasText: 'Charizard' }).first().locator('.ver').click()
+await mantener(p, p.locator('.celda', { hasText: 'Charizard' }).first().locator('.ver'))
 await p.waitForSelector('.ficha'); await p.waitForTimeout(700)
 const cuentas = await p.$$eval('.variante .n', (e) => e.map((x) => x.textContent.trim()))
 ok(cuentas.join(',') === '1,2', `la ficha lee las variantes de la app anterior (holo 1, 1.ª edición 2): ${cuentas.join(',')}`)

@@ -1,15 +1,57 @@
 <!-- Una carta en su celda: siempre del mismo tamaño y centrada, con su placa
-     «#10 - Nombre». Tocar la carta la abre; el círculo la marca. -->
+     «#10 - Nombre». Un toque rápido la marca o desmarca; mantenerla pulsada
+     (medio segundo) la abre. Así un dedo torpe nunca abre la ficha sin querer. -->
 <script lang="ts">
   import { rutas } from './rutas'
   import { tengo, alternar, numeroImpreso, type Carta } from './store.svelte'
+  import { avisar } from './mensajes.svelte'
   let { carta, abrir, retraso = 0 }: { carta: Carta; abrir: (c: Carta, img: HTMLElement) => void; retraso?: number } = $props()
   const mia = $derived(tengo(carta.id))
+
+  const LARGO = 480        // ms que hay que mantener para abrir la ficha
+  const MOVER = 10         // px: más que eso es un desplazamiento, no una pulsación
+  let temporizador = 0
+  let armando = $state(false)
+  let movido = false       // el dedo se desplazó: era un arrastre, no un toque
+  let abierta = false      // la pulsación larga ya abrió la ficha: el «click» que sigue se ignora
+  let origen = { x: 0, y: 0 }
+
+  function pista() {
+    // una sola vez, la primera que se marca, para que se sepa cómo abrir la carta
+    try {
+      if (localStorage.getItem('pl-pista-largo')) return
+      localStorage.setItem('pl-pista-largo', '1')
+      avisar('Mantén pulsada una carta para verla en grande')
+    } catch { /* sin almacenamiento: no pasa nada */ }
+  }
+  function cancelar() { clearTimeout(temporizador); armando = false }
+  function bajar(e: PointerEvent) {
+    abierta = false; movido = false
+    origen = { x: e.clientX, y: e.clientY }
+    const img = (e.currentTarget as HTMLElement).querySelector('img')!
+    armando = true
+    temporizador = window.setTimeout(() => {
+      armando = false; abierta = true
+      navigator.vibrate?.(14)
+      abrir(carta, img)
+    }, LARGO)
+  }
+  function mover(e: PointerEvent) {
+    if (Math.hypot(e.clientX - origen.x, e.clientY - origen.y) > MOVER) { movido = true; cancelar() }
+  }
+  function tocar() {
+    cancelar()
+    if (abierta || movido) { abierta = false; movido = false; return }
+    alternar(carta)
+    pista()
+  }
 </script>
 
 <div class="celda" class:mia data-carta={carta.id} style="--r:{retraso}ms">
-  <button class="ver" onclick={(e) => abrir(carta, e.currentTarget.querySelector('img')!)} aria-label="Abrir {carta.n} {numeroImpreso(carta)}">
-    <img src={rutas.carta(carta.id)} alt="" loading="lazy" decoding="async" width="245" height="342" />
+  <button class="ver" class:armando onpointerdown={bajar} onpointermove={mover} onpointerup={cancelar} onpointercancel={cancelar} onpointerleave={cancelar}
+    onclick={tocar} oncontextmenu={(e) => { e.preventDefault(); abrir(carta, e.currentTarget.querySelector('img')!) }}
+    aria-pressed={mia} aria-label="{carta.n} {numeroImpreso(carta)}: {mia ? 'la tengo' : 'no la tengo'}. Un toque la marca; mantén pulsado para verla">
+    <img src={rutas.carta(carta.id)} alt="" draggable="false" loading="lazy" decoding="async" width="245" height="342" />
     <span class="placa">#{numeroImpreso(carta)} · {carta.n}</span>
   </button>
   <button class="check" onclick={() => alternar(carta)} aria-pressed={mia} aria-label={mia ? 'Quitar de mi colección' : 'La tengo'}>
@@ -27,10 +69,13 @@
   .ver {
     display: block; position: relative; width: 100%; padding: 0; border: 0; background: none;
     border-radius: 6px; overflow: hidden; touch-action: manipulation;
+    -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent;
     box-shadow: 0 1px 2px rgba(20,45,90,.18), 0 5px 12px rgba(20,45,90,.14);
     transition: transform .18s cubic-bezier(.2,.8,.2,1), box-shadow .18s;
   }
   .ver:active { transform: scale(.965); }
+  /* mientras se mantiene, la carta «se hunde» poco a poco: avisa de que va a abrirse */
+  .ver.armando { transform: scale(.925); transition: transform .48s cubic-bezier(.3, 0, .3, 1); }
   img { width: 100%; height: auto; aspect-ratio: 245 / 342; object-fit: cover; background: var(--hueco); }
   .celda:not(.mia) img { filter: saturate(.72) brightness(.97); opacity: .9; }
 
