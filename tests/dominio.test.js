@@ -5,7 +5,7 @@
 
 const test = require('node:test');
 const assert = require('node:assert');
-const D = require('../js/dominio.js');
+const D = require('./dominio-referencia.js');
 const catalogo = require('../data/catalogo.json');
 const manifiesto = require('../data/manifiesto.json');
 

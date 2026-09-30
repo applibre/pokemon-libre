@@ -14,7 +14,7 @@ Es un hueco real: las apps del mercado piensan por colección —bloque, set, ca
 
 ## Qué trae
 
-**1783 cartas** de 17 Pokémon en **328 colecciones**: 869 en inglés desde el Base Set de 1999, y **914 en japonés** repartidas en 187 expansiones que en su mayoría nunca salieron de Japón.
+**1824 cartas** de 17 Pokémon en **330 colecciones**: 910 en inglés desde el Base Set de 1999, y **914 en japonés** repartidas en 187 expansiones que en su mayoría nunca salieron de Japón.
 
 | | |
 |---|---|
@@ -123,3 +123,12 @@ Licencia MIT: cópialo, cámbiale los Pokémon, publícalo.
 ---
 
 Proyecto de aficionado de **[applibre](https://github.com/applibre)**. Sin relación con Nintendo, Creatures, GAME FREAK ni The Pokémon Company. Las imágenes de las cartas son propiedad de sus autores y se muestran únicamente para llevar el control de una colección personal.
+
+
+## Licencia y créditos
+
+GPL-3.0. El efecto 3D de las cartas está adaptado de [pokemon-cards-css](https://github.com/simeydotme/pokemon-cards-css) (GPL-3.0), de simeydotme. Los datos vienen de TCGdex, TCG Collector y Pokellector. Pokémon y sus cartas son marcas de sus dueños; este proyecto no está afiliado a ellos.
+
+## Construir
+
+La app está en `app/` (Svelte 5 + Vite). `cd app && npm install && node construir.mjs` la construye en la raíz del repositorio, que es lo que publica GitHub Pages. Las pruebas están en `app/pruebas/` y `tests/`.

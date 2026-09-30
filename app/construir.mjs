@@ -1,27 +1,30 @@
-// Construye la app y la deja lista para publicar.
-//   node construir.mjs nueva     -> ../nueva/    (convive con la vieja, en /pokemon-libre/nueva/)
-//   node construir.mjs raiz      -> ../dist-raiz/ (sustituye a la vieja, en /pokemon-libre/)
+// Construye la app y la deja en la raíz del repositorio, lista para publicar.
+//   node construir.mjs
 // Los datos (cartas y catálogo) no se copian: ya viven en /pokemon-libre/data/.
+// Solo se sustituye lo que es de la app (index.html, assets, sw.js…), nunca
+// data/, app/, scripts/ ni tests/.
 import { execFileSync } from 'node:child_process'
 import { cpSync, rmSync, existsSync, readdirSync, statSync } from 'node:fs'
 import { resolve, join } from 'node:path'
 
-const modo = process.argv[2] || 'nueva'
-const RAIZ = 'pokemon-libre'
-const conf = {
-  nueva: { base: `/${RAIZ}/nueva/`, datos: `/${RAIZ}/`, salida: resolve(import.meta.dirname, '../nueva') },
-  raiz: { base: `/${RAIZ}/`, datos: `/${RAIZ}/`, salida: resolve(import.meta.dirname, '../dist-raiz') },
-}[modo]
-if (!conf) { console.error('modo desconocido: ' + modo); process.exit(1) }
+const REPO = resolve(import.meta.dirname, '..')
+const BASE = '/pokemon-libre/'
+const DIST = join(import.meta.dirname, 'dist')
 
-console.log(`Construyendo «${modo}» · base ${conf.base} · datos ${conf.datos}`)
+console.log(`Construyendo · base ${BASE}`)
 execFileSync('npx', ['vite', 'build'], {
   stdio: 'inherit', shell: true, cwd: import.meta.dirname,
-  env: { ...process.env, VITE_BASE: conf.base, VITE_DATOS: conf.datos },
+  env: { ...process.env, VITE_BASE: BASE, VITE_DATOS: BASE },
 })
 
-if (existsSync(conf.salida)) rmSync(conf.salida, { recursive: true, force: true })
-cpSync(join(import.meta.dirname, 'dist'), conf.salida, { recursive: true })
+// lo que la construcción anterior dejó en la raíz: se quita para que no sobre nada
+const DE_LA_APP = ['assets', 'holo', 'logos', 'iconos', 'index.html', 'sw.js', 'registerSW.js',
+  'manifest.webmanifest', 'favicon.svg', 'icons.svg', 'fondo.svg', 'fondo-oscuro.svg']
+for (const f of readdirSync(REPO)) {
+  if (DE_LA_APP.includes(f) || /^workbox-.*\.js$/.test(f)) rmSync(join(REPO, f), { recursive: true, force: true })
+}
+cpSync(DIST, REPO, { recursive: true })
 
 const peso = (d) => readdirSync(d, { withFileTypes: true }).reduce((a, e) => a + (e.isDirectory() ? peso(join(d, e.name)) : statSync(join(d, e.name)).size), 0)
-console.log(`\nListo en ${conf.salida} · ${(peso(conf.salida) / 1024 / 1024).toFixed(1)} MB`)
+console.log(`\nListo en ${REPO} · ${(peso(DIST) / 1024 / 1024).toFixed(1)} MB de app`)
+if (!existsSync(join(REPO, 'data', 'catalogo.json'))) console.error('¡Ojo! No hay data/catalogo.json')

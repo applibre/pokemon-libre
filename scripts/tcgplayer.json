@@ -964,5 +964,29 @@
   "nombre": "Venusaur",
   "set": "Shining Legends",
   "num": "3/73"
+ },
+ "ja-25420": {
+  "tp": 90322,
+  "nombre": "Venusaur",
+  "set": "Dark Explorers",
+  "num": "3/108"
+ },
+ "ja-26360": {
+  "tp": 86029,
+  "nombre": "Haunter (41)",
+  "set": "Arceus",
+  "num": "41/99"
+ },
+ "ja-27151": {
+  "tp": 146654,
+  "nombre": "Ivysaur",
+  "set": "Shining Legends",
+  "num": "2/73"
+ },
+ "ja-27152": {
+  "tp": 146655,
+  "nombre": "Venusaur",
+  "set": "Shining Legends",
+  "num": "3/73"
  }
 }
