@@ -1,11 +1,17 @@
-/* Las direcciones de las imágenes dependen de dónde viva la app: en
-   desarrollo, en la raíz; publicada, en /pokemon-libre/. Escribirlas a
-   mano con «/» las rompería al publicar, así que todas salen de aquí. */
-const B = import.meta.env.BASE_URL
+/* Las direcciones dependen de dónde viva la app y de dónde vivan los datos.
+
+   La app puede publicarse en una subcarpeta (/pokemon-libre/nueva/) mientras
+   las cartas siguen en /pokemon-libre/data/: son dos raíces distintas. En
+   desarrollo son la misma. Escribirlas a mano con «/» rompería la
+   publicación, así que todas salen de aquí. */
+const APP = import.meta.env.BASE_URL
+const DATOS = import.meta.env.VITE_DATOS ?? APP
 
 export const rutas = {
-  carta: (id: string) => `${B}data/cartas/${id}.webp`,
-  cartaGrande: (id: string) => `${B}data/cartas/g/${id}.webp`,
-  logo: (id: string) => `${B}logos/${id}.webp`,
-  serie: (slug: string) => `${B}logos/series/${slug}.webp`,
+  datos: DATOS,
+  carta: (id: string) => `${DATOS}data/cartas/${id}.webp`,
+  cartaGrande: (id: string) => `${DATOS}data/cartas/g/${id}.webp`,
+  logo: (id: string) => `${APP}logos/${id}.webp`,
+  serie: (slug: string) => `${APP}logos/series/${slug}.webp`,
+  logos: APP,
 }

@@ -394,9 +394,15 @@ async function main() {
   if (japoPuestas) {
     // las japonesas van detrás de todas las inglesas, en su propio orden
     const base = Object.keys(sets).length;
-    for (const [sid, s] of Object.entries(sets)) {
-      if (s.ja) s.o = base + (ordenJapo.get(sid.slice(3)) || 0);
-    }
+    /* Con fecha (scripts/fechas-japonesas.py, de Pokellector) van por fecha;
+       las que no la tienen, detrás y en el orden que dio TCG Collector. */
+    const fechas = JSON.parse(await readFile(path.join(AQUI, 'fechas-japonesas.json'), 'utf8').catch(() => '{}'));
+    for (const [sid, s] of Object.entries(sets)) if (s.ja && fechas[sid]) s.rel = fechas[sid];
+    const japo2 = Object.entries(sets).filter(([, s]) => s.ja).sort(([a, x], [b, y]) =>
+      (x.rel ? 0 : 1) - (y.rel ? 0 : 1)
+      || (x.rel || '').localeCompare(y.rel || '')
+      || (ordenJapo.get(a.slice(3)) || 0) - (ordenJapo.get(b.slice(3)) || 0));
+    japo2.forEach(([, s], i) => { s.o = base + i; });
     console.log(`En japonés       ${japoPuestas} cartas en ${Object.values(sets).filter((s) => s.ja).length} colecciones
 `);
   }

@@ -9,14 +9,15 @@
   import Ajustes from './lib/Ajustes.svelte'
   import Ficha from './lib/Ficha.svelte'
   import Avisos from './lib/Avisos.svelte'
+  import { rutas } from './lib/rutas'
   import { app, cargarLogos, cartasDe, delIdioma, ordenar, progreso, tengo, type Carta } from './lib/store.svelte'
 
   /* Las rutas viven en la dirección (#/pokemon/pikachu), así el botón atrás
      del móvil funciona y una pantalla se puede compartir. */
   let ruta = $state(location.hash.replace(/^#\/?/, ''))
   onMount(() => {
-    app.cargar(import.meta.env.BASE_URL)
-    cargarLogos(import.meta.env.BASE_URL)
+    app.cargar(rutas.datos)
+    cargarLogos(rutas.logos)
     const cambia = () => (ruta = location.hash.replace(/^#\/?/, ''))
     addEventListener('hashchange', cambia)
     return () => removeEventListener('hashchange', cambia)

@@ -2,7 +2,9 @@
      cuando no existe servidor), el aspecto y el catálogo. -->
 <script lang="ts">
   import Cinta from './Cinta.svelte'
+  import { onMount } from 'svelte'
   import { app, type Tema, type Idioma } from './store.svelte'
+  import { rutas } from './rutas'
   import { textoDeCopia } from './almacen'
   import { avisar, confirmar } from './mensajes.svelte'
 
@@ -45,6 +47,43 @@
     app.reiniciar()
     location.hash = '/'
     location.reload()
+  }
+
+  /* ---- guardar las cartas para usarlas sin internet ----
+     Las imágenes se guardan según las ves. Este botón las pide todas de una
+     vez: el service worker las va dejando en su caché mientras pasan. */
+  let guardadas = $state(0)
+  let bajando = $state(false)
+  let hechas = $state(0)
+  let cancelar = false
+  const hayServicio = $derived(typeof navigator !== 'undefined' && !!navigator.serviceWorker?.controller)
+  const total = $derived(app.cartas.length)
+
+  async function contar() {
+    try {
+      const c = await caches.open('pl2-cartas')
+      guardadas = (await c.keys()).filter((r) => !/\/g\//.test(r.url)).length
+    } catch { guardadas = 0 }
+  }
+  onMount(contar)
+
+  async function guardarTodo() {
+    bajando = true; cancelar = false; hechas = 0
+    const ids = app.cartas.map((c) => c.id)
+    let i = 0
+    const obrero = async () => {
+      while (i < ids.length && !cancelar) {
+        const id = ids[i++]
+        try { await fetch(rutas.carta(id)) } catch { /* sin red: se cuenta y se sigue */ }
+        hechas++
+      }
+    }
+    await Promise.all(Array.from({ length: 6 }, obrero))
+    bajando = false
+    // el service worker termina de guardar un instante después de servir la última
+    await new Promise((r) => setTimeout(r, 1200))
+    await contar()
+    avisar(cancelar ? 'Descarga detenida' : `Listo: ${guardadas} cartas guardadas`, cancelar ? 'normal' : 'bueno')
   }
 
   const temas: [Tema, string][] = [['auto', 'Automático'], ['claro', 'Claro'], ['oscuro', 'Oscuro']]
@@ -95,11 +134,28 @@
   </section>
 
   <section class="panel">
+    <Cinta titulo="Sin internet" />
+    <div class="cuerpo">
+      <div class="fila"><span>Cartas guardadas en el móvil</span><b class="v">{guardadas} de {total}</b></div>
+      <div class="barra" aria-hidden="true"><i style="width:{total ? ((bajando ? Math.max(hechas, guardadas) : guardadas) / total) * 100 : 0}%"></i></div>
+      <p class="nota">La app y el catálogo ya funcionan sin conexión. Las imágenes se guardan según las vas viendo; con este botón se guardan todas de una vez (unos 60 MB, conviene con wifi).</p>
+      {#if bajando}
+        <button class="btn" data-parar onclick={() => (cancelar = true)}>Detener · {hechas} de {total}</button>
+      {:else}
+        <button class="btn principal" data-guardar-todo onclick={guardarTodo} disabled={!hayServicio || guardadas >= total}>
+          {guardadas >= total ? 'Todas guardadas' : 'Guardar todas las cartas'}
+        </button>
+        {#if !hayServicio}<p class="nota">Disponible cuando la app esté instalada y cargada por segunda vez.</p>{/if}
+      {/if}
+    </div>
+  </section>
+
+  <section class="panel">
     <Cinta titulo="El catálogo" />
     <div class="cuerpo">
       <div class="fila"><span>Cartas</span><b class="v">{app.man.cartas ?? app.cartas.length}</b></div>
       <div class="fila"><span>Colecciones</span><b class="v">{app.man.sets ?? Object.keys(app.sets).length}</b></div>
-      <p class="nota">Las cartas y sus imágenes viajan dentro de la app: se ven sin internet y no dependen de ningún servicio que pueda cerrar.</p>
+      <p class="nota">Ningún servicio externo hace falta para ver tus cartas: el catálogo y las imágenes son de la propia app.</p>
     </div>
   </section>
 
@@ -138,6 +194,10 @@
   .segmentos { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 4px; padding: 4px; border-radius: 14px; background: var(--hueco); }
   .segmentos button { min-height: 42px; border: 0; border-radius: 11px; background: none; font-size: 14.5px; font-weight: 800; color: var(--tinta-2); transition: background .2s, color .2s, box-shadow .2s; }
   .segmentos button.v { background: var(--papel); color: var(--azul); box-shadow: var(--sombra-1); }
+
+  .barra { height: 7px; border-radius: 999px; background: var(--hueco); overflow: hidden; margin: 2px 0 6px; }
+  .barra i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #2fb96b, #178048); transition: width .3s; }
+  .btn:disabled { opacity: .5; pointer-events: none; }
 
   .botones { display: grid; gap: 10px; margin-top: 10px; }
   .btn { min-height: 48px; border: 0; border-radius: 14px; font-size: 15px; font-weight: 800; background: var(--hueco); color: var(--tinta); transition: transform .12s; }

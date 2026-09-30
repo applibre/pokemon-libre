@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/pokemon-libre/nueva/sw.js', { scope: '/pokemon-libre/nueva/' })})}

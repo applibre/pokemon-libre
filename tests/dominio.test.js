@@ -98,19 +98,40 @@ test('las cartas emblemáticas están donde deben', () => {
   assert.strictEqual(pikachu.n, 'Pikachu');
 });
 
-test('el catálogo abarca de 1999 a hoy', () => {
-  const fechas = Object.values(SETS).map((s) => s.rel).filter(Boolean).sort();
+/* Inglesas y japonesas son dos colecciones con su propia línea de tiempo. Las
+   inglesas empiezan en 1999; las japonesas, en 1996, cuando salió el primer
+   sobre en Japón. */
+const INGLESES = Object.entries(SETS).filter(([, s]) => !s.ja);
+const JAPONESES = Object.entries(SETS).filter(([, s]) => s.ja);
+
+test('el catálogo inglés abarca de 1999 a hoy', () => {
+  const fechas = INGLESES.map(([, s]) => s.rel).filter(Boolean).sort();
   assert.ok(fechas[0].startsWith('1999'), `el más antiguo es ${fechas[0]}`);
   assert.ok(fechas[fechas.length - 1] >= '2026', `el más nuevo es ${fechas.at(-1)}`);
 });
 
-test('los sets están ordenados por fecha', () => {
-  const ordenados = Object.entries(SETS).sort((a, b) => a[1].o - b[1].o);
+test('las expansiones inglesas están ordenadas por fecha', () => {
+  const ordenados = [...INGLESES].sort((a, b) => a[1].o - b[1].o);
   for (let i = 1; i < ordenados.length; i++) {
     const antes = ordenados[i - 1][1].rel || '9999';
     const ahora = ordenados[i][1].rel || '9999';
     assert.ok(antes <= ahora, `${ordenados[i - 1][1].n} (${antes}) va antes que ${ordenados[i][1].n} (${ahora})`);
   }
+});
+
+test('las expansiones japonesas con fecha están ordenadas por ella, y las que no la tienen van detrás', () => {
+  const ordenados = [...JAPONESES].sort((a, b) => a[1].o - b[1].o);
+  assert.ok(ordenados.filter(([, s]) => s.rel).length > 50, 'casi ninguna japonesa tiene fecha');
+  let vistoSinFecha = false;
+  let previa = '';
+  for (const [, s] of ordenados) {
+    if (!s.rel) { vistoSinFecha = true; continue; }
+    assert.ok(!vistoSinFecha, `${s.n} tiene fecha pero va detrás de una que no`);
+    assert.ok(previa <= s.rel, `${s.n} (${s.rel}) va después de una más nueva (${previa})`);
+    previa = s.rel;
+  }
+  const fechas = ordenados.map(([, s]) => s.rel).filter(Boolean);
+  assert.ok(fechas[0] >= '1996' && fechas[0] < '1997', `la primera japonesa es de ${fechas[0]}`);
 });
 
 test('las cartas de pareja se cuentan en el Pokémon que toca', () => {

@@ -61,13 +61,13 @@ def leer(idioma):
     n_serie, pos = -1, 0
     for m in re.finditer(
             r'<h1 class="icon set"><img src="([^"]+)">([^<]+)</h1>'
-            r'|<a class="button" name="([^"]*)" href="[^"]*" title="([^"]*)">\s*<img src="([^"]+\.logo\.\d+\.png)"', h):
+            r'|<a class="button" name="([^"]*)" href="([^"]*)" title="([^"]*)">\s*<img src="([^"]+\.logo\.\d+\.png)"', h):
         if m.group(2):
             serie_logo, serie = m.group(1), m.group(2).strip()
             n_serie, pos = n_serie + 1, 0
         else:
-            nombre = re.sub(r'\s+Set$', '', m.group(4).strip())
-            salida.append({'codigo': m.group(3).strip(), 'nombre': nombre, 'logo': m.group(5),
+            nombre = re.sub(r'\s+Set$', '', m.group(5).strip())
+            salida.append({'codigo': m.group(3).strip(), 'href': m.group(4), 'nombre': nombre, 'logo': m.group(6),
                            'serie': serie, 'serie_logo': serie_logo, 'ns': n_serie, 'pos': pos})
             pos += 1
     return salida
@@ -151,7 +151,7 @@ def main():
             if guardar(r['logo'], os.path.join(DESTINO, sid + '.webp'), (360, 160)):
                 hechos += 1
             slug = re.sub(r'[^a-z0-9]+', '-', (idioma + ' ' + r['serie']).lower()).strip('-')
-            series[sid] = {'serie': r['serie'], 'slug': slug, 's': r['ns'], 'p': r['pos']}
+            series[sid] = {'serie': r['serie'], 'slug': slug, 's': r['ns'], 'p': r['pos'], 'u': r['href']}
             if r['serie_logo']:
                 guardar(r['serie_logo'], os.path.join(DESTINO, 'series', slug + '.webp'), (300, 120))
         sin_pareja[idioma] = huerfanos
