@@ -2,6 +2,7 @@
      en Pokellector (cada serie con su cinta y su logo) y de la más antigua a
      la más moderna. -->
 <script lang="ts">
+  import { rutas } from './rutas'
   import Cinta from './Cinta.svelte'
   import Logo from './Logo.svelte'
   import { app, delIdioma, progreso, logos, type Set } from './store.svelte'
@@ -50,7 +51,7 @@
     <Cinta {color} titulo={b.titulo} sub="{b.filas.length} expansiones">
       {#snippet icono()}
         {#if b.slug && logos.ids.has('series/' + b.slug)}
-          <img class="serie" src="/logos/series/{b.slug}.webp" alt="" />
+          <img class="serie" src={rutas.serie(b.slug)} alt="" />
         {:else}
           <span class="serie-vacia"></span>
         {/if}
@@ -82,7 +83,7 @@
     position: relative; display: grid; grid-template-rows: 62px auto auto auto; justify-items: center; align-items: center;
     gap: 4px; padding: 10px 10px 10px; min-height: 132px; text-align: center; min-width: 0;
     border: 1px solid var(--linea); border-radius: var(--radio-m);
-    background: linear-gradient(180deg, #fff 0%, var(--hueco) 100%);
+    background: linear-gradient(180deg, var(--papel) 0%, var(--hueco) 100%);
     touch-action: manipulation;
     animation: sube .42s cubic-bezier(.2,.8,.2,1) both; animation-delay: var(--r);
     transition: transform .18s cubic-bezier(.2,.8,.2,1), border-color .15s;

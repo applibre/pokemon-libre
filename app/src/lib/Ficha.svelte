@@ -1,6 +1,7 @@
 <!-- La ficha: la carta grande, en 3D, con sus datos, y flechas para pasar a
      la siguiente. Se abre con el vuelo de la carta desde su celda. -->
 <script lang="ts">
+  import { rutas } from './rutas'
   import Carta3D from './Carta3D.svelte'
   import { app, tengo, cuantas, alternar, ponerVariante, numeroImpreso, ETAPA, NOMBRE_VARIANTE, mesYAnio, type Carta } from './store.svelte'
   import { foil } from './foil'
@@ -78,7 +79,7 @@
 
     <div class="carta" style="view-transition-name: carta">
       {#key c.id}
-        <Carta3D src="/data/cartas/g/{c.id}.webp" alt={c.n} foil={foil(c)} />
+        <Carta3D src={rutas.cartaGrande(c.id)} alt={c.n} foil={foil(c)} />
       {/key}
     </div>
 

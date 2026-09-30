@@ -1,5 +1,6 @@
 <!-- Inicio: tus Pokémon como baldosas con su carta, no como una tabla de números. -->
 <script lang="ts">
+  import { rutas } from './rutas'
   import Cinta from './Cinta.svelte'
   import { app, cartasDe, progreso } from './store.svelte'
 
@@ -35,8 +36,8 @@
       {#each b.items as x, i (x.p.id)}
         <button class="baldosa" style="--c:{x.color}; --r:{i * 28}ms" onclick={() => abrir(x.p.id)}>
           <span class="mazo">
-            {#if x.cartas[1]}<img class="atras" src="/data/cartas/{x.cartas[1].id}.webp" alt="" loading="lazy" />{/if}
-            <img class="frente" src="/data/cartas/{x.cartas[0].id}.webp" alt="" loading="lazy" />
+            {#if x.cartas[1]}<img class="atras" src={rutas.carta(x.cartas[1].id)} alt="" loading="lazy" />{/if}
+            <img class="frente" src={rutas.carta(x.cartas[0].id)} alt="" loading="lazy" />
           </span>
           <span class="nombre">{x.p.nombre}</span>
           <span class="cuenta"><b>{x.tengo}</b> / {x.total}</span>
@@ -65,8 +66,8 @@
     position: relative; display: grid; justify-items: center; gap: 2px; padding: 12px 10px 12px;
     border: 1px solid var(--linea); border-radius: var(--radio-m); overflow: hidden; text-align: center;
     background:
-      radial-gradient(90% 70% at 50% 18%, color-mix(in srgb, var(--c) 26%, #fff) 0%, transparent 72%),
-      linear-gradient(180deg, #fff, var(--hueco));
+      radial-gradient(90% 70% at 50% 18%, color-mix(in srgb, var(--c) 26%, var(--papel)) 0%, transparent 72%),
+      linear-gradient(180deg, var(--papel), var(--hueco));
     touch-action: manipulation;
     animation: sube .45s cubic-bezier(.2,.8,.2,1) both; animation-delay: var(--r);
     transition: transform .18s cubic-bezier(.2,.8,.2,1), box-shadow .18s;

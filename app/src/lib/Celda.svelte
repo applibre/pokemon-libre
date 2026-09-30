@@ -1,6 +1,7 @@
 <!-- Una carta en su celda: siempre del mismo tamaño y centrada, con su placa
      «#10 - Nombre». Tocar la carta la abre; el círculo la marca. -->
 <script lang="ts">
+  import { rutas } from './rutas'
   import { tengo, alternar, numeroImpreso, type Carta } from './store.svelte'
   let { carta, abrir, retraso = 0 }: { carta: Carta; abrir: (c: Carta, img: HTMLElement) => void; retraso?: number } = $props()
   const mia = $derived(tengo(carta.id))
@@ -8,7 +9,7 @@
 
 <div class="celda" class:mia data-carta={carta.id} style="--r:{retraso}ms">
   <button class="ver" onclick={(e) => abrir(carta, e.currentTarget.querySelector('img')!)} aria-label="Abrir {carta.n} {numeroImpreso(carta)}">
-    <img src="/data/cartas/{carta.id}.webp" alt="" loading="lazy" decoding="async" width="245" height="342" />
+    <img src={rutas.carta(carta.id)} alt="" loading="lazy" decoding="async" width="245" height="342" />
     <span class="placa">#{numeroImpreso(carta)} · {carta.n}</span>
   </button>
   <button class="check" onclick={() => alternar(carta)} aria-pressed={mia} aria-label={mia ? 'Quitar de mi colección' : 'La tengo'}>

@@ -1,6 +1,7 @@
 <!-- El logo oficial de una expansión. Si no lo tenemos, un emblema neutro o el
      nombre en texto: nunca un hueco roto ni una petición que da 404. -->
 <script lang="ts">
+  import { rutas } from './rutas'
   import { logos } from './store.svelte'
   let { id, nombre, alto = 44, respaldo = 'texto' }: {
     id: string; nombre: string; alto?: number; respaldo?: 'texto' | 'icono'
@@ -9,7 +10,7 @@
 </script>
 
 {#if hay}
-  <img src="/logos/{id}.webp" alt={nombre} style="height:{alto}px;max-width:100%;width:auto;object-fit:contain" loading="lazy" />
+  <img src={rutas.logo(id)} alt={nombre} style="height:{alto}px;max-width:100%;width:auto;object-fit:contain" loading="lazy" />
 {:else if respaldo === 'icono'}
   <span class="ico" style="width:{alto * 0.7}px;height:{alto * 0.7}px" aria-hidden="true"></span>
 {:else}
