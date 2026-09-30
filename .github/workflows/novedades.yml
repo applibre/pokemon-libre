@@ -95,7 +95,8 @@ jobs:
 
       - name: Ya estaban esperando
         if: steps.preparar.outputs.codigo == '3'
-        run: echo "### Nada nuevo desde la última vez: las novedades pendientes siguen esperando en la app" >> "$GITHUB_STEP_SUMMARY"
+        run: |
+          echo "### Nada nuevo desde la última vez: las novedades pendientes siguen esperando en la app" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Probar la app con las novedades
         if: steps.preparar.outputs.codigo == '0'
