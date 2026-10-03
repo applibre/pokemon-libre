@@ -96,6 +96,10 @@
   <p class="pos">{indice + 1} de {lista.length}</p>
 
   <!-- cuántas tienes de cada forma en que salió esta carta -->
+  {#if c.vn && app.nd[c.vn]}
+    <p class="distingue"><b>Se distingue por:</b> {app.nd[c.vn]}{#if c.fr} <i>La foto es la de la carta normal: no enseña la diferencia.</i>{/if}</p>
+  {/if}
+
   <div class="variantes">
     {#each c.v as v (v)}
       {@const n = cuantas(c.id, v)}
@@ -155,6 +159,10 @@
   .cab { padding-right: 40px; }
   h2 { margin: 0; font-size: 21px; font-weight: 800; letter-spacing: -.02em; line-height: 1.15; }
   .cab p { margin: 3px 0 0; font-size: 13.5px; color: var(--tinta-3); font-weight: 600; }
+  .distingue { margin: 0; padding: 9px 12px; border-radius: 12px; font-size: 13.5px; line-height: 1.4; color: var(--tinta-2, #33415c);
+    background: color-mix(in srgb, var(--oro) 12%, var(--papel)); border: 1px solid color-mix(in srgb, var(--oro) 45%, transparent); }
+  .distingue b { color: #8a5d00; }
+  .distingue i { display: block; margin-top: 4px; font-size: 12.5px; color: var(--tinta-3); }
   .cab p.vn { color: #a06f00; font-weight: 800; font-size: 14px; }
 
   .escena { position: relative; display: grid; place-items: center; padding: 6px 0 2px; }

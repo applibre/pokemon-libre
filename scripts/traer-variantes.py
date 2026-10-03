@@ -93,6 +93,9 @@ def limpia(t):
 def nombre_variante(p):
     """El nombre que verá Arturo, o None si el producto no es una variante."""
     g, n = p['gn'], p['n']
+    # Arturo no quiere cartas gigantes (oversize/jumbo): ni como carta ni como variante
+    if re.match(r'^Jumbo Cards', g) or re.search(r'jumbo|oversize', n, re.I):
+        return None
     for rx, _ in GRUPOS_SOLO:
         if re.match(rx, g):
             año = re.search(r'\d{4}', g).group(0) if re.search(r'\d{4}', g) else '2020'
@@ -231,17 +234,72 @@ for tp, fs in formas.items():
             anadidas[k] += 1
 print('formas añadidas desde TCGplayer:', dict(anadidas))
 
+# ------------------------------------------------------------------ revisión a ojo (02-10-2026), carta por carta
+# Regla de Arturo: una variante es OTRA carta solo si se VE distinta (sello, patrón de brillo, mejillas,
+# sombra, error de impresión…). Si físicamente es la misma carta que ya está, no se duplica:
+#   · la «Mirror Holo» japonesa es el reverse holo japonés  → contador «Reverse holo» de la carta
+#   · las «exclusivas» de mazo/blíster y las versiones no holo idénticas → contador de su forma (Normal/Holo)
+#   · si la carta base YA lleva ese sello (toda su colección va sellada) → la variante sobra
+A_FORMA = {
+    'bw10-16~exclusiva-de-mazo-bw-plasma-blast', 'bw7-31~exclusiva-de-mazo-non-holo', 'dp3-20~exclusiva-de-mazo-secret-wonders',
+    'ex14-14~exclusiva-de-mazo-ex-crystal-guardians', 'ex14-28~exclusiva-de-mazo-ex-crystal-guardians',
+    'lc-3~exclusiva-de-mazo-wotc-legendary-collection', 'lc-4~exclusiva-de-mazo-wotc-legendary-collection', 'lc-7~exclusiva-de-mazo-wotc-legendary-collection',
+    'pl3-13~exclusiva-de-mazo-dppt-supreme-victors', 'sm10-33~exclusiva-de-blister-premium-collection-promo', 'sm10-34~premium-collection-promo',
+    'sm3-18~premium-collection-promo', 'sm3-19~premium-collection-promo', 'smp-SM04~target-non-holo',
+    'sm4-31~exclusiva-de-mazo-sm-crimson-invasion', 'sm4-38~exclusiva-de-mazo-prerelease-kit-exclusive',
+    'sm7.5-3~exclusiva-de-mazo-let-s-play-eevee', 'sm9-14~exclusiva-de-mazo-sm-team-up', 'sv04.5-019~exclusiva-de-mazo-paldean-fates',
+    'swsh11-066~exclusiva-de-mazo', 'xy1-43~exclusiva-de-mazo-battle-arena-deck-exclusive', 'xy12-36~exclusiva-de-mazo-xy-evolutions',
+    'xy8-60~exclusiva-de-mazo-xy-breakthrough',
+}
+SOBRA = {'ja-35091~pikachu-stamped', 'ja-35110~pikachu-stamped', 'ja-45929~battle-academy-2020', 'ja-45957~battle-academy-2020'}
+FORMA_DE_JA = {'mirror-holo': 'reverse'}
+quitadas = Counter()
+movidas = {}   # variante que deja de ser carta → [carta base, forma]: la app mueve ahí lo que Arturo hubiera marcado
+todas_vid = {f'{b}~{k}' for b, ex in extras.items() for k in ex}
+falta = sorted((A_FORMA | SOBRA) - todas_vid)
+assert not falta, f'la revisión nombra variantes que no existen: {falta}'
+for bid in list(extras):
+    for k in list(extras[bid]):
+        vid = f'{bid}~{k}'
+        fs = formas_var.get(extras[bid][k]['tp'], set())
+        if vid in SOBRA:
+            movidas[vid] = [bid, None]
+            del extras[bid][k]; quitadas['sobra (la base ya lleva el sello)'] += 1
+        elif bid.startswith('ja-') and k in FORMA_DE_JA:
+            if FORMA_DE_JA[k] not in cartas[bid]:
+                cartas[bid].append(FORMA_DE_JA[k])
+            movidas[vid] = [bid, FORMA_DE_JA[k]]
+            del extras[bid][k]; quitadas['mirror japonesa → Reverse holo'] += 1
+        elif vid in A_FORMA:
+            fs_ = [f for f in ('normal', 'holo', 'reverse') if f in fs] or ['normal']
+            for f in fs_:
+                if f not in cartas[bid]:
+                    cartas[bid].append(f)
+            movidas[vid] = [bid, fs_[0]]
+            del extras[bid][k]; quitadas['idéntica → contador de su forma'] += 1
+    if not extras[bid]:
+        del extras[bid]
+for k in [k for k in nv if not any(k in ex for ex in extras.values())]:
+    del nv[k]
+print('revisión a ojo:', dict(quitadas))
+
 # cada variante especial lleva sus formas (Normal/Holo…) y su precio, según su propio producto de TCGplayer
 for bid, ex in extras.items():
     for k, d in ex.items():
         fs = formas_var.get(d['tp'], set())
-        d['v'] = [f for f in ('normal', 'holo', 'reverse', 'firstEdition') if f in fs] or ['normal']
+        d['v'] = [f for f in ('normal', 'holo', 'reverse', 'firstEdition') if f in fs and not (k.startswith('shadowless') and f == 'firstEdition')] or ['normal']
         pr = precio.get(d['tp'], {})
         usd = pr.get('Normal') or pr.get('Holofoil') or pr.get('Reverse Holofoil') or pr.get('1st Edition') or pr.get('Unlimited Holofoil') or next(iter(pr.values()), None)
         if usd:
             d['usd'] = round(usd, 2)
-json.dump({'nv': dict(sorted(nv.items())), 'cartas': dict(sorted(cartas.items())), 'extras': dict(sorted(extras.items())),
-           'reemplaza': reemplaza, 'revisar': revisar},
+# ------------------------------------------------------------------ en qué se distingue cada una (lo que se ve en la carta)
+from diferencias import diferencia  # noqa: E402
+nd = {k: diferencia(n) for k, n in nv.items()}
+sin = sorted({nv[k] for k, t in nd.items() if not t})
+assert not sin, f'variantes sin explicación de en qué se distinguen: {sin}'
+
+json.dump({'nv': dict(sorted(nv.items())), 'nd': dict(sorted(nd.items())), 'cartas': dict(sorted(cartas.items())), 'extras': dict(sorted(extras.items())),
+           'reemplaza': reemplaza, 'movidas': dict(sorted(movidas.items())), 'revisar': revisar},
           open(os.path.join(AQUI, 'variantes.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
 total = sum(len(v) for v in extras.values())
 print(f'cartas-variante: {total} sobre {len(extras)} cartas base · formas sueltas en {len(cartas)} cartas · {len(nv)} nombres distintos · a revisar: {len(revisar)}')

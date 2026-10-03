@@ -103,7 +103,8 @@ await ctx.close()
 {
   const antes = {
     schemaVersion: 2,
-    coleccion: { 'sv05-051': { 'pokemon-day-2026': 2, holo: 1 }, 'base1-4': { shadowless: 1 }, 'base1-58': { normal: 1 } },
+    coleccion: { 'sv05-051': { 'pokemon-day-2026': 2, holo: 1 }, 'base1-4': { shadowless: 1 }, 'base1-58': { normal: 1 },
+      'ja-37901~mirror-holo': { normal: 1 }, 'base1-58~shadowless': { firstEdition: 1, normal: 1 }, 'svp-196~jumbo-tamano-gigante': { holo: 1 } },
     ajustes: { tema: 'claro', verFamilias: true, idioma: 'en', verPrecios: true, moneda: 'eur' },
     creado: '2026-10-02', ultimaCopia: null,
   }
@@ -115,6 +116,10 @@ await ctx.close()
   ok(m['sv05-051~pokemon-day-2026']?.holo === 2, `el sello de Pokémon Day marcado como contador pasó a su carta: ${JSON.stringify(m['sv05-051~pokemon-day-2026'])}`)
   ok(m['sv05-051']?.holo === 1 && !('pokemon-day-2026' in (m['sv05-051'] || {})), `la carta base conserva lo suyo y pierde el contador: ${JSON.stringify(m['sv05-051'])}`)
   ok(!!m['base1-4~shadowless'] && !m['base1-4'], `la Shadowless también: ${JSON.stringify(m['base1-4~shadowless'])}`)
+  ok(m['ja-37901']?.reverse === 1 && !m['ja-37901~mirror-holo'], `la Mirror japonesa (ya no es carta) pasó al Reverse holo de su carta: ${JSON.stringify(m['ja-37901'])}`)
+  ok(m['base1-58']?.firstEdition === 1 && m['base1-58~shadowless']?.normal === 1 && !m['base1-58~shadowless'].firstEdition,
+    `la 1.ª edición marcada en la Shadowless pasó a la carta normal: ${JSON.stringify(m['base1-58'])} / ${JSON.stringify(m['base1-58~shadowless'])}`)
+  ok(m['svp-196~jumbo-tamano-gigante']?.holo === 1, 'lo marcado en una gigante que ya no está se conserva guardado (no se borra nada)')
   ok(m['base1-58']?.normal === 1, 'lo que no es variante no se toca')
   const marcadas = await p2.$$eval('.celda.mia', (e) => e.map((x) => x.innerText.replace(/\s+/g, ' ')))
   ok(marcadas.some((t) => t.includes('Pokémon Day 2026')), `en la lista, la carta del sello sale marcada: ${marcadas.join(' | ')}`)

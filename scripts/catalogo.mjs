@@ -547,9 +547,8 @@ async function main() {
       const vid = `${bid}~${k}`;
       if (porId.has(vid)) {
         base.v = base.v.filter((x) => x !== k);
-        const ya = porId.get(vid);   // ya es carta: solo se le suman formas que le faltaban, nunca se le quitan
-        for (const f of d.v) if (!ya.v.includes(f)) { ya.v.push(f); variantesPuestas++; }
-        ya.v = ordenForma(ya.v);
+        const ya = porId.get(vid);   // ya es carta: sus formas son las de su producto (la app mueve lo marcado en una forma que ya no tiene)
+        if (JSON.stringify(ya.v) !== JSON.stringify(ordenForma(d.v))) { ya.v = ordenForma(d.v); variantesPuestas++; }
         continue;
       }
       if (conFoto(vid)) {
@@ -564,6 +563,12 @@ async function main() {
       }
     }
   }
+  // revisión a ojo: las variantes que NO se distinguen de su carta (o eran la misma) dejan de ser carta.
+  // `mv` dice a la app adónde mover lo que ya estuviera marcado en ellas.
+  const antesRevision = cartas.length;
+  cartas = cartas.filter((c) => !c.vn || dv.extras?.[c.id.split('~')[0]]?.[c.vn]);
+  for (const id of [...porId.keys()]) if (!cartas.some((c) => c.id === id)) porId.delete(id);
+  const mv = dv.movidas || {};
   // una clave especial que ya no existe en variantes.json (se renombró) no se queda colgada en `v`
   for (const c of cartas) c.v = c.v.filter((k) => FORMAS.includes(k) || (dv.extras?.[c.id]?.[k] && !porId.has(`${c.id}~${k}`)));
   // cada variante, justo detrás de su carta base
@@ -571,11 +576,28 @@ async function main() {
   for (const c of cartas) if (c.vn) (detras.get(c.id.split('~')[0]) || detras.set(c.id.split('~')[0], []).get(c.id.split('~')[0])).push(c);
   cartas = cartas.filter((c) => !c.vn).flatMap((c) => [c, ...(detras.get(c.id) || [])]);
   for (const c of cartas) for (const k of [c.vn, ...c.v]) if (k && dv.nv[k]) nv[k] = dv.nv[k];
+  // en qué se distingue cada una, y las que tienen una foto que no lo enseña
+  const nd = Object.fromEntries(Object.keys(nv).filter((k) => dv.nd?.[k]).map((k) => [k, dv.nd[k]]));
+  const fr = new Set(JSON.parse(await readFile(path.join(AQUI, 'fotos-referencia.json'), 'utf8').catch(() => '[]')));
+  for (const c of cartas) { if (fr.has(c.id)) c.fr = 1; else delete c.fr; }
+  console.log(`Revisión    ${antesRevision - cartas.length} variantes que no se distinguen, fuera como carta
+`);
   console.log(`Variantes   ${cartasVariante} cartas-variante nuevas · ${contadores} como contador (sin foto) · ${variantesPuestas} cambios · ${Object.keys(nv).length} nombres
 `);
 
+  /* 5.9 · fuera las cartas gigantes (oversize/jumbo): Arturo no las quiere en la colección.
+     Las Box Topper de la era e-Card (set «bt» de TCGdex) también son gigantes. */
+  const GIGANTE = (c) => c.s === 'bt' || c.s === 'lcbt' || /^jumbo/.test(c.vn || '');
+  const antesGigantes = cartas.length;
+  cartas = cartas.filter((c) => !GIGANTE(c));
+  for (const c of cartas) c.v = c.v.filter((k) => !/^jumbo/.test(k));
+  for (const id of ['bt', 'lcbt']) delete sets[id];
+  for (const k of Object.keys(nv)) if (/^jumbo/.test(k)) { delete nv[k]; delete nd[k]; }
+  console.log(`Gigantes    ${antesGigantes - cartas.length} cartas fuera
+`);
+
   /* 6 · escribir */
-  const json = JSON.stringify({ sets, cartas, nv: Object.fromEntries(Object.entries(nv).sort()) });
+  const json = JSON.stringify({ sets, cartas, nv: Object.fromEntries(Object.entries(nv).sort()), nd: Object.fromEntries(Object.entries(nd).sort()), mv });
   const hash = createHash('sha256').update(json).digest('hex').slice(0, 12);
 
   await writeFile(path.join(DATOS, 'catalogo.json'), json);

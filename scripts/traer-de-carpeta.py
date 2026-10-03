@@ -182,13 +182,8 @@ EN_EXTRAS = [
     ("ME: Mega Evolution Promo", 712963, 'mep-093', 'mep', '093', '093'),
     ("ME: Mega Evolution Promo", 713257, 'mep-107', 'mep', '107', '107'),
     ("ME: Mega Evolution Promo", 713256, 'mep-109', 'mep', '109', '109'),
-    # Cartas gigantes de la Legendary Collection (otra carta que las bt-4/bt-9 del Box Topper de 2003)
-    ("Jumbo Cards", 210841, 'lcbt-1', 'lcbt', '1', 'S1/S4'),
-    ("Jumbo Cards", 210842, 'lcbt-2', 'lcbt', '2', 'S2/S4'),
-    ("Jumbo Cards", 210843, 'lcbt-3', 'lcbt', '3', 'S3/S4'),
 ]
-SETS_EN_NUEVOS = {'kidswb': {'n': "Kids' WB Promos", 'rel': '2004-07-02', 'tot': 5},
-                  'lcbt': {'n': 'Legendary Collection · cartas gigantes del Box Topper', 'rel': '2002-05-24', 'tot': 4}}
+SETS_EN_NUEVOS = {'kidswb': {'n': "Kids' WB Promos", 'rel': '2004-07-02', 'tot': 5}}
 grupos_en = {g['name']: g['groupId'] for g in m.pedir('https://tcgcsv.com/tcgplayer/3/groups', cache=False)['results']}
 for gn, pid, cid, sid, numero, ni, *idioma in EN_EXTRAS:
     if cid in ya:

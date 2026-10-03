@@ -496,13 +496,55 @@ test('las variantes tienen nombre en castellano', () => {
   }
 });
 
+test('sin cartas gigantes (oversize / jumbo / Box Topper): Arturo no las quiere', () => {
+  const gigantes = CARTAS.filter((c) => /jumbo|oversize/i.test(`${c.id} ${c.vn || ''} ${c.v.join(' ')}`) || ['bt', 'lcbt'].includes(c.s));
+  assert.deepStrictEqual(gigantes.map((c) => c.id), []);
+  assert.ok(!SETS.bt && !SETS.lcbt, 'siguen los sets de cartas gigantes');
+  assert.ok(!Object.keys(catalogo.nv || {}).some((k) => /jumbo/.test(k)));
+});
+
+test('una variante solo es carta si se distingue a simple vista (revisión a ojo del 02-10-2026)', () => {
+  const porId = new Map(CARTAS.map((c) => [c.id, c]));
+  // cada carta-variante dice en qué se distingue
+  for (const c of CARTAS.filter((x) => x.vn)) assert.ok(catalogo.nd?.[c.vn], `${c.id}: no dice en qué se distingue`);
+  assert.match(catalogo.nd['pokemon-day-2026'], /sello de Pokémon Day 2026/);
+  assert.match(catalogo.nd['shadowless-red-cheeks'], /mejillas ROJAS/);
+  // la «Mirror Holo» japonesa es el reverse holo japonés: contador de la carta, no otra carta
+  assert.ok(!CARTAS.some((c) => c.vn === 'mirror-holo'), 'queda alguna Mirror japonesa como carta');
+  assert.ok(porId.get('ja-37901').v.includes('reverse'));
+  // exclusivas de mazo idénticas a la normal → contador; la Pikachu de Family Pokémon ya lleva el sello en la normal
+  for (const id of ['ex14-14~exclusiva-de-mazo-ex-crystal-guardians', 'bw7-31~exclusiva-de-mazo-non-holo', 'smp-SM04~target-non-holo',
+    'ja-35091~pikachu-stamped', 'ja-45929~battle-academy-2020']) assert.ok(!porId.has(id), `${id} sigue siendo carta`);
+  // lo que estuviera marcado en ellas tiene adónde ir
+  for (const [id, [destino]] of Object.entries(catalogo.mv || {})) {
+    assert.ok(!porId.has(id), `${id} está en mv pero sigue siendo carta`);
+    assert.ok(porId.has(destino), `${id} → ${destino}, que no existe`);
+  }
+  // la Shadowless no repite la 1.ª edición (se marca en la carta normal, como siempre)
+  for (const c of CARTAS.filter((x) => /^shadowless/.test(x.vn || ''))) assert.ok(!c.v.includes('firstEdition'), `${c.id} con 1.ª edición`);
+  // las que siguen siendo carta, sí se distinguen: sellos, brillos, sombra, mejillas, errores…
+  for (const id of ['sv05-051~pokemon-day-2026', 'smp-SM190~stamped', 'base1-58~shadowless', 'base1-58~shadowless-red-cheeks', 'base1-58~e3-stamped'])
+    assert.ok(porId.has(id), `falta ${id}`);
+});
+
+test('la foto de la carta normal no es la de su variante (Detective Pikachu SM190, Base Set…)', () => {
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const foto = (id) => fs.readFileSync(path.join(__dirname, '..', 'data', 'cartas', 'g', `${id}.webp`));
+  for (const [base, v] of [['smp-SM190', 'smp-SM190~stamped'], ['smp-SM198', 'smp-SM198~detective-pikachu-stamped'], ['basep-1', 'basep-1~misprint']]) {
+    assert.ok(!foto(base).equals(foto(v)), `${base}: misma foto que su variante`);
+  }
+  const corregidas = require('../scripts/fotos-base.json');
+  for (const id of ['smp-SM190', 'smp-SM198', 'basep-1', 'base1-58', 'base1-4']) assert.ok(corregidas[id], `${id}: foto sin corregir`);
+});
+
 test('cada variante especial (sello, Cosmos Holo, Jumbo…) es otra carta, con su foto', () => {
   const fs = require('node:fs');
   const path = require('node:path');
   const nv = catalogo.nv || {};
   const porId = new Map(CARTAS.map((c) => [c.id, c]));
   const variantes = CARTAS.filter((c) => c.vn);
-  assert.ok(variantes.length >= 300, `solo ${variantes.length} cartas-variante`);
+  assert.ok(variantes.length >= 240, `solo ${variantes.length} cartas-variante`);
   assert.ok(Object.keys(nv).length >= 100, `solo ${Object.keys(nv).length} nombres de variante`);
 
   // la Pikachu 051/162 de Temporal Forces con el sello de Pokémon Day 2026 es una carta aparte
@@ -549,11 +591,10 @@ test('cada variante especial (sello, Cosmos Holo, Jumbo…) es otra carta, con s
 
   // las formas que TCGdex dejaba sin marcar y TCGplayer sí vende: la Haunter ex12-35 existe también en Reverse holo
   assert.ok(porId.get('ex12-35').v.includes('reverse'), 'Haunter 35 sin Reverse holo');
-  // el Charizard ex 196 gigante es una variante del promo svp-196; el Pikachu del 10.º aniversario, del np-12
-  assert.ok(porId.get('svp-196~jumbo-tamano-gigante'));
+  // el Pikachu del 10.º aniversario es una variante del np-12
   assert.ok(porId.get('np-12~10th-anniversary'));
   // las cartas gigantes de la Legendary Collection están como cartas; las japonesas que TCGplayer lista dos veces, no
-  for (const id of ['lcbt-1', 'lcbt-2', 'lcbt-3']) assert.ok(porId.get(id), `falta la carta ${id}`);
+  // (las gigantes de la Legendary Collection se quitaron: Arturo no quiere oversize)
   assert.ok(!CARTAS.some((c) => ['ja-tp282521', 'ja-tp478250', 'ja-tp484830'].includes(c.id)), 'carta japonesa duplicada');
   // toda clave de nv la usa alguna carta (nada huérfano)
   const usadas = new Set(CARTAS.flatMap((c) => [...c.v, ...(c.vn ? [c.vn] : [])]));

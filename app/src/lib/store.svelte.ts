@@ -15,6 +15,8 @@ export type Carta = {
   r: string; v: string[]; ill: string; l?: 'ja'; ni?: string
   /** clave de la variante especial (sello, holo especial…): esta carta ES esa variante de la carta de su id antes de «~» */
   vn?: string
+  /** la foto es la de la carta normal: no enseña el sello o el brillo */
+  fr?: 1
   eur?: number; usd?: number
   tc_id?: number; tc_slug?: string; tp_id?: number
   j?: { e?: string; de?: string; ps?: number; t?: string[] }
@@ -39,6 +41,10 @@ class Tienda {
   base = $state.raw<{ sets: Record<string, Set>; cartas: Carta[] }>({ sets: {}, cartas: [] })
   /** nombre en castellano de las variantes especiales (sellos, holos…): clave → nombre */
   nv = $state.raw<Record<string, string>>({})
+  /** en qué se distingue a simple vista cada variante especial: clave → texto */
+  nd = $state.raw<Record<string, string>>({})
+  /** variantes que dejaron de ser carta (no se distinguían): id → [carta adonde va lo marcado, forma] */
+  private mv: Record<string, [string, string | null]> = {}
   novedad = $state.raw<Novedades | null>(null)
   // sube cada vez que decides una novedad: el aviso se entera al momento
   private decisiones = $state(0)
@@ -58,6 +64,8 @@ class Tienda {
     ])
     this.base = { sets: cat.sets, cartas: cat.cartas }
     this.nv = cat.nv || {}
+    this.nd = cat.nd || {}
+    this.mv = cat.mv || {}
     // las novedades son opcionales: si no hay fichero o no se lee, la app sigue igual
     try {
       const r = await fetch(`${base}data/novedades.json`, { cache: 'no-cache' })
@@ -76,22 +84,38 @@ class Tienda {
       ahora son cartas propias, con id «<base>~<clave>». Lo que ya tenías marcado en ese contador
       pasa a su carta: ninguna marca se pierde. Sin nada que mover no escribe nada. */
   private migrarVariantes() {
+    /* Ninguna marca se pierde cuando cambia el catálogo de variantes:
+       1 · un contador de variante especial («pokemon-day-2026» dentro de sv05-051) → su carta propia;
+       2 · una variante que dejó de ser carta (no se distinguía de la normal: la Mirror japonesa,
+           las exclusivas de mazo idénticas…) → la carta normal, en su forma (Reverse, Holo…);
+       3 · una forma que la carta-variante ya no tiene (la 1.ª edición de la Shadowless) → la carta normal. */
     const porId = new Map(this.base.cartas.map((c) => [c.id, c]))
-    const mover: [string, string][] = []
-    for (const [id, marcas] of Object.entries(this.datos.coleccion))
-      for (const k of Object.keys(marcas)) if (porId.has(`${id}~${k}`)) mover.push([id, k])
+    const mover: [string, string, string, string][] = []   // [de, forma, a, forma]
+    for (const [id, marcas] of Object.entries(this.datos.coleccion)) {
+      const c = porId.get(id)
+      for (const k of Object.keys(marcas)) {
+        if (porId.has(`${id}~${k}`)) mover.push([id, k, `${id}~${k}`, variantePrincipal(porId.get(`${id}~${k}`)!)])
+        else if (!c && this.mv[id] && porId.has(this.mv[id][0])) {
+          const b = porId.get(this.mv[id][0])!
+          const f = this.mv[id][1] && b.v.includes(this.mv[id][1]!) ? this.mv[id][1]! : b.v.includes(k) ? k : variantePrincipal(b)
+          mover.push([id, k, b.id, f])
+        } else if (c?.vn && !c.v.includes(k)) {
+          const b = porId.get(id.split('~')[0])
+          if (b) mover.push([id, k, b.id, b.v.includes(k) ? k : variantePrincipal(b)])
+        }
+      }
+    }
     if (!mover.length) return
     this.cambiar((d) => {
-      for (const [id, k] of mover) {
-        const destino = `${id}~${k}`
-        const forma = variantePrincipal(porId.get(destino)!)
-        const n = d.coleccion[id][k]
-        d.coleccion[destino] = { ...(d.coleccion[destino] || {}), [forma]: Math.min(99, (d.coleccion[destino]?.[forma] || 0) + n) }
-        delete d.coleccion[id][k]
-        if (!Object.keys(d.coleccion[id]).length) delete d.coleccion[id]
+      for (const [de, k, a, f] of mover) {
+        const n = d.coleccion[de][k]
+        d.coleccion[a] = { ...(d.coleccion[a] || {}), [f]: Math.min(99, (d.coleccion[a]?.[f] || 0) + n) }
+        delete d.coleccion[de][k]
+        if (!Object.keys(d.coleccion[de]).length) delete d.coleccion[de]
       }
     })
   }
+
 
   private get decididas(): Record<string, number> {
     void this.decisiones

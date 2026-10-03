@@ -114,3 +114,59 @@ for cid, estado, dato in res:
     if estado == 'ok' and str(dato).startswith('http'):   # las de Carpeta son un fichero local, no una URL
         resc[cid] = dato
 json.dump(resc, open(ruta, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+
+# ------------------------------------------------------------------ fotos de carta base que enseñaban la variante
+# Revisión a ojo (02-10-2026): la foto de estas cartas NORMALES era en realidad la de su variante
+# (la Detective Pikachu SM190 con el logo de la película, la promo 1 con el error de 1.ª edición, las
+# del Base Set en 1.ª edición, sin sombra). Se pone la foto de su producto normal de TCGplayer.
+# bajar-imagenes.py respeta esta lista (scripts/fotos-base.json).
+FOTO_BASE = ['basep-1', 'smp-SM190', 'smp-SM198'] + [f'base1-{n}' for n in (2, 4, 14, 15, 24, 29, 30, 42, 44, 46, 50, 58, 63)]
+cat = json.load(open(os.path.join(RAIZ, 'data', 'catalogo.json'), encoding='utf-8'))
+por = {c['id']: c for c in cat['cartas']}
+ruta_fb = os.path.join(AQUI, 'fotos-base.json')
+fb = json.load(open(ruta_fb, encoding='utf-8')) if os.path.exists(ruta_fb) else {}
+for cid in FOTO_BASE:
+    if cid in fb:
+        continue
+    url = f"https://tcgplayer-cdn.tcgplayer.com/product/{por[cid]['tp_id']}_in_1000x1000.jpg"
+    im = Image.open(io.BytesIO(urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'}), timeout=60).read()))
+    im.load()
+    guarda(im, os.path.join(CARTAS, cid + '.webp'), 245)
+    guarda(im, os.path.join(GRANDES, cid + '.webp'), 600)
+    fb[cid] = url
+json.dump(fb, open(ruta_fb, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+print('fotos de carta base corregidas:', len(fb))
+
+# ------------------------------------------------------------------ fotos de referencia
+# Si la foto de una variante es prácticamente la de su carta normal (TCGplayer reutiliza la foto),
+# no enseña el sello o el brillo: la ficha lo avisa («foto de referencia»).
+from PIL import ImageOps  # noqa: E402
+
+
+def vec(cid):
+    im = ImageOps.autocontrast(Image.open(os.path.join(GRANDES, cid + '.webp')).convert('L').resize((90, 126)))
+    return list(im.get_flattened_data())
+
+
+def dist(a, b):
+    return sum(abs(x - y) for x, y in zip(a, b)) / len(a)
+
+
+# vistas a ojo: el sello es pequeño pero SÍ se ve en la foto (la calabaza, la palabra STAFF)
+SE_VE = {'swsh6-57~trick-or-trade-2021-copyright-date', 'swshp-SWSH068~prerelease-staff'}
+ref = []
+for base, ex in extras.items():
+    if not os.path.exists(os.path.join(GRANDES, base + '.webp')):
+        continue
+    vb = vec(base)
+    vistas = []
+    for k in ex:
+        cid = f'{base}~{k}'
+        if not os.path.exists(os.path.join(GRANDES, cid + '.webp')):
+            continue
+        vv = vec(cid)
+        if cid not in SE_VE and (dist(vv, vb) < 2.0 or any(dist(vv, o) < 1.0 for o in vistas)):
+            ref.append(cid)
+        vistas.append(vv)
+json.dump(sorted(ref), open(os.path.join(AQUI, 'fotos-referencia.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+print('variantes con foto de referencia (no enseña la diferencia):', len(ref), ref)

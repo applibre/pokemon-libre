@@ -152,6 +152,8 @@ def main():
     if os.path.exists(ruta_r):
         rescate = json.load(open(ruta_r, encoding='utf-8'))
 
+    ruta_fb = os.path.join(AQUI, 'fotos-base.json')
+    corregidas = json.load(open(ruta_fb, encoding='utf-8')) if os.path.exists(ruta_fb) else {}
     cartas = cat['cartas']
     sets = cat['sets']
     print(f'Cartas: {len(cartas)}  ·  rescatadas aparte: {len(rescate)}\n')
@@ -173,6 +175,15 @@ def main():
             cuenta['ya'] += 1
             bytes_tot[0] += os.path.getsize(chico) + os.path.getsize(grande)
             return (cid, 'ya')
+
+        # 0 · foto corregida a mano: la de TCGdex enseñaba la variante (scripts/fotos-base.json)
+        if cid in corregidas:
+            d = baja(corregidas[cid])
+            if d:
+                bytes_tot[0] += guarda(d, chico, ANCHO_CHICO)
+                bytes_tot[0] += guarda(d, grande, ANCHO_GRANDE)
+                cuenta['rescate'] += 1
+                return (cid, 'rescate')
 
         # 1 · TCGdex, la fuente principal. La ruta debe ser la de origen
         # (serie/set/numero); si no lo parece, se salta al respaldo.
