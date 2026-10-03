@@ -504,6 +504,16 @@ test('las variantes especiales (sellos, holos, exclusivas) están en el catálog
   assert.ok(pika, 'falta Pikachu 051/162');
   assert.ok(pika.v.includes('pokemon-day-2026'), 'Pikachu 051/162 sin la variante Pokémon Day');
   assert.strictEqual(D.nombreVariante('pokemon-day-2026', nv), 'Pokémon Day 2026');
+  // las formas que TCGdex dejaba sin marcar y TCGplayer sí vende: la Haunter ex12-35 existe también en Reverse holo
+  assert.ok(CARTAS.find((c) => c.id === 'ex12-35').v.includes('reverse'), 'Haunter 35 sin Reverse holo');
+  // el Charizard ex 196 gigante es una variante del promo svp-196; el Pikachu del 10.º aniversario, del np-12
+  assert.ok(CARTAS.find((c) => c.id === 'svp-196').v.includes('jumbo-tamano-gigante'));
+  assert.ok(CARTAS.find((c) => c.id === 'np-12').v.includes('10th-anniversary'));
+  // las cartas gigantes de la Legendary Collection están como cartas; las japonesas que TCGplayer lista dos veces, no
+  for (const id of ['lcbt-1', 'lcbt-2', 'lcbt-3']) {
+    assert.ok(CARTAS.find((c) => c.id === id), `falta la carta ${id}`);
+  }
+  assert.ok(!CARTAS.some((c) => ['ja-tp282521', 'ja-tp478250', 'ja-tp484830'].includes(c.id)), 'carta japonesa duplicada');
   // las claves de una carta no se repiten, y las normales siguen en su sitio
   for (const c of CARTAS) {
     assert.strictEqual(new Set(c.v).size, c.v.length, `${c.id} tiene variantes repetidas`);

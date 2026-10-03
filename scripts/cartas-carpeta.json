@@ -109,6 +109,11 @@
 "n": "Kids' WB Promos",
 "rel": "2004-07-02",
 "tot": 5
+},
+"lcbt": {
+"n": "Legendary Collection · cartas gigantes del Box Topper",
+"rel": "2002-05-24",
+"tot": 4
 }
 },
 "cartas": [
@@ -6157,6 +6162,69 @@
 "j": {
 "e": "Basic",
 "ps": 190
+}
+},
+{
+"id": "lcbt-1",
+"n": "Charizard",
+"p": [
+"charizard"
+],
+"s": "lcbt",
+"num": "1",
+"r": "Promo",
+"v": [
+"normal"
+],
+"img": null,
+"ill": "",
+"ni": "S1/S4",
+"tp_id": 210841,
+"j": {
+"e": "2",
+"ps": 120
+}
+},
+{
+"id": "lcbt-2",
+"n": "Dark Blastoise",
+"p": [
+"blastoise"
+],
+"s": "lcbt",
+"num": "2",
+"r": "Promo",
+"v": [
+"normal"
+],
+"img": null,
+"ill": "",
+"ni": "S2/S4",
+"tp_id": 210842,
+"j": {
+"e": "Stage 2",
+"ps": 70
+}
+},
+{
+"id": "lcbt-3",
+"n": "Dark Raichu",
+"p": [
+"raichu"
+],
+"s": "lcbt",
+"num": "3",
+"r": "Promo",
+"v": [
+"normal"
+],
+"img": null,
+"ill": "",
+"ni": "S3/S4",
+"tp_id": 210843,
+"j": {
+"e": "Stage 1",
+"ps": 70
 }
 }
 ]

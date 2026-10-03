@@ -51,6 +51,7 @@ def base(n):
     n = re.sub(r'\s*\([^)]*\)', '', n)
     n = re.sub(r'\s+-\s+[A-Za-z]*\d[\w/ -]*$', '', n)
     n = re.sub(r'\s+-\s+[A-Z]{1,5}(-[A-Z]{1,5})?$', '', n)
+    n = re.sub(r'\s+-\d+$', '', n)   # «Charizard ex -196»
     n = re.sub(r'\s+-\s+(?:Pikachu|Charizard)\s+\d+$', '', n)   # Battle Academy: «Ampharos - Pikachu 47»
     n = re.sub(r'\s+\d{1,3}/\d{1,3}$', '', n.strip())   # «Gengar 094/165 (Cosmos Holo)»
     return n.strip()
@@ -114,6 +115,13 @@ def todos(cat):
 
 
 nv, cartas, revisar = {}, defaultdict(list), []
+# Dos casos con varias cartas base posibles, resueltos mirando la carta (ilustrador, PS, año):
+#   187219 Pikachu 012 con el sello del 10.º aniversario = la Nintendo Black Star 012 (np-12, Kouki Saitou), no la de POP 5
+#   224679 Pikachu 70/100 con el sello Platinum de Burger King = la de Majestic Dawn (60 PS), no la de Stormfront (70 PS)
+A_MANO = {187219: 'np-12', 224679: 'dp5-70'}
+# Productos de «Miscellaneous» que son la MISMA carta que otra japonesa que la app ya tiene (no una variante):
+#   Charizard 143/S-P (=ja-tp597342), Charizard Meiji 054/ADV-P (=ja-tp613595), Pikachu 11th Movie 003/009 (=ja-32276)
+MISMA_CARTA = {282521, 478250, 484830}
 
 
 def asigna(p, cand, etiqueta, idioma, fecha=''):
@@ -138,20 +146,22 @@ def asigna(p, cand, etiqueta, idioma, fecha=''):
 
 # ------------------------------------------------------------------ inglés
 en = [c for c in catalogo['cartas'] if c.get('l') != 'ja']
-ya = {c['tp_id'] for c in en if c.get('tp_id')}
+ya = {c['tp_id'] for c in catalogo['cartas'] if c.get('tp_id')}   # también las japonesas que TCGplayer lista en su catálogo inglés
 idx = defaultdict(list)
 for c in en:
     total = (str(c.get('ni') or '').split('/') + [''])[1].lstrip('0') or str(sets[c['s']].get('tot') or '')
     idx[(cl(c['n']), num(c['num']), total)].append(c)
     idx[(cl(c['n']), num(c['num']), '')].append(c)
 for p in todos(3):
-    if not (p['hp'] and p['num'] and RX.search(base(p['n']))) or p['id'] in ya:
+    if not (p['hp'] and p['num'] and RX.search(base(p['n']))) or p['id'] in ya or p['id'] in MISMA_CARTA:
         continue
     etiq = nombre_variante(p)
     if not etiq:
         continue
     total = (p['num'].split('/') + [''])[1].lstrip('0')
     cand = idx.get((cl(base(p['n'])), num(p['num']), total)) or idx.get((cl(base(p['n'])), num(p['num']), ''))
+    if p['id'] in A_MANO:
+        cand = [c for c in en if c['id'] == A_MANO[p['id']]]
     asigna(p, cand or [], etiq, 'en', p['fecha'])
 
 # ------------------------------------------------------------------ japonés
@@ -178,7 +188,38 @@ for p in todos(85):
     cand = [c for s in ss for c in idj.get((s, num(p['num']), cl(base(p['n']))), [])]
     asigna(p, cand, etiq, 'ja')
 
-json.dump({'nv': dict(sorted(nv.items())), 'cartas': dict(sorted(cartas.items())), 'revisar': revisar},
+# ------------------------------------------------------------------ formas de impresión (Normal / Holo / Reverse / 1.ª ed.)
+# TCGdex se deja formas sin marcar (casi todas las Reverse Holo de la era EX, las holo de promos…).
+# TCGplayer lista, por producto, en qué formas se vende: Normal, Holofoil, Reverse Holofoil, 1st Edition.
+FORMAS = {'Normal': 'normal', 'Holofoil': 'holo', 'Reverse Holofoil': 'reverse', '1st Edition': 'firstEdition', '1st Edition Holofoil': 'firstEdition'}
+con_tp = {c['tp_id']: c for c in catalogo['cartas'] if c.get('tp_id')}
+formas = defaultdict(set)
+for cat_id in (3, 85):
+    for g in m.pedir(f'https://tcgcsv.com/tcgplayer/{cat_id}/groups', cache=False)['results']:
+        pr = (m.pedir(f'https://tcgcsv.com/tcgplayer/{cat_id}/{g["groupId"]}/products', pausa=0.05) or {}).get('results', [])
+        if not any(x['productId'] in con_tp for x in pr):
+            continue
+        for x in (m.pedir(f'https://tcgcsv.com/tcgplayer/{cat_id}/{g["groupId"]}/prices', pausa=0.05) or {}).get('results', []):
+            if x['productId'] in con_tp and x['subTypeName'] in FORMAS:
+                formas[x['productId']].add(FORMAS[x['subTypeName']])
+reemplaza, anadidas = {}, Counter()
+for tp, fs in formas.items():
+    c = con_tp[tp]
+    # Una carta japonesa que traje yo con «normal» por defecto y que TCGplayer vende solo en holo:
+    # su «normal» era un supuesto, no un dato → se cambia por «holo». El resto solo suma.
+    # (variantes.json no depende de si el catálogo ya lo aplicó: se puede regenerar las veces que haga falta)
+    if c['id'].startswith('ja-tp') and fs == {'holo'} and c['v'] in (['normal'], ['holo']):
+        reemplaza[c['id']] = ['normal', 'holo']
+        anadidas['holo (sustituye a normal)'] += c['v'] == ['normal']
+        continue
+    for k in sorted(fs):
+        if k not in cartas[c['id']]:
+            cartas[c['id']].append(k)
+        if k not in c['v']:
+            anadidas[k] += 1
+print('formas añadidas desde TCGplayer:', dict(anadidas))
+
+json.dump({'nv': dict(sorted(nv.items())), 'cartas': dict(sorted(cartas.items())), 'reemplaza': reemplaza, 'revisar': revisar},
           open(os.path.join(AQUI, 'variantes.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
 total = sum(len(v) for v in cartas.values())
 print(f'variantes nuevas: {total} en {len(cartas)} cartas · {len(nv)} nombres distintos · a revisar: {len(revisar)}')

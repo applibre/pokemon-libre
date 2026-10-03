@@ -182,10 +182,15 @@ EN_EXTRAS = [
     ("ME: Mega Evolution Promo", 712963, 'mep-093', 'mep', '093', '093'),
     ("ME: Mega Evolution Promo", 713257, 'mep-107', 'mep', '107', '107'),
     ("ME: Mega Evolution Promo", 713256, 'mep-109', 'mep', '109', '109'),
+    # Cartas gigantes de la Legendary Collection (otra carta que las bt-4/bt-9 del Box Topper de 2003)
+    ("Jumbo Cards", 210841, 'lcbt-1', 'lcbt', '1', 'S1/S4'),
+    ("Jumbo Cards", 210842, 'lcbt-2', 'lcbt', '2', 'S2/S4'),
+    ("Jumbo Cards", 210843, 'lcbt-3', 'lcbt', '3', 'S3/S4'),
 ]
-SETS_EN_NUEVOS = {'kidswb': {'n': "Kids' WB Promos", 'rel': '2004-07-02', 'tot': 5}}
+SETS_EN_NUEVOS = {'kidswb': {'n': "Kids' WB Promos", 'rel': '2004-07-02', 'tot': 5},
+                  'lcbt': {'n': 'Legendary Collection · cartas gigantes del Box Topper', 'rel': '2002-05-24', 'tot': 4}}
 grupos_en = {g['name']: g['groupId'] for g in m.pedir('https://tcgcsv.com/tcgplayer/3/groups', cache=False)['results']}
-for gn, pid, cid, sid, numero, ni in EN_EXTRAS:
+for gn, pid, cid, sid, numero, ni, *idioma in EN_EXTRAS:
     if cid in ya:
         continue
     prod = next(p for p in (m.pedir(f'https://tcgcsv.com/tcgplayer/3/{grupos_en[gn]}/products') or {}).get('results', []) if p['productId'] == pid)
@@ -196,6 +201,8 @@ for gn, pid, cid, sid, numero, ni in EN_EXTRAS:
         's': sid, 'num': numero, 'r': '' if e.get('Rarity') in (None, 'None') else e['Rarity'], 'v': ['normal'],
         'img': None, 'ill': '', 'ni': ni, 'tp_id': pid,
     }
+    if idioma:
+        ficha['l'] = idioma[0]
     j = {}
     if e.get('Stage'):
         j['e'] = e['Stage']
@@ -248,6 +255,13 @@ for ficha, fuente, url in cartas:
 
 usados = {f['s'] for f in salida}
 sets_final = {k: v for k, v in sets_nuevos.items() if k in usados}
+# lo traído en pasadas anteriores se conserva (aquí `ya` salta lo que el catálogo tiene): el fichero es acumulativo
+ruta_previo = os.path.join(AQUI, 'cartas-carpeta.json')
+if os.path.exists(ruta_previo):
+    previo = json.load(open(ruta_previo, encoding='utf-8'))
+    nuevos_ids = {f['id'] for f in salida}
+    salida = [c for c in previo['cartas'] if c['id'] not in nuevos_ids] + salida
+    sets_final = {**previo['sets'], **sets_final}
 json.dump({'sets': sets_final, 'cartas': salida}, open(os.path.join(AQUI, 'cartas-carpeta.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
 json.dump(rescatadas, open(os.path.join(AQUI, 'imagenes-rescatadas.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 print(f'cartas nuevas: {len(salida)} · sets nuevos: {len(sets_final)} · sin imagen (no entran): {len(sin_imagen)}')

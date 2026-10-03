@@ -521,20 +521,28 @@ async function main() {
   const dv = JSON.parse(await readFile(path.join(AQUI, 'variantes.json'), 'utf8').catch(() => '{"nv":{},"cartas":{}}'));
   const nv = {};
   let variantesPuestas = 0;
+  const FORMAS = ['normal', 'holo', 'reverse', 'firstEdition', 'wPromo'];
   const porId = new Map(cartas.map((c) => [c.id, c]));
+  for (const [id, [de, a]] of Object.entries(dv.reemplaza || {})) {
+    const c = porId.get(id);
+    if (c && c.v.length === 1 && c.v[0] === de) { c.v = [a]; variantesPuestas++; }
+  }
   for (const [id, claves] of Object.entries(dv.cartas)) {
     const c = porId.get(id);
     if (!c) continue;
     for (const k of claves) {
       if (c.v.includes(k)) continue;
       c.v.push(k);
-      nv[k] = dv.nv[k];
+      if (dv.nv[k]) nv[k] = dv.nv[k];
       variantesPuestas++;
     }
+    // las formas de siempre van primero y en su orden; las especiales detrás, como estaban
+    c.v = [...FORMAS.filter((k) => c.v.includes(k)), ...c.v.filter((k) => !FORMAS.includes(k))];
   }
   // también las que ya estaban de una pasada anterior (modo solo-añadir)
   for (const c of cartas) for (const k of c.v) if (dv.nv[k] && !nv[k]) nv[k] = dv.nv[k];
-  console.log(`Variantes   ${variantesPuestas} nuevas · ${Object.keys(nv).length} nombres\n`);
+  console.log(`Variantes   ${variantesPuestas} nuevas · ${Object.keys(nv).length} nombres
+`);
 
   /* 6 · escribir */
   const json = JSON.stringify({ sets, cartas, nv: Object.fromEntries(Object.entries(nv).sort()) });

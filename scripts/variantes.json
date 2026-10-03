@@ -1,5 +1,6 @@
 {
 "nv": {
+"10th-anniversary": "10th Anniversary",
 "2014-movie-promo": "2014 Movie Promo",
 "20th-anniversary": "20th Anniversary",
 "asia-championship-series-23-24": "Asia Championship Series 23-24",
@@ -127,41 +128,101 @@
 "xy-evolutions-prerelease": "XY Evolutions Prerelease"
 },
 "cartas": {
+"2014xy-5": [
+"holo"
+],
+"2015xy-6": [
+"holo"
+],
+"2016xy-6": [
+"holo"
+],
+"2017sm-5": [
+"holo"
+],
+"2018sm-4": [
+"holo"
+],
+"2019sm-6": [
+"holo"
+],
+"2019sm-7": [
+"holo"
+],
+"2021swsh-1": [
+"holo",
+"normal"
+],
+"2021swsh-17": [
+"holo",
+"normal"
+],
+"2021swsh-25": [
+"holo",
+"normal"
+],
+"2021swsh-9": [
+"holo",
+"normal"
+],
+"2022swsh-7": [
+"holo"
+],
+"2023sv-6": [
+"holo"
+],
+"2024sv-1": [
+"normal"
+],
+"2024sv-2": [
+"holo"
+],
 "base1-14": [
-"shadowless"
+"shadowless",
+"holo"
 ],
 "base1-15": [
-"shadowless"
+"shadowless",
+"holo"
 ],
 "base1-2": [
-"shadowless"
+"shadowless",
+"holo"
 ],
 "base1-24": [
-"shadowless"
+"shadowless",
+"normal"
 ],
 "base1-29": [
-"shadowless"
+"shadowless",
+"normal"
 ],
 "base1-30": [
-"shadowless"
+"shadowless",
+"normal"
 ],
 "base1-4": [
 "jumbo-tamano-gigante-corocoro-promo",
 "black-dot-error",
 "shadowless",
-"celebrations-metal-card"
+"celebrations-metal-card",
+"holo"
 ],
 "base1-42": [
-"shadowless"
+"shadowless",
+"normal"
 ],
 "base1-44": [
-"shadowless"
+"shadowless",
+"normal"
 ],
 "base1-46": [
-"shadowless"
+"shadowless",
+"normal"
 ],
 "base1-50": [
-"shadowless"
+"shadowless",
+"normal"
 ],
 "base1-58": [
 "jumbo-tamano-gigante",
@@ -171,30 +232,155 @@
 "e3-stamped",
 "e3-stamped-with-red-cheeks",
 "poketour-1999",
-"celebrations-metal-card"
+"celebrations-metal-card",
+"normal"
 ],
 "base1-63": [
-"shadowless"
+"shadowless",
+"normal"
+],
+"base2-11": [
+"firstEdition"
+],
+"base2-27": [
+"firstEdition"
 ],
 "base2-60": [
-"w-stamped"
+"w-stamped",
+"firstEdition"
+],
+"base3-14": [
+"firstEdition"
+],
+"base3-20": [
+"firstEdition"
+],
+"base3-21": [
+"firstEdition"
+],
+"base3-29": [
+"firstEdition"
+],
+"base3-33": [
+"firstEdition"
+],
+"base3-5": [
+"firstEdition"
+],
+"base3-6": [
+"firstEdition"
+],
+"base4-16": [
+"holo"
+],
+"base4-18": [
+"holo"
+],
+"base4-2": [
+"holo"
+],
+"base4-30": [
+"normal"
+],
+"base4-35": [
+"normal"
+],
+"base4-4": [
+"holo"
+],
+"base4-43": [
+"normal"
+],
+"base4-44": [
+"normal"
 ],
 "base4-63": [
-"w-stamped"
+"w-stamped",
+"normal"
+],
+"base4-67": [
+"normal"
+],
+"base4-69": [
+"normal"
+],
+"base4-75": [
+"normal"
+],
+"base4-87": [
+"normal"
+],
+"base4-93": [
+"normal"
+],
+"base5-20": [
+"firstEdition"
+],
+"base5-21": [
+"firstEdition"
+],
+"base5-3": [
+"firstEdition"
 ],
 "base5-32": [
-"w-stamped"
+"w-stamped",
+"firstEdition"
+],
+"base5-4": [
+"firstEdition"
+],
+"base5-46": [
+"firstEdition"
+],
+"base5-50": [
+"firstEdition"
+],
+"base5-68": [
+"firstEdition"
+],
+"base5-83": [
+"firstEdition"
 ],
 "basep-1": [
-"misprint"
+"misprint",
+"normal"
+],
+"basep-13": [
+"holo"
+],
+"basep-24": [
+"holo"
+],
+"basep-25": [
+"normal"
+],
+"basep-26": [
+"normal"
+],
+"basep-27": [
+"normal"
+],
+"basep-28": [
+"normal"
+],
+"basep-35": [
+"reverse"
+],
+"basep-4": [
+"normal"
+],
+"basep-49": [
+"normal"
 ],
 "bog-6": [
 "jumbo-tamano-gigante-best-of-game-6-promo",
-"winner"
+"winner",
+"normal"
 ],
 "bog-7": [
 "jumbo-tamano-gigante-best-of-game-7-promo",
-"winner"
+"winner",
+"normal"
 ],
 "bt-4": [
 "jumbo-tamano-gigante"
@@ -202,128 +388,907 @@
 "bt-9": [
 "jumbo-tamano-gigante-box-topper"
 ],
+"bw1-115": [
+"holo"
+],
 "bw10-14": [
-"build-a-bear-workshop-exclusive"
+"build-a-bear-workshop-exclusive",
+"normal",
+"reverse"
+],
+"bw10-15": [
+"normal",
+"reverse"
 ],
 "bw10-16": [
 "mundial-2015-jacob-van-wagner",
 "exclusiva-de-mazo-bw-plasma-blast",
-"exclusiva-de-blister-cosmos-holo"
+"exclusiva-de-blister-cosmos-holo",
+"holo",
+"reverse"
 ],
 "bw11-17": [
-"build-a-bear-workshop-exclusive"
+"build-a-bear-workshop-exclusive",
+"normal",
+"reverse"
+],
+"bw11-18": [
+"normal",
+"reverse"
 ],
 "bw11-19": [
-"cosmos-holo"
+"cosmos-holo",
+"holo",
+"reverse"
+],
+"bw11-RC7": [
+"holo"
+],
+"bw4-39": [
+"normal",
+"reverse"
 ],
 "bw4-40": [
-"exclusiva-de-blister-cosmos-holo"
+"exclusiva-de-blister-cosmos-holo",
+"normal",
+"reverse"
 ],
 "bw5-1": [
-"build-a-bear-workshop-exclusive"
+"build-a-bear-workshop-exclusive",
+"normal",
+"reverse"
+],
+"bw5-2": [
+"normal",
+"reverse"
 ],
 "bw5-3": [
-"exclusiva-de-blister-cosmos-holo"
+"exclusiva-de-blister-cosmos-holo",
+"holo",
+"reverse"
+],
+"bw7-109": [
+"normal",
+"reverse"
+],
+"bw7-18": [
+"normal",
+"reverse"
+],
+"bw7-19": [
+"normal",
+"reverse"
 ],
 "bw7-20": [
-"exclusiva-de-blister-cosmos-holo"
+"exclusiva-de-blister-cosmos-holo",
+"holo",
+"reverse"
+],
+"bw7-29": [
+"normal",
+"reverse"
+],
+"bw7-30": [
+"normal",
+"reverse"
 ],
 "bw7-31": [
-"exclusiva-de-mazo-non-holo"
+"exclusiva-de-mazo-non-holo",
+"holo",
+"reverse"
+],
+"bw7-50": [
+"normal",
+"reverse"
+],
+"bw8-101": [
+"normal",
+"reverse"
+],
+"bw8-136": [
+"holo"
+],
+"bw8-137": [
+"holo"
+],
+"bw8-24": [
+"normal",
+"reverse"
+],
+"bwp-BW54": [
+"normal"
+],
+"cel25-5": [
+"holo"
 ],
 "cel25-6": [
-"mundial-2022-ondrej-skubal"
+"mundial-2022-ondrej-skubal",
+"holo"
 ],
 "cel25-7": [
-"mundial-2022-ondrej-skubal"
+"mundial-2022-ondrej-skubal",
+"holo"
+],
+"cel25-8": [
+"holo"
+],
+"cel25-9": [
+"holo"
+],
+"cel25cc-CC001": [
+"holo"
+],
+"cel25cc-CC002": [
+"holo"
+],
+"cel25cc-CC003": [
+"holo"
+],
+"cel25cc-CC008": [
+"holo"
+],
+"clb-001": [
+"holo"
+],
+"clb-002": [
+"holo"
+],
+"clb-003": [
+"holo"
+],
+"clc-002": [
+"holo"
+],
+"clc-003": [
+"holo"
+],
+"clv-001": [
+"holo"
+],
+"clv-002": [
+"holo"
+],
+"clv-003": [
+"holo"
+],
+"clv-016": [
+"holo"
 ],
 "col1-33": [
 "prerelease",
-"prerelease-staff"
+"prerelease-staff",
+"normal",
+"reverse"
+],
+"det1-1": [
+"holo"
+],
+"det1-10": [
+"holo"
+],
+"det1-4": [
+"holo"
+],
+"det1-5": [
+"holo"
+],
+"dp1-27": [
+"normal",
+"reverse"
+],
+"dp1-33": [
+"normal",
+"reverse"
+],
+"dp1-37": [
+"normal",
+"reverse"
+],
+"dp1-50": [
+"normal",
+"reverse"
+],
+"dp1-82": [
+"normal",
+"reverse"
+],
+"dp2-15": [
+"holo",
+"reverse"
+],
+"dp2-93": [
+"normal",
+"reverse"
 ],
 "dp2-94": [
-"burger-king-diamond-pearl"
+"burger-king-diamond-pearl",
+"normal",
+"reverse"
+],
+"dp3-112": [
+"normal",
+"reverse"
+],
+"dp3-2": [
+"holo",
+"reverse"
 ],
 "dp3-20": [
-"exclusiva-de-mazo-secret-wonders"
+"exclusiva-de-mazo-secret-wonders",
+"holo",
+"reverse"
+],
+"dp3-3": [
+"holo",
+"reverse"
+],
+"dp3-46": [
+"normal",
+"reverse"
+],
+"dp3-51": [
+"normal",
+"reverse"
+],
+"dp3-75": [
+"normal",
+"reverse"
+],
+"dp3-77": [
+"normal",
+"reverse"
+],
+"dp3-82": [
+"normal",
+"reverse"
+],
+"dp5-45": [
+"normal",
+"reverse"
 ],
 "dp5-68": [
-"calendario-countdown"
+"calendario-countdown",
+"normal",
+"reverse"
+],
+"dp5-70": [
+"burger-king-platinum",
+"normal",
+"reverse"
+],
+"dp7-101": [
+"holo"
+],
+"dp7-102": [
+"holo"
+],
+"dp7-103": [
+"holo"
 ],
 "dp7-18": [
-"mundial-2009-jason-martinez"
+"mundial-2009-jason-martinez",
+"normal",
+"reverse"
 ],
 "dp7-40": [
-"mundial-2009-jason-martinez"
+"mundial-2009-jason-martinez",
+"normal",
+"reverse"
 ],
 "dp7-45": [
-"burger-king-platinum"
+"burger-king-platinum",
+"normal",
+"reverse"
 ],
 "dp7-62": [
-"mundial-2009-jason-martinez"
+"mundial-2009-jason-martinez",
+"normal",
+"reverse"
+],
+"dp7-70": [
+"normal",
+"reverse"
+],
+"dp7-8": [
+"holo",
+"reverse"
+],
+"dp7-99": [
+"holo"
 ],
 "dpp-DP16": [
-"calendario-countdown"
+"calendario-countdown",
+"holo"
+],
+"dpp-DP21": [
+"holo"
+],
+"dpp-DP45": [
+"holo"
+],
+"ecard1-109": [
+"normal",
+"reverse"
+],
+"ecard1-124": [
+"normal",
+"reverse"
+],
+"ecard1-13": [
+"holo",
+"reverse"
+],
+"ecard1-131": [
+"normal",
+"reverse"
+],
+"ecard1-132": [
+"normal",
+"reverse"
+],
+"ecard1-22": [
+"holo",
+"reverse"
+],
+"ecard1-25": [
+"holo",
+"reverse"
+],
+"ecard1-30": [
+"holo",
+"reverse"
+],
+"ecard1-36": [
+"normal",
+"reverse"
+],
+"ecard1-37": [
+"normal",
+"reverse"
+],
+"ecard1-39": [
+"normal",
+"reverse"
+],
+"ecard1-4": [
+"holo",
+"reverse"
+],
+"ecard1-40": [
+"normal",
+"reverse"
+],
+"ecard1-48": [
+"normal",
+"reverse"
+],
+"ecard1-58": [
+"normal",
+"reverse"
+],
+"ecard1-6": [
+"holo",
+"reverse"
+],
+"ecard1-61": [
+"normal",
+"reverse"
+],
+"ecard1-67": [
+"normal",
+"reverse"
+],
+"ecard1-68": [
+"normal",
+"reverse"
+],
+"ecard1-73": [
+"normal",
+"reverse"
+],
+"ecard1-80": [
+"normal",
+"reverse"
+],
+"ecard1-82": [
+"normal",
+"reverse"
+],
+"ecard1-92": [
+"normal",
+"reverse"
+],
+"ecard1-94": [
+"normal",
+"reverse"
+],
+"ecard1-95": [
+"normal",
+"reverse"
+],
+"ecard1-97": [
+"normal",
+"reverse"
+],
+"ecard1-98": [
+"normal",
+"reverse"
+],
+"ecard3-10": [
+"normal",
+"reverse"
+],
+"ecard3-100": [
+"normal"
+],
+"ecard3-146": [
+"holo",
+"reverse"
+],
+"ecard3-27": [
+"normal"
+],
+"ecard3-57": [
+"normal",
+"reverse"
+],
+"ecard3-63": [
+"normal",
+"reverse"
+],
+"ecard3-84": [
+"normal"
+],
+"ex12-35": [
+"normal",
+"reverse"
 ],
 "ex12-5": [
-"gym-challenge"
+"gym-challenge",
+"holo",
+"reverse"
+],
+"ex12-52": [
+"normal",
+"reverse"
+],
+"ex12-93": [
+"holo"
+],
+"ex13-104": [
+"holo"
+],
+"ex13-15": [
+"holo",
+"reverse"
+],
+"ex13-51": [
+"normal",
+"reverse"
+],
+"ex13-76": [
+"normal",
+"reverse"
+],
+"ex13-78": [
+"normal",
+"reverse"
+],
+"ex13-79": [
+"normal",
+"reverse"
 ],
 "ex14-14": [
 "exclusiva-de-mazo-ex-crystal-guardians",
 "national-championships",
-"national-championships-staff"
+"national-championships-staff",
+"normal",
+"reverse"
+],
+"ex14-2": [
+"holo",
+"reverse"
 ],
 "ex14-28": [
 "exclusiva-de-mazo-ex-crystal-guardians",
-"regional-championships"
+"regional-championships",
+"normal",
+"reverse"
+],
+"ex14-29": [
+"normal",
+"reverse"
+],
+"ex14-30": [
+"normal",
+"reverse"
+],
+"ex14-34": [
+"normal",
+"reverse"
 ],
 "ex14-35": [
-"prerelease"
+"prerelease",
+"normal",
+"reverse"
+],
+"ex14-4": [
+"holo",
+"reverse"
 ],
 "ex14-42": [
-"state-championships"
+"state-championships",
+"normal",
+"reverse"
+],
+"ex14-43": [
+"normal",
+"reverse"
+],
+"ex14-45": [
+"normal",
+"reverse"
+],
+"ex14-46": [
+"normal",
+"reverse"
+],
+"ex14-48": [
+"normal",
+"reverse"
+],
+"ex14-49": [
+"normal",
+"reverse"
 ],
 "ex14-63": [
-"city-championships"
+"city-championships",
+"normal",
+"reverse"
+],
+"ex14-64": [
+"normal",
+"reverse"
+],
+"ex15-10": [
+"holo",
+"reverse"
+],
+"ex15-100": [
+"holo"
+],
+"ex16-12": [
+"holo",
+"reverse"
+],
+"ex16-21": [
+"normal",
+"reverse"
+],
+"ex16-28": [
+"normal",
+"reverse"
+],
+"ex16-48": [
+"normal",
+"reverse"
+],
+"ex16-57": [
+"normal",
+"reverse"
+],
+"ex16-6": [
+"holo",
+"reverse"
+],
+"ex2-20": [
+"normal",
+"reverse"
+],
+"ex2-72": [
+"normal",
+"reverse"
+],
+"ex2-98": [
+"holo"
 ],
 "ex3-100": [
-"national-championships"
+"national-championships",
+"holo"
 ],
 "ex3-98": [
-"city-championships"
+"city-championships",
+"holo"
 ],
 "ex3-99": [
-"state-championship"
+"state-championship",
+"holo"
+],
+"ex4-13": [
+"normal",
+"reverse"
+],
+"ex4-39": [
+"normal",
+"reverse"
+],
+"ex4-43": [
+"normal",
+"reverse"
+],
+"ex4-46": [
+"normal",
+"reverse"
 ],
 "ex6-104": [
-"mundial-2006-hiroki-yano"
+"mundial-2006-hiroki-yano",
+"holo",
+"normal"
+],
+"ex6-105": [
+"holo"
+],
+"ex6-108": [
+"holo"
+],
+"ex6-112": [
+"holo"
+],
+"ex6-113": [
+"holo",
+"normal"
+],
+"ex6-12": [
+"holo",
+"normal",
+"reverse"
+],
+"ex6-15": [
+"holo",
+"normal",
+"reverse"
+],
+"ex6-31": [
+"normal",
+"reverse"
+],
+"ex6-34": [
+"normal",
+"reverse"
+],
+"ex6-35": [
+"normal",
+"reverse"
 ],
 "ex6-50": [
 "mundial-2006-hiroki-yano",
-"prerelease"
+"prerelease",
+"normal",
+"reverse"
+],
+"ex6-54": [
+"normal",
+"reverse"
+],
+"ex6-55": [
+"normal",
+"reverse"
+],
+"ex6-57": [
+"normal",
+"reverse"
+],
+"ex6-58": [
+"normal",
+"reverse"
+],
+"ex6-63": [
+"normal",
+"reverse"
+],
+"ex6-74": [
+"normal",
+"reverse"
+],
+"ex6-82": [
+"normal",
+"reverse"
 ],
 "ex6-83": [
-"mundial-2006-hiroki-yano"
+"mundial-2006-hiroki-yano",
+"normal",
+"reverse"
+],
+"ex7-110": [
+"holo"
+],
+"ex9-59": [
+"normal",
+"reverse"
 ],
 "ex9-60": [
-"sdcc-2005"
+"sdcc-2005",
+"normal",
+"reverse"
+],
+"ex9-97": [
+"holo",
+"normal"
+],
+"fut2020-1": [
+"normal"
+],
+"g1-1": [
+"holo"
+],
+"g1-11": [
+"holo"
+],
+"g1-12": [
+"holo"
+],
+"g1-17": [
+"holo"
+],
+"g1-18": [
+"holo"
+],
+"g1-2": [
+"holo"
 ],
 "g1-26": [
 "toys-r-us",
-"20th-anniversary"
+"20th-anniversary",
+"normal",
+"reverse"
+],
+"g1-27": [
+"holo",
+"reverse"
+],
+"g1-33": [
+"normal",
+"reverse"
+],
+"g1-34": [
+"normal",
+"reverse"
+],
+"g1-35": [
+"holo",
+"reverse"
+],
+"g1-58": [
+"normal",
+"reverse"
+],
+"g1-RC29": [
+"holo"
+],
+"g1-RC3": [
+"normal"
+],
+"g1-RC4": [
+"normal"
+],
+"g1-RC5": [
+"holo"
+],
+"g1-RC9": [
+"normal"
+],
+"gym1-14": [
+"firstEdition"
+],
+"gym1-28": [
+"firstEdition"
+],
+"gym1-33": [
+"firstEdition"
+],
+"gym1-58": [
+"firstEdition"
+],
+"gym1-61": [
+"firstEdition"
+],
+"gym1-81": [
+"firstEdition"
+],
+"gym1-93": [
+"firstEdition"
+],
+"gym2-11": [
+"firstEdition"
+],
+"gym2-2": [
+"firstEdition"
+],
+"gym2-29": [
+"firstEdition"
+],
+"gym2-31": [
+"firstEdition"
+],
+"gym2-39": [
+"firstEdition"
+],
+"gym2-4": [
+"firstEdition"
+],
+"gym2-41": [
+"firstEdition"
+],
+"gym2-55": [
+"firstEdition"
+],
+"gym2-60": [
+"firstEdition"
+],
+"gym2-84": [
+"firstEdition"
+],
+"gym2-96": [
+"firstEdition"
+],
+"gym2-97": [
+"firstEdition"
 ],
 "hgss1-10": [
-"exclusiva-de-mazo-cracked-ice-holo"
+"exclusiva-de-mazo-cracked-ice-holo",
+"holo",
+"reverse"
 ],
 "hgss1-28": [
 "mundial-2011-ross-cawthon",
 "prerelease",
-"prerelease-staff"
+"prerelease-staff",
+"normal",
+"reverse"
+],
+"hgss1-78": [
+"normal",
+"reverse"
 ],
 "hgss2-13": [
 "prerelease",
 "prerelease-staff",
-"cracked-ice-holo"
+"cracked-ice-holo",
+"normal",
+"reverse"
+],
+"hgss2-42": [
+"normal",
+"reverse"
+],
+"hgss2-63": [
+"normal",
+"reverse"
+],
+"hgss3-33": [
+"normal",
+"reverse"
+],
+"hgss3-61": [
+"normal",
+"reverse"
+],
+"hgss3-83": [
+"holo"
+],
+"hgss4-35": [
+"normal",
+"reverse"
+],
+"hgss4-63": [
+"normal",
+"reverse"
+],
+"hgss4-94": [
+"holo"
+],
+"hgssp-HGSS03": [
+"holo"
 ],
 "ja-18580": [
 "mirror-holo"
@@ -518,633 +1483,2541 @@
 "ja-53367": [
 "mirror-holo"
 ],
+"ja-tp587832": [
+"normal"
+],
+"ja-tp587870": [
+"normal"
+],
+"ja-tp587919": [
+"normal"
+],
+"ja-tp597244": [
+"normal"
+],
+"ja-tp597256": [
+"normal"
+],
+"ja-tp597313": [
+"normal"
+],
+"ja-tp597325": [
+"normal"
+],
+"ja-tp597326": [
+"normal"
+],
+"ja-tp597327": [
+"normal"
+],
+"ja-tp597342": [
+"normal"
+],
+"ja-tp597398": [
+"normal"
+],
+"ja-tp597460": [
+"normal"
+],
+"ja-tp597462": [
+"normal"
+],
+"ja-tp597463": [
+"normal"
+],
+"ja-tp597502": [
+"normal"
+],
+"ja-tp598177": [
+"normal"
+],
+"ja-tp598191": [
+"normal"
+],
+"ja-tp598234": [
+"normal"
+],
+"ja-tp598245": [
+"normal"
+],
+"ja-tp598287": [
+"normal"
+],
+"ja-tp598291": [
+"normal"
+],
+"ja-tp601969": [
+"normal"
+],
+"ja-tp602004": [
+"normal"
+],
+"ja-tp602054": [
+"normal"
+],
+"ja-tp602168": [
+"normal"
+],
+"ja-tp602196": [
+"normal"
+],
+"ja-tp608618": [
+"normal"
+],
+"ja-tp609408": [
+"firstEdition"
+],
+"ja-tp613185": [
+"firstEdition"
+],
+"ja-tp613292": [
+"normal"
+],
+"ja-tp613405": [
+"normal"
+],
+"ja-tp613410": [
+"normal"
+],
+"ja-tp613411": [
+"normal"
+],
+"ja-tp613437": [
+"normal"
+],
+"ja-tp613462": [
+"normal"
+],
+"ja-tp613466": [
+"normal"
+],
+"ja-tp613467": [
+"normal"
+],
+"ja-tp613468": [
+"normal"
+],
+"ja-tp613480": [
+"normal"
+],
+"ja-tp613481": [
+"normal"
+],
+"ja-tp613499": [
+"normal"
+],
+"ja-tp613516": [
+"normal"
+],
+"ja-tp613593": [
+"normal"
+],
+"ja-tp613595": [
+"normal"
+],
+"ja-tp613597": [
+"normal"
+],
+"ja-tp613633": [
+"normal"
+],
+"ja-tp613636": [
+"normal"
+],
+"ja-tp613639": [
+"normal"
+],
+"ja-tp613718": [
+"normal"
+],
+"ja-tp613719": [
+"normal"
+],
+"ja-tp613721": [
+"normal"
+],
+"ja-tp613722": [
+"normal"
+],
+"ja-tp628274": [
+"normal"
+],
+"ja-tp635234": [
+"normal"
+],
+"ja-tp635288": [
+"normal"
+],
+"ja-tp677697": [
+"normal"
+],
+"ja-tp677698": [
+"normal"
+],
+"ja-tp677699": [
+"normal"
+],
+"ja-tp677705": [
+"normal"
+],
+"ja-tp677706": [
+"normal"
+],
+"ja-tp677707": [
+"normal"
+],
+"ja-tp677713": [
+"normal"
+],
+"ja-tp677715": [
+"normal"
+],
+"ja-tp678532": [
+"normal"
+],
+"ja-tp680962": [
+"normal"
+],
+"ja-tp684552": [
+"normal"
+],
+"ja-tp714046": [
+"normal"
+],
+"lc-11": [
+"holo",
+"reverse"
+],
+"lc-18": [
+"holo",
+"reverse"
+],
 "lc-3": [
-"exclusiva-de-mazo-wotc-legendary-collection"
+"exclusiva-de-mazo-wotc-legendary-collection",
+"holo",
+"reverse"
+],
+"lc-37": [
+"normal",
+"reverse"
+],
+"lc-39": [
+"normal",
+"reverse"
 ],
 "lc-4": [
-"exclusiva-de-mazo-wotc-legendary-collection"
+"exclusiva-de-mazo-wotc-legendary-collection",
+"holo",
+"reverse"
+],
+"lc-46": [
+"normal",
+"reverse"
+],
+"lc-47": [
+"normal",
+"reverse"
+],
+"lc-64": [
+"normal"
+],
+"lc-68": [
+"normal",
+"reverse"
 ],
 "lc-7": [
-"exclusiva-de-mazo-wotc-legendary-collection"
+"exclusiva-de-mazo-wotc-legendary-collection",
+"holo",
+"reverse"
+],
+"lc-70": [
+"normal",
+"reverse"
+],
+"lc-76": [
+"normal",
+"reverse"
+],
+"lc-86": [
+"normal",
+"reverse"
+],
+"lc-95": [
+"normal"
+],
+"lcbt-1": [
+"reverse"
+],
+"lcbt-2": [
+"reverse"
 ],
 "me01-001": [
-"pokemon-day-2026"
+"pokemon-day-2026",
+"normal",
+"reverse"
+],
+"me01-002": [
+"normal",
+"reverse"
 ],
 "me01-003": [
-"prize-pack"
+"prize-pack",
+"holo"
+],
+"me01-133": [
+"holo"
+],
+"me01-134": [
+"holo"
+],
+"me01-155": [
+"holo"
+],
+"me01-177": [
+"holo"
 ],
 "me02-011": [
 "prize-pack",
-"prize-pack-cosmos-holo"
+"prize-pack-cosmos-holo",
+"normal",
+"reverse"
 ],
 "me02-012": [
 "prize-pack",
-"prize-pack-cosmos-holo"
+"prize-pack-cosmos-holo",
+"normal",
+"reverse"
 ],
 "me02-013": [
-"prize-pack"
+"prize-pack",
+"holo"
+],
+"me02-054": [
+"normal",
+"reverse"
+],
+"me02-055": [
+"normal",
+"reverse"
 ],
 "me02-056": [
-"prize-pack"
+"prize-pack",
+"holo"
+],
+"me02-109": [
+"holo"
+],
+"me02-125": [
+"holo"
+],
+"me02-130": [
+"holo"
 ],
 "me02.5-020": [
 "friend-ball",
 "energy-symbol-pattern",
-"cosmos-holo"
+"cosmos-holo",
+"normal"
 ],
 "me02.5-021": [
 "friend-ball",
-"energy-symbol-pattern"
+"energy-symbol-pattern",
+"normal"
 ],
 "me02.5-022": [
-"prize-pack"
+"prize-pack",
+"holo"
 ],
 "me02.5-055": [
 "friend-ball",
-"energy-symbol-pattern"
+"energy-symbol-pattern",
+"normal"
 ],
 "me02.5-056": [
 "friend-ball",
-"energy-symbol-pattern"
+"energy-symbol-pattern",
+"normal"
+],
+"me02.5-057": [
+"holo"
 ],
 "me02.5-123": [
 "dusk-ball",
 "energy-symbol-pattern",
-"cosmos-holo"
+"cosmos-holo",
+"normal"
 ],
 "me02.5-124": [
 "dusk-ball",
-"energy-symbol-pattern"
+"energy-symbol-pattern",
+"normal"
+],
+"me02.5-125": [
+"holo"
+],
+"me02.5-269": [
+"holo"
+],
+"me02.5-276": [
+"holo"
+],
+"me02.5-277": [
+"holo"
+],
+"me02.5-284": [
+"holo"
+],
+"me02.5-294": [
+"holo"
 ],
 "me03-048": [
-"prize-pack"
+"prize-pack",
+"normal",
+"reverse"
 ],
 "me03-049": [
-"prize-pack"
+"prize-pack",
+"normal",
+"reverse"
 ],
 "me03-050": [
 "prize-pack",
 "exclusiva-de-blister-cosmos-holo",
 "cosmos-holo-gamestop-exclusive",
-"cosmos-holo-eb-games-exclusive"
+"cosmos-holo-eb-games-exclusive",
+"holo",
+"reverse"
+],
+"me03-063": [
+"normal",
+"reverse"
 ],
 "mep-013": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"mep-023": [
+"holo"
+],
+"mep-027": [
+"holo"
+],
+"mep-029": [
+"holo"
+],
+"mep-030": [
+"holo"
+],
+"mep-037": [
+"holo"
+],
+"mep-038": [
+"holo"
+],
+"mep-039": [
+"holo"
+],
+"mep-073": [
+"holo"
+],
+"mep-079": [
+"holo"
 ],
 "mep-093": [
-"winner"
+"winner",
+"normal"
+],
+"mep-107": [
+"holo"
+],
+"mep-109": [
+"holo"
+],
+"mfb-1": [
+"normal"
+],
+"mfb-10": [
+"normal"
+],
+"mfb-17": [
+"normal"
+],
+"mfb-18": [
+"normal"
+],
+"mfb-2": [
+"normal"
+],
+"mfb-25": [
+"normal"
+],
+"mfb-26": [
+"normal"
+],
+"mfb-9": [
+"normal"
+],
+"neo1-12": [
+"firstEdition"
+],
+"neo1-70": [
+"firstEdition"
+],
+"neo3-21": [
+"firstEdition"
+],
+"neo4-107": [
+"firstEdition"
+],
+"neo4-111": [
+"firstEdition"
+],
+"neo4-36": [
+"firstEdition"
+],
+"neo4-6": [
+"firstEdition"
+],
+"neo4-65": [
+"firstEdition"
+],
+"np-12": [
+"10th-anniversary",
+"holo"
+],
+"np-35": [
+"holo"
+],
+"pl1-2": [
+"holo",
+"reverse"
+],
+"pl1-65": [
+"normal",
+"reverse"
+],
+"pl1-96": [
+"normal",
+"reverse"
+],
+"pl2-111": [
+"holo"
+],
+"pl2-112": [
+"holo"
+],
+"pl2-113": [
+"holo"
+],
+"pl2-114": [
+"holo"
+],
+"pl2-31": [
+"normal",
+"reverse"
 ],
 "pl2-33": [
-"league-promo"
+"league-promo",
+"normal",
+"reverse"
+],
+"pl2-40": [
+"normal",
+"reverse"
+],
+"pl2-69": [
+"normal",
+"reverse"
+],
+"pl2-70": [
+"normal",
+"reverse"
+],
+"pl2-81": [
+"normal",
+"reverse"
+],
+"pl3-120": [
+"normal",
+"reverse"
 ],
 "pl3-13": [
-"exclusiva-de-mazo-dppt-supreme-victors"
+"exclusiva-de-mazo-dppt-supreme-victors",
+"holo",
+"reverse"
+],
+"pl3-143": [
+"holo"
+],
+"pl3-20": [
+"normal",
+"reverse"
+],
+"pl3-62": [
+"normal",
+"reverse"
+],
+"pl3-77": [
+"normal",
+"reverse"
+],
+"pl3-93": [
+"normal",
+"reverse"
 ],
 "pl4-1": [
-"cracked-ice-holo"
+"cracked-ice-holo",
+"holo",
+"reverse"
+],
+"pl4-16": [
+"normal",
+"reverse"
+],
+"pl4-17": [
+"normal",
+"reverse"
+],
+"pl4-25": [
+"normal",
+"reverse"
 ],
 "pl4-27": [
 "prerelease",
-"prerelease-staff"
+"prerelease-staff",
+"normal",
+"reverse"
+],
+"pl4-35": [
+"normal",
+"reverse"
+],
+"pl4-36": [
+"normal",
+"reverse"
+],
+"pl4-41": [
+"normal",
+"reverse"
+],
+"pl4-42": [
+"normal",
+"reverse"
+],
+"pl4-59": [
+"normal",
+"reverse"
+],
+"pl4-64": [
+"normal",
+"reverse"
+],
+"pl4-71": [
+"normal",
+"reverse"
+],
+"pl4-97": [
+"holo"
+],
+"pop2-12": [
+"normal"
+],
+"pop2-16": [
+"normal"
+],
+"pop2-6": [
+"holo",
+"normal"
+],
+"pop2-7": [
+"normal"
+],
+"pop3-1": [
+"holo",
+"normal"
+],
+"pop3-14": [
+"normal"
+],
+"pop3-16": [
+"normal"
+],
+"pop4-13": [
+"holo",
+"normal"
+],
+"pop4-14": [
+"normal"
+],
+"pop5-10": [
+"normal"
+],
+"pop5-12": [
+"holo",
+"normal"
+],
+"pop5-13": [
+"normal"
+],
+"pop5-5": [
+"normal"
 ],
 "pop6-9": [
-"pokemon-day-stamped"
+"pokemon-day-stamped",
+"holo",
+"normal"
+],
+"pop9-11": [
+"normal"
 ],
 "pop9-15": [
-"pokemon-day-2009"
+"pokemon-day-2009",
+"normal"
+],
+"pop9-3": [
+"normal",
+"reverse"
+],
+"ru1-1": [
+"holo"
+],
+"ru1-7": [
+"holo"
+],
+"si1-15": [
+"normal"
+],
+"si1-5": [
+"normal"
+],
+"sm10-158": [
+"holo",
+"reverse"
+],
+"sm10-194": [
+"holo"
 ],
 "sm10-20": [
 "mundial-2019-kaya-lichtleitner",
-"mundial-2019-henry-brand"
+"mundial-2019-henry-brand",
+"holo"
+],
+"sm10-217": [
+"holo"
+],
+"sm10-218": [
+"holo"
 ],
 "sm10-33": [
-"exclusiva-de-blister-premium-collection-promo"
+"exclusiva-de-blister-premium-collection-promo",
+"normal",
+"reverse"
 ],
 "sm10-34": [
-"premium-collection-promo"
+"premium-collection-promo",
+"normal",
+"reverse"
+],
+"sm10-35": [
+"holo"
+],
+"sm10-54": [
+"normal",
+"reverse"
+],
+"sm10-55": [
+"normal",
+"reverse"
+],
+"sm10-67": [
+"normal",
+"reverse"
+],
+"sm10-68": [
+"normal",
+"reverse"
+],
+"sm10-69": [
+"normal",
+"reverse"
+],
+"sm10-70": [
+"normal",
+"reverse"
+],
+"sm11-173": [
+"normal",
+"reverse"
+],
+"sm11-220": [
+"holo"
+],
+"sm11-221": [
+"holo"
+],
+"sm11-241": [
+"holo"
 ],
 "sm11-54": [
-"mundial-2019-haruki-miyamoto"
+"mundial-2019-haruki-miyamoto",
+"holo"
+],
+"sm11-55": [
+"normal",
+"reverse"
+],
+"sm11-56": [
+"normal",
+"reverse"
+],
+"sm11-57": [
+"holo",
+"reverse"
 ],
 "sm115-19": [
-"battle-academy-2020"
+"battle-academy-2020",
+"normal",
+"reverse"
 ],
 "sm115-20": [
-"battle-academy-2020"
+"battle-academy-2020",
+"holo"
 ],
 "sm115-50": [
-"battle-academy-2020"
+"battle-academy-2020",
+"normal",
+"reverse"
+],
+"sm115-7": [
+"normal",
+"reverse"
 ],
 "sm115-8": [
-"battle-academy-2020"
+"battle-academy-2020",
+"normal",
+"reverse"
 ],
 "sm115-9": [
-"battle-academy-2020"
+"battle-academy-2020",
+"holo"
+],
+"sm12-1": [
+"holo"
+],
+"sm12-210": [
+"holo"
+],
+"sm12-212": [
+"holo"
+],
+"sm12-214": [
+"holo"
+],
+"sm12-215": [
+"holo"
+],
+"sm12-22": [
+"holo"
+],
+"sm12-241": [
+"holo"
+],
+"sm12-249": [
+"holo"
+],
+"sm12-251": [
+"holo"
+],
+"sm12-253": [
+"holo"
+],
+"sm12-38": [
+"holo"
+],
+"sm12-66": [
+"normal",
+"reverse"
+],
+"sm12-67": [
+"normal",
+"reverse"
+],
+"sm3-150": [
+"holo"
 ],
 "sm3-18": [
 "battle-academy-2020",
-"premium-collection-promo"
+"premium-collection-promo",
+"normal",
+"reverse"
 ],
 "sm3-18a": [
 "general-mills-promo"
 ],
 "sm3-19": [
-"premium-collection-promo"
+"premium-collection-promo",
+"normal",
+"reverse"
+],
+"sm3-20": [
+"holo"
+],
+"sm3-40": [
+"normal",
+"reverse"
 ],
 "sm3-41": [
 "league-challenge-3rd-place",
 "league-challenge-2nd-place",
 "league-challenge-1st-place",
 "league-challenge-4th-place",
-"exclusiva-de-blister-cosmos-holo"
+"exclusiva-de-blister-cosmos-holo",
+"holo",
+"reverse"
 ],
 "sm3.5-1": [
-"general-mills-promo"
+"general-mills-promo",
+"normal",
+"reverse"
+],
+"sm3.5-2": [
+"normal",
+"reverse"
 ],
 "sm3.5-28": [
 "exclusiva-de-mazo-cracked-ice-holo",
 "water-web-holo",
 "general-mills",
-"cosmos-holo"
+"cosmos-holo",
+"normal",
+"reverse"
+],
+"sm3.5-29": [
+"holo"
+],
+"sm3.5-3": [
+"normal",
+"reverse"
+],
+"sm3.5-75": [
+"holo"
+],
+"sm4-30": [
+"normal",
+"reverse"
 ],
 "sm4-31": [
-"exclusiva-de-mazo-sm-crimson-invasion"
+"exclusiva-de-mazo-sm-crimson-invasion",
+"holo",
+"reverse"
+],
+"sm4-36": [
+"normal",
+"reverse"
+],
+"sm4-37": [
+"normal",
+"reverse"
 ],
 "sm4-38": [
-"exclusiva-de-mazo-prerelease-kit-exclusive"
+"exclusiva-de-mazo-prerelease-kit-exclusive",
+"holo",
+"reverse"
+],
+"sm7.5-1": [
+"normal",
+"reverse"
+],
+"sm7.5-2": [
+"normal",
+"reverse"
 ],
 "sm7.5-3": [
 "battle-academy-2020",
-"exclusiva-de-mazo-let-s-play-eevee"
+"exclusiva-de-mazo-let-s-play-eevee",
+"holo",
+"reverse"
+],
+"sm9-1": [
+"holo"
+],
+"sm9-11": [
+"normal",
+"reverse"
+],
+"sm9-12": [
+"normal",
+"reverse"
+],
+"sm9-120": [
+"holo"
+],
+"sm9-13": [
+"normal",
+"reverse"
 ],
 "sm9-14": [
 "exclusiva-de-mazo-sm-team-up",
 "costco-exclusive",
-"library-exclusive"
+"library-exclusive",
+"normal",
+"reverse"
+],
+"sm9-159": [
+"holo"
+],
+"sm9-162": [
+"holo"
+],
+"sm9-164": [
+"holo"
+],
+"sm9-165": [
+"holo"
+],
+"sm9-171": [
+"holo"
+],
+"sm9-182": [
+"holo"
+],
+"sm9-184": [
+"holo"
+],
+"sm9-186": [
+"holo"
+],
+"sm9-191": [
+"holo"
+],
+"sm9-22": [
+"normal",
+"reverse"
+],
+"sm9-23": [
+"normal",
+"reverse"
+],
+"sm9-24": [
+"normal",
+"reverse"
 ],
 "sm9-25": [
-"exclusiva-de-mazo-cracked-ice-holo"
+"exclusiva-de-mazo-cracked-ice-holo",
+"normal",
+"reverse"
 ],
 "sm9-33": [
-"mundial-2019-haruki-miyamoto"
+"mundial-2019-haruki-miyamoto",
+"holo"
+],
+"sm9-53": [
+"holo"
+],
+"sma-SV49": [
+"holo"
+],
+"sma-SV6": [
+"holo"
+],
+"sma-SV7": [
+"holo"
 ],
 "smp-SM04": [
 "target-non-holo",
-"general-mills"
+"general-mills",
+"holo"
 ],
 "smp-SM05": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"smp-SM108": [
+"normal"
+],
+"smp-SM109": [
+"normal"
+],
+"smp-SM110": [
+"normal"
+],
+"smp-SM111": [
+"normal"
+],
+"smp-SM112": [
+"normal"
+],
+"smp-SM113": [
+"normal"
+],
+"smp-SM114": [
+"normal"
+],
+"smp-SM157": [
+"holo"
 ],
 "smp-SM158": [
-"staff"
+"staff",
+"holo"
+],
+"smp-SM162": [
+"holo"
+],
+"smp-SM167": [
+"holo"
+],
+"smp-SM168": [
+"holo"
+],
+"smp-SM169": [
+"holo"
 ],
 "smp-SM170": [
-"stamped"
+"stamped",
+"holo"
+],
+"smp-SM183": [
+"holo"
 ],
 "smp-SM189": [
-"jumbo-tamano-gigante-black-star-promos"
+"jumbo-tamano-gigante-black-star-promos",
+"holo"
 ],
 "smp-SM190": [
-"stamped"
+"stamped",
+"holo"
+],
+"smp-SM194": [
+"holo"
 ],
 "smp-SM195": [
-"jumbo-tamano-gigante-sm-black-star-promo"
+"jumbo-tamano-gigante-sm-black-star-promo",
+"holo"
 ],
 "smp-SM198": [
-"detective-pikachu-stamped"
+"detective-pikachu-stamped",
+"holo"
 ],
 "smp-SM201": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"smp-SM206": [
+"holo"
 ],
 "smp-SM211": [
-"jumbo-tamano-gigante-sm-black-star-promo"
+"jumbo-tamano-gigante-sm-black-star-promo",
+"holo"
 ],
 "smp-SM213": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"smp-SM226": [
+"holo"
+],
+"smp-SM227": [
+"holo"
+],
+"smp-SM229": [
+"holo"
 ],
 "smp-SM230": [
-"jumbo-tamano-gigante-sm-black-star-promo"
+"jumbo-tamano-gigante-sm-black-star-promo",
+"holo"
 ],
 "smp-SM232": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"smp-SM234": [
+"holo"
 ],
 "smp-SM247": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
 ],
 "smp-SM248": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
 ],
 "smp-SM60": [
-"jumbo-tamano-gigante-sm-black-star-promos"
+"jumbo-tamano-gigante-sm-black-star-promos",
+"holo"
 ],
 "smp-SM65": [
 "battle-academy-2020",
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
 ],
 "smp-SM72": [
-"prerelease-staff"
+"prerelease-staff",
+"holo"
+],
+"smp-SM76": [
+"holo"
+],
+"smp-SM81": [
+"holo"
 ],
 "smp-SM86": [
 "general-mills-promo",
-"build-a-bear-workshop-exclusive"
+"build-a-bear-workshop-exclusive",
+"holo"
 ],
 "smp-SM90": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"smp-SM98": [
+"holo"
 ],
 "sv02-062": [
 "trick-or-trade",
-"rain-city-showcase"
+"rain-city-showcase",
+"normal",
+"reverse"
 ],
 "sv02-063": [
-"holiday-calendar"
+"holiday-calendar",
+"holo"
+],
+"sv02-064": [
+"normal",
+"reverse"
+],
+"sv02-211": [
+"holo"
+],
+"sv03-026": [
+"normal",
+"reverse"
+],
+"sv03-027": [
+"normal",
+"reverse"
 ],
 "sv03-125": [
 "prize-pack",
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"sv03-215": [
+"holo"
+],
+"sv03-223": [
+"holo"
+],
+"sv03-228": [
+"holo"
 ],
 "sv03.5-001": [
 "best-buy-exclusive",
-"reverse-cosmos-holo-costco-exclusive"
+"reverse-cosmos-holo-costco-exclusive",
+"normal",
+"reverse"
+],
+"sv03.5-002": [
+"normal",
+"reverse"
+],
+"sv03.5-003": [
+"holo"
 ],
 "sv03.5-004": [
 "gamestop-exclusive",
 "ebgames-exclusive",
 "cosmos-holo",
-"reverse-cosmos-holo-costco-exclusive"
+"reverse-cosmos-holo-costco-exclusive",
+"normal",
+"reverse"
 ],
 "sv03.5-005": [
-"cosmos-holo"
+"cosmos-holo",
+"normal",
+"reverse"
+],
+"sv03.5-006": [
+"holo"
 ],
 "sv03.5-007": [
 "pokemon-center-exclusive",
-"reverse-cosmos-holo-costco-exclusive"
+"reverse-cosmos-holo-costco-exclusive",
+"normal",
+"reverse"
+],
+"sv03.5-008": [
+"normal",
+"reverse"
 ],
 "sv03.5-009": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
 ],
 "sv03.5-025": [
 "pokemon-together",
 "reverse-cosmos-holo-costco-exclusive",
-"holiday-calendar"
+"holiday-calendar",
+"normal",
+"reverse"
 ],
 "sv03.5-026": [
-"cosmos-holo"
+"cosmos-holo",
+"holo",
+"reverse"
+],
+"sv03.5-092": [
+"normal",
+"reverse"
+],
+"sv03.5-093": [
+"normal",
+"reverse"
 ],
 "sv03.5-094": [
-"cosmos-holo"
+"cosmos-holo",
+"holo",
+"reverse"
+],
+"sv03.5-143": [
+"normal",
+"reverse"
+],
+"sv03.5-166": [
+"holo"
+],
+"sv03.5-167": [
+"holo"
+],
+"sv03.5-168": [
+"holo"
+],
+"sv03.5-169": [
+"holo"
+],
+"sv03.5-170": [
+"holo"
+],
+"sv03.5-171": [
+"holo"
+],
+"sv03.5-173": [
+"holo"
+],
+"sv03.5-182": [
+"holo"
+],
+"sv03.5-183": [
+"holo"
+],
+"sv03.5-184": [
+"holo"
+],
+"sv03.5-198": [
+"holo"
+],
+"sv03.5-199": [
+"holo"
+],
+"sv03.5-200": [
+"holo"
 ],
 "sv04.5-007": [
-"cosmos-holo"
+"cosmos-holo",
+"normal",
+"reverse"
 ],
 "sv04.5-008": [
-"cosmos-holo"
+"cosmos-holo",
+"normal",
+"reverse"
 ],
 "sv04.5-018": [
 "trick-or-trade-cosmos-holo",
-"reverse-cosmos-holo"
+"reverse-cosmos-holo",
+"normal",
+"reverse"
 ],
 "sv04.5-019": [
-"exclusiva-de-mazo-paldean-fates"
+"exclusiva-de-mazo-paldean-fates",
+"holo",
+"reverse"
 ],
 "sv04.5-054": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"sv04.5-055": [
+"normal",
+"reverse"
+],
+"sv04.5-056": [
+"normal",
+"reverse"
 ],
 "sv04.5-057": [
-"trick-or-trade-cosmos-holo"
+"trick-or-trade-cosmos-holo",
+"normal",
+"reverse"
+],
+"sv04.5-109": [
+"holo"
+],
+"sv04.5-110": [
+"holo"
+],
+"sv04.5-131": [
+"holo"
+],
+"sv04.5-132": [
+"holo"
+],
+"sv04.5-202": [
+"holo"
+],
+"sv04.5-234": [
+"holo"
 ],
 "sv05-051": [
 "cosmos-holo",
-"pokemon-day-2026"
+"pokemon-day-2026",
+"normal",
+"reverse"
+],
+"sv05-052": [
+"normal",
+"reverse"
 ],
 "sv05-102": [
-"trick-or-trade"
+"trick-or-trade",
+"normal",
+"reverse"
 ],
 "sv05-103": [
-"trick-or-trade"
+"trick-or-trade",
+"normal",
+"reverse"
+],
+"sv05-104": [
+"holo"
+],
+"sv05-177": [
+"holo"
+],
+"sv05-193": [
+"holo"
+],
+"sv06-136": [
+"normal",
+"reverse"
 ],
 "sv07-001": [
 "jumbo-tamano-gigante",
-"stellar-crown-stamp"
+"stellar-crown-stamp",
+"holo"
 ],
 "sv07-030": [
-"stellar-crown-stamp"
+"stellar-crown-stamp",
+"holo"
+],
+"sv07-143": [
+"holo"
+],
+"sv07-148": [
+"holo"
 ],
 "sv08-057": [
-"prize-pack"
+"prize-pack",
+"holo"
+],
+"sv08-144": [
+"normal",
+"reverse"
+],
+"sv08-219": [
+"holo"
+],
+"sv08-238": [
+"holo"
+],
+"sv08-247": [
+"holo"
+],
+"sv08.5-028": [
+"holo"
 ],
 "sv08.5-076": [
 "jumbo-tamano-gigante-prismatic-evolution-stamped",
-"prismatic-evolution-stamped"
+"prismatic-evolution-stamped",
+"holo"
+],
+"sv08.5-179": [
+"holo"
 ],
 "sv09-117": [
 "prize-pack",
 "prize-pack-cosmos-holo",
 "gamestop-cosmos-holo",
 "cosmos-holo",
-"eb-games-cosmos-holo"
+"eb-games-cosmos-holo",
+"holo",
+"reverse"
+],
+"sv10-071": [
+"normal",
+"reverse"
 ],
 "svp-027": [
-"pokemon-center-exclusive"
+"pokemon-center-exclusive",
+"holo"
 ],
 "svp-044": [
-"pokemon-center-exclusive"
+"pokemon-center-exclusive",
+"holo"
+],
+"svp-046": [
+"holo"
+],
+"svp-047": [
+"holo"
+],
+"svp-048": [
+"holo"
 ],
 "svp-051": [
-"pokemon-center-exclusive"
+"pokemon-center-exclusive",
+"holo"
+],
+"svp-056": [
+"holo"
+],
+"svp-074": [
+"holo"
+],
+"svp-085": [
+"normal"
+],
+"svp-088": [
+"holo"
 ],
 "svp-101": [
-"asia-championship-series-23-24"
+"asia-championship-series-23-24",
+"normal"
 ],
 "svp-106": [
 "battle-academy-2024"
 ],
+"svp-122": [
+"holo"
+],
+"svp-161": [
+"holo"
+],
 "svp-184": [
-"prerelease-staff"
+"prerelease-staff",
+"holo"
+],
+"svp-190": [
+"normal"
+],
+"svp-196": [
+"jumbo-tamano-gigante",
+"holo"
+],
+"svp-214": [
+"normal"
 ],
 "svp-225": [
-"world-championship-2025-winner"
+"world-championship-2025-winner",
+"normal"
 ],
 "swsh1-140": [
-"exclusiva-de-blister-cosmos-holo"
+"exclusiva-de-blister-cosmos-holo",
+"normal",
+"reverse"
 ],
 "swsh1-141": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
 ],
 "swsh1-142": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"swsh1-197": [
+"holo"
+],
+"swsh1-206": [
+"holo"
 ],
 "swsh1-65": [
 "cosmos-holo",
-"reverse-cosmos-holo"
+"reverse-cosmos-holo",
+"normal",
+"reverse"
+],
+"swsh1-66": [
+"normal",
+"reverse"
+],
+"swsh1-83": [
+"normal",
+"reverse"
+],
+"swsh1-84": [
+"normal",
+"reverse"
 ],
 "swsh1-85": [
-"library-exclusive"
+"library-exclusive",
+"holo",
+"reverse"
+],
+"swsh10.5-001": [
+"normal",
+"reverse"
+],
+"swsh10.5-002": [
+"normal",
+"reverse"
+],
+"swsh10.5-003": [
+"holo",
+"reverse"
+],
+"swsh10.5-004": [
+"holo"
+],
+"swsh10.5-008": [
+"normal",
+"reverse"
+],
+"swsh10.5-009": [
+"normal",
+"reverse"
+],
+"swsh10.5-010": [
+"holo",
+"reverse"
+],
+"swsh10.5-011": [
+"holo"
+],
+"swsh10.5-015": [
+"normal",
+"reverse"
+],
+"swsh10.5-016": [
+"normal",
+"reverse"
+],
+"swsh10.5-017": [
+"holo",
+"reverse"
+],
+"swsh10.5-018": [
+"holo"
 ],
 "swsh10.5-027": [
-"cosmos-holo"
+"cosmos-holo",
+"normal",
+"reverse"
+],
+"swsh10.5-028": [
+"holo",
+"reverse"
 ],
 "swsh10.5-055": [
-"cosmos-holo"
+"cosmos-holo",
+"holo",
+"reverse"
+],
+"swsh11-052": [
+"normal",
+"reverse"
+],
+"swsh11-053": [
+"normal",
+"reverse"
 ],
 "swsh11-064": [
-"trick-or-trade"
+"trick-or-trade",
+"normal",
+"reverse"
 ],
 "swsh11-065": [
-"trick-or-trade"
+"trick-or-trade",
+"normal",
+"reverse"
 ],
 "swsh11-066": [
 "trick-or-trade-2022-copyright-date",
 "prize-pack",
-"exclusiva-de-mazo"
+"exclusiva-de-mazo",
+"holo",
+"reverse"
 ],
 "swsh11-143": [
 "prize-pack",
-"mundial-2023-gabriel-fernandez"
+"mundial-2023-gabriel-fernandez",
+"holo",
+"reverse"
+],
+"swsh11tg-TG03": [
+"holo"
+],
+"swsh11tg-TG05": [
+"holo"
+],
+"swsh11tg-TG06": [
+"holo"
+],
+"swsh11tg-TG10": [
+"holo"
+],
+"swsh11tg-TG16": [
+"holo"
+],
+"swsh11tg-TG17": [
+"holo"
+],
+"swsh11tg-TG29": [
+"holo"
 ],
 "swsh12-049": [
-"holiday-calendar"
+"holiday-calendar",
+"normal",
+"reverse"
+],
+"swsh12-050": [
+"normal",
+"reverse"
+],
+"swsh12.5-018": [
+"holo"
+],
+"swsh12.5-019": [
+"holo"
 ],
 "swsh12.5-020": [
-"prize-pack"
+"prize-pack",
+"holo"
+],
+"swsh12.5-109": [
+"normal",
+"reverse"
+],
+"swsh12.5-160": [
+"holo"
+],
+"swsh12.5gg-GG30": [
+"holo"
 ],
 "swsh2-141": [
-"cosmos-holo"
+"cosmos-holo",
+"normal",
+"reverse"
 ],
 "swsh3-19": [
-"prize-pack"
+"prize-pack",
+"holo"
 ],
 "swsh3-20": [
-"prize-pack"
+"prize-pack",
+"holo"
+],
+"swsh3.5-1": [
+"holo"
+],
+"swsh3.5-74": [
+"holo"
+],
+"swsh3.5-79": [
+"holo"
 ],
 "swsh4-131": [
 "prize-pack",
-"vivid-voltage-stamped"
+"vivid-voltage-stamped",
+"holo",
+"reverse"
+],
+"swsh4-170": [
+"holo"
+],
+"swsh4-188": [
+"holo"
 ],
 "swsh4-23": [
-"reverse-cosmos-holo"
+"reverse-cosmos-holo",
+"normal",
+"reverse"
+],
+"swsh4-24": [
+"normal",
+"reverse"
 ],
 "swsh4-25": [
 "prize-pack",
-"exclusiva-de-mazo-cracked-ice-holo"
+"exclusiva-de-mazo-cracked-ice-holo",
+"normal",
+"reverse"
 ],
 "swsh4-43": [
 "prize-pack",
 "battle-academy-2022",
-"jumbo-tamano-gigante-vivid-voltage-stamped"
+"jumbo-tamano-gigante-vivid-voltage-stamped",
+"holo"
 ],
 "swsh4-44": [
-"prize-pack"
+"prize-pack",
+"holo"
+],
+"swsh4.5sv-SV107": [
+"holo"
+],
+"swsh6-224": [
+"holo"
 ],
 "swsh6-55": [
-"trick-or-trade"
+"trick-or-trade",
+"normal",
+"reverse"
 ],
 "swsh6-56": [
-"trick-or-trade"
+"trick-or-trade",
+"normal",
+"reverse"
 ],
 "swsh6-57": [
-"trick-or-trade-2021-copyright-date"
+"trick-or-trade-2021-copyright-date",
+"holo",
+"reverse"
 ],
 "swsh7-49": [
 "trick-or-trade",
-"pokemon-league"
+"pokemon-league",
+"normal",
+"reverse"
+],
+"swsh7-50": [
+"holo",
+"reverse"
 ],
 "swsh8-156": [
-"prize-pack"
+"prize-pack",
+"holo"
 ],
 "swsh8-157": [
-"prize-pack"
+"prize-pack",
+"holo"
+],
+"swsh8-206": [
+"normal",
+"reverse"
+],
+"swsh8-271": [
+"holo"
+],
+"swsh8-86": [
+"holo"
 ],
 "swsh9-017": [
-"prize-pack"
+"prize-pack",
+"holo"
 ],
 "swsh9-018": [
 "prize-pack",
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
 ],
 "swsh9-045": [
-"prize-pack"
+"prize-pack",
+"holo"
+],
+"swsh9-153": [
+"holo"
+],
+"swsh9-154": [
+"holo"
+],
+"swsh9-157": [
+"holo"
+],
+"swsh9-158": [
+"holo"
+],
+"swsh9-174": [
+"holo"
+],
+"swshp-SWSH020": [
+"holo"
+],
+"swshp-SWSH032": [
+"holo"
 ],
 "swshp-SWSH039": [
-"general-mills"
+"general-mills",
+"holo"
+],
+"swshp-SWSH050": [
+"holo"
+],
+"swshp-SWSH052": [
+"holo"
 ],
 "swshp-SWSH061": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"swshp-SWSH062": [
+"holo"
+],
+"swshp-SWSH063": [
+"holo"
 ],
 "swshp-SWSH066": [
-"prerelease-staff"
+"prerelease-staff",
+"holo"
 ],
 "swshp-SWSH068": [
-"prerelease-staff"
+"prerelease-staff",
+"holo"
+],
+"swshp-SWSH074": [
+"holo"
+],
+"swshp-SWSH075": [
+"holo"
+],
+"swshp-SWSH092": [
+"holo"
+],
+"swshp-SWSH100": [
+"holo"
+],
+"swshp-SWSH101": [
+"holo"
 ],
 "swshp-SWSH102": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
 ],
 "swshp-SWSH103": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"swshp-SWSH119": [
+"holo"
 ],
 "swshp-SWSH133": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"swshp-SWSH139": [
+"holo"
+],
+"swshp-SWSH140": [
+"holo"
+],
+"swshp-SWSH141": [
+"holo"
+],
+"swshp-SWSH142": [
+"holo"
+],
+"swshp-SWSH143": [
+"holo"
+],
+"swshp-SWSH145": [
+"holo"
+],
+"swshp-SWSH153": [
+"holo"
 ],
 "swshp-SWSH198": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"swshp-SWSH231": [
+"holo"
+],
+"swshp-SWSH232": [
+"holo"
+],
+"swshp-SWSH233": [
+"holo"
+],
+"swshp-SWSH234": [
+"holo"
 ],
 "swshp-SWSH241": [
-"prerelease-staff"
+"prerelease-staff",
+"holo"
+],
+"swshp-SWSH260": [
+"holo"
+],
+"swshp-SWSH261": [
+"holo"
+],
+"swshp-SWSH262": [
+"holo"
+],
+"swshp-SWSH285": [
+"holo"
 ],
 "swshp-SWSH286": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"swshp-SWSH303": [
+"normal"
+],
+"tk-ex-latio-6": [
+"normal"
+],
+"tk-ex-m-2": [
+"normal"
+],
+"tk-ex-m-3": [
+"normal"
+],
+"tk-hs-r-16": [
+"normal"
+],
+"tk-hs-r-19": [
+"normal"
+],
+"tk-hs-r-2": [
+"normal"
+],
+"tk-hs-r-30": [
+"holo"
+],
+"tk-sm-r-14": [
+"normal"
+],
+"tk-sm-r-17": [
+"normal"
+],
+"tk-sm-r-29": [
+"normal"
+],
+"tk-sm-r-30": [
+"holo"
+],
+"tk-xy-p-14": [
+"normal"
+],
+"tk-xy-p-30": [
+"holo"
+],
+"wc-1": [
+"normal"
+],
+"xy0-26": [
+"normal"
+],
+"xy1-1": [
+"holo"
+],
+"xy1-141": [
+"holo"
+],
+"xy1-142": [
+"holo"
+],
+"xy1-2": [
+"holo"
+],
+"xy1-29": [
+"holo"
+],
+"xy1-30": [
+"holo"
 ],
 "xy1-42": [
-"2014-movie-promo"
+"2014-movie-promo",
+"normal",
+"reverse"
 ],
 "xy1-43": [
 "exclusiva-de-mazo-battle-arena-deck-exclusive",
-"exclusiva-de-blister-cosmos-holo"
+"exclusiva-de-blister-cosmos-holo",
+"holo",
+"reverse"
+],
+"xy10-77": [
+"normal",
+"reverse"
+],
+"xy12-1": [
+"holo"
+],
+"xy12-10": [
+"normal",
+"reverse"
+],
+"xy12-100": [
+"holo"
+],
+"xy12-101": [
+"holo"
+],
+"xy12-102": [
+"holo"
 ],
 "xy12-11": [
 "xy-evolutions-prerelease",
-"prerelease"
+"prerelease",
+"holo",
+"reverse"
+],
+"xy12-110": [
+"normal"
+],
+"xy12-111": [
+"normal"
+],
+"xy12-12": [
+"holo"
+],
+"xy12-13": [
+"holo"
+],
+"xy12-2": [
+"holo"
+],
+"xy12-21": [
+"holo"
+],
+"xy12-22": [
+"holo"
 ],
 "xy12-35": [
-"exclusiva-de-mazo-cracked-ice-holo"
+"exclusiva-de-mazo-cracked-ice-holo",
+"normal",
+"reverse"
 ],
 "xy12-36": [
-"exclusiva-de-mazo-xy-evolutions"
+"exclusiva-de-mazo-xy-evolutions",
+"holo",
+"reverse"
+],
+"xy12-47": [
+"normal",
+"reverse"
+],
+"xy12-48": [
+"normal",
+"reverse"
 ],
 "xy12-9": [
-"toys-r-us-promo"
+"toys-r-us-promo",
+"normal",
+"reverse"
+],
+"xy2-100": [
+"holo"
+],
+"xy2-107": [
+"holo"
+],
+"xy2-108": [
+"holo"
 ],
 "xy2-11": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"xy2-12": [
+"holo"
 ],
 "xy2-13": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
 ],
 "xy2-69": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
 ],
 "xy2-80": [
-"build-a-bear-workshop-exclusive"
+"build-a-bear-workshop-exclusive",
+"normal",
+"reverse"
+],
+"xy3-27": [
+"normal",
+"reverse"
+],
+"xy3-28": [
+"normal",
+"reverse"
+],
+"xy4-114": [
+"holo"
+],
+"xy4-121": [
+"holo"
 ],
 "xy4-34": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"xy4-35": [
+"holo"
 ],
 "xy6-20": [
-"build-a-bear-workshop-exclusive"
+"build-a-bear-workshop-exclusive",
+"normal",
+"reverse"
+],
+"xy8-118": [
+"normal",
+"reverse"
+],
+"xy8-48": [
+"normal",
+"reverse"
 ],
 "xy8-49": [
-"exclusiva-de-mazo-xy-breakthrough-cracked-ice-holo"
+"exclusiva-de-mazo-xy-breakthrough-cracked-ice-holo",
+"normal",
+"reverse"
+],
+"xy8-50": [
+"holo"
+],
+"xy8-58": [
+"normal",
+"reverse"
+],
+"xy8-59": [
+"normal",
+"reverse"
 ],
 "xy8-60": [
 "exclusiva-de-mazo-xy-breakthrough",
-"cosmos-holo"
+"cosmos-holo",
+"holo",
+"reverse"
 ],
 "xyp-XY121": [
-"jumbo-tamano-gigante-xy-black-star-promos"
+"jumbo-tamano-gigante-xy-black-star-promos",
+"holo"
 ],
 "xyp-XY122": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
 ],
 "xyp-XY123": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
 ],
 "xyp-XY124": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"xyp-XY132": [
+"holo"
+],
+"xyp-XY166": [
+"holo"
 ],
 "xyp-XY17": [
-"jumbo-tamano-gigante-xy-black-star-promos"
+"jumbo-tamano-gigante-xy-black-star-promos",
+"holo"
 ],
 "xyp-XY174": [
-"jumbo-tamano-gigante"
+"jumbo-tamano-gigante",
+"holo"
+],
+"xyp-XY179": [
+"holo"
+],
+"xyp-XY202": [
+"holo"
+],
+"xyp-XY28": [
+"holo"
+],
+"xyp-XY29": [
+"holo"
+],
+"xyp-XY30": [
+"holo"
+],
+"xyp-XY84": [
+"holo"
+],
+"xyp-XY89": [
+"holo"
+],
+"xyp-XY95": [
+"holo"
 ]
 },
-"revisar": [
-{
-"idioma": "en",
-"grupo": "Jumbo Cards",
-"producto": "Charizard - S1/S4 (Box Topper)",
-"numero": "S1/S4",
-"tcgplayer_id": 210841,
-"motivo": "sin carta base en la app",
-"cartas": []
-},
-{
-"idioma": "en",
-"grupo": "Jumbo Cards",
-"producto": "Dark Blastoise - S2/S4 (Box Topper)",
-"numero": "S2/S4",
-"tcgplayer_id": 210842,
-"motivo": "sin carta base en la app",
-"cartas": []
-},
-{
-"idioma": "en",
-"grupo": "Jumbo Cards",
-"producto": "Dark Raichu - S3/S4 (Box Topper)",
-"numero": "S3/S4",
-"tcgplayer_id": 210843,
-"motivo": "sin carta base en la app",
-"cartas": []
-},
-{
-"idioma": "en",
-"grupo": "Jumbo Cards",
-"producto": "Charizard ex -196",
-"numero": "196",
-"tcgplayer_id": 641615,
-"motivo": "sin carta base en la app",
-"cartas": []
-},
-{
-"idioma": "en",
-"grupo": "Burger King Promos",
-"producto": "Pikachu - 70/100 [Platinum]",
-"numero": "070/100",
-"tcgplayer_id": 224679,
-"motivo": "varias cartas base",
-"cartas": [
-"dp5-70",
-"dp7-70"
+"reemplaza": {
+"ja-tp630192": [
+"normal",
+"holo"
+],
+"ja-tp630248": [
+"normal",
+"holo"
+],
+"ja-tp587758": [
+"normal",
+"holo"
+],
+"ja-tp587815": [
+"normal",
+"holo"
+],
+"ja-tp587817": [
+"normal",
+"holo"
+],
+"ja-tp587818": [
+"normal",
+"holo"
+],
+"ja-tp587819": [
+"normal",
+"holo"
+],
+"ja-tp587856": [
+"normal",
+"holo"
+],
+"ja-tp587923": [
+"normal",
+"holo"
+],
+"ja-tp587925": [
+"normal",
+"holo"
+],
+"ja-tp650726": [
+"normal",
+"holo"
+],
+"ja-tp650763": [
+"normal",
+"holo"
+],
+"ja-tp658431": [
+"normal",
+"holo"
+],
+"ja-tp597228": [
+"normal",
+"holo"
+],
+"ja-tp597229": [
+"normal",
+"holo"
+],
+"ja-tp597306": [
+"normal",
+"holo"
+],
+"ja-tp597322": [
+"normal",
+"holo"
+],
+"ja-tp597323": [
+"normal",
+"holo"
+],
+"ja-tp597343": [
+"normal",
+"holo"
+],
+"ja-tp597354": [
+"normal",
+"holo"
+],
+"ja-tp597392": [
+"normal",
+"holo"
+],
+"ja-tp597438": [
+"normal",
+"holo"
+],
+"ja-tp597445": [
+"normal",
+"holo"
+],
+"ja-tp597496": [
+"normal",
+"holo"
+],
+"ja-tp598078": [
+"normal",
+"holo"
+],
+"ja-tp598080": [
+"normal",
+"holo"
+],
+"ja-tp598091": [
+"normal",
+"holo"
+],
+"ja-tp598132": [
+"normal",
+"holo"
+],
+"ja-tp598137": [
+"normal",
+"holo"
+],
+"ja-tp598138": [
+"normal",
+"holo"
+],
+"ja-tp598268": [
+"normal",
+"holo"
+],
+"ja-tp598269": [
+"normal",
+"holo"
+],
+"ja-tp598270": [
+"normal",
+"holo"
+],
+"ja-tp598271": [
+"normal",
+"holo"
+],
+"ja-tp598272": [
+"normal",
+"holo"
+],
+"ja-tp598273": [
+"normal",
+"holo"
+],
+"ja-tp598274": [
+"normal",
+"holo"
+],
+"ja-tp598288": [
+"normal",
+"holo"
+],
+"ja-tp598304": [
+"normal",
+"holo"
+],
+"ja-tp598326": [
+"normal",
+"holo"
+],
+"ja-tp598347": [
+"normal",
+"holo"
+],
+"ja-tp598360": [
+"normal",
+"holo"
+],
+"ja-tp598368": [
+"normal",
+"holo"
+],
+"ja-tp598402": [
+"normal",
+"holo"
+],
+"ja-tp598443": [
+"normal",
+"holo"
+],
+"ja-tp598446": [
+"normal",
+"holo"
+],
+"ja-tp598468": [
+"normal",
+"holo"
+],
+"ja-tp598484": [
+"normal",
+"holo"
+],
+"ja-tp601935": [
+"normal",
+"holo"
+],
+"ja-tp601979": [
+"normal",
+"holo"
+],
+"ja-tp601981": [
+"normal",
+"holo"
+],
+"ja-tp602107": [
+"normal",
+"holo"
+],
+"ja-tp602110": [
+"normal",
+"holo"
+],
+"ja-tp602117": [
+"normal",
+"holo"
+],
+"ja-tp602125": [
+"normal",
+"holo"
+],
+"ja-tp602137": [
+"normal",
+"holo"
+],
+"ja-tp602138": [
+"normal",
+"holo"
+],
+"ja-tp635223": [
+"normal",
+"holo"
+],
+"ja-tp613326": [
+"normal",
+"holo"
+],
+"ja-tp613365": [
+"normal",
+"holo"
+],
+"ja-tp613368": [
+"normal",
+"holo"
+],
+"ja-tp677700": [
+"normal",
+"holo"
+],
+"ja-tp677708": [
+"normal",
+"holo"
+],
+"ja-tp677716": [
+"normal",
+"holo"
+],
+"ja-tp613699": [
+"normal",
+"holo"
 ]
 },
-{
-"idioma": "en",
-"grupo": "Miscellaneous Cards & Products",
-"producto": "Pikachu - 012 (10th Anniversary)",
-"numero": "012",
-"tcgplayer_id": 187219,
-"motivo": "varias cartas base",
-"cartas": [
-"np-12",
-"pop5-12"
-]
-},
-{
-"idioma": "en",
-"grupo": "Miscellaneous Cards & Products",
-"producto": "Charizard - 143/S-P (Grand Prix)",
-"numero": "143/S-P",
-"tcgplayer_id": 282521,
-"motivo": "sin carta base en la app",
-"cartas": []
-},
-{
-"idioma": "en",
-"grupo": "Miscellaneous Cards & Products",
-"producto": "Charizard (Japanese Meiji Chocolate Exclusive Promo)",
-"numero": "054/ADV-P",
-"tcgplayer_id": 478250,
-"motivo": "sin carta base en la app",
-"cartas": []
-},
-{
-"idioma": "en",
-"grupo": "Miscellaneous Cards & Products",
-"producto": "Pikachu (Japanese 11th Movie Commemoration Set)",
-"numero": "003/009",
-"tcgplayer_id": 484830,
-"motivo": "sin carta base en la app",
-"cartas": []
-}
-]
+"revisar": []
 }
