@@ -41,7 +41,7 @@ const Dominio = (() => {
     normal: 'Norm', holo: 'Holo', reverse: 'Rev', firstEdition: '1.ª', wPromo: 'Promo',
   };
 
-  const nombreVariante = (v) => NOMBRE_VARIANTE[v] || v;
+  const nombreVariante = (v, nv = {}) => NOMBRE_VARIANTE[v] || nv[v] || v;
   const abrevVariante = (v) => ABREV_VARIANTE[v] || v;
 
   /* ---------- la colección ----------

@@ -35,6 +35,8 @@ class Tienda {
      colección cuando tú la apruebas en la app; lo decidido se guarda en
      ajustes.novedades { idDeCarta: 1 (añadida) | 0 (descartada) }. */
   base = $state.raw<{ sets: Record<string, Set>; cartas: Carta[] }>({ sets: {}, cartas: [] })
+  /** nombre en castellano de las variantes especiales (sellos, holos…): clave → nombre */
+  nv = $state.raw<Record<string, string>>({})
   novedad = $state.raw<Novedades | null>(null)
   // sube cada vez que decides una novedad: el aviso se entera al momento
   private decisiones = $state(0)
@@ -53,6 +55,7 @@ class Tienda {
       fetch(`${base}data/manifiesto.json`).then((r) => r.json()),
     ])
     this.base = { sets: cat.sets, cartas: cat.cartas }
+    this.nv = cat.nv || {}
     // las novedades son opcionales: si no hay fichero o no se lee, la app sigue igual
     try {
       const r = await fetch(`${base}data/novedades.json`, { cache: 'no-cache' })
@@ -245,6 +248,7 @@ export function numeroImpreso(c: Carta): string {
 export const NOMBRE_VARIANTE: Record<string, string> = {
   normal: 'Normal', holo: 'Holo', reverse: 'Reverse holo', firstEdition: '1.ª edición', wPromo: 'Promo',
 }
+export const nombreVariante = (v: string) => NOMBRE_VARIANTE[v] ?? app.nv[v] ?? v
 export const ETAPA: Record<string, string> = {
   Basic: 'Básica', Stage1: 'Fase 1', Stage2: 'Fase 2', 'Stage 1': 'Fase 1', 'Stage 2': 'Fase 2',
 }

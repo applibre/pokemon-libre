@@ -395,8 +395,9 @@ test('todas las direcciones de TCG Collector empiezan por el nombre de su carta'
   }
 });
 
-test('la mayoría de las cartas tiene enlace directo a TCG Collector', () => {
-  const directos = CARTAS.filter((c) => c.tc_id).length;
+test('la mayoría de las cartas tiene enlace directo a una tienda (TCG Collector o TCGplayer)', () => {
+  // las promos traídas de la tienda Carpeta (scripts/traer-de-carpeta.py) enlazan a TCGplayer
+  const directos = CARTAS.filter((c) => c.tc_id || c.tp_id).length;
   assert.ok(directos / CARTAS.length > 0.9, `solo ${directos} de ${CARTAS.length}`);
 });
 
@@ -420,7 +421,8 @@ test('las japonesas están marcadas y todas enlazan a su página', () => {
   if (!ja.length) return;   // aún no traídas
   for (const c of ja) {
     assert.ok(c.id.startsWith('ja-'), `${c.id}: identificador sin marcar`);
-    assert.ok(c.tc_id, `${c.id}: sin página en TCG Collector`);
+    // TCG Collector, o TCGplayer para las promos que TCG Collector no lista (scripts/traer-de-carpeta.py)
+    assert.ok(c.tc_id || c.tp_id, `${c.id}: sin página a la que enlazar`);
     assert.ok((SETS[c.s] || {}).ja, `${c.id}: su colección no está marcada como japonesa`);
   }
   // y ninguna inglesa se ha colado con la marca
@@ -490,6 +492,24 @@ test('las variantes tienen nombre en castellano', () => {
   // ninguna variante del catálogo se queda sin nombre
   const usadas = new Set(CARTAS.flatMap((c) => c.v));
   for (const v of usadas) {
-    assert.ok(D.NOMBRE_VARIANTE[v], `la variante «${v}» no tiene nombre`);
+    assert.ok(D.NOMBRE_VARIANTE[v] || catalogo.nv?.[v], `la variante «${v}» no tiene nombre`);
   }
+});
+
+test('las variantes especiales (sellos, holos, exclusivas) están en el catálogo', () => {
+  const nv = catalogo.nv || {};
+  assert.ok(Object.keys(nv).length >= 100, `solo ${Object.keys(nv).length} nombres de variante`);
+  // la Pikachu 051/162 de Temporal Forces con el sello de Pokémon Day existe como variante propia
+  const pika = CARTAS.find((c) => c.id === 'sv05-051');
+  assert.ok(pika, 'falta Pikachu 051/162');
+  assert.ok(pika.v.includes('pokemon-day-2026'), 'Pikachu 051/162 sin la variante Pokémon Day');
+  assert.strictEqual(D.nombreVariante('pokemon-day-2026', nv), 'Pokémon Day 2026');
+  // las claves de una carta no se repiten, y las normales siguen en su sitio
+  for (const c of CARTAS) {
+    assert.strictEqual(new Set(c.v).size, c.v.length, `${c.id} tiene variantes repetidas`);
+    assert.ok(c.v.length > 0, `${c.id} sin variantes`);
+  }
+  // toda clave de nv la usa alguna carta (nada huérfano)
+  const usadas = new Set(CARTAS.flatMap((c) => c.v));
+  for (const k of Object.keys(nv)) assert.ok(usadas.has(k), `«${k}» está en nv pero ninguna carta la usa`);
 });

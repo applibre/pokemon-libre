@@ -414,6 +414,29 @@ async function main() {
     if (trozos[1]) sets[sid].tot = Number(trozos[1]) || sets[sid].tot;
     japoPuestas++;
   }
+  /* 5.5b · las que faltaban
+     Cartas de TUS Pokémon que TCGdex y TCG Collector no traen (promos japonesas
+     sueltas, la Kids' WB, promos nuevas de Mega Evolution) y que sí existen en la
+     tienda Carpeta / TCGplayer. Las trae scripts/traer-de-carpeta.py, con su imagen
+     ya guardada, y entran aquí con la misma forma que las demás. */
+  const deCarpeta = JSON.parse(await readFile(path.join(AQUI, 'cartas-carpeta.json'), 'utf8').catch(() => '{"sets":{},"cartas":[]}'));
+  for (const [sid, s] of Object.entries(deCarpeta.sets)) if (!sets[sid]) sets[sid] = { ...s };
+  let deCarpetaPuestas = 0;
+  for (const c of deCarpeta.cartas) {
+    if (!sets[c.s] || cartas.some((x) => x.id === c.id)) continue;
+    cartas.push({ ...c });
+    deCarpetaPuestas++;
+    if (c.l === 'ja') japoPuestas++;
+  }
+  if (deCarpetaPuestas) {
+    // un set inglés nuevo (Kids' WB) entra en su sitio por fecha; las japonesas se reordenan abajo
+    Object.keys(sets).filter((id) => !sets[id].ja)
+      .sort((a, b) => (sets[a].rel || '9999').localeCompare(sets[b].rel || '9999') || a.localeCompare(b))
+      .forEach((id, i) => { sets[id].o = i; });
+    console.log(`De la tienda      ${deCarpetaPuestas} cartas que faltaban
+`);
+  }
+
   if (japoPuestas) {
     // las japonesas van detrás de todas las inglesas, en su propio orden
     const base = Object.keys(sets).length;
@@ -490,8 +513,31 @@ async function main() {
     }
   }
 
+  /* 5.8 · variantes (sellos, holos especiales, exclusivas…)
+     scripts/variantes.json lo genera traer-variantes.py desde TCGplayer. Aquí
+     solo se SUMAN claves nuevas al final de `v` (nunca se quita ni se reordena
+     una existente, así las marcas guardadas siguen valiendo) y se publica la
+     tabla clave → nombre en castellano (`nv`). Idempotente. */
+  const dv = JSON.parse(await readFile(path.join(AQUI, 'variantes.json'), 'utf8').catch(() => '{"nv":{},"cartas":{}}'));
+  const nv = {};
+  let variantesPuestas = 0;
+  const porId = new Map(cartas.map((c) => [c.id, c]));
+  for (const [id, claves] of Object.entries(dv.cartas)) {
+    const c = porId.get(id);
+    if (!c) continue;
+    for (const k of claves) {
+      if (c.v.includes(k)) continue;
+      c.v.push(k);
+      nv[k] = dv.nv[k];
+      variantesPuestas++;
+    }
+  }
+  // también las que ya estaban de una pasada anterior (modo solo-añadir)
+  for (const c of cartas) for (const k of c.v) if (dv.nv[k] && !nv[k]) nv[k] = dv.nv[k];
+  console.log(`Variantes   ${variantesPuestas} nuevas · ${Object.keys(nv).length} nombres\n`);
+
   /* 6 · escribir */
-  const json = JSON.stringify({ sets, cartas });
+  const json = JSON.stringify({ sets, cartas, nv: Object.fromEntries(Object.entries(nv).sort()) });
   const hash = createHash('sha256').update(json).digest('hex').slice(0, 12);
 
   await writeFile(path.join(DATOS, 'catalogo.json'), json);

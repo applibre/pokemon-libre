@@ -42,7 +42,8 @@ await p.goto(base + '#/set/base1'); await p.waitForSelector('.celda')
 await mantener(p, p.locator('.celda', { hasText: 'Charizard' }).first().locator('.ver'))
 await p.waitForSelector('.ficha'); await p.waitForTimeout(700)
 const cuentas = await p.$$eval('.variante .n', (e) => e.map((x) => x.textContent.trim()))
-ok(cuentas.join(',') === '1,2', `la ficha lee las variantes de la app anterior (holo 1, 1.ª edición 2): ${cuentas.join(',')}`)
+// además de Holo y 1.ª edición, la ficha trae ahora las variantes especiales (todas a cero)
+ok(cuentas.slice(0, 2).join(',') === '1,2' && cuentas.slice(2).every((x) => x === '0'), `la ficha lee las variantes de la app anterior (holo 1, 1.ª edición 2, el resto 0): ${cuentas.join(',')}`)
 
 // sumar un ejemplar de la primera variante
 await p.click('.ficha .variante:nth-child(1) .mas'); await p.waitForTimeout(500)

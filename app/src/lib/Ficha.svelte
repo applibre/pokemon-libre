@@ -3,7 +3,7 @@
 <script lang="ts">
   import { rutas } from './rutas'
   import Carta3D from './Carta3D.svelte'
-  import { app, tengo, cuantas, alternar, ponerVariante, numeroImpreso, ETAPA, NOMBRE_VARIANTE, mesYAnio, type Carta } from './store.svelte'
+  import { app, tengo, cuantas, alternar, ponerVariante, numeroImpreso, ETAPA, nombreVariante, mesYAnio, type Carta } from './store.svelte'
   import { foil } from './foil'
 
   let { lista, indice, cerrar, ir }: {
@@ -95,10 +95,10 @@
     {#each c.v as v (v)}
       {@const n = cuantas(c.id, v)}
       <div class="variante" class:hay={n > 0}>
-        <button class="menos" onclick={() => ponerVariante(c.id, v, n - 1)} disabled={n === 0} aria-label="Quitar una {NOMBRE_VARIANTE[v] ?? v}">−</button>
+        <button class="menos" onclick={() => ponerVariante(c.id, v, n - 1)} disabled={n === 0} aria-label="Quitar una {nombreVariante(v)}">−</button>
         <span class="n" aria-live="polite">{n}</span>
-        <button class="mas" onclick={() => ponerVariante(c.id, v, n + 1)} aria-label="Añadir una {NOMBRE_VARIANTE[v] ?? v}">+</button>
-        <span class="nom">{NOMBRE_VARIANTE[v] ?? v}</span>
+        <button class="mas" onclick={() => ponerVariante(c.id, v, n + 1)} aria-label="Añadir una {nombreVariante(v)}">+</button>
+        <span class="nom">{nombreVariante(v)}</span>
       </div>
     {/each}
   </div>
