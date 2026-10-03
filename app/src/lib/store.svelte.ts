@@ -13,6 +13,8 @@ export type Set = { n: string; rel?: string; tot?: number; o?: number; ja?: bool
 export type Carta = {
   id: string; n: string; p: string[]; s: string; num: string
   r: string; v: string[]; ill: string; l?: 'ja'; ni?: string
+  /** clave de la variante especial (sello, holo especial…): esta carta ES esa variante de la carta de su id antes de «~» */
+  vn?: string
   eur?: number; usd?: number
   tc_id?: number; tc_slug?: string; tp_id?: number
   j?: { e?: string; de?: string; ps?: number; t?: string[] }
@@ -63,10 +65,32 @@ class Tienda {
       this.novedad = n && Array.isArray(n.cartas) ? n : null
     } catch { this.novedad = null }
     this.aplicar()
+    this.migrarVariantes()
     this.pokemon = man.pokemon
     this.man = man
     if (!this.datos.creado) this.cambiar((d) => { d.creado = new Date().toISOString().slice(0, 10) })
     this.listo = true
+  }
+
+  /** Las variantes especiales (el sello de Pokémon Day…) eran un contador dentro de su carta base y
+      ahora son cartas propias, con id «<base>~<clave>». Lo que ya tenías marcado en ese contador
+      pasa a su carta: ninguna marca se pierde. Sin nada que mover no escribe nada. */
+  private migrarVariantes() {
+    const porId = new Map(this.base.cartas.map((c) => [c.id, c]))
+    const mover: [string, string][] = []
+    for (const [id, marcas] of Object.entries(this.datos.coleccion))
+      for (const k of Object.keys(marcas)) if (porId.has(`${id}~${k}`)) mover.push([id, k])
+    if (!mover.length) return
+    this.cambiar((d) => {
+      for (const [id, k] of mover) {
+        const destino = `${id}~${k}`
+        const forma = variantePrincipal(porId.get(destino)!)
+        const n = d.coleccion[id][k]
+        d.coleccion[destino] = { ...(d.coleccion[destino] || {}), [forma]: Math.min(99, (d.coleccion[destino]?.[forma] || 0) + n) }
+        delete d.coleccion[id][k]
+        if (!Object.keys(d.coleccion[id]).length) delete d.coleccion[id]
+      }
+    })
   }
 
   private get decididas(): Record<string, number> {

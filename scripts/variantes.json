@@ -5,7 +5,23 @@
 "20th-anniversary": "20th Anniversary",
 "asia-championship-series-23-24": "Asia Championship Series 23-24",
 "battle-academy-2020": "Battle Academy 2020",
-"battle-academy-2022": "Battle Academy 2022",
+"battle-academy-2020-n-o-1-charizard": "Battle Academy 2020 · n.º 1 (Charizard)",
+"battle-academy-2020-n-o-15-charizard": "Battle Academy 2020 · n.º 15 (Charizard)",
+"battle-academy-2020-n-o-15-pikachu": "Battle Academy 2020 · n.º 15 (Pikachu)",
+"battle-academy-2020-n-o-16-charizard": "Battle Academy 2020 · n.º 16 (Charizard)",
+"battle-academy-2020-n-o-2-pikachu": "Battle Academy 2020 · n.º 2 (Pikachu)",
+"battle-academy-2020-n-o-25-pikachu": "Battle Academy 2020 · n.º 25 (Pikachu)",
+"battle-academy-2020-n-o-30-charizard": "Battle Academy 2020 · n.º 30 (Charizard)",
+"battle-academy-2020-n-o-30-pikachu": "Battle Academy 2020 · n.º 30 (Pikachu)",
+"battle-academy-2020-n-o-39-charizard": "Battle Academy 2020 · n.º 39 (Charizard)",
+"battle-academy-2020-n-o-42-charizard": "Battle Academy 2020 · n.º 42 (Charizard)",
+"battle-academy-2020-n-o-51-charizard": "Battle Academy 2020 · n.º 51 (Charizard)",
+"battle-academy-2020-n-o-55-pikachu": "Battle Academy 2020 · n.º 55 (Pikachu)",
+"battle-academy-2020-n-o-56-charizard": "Battle Academy 2020 · n.º 56 (Charizard)",
+"battle-academy-2020-n-o-56-pikachu": "Battle Academy 2020 · n.º 56 (Pikachu)",
+"battle-academy-2020-n-o-60-charizard": "Battle Academy 2020 · n.º 60 (Charizard)",
+"battle-academy-2020-n-o-60-pikachu": "Battle Academy 2020 · n.º 60 (Pikachu)",
+"battle-academy-2022-n-o-60-pikachu": "Battle Academy 2022 · n.º 60 (Pikachu)",
 "battle-academy-2024": "Battle Academy 2024",
 "best-buy-exclusive": "Best Buy Exclusive",
 "black-dot-error": "Black Dot Error",
@@ -178,65 +194,42 @@
 "holo"
 ],
 "base1-14": [
-"shadowless",
 "holo"
 ],
 "base1-15": [
-"shadowless",
 "holo"
 ],
 "base1-2": [
-"shadowless",
 "holo"
 ],
 "base1-24": [
-"shadowless",
 "normal"
 ],
 "base1-29": [
-"shadowless",
 "normal"
 ],
 "base1-30": [
-"shadowless",
 "normal"
 ],
 "base1-4": [
-"jumbo-tamano-gigante-corocoro-promo",
-"black-dot-error",
-"shadowless",
-"celebrations-metal-card",
 "holo"
 ],
 "base1-42": [
-"shadowless",
 "normal"
 ],
 "base1-44": [
-"shadowless",
 "normal"
 ],
 "base1-46": [
-"shadowless",
 "normal"
 ],
 "base1-50": [
-"shadowless",
 "normal"
 ],
 "base1-58": [
-"jumbo-tamano-gigante",
-"jumbo-tamano-gigante-25th-anniversary",
-"shadowless",
-"shadowless-red-cheeks",
-"e3-stamped",
-"e3-stamped-with-red-cheeks",
-"poketour-1999",
-"celebrations-metal-card",
 "normal"
 ],
 "base1-63": [
-"shadowless",
 "normal"
 ],
 "base2-11": [
@@ -246,7 +239,6 @@
 "firstEdition"
 ],
 "base2-60": [
-"w-stamped",
 "firstEdition"
 ],
 "base3-14": [
@@ -295,7 +287,6 @@
 "normal"
 ],
 "base4-63": [
-"w-stamped",
 "normal"
 ],
 "base4-67": [
@@ -323,7 +314,6 @@
 "firstEdition"
 ],
 "base5-32": [
-"w-stamped",
 "firstEdition"
 ],
 "base5-4": [
@@ -342,7 +332,6 @@
 "firstEdition"
 ],
 "basep-1": [
-"misprint",
 "normal"
 ],
 "basep-13": [
@@ -373,26 +362,15 @@
 "normal"
 ],
 "bog-6": [
-"jumbo-tamano-gigante-best-of-game-6-promo",
-"winner",
 "normal"
 ],
 "bog-7": [
-"jumbo-tamano-gigante-best-of-game-7-promo",
-"winner",
 "normal"
-],
-"bt-4": [
-"jumbo-tamano-gigante"
-],
-"bt-9": [
-"jumbo-tamano-gigante-box-topper"
 ],
 "bw1-115": [
 "holo"
 ],
 "bw10-14": [
-"build-a-bear-workshop-exclusive",
 "normal",
 "reverse"
 ],
@@ -401,14 +379,10 @@
 "reverse"
 ],
 "bw10-16": [
-"mundial-2015-jacob-van-wagner",
-"exclusiva-de-mazo-bw-plasma-blast",
-"exclusiva-de-blister-cosmos-holo",
 "holo",
 "reverse"
 ],
 "bw11-17": [
-"build-a-bear-workshop-exclusive",
 "normal",
 "reverse"
 ],
@@ -417,7 +391,6 @@
 "reverse"
 ],
 "bw11-19": [
-"cosmos-holo",
 "holo",
 "reverse"
 ],
@@ -429,12 +402,10 @@
 "reverse"
 ],
 "bw4-40": [
-"exclusiva-de-blister-cosmos-holo",
 "normal",
 "reverse"
 ],
 "bw5-1": [
-"build-a-bear-workshop-exclusive",
 "normal",
 "reverse"
 ],
@@ -443,7 +414,6 @@
 "reverse"
 ],
 "bw5-3": [
-"exclusiva-de-blister-cosmos-holo",
 "holo",
 "reverse"
 ],
@@ -460,7 +430,6 @@
 "reverse"
 ],
 "bw7-20": [
-"exclusiva-de-blister-cosmos-holo",
 "holo",
 "reverse"
 ],
@@ -473,7 +442,6 @@
 "reverse"
 ],
 "bw7-31": [
-"exclusiva-de-mazo-non-holo",
 "holo",
 "reverse"
 ],
@@ -502,11 +470,9 @@
 "holo"
 ],
 "cel25-6": [
-"mundial-2022-ondrej-skubal",
 "holo"
 ],
 "cel25-7": [
-"mundial-2022-ondrej-skubal",
 "holo"
 ],
 "cel25-8": [
@@ -555,8 +521,6 @@
 "holo"
 ],
 "col1-33": [
-"prerelease",
-"prerelease-staff",
 "normal",
 "reverse"
 ],
@@ -601,7 +565,6 @@
 "reverse"
 ],
 "dp2-94": [
-"burger-king-diamond-pearl",
 "normal",
 "reverse"
 ],
@@ -614,7 +577,6 @@
 "reverse"
 ],
 "dp3-20": [
-"exclusiva-de-mazo-secret-wonders",
 "holo",
 "reverse"
 ],
@@ -647,12 +609,10 @@
 "reverse"
 ],
 "dp5-68": [
-"calendario-countdown",
 "normal",
 "reverse"
 ],
 "dp5-70": [
-"burger-king-platinum",
 "normal",
 "reverse"
 ],
@@ -666,22 +626,18 @@
 "holo"
 ],
 "dp7-18": [
-"mundial-2009-jason-martinez",
 "normal",
 "reverse"
 ],
 "dp7-40": [
-"mundial-2009-jason-martinez",
 "normal",
 "reverse"
 ],
 "dp7-45": [
-"burger-king-platinum",
 "normal",
 "reverse"
 ],
 "dp7-62": [
-"mundial-2009-jason-martinez",
 "normal",
 "reverse"
 ],
@@ -697,7 +653,6 @@
 "holo"
 ],
 "dpp-DP16": [
-"calendario-countdown",
 "holo"
 ],
 "dpp-DP21": [
@@ -844,7 +799,6 @@
 "reverse"
 ],
 "ex12-5": [
-"gym-challenge",
 "holo",
 "reverse"
 ],
@@ -879,9 +833,6 @@
 "reverse"
 ],
 "ex14-14": [
-"exclusiva-de-mazo-ex-crystal-guardians",
-"national-championships",
-"national-championships-staff",
 "normal",
 "reverse"
 ],
@@ -890,8 +841,6 @@
 "reverse"
 ],
 "ex14-28": [
-"exclusiva-de-mazo-ex-crystal-guardians",
-"regional-championships",
 "normal",
 "reverse"
 ],
@@ -908,7 +857,6 @@
 "reverse"
 ],
 "ex14-35": [
-"prerelease",
 "normal",
 "reverse"
 ],
@@ -917,7 +865,6 @@
 "reverse"
 ],
 "ex14-42": [
-"state-championships",
 "normal",
 "reverse"
 ],
@@ -942,7 +889,6 @@
 "reverse"
 ],
 "ex14-63": [
-"city-championships",
 "normal",
 "reverse"
 ],
@@ -993,15 +939,12 @@
 "holo"
 ],
 "ex3-100": [
-"national-championships",
 "holo"
 ],
 "ex3-98": [
-"city-championships",
 "holo"
 ],
 "ex3-99": [
-"state-championship",
 "holo"
 ],
 "ex4-13": [
@@ -1021,7 +964,6 @@
 "reverse"
 ],
 "ex6-104": [
-"mundial-2006-hiroki-yano",
 "holo",
 "normal"
 ],
@@ -1061,8 +1003,6 @@
 "reverse"
 ],
 "ex6-50": [
-"mundial-2006-hiroki-yano",
-"prerelease",
 "normal",
 "reverse"
 ],
@@ -1095,7 +1035,6 @@
 "reverse"
 ],
 "ex6-83": [
-"mundial-2006-hiroki-yano",
 "normal",
 "reverse"
 ],
@@ -1107,7 +1046,6 @@
 "reverse"
 ],
 "ex9-60": [
-"sdcc-2005",
 "normal",
 "reverse"
 ],
@@ -1137,8 +1075,6 @@
 "holo"
 ],
 "g1-26": [
-"toys-r-us",
-"20th-anniversary",
 "normal",
 "reverse"
 ],
@@ -1235,14 +1171,10 @@
 "firstEdition"
 ],
 "hgss1-10": [
-"exclusiva-de-mazo-cracked-ice-holo",
 "holo",
 "reverse"
 ],
 "hgss1-28": [
-"mundial-2011-ross-cawthon",
-"prerelease",
-"prerelease-staff",
 "normal",
 "reverse"
 ],
@@ -1251,9 +1183,6 @@
 "reverse"
 ],
 "hgss2-13": [
-"prerelease",
-"prerelease-staff",
-"cracked-ice-holo",
 "normal",
 "reverse"
 ],
@@ -1289,199 +1218,6 @@
 ],
 "hgssp-HGSS03": [
 "holo"
-],
-"ja-18580": [
-"mirror-holo"
-],
-"ja-18581": [
-"mirror-holo"
-],
-"ja-18582": [
-"mirror-holo"
-],
-"ja-18665": [
-"mirror-holo"
-],
-"ja-19933": [
-"mirror-holo"
-],
-"ja-19934": [
-"mirror-holo"
-],
-"ja-19935": [
-"mirror-holo"
-],
-"ja-21873": [
-"mirror-holo"
-],
-"ja-21874": [
-"mirror-holo"
-],
-"ja-24529": [
-"mirror-holo"
-],
-"ja-24530": [
-"mirror-holo"
-],
-"ja-24531": [
-"mirror-holo"
-],
-"ja-26255": [
-"mirror-holo"
-],
-"ja-26256": [
-"mirror-holo"
-],
-"ja-26257": [
-"mirror-holo"
-],
-"ja-29260": [
-"no-rarity-symbol"
-],
-"ja-32829": [
-"mirror-holo"
-],
-"ja-32830": [
-"mirror-holo"
-],
-"ja-33490": [
-"mirror-holo"
-],
-"ja-33505": [
-"mirror-holo"
-],
-"ja-33506": [
-"mirror-holo"
-],
-"ja-35091": [
-"pikachu-stamped"
-],
-"ja-35110": [
-"pikachu-stamped"
-],
-"ja-35687": [
-"mirror-holo"
-],
-"ja-36088": [
-"mirror-holo"
-],
-"ja-36089": [
-"mirror-holo"
-],
-"ja-36456": [
-"mirror-holo"
-],
-"ja-36457": [
-"mirror-holo"
-],
-"ja-37901": [
-"mirror-holo"
-],
-"ja-37902": [
-"mirror-holo"
-],
-"ja-37908": [
-"mirror-holo"
-],
-"ja-37909": [
-"mirror-holo"
-],
-"ja-39616": [
-"mirror-holo"
-],
-"ja-39617": [
-"mirror-holo"
-],
-"ja-41494": [
-"poke-ball-pattern",
-"master-ball-pattern"
-],
-"ja-41495": [
-"poke-ball-pattern",
-"master-ball-pattern"
-],
-"ja-41497": [
-"poke-ball-pattern",
-"master-ball-pattern"
-],
-"ja-41498": [
-"poke-ball-pattern",
-"master-ball-pattern"
-],
-"ja-41500": [
-"poke-ball-pattern",
-"master-ball-pattern"
-],
-"ja-41501": [
-"poke-ball-pattern",
-"master-ball-pattern"
-],
-"ja-41518": [
-"poke-ball-pattern",
-"master-ball-pattern"
-],
-"ja-41519": [
-"poke-ball-pattern",
-"master-ball-pattern"
-],
-"ja-41585": [
-"poke-ball-pattern",
-"master-ball-pattern"
-],
-"ja-41586": [
-"poke-ball-pattern",
-"master-ball-pattern"
-],
-"ja-41587": [
-"poke-ball-pattern",
-"master-ball-pattern"
-],
-"ja-41636": [
-"poke-ball-pattern",
-"master-ball-pattern"
-],
-"ja-43408": [
-"mirror-holo"
-],
-"ja-43409": [
-"mirror-holo"
-],
-"ja-43438": [
-"mirror-holo"
-],
-"ja-43528": [
-"mirror-holo"
-],
-"ja-45929": [
-"battle-academy-2020"
-],
-"ja-45957": [
-"battle-academy-2020"
-],
-"ja-51991": [
-"poke-ball-pattern",
-"energy-symbol-pattern"
-],
-"ja-52796": [
-"mirror-holo"
-],
-"ja-53147": [
-"mirror-holo"
-],
-"ja-53317": [
-"mirror-holo"
-],
-"ja-53318": [
-"mirror-holo"
-],
-"ja-53365": [
-"mirror-holo"
-],
-"ja-53366": [
-"mirror-holo"
-],
-"ja-53367": [
-"mirror-holo"
 ],
 "ja-tp587832": [
 "normal"
@@ -1693,7 +1429,6 @@
 "reverse"
 ],
 "lc-3": [
-"exclusiva-de-mazo-wotc-legendary-collection",
 "holo",
 "reverse"
 ],
@@ -1706,7 +1441,6 @@
 "reverse"
 ],
 "lc-4": [
-"exclusiva-de-mazo-wotc-legendary-collection",
 "holo",
 "reverse"
 ],
@@ -1726,7 +1460,6 @@
 "reverse"
 ],
 "lc-7": [
-"exclusiva-de-mazo-wotc-legendary-collection",
 "holo",
 "reverse"
 ],
@@ -1752,7 +1485,6 @@
 "reverse"
 ],
 "me01-001": [
-"pokemon-day-2026",
 "normal",
 "reverse"
 ],
@@ -1761,7 +1493,6 @@
 "reverse"
 ],
 "me01-003": [
-"prize-pack",
 "holo"
 ],
 "me01-133": [
@@ -1777,19 +1508,14 @@
 "holo"
 ],
 "me02-011": [
-"prize-pack",
-"prize-pack-cosmos-holo",
 "normal",
 "reverse"
 ],
 "me02-012": [
-"prize-pack",
-"prize-pack-cosmos-holo",
 "normal",
 "reverse"
 ],
 "me02-013": [
-"prize-pack",
 "holo"
 ],
 "me02-054": [
@@ -1801,7 +1527,6 @@
 "reverse"
 ],
 "me02-056": [
-"prize-pack",
 "holo"
 ],
 "me02-109": [
@@ -1814,42 +1539,27 @@
 "holo"
 ],
 "me02.5-020": [
-"friend-ball",
-"energy-symbol-pattern",
-"cosmos-holo",
 "normal"
 ],
 "me02.5-021": [
-"friend-ball",
-"energy-symbol-pattern",
 "normal"
 ],
 "me02.5-022": [
-"prize-pack",
 "holo"
 ],
 "me02.5-055": [
-"friend-ball",
-"energy-symbol-pattern",
 "normal"
 ],
 "me02.5-056": [
-"friend-ball",
-"energy-symbol-pattern",
 "normal"
 ],
 "me02.5-057": [
 "holo"
 ],
 "me02.5-123": [
-"dusk-ball",
-"energy-symbol-pattern",
-"cosmos-holo",
 "normal"
 ],
 "me02.5-124": [
-"dusk-ball",
-"energy-symbol-pattern",
 "normal"
 ],
 "me02.5-125": [
@@ -1871,20 +1581,14 @@
 "holo"
 ],
 "me03-048": [
-"prize-pack",
 "normal",
 "reverse"
 ],
 "me03-049": [
-"prize-pack",
 "normal",
 "reverse"
 ],
 "me03-050": [
-"prize-pack",
-"exclusiva-de-blister-cosmos-holo",
-"cosmos-holo-gamestop-exclusive",
-"cosmos-holo-eb-games-exclusive",
 "holo",
 "reverse"
 ],
@@ -1893,7 +1597,6 @@
 "reverse"
 ],
 "mep-013": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "mep-023": [
@@ -1924,7 +1627,6 @@
 "holo"
 ],
 "mep-093": [
-"winner",
 "normal"
 ],
 "mep-107": [
@@ -1982,7 +1684,6 @@
 "firstEdition"
 ],
 "np-12": [
-"10th-anniversary",
 "holo"
 ],
 "np-35": [
@@ -2017,7 +1718,6 @@
 "reverse"
 ],
 "pl2-33": [
-"league-promo",
 "normal",
 "reverse"
 ],
@@ -2042,7 +1742,6 @@
 "reverse"
 ],
 "pl3-13": [
-"exclusiva-de-mazo-dppt-supreme-victors",
 "holo",
 "reverse"
 ],
@@ -2066,7 +1765,6 @@
 "reverse"
 ],
 "pl4-1": [
-"cracked-ice-holo",
 "holo",
 "reverse"
 ],
@@ -2083,8 +1781,6 @@
 "reverse"
 ],
 "pl4-27": [
-"prerelease",
-"prerelease-staff",
 "normal",
 "reverse"
 ],
@@ -2163,7 +1859,6 @@
 "normal"
 ],
 "pop6-9": [
-"pokemon-day-stamped",
 "holo",
 "normal"
 ],
@@ -2171,7 +1866,6 @@
 "normal"
 ],
 "pop9-15": [
-"pokemon-day-2009",
 "normal"
 ],
 "pop9-3": [
@@ -2198,8 +1892,6 @@
 "holo"
 ],
 "sm10-20": [
-"mundial-2019-kaya-lichtleitner",
-"mundial-2019-henry-brand",
 "holo"
 ],
 "sm10-217": [
@@ -2209,12 +1901,10 @@
 "holo"
 ],
 "sm10-33": [
-"exclusiva-de-blister-premium-collection-promo",
 "normal",
 "reverse"
 ],
 "sm10-34": [
-"premium-collection-promo",
 "normal",
 "reverse"
 ],
@@ -2259,7 +1949,6 @@
 "holo"
 ],
 "sm11-54": [
-"mundial-2019-haruki-miyamoto",
 "holo"
 ],
 "sm11-55": [
@@ -2275,16 +1964,13 @@
 "reverse"
 ],
 "sm115-19": [
-"battle-academy-2020",
 "normal",
 "reverse"
 ],
 "sm115-20": [
-"battle-academy-2020",
 "holo"
 ],
 "sm115-50": [
-"battle-academy-2020",
 "normal",
 "reverse"
 ],
@@ -2293,12 +1979,10 @@
 "reverse"
 ],
 "sm115-8": [
-"battle-academy-2020",
 "normal",
 "reverse"
 ],
 "sm115-9": [
-"battle-academy-2020",
 "holo"
 ],
 "sm12-1": [
@@ -2346,16 +2030,10 @@
 "holo"
 ],
 "sm3-18": [
-"battle-academy-2020",
-"premium-collection-promo",
 "normal",
 "reverse"
 ],
-"sm3-18a": [
-"general-mills-promo"
-],
 "sm3-19": [
-"premium-collection-promo",
 "normal",
 "reverse"
 ],
@@ -2367,16 +2045,10 @@
 "reverse"
 ],
 "sm3-41": [
-"league-challenge-3rd-place",
-"league-challenge-2nd-place",
-"league-challenge-1st-place",
-"league-challenge-4th-place",
-"exclusiva-de-blister-cosmos-holo",
 "holo",
 "reverse"
 ],
 "sm3.5-1": [
-"general-mills-promo",
 "normal",
 "reverse"
 ],
@@ -2385,10 +2057,6 @@
 "reverse"
 ],
 "sm3.5-28": [
-"exclusiva-de-mazo-cracked-ice-holo",
-"water-web-holo",
-"general-mills",
-"cosmos-holo",
 "normal",
 "reverse"
 ],
@@ -2407,7 +2075,6 @@
 "reverse"
 ],
 "sm4-31": [
-"exclusiva-de-mazo-sm-crimson-invasion",
 "holo",
 "reverse"
 ],
@@ -2420,7 +2087,6 @@
 "reverse"
 ],
 "sm4-38": [
-"exclusiva-de-mazo-prerelease-kit-exclusive",
 "holo",
 "reverse"
 ],
@@ -2433,8 +2099,6 @@
 "reverse"
 ],
 "sm7.5-3": [
-"battle-academy-2020",
-"exclusiva-de-mazo-let-s-play-eevee",
 "holo",
 "reverse"
 ],
@@ -2457,9 +2121,6 @@
 "reverse"
 ],
 "sm9-14": [
-"exclusiva-de-mazo-sm-team-up",
-"costco-exclusive",
-"library-exclusive",
 "normal",
 "reverse"
 ],
@@ -2503,12 +2164,10 @@
 "reverse"
 ],
 "sm9-25": [
-"exclusiva-de-mazo-cracked-ice-holo",
 "normal",
 "reverse"
 ],
 "sm9-33": [
-"mundial-2019-haruki-miyamoto",
 "holo"
 ],
 "sm9-53": [
@@ -2524,12 +2183,9 @@
 "holo"
 ],
 "smp-SM04": [
-"target-non-holo",
-"general-mills",
 "holo"
 ],
 "smp-SM05": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "smp-SM108": [
@@ -2557,7 +2213,6 @@
 "holo"
 ],
 "smp-SM158": [
-"staff",
 "holo"
 ],
 "smp-SM162": [
@@ -2573,44 +2228,36 @@
 "holo"
 ],
 "smp-SM170": [
-"stamped",
 "holo"
 ],
 "smp-SM183": [
 "holo"
 ],
 "smp-SM189": [
-"jumbo-tamano-gigante-black-star-promos",
 "holo"
 ],
 "smp-SM190": [
-"stamped",
 "holo"
 ],
 "smp-SM194": [
 "holo"
 ],
 "smp-SM195": [
-"jumbo-tamano-gigante-sm-black-star-promo",
 "holo"
 ],
 "smp-SM198": [
-"detective-pikachu-stamped",
 "holo"
 ],
 "smp-SM201": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "smp-SM206": [
 "holo"
 ],
 "smp-SM211": [
-"jumbo-tamano-gigante-sm-black-star-promo",
 "holo"
 ],
 "smp-SM213": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "smp-SM226": [
@@ -2623,35 +2270,27 @@
 "holo"
 ],
 "smp-SM230": [
-"jumbo-tamano-gigante-sm-black-star-promo",
 "holo"
 ],
 "smp-SM232": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "smp-SM234": [
 "holo"
 ],
 "smp-SM247": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "smp-SM248": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "smp-SM60": [
-"jumbo-tamano-gigante-sm-black-star-promos",
 "holo"
 ],
 "smp-SM65": [
-"battle-academy-2020",
-"jumbo-tamano-gigante",
 "holo"
 ],
 "smp-SM72": [
-"prerelease-staff",
 "holo"
 ],
 "smp-SM76": [
@@ -2661,25 +2300,19 @@
 "holo"
 ],
 "smp-SM86": [
-"general-mills-promo",
-"build-a-bear-workshop-exclusive",
 "holo"
 ],
 "smp-SM90": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "smp-SM98": [
 "holo"
 ],
 "sv02-062": [
-"trick-or-trade",
-"rain-city-showcase",
 "normal",
 "reverse"
 ],
 "sv02-063": [
-"holiday-calendar",
 "holo"
 ],
 "sv02-064": [
@@ -2698,8 +2331,6 @@
 "reverse"
 ],
 "sv03-125": [
-"prize-pack",
-"jumbo-tamano-gigante",
 "holo"
 ],
 "sv03-215": [
@@ -2712,8 +2343,6 @@
 "holo"
 ],
 "sv03.5-001": [
-"best-buy-exclusive",
-"reverse-cosmos-holo-costco-exclusive",
 "normal",
 "reverse"
 ],
@@ -2725,15 +2354,10 @@
 "holo"
 ],
 "sv03.5-004": [
-"gamestop-exclusive",
-"ebgames-exclusive",
-"cosmos-holo",
-"reverse-cosmos-holo-costco-exclusive",
 "normal",
 "reverse"
 ],
 "sv03.5-005": [
-"cosmos-holo",
 "normal",
 "reverse"
 ],
@@ -2741,8 +2365,6 @@
 "holo"
 ],
 "sv03.5-007": [
-"pokemon-center-exclusive",
-"reverse-cosmos-holo-costco-exclusive",
 "normal",
 "reverse"
 ],
@@ -2751,18 +2373,13 @@
 "reverse"
 ],
 "sv03.5-009": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "sv03.5-025": [
-"pokemon-together",
-"reverse-cosmos-holo-costco-exclusive",
-"holiday-calendar",
 "normal",
 "reverse"
 ],
 "sv03.5-026": [
-"cosmos-holo",
 "holo",
 "reverse"
 ],
@@ -2775,7 +2392,6 @@
 "reverse"
 ],
 "sv03.5-094": [
-"cosmos-holo",
 "holo",
 "reverse"
 ],
@@ -2823,28 +2439,22 @@
 "holo"
 ],
 "sv04.5-007": [
-"cosmos-holo",
 "normal",
 "reverse"
 ],
 "sv04.5-008": [
-"cosmos-holo",
 "normal",
 "reverse"
 ],
 "sv04.5-018": [
-"trick-or-trade-cosmos-holo",
-"reverse-cosmos-holo",
 "normal",
 "reverse"
 ],
 "sv04.5-019": [
-"exclusiva-de-mazo-paldean-fates",
 "holo",
 "reverse"
 ],
 "sv04.5-054": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "sv04.5-055": [
@@ -2856,7 +2466,6 @@
 "reverse"
 ],
 "sv04.5-057": [
-"trick-or-trade-cosmos-holo",
 "normal",
 "reverse"
 ],
@@ -2879,8 +2488,6 @@
 "holo"
 ],
 "sv05-051": [
-"cosmos-holo",
-"pokemon-day-2026",
 "normal",
 "reverse"
 ],
@@ -2889,12 +2496,10 @@
 "reverse"
 ],
 "sv05-102": [
-"trick-or-trade",
 "normal",
 "reverse"
 ],
 "sv05-103": [
-"trick-or-trade",
 "normal",
 "reverse"
 ],
@@ -2912,12 +2517,9 @@
 "reverse"
 ],
 "sv07-001": [
-"jumbo-tamano-gigante",
-"stellar-crown-stamp",
 "holo"
 ],
 "sv07-030": [
-"stellar-crown-stamp",
 "holo"
 ],
 "sv07-143": [
@@ -2927,7 +2529,6 @@
 "holo"
 ],
 "sv08-057": [
-"prize-pack",
 "holo"
 ],
 "sv08-144": [
@@ -2947,19 +2548,12 @@
 "holo"
 ],
 "sv08.5-076": [
-"jumbo-tamano-gigante-prismatic-evolution-stamped",
-"prismatic-evolution-stamped",
 "holo"
 ],
 "sv08.5-179": [
 "holo"
 ],
 "sv09-117": [
-"prize-pack",
-"prize-pack-cosmos-holo",
-"gamestop-cosmos-holo",
-"cosmos-holo",
-"eb-games-cosmos-holo",
 "holo",
 "reverse"
 ],
@@ -2968,11 +2562,9 @@
 "reverse"
 ],
 "svp-027": [
-"pokemon-center-exclusive",
 "holo"
 ],
 "svp-044": [
-"pokemon-center-exclusive",
 "holo"
 ],
 "svp-046": [
@@ -2985,7 +2577,6 @@
 "holo"
 ],
 "svp-051": [
-"pokemon-center-exclusive",
 "holo"
 ],
 "svp-056": [
@@ -3001,11 +2592,7 @@
 "holo"
 ],
 "svp-101": [
-"asia-championship-series-23-24",
 "normal"
-],
-"svp-106": [
-"battle-academy-2024"
 ],
 "svp-122": [
 "holo"
@@ -3014,34 +2601,28 @@
 "holo"
 ],
 "svp-184": [
-"prerelease-staff",
 "holo"
 ],
 "svp-190": [
 "normal"
 ],
 "svp-196": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "svp-214": [
 "normal"
 ],
 "svp-225": [
-"world-championship-2025-winner",
 "normal"
 ],
 "swsh1-140": [
-"exclusiva-de-blister-cosmos-holo",
 "normal",
 "reverse"
 ],
 "swsh1-141": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "swsh1-142": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "swsh1-197": [
@@ -3051,8 +2632,6 @@
 "holo"
 ],
 "swsh1-65": [
-"cosmos-holo",
-"reverse-cosmos-holo",
 "normal",
 "reverse"
 ],
@@ -3069,7 +2648,6 @@
 "reverse"
 ],
 "swsh1-85": [
-"library-exclusive",
 "holo",
 "reverse"
 ],
@@ -3119,7 +2697,6 @@
 "holo"
 ],
 "swsh10.5-027": [
-"cosmos-holo",
 "normal",
 "reverse"
 ],
@@ -3128,7 +2705,6 @@
 "reverse"
 ],
 "swsh10.5-055": [
-"cosmos-holo",
 "holo",
 "reverse"
 ],
@@ -3141,25 +2717,18 @@
 "reverse"
 ],
 "swsh11-064": [
-"trick-or-trade",
 "normal",
 "reverse"
 ],
 "swsh11-065": [
-"trick-or-trade",
 "normal",
 "reverse"
 ],
 "swsh11-066": [
-"trick-or-trade-2022-copyright-date",
-"prize-pack",
-"exclusiva-de-mazo",
 "holo",
 "reverse"
 ],
 "swsh11-143": [
-"prize-pack",
-"mundial-2023-gabriel-fernandez",
 "holo",
 "reverse"
 ],
@@ -3185,7 +2754,6 @@
 "holo"
 ],
 "swsh12-049": [
-"holiday-calendar",
 "normal",
 "reverse"
 ],
@@ -3200,7 +2768,6 @@
 "holo"
 ],
 "swsh12.5-020": [
-"prize-pack",
 "holo"
 ],
 "swsh12.5-109": [
@@ -3214,16 +2781,13 @@
 "holo"
 ],
 "swsh2-141": [
-"cosmos-holo",
 "normal",
 "reverse"
 ],
 "swsh3-19": [
-"prize-pack",
 "holo"
 ],
 "swsh3-20": [
-"prize-pack",
 "holo"
 ],
 "swsh3.5-1": [
@@ -3236,8 +2800,6 @@
 "holo"
 ],
 "swsh4-131": [
-"prize-pack",
-"vivid-voltage-stamped",
 "holo",
 "reverse"
 ],
@@ -3248,7 +2810,6 @@
 "holo"
 ],
 "swsh4-23": [
-"reverse-cosmos-holo",
 "normal",
 "reverse"
 ],
@@ -3257,19 +2818,13 @@
 "reverse"
 ],
 "swsh4-25": [
-"prize-pack",
-"exclusiva-de-mazo-cracked-ice-holo",
 "normal",
 "reverse"
 ],
 "swsh4-43": [
-"prize-pack",
-"battle-academy-2022",
-"jumbo-tamano-gigante-vivid-voltage-stamped",
 "holo"
 ],
 "swsh4-44": [
-"prize-pack",
 "holo"
 ],
 "swsh4.5sv-SV107": [
@@ -3279,23 +2834,18 @@
 "holo"
 ],
 "swsh6-55": [
-"trick-or-trade",
 "normal",
 "reverse"
 ],
 "swsh6-56": [
-"trick-or-trade",
 "normal",
 "reverse"
 ],
 "swsh6-57": [
-"trick-or-trade-2021-copyright-date",
 "holo",
 "reverse"
 ],
 "swsh7-49": [
-"trick-or-trade",
-"pokemon-league",
 "normal",
 "reverse"
 ],
@@ -3304,11 +2854,9 @@
 "reverse"
 ],
 "swsh8-156": [
-"prize-pack",
 "holo"
 ],
 "swsh8-157": [
-"prize-pack",
 "holo"
 ],
 "swsh8-206": [
@@ -3322,16 +2870,12 @@
 "holo"
 ],
 "swsh9-017": [
-"prize-pack",
 "holo"
 ],
 "swsh9-018": [
-"prize-pack",
-"jumbo-tamano-gigante",
 "holo"
 ],
 "swsh9-045": [
-"prize-pack",
 "holo"
 ],
 "swsh9-153": [
@@ -3356,7 +2900,6 @@
 "holo"
 ],
 "swshp-SWSH039": [
-"general-mills",
 "holo"
 ],
 "swshp-SWSH050": [
@@ -3366,7 +2909,6 @@
 "holo"
 ],
 "swshp-SWSH061": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "swshp-SWSH062": [
@@ -3376,11 +2918,9 @@
 "holo"
 ],
 "swshp-SWSH066": [
-"prerelease-staff",
 "holo"
 ],
 "swshp-SWSH068": [
-"prerelease-staff",
 "holo"
 ],
 "swshp-SWSH074": [
@@ -3399,18 +2939,15 @@
 "holo"
 ],
 "swshp-SWSH102": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "swshp-SWSH103": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "swshp-SWSH119": [
 "holo"
 ],
 "swshp-SWSH133": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "swshp-SWSH139": [
@@ -3435,7 +2972,6 @@
 "holo"
 ],
 "swshp-SWSH198": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "swshp-SWSH231": [
@@ -3451,7 +2987,6 @@
 "holo"
 ],
 "swshp-SWSH241": [
-"prerelease-staff",
 "holo"
 ],
 "swshp-SWSH260": [
@@ -3467,7 +3002,6 @@
 "holo"
 ],
 "swshp-SWSH286": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "swshp-SWSH303": [
@@ -3537,13 +3071,10 @@
 "holo"
 ],
 "xy1-42": [
-"2014-movie-promo",
 "normal",
 "reverse"
 ],
 "xy1-43": [
-"exclusiva-de-mazo-battle-arena-deck-exclusive",
-"exclusiva-de-blister-cosmos-holo",
 "holo",
 "reverse"
 ],
@@ -3568,8 +3099,6 @@
 "holo"
 ],
 "xy12-11": [
-"xy-evolutions-prerelease",
-"prerelease",
 "holo",
 "reverse"
 ],
@@ -3595,12 +3124,10 @@
 "holo"
 ],
 "xy12-35": [
-"exclusiva-de-mazo-cracked-ice-holo",
 "normal",
 "reverse"
 ],
 "xy12-36": [
-"exclusiva-de-mazo-xy-evolutions",
 "holo",
 "reverse"
 ],
@@ -3613,7 +3140,6 @@
 "reverse"
 ],
 "xy12-9": [
-"toys-r-us-promo",
 "normal",
 "reverse"
 ],
@@ -3627,22 +3153,18 @@
 "holo"
 ],
 "xy2-11": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "xy2-12": [
 "holo"
 ],
 "xy2-13": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "xy2-69": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "xy2-80": [
-"build-a-bear-workshop-exclusive",
 "normal",
 "reverse"
 ],
@@ -3661,14 +3183,12 @@
 "holo"
 ],
 "xy4-34": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "xy4-35": [
 "holo"
 ],
 "xy6-20": [
-"build-a-bear-workshop-exclusive",
 "normal",
 "reverse"
 ],
@@ -3681,7 +3201,6 @@
 "reverse"
 ],
 "xy8-49": [
-"exclusiva-de-mazo-xy-breakthrough-cracked-ice-holo",
 "normal",
 "reverse"
 ],
@@ -3697,25 +3216,19 @@
 "reverse"
 ],
 "xy8-60": [
-"exclusiva-de-mazo-xy-breakthrough",
-"cosmos-holo",
 "holo",
 "reverse"
 ],
 "xyp-XY121": [
-"jumbo-tamano-gigante-xy-black-star-promos",
 "holo"
 ],
 "xyp-XY122": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "xyp-XY123": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "xyp-XY124": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "xyp-XY132": [
@@ -3725,11 +3238,9 @@
 "holo"
 ],
 "xyp-XY17": [
-"jumbo-tamano-gigante-xy-black-star-promos",
 "holo"
 ],
 "xyp-XY174": [
-"jumbo-tamano-gigante",
 "holo"
 ],
 "xyp-XY179": [
@@ -3756,6 +3267,3628 @@
 "xyp-XY95": [
 "holo"
 ]
+},
+"extras": {
+"base1-14": {
+"shadowless": {
+"tp": 107009,
+"n": "Shadowless",
+"v": [
+"holo",
+"firstEdition"
+],
+"usd": 253.5
+}
+},
+"base1-15": {
+"shadowless": {
+"tp": 107010,
+"n": "Shadowless",
+"v": [
+"holo",
+"firstEdition"
+],
+"usd": 501.29
+}
+},
+"base1-2": {
+"shadowless": {
+"tp": 106997,
+"n": "Shadowless",
+"v": [
+"holo",
+"firstEdition"
+],
+"usd": 896.06
+}
+},
+"base1-24": {
+"shadowless": {
+"tp": 107021,
+"n": "Shadowless",
+"v": [
+"normal",
+"firstEdition"
+],
+"usd": 129.08
+}
+},
+"base1-29": {
+"shadowless": {
+"tp": 107026,
+"n": "Shadowless",
+"v": [
+"normal",
+"firstEdition"
+],
+"usd": 67.32
+}
+},
+"base1-30": {
+"shadowless": {
+"tp": 107027,
+"n": "Shadowless",
+"v": [
+"normal",
+"firstEdition"
+],
+"usd": 86.52
+}
+},
+"base1-4": {
+"jumbo-tamano-gigante-corocoro-promo": {
+"tp": 179079,
+"n": "Jumbo (tamaño gigante) · CoroCoro Promo",
+"v": [
+"normal"
+]
+},
+"black-dot-error": {
+"tp": 657516,
+"n": "Black Dot Error",
+"v": [
+"holo"
+]
+},
+"shadowless": {
+"tp": 106999,
+"n": "Shadowless",
+"v": [
+"holo",
+"firstEdition"
+],
+"usd": 2257.87
+},
+"celebrations-metal-card": {
+"tp": 252517,
+"n": "Celebrations Metal Card",
+"v": [
+"holo"
+],
+"usd": 326.77
+}
+},
+"base1-42": {
+"shadowless": {
+"tp": 107039,
+"n": "Shadowless",
+"v": [
+"normal",
+"firstEdition"
+],
+"usd": 119.75
+}
+},
+"base1-44": {
+"shadowless": {
+"tp": 107041,
+"n": "Shadowless",
+"v": [
+"normal",
+"firstEdition"
+],
+"usd": 313.19
+}
+},
+"base1-46": {
+"shadowless": {
+"tp": 107043,
+"n": "Shadowless",
+"v": [
+"normal",
+"firstEdition"
+],
+"usd": 187.06
+}
+},
+"base1-50": {
+"shadowless": {
+"tp": 107047,
+"n": "Shadowless",
+"v": [
+"normal",
+"firstEdition"
+],
+"usd": 46.41
+}
+},
+"base1-58": {
+"jumbo-tamano-gigante": {
+"tp": 211500,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"normal"
+],
+"usd": 28.09
+},
+"jumbo-tamano-gigante-25th-anniversary": {
+"tp": 257780,
+"n": "Jumbo (tamaño gigante) · 25th Anniversary",
+"v": [
+"normal"
+],
+"usd": 6.9
+},
+"shadowless": {
+"tp": 107055,
+"n": "Shadowless",
+"v": [
+"normal",
+"firstEdition"
+],
+"usd": 188.23
+},
+"shadowless-red-cheeks": {
+"tp": 147229,
+"n": "Shadowless · Red Cheeks",
+"v": [
+"normal",
+"firstEdition"
+],
+"usd": 429.98
+},
+"e3-stamped": {
+"tp": 123633,
+"n": "E3 Stamped",
+"v": [
+"normal"
+],
+"usd": 59.2
+},
+"e3-stamped-with-red-cheeks": {
+"tp": 123634,
+"n": "E3 Stamped with Red Cheeks",
+"v": [
+"normal"
+]
+},
+"poketour-1999": {
+"tp": 125897,
+"n": "PokeTour 1999",
+"v": [
+"normal"
+],
+"usd": 300.0
+},
+"celebrations-metal-card": {
+"tp": 252516,
+"n": "Celebrations Metal Card",
+"v": [
+"holo"
+],
+"usd": 164.99
+}
+},
+"base1-63": {
+"shadowless": {
+"tp": 107060,
+"n": "Shadowless",
+"v": [
+"normal",
+"firstEdition"
+],
+"usd": 135.29
+}
+},
+"base2-60": {
+"w-stamped": {
+"tp": 126209,
+"n": "W Stamped",
+"v": [
+"normal"
+],
+"usd": 248.26
+}
+},
+"base4-63": {
+"w-stamped": {
+"tp": 127206,
+"n": "W Stamped",
+"v": [
+"normal"
+],
+"usd": 74.17
+}
+},
+"base5-32": {
+"w-stamped": {
+"tp": 180834,
+"n": "W Stamped",
+"v": [
+"normal"
+]
+}
+},
+"basep-1": {
+"misprint": {
+"tp": 88065,
+"n": "Misprint",
+"v": [
+"normal"
+]
+}
+},
+"bog-6": {
+"jumbo-tamano-gigante-best-of-game-6-promo": {
+"tp": 180262,
+"n": "Jumbo (tamaño gigante) · Best of Game 6 Promo",
+"v": [
+"normal"
+]
+},
+"winner": {
+"tp": 107876,
+"n": "Winner",
+"v": [
+"normal"
+],
+"usd": 100.38
+}
+},
+"bog-7": {
+"jumbo-tamano-gigante-best-of-game-7-promo": {
+"tp": 211424,
+"n": "Jumbo (tamaño gigante) · Best of Game 7 Promo",
+"v": [
+"normal"
+]
+},
+"winner": {
+"tp": 167077,
+"n": "Winner",
+"v": [
+"normal"
+],
+"usd": 166.31
+}
+},
+"bt-4": {
+"jumbo-tamano-gigante": {
+"tp": 210847,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"normal"
+]
+}
+},
+"bt-9": {
+"jumbo-tamano-gigante-box-topper": {
+"tp": 210851,
+"n": "Jumbo (tamaño gigante) · Box Topper",
+"v": [
+"reverse"
+]
+}
+},
+"bw10-14": {
+"build-a-bear-workshop-exclusive": {
+"tp": 155087,
+"n": "Build-A-Bear Workshop Exclusive",
+"v": [
+"normal"
+],
+"usd": 50.51
+}
+},
+"bw10-16": {
+"mundial-2015-jacob-van-wagner": {
+"tp": 481166,
+"n": "Mundial 2015 · Jacob Van Wagner",
+"v": [
+"normal"
+],
+"usd": 15.34
+},
+"exclusiva-de-mazo-bw-plasma-blast": {
+"tp": 131329,
+"n": "Exclusiva de mazo · BW Plasma Blast",
+"v": [
+"normal"
+],
+"usd": 18.49
+},
+"exclusiva-de-blister-cosmos-holo": {
+"tp": 165634,
+"n": "Exclusiva de blíster · Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 30.79
+}
+},
+"bw11-17": {
+"build-a-bear-workshop-exclusive": {
+"tp": 155083,
+"n": "Build-A-Bear Workshop Exclusive",
+"v": [
+"normal"
+],
+"usd": 37.06
+}
+},
+"bw11-19": {
+"cosmos-holo": {
+"tp": 226672,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 137.01
+}
+},
+"bw4-40": {
+"exclusiva-de-blister-cosmos-holo": {
+"tp": 220118,
+"n": "Exclusiva de blíster · Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 123.8
+}
+},
+"bw5-1": {
+"build-a-bear-workshop-exclusive": {
+"tp": 155082,
+"n": "Build-A-Bear Workshop Exclusive",
+"v": [
+"normal"
+],
+"usd": 52.82
+}
+},
+"bw5-3": {
+"exclusiva-de-blister-cosmos-holo": {
+"tp": 227088,
+"n": "Exclusiva de blíster · Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 18.78
+}
+},
+"bw7-20": {
+"exclusiva-de-blister-cosmos-holo": {
+"tp": 220119,
+"n": "Exclusiva de blíster · Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 50.64
+}
+},
+"bw7-31": {
+"exclusiva-de-mazo-non-holo": {
+"tp": 123456,
+"n": "Exclusiva de mazo · Non-Holo",
+"v": [
+"normal"
+],
+"usd": 5.18
+}
+},
+"cel25-6": {
+"mundial-2022-ondrej-skubal": {
+"tp": 485047,
+"n": "Mundial 2022 · Ondrej Skubal",
+"v": [
+"normal"
+],
+"usd": 4.18
+}
+},
+"cel25-7": {
+"mundial-2022-ondrej-skubal": {
+"tp": 485046,
+"n": "Mundial 2022 · Ondrej Skubal",
+"v": [
+"normal"
+],
+"usd": 5.25
+}
+},
+"col1-33": {
+"prerelease": {
+"tp": 213021,
+"n": "Prerelease",
+"v": [
+"holo"
+],
+"usd": 294.0
+},
+"prerelease-staff": {
+"tp": 228494,
+"n": "Prerelease · Staff",
+"v": [
+"holo"
+],
+"usd": 1600.0
+}
+},
+"dp2-94": {
+"burger-king-diamond-pearl": {
+"tp": 174062,
+"n": "Burger King · Diamond & Pearl",
+"v": [
+"reverse"
+],
+"usd": 111.22
+}
+},
+"dp3-20": {
+"exclusiva-de-mazo-secret-wonders": {
+"tp": 123444,
+"n": "Exclusiva de mazo · Secret Wonders",
+"v": [
+"normal"
+],
+"usd": 9.44
+}
+},
+"dp5-68": {
+"calendario-countdown": {
+"tp": 153097,
+"n": "Calendario Countdown",
+"v": [
+"normal"
+],
+"usd": 56.79
+}
+},
+"dp5-70": {
+"burger-king-platinum": {
+"tp": 224679,
+"n": "Burger King · Platinum",
+"v": [
+"reverse"
+],
+"usd": 48.52
+}
+},
+"dp7-18": {
+"mundial-2009-jason-martinez": {
+"tp": 479902,
+"n": "Mundial 2009 · Jason Martinez",
+"v": [
+"normal"
+],
+"usd": 37.21
+}
+},
+"dp7-40": {
+"mundial-2009-jason-martinez": {
+"tp": 479904,
+"n": "Mundial 2009 · Jason Martinez",
+"v": [
+"normal"
+],
+"usd": 26.71
+}
+},
+"dp7-45": {
+"burger-king-platinum": {
+"tp": 188126,
+"n": "Burger King · Platinum",
+"v": [
+"reverse"
+],
+"usd": 39.52
+}
+},
+"dp7-62": {
+"mundial-2009-jason-martinez": {
+"tp": 479901,
+"n": "Mundial 2009 · Jason Martinez",
+"v": [
+"normal"
+],
+"usd": 8.48
+}
+},
+"dpp-DP16": {
+"calendario-countdown": {
+"tp": 153100,
+"n": "Calendario Countdown",
+"v": [
+"holo"
+],
+"usd": 378.27
+}
+},
+"ex12-5": {
+"gym-challenge": {
+"tp": 232873,
+"n": "Gym Challenge",
+"v": [
+"normal"
+],
+"usd": 302.5
+}
+},
+"ex14-14": {
+"exclusiva-de-mazo-ex-crystal-guardians": {
+"tp": 174489,
+"n": "Exclusiva de mazo · EX Crystal Guardians",
+"v": [
+"holo"
+],
+"usd": 52.71
+},
+"national-championships": {
+"tp": 174490,
+"n": "National Championships",
+"v": [
+"normal"
+],
+"usd": 244.5
+},
+"national-championships-staff": {
+"tp": 174491,
+"n": "National Championships · Staff",
+"v": [
+"normal"
+]
+}
+},
+"ex14-28": {
+"exclusiva-de-mazo-ex-crystal-guardians": {
+"tp": 177125,
+"n": "Exclusiva de mazo · EX Crystal Guardians",
+"v": [
+"holo"
+],
+"usd": 38.4
+},
+"regional-championships": {
+"tp": 236464,
+"n": "Regional Championships",
+"v": [
+"normal"
+],
+"usd": 143.2
+}
+},
+"ex14-35": {
+"prerelease": {
+"tp": 118882,
+"n": "Prerelease",
+"v": [
+"normal"
+],
+"usd": 74.78
+}
+},
+"ex14-42": {
+"state-championships": {
+"tp": 209568,
+"n": "State Championships",
+"v": [
+"normal"
+],
+"usd": 56.66
+}
+},
+"ex14-63": {
+"city-championships": {
+"tp": 209567,
+"n": "City Championships",
+"v": [
+"normal"
+],
+"usd": 58.35
+}
+},
+"ex3-100": {
+"national-championships": {
+"tp": 489929,
+"n": "National Championships",
+"v": [
+"normal"
+]
+}
+},
+"ex3-98": {
+"city-championships": {
+"tp": 215231,
+"n": "City Championships",
+"v": [
+"holo"
+],
+"usd": 276.76
+}
+},
+"ex3-99": {
+"state-championship": {
+"tp": 285694,
+"n": "State Championship",
+"v": [
+"holo"
+],
+"usd": 220.57
+}
+},
+"ex6-104": {
+"mundial-2006-hiroki-yano": {
+"tp": 477601,
+"n": "Mundial 2006 · Hiroki Yano",
+"v": [
+"normal"
+],
+"usd": 35.89
+}
+},
+"ex6-50": {
+"mundial-2006-hiroki-yano": {
+"tp": 477978,
+"n": "Mundial 2006 · Hiroki Yano",
+"v": [
+"normal"
+],
+"usd": 10.56
+},
+"prerelease": {
+"tp": 285695,
+"n": "Prerelease",
+"v": [
+"normal"
+],
+"usd": 58.35
+}
+},
+"ex6-83": {
+"mundial-2006-hiroki-yano": {
+"tp": 477964,
+"n": "Mundial 2006 · Hiroki Yano",
+"v": [
+"normal"
+],
+"usd": 32.1
+}
+},
+"ex9-60": {
+"sdcc-2005": {
+"tp": 187217,
+"n": "SDCC 2005",
+"v": [
+"normal"
+]
+}
+},
+"g1-26": {
+"toys-r-us": {
+"tp": 144670,
+"n": "Toys R Us",
+"v": [
+"holo"
+],
+"usd": 93.59
+},
+"20th-anniversary": {
+"tp": 257770,
+"n": "20th Anniversary",
+"v": [
+"holo"
+],
+"usd": 149.99
+}
+},
+"hgss1-10": {
+"exclusiva-de-mazo-cracked-ice-holo": {
+"tp": 213011,
+"n": "Exclusiva de mazo · Cracked Ice Holo",
+"v": [
+"holo"
+],
+"usd": 36.77
+}
+},
+"hgss1-28": {
+"mundial-2011-ross-cawthon": {
+"tp": 480432,
+"n": "Mundial 2011 · Ross Cawthon",
+"v": [
+"normal"
+],
+"usd": 4.79
+},
+"prerelease": {
+"tp": 213013,
+"n": "Prerelease",
+"v": [
+"holo"
+],
+"usd": 126.33
+},
+"prerelease-staff": {
+"tp": 213014,
+"n": "Prerelease · Staff",
+"v": [
+"normal"
+]
+}
+},
+"hgss2-13": {
+"prerelease": {
+"tp": 211517,
+"n": "Prerelease",
+"v": [
+"holo"
+],
+"usd": 156.33
+},
+"prerelease-staff": {
+"tp": 211518,
+"n": "Prerelease · Staff",
+"v": [
+"holo"
+]
+},
+"cracked-ice-holo": {
+"tp": 145612,
+"n": "Cracked Ice Holo",
+"v": [
+"holo"
+],
+"usd": 42.85
+}
+},
+"ja-18580": {
+"mirror-holo": {
+"tp": 578500,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 6.4
+}
+},
+"ja-18581": {
+"mirror-holo": {
+"tp": 578501,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 4.84
+}
+},
+"ja-18582": {
+"mirror-holo": {
+"tp": 684983,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 6.87
+}
+},
+"ja-18665": {
+"mirror-holo": {
+"tp": 578537,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 4.47
+}
+},
+"ja-19933": {
+"mirror-holo": {
+"tp": 578237,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 38.5
+}
+},
+"ja-19934": {
+"mirror-holo": {
+"tp": 578238,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 5.5
+}
+},
+"ja-19935": {
+"mirror-holo": {
+"tp": 578239,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 16.0
+}
+},
+"ja-21873": {
+"mirror-holo": {
+"tp": 598909,
+"n": "Mirror Holo",
+"v": [
+"normal"
+]
+}
+},
+"ja-21874": {
+"mirror-holo": {
+"tp": 598921,
+"n": "Mirror Holo",
+"v": [
+"normal"
+]
+}
+},
+"ja-24529": {
+"mirror-holo": {
+"tp": 703915,
+"n": "Mirror Holo",
+"v": [
+"normal"
+]
+}
+},
+"ja-24530": {
+"mirror-holo": {
+"tp": 703916,
+"n": "Mirror Holo",
+"v": [
+"normal"
+]
+}
+},
+"ja-24531": {
+"mirror-holo": {
+"tp": 703917,
+"n": "Mirror Holo",
+"v": [
+"normal"
+]
+}
+},
+"ja-26255": {
+"mirror-holo": {
+"tp": 608337,
+"n": "Mirror Holo",
+"v": [
+"firstEdition"
+]
+}
+},
+"ja-26256": {
+"mirror-holo": {
+"tp": 608338,
+"n": "Mirror Holo",
+"v": [
+"normal"
+]
+}
+},
+"ja-26257": {
+"mirror-holo": {
+"tp": 608339,
+"n": "Mirror Holo",
+"v": [
+"normal"
+]
+}
+},
+"ja-29260": {
+"no-rarity-symbol": {
+"tp": 657514,
+"n": "No Rarity Symbol",
+"v": [
+"normal"
+]
+}
+},
+"ja-32829": {
+"mirror-holo": {
+"tp": 577948,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 8.12
+}
+},
+"ja-32830": {
+"mirror-holo": {
+"tp": 577949,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 6.46
+}
+},
+"ja-33490": {
+"mirror-holo": {
+"tp": 647004,
+"n": "Mirror Holo",
+"v": [
+"normal"
+]
+}
+},
+"ja-33505": {
+"mirror-holo": {
+"tp": 647017,
+"n": "Mirror Holo",
+"v": [
+"normal"
+]
+}
+},
+"ja-33506": {
+"mirror-holo": {
+"tp": 647018,
+"n": "Mirror Holo",
+"v": [
+"normal"
+]
+}
+},
+"ja-35091": {
+"pikachu-stamped": {
+"tp": 596198,
+"n": "Pikachu Stamped",
+"v": [
+"holo"
+],
+"usd": 5.41
+}
+},
+"ja-35110": {
+"pikachu-stamped": {
+"tp": 596217,
+"n": "Pikachu Stamped",
+"v": [
+"normal"
+],
+"usd": 9.66
+}
+},
+"ja-35687": {
+"mirror-holo": {
+"tp": 577896,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 52.23
+}
+},
+"ja-36088": {
+"mirror-holo": {
+"tp": 578361,
+"n": "Mirror Holo",
+"v": [
+"normal"
+]
+}
+},
+"ja-36089": {
+"mirror-holo": {
+"tp": 578362,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 1.31
+}
+},
+"ja-36456": {
+"mirror-holo": {
+"tp": 595673,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 5.1
+}
+},
+"ja-36457": {
+"mirror-holo": {
+"tp": 595675,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 3.79
+}
+},
+"ja-37901": {
+"mirror-holo": {
+"tp": 577100,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 25.24
+}
+},
+"ja-37902": {
+"mirror-holo": {
+"tp": 577101,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 1.26
+}
+},
+"ja-37908": {
+"mirror-holo": {
+"tp": 577105,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 1.25
+}
+},
+"ja-37909": {
+"mirror-holo": {
+"tp": 577106,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 1.31
+}
+},
+"ja-39616": {
+"mirror-holo": {
+"tp": 577457,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 1.52
+}
+},
+"ja-39617": {
+"mirror-holo": {
+"tp": 577458,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 1.72
+}
+},
+"ja-41494": {
+"poke-ball-pattern": {
+"tp": 566553,
+"n": "Poké Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 1.94
+},
+"master-ball-pattern": {
+"tp": 566706,
+"n": "Master Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 43.75
+}
+},
+"ja-41495": {
+"poke-ball-pattern": {
+"tp": 566554,
+"n": "Poké Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 1.59
+},
+"master-ball-pattern": {
+"tp": 566707,
+"n": "Master Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 12.14
+}
+},
+"ja-41497": {
+"poke-ball-pattern": {
+"tp": 566555,
+"n": "Poké Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 2.33
+},
+"master-ball-pattern": {
+"tp": 566708,
+"n": "Master Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 38.7
+}
+},
+"ja-41498": {
+"poke-ball-pattern": {
+"tp": 566556,
+"n": "Poké Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 1.15
+},
+"master-ball-pattern": {
+"tp": 566709,
+"n": "Master Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 15.1
+}
+},
+"ja-41500": {
+"poke-ball-pattern": {
+"tp": 566557,
+"n": "Poké Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 2.54
+},
+"master-ball-pattern": {
+"tp": 566710,
+"n": "Master Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 38.86
+}
+},
+"ja-41501": {
+"poke-ball-pattern": {
+"tp": 566558,
+"n": "Poké Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 1.82
+},
+"master-ball-pattern": {
+"tp": 566711,
+"n": "Master Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 13.69
+}
+},
+"ja-41518": {
+"poke-ball-pattern": {
+"tp": 566573,
+"n": "Poké Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 3.0
+},
+"master-ball-pattern": {
+"tp": 566726,
+"n": "Master Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 238.55
+}
+},
+"ja-41519": {
+"poke-ball-pattern": {
+"tp": 566574,
+"n": "Poké Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 1.09
+},
+"master-ball-pattern": {
+"tp": 566727,
+"n": "Master Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 14.59
+}
+},
+"ja-41585": {
+"poke-ball-pattern": {
+"tp": 566636,
+"n": "Poké Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 2.71
+},
+"master-ball-pattern": {
+"tp": 566789,
+"n": "Master Ball Pattern",
+"v": [
+"normal"
+]
+}
+},
+"ja-41586": {
+"poke-ball-pattern": {
+"tp": 566637,
+"n": "Poké Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 2.83
+},
+"master-ball-pattern": {
+"tp": 566790,
+"n": "Master Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 77.88
+}
+},
+"ja-41587": {
+"poke-ball-pattern": {
+"tp": 566638,
+"n": "Poké Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 15.9
+},
+"master-ball-pattern": {
+"tp": 566791,
+"n": "Master Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 694.93
+}
+},
+"ja-41636": {
+"poke-ball-pattern": {
+"tp": 566685,
+"n": "Poké Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 0.97
+},
+"master-ball-pattern": {
+"tp": 566838,
+"n": "Master Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 31.85
+}
+},
+"ja-43408": {
+"mirror-holo": {
+"tp": 577308,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 2.33
+}
+},
+"ja-43409": {
+"mirror-holo": {
+"tp": 577309,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 1.42
+}
+},
+"ja-43438": {
+"mirror-holo": {
+"tp": 577325,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 5.65
+}
+},
+"ja-43528": {
+"mirror-holo": {
+"tp": 577377,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 3.83
+}
+},
+"ja-45929": {
+"battle-academy-2020": {
+"tp": 593380,
+"n": "Battle Academy 2020",
+"v": [
+"holo"
+],
+"usd": 8.62
+}
+},
+"ja-45957": {
+"battle-academy-2020": {
+"tp": 593408,
+"n": "Battle Academy 2020",
+"v": [
+"normal"
+]
+}
+},
+"ja-51991": {
+"poke-ball-pattern": {
+"tp": 666031,
+"n": "Poké Ball Pattern",
+"v": [
+"holo"
+],
+"usd": 2.61
+},
+"energy-symbol-pattern": {
+"tp": 666197,
+"n": "Energy Symbol Pattern",
+"v": [
+"normal"
+]
+}
+},
+"ja-52796": {
+"mirror-holo": {
+"tp": 670348,
+"n": "Mirror Holo",
+"v": [
+"holo"
+]
+}
+},
+"ja-53147": {
+"mirror-holo": {
+"tp": 669524,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 13.81
+}
+},
+"ja-53317": {
+"mirror-holo": {
+"tp": 670346,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 32.66
+}
+},
+"ja-53318": {
+"mirror-holo": {
+"tp": 670347,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 2.35
+}
+},
+"ja-53365": {
+"mirror-holo": {
+"tp": 669809,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 14.25
+}
+},
+"ja-53366": {
+"mirror-holo": {
+"tp": 669811,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 14.79
+}
+},
+"ja-53367": {
+"mirror-holo": {
+"tp": 669813,
+"n": "Mirror Holo",
+"v": [
+"holo"
+],
+"usd": 55.0
+}
+},
+"lc-3": {
+"exclusiva-de-mazo-wotc-legendary-collection": {
+"tp": 118404,
+"n": "Exclusiva de mazo · WotC Legendary Collection",
+"v": [
+"normal"
+],
+"usd": 142.25
+}
+},
+"lc-4": {
+"exclusiva-de-mazo-wotc-legendary-collection": {
+"tp": 125088,
+"n": "Exclusiva de mazo · WotC Legendary Collection",
+"v": [
+"normal"
+],
+"usd": 35.08
+}
+},
+"lc-7": {
+"exclusiva-de-mazo-wotc-legendary-collection": {
+"tp": 125089,
+"n": "Exclusiva de mazo · WotC Legendary Collection",
+"v": [
+"normal"
+],
+"usd": 23.78
+}
+},
+"me01-001": {
+"pokemon-day-2026": {
+"tp": 678169,
+"n": "Pokémon Day 2026",
+"v": [
+"holo"
+],
+"usd": 17.67
+}
+},
+"me01-003": {
+"prize-pack": {
+"tp": 671669,
+"n": "Prize Pack",
+"v": [
+"holo"
+],
+"usd": 8.22
+}
+},
+"me02-011": {
+"prize-pack": {
+"tp": 704402,
+"n": "Prize Pack",
+"v": [
+"normal"
+],
+"usd": 0.4
+},
+"prize-pack-cosmos-holo": {
+"tp": 704403,
+"n": "Prize Pack · Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 2.1
+}
+},
+"me02-012": {
+"prize-pack": {
+"tp": 704404,
+"n": "Prize Pack",
+"v": [
+"normal"
+],
+"usd": 0.22
+},
+"prize-pack-cosmos-holo": {
+"tp": 704405,
+"n": "Prize Pack · Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 2.1
+}
+},
+"me02-013": {
+"prize-pack": {
+"tp": 704430,
+"n": "Prize Pack",
+"v": [
+"holo"
+],
+"usd": 54.02
+}
+},
+"me02-056": {
+"prize-pack": {
+"tp": 704434,
+"n": "Prize Pack",
+"v": [
+"holo"
+],
+"usd": 54.83
+}
+},
+"me02.5-020": {
+"friend-ball": {
+"tp": 676869,
+"n": "Friend Ball",
+"v": [
+"reverse"
+],
+"usd": 0.27
+},
+"energy-symbol-pattern": {
+"tp": 677009,
+"n": "Energy Symbol Pattern",
+"v": [
+"reverse"
+],
+"usd": 0.32
+},
+"cosmos-holo": {
+"tp": 677398,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 0.51
+}
+},
+"me02.5-021": {
+"friend-ball": {
+"tp": 676870,
+"n": "Friend Ball",
+"v": [
+"reverse"
+],
+"usd": 0.26
+},
+"energy-symbol-pattern": {
+"tp": 677010,
+"n": "Energy Symbol Pattern",
+"v": [
+"reverse"
+],
+"usd": 0.38
+}
+},
+"me02.5-022": {
+"prize-pack": {
+"tp": 704431,
+"n": "Prize Pack",
+"v": [
+"holo"
+],
+"usd": 42.89
+}
+},
+"me02.5-055": {
+"friend-ball": {
+"tp": 676897,
+"n": "Friend Ball",
+"v": [
+"reverse"
+],
+"usd": 0.81
+},
+"energy-symbol-pattern": {
+"tp": 677037,
+"n": "Energy Symbol Pattern",
+"v": [
+"reverse"
+],
+"usd": 0.64
+}
+},
+"me02.5-056": {
+"friend-ball": {
+"tp": 676898,
+"n": "Friend Ball",
+"v": [
+"reverse"
+],
+"usd": 0.36
+},
+"energy-symbol-pattern": {
+"tp": 677038,
+"n": "Energy Symbol Pattern",
+"v": [
+"reverse"
+],
+"usd": 0.55
+}
+},
+"me02.5-123": {
+"dusk-ball": {
+"tp": 676949,
+"n": "Dusk Ball",
+"v": [
+"reverse"
+],
+"usd": 0.29
+},
+"energy-symbol-pattern": {
+"tp": 677089,
+"n": "Energy Symbol Pattern",
+"v": [
+"reverse"
+],
+"usd": 0.23
+},
+"cosmos-holo": {
+"tp": 677399,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 0.33
+}
+},
+"me02.5-124": {
+"dusk-ball": {
+"tp": 676950,
+"n": "Dusk Ball",
+"v": [
+"reverse"
+],
+"usd": 0.36
+},
+"energy-symbol-pattern": {
+"tp": 677090,
+"n": "Energy Symbol Pattern",
+"v": [
+"reverse"
+],
+"usd": 0.36
+}
+},
+"me03-048": {
+"prize-pack": {
+"tp": 704417,
+"n": "Prize Pack",
+"v": [
+"normal"
+],
+"usd": 0.33
+}
+},
+"me03-049": {
+"prize-pack": {
+"tp": 704423,
+"n": "Prize Pack",
+"v": [
+"normal"
+],
+"usd": 0.41
+}
+},
+"me03-050": {
+"prize-pack": {
+"tp": 704418,
+"n": "Prize Pack",
+"v": [
+"normal"
+],
+"usd": 5.42
+},
+"exclusiva-de-blister-cosmos-holo": {
+"tp": 709697,
+"n": "Exclusiva de blíster · Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 5.63
+},
+"cosmos-holo-gamestop-exclusive": {
+"tp": 685555,
+"n": "Cosmos Holo · Gamestop Exclusive",
+"v": [
+"holo"
+],
+"usd": 89.38
+},
+"cosmos-holo-eb-games-exclusive": {
+"tp": 686505,
+"n": "Cosmos Holo · EB Games Exclusive",
+"v": [
+"holo"
+],
+"usd": 182.28
+}
+},
+"mep-013": {
+"jumbo-tamano-gigante": {
+"tp": 668464,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 1.86
+}
+},
+"mep-093": {
+"winner": {
+"tp": 716740,
+"n": "Winner",
+"v": [
+"normal"
+],
+"usd": 138.94
+}
+},
+"np-12": {
+"10th-anniversary": {
+"tp": 187219,
+"n": "10th Anniversary",
+"v": [
+"normal"
+],
+"usd": 202.49
+}
+},
+"pl2-33": {
+"league-promo": {
+"tp": 164281,
+"n": "League Promo",
+"v": [
+"reverse"
+],
+"usd": 63.11
+}
+},
+"pl3-13": {
+"exclusiva-de-mazo-dppt-supreme-victors": {
+"tp": 125073,
+"n": "Exclusiva de mazo · DPPt Supreme Victors",
+"v": [
+"normal"
+],
+"usd": 11.2
+}
+},
+"pl4-1": {
+"cracked-ice-holo": {
+"tp": 153234,
+"n": "Cracked Ice Holo",
+"v": [
+"holo"
+],
+"usd": 104.26
+}
+},
+"pl4-27": {
+"prerelease": {
+"tp": 221178,
+"n": "Prerelease",
+"v": [
+"normal"
+],
+"usd": 78.25
+},
+"prerelease-staff": {
+"tp": 221179,
+"n": "Prerelease · Staff",
+"v": [
+"normal"
+]
+}
+},
+"pop6-9": {
+"pokemon-day-stamped": {
+"tp": 276377,
+"n": "Pokémon Day Stamped",
+"v": [
+"normal"
+],
+"usd": 99.99
+}
+},
+"pop9-15": {
+"pokemon-day-2009": {
+"tp": 701479,
+"n": "Pokémon Day 2009",
+"v": [
+"normal"
+],
+"usd": 199.99
+}
+},
+"sm10-20": {
+"mundial-2019-kaya-lichtleitner": {
+"tp": 482106,
+"n": "Mundial 2019 · Kaya Lichtleitner",
+"v": [
+"normal"
+],
+"usd": 27.67
+},
+"mundial-2019-henry-brand": {
+"tp": 482107,
+"n": "Mundial 2019 · Henry Brand",
+"v": [
+"normal"
+],
+"usd": 35.35
+}
+},
+"sm10-33": {
+"exclusiva-de-blister-premium-collection-promo": {
+"tp": 193275,
+"n": "Exclusiva de blíster · Premium Collection Promo",
+"v": [
+"holo"
+],
+"usd": 9.55
+}
+},
+"sm10-34": {
+"premium-collection-promo": {
+"tp": 193276,
+"n": "Premium Collection Promo",
+"v": [
+"holo"
+],
+"usd": 4.11
+}
+},
+"sm11-54": {
+"mundial-2019-haruki-miyamoto": {
+"tp": 482103,
+"n": "Mundial 2019 · Haruki Miyamoto",
+"v": [
+"normal"
+],
+"usd": 17.11
+}
+},
+"sm115-19": {
+"battle-academy-2020-n-o-2-pikachu": {
+"tp": 219154,
+"n": "Battle Academy 2020 · n.º 2 (Pikachu)",
+"v": [
+"normal"
+],
+"usd": 3.49
+},
+"battle-academy-2020-n-o-15-pikachu": {
+"tp": 219155,
+"n": "Battle Academy 2020 · n.º 15 (Pikachu)",
+"v": [
+"normal"
+],
+"usd": 2.92
+},
+"battle-academy-2020-n-o-30-pikachu": {
+"tp": 219157,
+"n": "Battle Academy 2020 · n.º 30 (Pikachu)",
+"v": [
+"normal"
+],
+"usd": 3.19
+},
+"battle-academy-2020-n-o-55-pikachu": {
+"tp": 219158,
+"n": "Battle Academy 2020 · n.º 55 (Pikachu)",
+"v": [
+"normal"
+],
+"usd": 5.11
+}
+},
+"sm115-20": {
+"battle-academy-2020-n-o-60-pikachu": {
+"tp": 219163,
+"n": "Battle Academy 2020 · n.º 60 (Pikachu)",
+"v": [
+"holo"
+],
+"usd": 2.75
+}
+},
+"sm115-50": {
+"battle-academy-2020": {
+"tp": 219182,
+"n": "Battle Academy 2020",
+"v": [
+"normal"
+],
+"usd": 3.05
+}
+},
+"sm115-8": {
+"battle-academy-2020-n-o-15-charizard": {
+"tp": 219051,
+"n": "Battle Academy 2020 · n.º 15 (Charizard)",
+"v": [
+"normal"
+],
+"usd": 0.35
+},
+"battle-academy-2020-n-o-30-charizard": {
+"tp": 219052,
+"n": "Battle Academy 2020 · n.º 30 (Charizard)",
+"v": [
+"normal"
+],
+"usd": 0.32
+},
+"battle-academy-2020-n-o-51-charizard": {
+"tp": 219053,
+"n": "Battle Academy 2020 · n.º 51 (Charizard)",
+"v": [
+"normal"
+],
+"usd": 0.64
+}
+},
+"sm115-9": {
+"battle-academy-2020-n-o-60-charizard": {
+"tp": 219059,
+"n": "Battle Academy 2020 · n.º 60 (Charizard)",
+"v": [
+"holo"
+],
+"usd": 14.57
+}
+},
+"sm3-18": {
+"battle-academy-2020-n-o-1-charizard": {
+"tp": 219029,
+"n": "Battle Academy 2020 · n.º 1 (Charizard)",
+"v": [
+"normal"
+],
+"usd": 0.67
+},
+"battle-academy-2020-n-o-16-charizard": {
+"tp": 219048,
+"n": "Battle Academy 2020 · n.º 16 (Charizard)",
+"v": [
+"normal"
+],
+"usd": 0.47
+},
+"battle-academy-2020-n-o-42-charizard": {
+"tp": 219049,
+"n": "Battle Academy 2020 · n.º 42 (Charizard)",
+"v": [
+"normal"
+],
+"usd": 0.6
+},
+"battle-academy-2020-n-o-56-charizard": {
+"tp": 219050,
+"n": "Battle Academy 2020 · n.º 56 (Charizard)",
+"v": [
+"normal"
+],
+"usd": 0.54
+},
+"premium-collection-promo": {
+"tp": 148153,
+"n": "Premium Collection Promo",
+"v": [
+"holo"
+],
+"usd": 5.98
+}
+},
+"sm3-18a": {
+"general-mills-promo": {
+"tp": 186319,
+"n": "General Mills Promo",
+"v": [
+"holo"
+],
+"usd": 15.7
+}
+},
+"sm3-19": {
+"premium-collection-promo": {
+"tp": 138484,
+"n": "Premium Collection Promo",
+"v": [
+"holo"
+],
+"usd": 2.99
+}
+},
+"sm3-41": {
+"league-challenge-3rd-place": {
+"tp": 147222,
+"n": "League Challenge · 3rd Place",
+"v": [
+"reverse"
+],
+"usd": 22.22
+},
+"league-challenge-2nd-place": {
+"tp": 147225,
+"n": "League Challenge · 2nd Place",
+"v": [
+"reverse"
+],
+"usd": 33.27
+},
+"league-challenge-1st-place": {
+"tp": 147226,
+"n": "League Challenge · 1st Place",
+"v": [
+"reverse"
+],
+"usd": 49.71
+},
+"league-challenge-4th-place": {
+"tp": 147227,
+"n": "League Challenge · 4th Place",
+"v": [
+"reverse"
+],
+"usd": 27.38
+},
+"exclusiva-de-blister-cosmos-holo": {
+"tp": 250572,
+"n": "Exclusiva de blíster · Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 6.63
+}
+},
+"sm3.5-1": {
+"general-mills-promo": {
+"tp": 186318,
+"n": "General Mills Promo",
+"v": [
+"holo"
+],
+"usd": 40.11
+}
+},
+"sm3.5-28": {
+"exclusiva-de-mazo-cracked-ice-holo": {
+"tp": 189761,
+"n": "Exclusiva de mazo · Cracked Ice Holo",
+"v": [
+"holo"
+],
+"usd": 12.65
+},
+"water-web-holo": {
+"tp": 180720,
+"n": "Water Web Holo",
+"v": [
+"holo"
+],
+"usd": 8.31
+},
+"general-mills": {
+"tp": 186322,
+"n": "General Mills",
+"v": [
+"holo"
+],
+"usd": 19.88
+},
+"cosmos-holo": {
+"tp": 247390,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 33.27
+}
+},
+"sm4-31": {
+"exclusiva-de-mazo-sm-crimson-invasion": {
+"tp": 158322,
+"n": "Exclusiva de mazo · SM Crimson Invasion",
+"v": [
+"normal"
+],
+"usd": 1.2
+}
+},
+"sm4-38": {
+"exclusiva-de-mazo-prerelease-kit-exclusive": {
+"tp": 164116,
+"n": "Exclusiva de mazo · Prerelease Kit Exclusive",
+"v": [
+"normal"
+],
+"usd": 22.56
+}
+},
+"sm7.5-3": {
+"battle-academy-2020-n-o-39-charizard": {
+"tp": 219058,
+"n": "Battle Academy 2020 · n.º 39 (Charizard)",
+"v": [
+"normal"
+],
+"usd": 7.45
+},
+"exclusiva-de-mazo-let-s-play-eevee": {
+"tp": 190938,
+"n": "Exclusiva de mazo · Let's Play, Eevee!",
+"v": [
+"normal"
+],
+"usd": 5.3
+}
+},
+"sm9-14": {
+"exclusiva-de-mazo-sm-team-up": {
+"tp": 184217,
+"n": "Exclusiva de mazo · SM Team Up",
+"v": [
+"holo"
+],
+"usd": 25.29
+},
+"costco-exclusive": {
+"tp": 247414,
+"n": "Costco Exclusive",
+"v": [
+"holo"
+],
+"usd": 55.36
+},
+"library-exclusive": {
+"tp": 695469,
+"n": "Library Exclusive",
+"v": [
+"holo"
+],
+"usd": 275.0
+}
+},
+"sm9-25": {
+"exclusiva-de-mazo-cracked-ice-holo": {
+"tp": 184218,
+"n": "Exclusiva de mazo · Cracked Ice Holo",
+"v": [
+"holo"
+],
+"usd": 26.31
+}
+},
+"sm9-33": {
+"mundial-2019-haruki-miyamoto": {
+"tp": 482095,
+"n": "Mundial 2019 · Haruki Miyamoto",
+"v": [
+"normal"
+],
+"usd": 33.63
+}
+},
+"smp-SM04": {
+"target-non-holo": {
+"tp": 147224,
+"n": "Target Non-Holo",
+"v": [
+"normal"
+],
+"usd": 12.77
+},
+"general-mills": {
+"tp": 140165,
+"n": "General Mills",
+"v": [
+"holo"
+],
+"usd": 23.0
+}
+},
+"smp-SM05": {
+"jumbo-tamano-gigante": {
+"tp": 131864,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"normal"
+],
+"usd": 12.19
+}
+},
+"smp-SM158": {
+"staff": {
+"tp": 183967,
+"n": "Staff",
+"v": [
+"holo"
+],
+"usd": 625.0
+}
+},
+"smp-SM170": {
+"stamped": {
+"tp": 206823,
+"n": "Stamped",
+"v": [
+"holo"
+],
+"usd": 33.14
+}
+},
+"smp-SM189": {
+"jumbo-tamano-gigante-black-star-promos": {
+"tp": 193278,
+"n": "Jumbo (tamaño gigante) · Black Star Promos",
+"v": [
+"holo"
+],
+"usd": 10.72
+}
+},
+"smp-SM190": {
+"stamped": {
+"tp": 196992,
+"n": "Stamped",
+"v": [
+"holo"
+],
+"usd": 27.28
+}
+},
+"smp-SM195": {
+"jumbo-tamano-gigante-sm-black-star-promo": {
+"tp": 185252,
+"n": "Jumbo (tamaño gigante) · SM Black Star Promo",
+"v": [
+"holo"
+],
+"usd": 18.05
+}
+},
+"smp-SM198": {
+"detective-pikachu-stamped": {
+"tp": 206824,
+"n": "Detective Pikachu Stamped",
+"v": [
+"holo"
+],
+"usd": 20.42
+}
+},
+"smp-SM201": {
+"jumbo-tamano-gigante": {
+"tp": 196348,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 27.47
+}
+},
+"smp-SM211": {
+"jumbo-tamano-gigante-sm-black-star-promo": {
+"tp": 205166,
+"n": "Jumbo (tamaño gigante) · SM Black Star Promo",
+"v": [
+"holo"
+],
+"usd": 9.93
+}
+},
+"smp-SM213": {
+"jumbo-tamano-gigante": {
+"tp": 205168,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 6.9
+}
+},
+"smp-SM230": {
+"jumbo-tamano-gigante-sm-black-star-promo": {
+"tp": 205164,
+"n": "Jumbo (tamaño gigante) · SM Black Star Promo",
+"v": [
+"holo"
+],
+"usd": 21.3
+}
+},
+"smp-SM232": {
+"jumbo-tamano-gigante": {
+"tp": 200274,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 8.58
+}
+},
+"smp-SM247": {
+"jumbo-tamano-gigante": {
+"tp": 253395,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 9.27
+}
+},
+"smp-SM248": {
+"jumbo-tamano-gigante": {
+"tp": 253398,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 9.53
+}
+},
+"smp-SM60": {
+"jumbo-tamano-gigante-sm-black-star-promos": {
+"tp": 148152,
+"n": "Jumbo (tamaño gigante) · SM Black Star Promos",
+"v": [
+"holo"
+],
+"usd": 24.2
+}
+},
+"smp-SM65": {
+"battle-academy-2020-n-o-25-pikachu": {
+"tp": 219106,
+"n": "Battle Academy 2020 · n.º 25 (Pikachu)",
+"v": [
+"normal"
+],
+"usd": 1.2
+},
+"battle-academy-2020-n-o-56-pikachu": {
+"tp": 219107,
+"n": "Battle Academy 2020 · n.º 56 (Pikachu)",
+"v": [
+"normal"
+],
+"usd": 1.17
+},
+"jumbo-tamano-gigante": {
+"tp": 156258,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 11.85
+}
+},
+"smp-SM72": {
+"prerelease-staff": {
+"tp": 151708,
+"n": "Prerelease · Staff",
+"v": [
+"holo"
+],
+"usd": 144.99
+}
+},
+"smp-SM86": {
+"general-mills-promo": {
+"tp": 161464,
+"n": "General Mills Promo",
+"v": [
+"holo"
+],
+"usd": 44.05
+},
+"build-a-bear-workshop-exclusive": {
+"tp": 228812,
+"n": "Build-A-Bear Workshop Exclusive",
+"v": [
+"normal"
+],
+"usd": 59.24
+}
+},
+"smp-SM90": {
+"jumbo-tamano-gigante": {
+"tp": 155588,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 5.92
+}
+},
+"sv02-062": {
+"trick-or-trade": {
+"tp": 515654,
+"n": "Trick or Trade",
+"v": [
+"holo"
+],
+"usd": 0.52
+},
+"rain-city-showcase": {
+"tp": 593275,
+"n": "Rain City Showcase",
+"v": [
+"normal"
+],
+"usd": 186.52
+}
+},
+"sv02-063": {
+"holiday-calendar": {
+"tp": 565437,
+"n": "Holiday Calendar",
+"v": [
+"holo"
+],
+"usd": 12.65
+}
+},
+"sv03-125": {
+"prize-pack": {
+"tp": 538708,
+"n": "Prize Pack",
+"v": [
+"holo"
+],
+"usd": 19.49
+},
+"jumbo-tamano-gigante": {
+"tp": 581987,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"normal"
+],
+"usd": 41.99
+}
+},
+"sv03.5-001": {
+"best-buy-exclusive": {
+"tp": 517558,
+"n": "Best Buy Exclusive",
+"v": [
+"reverse"
+],
+"usd": 45.19
+},
+"reverse-cosmos-holo-costco-exclusive": {
+"tp": 587935,
+"n": "Reverse Cosmos Holo · Costco Exclusive",
+"v": [
+"holo"
+],
+"usd": 2.96
+}
+},
+"sv03.5-004": {
+"gamestop-exclusive": {
+"tp": 517557,
+"n": "GameStop Exclusive",
+"v": [
+"reverse"
+],
+"usd": 42.13
+},
+"ebgames-exclusive": {
+"tp": 531251,
+"n": "EBGames Exclusive",
+"v": [
+"reverse"
+],
+"usd": 362.05
+},
+"cosmos-holo": {
+"tp": 586830,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 2.69
+},
+"reverse-cosmos-holo-costco-exclusive": {
+"tp": 587936,
+"n": "Reverse Cosmos Holo · Costco Exclusive",
+"v": [
+"holo"
+],
+"usd": 4.64
+}
+},
+"sv03.5-005": {
+"cosmos-holo": {
+"tp": 586829,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 1.54
+}
+},
+"sv03.5-007": {
+"pokemon-center-exclusive": {
+"tp": 520796,
+"n": "Pokémon Center Exclusive",
+"v": [
+"reverse"
+],
+"usd": 99.54
+},
+"reverse-cosmos-holo-costco-exclusive": {
+"tp": 587937,
+"n": "Reverse Cosmos Holo · Costco Exclusive",
+"v": [
+"holo"
+],
+"usd": 4.17
+}
+},
+"sv03.5-009": {
+"jumbo-tamano-gigante": {
+"tp": 618764,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 2.3
+}
+},
+"sv03.5-025": {
+"pokemon-together": {
+"tp": 559566,
+"n": "Pokémon Together",
+"v": [
+"normal"
+],
+"usd": 137.98
+},
+"reverse-cosmos-holo-costco-exclusive": {
+"tp": 587938,
+"n": "Reverse Cosmos Holo · Costco Exclusive",
+"v": [
+"holo"
+],
+"usd": 5.3
+},
+"holiday-calendar": {
+"tp": 650942,
+"n": "Holiday Calendar",
+"v": [
+"holo"
+],
+"usd": 3.53
+}
+},
+"sv03.5-026": {
+"cosmos-holo": {
+"tp": 662074,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 3.7
+}
+},
+"sv03.5-094": {
+"cosmos-holo": {
+"tp": 662072,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 20.07
+}
+},
+"sv04.5-007": {
+"cosmos-holo": {
+"tp": 641613,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 0.66
+}
+},
+"sv04.5-008": {
+"cosmos-holo": {
+"tp": 641614,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 0.48
+}
+},
+"sv04.5-018": {
+"trick-or-trade-cosmos-holo": {
+"tp": 569132,
+"n": "Trick or Trade · Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 1.89
+},
+"reverse-cosmos-holo": {
+"tp": 596519,
+"n": "Reverse Cosmos Holo",
+"v": [
+"reverse"
+],
+"usd": 15.62
+}
+},
+"sv04.5-019": {
+"exclusiva-de-mazo-paldean-fates": {
+"tp": 604896,
+"n": "Exclusiva de mazo · Paldean Fates",
+"v": [
+"normal"
+],
+"usd": 0.91
+}
+},
+"sv04.5-054": {
+"jumbo-tamano-gigante": {
+"tp": 652029,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 6.51
+}
+},
+"sv04.5-057": {
+"trick-or-trade-cosmos-holo": {
+"tp": 570271,
+"n": "Trick or Trade · Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 3.85
+}
+},
+"sv05-051": {
+"cosmos-holo": {
+"tp": 599656,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 2.9
+},
+"pokemon-day-2026": {
+"tp": 673358,
+"n": "Pokémon Day 2026",
+"v": [
+"holo"
+],
+"usd": 2.74
+}
+},
+"sv05-102": {
+"trick-or-trade": {
+"tp": 570320,
+"n": "Trick or Trade",
+"v": [
+"normal"
+],
+"usd": 0.19
+}
+},
+"sv05-103": {
+"trick-or-trade": {
+"tp": 570361,
+"n": "Trick or Trade",
+"v": [
+"normal"
+],
+"usd": 0.25
+}
+},
+"sv07-001": {
+"jumbo-tamano-gigante": {
+"tp": 648584,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 4.07
+},
+"stellar-crown-stamp": {
+"tp": 648585,
+"n": "Stellar Crown Stamp",
+"v": [
+"holo"
+],
+"usd": 1.32
+}
+},
+"sv07-030": {
+"stellar-crown-stamp": {
+"tp": 648587,
+"n": "Stellar Crown Stamp",
+"v": [
+"holo"
+],
+"usd": 2.27
+}
+},
+"sv08-057": {
+"prize-pack": {
+"tp": 648703,
+"n": "Prize Pack",
+"v": [
+"holo"
+],
+"usd": 25.73
+}
+},
+"sv08.5-076": {
+"jumbo-tamano-gigante-prismatic-evolution-stamped": {
+"tp": 663406,
+"n": "Jumbo (tamaño gigante) · Prismatic Evolution Stamped",
+"v": [
+"holo"
+],
+"usd": 3.95
+},
+"prismatic-evolution-stamped": {
+"tp": 663405,
+"n": "Prismatic Evolution Stamped",
+"v": [
+"holo"
+],
+"usd": 4.34
+}
+},
+"sv09-117": {
+"prize-pack": {
+"tp": 648657,
+"n": "Prize Pack",
+"v": [
+"normal"
+],
+"usd": 0.44
+},
+"prize-pack-cosmos-holo": {
+"tp": 703844,
+"n": "Prize Pack · Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 6.27
+},
+"gamestop-cosmos-holo": {
+"tp": 626640,
+"n": "GameStop · Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 26.74
+},
+"cosmos-holo": {
+"tp": 627793,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 60.68
+},
+"eb-games-cosmos-holo": {
+"tp": 629648,
+"n": "EB Games · Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 65.11
+}
+},
+"svp-027": {
+"pokemon-center-exclusive": {
+"tp": 500264,
+"n": "Pokémon Center Exclusive",
+"v": [
+"holo"
+],
+"usd": 161.62
+}
+},
+"svp-044": {
+"pokemon-center-exclusive": {
+"tp": 512036,
+"n": "Pokémon Center Exclusive",
+"v": [
+"holo"
+],
+"usd": 240.14
+}
+},
+"svp-051": {
+"pokemon-center-exclusive": {
+"tp": 517270,
+"n": "Pokémon Center Exclusive",
+"v": [
+"holo"
+],
+"usd": 276.58
+}
+},
+"svp-101": {
+"asia-championship-series-23-24": {
+"tp": 681225,
+"n": "Asia Championship Series 23-24",
+"v": [
+"normal"
+]
+}
+},
+"svp-106": {
+"battle-academy-2024": {
+"tp": 556443,
+"n": "Battle Academy 2024",
+"v": [
+"holo"
+],
+"usd": 12.42
+}
+},
+"svp-184": {
+"prerelease-staff": {
+"tp": 624485,
+"n": "Prerelease · Staff",
+"v": [
+"holo"
+],
+"usd": 139.07
+}
+},
+"svp-196": {
+"jumbo-tamano-gigante": {
+"tp": 641615,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"normal"
+],
+"usd": 5.0
+}
+},
+"svp-225": {
+"world-championship-2025-winner": {
+"tp": 649940,
+"n": "World Championship 2025 · Winner",
+"v": [
+"normal"
+],
+"usd": 131.43
+}
+},
+"swsh1-140": {
+"exclusiva-de-blister-cosmos-holo": {
+"tp": 245145,
+"n": "Exclusiva de blíster · Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 4.12
+}
+},
+"swsh1-141": {
+"jumbo-tamano-gigante": {
+"tp": 264312,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"normal"
+]
+}
+},
+"swsh1-142": {
+"jumbo-tamano-gigante": {
+"tp": 253399,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 15.66
+}
+},
+"swsh1-65": {
+"cosmos-holo": {
+"tp": 536263,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 62.04
+},
+"reverse-cosmos-holo": {
+"tp": 253841,
+"n": "Reverse Cosmos Holo",
+"v": [
+"reverse"
+],
+"usd": 33.23
+}
+},
+"swsh1-85": {
+"library-exclusive": {
+"tp": 694960,
+"n": "Library Exclusive",
+"v": [
+"holo"
+]
+}
+},
+"swsh10.5-027": {
+"cosmos-holo": {
+"tp": 279927,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 4.39
+}
+},
+"swsh10.5-055": {
+"cosmos-holo": {
+"tp": 279929,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 6.08
+}
+},
+"swsh11-064": {
+"trick-or-trade": {
+"tp": 515659,
+"n": "Trick or Trade",
+"v": [
+"normal"
+],
+"usd": 0.19
+}
+},
+"swsh11-065": {
+"trick-or-trade": {
+"tp": 515660,
+"n": "Trick or Trade",
+"v": [
+"normal"
+],
+"usd": 0.21
+}
+},
+"swsh11-066": {
+"trick-or-trade-2022-copyright-date": {
+"tp": 515661,
+"n": "Trick or Trade · 2022 Copyright Date",
+"v": [
+"holo"
+],
+"usd": 1.23
+},
+"prize-pack": {
+"tp": 515364,
+"n": "Prize Pack",
+"v": [
+"normal"
+],
+"usd": 21.24
+},
+"exclusiva-de-mazo": {
+"tp": 286220,
+"n": "Exclusiva de mazo",
+"v": [
+"normal"
+],
+"usd": 3.23
+}
+},
+"swsh11-143": {
+"prize-pack": {
+"tp": 556450,
+"n": "Prize Pack",
+"v": [
+"normal"
+],
+"usd": 13.57
+},
+"mundial-2023-gabriel-fernandez": {
+"tp": 541770,
+"n": "Mundial 2023 · Gabriel Fernandez",
+"v": [
+"normal"
+],
+"usd": 7.59
+}
+},
+"swsh12-049": {
+"holiday-calendar": {
+"tp": 514446,
+"n": "Holiday Calendar",
+"v": [
+"holo"
+],
+"usd": 3.86
+}
+},
+"swsh12.5-020": {
+"prize-pack": {
+"tp": 513804,
+"n": "Prize Pack",
+"v": [
+"holo"
+],
+"usd": 356.38
+}
+},
+"swsh2-141": {
+"cosmos-holo": {
+"tp": 249767,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 5.49
+}
+},
+"swsh3-19": {
+"prize-pack": {
+"tp": 475982,
+"n": "Prize Pack",
+"v": [
+"normal"
+]
+}
+},
+"swsh3-20": {
+"prize-pack": {
+"tp": 475983,
+"n": "Prize Pack",
+"v": [
+"holo"
+],
+"usd": 1600.0
+}
+},
+"swsh4-131": {
+"prize-pack": {
+"tp": 476076,
+"n": "Prize Pack",
+"v": [
+"normal",
+"holo"
+],
+"usd": 44.24
+},
+"vivid-voltage-stamped": {
+"tp": 277677,
+"n": "Vivid Voltage Stamped",
+"v": [
+"holo"
+],
+"usd": 102.97
+}
+},
+"swsh4-23": {
+"reverse-cosmos-holo": {
+"tp": 253842,
+"n": "Reverse Cosmos Holo",
+"v": [
+"reverse"
+],
+"usd": 28.14
+}
+},
+"swsh4-25": {
+"prize-pack": {
+"tp": 475980,
+"n": "Prize Pack",
+"v": [
+"normal"
+],
+"usd": 48.9
+},
+"exclusiva-de-mazo-cracked-ice-holo": {
+"tp": 227648,
+"n": "Exclusiva de mazo · Cracked Ice Holo",
+"v": [
+"holo"
+],
+"usd": 12.93
+}
+},
+"swsh4-43": {
+"prize-pack": {
+"tp": 490543,
+"n": "Prize Pack",
+"v": [
+"holo"
+],
+"usd": 265.38
+},
+"battle-academy-2022-n-o-60-pikachu": {
+"tp": 268213,
+"n": "Battle Academy 2022 · n.º 60 (Pikachu)",
+"v": [
+"holo"
+],
+"usd": 5.18
+},
+"jumbo-tamano-gigante-vivid-voltage-stamped": {
+"tp": 491634,
+"n": "Jumbo (tamaño gigante) · Vivid Voltage Stamped",
+"v": [
+"holo"
+],
+"usd": 20.0
+}
+},
+"swsh4-44": {
+"prize-pack": {
+"tp": 476008,
+"n": "Prize Pack",
+"v": [
+"normal"
+]
+}
+},
+"swsh6-55": {
+"trick-or-trade": {
+"tp": 283811,
+"n": "Trick or Trade",
+"v": [
+"normal"
+],
+"usd": 0.24
+}
+},
+"swsh6-56": {
+"trick-or-trade": {
+"tp": 283812,
+"n": "Trick or Trade",
+"v": [
+"normal"
+],
+"usd": 0.26
+}
+},
+"swsh6-57": {
+"trick-or-trade-2021-copyright-date": {
+"tp": 283766,
+"n": "Trick or Trade · 2021 Copyright Date",
+"v": [
+"holo"
+],
+"usd": 1.22
+}
+},
+"swsh7-49": {
+"trick-or-trade": {
+"tp": 283805,
+"n": "Trick or Trade",
+"v": [
+"normal"
+],
+"usd": 0.51
+},
+"pokemon-league": {
+"tp": 544181,
+"n": "Pokémon League",
+"v": [
+"reverse"
+],
+"usd": 19.11
+}
+},
+"swsh8-156": {
+"prize-pack": {
+"tp": 489296,
+"n": "Prize Pack",
+"v": [
+"holo"
+],
+"usd": 399.59
+}
+},
+"swsh8-157": {
+"prize-pack": {
+"tp": 489298,
+"n": "Prize Pack",
+"v": [
+"normal"
+]
+}
+},
+"swsh9-017": {
+"prize-pack": {
+"tp": 495194,
+"n": "Prize Pack",
+"v": [
+"holo"
+],
+"usd": 135.25
+}
+},
+"swsh9-018": {
+"prize-pack": {
+"tp": 489291,
+"n": "Prize Pack",
+"v": [
+"holo"
+],
+"usd": 399.29
+},
+"jumbo-tamano-gigante": {
+"tp": 484447,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"normal"
+]
+}
+},
+"swsh9-045": {
+"prize-pack": {
+"tp": 513812,
+"n": "Prize Pack",
+"v": [
+"holo"
+],
+"usd": 19.44
+}
+},
+"swshp-SWSH039": {
+"general-mills": {
+"tp": 232764,
+"n": "General Mills",
+"v": [
+"holo"
+],
+"usd": 6.57
+}
+},
+"swshp-SWSH061": {
+"jumbo-tamano-gigante": {
+"tp": 232443,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 3.17
+}
+},
+"swshp-SWSH066": {
+"prerelease-staff": {
+"tp": 224366,
+"n": "Prerelease · Staff",
+"v": [
+"holo"
+],
+"usd": 637.88
+}
+},
+"swshp-SWSH068": {
+"prerelease-staff": {
+"tp": 224362,
+"n": "Prerelease · Staff",
+"v": [
+"normal"
+]
+}
+},
+"swshp-SWSH102": {
+"jumbo-tamano-gigante": {
+"tp": 234375,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 8.33
+}
+},
+"swshp-SWSH103": {
+"jumbo-tamano-gigante": {
+"tp": 234376,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 8.9
+}
+},
+"swshp-SWSH133": {
+"jumbo-tamano-gigante": {
+"tp": 251104,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 4.18
+}
+},
+"swshp-SWSH198": {
+"jumbo-tamano-gigante": {
+"tp": 260712,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 2.89
+}
+},
+"swshp-SWSH241": {
+"prerelease-staff": {
+"tp": 607368,
+"n": "Prerelease · Staff",
+"v": [
+"holo"
+],
+"usd": 2199.99
+}
+},
+"swshp-SWSH286": {
+"jumbo-tamano-gigante": {
+"tp": 478425,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 5.29
+}
+},
+"xy1-42": {
+"2014-movie-promo": {
+"tp": 98641,
+"n": "2014 Movie Promo",
+"v": [
+"holo"
+],
+"usd": 15.9
+}
+},
+"xy1-43": {
+"exclusiva-de-mazo-battle-arena-deck-exclusive": {
+"tp": 123625,
+"n": "Exclusiva de mazo · Battle Arena Deck Exclusive",
+"v": [
+"normal"
+],
+"usd": 0.55
+},
+"exclusiva-de-blister-cosmos-holo": {
+"tp": 212045,
+"n": "Exclusiva de blíster · Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 9.46
+}
+},
+"xy12-11": {
+"xy-evolutions-prerelease": {
+"tp": 126022,
+"n": "XY Evolutions Prerelease",
+"v": [
+"holo"
+],
+"usd": 479.99
+},
+"prerelease": {
+"tp": 126023,
+"n": "Prerelease",
+"v": [
+"normal"
+]
+}
+},
+"xy12-35": {
+"exclusiva-de-mazo-cracked-ice-holo": {
+"tp": 131308,
+"n": "Exclusiva de mazo · Cracked Ice Holo",
+"v": [
+"holo"
+],
+"usd": 21.91
+}
+},
+"xy12-36": {
+"exclusiva-de-mazo-xy-evolutions": {
+"tp": 131309,
+"n": "Exclusiva de mazo · XY Evolutions",
+"v": [
+"normal"
+],
+"usd": 0.88
+}
+},
+"xy12-9": {
+"toys-r-us-promo": {
+"tp": 153290,
+"n": "Toys R Us Promo",
+"v": [
+"holo"
+],
+"usd": 107.92
+}
+},
+"xy2-11": {
+"jumbo-tamano-gigante": {
+"tp": 152944,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 15.17
+}
+},
+"xy2-13": {
+"jumbo-tamano-gigante": {
+"tp": 211420,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"normal"
+]
+}
+},
+"xy2-69": {
+"jumbo-tamano-gigante": {
+"tp": 211421,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"normal"
+]
+}
+},
+"xy2-80": {
+"build-a-bear-workshop-exclusive": {
+"tp": 232309,
+"n": "Build-a-Bear Workshop Exclusive",
+"v": [
+"normal"
+],
+"usd": 190.36
+}
+},
+"xy4-34": {
+"jumbo-tamano-gigante": {
+"tp": 169940,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 23.23
+}
+},
+"xy6-20": {
+"build-a-bear-workshop-exclusive": {
+"tp": 155086,
+"n": "Build-A-Bear Workshop Exclusive",
+"v": [
+"normal"
+],
+"usd": 39.04
+}
+},
+"xy8-49": {
+"exclusiva-de-mazo-xy-breakthrough-cracked-ice-holo": {
+"tp": 123471,
+"n": "Exclusiva de mazo · XY BREAKthrough · Cracked Ice Holo",
+"v": [
+"holo"
+],
+"usd": 11.85
+}
+},
+"xy8-60": {
+"exclusiva-de-mazo-xy-breakthrough": {
+"tp": 123474,
+"n": "Exclusiva de mazo · XY BREAKthrough",
+"v": [
+"normal"
+],
+"usd": 26.9
+},
+"cosmos-holo": {
+"tp": 248647,
+"n": "Cosmos Holo",
+"v": [
+"holo"
+],
+"usd": 57.91
+}
+},
+"xyp-XY121": {
+"jumbo-tamano-gigante-xy-black-star-promos": {
+"tp": 211422,
+"n": "Jumbo (tamaño gigante) · XY Black Star Promos",
+"v": [
+"holo"
+],
+"usd": 94.97
+}
+},
+"xyp-XY122": {
+"jumbo-tamano-gigante": {
+"tp": 542981,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+]
+}
+},
+"xyp-XY123": {
+"jumbo-tamano-gigante": {
+"tp": 211487,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 39.99
+}
+},
+"xyp-XY124": {
+"jumbo-tamano-gigante": {
+"tp": 211463,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+]
+}
+},
+"xyp-XY17": {
+"jumbo-tamano-gigante-xy-black-star-promos": {
+"tp": 91614,
+"n": "Jumbo (tamaño gigante) · XY Black Star Promos",
+"v": [
+"holo"
+],
+"usd": 15.4
+}
+},
+"xyp-XY174": {
+"jumbo-tamano-gigante": {
+"tp": 198772,
+"n": "Jumbo (tamaño gigante)",
+"v": [
+"holo"
+],
+"usd": 39.05
+}
+}
 },
 "reemplaza": {
 "ja-tp630192": [

@@ -32,6 +32,8 @@ sys.path.insert(0, os.path.join(CARPETA, 'scripts', 'catalogo'))
 import importar as m  # noqa: E402  (pedir() con caché de tcgcsv)
 
 catalogo = json.load(open(os.path.join(RAIZ, 'data', 'catalogo.json'), encoding='utf-8'))
+# las cartas-variante (con `vn`) las crea este mismo script: nunca cuentan como carta base
+catalogo['cartas'] = [c for c in catalogo['cartas'] if not c.get('vn')]
 objetivos = json.load(open(os.path.join(AQUI, 'objetivos.json'), encoding='utf-8'))
 sets = catalogo['sets']
 RX = re.compile(r'\b(' + '|'.join(p['nombre'] for p in objetivos['principales'] + objetivos['familias']) + r')\b', re.I)
@@ -93,7 +95,9 @@ def nombre_variante(p):
     g, n = p['gn'], p['n']
     for rx, _ in GRUPOS_SOLO:
         if re.match(rx, g):
-            return 'Battle Academy ' + (re.search(r'\d{4}', g).group(0) if re.search(r'\d{4}', g) else '2020')
+            año = re.search(r'\d{4}', g).group(0) if re.search(r'\d{4}', g) else '2020'
+            sello = re.search(r'#(\d+) (\w+) Stamped', n)   # el mismo Pikachu salió con varios números de mazo
+            return f'Battle Academy {año}' + (f' · n.º {sello.group(1)} ({sello.group(2)})' if sello else '')
     if re.match(r'^World Championship Decks', g):
         y = re.search(r'-\s*(\d{4})\s*\(([^)]*)\)', n)
         return f'Mundial {y.group(1)} · {y.group(2)}' if y else None
@@ -115,6 +119,7 @@ def todos(cat):
 
 
 nv, cartas, revisar = {}, defaultdict(list), []
+extras = defaultdict(dict)   # carta base → {clave: {tp, n}}: cada variante especial es OTRA carta
 # Dos casos con varias cartas base posibles, resueltos mirando la carta (ilustrador, PS, año):
 #   187219 Pikachu 012 con el sello del 10.º aniversario = la Nintendo Black Star 012 (np-12, Kouki Saitou), no la de POP 5
 #   224679 Pikachu 70/100 con el sello Platinum de Burger King = la de Majestic Dawn (60 PS), no la de Stormfront (70 PS)
@@ -139,9 +144,11 @@ def asigna(p, cand, etiqueta, idioma, fecha=''):
                         'motivo': 'varias cartas base' if cand else 'sin carta base en la app', 'cartas': [c['id'] for c in cand]})
         return
     k = slug(etiqueta)
+    ex = extras[cand[0]['id']]
+    if k in ex and ex[k]['tp'] != p['id']:
+        k = f'{k}-{p["id"]}'   # dos productos con el mismo nombre para la misma carta
     nv[k] = etiqueta
-    if k not in cartas[cand[0]['id']]:
-        cartas[cand[0]['id']].append(k)
+    ex[k] = {'tp': p['id'], 'n': etiqueta}
 
 
 # ------------------------------------------------------------------ inglés
@@ -193,17 +200,22 @@ for p in todos(85):
 # TCGplayer lista, por producto, en qué formas se vende: Normal, Holofoil, Reverse Holofoil, 1st Edition.
 FORMAS = {'Normal': 'normal', 'Holofoil': 'holo', 'Reverse Holofoil': 'reverse', '1st Edition': 'firstEdition', '1st Edition Holofoil': 'firstEdition'}
 con_tp = {c['tp_id']: c for c in catalogo['cartas'] if c.get('tp_id')}
-formas = defaultdict(set)
+# en una carta-variante (la Shadowless) «Unlimited» también cuenta: es su forma normal / holo
+FORMAS_VAR = {**FORMAS, 'Unlimited': 'normal', 'Unlimited Holofoil': 'holo'}
+formas, formas_var, precio = defaultdict(set), defaultdict(set), defaultdict(dict)
 for cat_id in (3, 85):
     for g in m.pedir(f'https://tcgcsv.com/tcgplayer/{cat_id}/groups', cache=False)['results']:
-        pr = (m.pedir(f'https://tcgcsv.com/tcgplayer/{cat_id}/{g["groupId"]}/products', pausa=0.05) or {}).get('results', [])
-        if not any(x['productId'] in con_tp for x in pr):
-            continue
         for x in (m.pedir(f'https://tcgcsv.com/tcgplayer/{cat_id}/{g["groupId"]}/prices', pausa=0.05) or {}).get('results', []):
-            if x['productId'] in con_tp and x['subTypeName'] in FORMAS:
-                formas[x['productId']].add(FORMAS[x['subTypeName']])
+            if x['subTypeName'] in FORMAS_VAR:
+                formas_var[x['productId']].add(FORMAS_VAR[x['subTypeName']])
+                if x['subTypeName'] in FORMAS:
+                    formas[x['productId']].add(FORMAS[x['subTypeName']])
+                if x.get('marketPrice'):
+                    precio[x['productId']][x['subTypeName']] = x['marketPrice']
 reemplaza, anadidas = {}, Counter()
 for tp, fs in formas.items():
+    if tp not in con_tp:
+        continue
     c = con_tp[tp]
     # Una carta japonesa que traje yo con «normal» por defecto y que TCGplayer vende solo en holo:
     # su «normal» era un supuesto, no un dato → se cambia por «holo». El resto solo suma.
@@ -219,8 +231,19 @@ for tp, fs in formas.items():
             anadidas[k] += 1
 print('formas añadidas desde TCGplayer:', dict(anadidas))
 
-json.dump({'nv': dict(sorted(nv.items())), 'cartas': dict(sorted(cartas.items())), 'reemplaza': reemplaza, 'revisar': revisar},
+# cada variante especial lleva sus formas (Normal/Holo…) y su precio, según su propio producto de TCGplayer
+for bid, ex in extras.items():
+    for k, d in ex.items():
+        fs = formas_var.get(d['tp'], set())
+        d['v'] = [f for f in ('normal', 'holo', 'reverse', 'firstEdition') if f in fs] or ['normal']
+        pr = precio.get(d['tp'], {})
+        usd = pr.get('Normal') or pr.get('Holofoil') or pr.get('Reverse Holofoil') or pr.get('1st Edition') or pr.get('Unlimited Holofoil') or next(iter(pr.values()), None)
+        if usd:
+            d['usd'] = round(usd, 2)
+json.dump({'nv': dict(sorted(nv.items())), 'cartas': dict(sorted(cartas.items())), 'extras': dict(sorted(extras.items())),
+           'reemplaza': reemplaza, 'revisar': revisar},
           open(os.path.join(AQUI, 'variantes.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
-total = sum(len(v) for v in cartas.values())
-print(f'variantes nuevas: {total} en {len(cartas)} cartas · {len(nv)} nombres distintos · a revisar: {len(revisar)}')
-print('más usadas:', Counter(k for v in cartas.values() for k in v).most_common(12))
+total = sum(len(v) for v in extras.values())
+print(f'cartas-variante: {total} sobre {len(extras)} cartas base · formas sueltas en {len(cartas)} cartas · {len(nv)} nombres distintos · a revisar: {len(revisar)}')
+print('más usadas:', Counter(k for v in extras.values() for k in v).most_common(12))
+print('con clave desambiguada:', sum(1 for v in extras.values() for k in v if re.search(r'-\d{5,}$', k)))

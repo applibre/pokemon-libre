@@ -489,37 +489,73 @@ test('los precios se escriben a la española y a la americana', () => {
 test('las variantes tienen nombre en castellano', () => {
   assert.strictEqual(D.nombreVariante('reverse'), 'Reverse holo');
   assert.strictEqual(D.nombreVariante('firstEdition'), '1.ª edición');
-  // ninguna variante del catálogo se queda sin nombre
-  const usadas = new Set(CARTAS.flatMap((c) => c.v));
+  // ninguna variante del catálogo se queda sin nombre: las formas de siempre, o una de `nv`
+  const usadas = new Set(CARTAS.flatMap((c) => [...c.v, ...(c.vn ? [c.vn] : [])]));
   for (const v of usadas) {
     assert.ok(D.NOMBRE_VARIANTE[v] || catalogo.nv?.[v], `la variante «${v}» no tiene nombre`);
   }
 });
 
-test('las variantes especiales (sellos, holos, exclusivas) están en el catálogo', () => {
+test('cada variante especial (sello, Cosmos Holo, Jumbo…) es otra carta, con su foto', () => {
+  const fs = require('node:fs');
+  const path = require('node:path');
   const nv = catalogo.nv || {};
+  const porId = new Map(CARTAS.map((c) => [c.id, c]));
+  const variantes = CARTAS.filter((c) => c.vn);
+  assert.ok(variantes.length >= 300, `solo ${variantes.length} cartas-variante`);
   assert.ok(Object.keys(nv).length >= 100, `solo ${Object.keys(nv).length} nombres de variante`);
-  // la Pikachu 051/162 de Temporal Forces con el sello de Pokémon Day existe como variante propia
-  const pika = CARTAS.find((c) => c.id === 'sv05-051');
-  assert.ok(pika, 'falta Pikachu 051/162');
-  assert.ok(pika.v.includes('pokemon-day-2026'), 'Pikachu 051/162 sin la variante Pokémon Day');
-  assert.strictEqual(D.nombreVariante('pokemon-day-2026', nv), 'Pokémon Day 2026');
-  // las formas que TCGdex dejaba sin marcar y TCGplayer sí vende: la Haunter ex12-35 existe también en Reverse holo
-  assert.ok(CARTAS.find((c) => c.id === 'ex12-35').v.includes('reverse'), 'Haunter 35 sin Reverse holo');
-  // el Charizard ex 196 gigante es una variante del promo svp-196; el Pikachu del 10.º aniversario, del np-12
-  assert.ok(CARTAS.find((c) => c.id === 'svp-196').v.includes('jumbo-tamano-gigante'));
-  assert.ok(CARTAS.find((c) => c.id === 'np-12').v.includes('10th-anniversary'));
-  // las cartas gigantes de la Legendary Collection están como cartas; las japonesas que TCGplayer lista dos veces, no
-  for (const id of ['lcbt-1', 'lcbt-2', 'lcbt-3']) {
-    assert.ok(CARTAS.find((c) => c.id === id), `falta la carta ${id}`);
+
+  // la Pikachu 051/162 de Temporal Forces con el sello de Pokémon Day 2026 es una carta aparte
+  const sello = porId.get('sv05-051~pokemon-day-2026');
+  assert.ok(sello, 'falta la Pikachu 051/162 con el sello de Pokémon Day 2026');
+  assert.strictEqual(sello.vn, 'pokemon-day-2026');
+  assert.strictEqual(nv[sello.vn], 'Pokémon Day 2026');
+  assert.strictEqual(sello.n, 'Pikachu');
+  assert.strictEqual(sello.s, 'sv05');
+  assert.ok(sello.tp_id, 'sin enlace a su producto de TCGplayer');
+  assert.ok(!porId.get('sv05-051').v.includes('pokemon-day-2026'), 'el sello sigue como contador de la carta base');
+
+  for (const c of variantes) {
+    const [base] = c.id.split('~');
+    const b = porId.get(base);
+    assert.ok(b, `${c.id}: no existe su carta base`);
+    assert.strictEqual(c.s, b.s, `${c.id}: otro set que su base`);
+    assert.strictEqual(c.num, b.num, `${c.id}: otro número que su base`);
+    assert.strictEqual(c.id, `${base}~${c.vn}`, `${c.id}: el id no cuadra con su variante`);
+    assert.ok(nv[c.vn], `${c.id}: «${c.vn}» sin nombre`);
+    assert.ok(c.tp_id, `${c.id}: sin producto de TCGplayer`);
+    assert.ok(c.v.length > 0 && c.v.every((v) => D.NOMBRE_VARIANTE[v]), `${c.id}: formas raras ${c.v}`);
+    // se ve distinta de su base: foto propia, en sus dos tamaños
+    for (const d of ['', 'g/']) {
+      assert.ok(fs.existsSync(path.join(__dirname, '..', 'data', 'cartas', `${d}${c.id}.webp`)), `${c.id}: falta la foto ${d}`);
+    }
   }
-  assert.ok(!CARTAS.some((c) => ['ja-tp282521', 'ja-tp478250', 'ja-tp484830'].includes(c.id)), 'carta japonesa duplicada');
-  // las claves de una carta no se repiten, y las normales siguen en su sitio
+  // detrás de su base, para verlas juntas
+  const orden = CARTAS.map((c) => c.id);
+  for (const c of variantes) {
+    const i = orden.indexOf(c.id);
+    assert.ok(orden[i - 1].split('~')[0] === c.id.split('~')[0], `${c.id}: no va detrás de su carta base`);
+  }
+  // sin variante repetida, y la que es carta ya no es contador de su base
   for (const c of CARTAS) {
     assert.strictEqual(new Set(c.v).size, c.v.length, `${c.id} tiene variantes repetidas`);
     assert.ok(c.v.length > 0, `${c.id} sin variantes`);
+    for (const k of c.v) assert.ok(!porId.has(`${c.id}~${k}`), `${c.id}: «${k}» es contador Y carta`);
   }
+  // las que no tenían foto siguen como contador en su base: son pocas
+  const contadores = CARTAS.flatMap((c) => c.v.filter((k) => !D.NOMBRE_VARIANTE[k]));
+  assert.ok(contadores.length <= 20, `${contadores.length} variantes sin foto como contador`);
+  for (const k of contadores) assert.ok(nv[k], `«${k}» sin nombre`);
+
+  // las formas que TCGdex dejaba sin marcar y TCGplayer sí vende: la Haunter ex12-35 existe también en Reverse holo
+  assert.ok(porId.get('ex12-35').v.includes('reverse'), 'Haunter 35 sin Reverse holo');
+  // el Charizard ex 196 gigante es una variante del promo svp-196; el Pikachu del 10.º aniversario, del np-12
+  assert.ok(porId.get('svp-196~jumbo-tamano-gigante'));
+  assert.ok(porId.get('np-12~10th-anniversary'));
+  // las cartas gigantes de la Legendary Collection están como cartas; las japonesas que TCGplayer lista dos veces, no
+  for (const id of ['lcbt-1', 'lcbt-2', 'lcbt-3']) assert.ok(porId.get(id), `falta la carta ${id}`);
+  assert.ok(!CARTAS.some((c) => ['ja-tp282521', 'ja-tp478250', 'ja-tp484830'].includes(c.id)), 'carta japonesa duplicada');
   // toda clave de nv la usa alguna carta (nada huérfano)
-  const usadas = new Set(CARTAS.flatMap((c) => c.v));
+  const usadas = new Set(CARTAS.flatMap((c) => [...c.v, ...(c.vn ? [c.vn] : [])]));
   for (const k of Object.keys(nv)) assert.ok(usadas.has(k), `«${k}» está en nv pero ninguna carta la usa`);
 });

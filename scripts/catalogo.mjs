@@ -514,11 +514,15 @@ async function main() {
   }
 
   /* 5.8 · variantes (sellos, holos especiales, exclusivas…)
-     scripts/variantes.json lo genera traer-variantes.py desde TCGplayer. Aquí
-     solo se SUMAN claves nuevas al final de `v` (nunca se quita ni se reordena
-     una existente, así las marcas guardadas siguen valiendo) y se publica la
-     tabla clave → nombre en castellano (`nv`). Idempotente. */
-  const dv = JSON.parse(await readFile(path.join(AQUI, 'variantes.json'), 'utf8').catch(() => '{"nv":{},"cartas":{}}'));
+     scripts/variantes.json lo genera traer-variantes.py desde TCGplayer.
+       · Formas de siempre (Normal, Holo, Reverse, 1.ª ed.): se SUMAN a `v` de la carta.
+       · Variantes especiales (el sello de Pokémon Day 2026, Cosmos Holo, Prize Pack, Jumbo…):
+         son OTRA carta —se ven distintas— y entran como carta propia, con id «<base>~<clave>»,
+         su foto (data/cartas/<id>.webp), su producto de TCGplayer y su precio. Van justo detrás
+         de su carta base. Una variante sin foto no puede ser carta: queda como contador en la
+         ficha de la base, como al principio.
+     `nv` (clave → nombre en castellano) se publica en el catálogo. Idempotente. */
+  const dv = JSON.parse(await readFile(path.join(AQUI, 'variantes.json'), 'utf8').catch(() => '{"nv":{},"cartas":{},"extras":{}}'));
   const nv = {};
   let variantesPuestas = 0;
   const FORMAS = ['normal', 'holo', 'reverse', 'firstEdition', 'wPromo'];
@@ -527,21 +531,47 @@ async function main() {
     const c = porId.get(id);
     if (c && c.v.length === 1 && c.v[0] === de) { c.v = [a]; variantesPuestas++; }
   }
+  const ordenForma = (v) => [...FORMAS.filter((k) => v.includes(k)), ...v.filter((k) => !FORMAS.includes(k))];
   for (const [id, claves] of Object.entries(dv.cartas)) {
     const c = porId.get(id);
     if (!c) continue;
-    for (const k of claves) {
-      if (c.v.includes(k)) continue;
-      c.v.push(k);
-      if (dv.nv[k]) nv[k] = dv.nv[k];
-      variantesPuestas++;
-    }
-    // las formas de siempre van primero y en su orden; las especiales detrás, como estaban
-    c.v = [...FORMAS.filter((k) => c.v.includes(k)), ...c.v.filter((k) => !FORMAS.includes(k))];
+    for (const k of claves) if (!c.v.includes(k)) { c.v.push(k); variantesPuestas++; }
+    c.v = ordenForma(c.v);
   }
-  // también las que ya estaban de una pasada anterior (modo solo-añadir)
-  for (const c of cartas) for (const k of c.v) if (dv.nv[k] && !nv[k]) nv[k] = dv.nv[k];
-  console.log(`Variantes   ${variantesPuestas} nuevas · ${Object.keys(nv).length} nombres
+  const conFoto = (id) => existsSync(path.join(DATOS, 'cartas', `${id}.webp`)) && existsSync(path.join(DATOS, 'cartas', 'g', `${id}.webp`));
+  let cartasVariante = 0, contadores = 0;
+  for (const [bid, ex] of Object.entries(dv.extras || {})) {
+    const base = porId.get(bid);
+    if (!base) continue;
+    for (const [k, d] of Object.entries(ex)) {
+      const vid = `${bid}~${k}`;
+      if (porId.has(vid)) {
+        base.v = base.v.filter((x) => x !== k);
+        const ya = porId.get(vid);   // ya es carta: solo se le suman formas que le faltaban, nunca se le quitan
+        for (const f of d.v) if (!ya.v.includes(f)) { ya.v.push(f); variantesPuestas++; }
+        ya.v = ordenForma(ya.v);
+        continue;
+      }
+      if (conFoto(vid)) {
+        const nueva = { ...base, id: vid, v: d.v, vn: k, img: null, tp_id: d.tp };
+        for (const x of ['eur', 'usd', 'cm_id', 'tc_id', 'tc_slug']) delete nueva[x];
+        if (d.usd) nueva.usd = d.usd;
+        cartas.push(nueva); porId.set(vid, nueva);
+        base.v = base.v.filter((x) => x !== k);
+        cartasVariante++; variantesPuestas++;
+      } else if (!base.v.includes(k)) {
+        base.v.push(k); contadores++; variantesPuestas++;
+      }
+    }
+  }
+  // una clave especial que ya no existe en variantes.json (se renombró) no se queda colgada en `v`
+  for (const c of cartas) c.v = c.v.filter((k) => FORMAS.includes(k) || (dv.extras?.[c.id]?.[k] && !porId.has(`${c.id}~${k}`)));
+  // cada variante, justo detrás de su carta base
+  const detras = new Map();
+  for (const c of cartas) if (c.vn) (detras.get(c.id.split('~')[0]) || detras.set(c.id.split('~')[0], []).get(c.id.split('~')[0])).push(c);
+  cartas = cartas.filter((c) => !c.vn).flatMap((c) => [c, ...(detras.get(c.id) || [])]);
+  for (const c of cartas) for (const k of [c.vn, ...c.v]) if (k && dv.nv[k]) nv[k] = dv.nv[k];
+  console.log(`Variantes   ${cartasVariante} cartas-variante nuevas · ${contadores} como contador (sin foto) · ${variantesPuestas} cambios · ${Object.keys(nv).length} nombres
 `);
 
   /* 6 · escribir */

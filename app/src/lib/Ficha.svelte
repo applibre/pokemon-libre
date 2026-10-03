@@ -32,6 +32,10 @@
     return f
   })
 
+  /* en una carta-variante (el sello de Pokémon Day…) lo que importa es qué variante es; si además
+     salió en varias formas se añade cuál (Holo, Reverse…) */
+  const etiqueta = (v: string) => !c.vn ? nombreVariante(v) : c.v.length === 1 ? nombreVariante(c.vn) : `${nombreVariante(c.vn)} · ${nombreVariante(v)}`
+
   const hayPrev = $derived(indice > 0)
   const haySig = $derived(indice < lista.length - 1)
 
@@ -62,13 +66,14 @@
 
 <div class="velo" onclick={cerrar} role="presentation"></div>
 
-<section class="ficha" role="dialog" aria-modal="true" aria-label="{c.n} {numeroImpreso(c)}" onpointerdown={abajo} onpointerup={arriba}>
+<section class="ficha" role="dialog" aria-modal="true" aria-label="{c.n} {numeroImpreso(c)}{c.vn ? ` (${nombreVariante(c.vn)})` : ''}" onpointerdown={abajo} onpointerup={arriba}>
   <button class="cruz" onclick={cerrar} aria-label="Cerrar">
     <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" /></svg>
   </button>
 
   <header class="cab">
     <h2>{c.n}</h2>
+    {#if c.vn}<p class="vn">{nombreVariante(c.vn)}</p>{/if}
     <p>{esJa ? 'Japonesa · ' : ''}{set.n} · {numeroImpreso(c)}</p>
   </header>
 
@@ -95,10 +100,10 @@
     {#each c.v as v (v)}
       {@const n = cuantas(c.id, v)}
       <div class="variante" class:hay={n > 0}>
-        <button class="menos" onclick={() => ponerVariante(c.id, v, n - 1)} disabled={n === 0} aria-label="Quitar una {nombreVariante(v)}">−</button>
+        <button class="menos" onclick={() => ponerVariante(c.id, v, n - 1)} disabled={n === 0} aria-label="Quitar una {etiqueta(v)}">−</button>
         <span class="n" aria-live="polite">{n}</span>
-        <button class="mas" onclick={() => ponerVariante(c.id, v, n + 1)} aria-label="Añadir una {nombreVariante(v)}">+</button>
-        <span class="nom">{nombreVariante(v)}</span>
+        <button class="mas" onclick={() => ponerVariante(c.id, v, n + 1)} aria-label="Añadir una {etiqueta(v)}">+</button>
+        <span class="nom">{etiqueta(v)}</span>
       </div>
     {/each}
   </div>
@@ -150,6 +155,7 @@
   .cab { padding-right: 40px; }
   h2 { margin: 0; font-size: 21px; font-weight: 800; letter-spacing: -.02em; line-height: 1.15; }
   .cab p { margin: 3px 0 0; font-size: 13.5px; color: var(--tinta-3); font-weight: 600; }
+  .cab p.vn { color: #a06f00; font-weight: 800; font-size: 14px; }
 
   .escena { position: relative; display: grid; place-items: center; padding: 6px 0 2px; }
   .carta { width: min(62vw, 250px); }

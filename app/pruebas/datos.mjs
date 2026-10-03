@@ -99,6 +99,30 @@ else {
 }
 await ctx.close()
 
+/* ---------- 2 · las variantes que eran contador pasan a ser carta: ninguna marca se pierde ---------- */
+{
+  const antes = {
+    schemaVersion: 2,
+    coleccion: { 'sv05-051': { 'pokemon-day-2026': 2, holo: 1 }, 'base1-4': { shadowless: 1 }, 'base1-58': { normal: 1 } },
+    ajustes: { tema: 'claro', verFamilias: true, idioma: 'en', verPrecios: true, moneda: 'eur' },
+    creado: '2026-10-02', ultimaCopia: null,
+  }
+  const c2 = await nuevoCtx()
+  await c2.addInitScript((d) => { if (!localStorage.getItem('pokemon-libre')) localStorage.setItem('pokemon-libre', JSON.stringify(d)) }, antes)
+  const p2 = await c2.newPage()
+  await p2.goto(base + '#/set/sv05'); await p2.waitForSelector('.celda'); await p2.waitForTimeout(800)
+  const m = (await guardado(p2)).coleccion
+  ok(m['sv05-051~pokemon-day-2026']?.holo === 2, `el sello de Pokémon Day marcado como contador pasó a su carta: ${JSON.stringify(m['sv05-051~pokemon-day-2026'])}`)
+  ok(m['sv05-051']?.holo === 1 && !('pokemon-day-2026' in (m['sv05-051'] || {})), `la carta base conserva lo suyo y pierde el contador: ${JSON.stringify(m['sv05-051'])}`)
+  ok(!!m['base1-4~shadowless'] && !m['base1-4'], `la Shadowless también: ${JSON.stringify(m['base1-4~shadowless'])}`)
+  ok(m['base1-58']?.normal === 1, 'lo que no es variante no se toca')
+  const marcadas = await p2.$$eval('.celda.mia', (e) => e.map((x) => x.innerText.replace(/\s+/g, ' ')))
+  ok(marcadas.some((t) => t.includes('Pokémon Day 2026')), `en la lista, la carta del sello sale marcada: ${marcadas.join(' | ')}`)
+  const sello = await p2.$$eval('.celda', (e) => e.filter((x) => /Pokémon Day 2026/.test(x.innerText)).length)
+  ok(sello === 1, `el sello es una carta propia en la lista de Temporal Forces (${sello})`)
+  await c2.close()
+}
+
 console.log(fallos ? `\n${fallos} COMPROBACIONES FALLAN` : '\ntodas las comprobaciones de datos OK')
 await nav.close()
 process.exit(fallos ? 1 : 0)

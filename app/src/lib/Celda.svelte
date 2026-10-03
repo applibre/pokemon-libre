@@ -3,7 +3,7 @@
      (medio segundo) la abre. Así un dedo torpe nunca abre la ficha sin querer. -->
 <script lang="ts">
   import { rutas } from './rutas'
-  import { tengo, alternar, numeroImpreso, type Carta } from './store.svelte'
+  import { tengo, alternar, numeroImpreso, nombreVariante, type Carta } from './store.svelte'
   import { avisar } from './mensajes.svelte'
   let { carta, abrir, retraso = 0 }: { carta: Carta; abrir: (c: Carta, img: HTMLElement) => void; retraso?: number } = $props()
   const mia = $derived(tengo(carta.id))
@@ -50,9 +50,9 @@
 <div class="celda" class:mia data-carta={carta.id} style="--r:{retraso}ms">
   <button class="ver" class:armando onpointerdown={bajar} onpointermove={mover} onpointerup={cancelar} onpointercancel={cancelar} onpointerleave={cancelar}
     onclick={tocar} oncontextmenu={(e) => { e.preventDefault(); abrir(carta, e.currentTarget.querySelector('img')!) }}
-    aria-pressed={mia} aria-label="{carta.n} {numeroImpreso(carta)}: {mia ? 'la tengo' : 'no la tengo'}. Un toque la marca; mantén pulsado para verla">
+    aria-pressed={mia} aria-label="{carta.n} {numeroImpreso(carta)}{carta.vn ? ` (${nombreVariante(carta.vn)})` : ''}: {mia ? 'la tengo' : 'no la tengo'}. Un toque la marca; mantén pulsado para verla">
     <img src={rutas.carta(carta.id)} alt="" draggable="false" loading="lazy" decoding="async" width="245" height="342" />
-    <span class="placa">#{numeroImpreso(carta)} · {carta.n}</span>
+    <span class="placa">#{numeroImpreso(carta)} · {carta.n}{#if carta.vn}<em class="vn">{nombreVariante(carta.vn)}</em>{/if}</span>
   </button>
   <button class="check" onclick={() => alternar(carta)} aria-pressed={mia} aria-label={mia ? 'Quitar de mi colección' : 'La tengo'}>
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 12.5l4.2 4.2 8.8-9" /></svg>
@@ -84,8 +84,11 @@
     position: absolute; left: 0; right: 0; bottom: 7%; z-index: 2;
     padding: 4px 4px; text-align: center; color: #f4f6fb; font-size: 10.5px; font-weight: 700; line-height: 1.2;
     background: var(--placa); border-block: 2px solid #bfc4d1;
-    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
   }
+  /* la variante (el sello, el holo especial…) en una línea propia bajo el nombre */
+  .vn { display: block; margin-top: 1px; font-style: normal; font-size: 9px; font-weight: 800; letter-spacing: .01em; color: #ffd978; }
+  .mia .vn { color: #fff; }
   .mia .placa { background: linear-gradient(180deg, rgba(120, 82, 6, .9), rgba(84, 56, 2, .9)); border-color: var(--oro); color: #fff4d0; }
   .mia .ver { box-shadow: 0 0 0 2.5px var(--oro), 0 6px 16px rgba(201,143,10,.4); }
 
