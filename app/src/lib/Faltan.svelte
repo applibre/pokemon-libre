@@ -9,11 +9,12 @@
     abrir: (c: Carta, img: HTMLElement) => void; cartasActivas: Carta[]
   } = $props()
 
-  let elegido = $state<string | null>(null)       // null = todos los Pokémon
+  let elegido = $state<string | null>(null)       // null = todos · 'ent' = todos los Entrenadores
   const TANDA = 120
   let tope = $state(TANDA)
 
-  const base = $derived(elegido ? cartasDe(elegido) : delIdioma())
+  const esEnt = (c: Carta) => c.p.some((p) => p.startsWith('e-'))
+  const base = $derived(elegido === 'ent' ? delIdioma().filter(esEnt) : elegido ? cartasDe(elegido) : delIdioma())
   const faltan = $derived(ordenar(base.filter((c) => !tengo(c.id))))
   const mostradas = $derived(faltan.slice(0, tope))
   const quedan = $derived(faltan.length - mostradas.length)
@@ -21,9 +22,12 @@
   // lo que ve la pantalla es lo que recorren las flechas de la ficha
   $effect(() => { cartasActivas = mostradas })
 
-  const chips = $derived(app.pokemonVisibles
-    .map((p) => ({ p, n: cartasDe(p.id).filter((c) => !tengo(c.id)).length }))
-    .filter((x) => x.n > 0))
+  // un botón por Pokémon y UNO para todos los Entrenadores (son cientos de personajes)
+  const chips = $derived([
+    ...app.pokemonVisibles.filter((p) => !p.ent)
+      .map((p) => ({ p, n: cartasDe(p.id).filter((c) => !tengo(c.id)).length })),
+    { p: { id: 'ent', nombre: 'Entrenadores', tipo: 'entrenador' }, n: delIdioma().filter((c) => esEnt(c) && !tengo(c.id)).length },
+  ].filter((x) => x.n > 0))
   const totalFaltan = $derived(delIdioma().filter((c) => !tengo(c.id)).length)
 
   const TOPE_LISTA = 250
@@ -31,7 +35,7 @@
   /** El texto para llevarlo a la tienda. Se corta: una lista de dos mil líneas
       no la lee nadie y WhatsApp ni la manda. */
   function texto() {
-    const quien = elegido ? app.pokemon.find((p) => p.id === elegido)?.nombre : 'Mi colección'
+    const quien = elegido === 'ent' ? 'Entrenadores' : elegido ? app.pokemon.find((p) => p.id === elegido)?.nombre : 'Mi colección'
     const corta = faltan.slice(0, TOPE_LISTA)
     const l = [`${quien} · me faltan ${faltan.length} de ${base.length}`, '']
     let actual = ''

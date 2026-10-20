@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Pokémon Libre · buscar cartas nuevas de tus 17 Pokémon.
+# Pokémon Libre · buscar cartas nuevas de tus 17 Pokémon y de los Entrenadores (Partidarios).
 #   bash scripts/buscar-novedades.sh
 # Solo AÑADE: lo que ya estaba en el catálogo queda idéntico. Sale con
 #   0  hay novedades válidas (scripts/.cache/resumen.md dice cuáles)
@@ -20,7 +20,7 @@ python scripts/japonesas.py fichas
 python scripts/japonesas.py detalles
 
 echo "=== 2 · inglesas: las listas por Pokémon y por set se piden de nuevo ==="
-rm -f scripts/.cache/dex-*.json scripts/.cache/set-*.json scripts/.cache/sets-lista.json
+rm -f scripts/.cache/dex-*.json scripts/.cache/set-*.json scripts/.cache/sets-lista.json scripts/.cache/partidarios.json
 node scripts/catalogo.mjs | tail -22
 
 echo "=== 3 · enlaces de TCG Collector para las inglesas nuevas ==="

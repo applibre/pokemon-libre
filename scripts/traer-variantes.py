@@ -36,6 +36,8 @@ catalogo = json.load(open(os.path.join(RAIZ, 'data', 'catalogo.json'), encoding=
 catalogo['cartas'] = [c for c in catalogo['cartas'] if not c.get('vn')]
 objetivos = json.load(open(os.path.join(AQUI, 'objetivos.json'), encoding='utf-8'))
 sets = catalogo['sets']
+# el texto entre paréntesis que forma parte del nombre de un Partidario: «(Professor Oak)», «(Lysandre)»
+PAREN_ENT = {m for c in catalogo['cartas'] if any(x.startswith('e-') for x in c['p']) for m in re.findall(r'\(([^)]*)\)', c['n'])}
 RX = re.compile(r'\b(' + '|'.join(p['nombre'] for p in objetivos['principales'] + objetivos['familias']) + r')\b', re.I)
 
 
@@ -72,7 +74,10 @@ def slug(t):
 NO_VARIANTE = re.compile(
     r'^(delta species|team plasma|prime|form [xy]|top (left|right)|bottom (left|right)|break|\d+|'
     r'english|italian|korean|spanish|japanese|german|french|polish|portuguese|green|mega .*|'
-    r'pikachu \d+|#?\d+ .*stamped)$', re.I)
+    r'pikachu \d+|#?\d+ .*stamped|'
+    # Partidarios: el personaje del «Professor's Research», «(Supporter)» o el código de la Classic Collection
+    # son parte del nombre, no un sello
+    r'professor \w+|supporter|cyrus|ghetsis|cl[bcv])$', re.I)
 # Productos que son reimpresiones de cartas ya existentes: su etiqueta es el propio producto
 GRUPOS = [
     (r'^Base Set \(Shadowless\)$', 'Shadowless'), (r'^Prize Pack', 'Prize Pack'), (r'^Jumbo Cards', 'Jumbo (tamaño gigante)'),
@@ -90,6 +95,12 @@ def limpia(t):
     return t
 
 
+# productos cuyo nombre en TCGplayer no dice en qué se distinguen: el nombre se pone a mano (revisión a ojo)
+RENOMBRA = {
+    123622: 'Sin sello de la Liga',   # N BW100: la promo normal lleva el sello de la Liga; la del mazo, no
+}
+
+
 def nombre_variante(p):
     """El nombre que verá Arturo, o None si el producto no es una variante."""
     g, n = p['gn'], p['n']
@@ -104,8 +115,11 @@ def nombre_variante(p):
     if re.match(r'^World Championship Decks', g):
         y = re.search(r'-\s*(\d{4})\s*\(([^)]*)\)', n)
         return f'Mundial {y.group(1)} · {y.group(2)}' if y else None
+    if p['id'] in RENOMBRA:
+        return RENOMBRA[p['id']]
     tg = [limpia(t) for t in etiquetas(n)]
-    tg = [t for t in tg if t and not NO_VARIANTE.match(t)]
+    # «Professor's Research (Professor Oak)»: el paréntesis es parte del nombre del Partidario, no un sello
+    tg = [t for t in tg if t and not NO_VARIANTE.match(t) and t not in PAREN_ENT]
     for rx, etiq in GRUPOS:
         if re.match(rx, g):
             return ' · '.join([etiq] + tg)
@@ -160,10 +174,17 @@ ya = {c['tp_id'] for c in catalogo['cartas'] if c.get('tp_id')}   # también las
 idx = defaultdict(list)
 for c in en:
     total = (str(c.get('ni') or '').split('/') + [''])[1].lstrip('0') or str(sets[c['s']].get('tot') or '')
-    idx[(cl(c['n']), num(c['num']), total)].append(c)
-    idx[(cl(c['n']), num(c['num']), '')].append(c)
+    nombres = {cl(c['n'])}
+    if any(x.startswith('e-') for x in c['p']):
+        nombres.add(cl(base(c['n'])))   # «Professor's Research (Professor Oak)» también como «Professor's Research»
+    for nn in nombres:
+        idx[(nn, num(c['num']), total)].append(c)
+        idx[(nn, num(c['num']), '')].append(c)
+# los Partidarios (Entrenadores) no tienen PS: se reconocen por su nombre exacto
+NOMBRES_ENT = {f(c['n']) for c in en if any(x.startswith('e-') for x in c['p']) for f in (cl, lambda n: cl(base(n)))}
 for p in todos(3):
-    if not (p['hp'] and p['num'] and RX.search(base(p['n']))) or p['id'] in ya or p['id'] in MISMA_CARTA:
+    nuestro = (p['hp'] and RX.search(base(p['n']))) or cl(base(p['n'])) in NOMBRES_ENT
+    if not (p['num'] and nuestro) or p['id'] in ya or p['id'] in MISMA_CARTA:
         continue
     etiq = nombre_variante(p)
     if not etiq:
@@ -251,7 +272,19 @@ A_FORMA = {
     'swsh11-066~exclusiva-de-mazo', 'xy1-43~exclusiva-de-mazo-battle-arena-deck-exclusive', 'xy12-36~exclusiva-de-mazo-xy-evolutions',
     'xy8-60~exclusiva-de-mazo-xy-breakthrough',
 }
-SOBRA = {'ja-35091~pikachu-stamped', 'ja-35110~pikachu-stamped', 'ja-45929~battle-academy-2020', 'ja-45957~battle-academy-2020'}
+SOBRA = {'ja-35091~pikachu-stamped', 'ja-35110~pikachu-stamped', 'ja-45929~battle-academy-2020', 'ja-45957~battle-academy-2020',
+         # Partidarios (revisión a ojo 19-10-2026): la carta normal ya es la sellada / ya es full art
+         'swshp-SWSH167~25th-anniversary-stamp', 'xy9-98b~full-art'}
+# Partidarios (revisión a ojo 19-10-2026): «exclusivas de mazo» y copias de kits idénticas a la carta normal
+A_FORMA |= {
+    'bw9-101~exclusiva-de-mazo-bw-plasma-freeze', 'sm10-184~exclusiva-de-mazo-sm-unbroken-bonds', 'sm12-204~exclusiva-de-mazo',
+    'sm9-140~exclusiva-de-mazo-sm-team-up', 'sv01-189~exclusiva-de-mazo-non-holo', 'sv01-190~exclusiva-de-mazo-non-holo',
+    'sv02-172~exclusiva-de-mazo', 'swsh1-169~exclusiva-de-mazo', 'swsh1-178~exclusiva-de-mazo-non-holo', 'swsh10-135~exclusiva-de-mazo',
+    'swsh10-147~exclusiva-de-mazo', 'swsh2-154~exclusiva-de-mazo', 'swsh4-154~exclusiva-de-mazo', 'swsh4.5-58~exclusiva-de-mazo',
+    'swsh9-132~exclusiva-de-mazo', 'swsh9-147~exclusiva-de-mazo-non-holo', 'xy9-107a~non-holo',
+    'sm1-120~alolan-sandslash-half-deck', 'sm1-120~alolan-sandslash-half-deck-168216',
+    'sm1-120~alolan-ninetales-half-deck', 'sm1-120~alolan-ninetales-half-deck-168218',
+}
 FORMA_DE_JA = {'mirror-holo': 'reverse'}
 quitadas = Counter()
 movidas = {}   # variante que deja de ser carta → [carta base, forma]: la app mueve ahí lo que Arturo hubiera marcado
@@ -296,7 +329,10 @@ for bid, ex in extras.items():
 from diferencias import diferencia  # noqa: E402
 nd = {k: diferencia(n) for k, n in nv.items()}
 sin = sorted({nv[k] for k, t in nd.items() if not t})
-assert not sin, f'variantes sin explicación de en qué se distinguen: {sin}'
+if os.environ.get('REVISAR'):   # para hacer las hojas de revisión a ojo antes de decidir
+    print('SIN EXPLICAR (revisar a ojo):', sin)
+else:
+    assert not sin, f'variantes sin explicación de en qué se distinguen: {sin}'
 
 json.dump({'nv': dict(sorted(nv.items())), 'nd': dict(sorted(nd.items())), 'cartas': dict(sorted(cartas.items())), 'extras': dict(sorted(extras.items())),
            'reemplaza': reemplaza, 'movidas': dict(sorted(movidas.items())), 'revisar': revisar},

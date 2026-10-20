@@ -31,7 +31,7 @@ def get(u):
 
 def numero(t):
     """«018» y «18» son el mismo número; «H09» y «h9», también."""
-    return re.sub(r'^([a-z]*)0+(?=\d)', r'', str(t).lower().strip())
+    return re.sub(r'^([a-z]*)0+(?=\d)', r'\1', str(t).lower().strip())
 
 
 def suyas(nombre):

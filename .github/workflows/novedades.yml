@@ -84,6 +84,8 @@ jobs:
           echo "### La búsqueda falló y no se propone nada. Tu app sigue igual." >> "$GITHUB_STEP_SUMMARY"
           exit 1
 
+      # ojo: en las expresiones de GitHub '' == '0' es verdadero (los dos pasan a número 0). Por eso los
+      # pasos siguientes exigen además que este haya corrido (outcome == 'success').
       - name: Dejar las novedades esperando tu aprobación
         id: preparar
         if: steps.buscar.outputs.codigo == '0'
@@ -94,12 +96,12 @@ jobs:
           exit 0
 
       - name: Ya estaban esperando
-        if: steps.preparar.outputs.codigo == '3'
+        if: steps.preparar.outcome == 'success' && steps.preparar.outputs.codigo == '3'
         run: |
           echo "### Nada nuevo desde la última vez: las novedades pendientes siguen esperando en la app" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Probar la app con las novedades
-        if: steps.preparar.outputs.codigo == '0'
+        if: steps.preparar.outcome == 'success' && steps.preparar.outputs.codigo == '0'
         run: |
           cd app
           npm ci
@@ -110,7 +112,7 @@ jobs:
           node pruebas/novedades.mjs http://localhost:8410/pokemon-libre/
 
       - name: Publicar
-        if: steps.preparar.outputs.codigo == '0'
+        if: steps.preparar.outcome == 'success' && steps.preparar.outputs.codigo == '0'
         env:
           GH_TOKEN: ${{ github.token }}
           SIMULACRO: ${{ inputs.simular && 'si' || '' }}

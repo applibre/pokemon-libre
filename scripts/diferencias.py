@@ -9,7 +9,7 @@ import re
 # (patrón en el nombre de la variante, qué sello lleva); el primero que encaja gana
 SELLOS = [
     (r'Pokémon Day (\d{4})', r'el sello de Pokémon Day \1'),
-    (r'Pokémon Day Stamped', 'el sello de Pokémon Day'),
+    (r'Pokémon Day Stamped|^Pokémon Day$', 'el sello de Pokémon Day'),
     (r'National Championships · Staff', 'el sello del Campeonato Nacional y la palabra STAFF'),
     (r'Prerelease · Staff|^Staff$', 'el sello de Prerelease y la palabra STAFF'),
     (r'XY Evolutions Prerelease', 'el sello de presentación de XY Evolutions'),
@@ -37,7 +37,10 @@ SELLOS = [
     (r'20th Anniversary', 'el sello del 20.º aniversario'),
     (r'Stellar Crown Stamp', 'el logo de Stellar Crown'),
     (r'Vivid Voltage Stamped', 'el logo de Vivid Voltage'),
-    (r'Prismatic Evolution Stamped', 'el logo de Prismatic Evolutions'),
+    (r'Prismatic Evolutions? Stamp', 'el logo de Prismatic Evolutions'),
+    (r'Obsidian Flames Stamped', 'el logo de Obsidian Flames'),
+    (r'^GYM$', 'el sello de Pokémon TCG GYM'),
+    (r'JR East Stamp Rally', 'el sello de la JR East Stamp Rally (Japón)'),
     (r'Detective Pikachu Stamped|^Stamped$', 'el logo de la película Detective Pikachu'),
     (r'Rain City Showcase', 'el sello Rain City Showcase'),
     (r'Pokémon Together', 'el texto «Pokémon Together»'),
@@ -50,6 +53,19 @@ SELLOS = [
     (r'Pokémon Center', 'el sello de Pokémon Center'),
     (r'Library', 'el sello de Play! Pokémon (bibliotecas)'),
     (r'2014 Movie', 'el sello de la película de 2014'),
+    # Partidarios (Entrenadores): premios de torneo y de la Liga
+    (r'25th Anniversary', 'el sello del 25.º aniversario'),
+    (r'^Champion', 'el sello de campeón (Champion)'),
+    (r'^Finalist', 'el sello de finalista'),
+    (r'^Top (\d+)', r'el sello de Top \1 de un torneo'),
+    (r'Player Reward', 'el sello de premio de la Liga (Player Reward)'),
+    (r'International Challenge', 'el sello del International Challenge'),
+    (r'League Cup', 'el sello de la League Cup'),
+    (r'Regional Championship|Regional Stamp', 'el sello del Campeonato Regional'),
+    (r'Ultra Ball League', 'el sello de la Ultra Ball League'),
+    (r'Gym Stamp', 'el sello de GYM (Asia)'),
+    (r'^GYM$|· GYM$', 'el sello de Pokémon TCG GYM'),
+    (r'^(\d{4})-(\d{4})$', r'el sello del Professor Program de la temporada \1-\2'),
 ]
 BRILLOS = [
     (r'Reverse Cosmos', 'reverse holo con brillo Cosmos (puntos y estrellas)'),
@@ -63,6 +79,9 @@ BRILLOS = [
     (r'Energy Symbol', 'reverse holo con el símbolo de energía en el fondo'),
     (r'General Mills', 'brillo holográfico de la promoción de cereales General Mills'),
     (r'Costco', 'brillo Cosmos de los packs de Costco'),
+    (r'Sheen Holo', 'brillo holográfico satinado (Sheen Holo)'),
+    (r'Line Holo', 'brillo holográfico de líneas'),
+    (r'30th Celebration|DP Majestic Dawn', 'brillo holográfico Cosmos (puntos y estrellas)'),
 ]
 # variantes que no son un sello ni un brillo: texto completo
 OTRAS = [
@@ -75,6 +94,9 @@ OTRAS = [
     (r'No Rarity Symbol', 'Error de impresión: sin el símbolo de rareza.'),
     (r'Misprint', 'Error de impresión de la promo: lleva el símbolo de 1.ª edición.'),
     (r'Metal Card', 'Carta de metal dorada (Celebrations).'),
+    (r'Full Art', 'Arte completo: la ilustración ocupa toda la carta.'),
+    (r'No E-Reader', 'Sin la tira de puntos del e-Reader en el borde.'),
+    (r'Sin sello de la Liga', 'Sin el sello de la Liga Pokémon que lleva la promo normal (es la del mazo).'),
 ]
 
 
@@ -88,7 +110,10 @@ def diferencia(n):
     for rx, t in SELLOS:
         m = re.search(rx, n)
         if m:
-            trozos.append('Lleva ' + m.expand(t) + '.')
+            t = m.expand(t)
+            if re.search(r'Staff', n) and 'STAFF' not in t:
+                t += ' y la palabra STAFF'
+            trozos.append('Lleva ' + t + '.')
             break
     for rx, t in BRILLOS:
         if re.search(rx, n):

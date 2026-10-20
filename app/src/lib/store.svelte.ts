@@ -22,7 +22,8 @@ export type Carta = {
   j?: { e?: string; de?: string; ps?: number; t?: string[] }
 }
 export type Novedades = { generado?: string; cartas: Carta[]; sets?: Record<string, Set>; orden?: Record<string, number> }
-export type Pokemon = { id: string; nombre: string; tipo: string; principal?: boolean }
+/** `ent`: un personaje de los Partidarios (Entrenadores), no un Pokémon. Se enseñan siempre, en su propia sección. */
+export type Pokemon = { id: string; nombre: string; tipo: string; principal?: boolean; ent?: boolean }
 
 const numero = (n: string) => parseInt(String(n).replace(/\D/g, ''), 10) || 0
 
@@ -201,7 +202,7 @@ class Tienda {
 
   /** Los Pokémon que se enseñan: con o sin las preevoluciones. */
   get pokemonVisibles(): Pokemon[] {
-    return this.datos.ajustes.verFamilias ? this.pokemon : this.pokemon.filter((p) => p.principal)
+    return this.datos.ajustes.verFamilias ? this.pokemon : this.pokemon.filter((p) => p.principal || p.ent)
   }
 }
 
@@ -298,7 +299,7 @@ export const NOMBRE_VARIANTE: Record<string, string> = {
 }
 export const nombreVariante = (v: string) => NOMBRE_VARIANTE[v] ?? app.nv[v] ?? v
 export const ETAPA: Record<string, string> = {
-  Basic: 'Básica', Stage1: 'Fase 1', Stage2: 'Fase 2', 'Stage 1': 'Fase 1', 'Stage 2': 'Fase 2',
+  Basic: 'Básica', Stage1: 'Fase 1', Stage2: 'Fase 2', Supporter: 'Partidario', 'Stage 1': 'Fase 1', 'Stage 2': 'Fase 2',
 }
 const MES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
 export const mesYAnio = (rel?: string) => {

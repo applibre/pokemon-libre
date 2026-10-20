@@ -8,6 +8,7 @@ import { readFileSync } from 'node:fs'
 // Los números salen del catálogo, no de la memoria: cuando entra una expansión nueva no hay que tocar la prueba.
 const CAT = JSON.parse(readFileSync(new URL('../../data/catalogo.json', import.meta.url), 'utf8'))
 const EN = (id) => CAT.cartas.filter((c) => !c.s.startsWith('ja-') && c.p.includes(id)).length
+const CAT_M = JSON.parse(readFileSync(new URL('../../data/manifiesto.json', import.meta.url), 'utf8'))
 const EN_TODAS = CAT.cartas.filter((c) => !c.s.startsWith('ja-')).length
 
 const base = process.argv[2] || 'http://localhost:5173/'
@@ -29,10 +30,18 @@ const guardado = () => p.evaluate(() => JSON.parse(localStorage.getItem('pokemon
 
 /* ---------- inicio ---------- */
 await p.goto(base); await p.waitForSelector('.baldosa')
-ok((await p.locator('.baldosa').count()) === 17, 'inicio: 12 Pokémon + 5 familias en inglés')
+const ENT = CAT_M.pokemon.filter((x) => x.ent).length
+ok((await p.locator('.baldosa').count()) === 17 + Math.min(12, ENT), `inicio: 12 Pokémon + 5 familias + los 12 Entrenadores con más cartas (de ${ENT})`)
+ok((await p.locator('.cinta', { hasText: 'Entrenadores' }).count()) === 1, 'inicio: hay una sección «Entrenadores»')
+await p.click('button.mas'); await p.waitForTimeout(400)
+ok((await p.locator('.baldosa').count()) === 17 + ENT, `«Ver los ${ENT} personajes» los enseña todos`)
+await p.locator('.baldosa', { hasText: 'Iono' }).first().click(); await p.waitForSelector('.celda')
+ok(p.url().includes('#/pokemon/e-iono') && (await p.locator('.celda').count()) === CAT.cartas.filter((c) => c.p.includes('e-iono')).length, 'la baldosa de Iono abre todas sus cartas')
+await p.goto(base); await p.waitForSelector('.baldosa')
 await foto('1-inicio')
 await p.click('.lengua button >> nth=1'); await p.waitForTimeout(500)
 ok((await p.locator('.baldosa').count()) >= 12, 'inicio en japonés: otra colección, con sus propias baldosas')
+ok((await p.locator('.cinta', { hasText: 'Entrenadores' }).count()) === 0, 'en japonés no hay Entrenadores (Arturo los quiere solo en inglés)')
 await foto('2-inicio-ja')
 await p.click('.lengua button >> nth=0')
 
@@ -138,7 +147,7 @@ ok((await guardado()).ajustes.tema === 'claro', 'el tema elegido se guarda')
 // preevoluciones fuera
 await p.click('.interruptor'); await p.waitForTimeout(300)
 await p.click('.barra button >> nth=0'); await p.waitForSelector('.baldosa')
-ok((await p.locator('.baldosa').count()) === 12, 'sin preevoluciones: solo los 12 Pokémon')
+ok((await p.locator('.baldosa').count()) === 12 + Math.min(12, ENT), 'sin preevoluciones: los 12 Pokémon y los Entrenadores')
 await p.click('.barra button >> nth=3'); await p.waitForSelector('.ajustes'); await p.click('.interruptor')
 
 // copia de seguridad y restaurar

@@ -1210,5 +1210,989 @@
   "nombre": "Pikachu - 173/165",
   "set": "SV: Scarlet & Violet 151",
   "num": "173/165"
+ },
+ "ja-25419": {
+  "tp": 86304,
+  "nombre": "Ivysaur",
+  "set": "Dark Explorers",
+  "num": "2/108"
+ },
+ "ja-27150": {
+  "tp": 146653,
+  "nombre": "Bulbasaur",
+  "set": "Shining Legends",
+  "num": "1/73"
+ },
+ "ja-43282": {
+  "tp": 527985,
+  "nombre": "Squirtle",
+  "set": "Trading Card Game Classic",
+  "num": "001/034"
+ },
+ "ja-43283": {
+  "tp": 527987,
+  "nombre": "Wartortle",
+  "set": "Trading Card Game Classic",
+  "num": "002/034"
+ },
+ "ja-43284": {
+  "tp": 527988,
+  "nombre": "Blastoise",
+  "set": "Trading Card Game Classic",
+  "num": "003/034"
+ },
+ "ja-43316": {
+  "tp": 527936,
+  "nombre": "Charmander",
+  "set": "Trading Card Game Classic",
+  "num": "001/034"
+ },
+ "ja-43317": {
+  "tp": 527937,
+  "nombre": "Charmeleon",
+  "set": "Trading Card Game Classic",
+  "num": "002/034"
+ },
+ "ja-43318": {
+  "tp": 527938,
+  "nombre": "Charizard",
+  "set": "Trading Card Game Classic",
+  "num": "003/034"
+ },
+ "ja-43324": {
+  "tp": 527944,
+  "nombre": "Raichu",
+  "set": "Trading Card Game Classic",
+  "num": "009/034"
+ },
+ "ja-43350": {
+  "tp": 527883,
+  "nombre": "Bulbasaur",
+  "set": "Trading Card Game Classic",
+  "num": "001/034"
+ },
+ "ja-43351": {
+  "tp": 527884,
+  "nombre": "Ivysaur",
+  "set": "Trading Card Game Classic",
+  "num": "002/034"
+ },
+ "ja-43352": {
+  "tp": 527885,
+  "nombre": "Venusaur",
+  "set": "Trading Card Game Classic",
+  "num": "003/034"
+ },
+ "ja-43365": {
+  "tp": 527903,
+  "nombre": "Snorlax",
+  "set": "Trading Card Game Classic",
+  "num": "016/034"
+ },
+ "ja-44986": {
+  "tp": 223761,
+  "nombre": "Pikachu on the Ball - 001/005 (Pokemon Futsal)",
+  "set": "Miscellaneous Cards & Products",
+  "num": "001/005"
+ },
+ "ja-50468": {
+  "tp": 654340,
+  "nombre": "Bulbasaur - 001/132",
+  "set": "ME01: Mega Evolution",
+  "num": "001/132"
+ },
+ "ja-50469": {
+  "tp": 654341,
+  "nombre": "Ivysaur - 002/132",
+  "set": "ME01: Mega Evolution",
+  "num": "002/132"
+ },
+ "ja-50470": {
+  "tp": 654342,
+  "nombre": "Mega Venusaur ex - 003/132",
+  "set": "ME01: Mega Evolution",
+  "num": "003/132"
+ },
+ "ja-66887": {
+  "tp": 161750,
+  "nombre": "Pikachu (Ivy)",
+  "set": "Pikachu World Collection Promos",
+  "num": "1"
+ },
+ "ja-66890": {
+  "tp": 161752,
+  "nombre": "Pikachu (Movie)",
+  "set": "Pikachu World Collection Promos",
+  "num": "4"
+ },
+ "ja-89759": {
+  "tp": 712934,
+  "nombre": "Pikachu - 023/128",
+  "set": "ME: 30th Celebration",
+  "num": "023/128"
+ },
+ "ja-89760": {
+  "tp": 716309,
+  "nombre": "Pikachu - 024/128",
+  "set": "ME: 30th Celebration",
+  "num": "024/128"
+ },
+ "ja-89761": {
+  "tp": 712935,
+  "nombre": "Pikachu - 025/128",
+  "set": "ME: 30th Celebration",
+  "num": "025/128"
+ },
+ "ja-89762": {
+  "tp": 712936,
+  "nombre": "Pikachu - 026/128",
+  "set": "ME: 30th Celebration",
+  "num": "026/128"
+ },
+ "ja-89763": {
+  "tp": 716310,
+  "nombre": "Pikachu - 027/128",
+  "set": "ME: 30th Celebration",
+  "num": "027/128"
+ },
+ "ja-89764": {
+  "tp": 712937,
+  "nombre": "Pikachu - 028/128",
+  "set": "ME: 30th Celebration",
+  "num": "028/128"
+ },
+ "ja-89765": {
+  "tp": 716311,
+  "nombre": "Pikachu - 029/128",
+  "set": "ME: 30th Celebration",
+  "num": "029/128"
+ },
+ "ja-89766": {
+  "tp": 712938,
+  "nombre": "Pikachu - 030/128",
+  "set": "ME: 30th Celebration",
+  "num": "030/128"
+ },
+ "ja-89767": {
+  "tp": 716312,
+  "nombre": "Pikachu - 031/128",
+  "set": "ME: 30th Celebration",
+  "num": "031/128"
+ },
+ "ja-89768": {
+  "tp": 712939,
+  "nombre": "Pikachu - 032/128",
+  "set": "ME: 30th Celebration",
+  "num": "032/128"
+ },
+ "ja-89769": {
+  "tp": 712940,
+  "nombre": "Pikachu - 033/128",
+  "set": "ME: 30th Celebration",
+  "num": "033/128"
+ },
+ "ja-89770": {
+  "tp": 712941,
+  "nombre": "Pikachu - 034/128",
+  "set": "ME: 30th Celebration",
+  "num": "034/128"
+ },
+ "ja-89771": {
+  "tp": 716313,
+  "nombre": "Pikachu - 035/128",
+  "set": "ME: 30th Celebration",
+  "num": "035/128"
+ },
+ "ja-89772": {
+  "tp": 696680,
+  "nombre": "Pikachu - 036/128",
+  "set": "ME: 30th Celebration",
+  "num": "036/128"
+ },
+ "ja-89773": {
+  "tp": 696681,
+  "nombre": "Pikachu - 037/128",
+  "set": "ME: 30th Celebration",
+  "num": "037/128"
+ },
+ "ja-89774": {
+  "tp": 712942,
+  "nombre": "Pikachu - 038/128",
+  "set": "ME: 30th Celebration",
+  "num": "038/128"
+ },
+ "ja-89775": {
+  "tp": 712943,
+  "nombre": "Pikachu - 039/128",
+  "set": "ME: 30th Celebration",
+  "num": "039/128"
+ },
+ "ja-89776": {
+  "tp": 712944,
+  "nombre": "Pikachu - 040/128",
+  "set": "ME: 30th Celebration",
+  "num": "040/128"
+ },
+ "ja-89777": {
+  "tp": 712945,
+  "nombre": "Pikachu - 041/128",
+  "set": "ME: 30th Celebration",
+  "num": "041/128"
+ },
+ "ja-89778": {
+  "tp": 712946,
+  "nombre": "Pikachu - 042/128",
+  "set": "ME: 30th Celebration",
+  "num": "042/128"
+ },
+ "ja-89779": {
+  "tp": 712947,
+  "nombre": "Pikachu - 043/128",
+  "set": "ME: 30th Celebration",
+  "num": "043/128"
+ },
+ "ja-89780": {
+  "tp": 712948,
+  "nombre": "Pikachu - 044/128",
+  "set": "ME: 30th Celebration",
+  "num": "044/128"
+ },
+ "ja-89781": {
+  "tp": 716314,
+  "nombre": "Pikachu - 045/128",
+  "set": "ME: 30th Celebration",
+  "num": "045/128"
+ },
+ "ja-89782": {
+  "tp": 716315,
+  "nombre": "Pikachu - 046/128",
+  "set": "ME: 30th Celebration",
+  "num": "046/128"
+ },
+ "bwp-BW100": {
+  "tp": 87677,
+  "nombre": "N (Supporter) - BW100",
+  "set": "Black and White Promos",
+  "num": "BW100"
+ },
+ "xyp-XY33": {
+  "tp": 96396,
+  "nombre": "Trevor - XY33",
+  "set": "XY Promos",
+  "num": "XY33"
+ },
+ "xyp-XY177": {
+  "tp": 123438,
+  "nombre": "Karen",
+  "set": "XY Promos",
+  "num": "XY177"
+ },
+ "bw11-RC20": {
+  "tp": 85174,
+  "nombre": "Elesa",
+  "set": "Legendary Treasures: Radiant Collection",
+  "num": "RC20/RC25"
+ },
+ "xya-107a": {
+  "tp": 133813,
+  "nombre": "Professor Sycamore - 107a/122 (Holofoil)",
+  "set": "Alternate Art Promos",
+  "num": "107a/122"
+ },
+ "xy2-93": {
+  "tp": 91230,
+  "nombre": "Pokemon Center Lady",
+  "set": "XY - Flashfire",
+  "num": "93/106"
+ },
+ "xy2-94": {
+  "tp": 91231,
+  "nombre": "Pokemon Fan Club",
+  "set": "XY - Flashfire",
+  "num": "94/106"
+ },
+ "xy2-105": {
+  "tp": 91243,
+  "nombre": "Pokemon Center Lady (105 Full Art)",
+  "set": "XY - Flashfire",
+  "num": "105/106"
+ },
+ "xy2-106": {
+  "tp": 91244,
+  "nombre": "Pokemon Fan Club (106 Full Art)",
+  "set": "XY - Flashfire",
+  "num": "106/106"
+ },
+ "g1-68": {
+  "tp": 113726,
+  "nombre": "Pokemon Center Lady",
+  "set": "Generations",
+  "num": "68/83"
+ },
+ "g1-69": {
+  "tp": 113727,
+  "nombre": "Pokemon Fan Club",
+  "set": "Generations",
+  "num": "69/83"
+ },
+ "g1-RC27": {
+  "tp": 113770,
+  "nombre": "Wally",
+  "set": "Generations: Radiant Collection",
+  "num": "RC27/RC32"
+ },
+ "xy10-107": {
+  "tp": 117879,
+  "nombre": "Pokemon Fan Club",
+  "set": "XY - Fates Collide",
+  "num": "107/124"
+ },
+ "xy11-104": {
+  "tp": 121228,
+  "nombre": "Pokemon Ranger",
+  "set": "XY - Steam Siege",
+  "num": "104/114"
+ },
+ "xy11-113": {
+  "tp": 121237,
+  "nombre": "Pokemon Ranger (Full Art)",
+  "set": "XY - Steam Siege",
+  "num": "113/114"
+ },
+ "sm3.5-63": {
+  "tp": 146730,
+  "nombre": "Pokemon Breeder",
+  "set": "Shining Legends",
+  "num": "63/73"
+ },
+ "sm3.5-73": {
+  "tp": 146731,
+  "nombre": "Pokemon Breeder (Full Art)",
+  "set": "Shining Legends",
+  "num": "73/73"
+ },
+ "sm5-120": {
+  "tp": 157737,
+  "nombre": "Cyrus Prism Star",
+  "set": "SM - Ultra Prism",
+  "num": "120/156"
+ },
+ "sm5-133": {
+  "tp": 157749,
+  "nombre": "Pokemon Fan Club",
+  "set": "SM - Ultra Prism",
+  "num": "133/156"
+ },
+ "sm5-155": {
+  "tp": 157771,
+  "nombre": "Pokemon Fan Club (Full Art)",
+  "set": "SM - Ultra Prism",
+  "num": "155/156"
+ },
+ "sm6-110": {
+  "tp": 165773,
+  "nombre": "Lysandre Prism Star",
+  "set": "SM - Forbidden Light",
+  "num": "110/131"
+ },
+ "sm7-126": {
+  "tp": 170987,
+  "nombre": "Bill's Maintenance",
+  "set": "SM - Celestial Storm",
+  "num": "126/168"
+ },
+ "sm7-145": {
+  "tp": 171006,
+  "nombre": "Steven's Resolve",
+  "set": "SM - Celestial Storm",
+  "num": "145/168"
+ },
+ "sm7-162": {
+  "tp": 171014,
+  "nombre": "Bill's Maintenance (Full Art)",
+  "set": "SM - Celestial Storm",
+  "num": "162/168"
+ },
+ "sm7-165": {
+  "tp": 171017,
+  "nombre": "Steven's Resolve (Full Art)",
+  "set": "SM - Celestial Storm",
+  "num": "165/168"
+ },
+ "sm7.5-58": {
+  "tp": 175488,
+  "nombre": "Blaine's Last Stand",
+  "set": "Dragon Majesty",
+  "num": "58/70"
+ },
+ "sm7.5-61": {
+  "tp": 175491,
+  "nombre": "Lance Prism Star",
+  "set": "Dragon Majesty",
+  "num": "61/70"
+ },
+ "sm7.5-69": {
+  "tp": 175499,
+  "nombre": "Blaine's Last Stand (Full Art)",
+  "set": "Dragon Majesty",
+  "num": "69/70"
+ },
+ "sm8-182": {
+  "tp": 179014,
+  "nombre": "Lusamine Prism Star",
+  "set": "SM - Lost Thunder",
+  "num": "182/214"
+ },
+ "sm8-188": {
+  "tp": 179023,
+  "nombre": "Professor Elm's Lecture",
+  "set": "SM - Lost Thunder",
+  "num": "188/214"
+ },
+ "sm8-213": {
+  "tp": 179024,
+  "nombre": "Professor Elm's Lecture (Full Art)",
+  "set": "SM - Lost Thunder",
+  "num": "213/214"
+ },
+ "sm9-133": {
+  "tp": 183922,
+  "nombre": "Bill's Analysis",
+  "set": "SM - Team Up",
+  "num": "133/181"
+ },
+ "sm9-135": {
+  "tp": 183924,
+  "nombre": "Brock's Grit",
+  "set": "SM - Team Up",
+  "num": "135/181"
+ },
+ "sm9-140": {
+  "tp": 183934,
+  "nombre": "Erika's Hospitality",
+  "set": "SM - Team Up",
+  "num": "140/181"
+ },
+ "sm9-154": {
+  "tp": 183957,
+  "nombre": "Sabrina's Suggestion",
+  "set": "SM - Team Up",
+  "num": "154/181"
+ },
+ "sm9-172": {
+  "tp": 183925,
+  "nombre": "Brock's Grit (Full Art)",
+  "set": "SM - Team Up",
+  "num": "172/181"
+ },
+ "sm9-174": {
+  "tp": 183933,
+  "nombre": "Erika's Hospitality (Full Art)",
+  "set": "SM - Team Up",
+  "num": "174/181"
+ },
+ "sm9-181": {
+  "tp": 183958,
+  "nombre": "Sabrina's Suggestion (Full Art)",
+  "set": "SM - Team Up",
+  "num": "181/181"
+ },
+ "sm10-174": {
+  "tp": 189276,
+  "nombre": "Giovanni's Exile",
+  "set": "SM - Unbroken Bonds",
+  "num": "174/214"
+ },
+ "sm10-175": {
+  "tp": 189277,
+  "nombre": "Green's Exploration",
+  "set": "SM - Unbroken Bonds",
+  "num": "175/214"
+ },
+ "sm10-177": {
+  "tp": 189281,
+  "nombre": "Koga's Trap",
+  "set": "SM - Unbroken Bonds",
+  "num": "177/214"
+ },
+ "sm10-178": {
+  "tp": 189283,
+  "nombre": "Lt. Surge's Strategy",
+  "set": "SM - Unbroken Bonds",
+  "num": "178/214"
+ },
+ "sm10-184": {
+  "tp": 189292,
+  "nombre": "Red's Challenge",
+  "set": "SM - Unbroken Bonds",
+  "num": "184/214"
+ },
+ "sm10-209": {
+  "tp": 189278,
+  "nombre": "Green's Exploration (Full Art)",
+  "set": "SM - Unbroken Bonds",
+  "num": "209/214"
+ },
+ "sm10-211": {
+  "tp": 189282,
+  "nombre": "Koga's Trap (Full Art)",
+  "set": "SM - Unbroken Bonds",
+  "num": "211/214"
+ },
+ "sm10-213": {
+  "tp": 189293,
+  "nombre": "Red's Challenge (Full Art)",
+  "set": "SM - Unbroken Bonds",
+  "num": "213/214"
+ },
+ "sm11-188": {
+  "tp": 195218,
+  "nombre": "Blue's Tactics",
+  "set": "SM - Unified Minds",
+  "num": "188/236"
+ },
+ "sm11-202": {
+  "tp": 195257,
+  "nombre": "Misty's Favor",
+  "set": "SM - Unified Minds",
+  "num": "202/236"
+ },
+ "sm11-204": {
+  "tp": 195259,
+  "nombre": "Poke Maniac",
+  "set": "SM - Unified Minds",
+  "num": "204/236"
+ },
+ "sm11-231": {
+  "tp": 195292,
+  "nombre": "Blue's Tactics (Full Art)",
+  "set": "SM - Unified Minds",
+  "num": "231/236"
+ },
+ "sm11-235": {
+  "tp": 195296,
+  "nombre": "Misty's Favor (Full Art)",
+  "set": "SM - Unified Minds",
+  "num": "235/236"
+ },
+ "sm11-236": {
+  "tp": 195298,
+  "nombre": "Poke Maniac (Full Art)",
+  "set": "SM - Unified Minds",
+  "num": "236/236"
+ },
+ "sm115-51": {
+  "tp": 197697,
+  "nombre": "Bill's Analysis",
+  "set": "Hidden Fates",
+  "num": "51/68"
+ },
+ "sm115-52": {
+  "tp": 197699,
+  "nombre": "Blaine's Last Stand",
+  "set": "Hidden Fates",
+  "num": "52/68"
+ },
+ "sm115-53": {
+  "tp": 197700,
+  "nombre": "Brock's Grit",
+  "set": "Hidden Fates",
+  "num": "53/68"
+ },
+ "sm115-55": {
+  "tp": 197704,
+  "nombre": "Brock's Training",
+  "set": "Hidden Fates",
+  "num": "55/68"
+ },
+ "sm115-56": {
+  "tp": 197706,
+  "nombre": "Erika's Hospitality",
+  "set": "Hidden Fates",
+  "num": "56/68"
+ },
+ "sm115-57": {
+  "tp": 197709,
+  "nombre": "Giovanni's Exile",
+  "set": "Hidden Fates",
+  "num": "57/68"
+ },
+ "sm115-59": {
+  "tp": 197712,
+  "nombre": "Koga's Trap",
+  "set": "Hidden Fates",
+  "num": "59/68"
+ },
+ "sm115-60": {
+  "tp": 197714,
+  "nombre": "Lt. Surge's Strategy",
+  "set": "Hidden Fates",
+  "num": "60/68"
+ },
+ "sm115-62": {
+  "tp": 197717,
+  "nombre": "Misty's Determination",
+  "set": "Hidden Fates",
+  "num": "62/68"
+ },
+ "sm115-63": {
+  "tp": 197720,
+  "nombre": "Misty's Water Command",
+  "set": "Hidden Fates",
+  "num": "63/68"
+ },
+ "sm115-64": {
+  "tp": 197724,
+  "nombre": "Pokemon Center Lady",
+  "set": "Hidden Fates",
+  "num": "64/68"
+ },
+ "sm115-65": {
+  "tp": 197725,
+  "nombre": "Sabrina's Suggestion",
+  "set": "Hidden Fates",
+  "num": "65/68"
+ },
+ "sm115-67": {
+  "tp": 197730,
+  "nombre": "Giovanni's Exile (Full Art)",
+  "set": "Hidden Fates",
+  "num": "67/68"
+ },
+ "sma-SV81": {
+  "tp": 197835,
+  "nombre": "Aether Foundation Employee",
+  "set": "Hidden Fates: Shiny Vault",
+  "num": "SV81/SV94"
+ },
+ "sma-SV82": {
+  "tp": 197836,
+  "nombre": "Cynthia",
+  "set": "Hidden Fates: Shiny Vault",
+  "num": "SV82/SV94"
+ },
+ "sma-SV83": {
+  "tp": 197837,
+  "nombre": "Fisherman",
+  "set": "Hidden Fates: Shiny Vault",
+  "num": "SV83/SV94"
+ },
+ "sma-SV84": {
+  "tp": 197838,
+  "nombre": "Guzma",
+  "set": "Hidden Fates: Shiny Vault",
+  "num": "SV84/SV94"
+ },
+ "sma-SV85": {
+  "tp": 197839,
+  "nombre": "Hiker",
+  "set": "Hidden Fates: Shiny Vault",
+  "num": "SV85/SV94"
+ },
+ "sma-SV86": {
+  "tp": 197840,
+  "nombre": "Lady",
+  "set": "Hidden Fates: Shiny Vault",
+  "num": "SV86/SV94"
+ },
+ "sm12-196": {
+  "tp": 201317,
+  "nombre": "Lillie's Full Force",
+  "set": "SM - Cosmic Eclipse",
+  "num": "196/236"
+ },
+ "sm12-200": {
+  "tp": 201321,
+  "nombre": "N's Resolve",
+  "set": "SM - Cosmic Eclipse",
+  "num": "200/236"
+ },
+ "sm12-201": {
+  "tp": 201322,
+  "nombre": "Professor Oak's Setup",
+  "set": "SM - Cosmic Eclipse",
+  "num": "201/236"
+ },
+ "sm12-230": {
+  "tp": 201344,
+  "nombre": "Lillie's Full Force (Full Art)",
+  "set": "SM - Cosmic Eclipse",
+  "num": "230/236"
+ },
+ "sm12-232": {
+  "tp": 201979,
+  "nombre": "N's Resolve (Full Art)",
+  "set": "SM - Cosmic Eclipse",
+  "num": "232/236"
+ },
+ "sm12-233": {
+  "tp": 201981,
+  "nombre": "Professor Oak's Setup (Full Art)",
+  "set": "SM - Cosmic Eclipse",
+  "num": "233/236"
+ },
+ "swsh1-173": {
+  "tp": 208503,
+  "nombre": "Poke Kid",
+  "set": "SWSH01: Sword & Shield Base Set",
+  "num": "173/202"
+ },
+ "swsh1-176": {
+  "tp": 208506,
+  "nombre": "Pokemon Center Lady",
+  "set": "SWSH01: Sword & Shield Base Set",
+  "num": "176/202"
+ },
+ "swsh1-178": {
+  "tp": 208508,
+  "nombre": "Professor's Research [Professor Magnolia]",
+  "set": "SWSH01: Sword & Shield Base Set",
+  "num": "178/202"
+ },
+ "swsh1-201": {
+  "tp": 208509,
+  "nombre": "Professor's Research [Professor Magnolia] (Full Art)",
+  "set": "SWSH01: Sword & Shield Base Set",
+  "num": "201/202"
+ },
+ "swsh1-209": {
+  "tp": 208510,
+  "nombre": "Professor's Research [Professor Magnolia] (Secret)",
+  "set": "SWSH01: Sword & Shield Base Set",
+  "num": "209/202"
+ },
+ "swsh3.5-60": {
+  "tp": 223060,
+  "nombre": "Pokemon Center Lady",
+  "set": "Champion's Path",
+  "num": "60/73"
+ },
+ "swsh3.5-62": {
+  "tp": 223062,
+  "nombre": "Professor's Research [Professor Magnolia]",
+  "set": "Champion's Path",
+  "num": "62/73"
+ },
+ "swsh9tg-TG25": {
+  "tp": 264203,
+  "nombre": "Cafe Master",
+  "set": "SWSH09: Brilliant Stars Trainer Gallery",
+  "num": "TG25/TG30"
+ },
+ "swsh9tg-TG27": {
+  "tp": 264230,
+  "nombre": "Rapid Strike Style Mustard",
+  "set": "SWSH09: Brilliant Stars Trainer Gallery",
+  "num": "TG27/TG30"
+ },
+ "swsh9tg-TG28": {
+  "tp": 264231,
+  "nombre": "Single Strike Style Mustard",
+  "set": "SWSH09: Brilliant Stars Trainer Gallery",
+  "num": "TG28/TG30"
+ },
+ "swsh10tg-TG24": {
+  "tp": 272496,
+  "nombre": "Allister",
+  "set": "SWSH10: Astral Radiance Trainer Gallery",
+  "num": "TG24/TG30"
+ },
+ "swsh10tg-TG25": {
+  "tp": 272497,
+  "nombre": "Bea",
+  "set": "SWSH10: Astral Radiance Trainer Gallery",
+  "num": "TG25/TG30"
+ },
+ "swsh10tg-TG26": {
+  "tp": 272498,
+  "nombre": "Melony",
+  "set": "SWSH10: Astral Radiance Trainer Gallery",
+  "num": "TG26/TG30"
+ },
+ "swsh10tg-TG27": {
+  "tp": 272499,
+  "nombre": "Milo",
+  "set": "SWSH10: Astral Radiance Trainer Gallery",
+  "num": "TG27/TG30"
+ },
+ "swsh10tg-TG28": {
+  "tp": 272500,
+  "nombre": "Piers",
+  "set": "SWSH10: Astral Radiance Trainer Gallery",
+  "num": "TG28/TG30"
+ },
+ "swsh11tg-TG23": {
+  "tp": 284296,
+  "nombre": "Adventurer's Discovery",
+  "set": "SWSH11: Lost Origin Trainer Gallery",
+  "num": "TG23/TG30"
+ },
+ "swsh11tg-TG24": {
+  "tp": 284297,
+  "nombre": "Boss's Orders",
+  "set": "SWSH11: Lost Origin Trainer Gallery",
+  "num": "TG24/TG30"
+ },
+ "swsh11tg-TG25": {
+  "tp": 284298,
+  "nombre": "Cook",
+  "set": "SWSH11: Lost Origin Trainer Gallery",
+  "num": "TG25/TG30"
+ },
+ "swsh11tg-TG26": {
+  "tp": 284299,
+  "nombre": "Kabu",
+  "set": "SWSH11: Lost Origin Trainer Gallery",
+  "num": "TG26/TG30"
+ },
+ "swsh11tg-TG27": {
+  "tp": 284300,
+  "nombre": "Nessa",
+  "set": "SWSH11: Lost Origin Trainer Gallery",
+  "num": "TG27/TG30"
+ },
+ "swsh11tg-TG28": {
+  "tp": 284301,
+  "nombre": "Opal",
+  "set": "SWSH11: Lost Origin Trainer Gallery",
+  "num": "TG28/TG30"
+ },
+ "swsh12tg-TG23": {
+  "tp": 452039,
+  "nombre": "Friends in Galar",
+  "set": "SWSH12: Silver Tempest Trainer Gallery",
+  "num": "TG23/TG30"
+ },
+ "swsh12tg-TG24": {
+  "tp": 452040,
+  "nombre": "Gordie",
+  "set": "SWSH12: Silver Tempest Trainer Gallery",
+  "num": "TG24/TG30"
+ },
+ "swsh12tg-TG25": {
+  "tp": 452042,
+  "nombre": "Judge",
+  "set": "SWSH12: Silver Tempest Trainer Gallery",
+  "num": "TG25/TG30"
+ },
+ "swsh12tg-TG26": {
+  "tp": 452044,
+  "nombre": "Professor Burnet",
+  "set": "SWSH12: Silver Tempest Trainer Gallery",
+  "num": "TG26/TG30"
+ },
+ "swsh12tg-TG27": {
+  "tp": 452045,
+  "nombre": "Raihan",
+  "set": "SWSH12: Silver Tempest Trainer Gallery",
+  "num": "TG27/TG30"
+ },
+ "swsh12tg-TG28": {
+  "tp": 452047,
+  "nombre": "Sordward & Shielbert",
+  "set": "SWSH12: Silver Tempest Trainer Gallery",
+  "num": "TG28/TG30"
+ },
+ "swsh12.5gg-GG57": {
+  "tp": 478085,
+  "nombre": "Adaman",
+  "set": "SWSH: Crown Zenith: Galarian Gallery",
+  "num": "GG57/GG70"
+ },
+ "swsh12.5gg-GG58": {
+  "tp": 478086,
+  "nombre": "Cheren's Care",
+  "set": "SWSH: Crown Zenith: Galarian Gallery",
+  "num": "GG58/GG70"
+ },
+ "swsh12.5gg-GG59": {
+  "tp": 478087,
+  "nombre": "Colress's Experiment",
+  "set": "SWSH: Crown Zenith: Galarian Gallery",
+  "num": "GG59/GG70"
+ },
+ "swsh12.5gg-GG60": {
+  "tp": 477052,
+  "nombre": "Cynthia's Ambition",
+  "set": "SWSH: Crown Zenith: Galarian Gallery",
+  "num": "GG60/GG70"
+ },
+ "swsh12.5gg-GG61": {
+  "tp": 477058,
+  "nombre": "Gardenia's Vigor",
+  "set": "SWSH: Crown Zenith: Galarian Gallery",
+  "num": "GG61/GG70"
+ },
+ "swsh12.5gg-GG62": {
+  "tp": 478091,
+  "nombre": "Grant",
+  "set": "SWSH: Crown Zenith: Galarian Gallery",
+  "num": "GG62/GG70"
+ },
+ "swsh12.5gg-GG63": {
+  "tp": 478092,
+  "nombre": "Irida",
+  "set": "SWSH: Crown Zenith: Galarian Gallery",
+  "num": "GG63/GG70"
+ },
+ "swsh12.5gg-GG64": {
+  "tp": 478093,
+  "nombre": "Melony",
+  "set": "SWSH: Crown Zenith: Galarian Gallery",
+  "num": "GG64/GG70"
+ },
+ "swsh12.5gg-GG65": {
+  "tp": 478095,
+  "nombre": "Raihan",
+  "set": "SWSH: Crown Zenith: Galarian Gallery",
+  "num": "GG65/GG70"
+ },
+ "swsh12.5gg-GG66": {
+  "tp": 478096,
+  "nombre": "Roxanne",
+  "set": "SWSH: Crown Zenith: Galarian Gallery",
+  "num": "GG66/GG70"
+ },
+ "svp-114": {
+  "tp": 551687,
+  "nombre": "Picnicker - 114",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "114"
+ },
+ "svp-124": {
+  "tp": 545661,
+  "nombre": "Iono - 124",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "124"
+ },
+ "svp-219": {
+  "tp": 664825,
+  "nombre": "Black Belt's Training - 219",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "219"
+ },
+ "svp-220": {
+  "tp": 664824,
+  "nombre": "Black Belt's Training - 220",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "220"
+ },
+ "svp-221": {
+  "tp": 664829,
+  "nombre": "Professor's Research [Professor Birch] - 221",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "221"
+ },
+ "svp-222": {
+  "tp": 664827,
+  "nombre": "Professor's Research [Professor Kukui] - 222",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "222"
+ },
+ "svp-223": {
+  "tp": 664828,
+  "nombre": "Professor's Research [Professor Magnolia] - 223",
+  "set": "SV: Scarlet & Violet Promo Cards",
+  "num": "223"
  }
 }

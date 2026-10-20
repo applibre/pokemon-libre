@@ -3626,5 +3626,4445 @@
  "30th-154": {
   "tc": 89658,
   "slug": "gengar-ex-30th-celebration-154-128"
+ },
+ "30th-c-001": {
+  "tc": 89675,
+  "slug": "charizard-30th-celebration-4-102"
+ },
+ "30th-c-008": {
+  "tc": 89699,
+  "slug": "pikachu-and-zekrom-gx-30th-celebration-33-181"
+ },
+ "30th-c-014": {
+  "tc": 89676,
+  "slug": "pikachu-30th-celebration-58-102"
+ },
+ "30th-c-018": {
+  "tc": 89700,
+  "slug": "gengar-30th-celebration-94-102"
+ },
+ "base1-2~shadowless": {
+  "tc": 126,
+  "slug": "blastoise-base-set-2-102"
+ },
+ "base1-4~black-dot-error": {
+  "tc": 211,
+  "slug": "charizard-base-set-4-102"
+ },
+ "base1-4~shadowless": {
+  "tc": 211,
+  "slug": "charizard-base-set-4-102"
+ },
+ "base1-4~celebrations-metal-card": {
+  "tc": 211,
+  "slug": "charizard-base-set-4-102"
+ },
+ "base1-14~shadowless": {
+  "tc": 1445,
+  "slug": "raichu-base-set-14-102"
+ },
+ "base1-15~shadowless": {
+  "tc": 1872,
+  "slug": "venusaur-base-set-15-102"
+ },
+ "base1-24~shadowless": {
+  "tc": 223,
+  "slug": "charmeleon-base-set-24-102"
+ },
+ "base1-29~shadowless": {
+  "tc": 717,
+  "slug": "haunter-base-set-29-102"
+ },
+ "base1-30~shadowless": {
+  "tc": 794,
+  "slug": "ivysaur-base-set-30-102"
+ },
+ "base1-42~shadowless": {
+  "tc": 1916,
+  "slug": "wartortle-base-set-42-102"
+ },
+ "base1-44~shadowless": {
+  "tc": 172,
+  "slug": "bulbasaur-base-set-44-102"
+ },
+ "base1-46~shadowless": {
+  "tc": 217,
+  "slug": "charmander-base-set-46-102"
+ },
+ "base1-50~shadowless": {
+  "tc": 605,
+  "slug": "gastly-base-set-50-102"
+ },
+ "base1-58~shadowless": {
+  "tc": 1323,
+  "slug": "pikachu-base-set-58-102"
+ },
+ "base1-58~shadowless-red-cheeks": {
+  "tc": 1323,
+  "slug": "pikachu-base-set-58-102"
+ },
+ "base1-58~e3-stamped": {
+  "tc": 1323,
+  "slug": "pikachu-base-set-58-102"
+ },
+ "base1-58~e3-stamped-with-red-cheeks": {
+  "tc": 1323,
+  "slug": "pikachu-base-set-58-102"
+ },
+ "base1-58~poketour-1999": {
+  "tc": 1323,
+  "slug": "pikachu-base-set-58-102"
+ },
+ "base1-58~celebrations-metal-card": {
+  "tc": 1323,
+  "slug": "pikachu-base-set-58-102"
+ },
+ "base1-63~shadowless": {
+  "tc": 1690,
+  "slug": "squirtle-base-set-63-102"
+ },
+ "base2-60~w-stamped": {
+  "tc": 1324,
+  "slug": "pikachu-jungle-60-64"
+ },
+ "basep-1~misprint": {
+  "tc": 1318,
+  "slug": "pikachu-wizards-of-the-coast-promos-1"
+ },
+ "base4-63~w-stamped": {
+  "tc": 9425,
+  "slug": "wartortle-base-set-2-63-130"
+ },
+ "base5-32~w-stamped": {
+  "tc": 298,
+  "slug": "dark-charmeleon-team-rocket-32-82"
+ },
+ "bog-6~winner": {
+  "tc": 9848,
+  "slug": "dark-ivysaur-best-of-game-6"
+ },
+ "bog-7~winner": {
+  "tc": 360,
+  "slug": "dark-venusaur-best-of-game-7"
+ },
+ "np-12~10th-anniversary": {
+  "tc": 1320,
+  "slug": "pikachu-nintendo-promos-012"
+ },
+ "ex3-98~city-championships": {
+  "tc": 222,
+  "slug": "charmander-ex-dragon-98-97"
+ },
+ "ex3-99~state-championship": {
+  "tc": 226,
+  "slug": "charmeleon-ex-dragon-99-97"
+ },
+ "ex3-100~national-championships": {
+  "tc": 216,
+  "slug": "charizard-ex-dragon-100-97"
+ },
+ "ex6-50~mundial-2006-hiroki-yano": {
+  "tc": 2233,
+  "slug": "wartortle-ex-firered-and-leafgreen-50-112"
+ },
+ "ex6-83~mundial-2006-hiroki-yano": {
+  "tc": 2266,
+  "slug": "squirtle-ex-firered-and-leafgreen-83-112"
+ },
+ "ex6-104~mundial-2006-hiroki-yano": {
+  "tc": 2287,
+  "slug": "blastoise-ex-ex-firered-and-leafgreen-104-112"
+ },
+ "ex9-60~sdcc-2005": {
+  "tc": 2628,
+  "slug": "pikachu-ex-emerald-60-106"
+ },
+ "ex12-5~gym-challenge": {
+  "tc": 2958,
+  "slug": "gengar-ex-legend-maker-5-92"
+ },
+ "ex14-14~national-championships": {
+  "tc": 3217,
+  "slug": "blastoise-ex-crystal-guardians-14-100"
+ },
+ "ex14-14~national-championships-staff": {
+  "tc": 3217,
+  "slug": "blastoise-ex-crystal-guardians-14-100"
+ },
+ "ex14-28~regional-championships": {
+  "tc": 3231,
+  "slug": "venusaur-ex-crystal-guardians-28-100"
+ },
+ "ex14-35~prerelease": {
+  "tc": 3238,
+  "slug": "ivysaur-ex-crystal-guardians-35-100"
+ },
+ "ex14-42~state-championships": {
+  "tc": 3245,
+  "slug": "wartortle-ex-crystal-guardians-42-100"
+ },
+ "ex14-63~city-championships": {
+  "tc": 3266,
+  "slug": "squirtle-ex-crystal-guardians-63-100"
+ },
+ "dp2-94~burger-king-diamond-pearl": {
+  "tc": 3775,
+  "slug": "pikachu-mysterious-treasures-94-123"
+ },
+ "pop6-9~pokemon-day-stamped": {
+  "tc": 9914,
+  "slug": "pikachu-pop-series-6-9-17"
+ },
+ "dp5-68~calendario-countdown": {
+  "tc": 4159,
+  "slug": "munchlax-majestic-dawn-68-100"
+ },
+ "dp5-70~burger-king-platinum": {
+  "tc": 4161,
+  "slug": "pikachu-majestic-dawn-70-100"
+ },
+ "dp7-18~mundial-2009-jason-martinez": {
+  "tc": 4377,
+  "slug": "gengar-stormfront-18-100"
+ },
+ "dp7-40~mundial-2009-jason-martinez": {
+  "tc": 4399,
+  "slug": "haunter-stormfront-40-100"
+ },
+ "dp7-45~burger-king-platinum": {
+  "tc": 4404,
+  "slug": "pichu-stormfront-45-100"
+ },
+ "dp7-62~mundial-2009-jason-martinez": {
+  "tc": 4420,
+  "slug": "gastly-stormfront-62-100"
+ },
+ "pop9-15~pokemon-day-2009": {
+  "tc": 4757,
+  "slug": "pikachu-pop-series-9-15-17"
+ },
+ "pl2-33~league-promo": {
+  "tc": 4655,
+  "slug": "snorlax-rising-rivals-33-111"
+ },
+ "pl4-1~cracked-ice-holo": {
+  "tc": 4927,
+  "slug": "charizard-arceus-1-99"
+ },
+ "pl4-27~prerelease": {
+  "tc": 4953,
+  "slug": "raichu-arceus-27-99"
+ },
+ "pl4-27~prerelease-staff": {
+  "tc": 4953,
+  "slug": "raichu-arceus-27-99"
+ },
+ "hgss1-10~exclusiva-de-mazo-cracked-ice-holo": {
+  "tc": 5047,
+  "slug": "raichu-heartgold-and-soulsilver-10-123"
+ },
+ "hgss1-28~mundial-2011-ross-cawthon": {
+  "tc": 5065,
+  "slug": "pichu-heartgold-and-soulsilver-28-123"
+ },
+ "hgss1-28~prerelease": {
+  "tc": 5065,
+  "slug": "pichu-heartgold-and-soulsilver-28-123"
+ },
+ "hgss1-28~prerelease-staff": {
+  "tc": 5065,
+  "slug": "pichu-heartgold-and-soulsilver-28-123"
+ },
+ "hgss2-13~prerelease": {
+  "tc": 5195,
+  "slug": "blastoise-unleashed-13-95"
+ },
+ "hgss2-13~prerelease-staff": {
+  "tc": 5195,
+  "slug": "blastoise-unleashed-13-95"
+ },
+ "hgss2-13~cracked-ice-holo": {
+  "tc": 5195,
+  "slug": "blastoise-unleashed-13-95"
+ },
+ "col1-33~prerelease": {
+  "tc": 5558,
+  "slug": "snorlax-call-of-legends-33-95"
+ },
+ "col1-33~prerelease-staff": {
+  "tc": 5558,
+  "slug": "snorlax-call-of-legends-33-95"
+ },
+ "bw4-40~exclusiva-de-blister-cosmos-holo": {
+  "tc": 6031,
+  "slug": "raichu-next-destinies-40-99"
+ },
+ "bw5-1~build-a-bear-workshop-exclusive": {
+  "tc": 6107,
+  "slug": "bulbasaur-dark-explorers-1-108"
+ },
+ "bw5-3~exclusiva-de-blister-cosmos-holo": {
+  "tc": 6109,
+  "slug": "venusaur-dark-explorers-3-108"
+ },
+ "bw7-20~exclusiva-de-blister-cosmos-holo": {
+  "tc": 6393,
+  "slug": "charizard-boundaries-crossed-20-149"
+ },
+ "bw10-14~build-a-bear-workshop-exclusive": {
+  "tc": 6833,
+  "slug": "squirtle-plasma-blast-14-101"
+ },
+ "bw10-16~mundial-2015-jacob-van-wagner": {
+  "tc": 6835,
+  "slug": "blastoise-plasma-blast-16-101"
+ },
+ "bw10-16~exclusiva-de-blister-cosmos-holo": {
+  "tc": 6835,
+  "slug": "blastoise-plasma-blast-16-101"
+ },
+ "bw11-17~build-a-bear-workshop-exclusive": {
+  "tc": 6941,
+  "slug": "charmander-legendary-treasures-17-113"
+ },
+ "bw11-19~cosmos-holo": {
+  "tc": 6943,
+  "slug": "charizard-legendary-treasures-19-113"
+ },
+ "xy1-42~2014-movie-promo": {
+  "tc": 7120,
+  "slug": "pikachu-xy-42-146"
+ },
+ "xy1-43~exclusiva-de-blister-cosmos-holo": {
+  "tc": 7121,
+  "slug": "raichu-xy-43-146"
+ },
+ "xy2-80~build-a-bear-workshop-exclusive": {
+  "tc": 7489,
+  "slug": "snorlax-flashfire-80-106"
+ },
+ "xy6-20~build-a-bear-workshop-exclusive": {
+  "tc": 8045,
+  "slug": "pikachu-roaring-skies-20-108"
+ },
+ "xy8-49~exclusiva-de-mazo-xy-breakthrough-cracked-ice-holo": {
+  "tc": 8284,
+  "slug": "raichu-breakthrough-49-162"
+ },
+ "xy8-60~cosmos-holo": {
+  "tc": 8295,
+  "slug": "gengar-breakthrough-60-162"
+ },
+ "g1-26~toys-r-us": {
+  "tc": 8592,
+  "slug": "pikachu-generations-26-83"
+ },
+ "g1-26~20th-anniversary": {
+  "tc": 8592,
+  "slug": "pikachu-generations-26-83"
+ },
+ "xy12-9~toys-r-us-promo": {
+  "tc": 8984,
+  "slug": "charmander-evolutions-9-108"
+ },
+ "xy12-11~xy-evolutions-prerelease": {
+  "tc": 8986,
+  "slug": "charizard-evolutions-11-108"
+ },
+ "xy12-11~prerelease": {
+  "tc": 8986,
+  "slug": "charizard-evolutions-11-108"
+ },
+ "xy12-35~exclusiva-de-mazo-cracked-ice-holo": {
+  "tc": 9010,
+  "slug": "pikachu-evolutions-35-108"
+ },
+ "sm3-18~battle-academy-2020-n-o-1-charizard": {
+  "tc": 9696,
+  "slug": "charmander-burning-shadows-18-147"
+ },
+ "sm3-18~battle-academy-2020-n-o-16-charizard": {
+  "tc": 9696,
+  "slug": "charmander-burning-shadows-18-147"
+ },
+ "sm3-18~battle-academy-2020-n-o-42-charizard": {
+  "tc": 9696,
+  "slug": "charmander-burning-shadows-18-147"
+ },
+ "sm3-18~battle-academy-2020-n-o-56-charizard": {
+  "tc": 9696,
+  "slug": "charmander-burning-shadows-18-147"
+ },
+ "sm3-18a~general-mills-promo": {
+  "tc": 12586,
+  "slug": "charmander-yellow-a-alternate-18a-147"
+ },
+ "sm3-41~league-challenge-3rd-place": {
+  "tc": 9719,
+  "slug": "raichu-burning-shadows-41-147"
+ },
+ "sm3-41~league-challenge-2nd-place": {
+  "tc": 9719,
+  "slug": "raichu-burning-shadows-41-147"
+ },
+ "sm3-41~league-challenge-1st-place": {
+  "tc": 9719,
+  "slug": "raichu-burning-shadows-41-147"
+ },
+ "sm3-41~league-challenge-4th-place": {
+  "tc": 9719,
+  "slug": "raichu-burning-shadows-41-147"
+ },
+ "sm3-41~exclusiva-de-blister-cosmos-holo": {
+  "tc": 9719,
+  "slug": "raichu-burning-shadows-41-147"
+ },
+ "sm3.5-1~general-mills-promo": {
+  "tc": 9915,
+  "slug": "bulbasaur-shining-legends-1-73"
+ },
+ "sm3.5-28~exclusiva-de-mazo-cracked-ice-holo": {
+  "tc": 9942,
+  "slug": "pikachu-shining-legends-28-73"
+ },
+ "sm3.5-28~water-web-holo": {
+  "tc": 9942,
+  "slug": "pikachu-shining-legends-28-73"
+ },
+ "sm3.5-28~general-mills": {
+  "tc": 9942,
+  "slug": "pikachu-shining-legends-28-73"
+ },
+ "sm3.5-28~cosmos-holo": {
+  "tc": 9942,
+  "slug": "pikachu-shining-legends-28-73"
+ },
+ "sm7.5-3~battle-academy-2020-n-o-39-charizard": {
+  "tc": 11000,
+  "slug": "charizard-dragon-majesty-3-70"
+ },
+ "sm9-14~costco-exclusive": {
+  "tc": 12000,
+  "slug": "charizard-team-up-14-181"
+ },
+ "sm9-14~library-exclusive": {
+  "tc": 12000,
+  "slug": "charizard-team-up-14-181"
+ },
+ "sm9-25~exclusiva-de-mazo-cracked-ice-holo": {
+  "tc": 12011,
+  "slug": "blastoise-team-up-25-181"
+ },
+ "sm9-33~mundial-2019-haruki-miyamoto": {
+  "tc": 12019,
+  "slug": "pikachu-and-zekrom-gx-team-up-33-181"
+ },
+ "sm10-20~mundial-2019-kaya-lichtleitner": {
+  "tc": 12310,
+  "slug": "reshiram-and-charizard-gx-unbroken-bonds-20-214"
+ },
+ "sm10-20~mundial-2019-henry-brand": {
+  "tc": 12310,
+  "slug": "reshiram-and-charizard-gx-unbroken-bonds-20-214"
+ },
+ "sm11-54~mundial-2019-haruki-miyamoto": {
+  "tc": 12939,
+  "slug": "raichu-and-alolan-raichu-gx-unified-minds-54-236"
+ },
+ "sm115-8~battle-academy-2020-n-o-15-charizard": {
+  "tc": 13195,
+  "slug": "charmeleon-hidden-fates-8-68"
+ },
+ "sm115-8~battle-academy-2020-n-o-30-charizard": {
+  "tc": 13195,
+  "slug": "charmeleon-hidden-fates-8-68"
+ },
+ "sm115-8~battle-academy-2020-n-o-51-charizard": {
+  "tc": 13195,
+  "slug": "charmeleon-hidden-fates-8-68"
+ },
+ "sm115-9~battle-academy-2020-n-o-60-charizard": {
+  "tc": 13196,
+  "slug": "charizard-gx-hidden-fates-9-68"
+ },
+ "sm115-19~battle-academy-2020-n-o-2-pikachu": {
+  "tc": 13206,
+  "slug": "pikachu-hidden-fates-19-68"
+ },
+ "sm115-19~battle-academy-2020-n-o-15-pikachu": {
+  "tc": 13206,
+  "slug": "pikachu-hidden-fates-19-68"
+ },
+ "sm115-19~battle-academy-2020-n-o-30-pikachu": {
+  "tc": 13206,
+  "slug": "pikachu-hidden-fates-19-68"
+ },
+ "sm115-19~battle-academy-2020-n-o-55-pikachu": {
+  "tc": 13206,
+  "slug": "pikachu-hidden-fates-19-68"
+ },
+ "sm115-20~battle-academy-2020-n-o-60-pikachu": {
+  "tc": 13207,
+  "slug": "raichu-gx-hidden-fates-20-68"
+ },
+ "sm115-50~battle-academy-2020": {
+  "tc": 13237,
+  "slug": "snorlax-hidden-fates-50-68"
+ },
+ "swshp-SWSH039~general-mills": {
+  "tc": 15513,
+  "slug": "pikachu-sword-and-shield-promos-swsh039"
+ },
+ "swshp-SWSH066~prerelease-staff": {
+  "tc": 16839,
+  "slug": "charizard-sword-and-shield-promos-swsh066"
+ },
+ "swshp-SWSH068~prerelease-staff": {
+  "tc": 16841,
+  "slug": "snorlax-sword-and-shield-promos-swsh068"
+ },
+ "swsh1-65~cosmos-holo": {
+  "tc": 15007,
+  "slug": "pikachu-sword-and-shield-065-202"
+ },
+ "swsh1-65~reverse-cosmos-holo": {
+  "tc": 15007,
+  "slug": "pikachu-sword-and-shield-065-202"
+ },
+ "swsh1-85~library-exclusive": {
+  "tc": 15026,
+  "slug": "gengar-sword-and-shield-085-202"
+ },
+ "swsh1-140~exclusiva-de-blister-cosmos-holo": {
+  "tc": 15078,
+  "slug": "snorlax-sword-and-shield-140-202"
+ },
+ "swsh2-141~cosmos-holo": {
+  "tc": 15385,
+  "slug": "snorlax-rebel-clash-141-192"
+ },
+ "swsh3-19~prize-pack": {
+  "tc": 15781,
+  "slug": "charizard-v-darkness-ablaze-019-189"
+ },
+ "swsh3-20~prize-pack": {
+  "tc": 15782,
+  "slug": "charizard-vmax-darkness-ablaze-020-189"
+ },
+ "swsh4-23~reverse-cosmos-holo": {
+  "tc": 16655,
+  "slug": "charmander-vivid-voltage-023-185"
+ },
+ "swsh4-25~prize-pack": {
+  "tc": 16657,
+  "slug": "charizard-vivid-voltage-025-185"
+ },
+ "swsh4-25~exclusiva-de-mazo-cracked-ice-holo": {
+  "tc": 16657,
+  "slug": "charizard-vivid-voltage-025-185"
+ },
+ "swsh4-43~prize-pack": {
+  "tc": 16675,
+  "slug": "pikachu-v-vivid-voltage-043-185"
+ },
+ "swsh4-43~battle-academy-2022-n-o-60-pikachu": {
+  "tc": 16675,
+  "slug": "pikachu-v-vivid-voltage-043-185"
+ },
+ "swsh4-44~prize-pack": {
+  "tc": 16676,
+  "slug": "pikachu-vmax-vivid-voltage-044-185"
+ },
+ "swsh4-131~prize-pack": {
+  "tc": 16763,
+  "slug": "snorlax-vivid-voltage-131-185"
+ },
+ "swsh6-55~trick-or-trade": {
+  "tc": 34634,
+  "slug": "gastly-chilling-reign-055-198"
+ },
+ "swsh6-56~trick-or-trade": {
+  "tc": 34635,
+  "slug": "haunter-chilling-reign-056-198"
+ },
+ "swsh6-57~trick-or-trade-2021-copyright-date": {
+  "tc": 34636,
+  "slug": "gengar-chilling-reign-057-198"
+ },
+ "swsh7-49~trick-or-trade": {
+  "tc": 35184,
+  "slug": "pikachu-evolving-skies-049-203"
+ },
+ "swsh7-49~pokemon-league": {
+  "tc": 35184,
+  "slug": "pikachu-evolving-skies-049-203"
+ },
+ "swsh8-156~prize-pack": {
+  "tc": 35913,
+  "slug": "gengar-v-fusion-strike-156-264"
+ },
+ "swsh8-157~prize-pack": {
+  "tc": 35914,
+  "slug": "gengar-vmax-fusion-strike-157-264"
+ },
+ "swsh9-017~prize-pack": {
+  "tc": 37074,
+  "slug": "charizard-v-brilliant-stars-017-172"
+ },
+ "swsh9-018~prize-pack": {
+  "tc": 37075,
+  "slug": "charizard-vstar-brilliant-stars-018-172"
+ },
+ "swsh9-045~prize-pack": {
+  "tc": 37102,
+  "slug": "raichu-v-brilliant-stars-045-172"
+ },
+ "swsh10.5-055~cosmos-holo": {
+  "tc": 38470,
+  "slug": "snorlax-pokemon-go-055-078"
+ },
+ "swsh11-064~trick-or-trade": {
+  "tc": 38911,
+  "slug": "gastly-lost-origin-064-196"
+ },
+ "swsh11-065~trick-or-trade": {
+  "tc": 38912,
+  "slug": "haunter-lost-origin-065-196"
+ },
+ "swsh11-066~trick-or-trade-2022-copyright-date": {
+  "tc": 38913,
+  "slug": "gengar-lost-origin-066-196"
+ },
+ "swsh11-066~prize-pack": {
+  "tc": 38913,
+  "slug": "gengar-lost-origin-066-196"
+ },
+ "swsh11-143~prize-pack": {
+  "tc": 38990,
+  "slug": "snorlax-lost-origin-143-196"
+ },
+ "swsh12-049~holiday-calendar": {
+  "tc": 39286,
+  "slug": "pikachu-silver-tempest-049-195"
+ },
+ "swsh12.5-020~prize-pack": {
+  "tc": 39868,
+  "slug": "radiant-charizard-crown-zenith-020-159"
+ },
+ "sv02-062~trick-or-trade": {
+  "tc": 41263,
+  "slug": "pikachu-paldea-evolved-062-193"
+ },
+ "sv02-062~rain-city-showcase": {
+  "tc": 41263,
+  "slug": "pikachu-paldea-evolved-062-193"
+ },
+ "sv02-063~holiday-calendar": {
+  "tc": 41264,
+  "slug": "pikachu-ex-paldea-evolved-063-193"
+ },
+ "sv03-125~prize-pack": {
+  "tc": 42234,
+  "slug": "charizard-ex-obsidian-flames-125-197"
+ },
+ "sv03.5-001~best-buy-exclusive": {
+  "tc": 42370,
+  "slug": "bulbasaur-scarlet-and-violet-151-001-165"
+ },
+ "sv03.5-001~reverse-cosmos-holo-costco-exclusive": {
+  "tc": 42370,
+  "slug": "bulbasaur-scarlet-and-violet-151-001-165"
+ },
+ "sv03.5-004~gamestop-exclusive": {
+  "tc": 42373,
+  "slug": "charmander-scarlet-and-violet-151-004-165"
+ },
+ "sv03.5-004~ebgames-exclusive": {
+  "tc": 42373,
+  "slug": "charmander-scarlet-and-violet-151-004-165"
+ },
+ "sv03.5-004~cosmos-holo": {
+  "tc": 42373,
+  "slug": "charmander-scarlet-and-violet-151-004-165"
+ },
+ "sv03.5-004~reverse-cosmos-holo-costco-exclusive": {
+  "tc": 42373,
+  "slug": "charmander-scarlet-and-violet-151-004-165"
+ },
+ "sv03.5-005~cosmos-holo": {
+  "tc": 42374,
+  "slug": "charmeleon-scarlet-and-violet-151-005-165"
+ },
+ "sv03.5-007~pokemon-center-exclusive": {
+  "tc": 42376,
+  "slug": "squirtle-scarlet-and-violet-151-007-165"
+ },
+ "sv03.5-007~reverse-cosmos-holo-costco-exclusive": {
+  "tc": 42376,
+  "slug": "squirtle-scarlet-and-violet-151-007-165"
+ },
+ "sv03.5-025~pokemon-together": {
+  "tc": 42394,
+  "slug": "pikachu-scarlet-and-violet-151-025-165"
+ },
+ "sv03.5-025~reverse-cosmos-holo-costco-exclusive": {
+  "tc": 42394,
+  "slug": "pikachu-scarlet-and-violet-151-025-165"
+ },
+ "sv03.5-025~holiday-calendar": {
+  "tc": 42394,
+  "slug": "pikachu-scarlet-and-violet-151-025-165"
+ },
+ "sv03.5-026~cosmos-holo": {
+  "tc": 42395,
+  "slug": "raichu-scarlet-and-violet-151-026-165"
+ },
+ "sv03.5-094~cosmos-holo": {
+  "tc": 42463,
+  "slug": "gengar-scarlet-and-violet-151-094-165"
+ },
+ "sv04.5-007~cosmos-holo": {
+  "tc": 43927,
+  "slug": "charmander-paldean-fates-007-091"
+ },
+ "sv04.5-008~cosmos-holo": {
+  "tc": 43928,
+  "slug": "charmeleon-paldean-fates-008-091"
+ },
+ "sv04.5-018~trick-or-trade-cosmos-holo": {
+  "tc": 43938,
+  "slug": "pikachu-paldean-fates-018-091"
+ },
+ "sv04.5-018~reverse-cosmos-holo": {
+  "tc": 43938,
+  "slug": "pikachu-paldean-fates-018-091"
+ },
+ "sv04.5-057~trick-or-trade-cosmos-holo": {
+  "tc": 43977,
+  "slug": "gengar-paldean-fates-057-091"
+ },
+ "sv05-051~cosmos-holo": {
+  "tc": 44541,
+  "slug": "pikachu-temporal-forces-051-162"
+ },
+ "sv05-051~pokemon-day-2026": {
+  "tc": 44541,
+  "slug": "pikachu-temporal-forces-051-162"
+ },
+ "sv05-102~trick-or-trade": {
+  "tc": 44592,
+  "slug": "gastly-temporal-forces-102-162"
+ },
+ "sv05-103~trick-or-trade": {
+  "tc": 44593,
+  "slug": "haunter-temporal-forces-103-162"
+ },
+ "sv07-001~stellar-crown-stamp": {
+  "tc": 45986,
+  "slug": "venusaur-ex-stellar-crown-001-142"
+ },
+ "sv07-030~stellar-crown-stamp": {
+  "tc": 46015,
+  "slug": "blastoise-ex-stellar-crown-030-142"
+ },
+ "sv08-057~prize-pack": {
+  "tc": 46395,
+  "slug": "pikachu-ex-surging-sparks-057-191"
+ },
+ "sv09-117~prize-pack": {
+  "tc": 48029,
+  "slug": "hops-snorlax-journey-together-117-159"
+ },
+ "sv09-117~prize-pack-cosmos-holo": {
+  "tc": 48029,
+  "slug": "hops-snorlax-journey-together-117-159"
+ },
+ "sv09-117~gamestop-cosmos-holo": {
+  "tc": 48029,
+  "slug": "hops-snorlax-journey-together-117-159"
+ },
+ "sv09-117~cosmos-holo": {
+  "tc": 48029,
+  "slug": "hops-snorlax-journey-together-117-159"
+ },
+ "sv09-117~eb-games-cosmos-holo": {
+  "tc": 48029,
+  "slug": "hops-snorlax-journey-together-117-159"
+ },
+ "me01-001~pokemon-day-2026": {
+  "tc": 51065,
+  "slug": "bulbasaur-mega-evolution-001-132"
+ },
+ "me01-003~prize-pack": {
+  "tc": 51067,
+  "slug": "mega-venusaur-ex-mega-evolution-003-132"
+ },
+ "me02-011~prize-pack": {
+  "tc": 51509,
+  "slug": "charmander-phantasmal-flames-011-094"
+ },
+ "me02-011~prize-pack-cosmos-holo": {
+  "tc": 51509,
+  "slug": "charmander-phantasmal-flames-011-094"
+ },
+ "me02-012~prize-pack": {
+  "tc": 51510,
+  "slug": "charmeleon-phantasmal-flames-012-094"
+ },
+ "me02-012~prize-pack-cosmos-holo": {
+  "tc": 51510,
+  "slug": "charmeleon-phantasmal-flames-012-094"
+ },
+ "me02-013~prize-pack": {
+  "tc": 51448,
+  "slug": "mega-charizard-x-ex-phantasmal-flames-013-094"
+ },
+ "me02-056~prize-pack": {
+  "tc": 51470,
+  "slug": "mega-gengar-ex-phantasmal-flames-056-094"
+ },
+ "me02.5-020~friend-ball": {
+  "tc": 53609,
+  "slug": "charmander-ascended-heroes-020-217"
+ },
+ "me02.5-020~energy-symbol-pattern": {
+  "tc": 53609,
+  "slug": "charmander-ascended-heroes-020-217"
+ },
+ "me02.5-020~cosmos-holo": {
+  "tc": 53609,
+  "slug": "charmander-ascended-heroes-020-217"
+ },
+ "me02.5-021~friend-ball": {
+  "tc": 53610,
+  "slug": "charmeleon-ascended-heroes-021-217"
+ },
+ "me02.5-021~energy-symbol-pattern": {
+  "tc": 53610,
+  "slug": "charmeleon-ascended-heroes-021-217"
+ },
+ "me02.5-022~prize-pack": {
+  "tc": 53611,
+  "slug": "mega-charizard-y-ex-ascended-heroes-022-217"
+ },
+ "me02.5-055~friend-ball": {
+  "tc": 53644,
+  "slug": "pikachu-ascended-heroes-055-217"
+ },
+ "me02.5-055~energy-symbol-pattern": {
+  "tc": 53644,
+  "slug": "pikachu-ascended-heroes-055-217"
+ },
+ "me02.5-056~friend-ball": {
+  "tc": 53645,
+  "slug": "raichu-ascended-heroes-056-217"
+ },
+ "me02.5-056~energy-symbol-pattern": {
+  "tc": 53645,
+  "slug": "raichu-ascended-heroes-056-217"
+ },
+ "me02.5-123~energy-symbol-pattern": {
+  "tc": 53712,
+  "slug": "gastly-ascended-heroes-123-217"
+ },
+ "me02.5-123~cosmos-holo": {
+  "tc": 53712,
+  "slug": "gastly-ascended-heroes-123-217"
+ },
+ "me02.5-124~dusk-ball": {
+  "tc": 53713,
+  "slug": "haunter-ascended-heroes-124-217"
+ },
+ "me02.5-124~energy-symbol-pattern": {
+  "tc": 53713,
+  "slug": "haunter-ascended-heroes-124-217"
+ },
+ "me03-048~prize-pack": {
+  "tc": 59006,
+  "slug": "gastly-perfect-order-048-088"
+ },
+ "me03-049~prize-pack": {
+  "tc": 59007,
+  "slug": "haunter-perfect-order-049-088"
+ },
+ "me03-050~prize-pack": {
+  "tc": 59008,
+  "slug": "gengar-perfect-order-050-088"
+ },
+ "me03-050~exclusiva-de-blister-cosmos-holo": {
+  "tc": 59008,
+  "slug": "gengar-perfect-order-050-088"
+ },
+ "me03-050~cosmos-holo-gamestop-exclusive": {
+  "tc": 59008,
+  "slug": "gengar-perfect-order-050-088"
+ },
+ "me03-050~cosmos-holo-eb-games-exclusive": {
+  "tc": 59008,
+  "slug": "gengar-perfect-order-050-088"
+ },
+ "kidswb-5": {
+  "tc": 9853,
+  "slug": "pikachu-poke-card-creator-pack-5-5"
+ },
+ "ecard1-137": {
+  "tc": 95,
+  "slug": "bills-maintenance-expedition-base-set-137-165"
+ },
+ "ecard1-138": {
+  "tc": 258,
+  "slug": "copycat-expedition-base-set-138-165"
+ },
+ "ecard1-142": {
+  "tc": 1081,
+  "slug": "marys-impulse-expedition-base-set-142-165"
+ },
+ "ecard1-145": {
+  "tc": 1357,
+  "slug": "pokemon-nurse-expedition-base-set-145-165"
+ },
+ "ecard1-148": {
+  "tc": 1415,
+  "slug": "professor-elms-training-method-expedition-base-set-148-165"
+ },
+ "ecard1-149": {
+  "tc": 1417,
+  "slug": "professor-oaks-research-expedition-base-set-149-165"
+ },
+ "ecard2-123": {
+  "tc": 585,
+  "slug": "forest-guardian-aquapolis-123-147"
+ },
+ "ecard2-126": {
+  "tc": 808,
+  "slug": "juggler-aquapolis-126-147"
+ },
+ "ecard2-130": {
+  "tc": 1354,
+  "slug": "pokemon-fan-club-aquapolis-130-147"
+ },
+ "ecard2-133": {
+  "tc": 1595,
+  "slug": "seer-aquapolis-133-147"
+ },
+ "ecard2-136": {
+  "tc": 1795,
+  "slug": "town-volunteers-aquapolis-136-147"
+ },
+ "ecard2-137": {
+  "tc": 1801,
+  "slug": "traveling-salesman-aquapolis-137-147"
+ },
+ "ecard3-120": {
+  "tc": 1484,
+  "slug": "relic-hunter-skyridge-120-144"
+ },
+ "ecard3-121": {
+  "tc": 36,
+  "slug": "apricorn-maker-skyridge-121-144"
+ },
+ "ecard3-123": {
+  "tc": 379,
+  "slug": "desert-shaman-skyridge-123-144"
+ },
+ "ecard3-125": {
+  "tc": 569,
+  "slug": "fisherman-skyridge-125-144"
+ },
+ "ecard3-138": {
+  "tc": 1284,
+  "slug": "oracle-skyridge-138-144"
+ },
+ "ecard3-140": {
+  "tc": 1828,
+  "slug": "underground-expedition-skyridge-140-144"
+ },
+ "ex1-83": {
+  "tc": 883,
+  "slug": "lady-outing-ex-ruby-and-sapphire-83-109"
+ },
+ "ex1-89": {
+  "tc": 1412,
+  "slug": "professor-birch-ex-ruby-and-sapphire-89-109"
+ },
+ "ex2-87": {
+  "tc": 887,
+  "slug": "lanettes-net-search-ex-sandstorm-87-100"
+ },
+ "ex2-89": {
+  "tc": 1911,
+  "slug": "wallys-training-ex-sandstorm-89-100"
+ },
+ "ex3-87": {
+  "tc": 1178,
+  "slug": "mr-brineys-compassion-ex-dragon-87-97"
+ },
+ "ex3-88": {
+  "tc": 1806,
+  "slug": "tv-reporter-ex-dragon-88-97"
+ },
+ "ex4-69": {
+  "tc": 2052,
+  "slug": "team-aqua-schemer-ex-team-magma-vs-team-aqua-69-95"
+ },
+ "ex4-70": {
+  "tc": 2053,
+  "slug": "team-magma-schemer-ex-team-magma-vs-team-aqua-70-95"
+ },
+ "ex4-71": {
+  "tc": 2054,
+  "slug": "archie-ex-team-magma-vs-team-aqua-71-95"
+ },
+ "ex4-73": {
+  "tc": 2056,
+  "slug": "maxie-ex-team-magma-vs-team-aqua-73-95"
+ },
+ "ex4-77": {
+  "tc": 2060,
+  "slug": "team-aqua-conspirator-ex-team-magma-vs-team-aqua-77-95"
+ },
+ "ex4-82": {
+  "tc": 2065,
+  "slug": "team-magma-conspirator-ex-team-magma-vs-team-aqua-82-95"
+ },
+ "ex5-92": {
+  "tc": 2173,
+  "slug": "stevens-advice-ex-hidden-legends-92-101"
+ },
+ "ex6-87": {
+  "tc": 2270,
+  "slug": "bills-maintenance-ex-firered-and-leafgreen-87-112"
+ },
+ "ex6-88": {
+  "tc": 2271,
+  "slug": "celios-network-ex-firered-and-leafgreen-88-112"
+ },
+ "ex6-98": {
+  "tc": 2281,
+  "slug": "prof-oaks-research-ex-firered-and-leafgreen-98-112"
+ },
+ "ex7-83": {
+  "tc": 2426,
+  "slug": "copycat-ex-team-rocket-returns-83-109"
+ },
+ "ex7-86": {
+  "tc": 2429,
+  "slug": "rockets-admin-ex-team-rocket-returns-86-109"
+ },
+ "ex7-88": {
+  "tc": 2431,
+  "slug": "rockets-mission-ex-team-rocket-returns-88-109"
+ },
+ "ex7-111": {
+  "tc": 2454,
+  "slug": "here-comes-team-rocket-ex-team-rocket-returns-111-109"
+ },
+ "ex8-87": {
+  "tc": 2547,
+  "slug": "lady-outing-ex-deoxys-87-107"
+ },
+ "ex8-90": {
+  "tc": 2550,
+  "slug": "professor-cozmos-discovery-ex-deoxys-90-107"
+ },
+ "ex9-77": {
+  "tc": 2645,
+  "slug": "lanettes-net-search-ex-emerald-77-106"
+ },
+ "ex9-79": {
+  "tc": 2647,
+  "slug": "mr-stones-project-ex-emerald-79-106"
+ },
+ "ex9-82": {
+  "tc": 2650,
+  "slug": "professor-birch-ex-emerald-82-106"
+ },
+ "ex9-84": {
+  "tc": 2652,
+  "slug": "scott-ex-emerald-84-106"
+ },
+ "ex9-85": {
+  "tc": 2653,
+  "slug": "wallys-training-ex-emerald-85-106"
+ },
+ "pop2-8": {
+  "tc": 2830,
+  "slug": "mr-brineys-compassion-pop-series-2-8-17"
+ },
+ "pop2-11": {
+  "tc": 2833,
+  "slug": "tv-reporter-pop-series-2-11-17"
+ },
+ "ex10-86": {
+  "tc": 2761,
+  "slug": "marys-request-ex-unseen-forces-86-115"
+ },
+ "ex10-89": {
+  "tc": 2764,
+  "slug": "professor-elms-training-method-ex-unseen-forces-89-115"
+ },
+ "ex11-91": {
+  "tc": 2930,
+  "slug": "holon-farmer-ex-delta-species-91-113"
+ },
+ "ex11-92": {
+  "tc": 2931,
+  "slug": "holon-lass-ex-delta-species-92-113"
+ },
+ "ex11-93": {
+  "tc": 2932,
+  "slug": "holon-mentor-ex-delta-species-93-113"
+ },
+ "ex11-95": {
+  "tc": 2934,
+  "slug": "holon-researcher-ex-delta-species-95-113"
+ },
+ "ex11-97": {
+  "tc": 2936,
+  "slug": "holon-scientist-ex-delta-species-97-113"
+ },
+ "ex12-73": {
+  "tc": 3026,
+  "slug": "fieldworker-ex-legend-maker-73-92"
+ },
+ "tk-ex-m-8": {
+  "tc": 3067,
+  "slug": "celios-network-ex-trainer-kit-2-minun-8-12"
+ },
+ "tk-ex-p-10": {
+  "tc": 3070,
+  "slug": "professor-cozmos-discovery-ex-trainer-kit-2-plusle-10-12"
+ },
+ "ex13-85": {
+  "tc": 3177,
+  "slug": "holon-adventurer-ex-holon-phantoms-85-110"
+ },
+ "ex13-88": {
+  "tc": 3180,
+  "slug": "mr-stones-project-ex-holon-phantoms-88-110"
+ },
+ "ex13-89": {
+  "tc": 3181,
+  "slug": "professor-cozmos-discovery-ex-holon-phantoms-89-110"
+ },
+ "pop4-9": {
+  "tc": 3312,
+  "slug": "pokemon-fan-club-pop-series-4-9-17"
+ },
+ "ex14-71": {
+  "tc": 3274,
+  "slug": "bills-maintenance-ex-crystal-guardians-71-100"
+ },
+ "ex14-72": {
+  "tc": 3275,
+  "slug": "castaway-ex-crystal-guardians-72-100"
+ },
+ "ex14-73": {
+  "tc": 3276,
+  "slug": "celios-network-ex-crystal-guardians-73-100"
+ },
+ "ex15-73": {
+  "tc": 3397,
+  "slug": "copycat-ex-dragon-frontiers-73-101"
+ },
+ "ex15-75": {
+  "tc": 3399,
+  "slug": "holon-mentor-ex-dragon-frontiers-75-101"
+ },
+ "ex15-76": {
+  "tc": 3400,
+  "slug": "island-hermit-ex-dragon-frontiers-76-101"
+ },
+ "ex15-77": {
+  "tc": 3401,
+  "slug": "mr-stones-project-ex-dragon-frontiers-77-101"
+ },
+ "ex15-79": {
+  "tc": 3403,
+  "slug": "professor-elms-training-method-ex-dragon-frontiers-79-101"
+ },
+ "ex15-80": {
+  "tc": 3404,
+  "slug": "professor-oaks-research-ex-dragon-frontiers-80-101"
+ },
+ "ex15-82": {
+  "tc": 3406,
+  "slug": "tv-reporter-ex-dragon-frontiers-82-101"
+ },
+ "ex16-80": {
+  "tc": 3508,
+  "slug": "professor-birch-ex-power-keepers-80-108"
+ },
+ "ex16-81": {
+  "tc": 3509,
+  "slug": "scott-ex-power-keepers-81-108"
+ },
+ "ex16-83": {
+  "tc": 3511,
+  "slug": "stevens-advice-ex-power-keepers-83-108"
+ },
+ "pop5-6": {
+  "tc": 3542,
+  "slug": "bills-maintenance-pop-series-5-6-17"
+ },
+ "dp1-112": {
+  "tc": 3665,
+  "slug": "professor-rowan-diamond-and-pearl-112-130"
+ },
+ "dp1-113": {
+  "tc": 3666,
+  "slug": "rival-diamond-and-pearl-113-130"
+ },
+ "dp2-109": {
+  "tc": 3789,
+  "slug": "bebes-search-mysterious-treasures-109-123"
+ },
+ "dp2-111": {
+  "tc": 3791,
+  "slug": "fossil-excavator-mysterious-treasures-111-123"
+ },
+ "dp2-115": {
+  "tc": 3795,
+  "slug": "team-galactics-wager-mysterious-treasures-115-123"
+ },
+ "dp3-119": {
+  "tc": 3920,
+  "slug": "bebes-search-secret-wonders-119-132"
+ },
+ "dp3-122": {
+  "tc": 3923,
+  "slug": "professor-oaks-visit-secret-wonders-122-132"
+ },
+ "dp3-123": {
+  "tc": 3924,
+  "slug": "professor-rowan-secret-wonders-123-132"
+ },
+ "dp3-124": {
+  "tc": 3925,
+  "slug": "rival-secret-wonders-124-132"
+ },
+ "dp3-125": {
+  "tc": 3926,
+  "slug": "roseannes-research-secret-wonders-125-132"
+ },
+ "dp3-126": {
+  "tc": 3927,
+  "slug": "team-galactics-mars-secret-wonders-126-132"
+ },
+ "dp4-98": {
+  "tc": 4069,
+  "slug": "felicitys-drawing-great-encounters-98-106"
+ },
+ "dp5-82": {
+  "tc": 4171,
+  "slug": "fossil-excavator-majestic-dawn-82-100"
+ },
+ "dp5-83": {
+  "tc": 4172,
+  "slug": "moms-kindness-majestic-dawn-83-100"
+ },
+ "dp6-130": {
+  "tc": 4319,
+  "slug": "bucks-training-legends-awakened-130-146"
+ },
+ "dp6-131": {
+  "tc": 4320,
+  "slug": "cynthias-feelings-legends-awakened-131-146"
+ },
+ "dp7-87": {
+  "tc": 4444,
+  "slug": "marleys-request-stormfront-87-100"
+ },
+ "pl1-105": {
+  "tc": 4594,
+  "slug": "cyruss-conspiracy-platinum-105-127"
+ },
+ "pl1-109": {
+  "tc": 4598,
+  "slug": "lookers-investigation-platinum-109-127"
+ },
+ "pl2-88": {
+  "tc": 4710,
+  "slug": "aarons-collection-rising-rivals-88-111"
+ },
+ "pl2-89": {
+  "tc": 4711,
+  "slug": "bebes-search-rising-rivals-89-111"
+ },
+ "pl2-90": {
+  "tc": 4712,
+  "slug": "berthas-warmth-rising-rivals-90-111"
+ },
+ "pl2-91": {
+  "tc": 4713,
+  "slug": "flints-willpower-rising-rivals-91-111"
+ },
+ "pl2-92": {
+  "tc": 4714,
+  "slug": "lucians-assignment-rising-rivals-92-111"
+ },
+ "pl2-97": {
+  "tc": 4719,
+  "slug": "underground-expedition-rising-rivals-97-111"
+ },
+ "pl2-98": {
+  "tc": 4720,
+  "slug": "volkners-philosophy-rising-rivals-98-111"
+ },
+ "pl2-RT6": {
+  "tc": 4742,
+  "slug": "charons-choice-rising-rivals-rt6"
+ },
+ "pl3-136": {
+  "tc": 4904,
+  "slug": "cynthias-guidance-supreme-victors-136-147"
+ },
+ "pl3-137": {
+  "tc": 4905,
+  "slug": "cyruss-initiative-supreme-victors-137-147"
+ },
+ "pl3-139": {
+  "tc": 4907,
+  "slug": "palmers-contribution-supreme-victors-139-147"
+ },
+ "pl4-85": {
+  "tc": 5011,
+  "slug": "department-store-girl-arceus-85-99"
+ },
+ "pl4-90": {
+  "tc": 5016,
+  "slug": "professor-oaks-visit-arceus-90-99"
+ },
+ "hgss1-89": {
+  "tc": 5126,
+  "slug": "bill-heartgold-and-soulsilver-89-123"
+ },
+ "hgss1-90": {
+  "tc": 5127,
+  "slug": "copycat-heartgold-and-soulsilver-90-123"
+ },
+ "hgss1-92": {
+  "tc": 5129,
+  "slug": "fisherman-heartgold-and-soulsilver-92-123"
+ },
+ "hgss1-97": {
+  "tc": 5134,
+  "slug": "pokemon-collector-heartgold-and-soulsilver-97-123"
+ },
+ "hgss1-100": {
+  "tc": 5137,
+  "slug": "professor-elms-training-method-heartgold-and-soulsilver-100-123"
+ },
+ "hgss1-101": {
+  "tc": 5138,
+  "slug": "professor-oaks-new-theory-heartgold-and-soulsilver-101-123"
+ },
+ "tk-hs-g-5": {
+  "tc": 5500,
+  "slug": "bill-hgss-trainer-kit-gyarados-5-30"
+ },
+ "tk-hs-g-18": {
+  "tc": 5513,
+  "slug": "bill-hgss-trainer-kit-gyarados-18-30"
+ },
+ "tk-hs-g-25": {
+  "tc": 5520,
+  "slug": "professor-elms-training-method-hgss-trainer-kit-gyarados-25-30"
+ },
+ "tk-hs-r-21": {
+  "tc": 12644,
+  "slug": "copycat-hgss-trainer-kit-raichu-21-30"
+ },
+ "tk-hs-r-22": {
+  "tc": 12651,
+  "slug": "pokemon-collector-hgss-trainer-kit-raichu-22-30"
+ },
+ "tk-hs-r-27": {
+  "tc": 12655,
+  "slug": "pokemon-collector-hgss-trainer-kit-raichu-27-30"
+ },
+ "hgss2-71": {
+  "tc": 5253,
+  "slug": "cheerleaders-cheer-unleashed-71-95"
+ },
+ "hgss2-73": {
+  "tc": 5255,
+  "slug": "emcees-chatter-unleashed-73-95"
+ },
+ "hgss2-75": {
+  "tc": 5257,
+  "slug": "engineers-adjustments-unleashed-75-95"
+ },
+ "hgss2-77": {
+  "tc": 5259,
+  "slug": "interviewers-questions-unleashed-77-95"
+ },
+ "hgss2-78": {
+  "tc": 5260,
+  "slug": "judge-unleashed-78-95"
+ },
+ "hgss3-74": {
+  "tc": 5352,
+  "slug": "flower-shop-lady-undaunted-74-90"
+ },
+ "hgss3-77": {
+  "tc": 5355,
+  "slug": "sages-training-undaunted-77-90"
+ },
+ "hgss3-78": {
+  "tc": 5356,
+  "slug": "team-rockets-trickery-undaunted-78-90"
+ },
+ "hgss4-85": {
+  "tc": 5468,
+  "slug": "black-belt-triumphant-85-102"
+ },
+ "hgss4-88": {
+  "tc": 5471,
+  "slug": "seeker-triumphant-88-102"
+ },
+ "hgss4-89": {
+  "tc": 5472,
+  "slug": "twins-triumphant-89-102"
+ },
+ "col1-76": {
+  "tc": 5601,
+  "slug": "cheerleaders-cheer-call-of-legends-76-95"
+ },
+ "col1-77": {
+  "tc": 5602,
+  "slug": "copycat-call-of-legends-77-95"
+ },
+ "col1-79": {
+  "tc": 5604,
+  "slug": "interviewers-questions-call-of-legends-79-95"
+ },
+ "col1-82": {
+  "tc": 5607,
+  "slug": "professor-elms-training-method-call-of-legends-82-95"
+ },
+ "col1-83": {
+  "tc": 5608,
+  "slug": "professor-oaks-new-theory-call-of-legends-83-95"
+ },
+ "col1-85": {
+  "tc": 5610,
+  "slug": "sages-training-call-of-legends-85-95"
+ },
+ "bw1-101": {
+  "tc": 5732,
+  "slug": "professor-juniper-black-and-white-101-114"
+ },
+ "bw2-90": {
+  "tc": 5850,
+  "slug": "bianca-emerging-powers-90-98"
+ },
+ "bw2-91": {
+  "tc": 5851,
+  "slug": "cheren-emerging-powers-91-98"
+ },
+ "bw3-92": {
+  "tc": 5969,
+  "slug": "n-noble-victories-92-101"
+ },
+ "bw3-101": {
+  "tc": 5978,
+  "slug": "n-noble-victories-101-101"
+ },
+ "bw4-86": {
+  "tc": 6077,
+  "slug": "cilan-next-destinies-86-99"
+ },
+ "bw5-91": {
+  "tc": 6197,
+  "slug": "cheren-dark-explorers-91-108"
+ },
+ "bw5-95": {
+  "tc": 6201,
+  "slug": "hooligans-jim-and-cas-dark-explorers-95-108"
+ },
+ "bw5-96": {
+  "tc": 6202,
+  "slug": "n-dark-explorers-96-108"
+ },
+ "bw5-98": {
+  "tc": 6204,
+  "slug": "professor-juniper-dark-explorers-98-108"
+ },
+ "bw7-130": {
+  "tc": 6502,
+  "slug": "hugh-boundaries-crossed-130-149"
+ },
+ "bw7-134": {
+  "tc": 6506,
+  "slug": "skyla-boundaries-crossed-134-149"
+ },
+ "bw7-147": {
+  "tc": 6519,
+  "slug": "bianca-boundaries-crossed-147-149"
+ },
+ "bw7-148": {
+  "tc": 6520,
+  "slug": "cheren-boundaries-crossed-148-149"
+ },
+ "bw7-149": {
+  "tc": 6521,
+  "slug": "skyla-boundaries-crossed-149-149"
+ },
+ "bw8-118": {
+  "tc": 6650,
+  "slug": "colress-plasma-storm-118-135"
+ },
+ "bw8-125": {
+  "tc": 6657,
+  "slug": "team-plasma-grunt-plasma-storm-125-135"
+ },
+ "bw8-135": {
+  "tc": 6667,
+  "slug": "colress-plasma-storm-135-135"
+ },
+ "bw9-101": {
+  "tc": 6783,
+  "slug": "ghetsis-plasma-freeze-101-116"
+ },
+ "bw9-102": {
+  "tc": 6784,
+  "slug": "shadow-triad-plasma-freeze-102-116"
+ },
+ "bw9-115": {
+  "tc": 6797,
+  "slug": "ghetsis-plasma-freeze-115-116"
+ },
+ "bw9-116": {
+  "tc": 6798,
+  "slug": "professor-juniper-plasma-freeze-116-116"
+ },
+ "bw10-78": {
+  "tc": 6897,
+  "slug": "caitlin-plasma-blast-78-101"
+ },
+ "bw10-81": {
+  "tc": 6900,
+  "slug": "iris-plasma-blast-81-101"
+ },
+ "bw10-84": {
+  "tc": 6903,
+  "slug": "professor-juniper-plasma-blast-84-101"
+ },
+ "bw10-101": {
+  "tc": 6920,
+  "slug": "iris-plasma-blast-101-101"
+ },
+ "bw11-109": {
+  "tc": 7033,
+  "slug": "bianca-legendary-treasures-109-113"
+ },
+ "bw11-110": {
+  "tc": 7034,
+  "slug": "cedric-juniper-legendary-treasures-110-113"
+ },
+ "bw11-RC20": {
+  "tc": 7059,
+  "slug": "elesa-legendary-treasures-rc20-rc25"
+ },
+ "xy0-39": {
+  "tc": 7283,
+  "slug": "tierno-kalos-starter-set-39-39"
+ },
+ "xy1-115": {
+  "tc": 7193,
+  "slug": "cassius-xy-115-146"
+ },
+ "xy1-122": {
+  "tc": 7200,
+  "slug": "professor-sycamore-xy-122-146"
+ },
+ "xy1-127": {
+  "tc": 7205,
+  "slug": "shauna-xy-127-146"
+ },
+ "xy1-129": {
+  "tc": 7207,
+  "slug": "team-flare-grunt-xy-129-146"
+ },
+ "xya-107a": {
+  "tc": 13827,
+  "slug": "professor-sycamore-yellow-a-alternate-107a-122"
+ },
+ "xy2-88": {
+  "tc": 7497,
+  "slug": "blacksmith-flashfire-88-106"
+ },
+ "xy2-88a": {
+  "tc": 12579,
+  "slug": "blacksmith-yellow-a-alternate-88a-106"
+ },
+ "xy2-90": {
+  "tc": 7499,
+  "slug": "lysandre-flashfire-90-106"
+ },
+ "xy2-93": {
+  "tc": 7502,
+  "slug": "pokemon-center-lady-flashfire-93-106"
+ },
+ "xy2-94": {
+  "tc": 7503,
+  "slug": "pokemon-fan-club-flashfire-94-106"
+ },
+ "xy2-104": {
+  "tc": 7513,
+  "slug": "lysandre-flashfire-104-106"
+ },
+ "xy2-105": {
+  "tc": 7514,
+  "slug": "pokemon-center-lady-flashfire-105-106"
+ },
+ "xy2-106": {
+  "tc": 7515,
+  "slug": "pokemon-fan-club-flashfire-106-106"
+ },
+ "xy3-88": {
+  "tc": 7618,
+  "slug": "battle-reporter-furious-fists-88-111"
+ },
+ "xy3-92": {
+  "tc": 7622,
+  "slug": "fossil-researcher-furious-fists-92-111"
+ },
+ "xy3-95": {
+  "tc": 7625,
+  "slug": "korrina-furious-fists-95-111"
+ },
+ "xy3-109": {
+  "tc": 7639,
+  "slug": "battle-reporter-furious-fists-109-111"
+ },
+ "xy3-110": {
+  "tc": 7640,
+  "slug": "fossil-researcher-furious-fists-110-111"
+ },
+ "xy3-111": {
+  "tc": 7641,
+  "slug": "korrina-furious-fists-111-111"
+ },
+ "tk-xy-b-19": {
+  "tc": 13330,
+  "slug": "tierno-xy-trainer-kit-bisharp-19-30"
+ },
+ "tk-xy-b-20": {
+  "tc": 13331,
+  "slug": "trevor-xy-trainer-kit-bisharp-20-30"
+ },
+ "tk-xy-w-24": {
+  "tc": 13313,
+  "slug": "trevor-xy-trainer-kit-wigglytuff-24-30"
+ },
+ "tk-xy-w-26": {
+  "tc": 13315,
+  "slug": "tierno-xy-trainer-kit-wigglytuff-26-30"
+ },
+ "xy4-91": {
+  "tc": 7746,
+  "slug": "az-phantom-forces-91-119"
+ },
+ "xy4-99": {
+  "tc": 7754,
+  "slug": "lysandres-trump-card-phantom-forces-99-119"
+ },
+ "xy4-101": {
+  "tc": 7756,
+  "slug": "professor-sycamore-phantom-forces-101-119"
+ },
+ "xy4-104": {
+  "tc": 7759,
+  "slug": "shauna-phantom-forces-104-119"
+ },
+ "xy4-107": {
+  "tc": 7762,
+  "slug": "tierno-phantom-forces-107-119"
+ },
+ "xy4-110": {
+  "tc": 7765,
+  "slug": "xerosic-phantom-forces-110-119"
+ },
+ "xy4-117": {
+  "tc": 7772,
+  "slug": "az-phantom-forces-117-119"
+ },
+ "xy4-118": {
+  "tc": 7773,
+  "slug": "lysandres-trump-card-phantom-forces-118-119"
+ },
+ "xy4-119": {
+  "tc": 7774,
+  "slug": "xerosic-phantom-forces-119-119"
+ },
+ "xy5-124": {
+  "tc": 7951,
+  "slug": "archies-ace-in-the-hole-primal-clash-124-160"
+ },
+ "xy5-133": {
+  "tc": 7960,
+  "slug": "maxies-hidden-ball-trick-primal-clash-133-160"
+ },
+ "xy5-134": {
+  "tc": 7961,
+  "slug": "professor-birchs-observations-primal-clash-134-160"
+ },
+ "xy5-141": {
+  "tc": 7968,
+  "slug": "teammates-primal-clash-141-160"
+ },
+ "xy5-157": {
+  "tc": 7984,
+  "slug": "archies-ace-in-the-hole-primal-clash-157-160"
+ },
+ "xy5-158": {
+  "tc": 7985,
+  "slug": "maxies-hidden-ball-trick-primal-clash-158-160"
+ },
+ "xy5-159": {
+  "tc": 7986,
+  "slug": "professor-birchs-observations-primal-clash-159-160"
+ },
+ "xy5-160": {
+  "tc": 7987,
+  "slug": "teammates-primal-clash-160-160"
+ },
+ "dc1-25": {
+  "tc": 8016,
+  "slug": "team-aqua-admin-double-crisis-25-34"
+ },
+ "dc1-26": {
+  "tc": 8017,
+  "slug": "team-aqua-grunt-double-crisis-26-34"
+ },
+ "dc1-29": {
+  "tc": 8020,
+  "slug": "team-magma-admin-double-crisis-29-34"
+ },
+ "dc1-30": {
+  "tc": 8021,
+  "slug": "team-magma-grunt-double-crisis-30-34"
+ },
+ "xy6-90": {
+  "tc": 8115,
+  "slug": "steven-roaring-skies-90-108"
+ },
+ "xy6-94": {
+  "tc": 8119,
+  "slug": "wally-roaring-skies-94-108"
+ },
+ "xy6-96": {
+  "tc": 8121,
+  "slug": "winona-roaring-skies-96-108"
+ },
+ "xy6-107": {
+  "tc": 8132,
+  "slug": "wally-roaring-skies-107-108"
+ },
+ "xy6-108": {
+  "tc": 8133,
+  "slug": "winona-roaring-skies-108-108"
+ },
+ "xy7-69": {
+  "tc": 8204,
+  "slug": "ace-trainer-ancient-origins-69-98"
+ },
+ "xy7-75": {
+  "tc": 8210,
+  "slug": "hex-maniac-ancient-origins-75-98"
+ },
+ "xy7-75a": {
+  "tc": 12581,
+  "slug": "hex-maniac-yellow-a-alternate-75a-98"
+ },
+ "xy7-78": {
+  "tc": 8213,
+  "slug": "lysandre-ancient-origins-78-98"
+ },
+ "xy7-95": {
+  "tc": 8230,
+  "slug": "steven-ancient-origins-95-98"
+ },
+ "xy8-134": {
+  "tc": 8369,
+  "slug": "brigette-breakthrough-134-162"
+ },
+ "xy8-136": {
+  "tc": 8371,
+  "slug": "fisherman-breakthrough-136-162"
+ },
+ "xy8-138": {
+  "tc": 8373,
+  "slug": "giovannis-scheme-breakthrough-138-162"
+ },
+ "xy8-143": {
+  "tc": 8378,
+  "slug": "judge-breakthrough-143-162"
+ },
+ "xy8-148": {
+  "tc": 8383,
+  "slug": "skyla-breakthrough-148-162"
+ },
+ "xy8-161": {
+  "tc": 8396,
+  "slug": "brigette-breakthrough-161-162"
+ },
+ "xy8-162": {
+  "tc": 8397,
+  "slug": "giovannis-scheme-breakthrough-162-162"
+ },
+ "xy9-98": {
+  "tc": 8522,
+  "slug": "delinquent-breakpoint-98-122"
+ },
+ "xy9-98a": {
+  "tc": 13683,
+  "slug": "delinquent-yellow-a-alternate-98a-122"
+ },
+ "xy9-98b": {
+  "tc": 13826,
+  "slug": "delinquent-yellow-a-alternate-98b-122"
+ },
+ "xy9-104": {
+  "tc": 8528,
+  "slug": "mistys-determination-breakpoint-104-122"
+ },
+ "xy9-107": {
+  "tc": 8531,
+  "slug": "professor-sycamore-breakpoint-107-122"
+ },
+ "xy9-107a": {
+  "tc": 13827,
+  "slug": "professor-sycamore-yellow-a-alternate-107a-122"
+ },
+ "xy9-108": {
+  "tc": 8532,
+  "slug": "psychics-third-eye-breakpoint-108-122"
+ },
+ "xy9-112": {
+  "tc": 8536,
+  "slug": "tierno-breakpoint-112-122"
+ },
+ "xy9-122": {
+  "tc": 8546,
+  "slug": "skyla-breakpoint-122-122"
+ },
+ "g1-59": {
+  "tc": 8625,
+  "slug": "clemont-generations-59-83"
+ },
+ "g1-63": {
+  "tc": 8629,
+  "slug": "imakuni-generations-63-83"
+ },
+ "g1-66": {
+  "tc": 8632,
+  "slug": "olympia-generations-66-83"
+ },
+ "g1-68": {
+  "tc": 8634,
+  "slug": "pokemon-center-lady-generations-68-83"
+ },
+ "g1-69": {
+  "tc": 8635,
+  "slug": "pokemon-fan-club-generations-69-83"
+ },
+ "g1-72": {
+  "tc": 8638,
+  "slug": "shauna-generations-72-83"
+ },
+ "g1-73": {
+  "tc": 8639,
+  "slug": "team-flare-grunt-generations-73-83"
+ },
+ "g1-73a": {
+  "tc": 10933,
+  "slug": "team-flare-grunt-yellow-a-alternate-73a-83"
+ },
+ "g1-RC27": {
+  "tc": 8676,
+  "slug": "wally-generations-rc27-rc32"
+ },
+ "tk-xy-p-20": {
+  "tc": 13364,
+  "slug": "tierno-xy-trainer-kit-pikachu-libre-20-30"
+ },
+ "tk-xy-su-20": {
+  "tc": 13377,
+  "slug": "tierno-xy-trainer-kit-suicune-20-30"
+ },
+ "tk-xy-su-29": {
+  "tc": 10143,
+  "slug": "tierno-xy-trainer-kit-suicune-29-30"
+ },
+ "xy10-103": {
+  "tc": 9200,
+  "slug": "lasss-special-fates-collide-103-124"
+ },
+ "xy10-105": {
+  "tc": 9202,
+  "slug": "n-fates-collide-105-124"
+ },
+ "xy10-105a": {
+  "tc": 10905,
+  "slug": "n-yellow-a-alternate-105a-124"
+ },
+ "xy10-107": {
+  "tc": 9204,
+  "slug": "pokemon-fan-club-fates-collide-107-124"
+ },
+ "xy10-111": {
+  "tc": 9208,
+  "slug": "shauna-fates-collide-111-124"
+ },
+ "xy10-111a": {
+  "tc": 10331,
+  "slug": "shauna-yellow-a-alternate-111a-124"
+ },
+ "xy10-112": {
+  "tc": 9209,
+  "slug": "team-rockets-handiwork-fates-collide-112-124"
+ },
+ "xy10-124": {
+  "tc": 9221,
+  "slug": "team-rockets-handiwork-fates-collide-124-124"
+ },
+ "xy11-103": {
+  "tc": 9313,
+  "slug": "ninja-boy-steam-siege-103-114"
+ },
+ "xy11-104": {
+  "tc": 9314,
+  "slug": "pokemon-ranger-steam-siege-104-114"
+ },
+ "xy11-113": {
+  "tc": 9323,
+  "slug": "pokemon-ranger-steam-siege-113-114"
+ },
+ "xy11-114": {
+  "tc": 9324,
+  "slug": "professor-sycamore-steam-siege-114-114"
+ },
+ "xy12-74": {
+  "tc": 9049,
+  "slug": "brocks-grit-evolutions-74-108"
+ },
+ "xy12-80": {
+  "tc": 9055,
+  "slug": "mistys-determination-evolutions-80-108"
+ },
+ "xy12-84": {
+  "tc": 9059,
+  "slug": "professor-oaks-hint-evolutions-84-108"
+ },
+ "xy12-107": {
+  "tc": 9082,
+  "slug": "brocks-grit-evolutions-107-108"
+ },
+ "xy12-108": {
+  "tc": 9083,
+  "slug": "mistys-determination-evolutions-108-108"
+ },
+ "xy12-113": {
+  "tc": 9483,
+  "slug": "here-comes-team-rocket-evolutions-113-108"
+ },
+ "sm1-120": {
+  "tc": 8801,
+  "slug": "hau-sun-and-moon-120-149"
+ },
+ "sm1-121": {
+  "tc": 8802,
+  "slug": "ilima-sun-and-moon-121-149"
+ },
+ "sm1-122": {
+  "tc": 8803,
+  "slug": "lillie-sun-and-moon-122-149"
+ },
+ "sm1-128": {
+  "tc": 8809,
+  "slug": "professor-kukui-sun-and-moon-128-149"
+ },
+ "sm1-133": {
+  "tc": 8814,
+  "slug": "team-skull-grunt-sun-and-moon-133-149"
+ },
+ "sm1-146": {
+  "tc": 8827,
+  "slug": "ilima-sun-and-moon-146-149"
+ },
+ "sm1-147": {
+  "tc": 8828,
+  "slug": "lillie-sun-and-moon-147-149"
+ },
+ "sm1-148": {
+  "tc": 8829,
+  "slug": "professor-kukui-sun-and-moon-148-149"
+ },
+ "sm1-149": {
+  "tc": 8830,
+  "slug": "team-skull-grunt-sun-and-moon-149-149"
+ },
+ "tk-sm-l-19": {
+  "tc": 13482,
+  "slug": "hau-sm-trainer-kit-lycanroc-19-30"
+ },
+ "tk-sm-l-23": {
+  "tc": 13483,
+  "slug": "hau-sm-trainer-kit-lycanroc-23-30"
+ },
+ "tk-sm-r-19": {
+  "tc": 13451,
+  "slug": "hau-sm-trainer-kit-alolan-raichu-19-30"
+ },
+ "tk-sm-r-23": {
+  "tc": 13456,
+  "slug": "hau-sm-trainer-kit-alolan-raichu-23-30"
+ },
+ "sm2-126": {
+  "tc": 8956,
+  "slug": "hala-guardians-rising-126-145"
+ },
+ "sm2-127": {
+  "tc": 8957,
+  "slug": "mallow-guardians-rising-127-145"
+ },
+ "sm2-143": {
+  "tc": 8973,
+  "slug": "hala-guardians-rising-143-145"
+ },
+ "sm2-144": {
+  "tc": 8974,
+  "slug": "hau-guardians-rising-144-145"
+ },
+ "sm2-145": {
+  "tc": 8975,
+  "slug": "mallow-guardians-rising-145-145"
+ },
+ "sm3-112": {
+  "tc": 9819,
+  "slug": "acerola-burning-shadows-112-147"
+ },
+ "sm3-115": {
+  "tc": 9822,
+  "slug": "guzma-burning-shadows-115-147"
+ },
+ "sm3-116": {
+  "tc": 9823,
+  "slug": "kiawe-burning-shadows-116-147"
+ },
+ "sm3-117": {
+  "tc": 9824,
+  "slug": "lana-burning-shadows-117-147"
+ },
+ "sm3-119": {
+  "tc": 9826,
+  "slug": "olivia-burning-shadows-119-147"
+ },
+ "sm3-120": {
+  "tc": 9827,
+  "slug": "plumeria-burning-shadows-120-147"
+ },
+ "sm3-123": {
+  "tc": 9830,
+  "slug": "sophocles-burning-shadows-123-147"
+ },
+ "sm3-127": {
+  "tc": 9834,
+  "slug": "wicke-burning-shadows-127-147"
+ },
+ "sm3-142": {
+  "tc": 9836,
+  "slug": "acerola-burning-shadows-142-147"
+ },
+ "sm3-143": {
+  "tc": 9837,
+  "slug": "guzma-burning-shadows-143-147"
+ },
+ "sm3-144": {
+  "tc": 9838,
+  "slug": "kiawe-burning-shadows-144-147"
+ },
+ "sm3-145": {
+  "tc": 9839,
+  "slug": "plumeria-burning-shadows-145-147"
+ },
+ "sm3-146": {
+  "tc": 9840,
+  "slug": "sophocles-burning-shadows-146-147"
+ },
+ "sm3-147": {
+  "tc": 9841,
+  "slug": "wicke-burning-shadows-147-147"
+ },
+ "sm3.5-61": {
+  "tc": 9975,
+  "slug": "hau-shining-legends-61-73"
+ },
+ "sm3.5-62": {
+  "tc": 9976,
+  "slug": "lillie-shining-legends-62-73"
+ },
+ "sm3.5-63": {
+  "tc": 9977,
+  "slug": "pokemon-breeder-shining-legends-63-73"
+ },
+ "sm3.5-65": {
+  "tc": 9979,
+  "slug": "sophocles-shining-legends-65-73"
+ },
+ "sm3.5-73": {
+  "tc": 9990,
+  "slug": "pokemon-breeder-shining-legends-73-73"
+ },
+ "sm4-95": {
+  "tc": 10105,
+  "slug": "gladion-crimson-invasion-95-111"
+ },
+ "sm4-96": {
+  "tc": 10106,
+  "slug": "lusamine-crimson-invasion-96-111"
+ },
+ "sm4-109": {
+  "tc": 10119,
+  "slug": "gladion-crimson-invasion-109-111"
+ },
+ "sm4-110": {
+  "tc": 10120,
+  "slug": "lusamine-crimson-invasion-110-111"
+ },
+ "sm4-111": {
+  "tc": 10121,
+  "slug": "olivia-crimson-invasion-111-111"
+ },
+ "sm5-119": {
+  "tc": 10271,
+  "slug": "cynthia-ultra-prism-119-156"
+ },
+ "sm5-120": {
+  "tc": 10272,
+  "slug": "cyrus-prism-star-ultra-prism-120-156"
+ },
+ "sm5-124": {
+  "tc": 10276,
+  "slug": "gardenia-ultra-prism-124-156"
+ },
+ "sm5-125": {
+  "tc": 10277,
+  "slug": "lillie-ultra-prism-125-156"
+ },
+ "sm5-126": {
+  "tc": 10278,
+  "slug": "looker-ultra-prism-126-156"
+ },
+ "sm5-128": {
+  "tc": 10280,
+  "slug": "mars-ultra-prism-128-156"
+ },
+ "sm5-133": {
+  "tc": 10285,
+  "slug": "pokemon-fan-club-ultra-prism-133-156"
+ },
+ "sm5-135": {
+  "tc": 10287,
+  "slug": "volkner-ultra-prism-135-156"
+ },
+ "sm5-148": {
+  "tc": 10300,
+  "slug": "cynthia-ultra-prism-148-156"
+ },
+ "sm5-149": {
+  "tc": 10301,
+  "slug": "gardenia-ultra-prism-149-156"
+ },
+ "sm5-150": {
+  "tc": 10302,
+  "slug": "lana-ultra-prism-150-156"
+ },
+ "sm5-151": {
+  "tc": 10303,
+  "slug": "lillie-ultra-prism-151-156"
+ },
+ "sm5-152": {
+  "tc": 10304,
+  "slug": "looker-ultra-prism-152-156"
+ },
+ "sm5-153": {
+  "tc": 10305,
+  "slug": "lusamine-ultra-prism-153-156"
+ },
+ "sm5-154": {
+  "tc": 10306,
+  "slug": "mars-ultra-prism-154-156"
+ },
+ "sm5-155": {
+  "tc": 10307,
+  "slug": "pokemon-fan-club-ultra-prism-155-156"
+ },
+ "sm5-156": {
+  "tc": 10308,
+  "slug": "volkner-ultra-prism-156-156"
+ },
+ "sm6-103": {
+  "tc": 10438,
+  "slug": "bonnie-forbidden-light-103-131"
+ },
+ "sm6-104": {
+  "tc": 10439,
+  "slug": "crasher-wake-forbidden-light-104-131"
+ },
+ "sm6-105": {
+  "tc": 10440,
+  "slug": "diantha-forbidden-light-105-131"
+ },
+ "sm6-108": {
+  "tc": 10443,
+  "slug": "judge-forbidden-light-108-131"
+ },
+ "sm6-109": {
+  "tc": 10444,
+  "slug": "lady-forbidden-light-109-131"
+ },
+ "sm6-110": {
+  "tc": 10445,
+  "slug": "lysandre-prism-star-forbidden-light-110-131"
+ },
+ "sm6-114": {
+  "tc": 10449,
+  "slug": "ultra-recon-squad-forbidden-light-114-131"
+ },
+ "sm6-128": {
+  "tc": 10463,
+  "slug": "bonnie-forbidden-light-128-131"
+ },
+ "sm6-129": {
+  "tc": 10464,
+  "slug": "crasher-wake-forbidden-light-129-131"
+ },
+ "sm6-130": {
+  "tc": 10465,
+  "slug": "diantha-forbidden-light-130-131"
+ },
+ "sm6-131": {
+  "tc": 10466,
+  "slug": "ultra-recon-squad-forbidden-light-131-131"
+ },
+ "sm7-124": {
+  "tc": 10838,
+  "slug": "apricorn-maker-celestial-storm-124-168"
+ },
+ "sm7-127": {
+  "tc": 10841,
+  "slug": "copycat-celestial-storm-127-168"
+ },
+ "sm7-130": {
+  "tc": 10844,
+  "slug": "fisherman-celestial-storm-130-168"
+ },
+ "sm7-132": {
+  "tc": 10846,
+  "slug": "hau-celestial-storm-132-168"
+ },
+ "sm7-133": {
+  "tc": 10847,
+  "slug": "hiker-celestial-storm-133-168"
+ },
+ "sm7-137": {
+  "tc": 10851,
+  "slug": "lisia-celestial-storm-137-168"
+ },
+ "sm7-139": {
+  "tc": 10853,
+  "slug": "the-masked-royal-celestial-storm-139-168"
+ },
+ "sm7-148": {
+  "tc": 10862,
+  "slug": "tate-and-liza-celestial-storm-148-168"
+ },
+ "sm7-149": {
+  "tc": 10863,
+  "slug": "tv-reporter-celestial-storm-149-168"
+ },
+ "sm7-150": {
+  "tc": 10864,
+  "slug": "underground-expedition-celestial-storm-150-168"
+ },
+ "sm7-161": {
+  "tc": 10875,
+  "slug": "apricorn-maker-celestial-storm-161-168"
+ },
+ "sm7-163": {
+  "tc": 10877,
+  "slug": "copycat-celestial-storm-163-168"
+ },
+ "sm7-164": {
+  "tc": 10878,
+  "slug": "lisia-celestial-storm-164-168"
+ },
+ "sm7-166": {
+  "tc": 10880,
+  "slug": "tate-and-liza-celestial-storm-166-168"
+ },
+ "sm7-167": {
+  "tc": 10881,
+  "slug": "tv-reporter-celestial-storm-167-168"
+ },
+ "sm7-168": {
+  "tc": 10882,
+  "slug": "underground-expedition-celestial-storm-168-168"
+ },
+ "sm7.5-61": {
+  "tc": 11058,
+  "slug": "lance-prism-star-dragon-majesty-61-70"
+ },
+ "sm7.5-64": {
+  "tc": 11061,
+  "slug": "zinnia-dragon-majesty-64-70"
+ },
+ "sm7.5-70": {
+  "tc": 11067,
+  "slug": "zinnia-dragon-majesty-70-70"
+ },
+ "sm8-168": {
+  "tc": 11737,
+  "slug": "aether-foundation-employee-lost-thunder-168-214"
+ },
+ "sm8-173": {
+  "tc": 11742,
+  "slug": "faba-lost-thunder-173-214"
+ },
+ "sm8-179": {
+  "tc": 11748,
+  "slug": "kahili-lost-thunder-179-214"
+ },
+ "sm8-182": {
+  "tc": 11751,
+  "slug": "lusamine-prism-star-lost-thunder-182-214"
+ },
+ "sm8-183": {
+  "tc": 11752,
+  "slug": "mina-lost-thunder-183-214"
+ },
+ "sm8-186": {
+  "tc": 11755,
+  "slug": "morty-lost-thunder-186-214"
+ },
+ "sm8-189": {
+  "tc": 11758,
+  "slug": "sightseer-lost-thunder-189-214"
+ },
+ "sm8-193": {
+  "tc": 11762,
+  "slug": "whitney-lost-thunder-193-214"
+ },
+ "sm8-208": {
+  "tc": 11777,
+  "slug": "faba-lost-thunder-208-214"
+ },
+ "sm8-209": {
+  "tc": 11778,
+  "slug": "judge-lost-thunder-209-214"
+ },
+ "sm8-210": {
+  "tc": 11779,
+  "slug": "kahili-lost-thunder-210-214"
+ },
+ "sm8-211": {
+  "tc": 11780,
+  "slug": "mina-lost-thunder-211-214"
+ },
+ "sm8-212": {
+  "tc": 11781,
+  "slug": "morty-lost-thunder-212-214"
+ },
+ "sm8-214": {
+  "tc": 11783,
+  "slug": "whitney-lost-thunder-214-214"
+ },
+ "sm9-137": {
+  "tc": 12123,
+  "slug": "dana-team-up-137-181"
+ },
+ "sm9-141": {
+  "tc": 12127,
+  "slug": "evelyn-team-up-141-181"
+ },
+ "sm9-144": {
+  "tc": 12130,
+  "slug": "ingo-and-emmet-team-up-144-181"
+ },
+ "sm9-145": {
+  "tc": 12131,
+  "slug": "jasmine-team-up-145-181"
+ },
+ "sm9-149": {
+  "tc": 12135,
+  "slug": "morgan-team-up-149-181"
+ },
+ "sm9-150": {
+  "tc": 12136,
+  "slug": "nanu-team-up-150-181"
+ },
+ "sm9-151": {
+  "tc": 12137,
+  "slug": "nita-team-up-151-181"
+ },
+ "sm9-173": {
+  "tc": 12159,
+  "slug": "dana-team-up-173-181"
+ },
+ "sm9-175": {
+  "tc": 12161,
+  "slug": "evelyn-team-up-175-181"
+ },
+ "sm9-176": {
+  "tc": 12162,
+  "slug": "ingo-and-emmet-team-up-176-181"
+ },
+ "sm9-177": {
+  "tc": 12163,
+  "slug": "jasmine-team-up-177-181"
+ },
+ "sm9-178": {
+  "tc": 12164,
+  "slug": "morgan-team-up-178-181"
+ },
+ "sm9-179": {
+  "tc": 12165,
+  "slug": "nanu-team-up-179-181"
+ },
+ "sm9-180": {
+  "tc": 12166,
+  "slug": "nita-team-up-180-181"
+ },
+ "sm10-176": {
+  "tc": 12466,
+  "slug": "janine-unbroken-bonds-176-214"
+ },
+ "sm10-181": {
+  "tc": 12471,
+  "slug": "molayne-unbroken-bonds-181-214"
+ },
+ "sm10-185": {
+  "tc": 12478,
+  "slug": "samson-oak-unbroken-bonds-185-214"
+ },
+ "sm10-188": {
+  "tc": 12481,
+  "slug": "ultra-forest-kartenvoy-unbroken-bonds-188-214"
+ },
+ "sm10-189": {
+  "tc": 12482,
+  "slug": "welder-unbroken-bonds-189-214"
+ },
+ "sm10-210": {
+  "tc": 12503,
+  "slug": "janine-unbroken-bonds-210-214"
+ },
+ "sm10-212": {
+  "tc": 12505,
+  "slug": "molayne-unbroken-bonds-212-214"
+ },
+ "sm10-214": {
+  "tc": 12507,
+  "slug": "welder-unbroken-bonds-214-214"
+ },
+ "sm11-189": {
+  "tc": 13074,
+  "slug": "bug-catcher-unified-minds-189-236"
+ },
+ "sm11-190": {
+  "tc": 13075,
+  "slug": "channeler-unified-minds-190-236"
+ },
+ "sm11-192": {
+  "tc": 13077,
+  "slug": "coach-trainer-unified-minds-192-236"
+ },
+ "sm11-199": {
+  "tc": 13084,
+  "slug": "grimsley-unified-minds-199-236"
+ },
+ "sm11-200": {
+  "tc": 13085,
+  "slug": "hapu-unified-minds-200-236"
+ },
+ "sm11-204": {
+  "tc": 13089,
+  "slug": "poke-maniac-unified-minds-204-236"
+ },
+ "sm11-232": {
+  "tc": 13117,
+  "slug": "channeler-unified-minds-232-236"
+ },
+ "sm11-233": {
+  "tc": 13118,
+  "slug": "coach-trainer-unified-minds-233-236"
+ },
+ "sm11-234": {
+  "tc": 13119,
+  "slug": "grimsley-unified-minds-234-236"
+ },
+ "sm11-236": {
+  "tc": 13121,
+  "slug": "poke-maniac-unified-minds-236-236"
+ },
+ "sm115-58": {
+  "tc": 13245,
+  "slug": "jessie-and-james-hidden-fates-58-68"
+ },
+ "sm115-64": {
+  "tc": 13251,
+  "slug": "pokemon-center-lady-hidden-fates-64-68"
+ },
+ "sm115-68": {
+  "tc": 13255,
+  "slug": "jessie-and-james-hidden-fates-68-68"
+ },
+ "sma-SV81": {
+  "tc": 13563,
+  "slug": "aether-foundation-employee-hidden-fates-sv81-sv94"
+ },
+ "sma-SV82": {
+  "tc": 13323,
+  "slug": "cynthia-hidden-fates-sv82-sv94"
+ },
+ "sma-SV83": {
+  "tc": 13564,
+  "slug": "fisherman-hidden-fates-sv83-sv94"
+ },
+ "sma-SV84": {
+  "tc": 13565,
+  "slug": "guzma-hidden-fates-sv84-sv94"
+ },
+ "sma-SV85": {
+  "tc": 13566,
+  "slug": "hiker-hidden-fates-sv85-sv94"
+ },
+ "sma-SV86": {
+  "tc": 13567,
+  "slug": "lady-hidden-fates-sv86-sv94"
+ },
+ "sm12-186": {
+  "tc": 14630,
+  "slug": "bellelba-and-brycen-man-cosmic-eclipse-186-236"
+ },
+ "sm12-188": {
+  "tc": 14632,
+  "slug": "clay-cosmic-eclipse-188-236"
+ },
+ "sm12-189": {
+  "tc": 14633,
+  "slug": "cynthia-and-caitlin-cosmic-eclipse-189-236"
+ },
+ "sm12-191": {
+  "tc": 14635,
+  "slug": "erika-cosmic-eclipse-191-236"
+ },
+ "sm12-193": {
+  "tc": 14637,
+  "slug": "guzma-and-hala-cosmic-eclipse-193-236"
+ },
+ "sm12-198": {
+  "tc": 14642,
+  "slug": "mallow-and-lana-cosmic-eclipse-198-236"
+ },
+ "sm12-199": {
+  "tc": 14643,
+  "slug": "misty-and-lorelei-cosmic-eclipse-199-236"
+ },
+ "sm12-202": {
+  "tc": 14646,
+  "slug": "red-and-blue-cosmic-eclipse-202-236"
+ },
+ "sm12-203": {
+  "tc": 14647,
+  "slug": "roller-skater-cosmic-eclipse-203-236"
+ },
+ "sm12-204": {
+  "tc": 14648,
+  "slug": "rosa-cosmic-eclipse-204-236"
+ },
+ "sm12-205": {
+  "tc": 14649,
+  "slug": "roxie-cosmic-eclipse-205-236"
+ },
+ "sm12-208": {
+  "tc": 14652,
+  "slug": "will-cosmic-eclipse-208-236"
+ },
+ "sm12-228": {
+  "tc": 14672,
+  "slug": "cynthia-and-caitlin-cosmic-eclipse-228-236"
+ },
+ "sm12-229": {
+  "tc": 14673,
+  "slug": "guzma-and-hala-cosmic-eclipse-229-236"
+ },
+ "sm12-231": {
+  "tc": 14675,
+  "slug": "mallow-and-lana-cosmic-eclipse-231-236"
+ },
+ "sm12-234": {
+  "tc": 14678,
+  "slug": "red-and-blue-cosmic-eclipse-234-236"
+ },
+ "sm12-235": {
+  "tc": 14679,
+  "slug": "roller-skater-cosmic-eclipse-235-236"
+ },
+ "sm12-236": {
+  "tc": 14680,
+  "slug": "rosa-cosmic-eclipse-236-236"
+ },
+ "swshp-SWSH120": {
+  "tc": 35127,
+  "slug": "marnie-sword-and-shield-promos-swsh120"
+ },
+ "swshp-SWSH121": {
+  "tc": 35128,
+  "slug": "marnie-sword-and-shield-promos-swsh121"
+ },
+ "swshp-SWSH152": {
+  "tc": 38233,
+  "slug": "professors-research-sword-and-shield-promos-swsh152"
+ },
+ "swshp-SWSH167": {
+  "tc": 35482,
+  "slug": "professor-burnet-sword-and-shield-promos-swsh167"
+ },
+ "swshp-SWSH178": {
+  "tc": 35131,
+  "slug": "professors-research-sword-and-shield-promos-swsh178"
+ },
+ "swshp-SWSH226": {
+  "tc": 38509,
+  "slug": "spark-sword-and-shield-promos-swsh226"
+ },
+ "swshp-SWSH227": {
+  "tc": 38510,
+  "slug": "blanche-sword-and-shield-promos-swsh227"
+ },
+ "swshp-SWSH228": {
+  "tc": 38511,
+  "slug": "candela-sword-and-shield-promos-swsh228"
+ },
+ "swshp-SWSH251": {
+  "tc": 40568,
+  "slug": "bosss-orders-sword-and-shield-promos-swsh251"
+ },
+ "swshp-SWSH302": {
+  "tc": 40569,
+  "slug": "klara-sword-and-shield-promos-swsh302"
+ },
+ "swsh1-157": {
+  "tc": 15095,
+  "slug": "bede-sword-and-shield-157-202"
+ },
+ "swsh1-165": {
+  "tc": 15103,
+  "slug": "hop-sword-and-shield-165-202"
+ },
+ "swsh1-169": {
+  "tc": 15107,
+  "slug": "marnie-sword-and-shield-169-202"
+ },
+ "swsh1-173": {
+  "tc": 15111,
+  "slug": "poke-kid-sword-and-shield-173-202"
+ },
+ "swsh1-176": {
+  "tc": 15114,
+  "slug": "pokemon-center-lady-sword-and-shield-176-202"
+ },
+ "swsh1-184": {
+  "tc": 15122,
+  "slug": "team-yell-grunt-sword-and-shield-184-202"
+ },
+ "swsh1-199": {
+  "tc": 15137,
+  "slug": "bede-sword-and-shield-199-202"
+ },
+ "swsh1-200": {
+  "tc": 15138,
+  "slug": "marnie-sword-and-shield-200-202"
+ },
+ "swsh1-202": {
+  "tc": 15140,
+  "slug": "team-yell-grunt-sword-and-shield-202-202"
+ },
+ "swsh1-207": {
+  "tc": 15145,
+  "slug": "bede-sword-and-shield-207-202"
+ },
+ "swsh1-208": {
+  "tc": 15146,
+  "slug": "marnie-sword-and-shield-208-202"
+ },
+ "swsh1-210": {
+  "tc": 15148,
+  "slug": "team-yell-grunt-sword-and-shield-210-202"
+ },
+ "swsh2-158": {
+  "tc": 15402,
+  "slug": "dan-rebel-clash-158-192"
+ },
+ "swsh2-161": {
+  "tc": 15405,
+  "slug": "milo-rebel-clash-161-192"
+ },
+ "swsh2-163": {
+  "tc": 15407,
+  "slug": "oleana-rebel-clash-163-192"
+ },
+ "swsh2-166": {
+  "tc": 15410,
+  "slug": "skyla-rebel-clash-166-192"
+ },
+ "swsh2-167": {
+  "tc": 15411,
+  "slug": "sonia-rebel-clash-167-192"
+ },
+ "swsh2-190": {
+  "tc": 15434,
+  "slug": "milo-rebel-clash-190-192"
+ },
+ "swsh2-191": {
+  "tc": 15435,
+  "slug": "oleana-rebel-clash-191-192"
+ },
+ "swsh2-192": {
+  "tc": 15436,
+  "slug": "sonia-rebel-clash-192-192"
+ },
+ "swsh2-201": {
+  "tc": 15445,
+  "slug": "milo-rebel-clash-201-192"
+ },
+ "swsh2-202": {
+  "tc": 15446,
+  "slug": "oleana-rebel-clash-202-192"
+ },
+ "swsh2-203": {
+  "tc": 15447,
+  "slug": "sonia-rebel-clash-203-192"
+ },
+ "swsh3-159": {
+  "tc": 15920,
+  "slug": "bird-keeper-darkness-ablaze-159-189"
+ },
+ "swsh3-163": {
+  "tc": 15924,
+  "slug": "kabu-darkness-ablaze-163-189"
+ },
+ "swsh3-165": {
+  "tc": 15926,
+  "slug": "piers-darkness-ablaze-165-189"
+ },
+ "swsh3-166": {
+  "tc": 15927,
+  "slug": "pokemon-breeders-nurturing-darkness-ablaze-166-189"
+ },
+ "swsh3-168": {
+  "tc": 15929,
+  "slug": "rose-darkness-ablaze-168-189"
+ },
+ "swsh3-186": {
+  "tc": 15947,
+  "slug": "kabu-darkness-ablaze-186-189"
+ },
+ "swsh3-187": {
+  "tc": 15948,
+  "slug": "piers-darkness-ablaze-187-189"
+ },
+ "swsh3-188": {
+  "tc": 15949,
+  "slug": "pokemon-breeders-nurturing-darkness-ablaze-188-189"
+ },
+ "swsh3-189": {
+  "tc": 15950,
+  "slug": "rose-darkness-ablaze-189-189"
+ },
+ "swsh3-195": {
+  "tc": 15956,
+  "slug": "pokemon-breeders-nurturing-darkness-ablaze-195-189"
+ },
+ "swsh3-196": {
+  "tc": 15957,
+  "slug": "rose-darkness-ablaze-196-189"
+ },
+ "swsh3.5-50": {
+  "tc": 16270,
+  "slug": "bede-champions-path-050-073"
+ },
+ "swsh3.5-53": {
+  "tc": 16273,
+  "slug": "hop-champions-path-053-073"
+ },
+ "swsh3.5-55": {
+  "tc": 16275,
+  "slug": "kabu-champions-path-055-073"
+ },
+ "swsh3.5-56": {
+  "tc": 16276,
+  "slug": "marnie-champions-path-056-073"
+ },
+ "swsh3.5-57": {
+  "tc": 16277,
+  "slug": "milo-champions-path-057-073"
+ },
+ "swsh3.5-58": {
+  "tc": 16278,
+  "slug": "piers-champions-path-058-073"
+ },
+ "swsh3.5-60": {
+  "tc": 16280,
+  "slug": "pokemon-center-lady-champions-path-060-073"
+ },
+ "swsh3.5-65": {
+  "tc": 16285,
+  "slug": "sonia-champions-path-065-073"
+ },
+ "swsh3.5-67": {
+  "tc": 16287,
+  "slug": "team-yell-grunt-champions-path-067-073"
+ },
+ "swsh3.5-73": {
+  "tc": 16293,
+  "slug": "hop-champions-path-073-073"
+ },
+ "swsh3.5-77": {
+  "tc": 16297,
+  "slug": "kabu-champions-path-077-073"
+ },
+ "swsh3.5-78": {
+  "tc": 16298,
+  "slug": "piers-champions-path-078-073"
+ },
+ "swsh4-146": {
+  "tc": 16778,
+  "slug": "allister-vivid-voltage-146-185"
+ },
+ "swsh4-147": {
+  "tc": 16779,
+  "slug": "bea-vivid-voltage-147-185"
+ },
+ "swsh4-148": {
+  "tc": 16780,
+  "slug": "beauty-vivid-voltage-148-185"
+ },
+ "swsh4-149": {
+  "tc": 16781,
+  "slug": "cara-liss-vivid-voltage-149-185"
+ },
+ "swsh4-153": {
+  "tc": 16785,
+  "slug": "league-staff-vivid-voltage-153-185"
+ },
+ "swsh4-154": {
+  "tc": 16786,
+  "slug": "leon-vivid-voltage-154-185"
+ },
+ "swsh4-157": {
+  "tc": 16789,
+  "slug": "nessa-vivid-voltage-157-185"
+ },
+ "swsh4-158": {
+  "tc": 16790,
+  "slug": "opal-vivid-voltage-158-185"
+ },
+ "swsh4-179": {
+  "tc": 16811,
+  "slug": "allister-vivid-voltage-179-185"
+ },
+ "swsh4-180": {
+  "tc": 16812,
+  "slug": "bea-vivid-voltage-180-185"
+ },
+ "swsh4-181": {
+  "tc": 16813,
+  "slug": "beauty-vivid-voltage-181-185"
+ },
+ "swsh4-182": {
+  "tc": 16814,
+  "slug": "leon-vivid-voltage-182-185"
+ },
+ "swsh4-183": {
+  "tc": 16815,
+  "slug": "nessa-vivid-voltage-183-185"
+ },
+ "swsh4-184": {
+  "tc": 16816,
+  "slug": "opal-vivid-voltage-184-185"
+ },
+ "swsh4-185": {
+  "tc": 16817,
+  "slug": "pokemon-center-lady-vivid-voltage-185-185"
+ },
+ "swsh4-192": {
+  "tc": 16824,
+  "slug": "allister-vivid-voltage-192-185"
+ },
+ "swsh4-193": {
+  "tc": 16825,
+  "slug": "bea-vivid-voltage-193-185"
+ },
+ "swsh4-194": {
+  "tc": 16826,
+  "slug": "beauty-vivid-voltage-194-185"
+ },
+ "swsh4-195": {
+  "tc": 16827,
+  "slug": "leon-vivid-voltage-195-185"
+ },
+ "swsh4-196": {
+  "tc": 16828,
+  "slug": "nessa-vivid-voltage-196-185"
+ },
+ "swsh4-197": {
+  "tc": 16829,
+  "slug": "opal-vivid-voltage-197-185"
+ },
+ "swsh4.5-57": {
+  "tc": 33635,
+  "slug": "ball-guy-shining-fates-057-072"
+ },
+ "swsh4.5-59": {
+  "tc": 33637,
+  "slug": "gym-trainer-shining-fates-059-072"
+ },
+ "swsh4.5-65": {
+  "tc": 33643,
+  "slug": "ball-guy-shining-fates-065-072"
+ },
+ "swsh4.5-66": {
+  "tc": 33644,
+  "slug": "bird-keeper-shining-fates-066-072"
+ },
+ "swsh4.5-67": {
+  "tc": 33645,
+  "slug": "cara-liss-shining-fates-067-072"
+ },
+ "swsh4.5-68": {
+  "tc": 33646,
+  "slug": "gym-trainer-shining-fates-068-072"
+ },
+ "swsh4.5-69": {
+  "tc": 33647,
+  "slug": "piers-shining-fates-069-072"
+ },
+ "swsh4.5-70": {
+  "tc": 33648,
+  "slug": "poke-kid-shining-fates-070-072"
+ },
+ "swsh4.5-71": {
+  "tc": 33649,
+  "slug": "rose-shining-fates-071-072"
+ },
+ "swsh4.5-72": {
+  "tc": 33650,
+  "slug": "skyla-shining-fates-072-072"
+ },
+ "swsh5-121": {
+  "tc": 33950,
+  "slug": "bruno-battle-styles-121-163"
+ },
+ "swsh5-123": {
+  "tc": 33952,
+  "slug": "cheryl-battle-styles-123-163"
+ },
+ "swsh5-128": {
+  "tc": 33957,
+  "slug": "korrinas-focus-battle-styles-128-163"
+ },
+ "swsh5-130": {
+  "tc": 33959,
+  "slug": "phoebe-battle-styles-130-163"
+ },
+ "swsh5-132": {
+  "tc": 33961,
+  "slug": "rapid-strike-style-mustard-battle-styles-132-163"
+ },
+ "swsh5-134": {
+  "tc": 33963,
+  "slug": "single-strike-style-mustard-battle-styles-134-163"
+ },
+ "swsh5-135": {
+  "tc": 33964,
+  "slug": "sordward-and-shielbert-battle-styles-135-163"
+ },
+ "swsh5-158": {
+  "tc": 33987,
+  "slug": "bruno-battle-styles-158-163"
+ },
+ "swsh5-159": {
+  "tc": 33988,
+  "slug": "cheryl-battle-styles-159-163"
+ },
+ "swsh5-160": {
+  "tc": 33989,
+  "slug": "korrinas-focus-battle-styles-160-163"
+ },
+ "swsh5-161": {
+  "tc": 33990,
+  "slug": "phoebe-battle-styles-161-163"
+ },
+ "swsh5-162": {
+  "tc": 33991,
+  "slug": "rapid-strike-style-mustard-battle-styles-162-163"
+ },
+ "swsh5-163": {
+  "tc": 33992,
+  "slug": "single-strike-style-mustard-battle-styles-163-163"
+ },
+ "swsh5-172": {
+  "tc": 34001,
+  "slug": "bruno-battle-styles-172-163"
+ },
+ "swsh5-173": {
+  "tc": 34002,
+  "slug": "cheryl-battle-styles-173-163"
+ },
+ "swsh5-174": {
+  "tc": 34003,
+  "slug": "korrinas-focus-battle-styles-174-163"
+ },
+ "swsh5-175": {
+  "tc": 34004,
+  "slug": "phoebe-battle-styles-175-163"
+ },
+ "swsh5-176": {
+  "tc": 34005,
+  "slug": "rapid-strike-style-mustard-battle-styles-176-163"
+ },
+ "swsh5-177": {
+  "tc": 34006,
+  "slug": "single-strike-style-mustard-battle-styles-177-163"
+ },
+ "swsh6-129": {
+  "tc": 34708,
+  "slug": "agatha-chilling-reign-129-198"
+ },
+ "swsh6-130": {
+  "tc": 34709,
+  "slug": "avery-chilling-reign-130-198"
+ },
+ "swsh6-131": {
+  "tc": 34710,
+  "slug": "brawly-chilling-reign-131-198"
+ },
+ "swsh6-132": {
+  "tc": 34711,
+  "slug": "caitlin-chilling-reign-132-198"
+ },
+ "swsh6-134": {
+  "tc": 34713,
+  "slug": "doctor-chilling-reign-134-198"
+ },
+ "swsh6-139": {
+  "tc": 34718,
+  "slug": "flannery-chilling-reign-139-198"
+ },
+ "swsh6-142": {
+  "tc": 34721,
+  "slug": "honey-chilling-reign-142-198"
+ },
+ "swsh6-144": {
+  "tc": 34723,
+  "slug": "karens-conviction-chilling-reign-144-198"
+ },
+ "swsh6-145": {
+  "tc": 34724,
+  "slug": "klara-chilling-reign-145-198"
+ },
+ "swsh6-146": {
+  "tc": 34725,
+  "slug": "melony-chilling-reign-146-198"
+ },
+ "swsh6-149": {
+  "tc": 34728,
+  "slug": "peonia-chilling-reign-149-198"
+ },
+ "swsh6-150": {
+  "tc": 34729,
+  "slug": "peony-chilling-reign-150-198"
+ },
+ "swsh6-153": {
+  "tc": 34732,
+  "slug": "siebold-chilling-reign-153-198"
+ },
+ "swsh6-186": {
+  "tc": 34765,
+  "slug": "agatha-chilling-reign-186-198"
+ },
+ "swsh6-187": {
+  "tc": 34766,
+  "slug": "avery-chilling-reign-187-198"
+ },
+ "swsh6-188": {
+  "tc": 34767,
+  "slug": "brawly-chilling-reign-188-198"
+ },
+ "swsh6-189": {
+  "tc": 34768,
+  "slug": "caitlin-chilling-reign-189-198"
+ },
+ "swsh6-190": {
+  "tc": 34769,
+  "slug": "doctor-chilling-reign-190-198"
+ },
+ "swsh6-191": {
+  "tc": 34770,
+  "slug": "flannery-chilling-reign-191-198"
+ },
+ "swsh6-192": {
+  "tc": 34771,
+  "slug": "honey-chilling-reign-192-198"
+ },
+ "swsh6-193": {
+  "tc": 34772,
+  "slug": "karens-conviction-chilling-reign-193-198"
+ },
+ "swsh6-194": {
+  "tc": 34773,
+  "slug": "klara-chilling-reign-194-198"
+ },
+ "swsh6-195": {
+  "tc": 34774,
+  "slug": "melony-chilling-reign-195-198"
+ },
+ "swsh6-196": {
+  "tc": 34775,
+  "slug": "peonia-chilling-reign-196-198"
+ },
+ "swsh6-197": {
+  "tc": 34776,
+  "slug": "peony-chilling-reign-197-198"
+ },
+ "swsh6-198": {
+  "tc": 34777,
+  "slug": "siebold-chilling-reign-198-198"
+ },
+ "swsh6-210": {
+  "tc": 34789,
+  "slug": "agatha-chilling-reign-210-198"
+ },
+ "swsh6-211": {
+  "tc": 34790,
+  "slug": "avery-chilling-reign-211-198"
+ },
+ "swsh6-212": {
+  "tc": 34791,
+  "slug": "brawly-chilling-reign-212-198"
+ },
+ "swsh6-213": {
+  "tc": 34792,
+  "slug": "caitlin-chilling-reign-213-198"
+ },
+ "swsh6-214": {
+  "tc": 34793,
+  "slug": "doctor-chilling-reign-214-198"
+ },
+ "swsh6-215": {
+  "tc": 34794,
+  "slug": "flannery-chilling-reign-215-198"
+ },
+ "swsh6-216": {
+  "tc": 34795,
+  "slug": "karens-conviction-chilling-reign-216-198"
+ },
+ "swsh6-217": {
+  "tc": 34796,
+  "slug": "klara-chilling-reign-217-198"
+ },
+ "swsh6-218": {
+  "tc": 34797,
+  "slug": "melony-chilling-reign-218-198"
+ },
+ "swsh6-219": {
+  "tc": 34798,
+  "slug": "peonia-chilling-reign-219-198"
+ },
+ "swsh6-220": {
+  "tc": 34799,
+  "slug": "peony-chilling-reign-220-198"
+ },
+ "swsh6-221": {
+  "tc": 34800,
+  "slug": "siebold-chilling-reign-221-198"
+ },
+ "swsh7-141": {
+  "tc": 35276,
+  "slug": "aroma-lady-evolving-skies-141-203"
+ },
+ "swsh7-143": {
+  "tc": 35278,
+  "slug": "copycat-evolving-skies-143-203"
+ },
+ "swsh7-149": {
+  "tc": 35284,
+  "slug": "gordie-evolving-skies-149-203"
+ },
+ "swsh7-152": {
+  "tc": 35287,
+  "slug": "raihan-evolving-skies-152-203"
+ },
+ "swsh7-164": {
+  "tc": 35299,
+  "slug": "zinnias-resolve-evolving-skies-164-203"
+ },
+ "swsh7-199": {
+  "tc": 35334,
+  "slug": "aroma-lady-evolving-skies-199-203"
+ },
+ "swsh7-200": {
+  "tc": 35335,
+  "slug": "copycat-evolving-skies-200-203"
+ },
+ "swsh7-201": {
+  "tc": 35336,
+  "slug": "gordie-evolving-skies-201-203"
+ },
+ "swsh7-202": {
+  "tc": 35337,
+  "slug": "raihan-evolving-skies-202-203"
+ },
+ "swsh7-203": {
+  "tc": 35338,
+  "slug": "zinnias-resolve-evolving-skies-203-203"
+ },
+ "swsh7-221": {
+  "tc": 35356,
+  "slug": "aroma-lady-evolving-skies-221-203"
+ },
+ "swsh7-222": {
+  "tc": 35357,
+  "slug": "copycat-evolving-skies-222-203"
+ },
+ "swsh7-223": {
+  "tc": 35358,
+  "slug": "gordie-evolving-skies-223-203"
+ },
+ "swsh7-224": {
+  "tc": 35359,
+  "slug": "raihan-evolving-skies-224-203"
+ },
+ "swsh7-225": {
+  "tc": 35360,
+  "slug": "zinnias-resolve-evolving-skies-225-203"
+ },
+ "swsh8-224": {
+  "tc": 35981,
+  "slug": "adventurers-discovery-fusion-strike-224-264"
+ },
+ "swsh8-226": {
+  "tc": 35983,
+  "slug": "bug-catcher-fusion-strike-226-264"
+ },
+ "swsh8-227": {
+  "tc": 35984,
+  "slug": "chili-and-cilan-and-cress-fusion-strike-227-264"
+ },
+ "swsh8-228": {
+  "tc": 35985,
+  "slug": "cook-fusion-strike-228-264"
+ },
+ "swsh8-232": {
+  "tc": 35989,
+  "slug": "dancer-fusion-strike-232-264"
+ },
+ "swsh8-233": {
+  "tc": 35990,
+  "slug": "elesas-sparkle-fusion-strike-233-264"
+ },
+ "swsh8-235": {
+  "tc": 35992,
+  "slug": "judge-fusion-strike-235-264"
+ },
+ "swsh8-238": {
+  "tc": 35995,
+  "slug": "schoolboy-fusion-strike-238-264"
+ },
+ "swsh8-239": {
+  "tc": 35996,
+  "slug": "schoolgirl-fusion-strike-239-264"
+ },
+ "swsh8-240": {
+  "tc": 35997,
+  "slug": "shauna-fusion-strike-240-264"
+ },
+ "swsh8-241": {
+  "tc": 35998,
+  "slug": "sidney-fusion-strike-241-264"
+ },
+ "swsh8-258": {
+  "tc": 36015,
+  "slug": "chili-and-cilan-and-cress-fusion-strike-258-264"
+ },
+ "swsh8-259": {
+  "tc": 36016,
+  "slug": "dancer-fusion-strike-259-264"
+ },
+ "swsh8-260": {
+  "tc": 36017,
+  "slug": "elesas-sparkle-fusion-strike-260-264"
+ },
+ "swsh8-261": {
+  "tc": 36018,
+  "slug": "schoolboy-fusion-strike-261-264"
+ },
+ "swsh8-262": {
+  "tc": 36019,
+  "slug": "schoolgirl-fusion-strike-262-264"
+ },
+ "swsh8-263": {
+  "tc": 36020,
+  "slug": "shauna-fusion-strike-263-264"
+ },
+ "swsh8-264": {
+  "tc": 36021,
+  "slug": "sidney-fusion-strike-264-264"
+ },
+ "swsh8-273": {
+  "tc": 36030,
+  "slug": "chili-and-cilan-and-cress-fusion-strike-273-264"
+ },
+ "swsh8-274": {
+  "tc": 36031,
+  "slug": "dancer-fusion-strike-274-264"
+ },
+ "swsh8-275": {
+  "tc": 36032,
+  "slug": "elesas-sparkle-fusion-strike-275-264"
+ },
+ "swsh8-276": {
+  "tc": 36033,
+  "slug": "schoolboy-fusion-strike-276-264"
+ },
+ "swsh8-277": {
+  "tc": 36034,
+  "slug": "schoolgirl-fusion-strike-277-264"
+ },
+ "swsh8-278": {
+  "tc": 36035,
+  "slug": "shauna-fusion-strike-278-264"
+ },
+ "swsh8-279": {
+  "tc": 36036,
+  "slug": "sidney-fusion-strike-279-264"
+ },
+ "swsh9-129": {
+  "tc": 37186,
+  "slug": "acerolas-premonition-brilliant-stars-129-172"
+ },
+ "swsh9-130": {
+  "tc": 37187,
+  "slug": "barry-brilliant-stars-130-172"
+ },
+ "swsh9-132": {
+  "tc": 37189,
+  "slug": "bosss-orders-brilliant-stars-132-172"
+ },
+ "swsh9-133": {
+  "tc": 37190,
+  "slug": "cafe-master-brilliant-stars-133-172"
+ },
+ "swsh9-134": {
+  "tc": 37191,
+  "slug": "cherens-care-brilliant-stars-134-172"
+ },
+ "swsh9-138": {
+  "tc": 37195,
+  "slug": "cynthias-ambition-brilliant-stars-138-172"
+ },
+ "swsh9-140": {
+  "tc": 37197,
+  "slug": "friends-in-galar-brilliant-stars-140-172"
+ },
+ "swsh9-141": {
+  "tc": 37198,
+  "slug": "gloria-brilliant-stars-141-172"
+ },
+ "swsh9-143": {
+  "tc": 37200,
+  "slug": "kindler-brilliant-stars-143-172"
+ },
+ "swsh9-145": {
+  "tc": 37202,
+  "slug": "marnies-pride-brilliant-stars-145-172"
+ },
+ "swsh9-147": {
+  "tc": 37204,
+  "slug": "professors-research-brilliant-stars-147-172"
+ },
+ "swsh9-148": {
+  "tc": 37205,
+  "slug": "roseannes-backup-brilliant-stars-148-172"
+ },
+ "swsh9-149": {
+  "tc": 37206,
+  "slug": "team-yells-cheer-brilliant-stars-149-172"
+ },
+ "swsh9-167": {
+  "tc": 37224,
+  "slug": "barry-brilliant-stars-167-172"
+ },
+ "swsh9-168": {
+  "tc": 37225,
+  "slug": "cherens-care-brilliant-stars-168-172"
+ },
+ "swsh9-169": {
+  "tc": 37226,
+  "slug": "cynthias-ambition-brilliant-stars-169-172"
+ },
+ "swsh9-170": {
+  "tc": 37227,
+  "slug": "kindler-brilliant-stars-170-172"
+ },
+ "swsh9-171": {
+  "tc": 37228,
+  "slug": "marnies-pride-brilliant-stars-171-172"
+ },
+ "swsh9-172": {
+  "tc": 37229,
+  "slug": "roseannes-backup-brilliant-stars-172-172"
+ },
+ "swsh9-177": {
+  "tc": 37234,
+  "slug": "cherens-care-brilliant-stars-177-172"
+ },
+ "swsh9-178": {
+  "tc": 37235,
+  "slug": "cynthias-ambition-brilliant-stars-178-172"
+ },
+ "swsh9-179": {
+  "tc": 37236,
+  "slug": "kindler-brilliant-stars-179-172"
+ },
+ "swsh9-180": {
+  "tc": 37237,
+  "slug": "roseannes-backup-brilliant-stars-180-172"
+ },
+ "swsh9tg-TG24": {
+  "tc": 37267,
+  "slug": "acerolas-premonition-brilliant-stars-tg24-tg30"
+ },
+ "swsh9tg-TG25": {
+  "tc": 37268,
+  "slug": "cafe-master-brilliant-stars-tg25-tg30"
+ },
+ "swsh9tg-TG26": {
+  "tc": 37269,
+  "slug": "gloria-brilliant-stars-tg26-tg30"
+ },
+ "swsh9tg-TG27": {
+  "tc": 37270,
+  "slug": "rapid-strike-style-mustard-brilliant-stars-tg27-tg30"
+ },
+ "swsh9tg-TG28": {
+  "tc": 37271,
+  "slug": "single-strike-style-mustard-brilliant-stars-tg28-tg30"
+ },
+ "swsh10-135": {
+  "tc": 38121,
+  "slug": "adaman-astral-radiance-135-189"
+ },
+ "swsh10-137": {
+  "tc": 38123,
+  "slug": "choy-astral-radiance-137-189"
+ },
+ "swsh10-138": {
+  "tc": 38124,
+  "slug": "cyllene-astral-radiance-138-189"
+ },
+ "swsh10-143": {
+  "tc": 38129,
+  "slug": "gardenias-vigor-astral-radiance-143-189"
+ },
+ "swsh10-144": {
+  "tc": 38130,
+  "slug": "grant-astral-radiance-144-189"
+ },
+ "swsh10-147": {
+  "tc": 38133,
+  "slug": "irida-astral-radiance-147-189"
+ },
+ "swsh10-149": {
+  "tc": 38135,
+  "slug": "kamado-astral-radiance-149-189"
+ },
+ "swsh10-150": {
+  "tc": 38136,
+  "slug": "roxanne-astral-radiance-150-189"
+ },
+ "swsh10-159": {
+  "tc": 38145,
+  "slug": "zisu-astral-radiance-159-189"
+ },
+ "swsh10-181": {
+  "tc": 38167,
+  "slug": "adaman-astral-radiance-181-189"
+ },
+ "swsh10-182": {
+  "tc": 38168,
+  "slug": "choy-astral-radiance-182-189"
+ },
+ "swsh10-183": {
+  "tc": 38169,
+  "slug": "cyllene-astral-radiance-183-189"
+ },
+ "swsh10-184": {
+  "tc": 38170,
+  "slug": "gardenias-vigor-astral-radiance-184-189"
+ },
+ "swsh10-185": {
+  "tc": 38171,
+  "slug": "grant-astral-radiance-185-189"
+ },
+ "swsh10-186": {
+  "tc": 38172,
+  "slug": "irida-astral-radiance-186-189"
+ },
+ "swsh10-187": {
+  "tc": 38173,
+  "slug": "kamado-astral-radiance-187-189"
+ },
+ "swsh10-188": {
+  "tc": 38174,
+  "slug": "roxanne-astral-radiance-188-189"
+ },
+ "swsh10-189": {
+  "tc": 38175,
+  "slug": "zisu-astral-radiance-189-189"
+ },
+ "swsh10-199": {
+  "tc": 38185,
+  "slug": "adaman-astral-radiance-199-189"
+ },
+ "swsh10-200": {
+  "tc": 38186,
+  "slug": "choy-astral-radiance-200-189"
+ },
+ "swsh10-201": {
+  "tc": 38187,
+  "slug": "cyllene-astral-radiance-201-189"
+ },
+ "swsh10-202": {
+  "tc": 38188,
+  "slug": "gardenias-vigor-astral-radiance-202-189"
+ },
+ "swsh10-203": {
+  "tc": 38189,
+  "slug": "grant-astral-radiance-203-189"
+ },
+ "swsh10-204": {
+  "tc": 38190,
+  "slug": "irida-astral-radiance-204-189"
+ },
+ "swsh10-205": {
+  "tc": 38191,
+  "slug": "kamado-astral-radiance-205-189"
+ },
+ "swsh10-206": {
+  "tc": 38192,
+  "slug": "roxanne-astral-radiance-206-189"
+ },
+ "swsh10-207": {
+  "tc": 38193,
+  "slug": "zisu-astral-radiance-207-189"
+ },
+ "swsh10tg-TG24": {
+  "tc": 38226,
+  "slug": "allister-astral-radiance-tg24-tg30"
+ },
+ "swsh10tg-TG25": {
+  "tc": 38227,
+  "slug": "bea-astral-radiance-tg25-tg30"
+ },
+ "swsh10tg-TG26": {
+  "tc": 38228,
+  "slug": "melony-astral-radiance-tg26-tg30"
+ },
+ "swsh10tg-TG27": {
+  "tc": 38229,
+  "slug": "milo-astral-radiance-tg27-tg30"
+ },
+ "swsh10tg-TG28": {
+  "tc": 38230,
+  "slug": "piers-astral-radiance-tg28-tg30"
+ },
+ "swsh10.5-064": {
+  "tc": 38479,
+  "slug": "blanche-pokemon-go-064-078"
+ },
+ "swsh10.5-065": {
+  "tc": 38480,
+  "slug": "candela-pokemon-go-065-078"
+ },
+ "swsh10.5-070": {
+  "tc": 38485,
+  "slug": "spark-pokemon-go-070-078"
+ },
+ "swsh10.5-078": {
+  "tc": 38493,
+  "slug": "professors-research-pokemon-go-078-078"
+ },
+ "swsh10.5-082": {
+  "tc": 38497,
+  "slug": "blanche-pokemon-go-082-078"
+ },
+ "swsh10.5-083": {
+  "tc": 38498,
+  "slug": "candela-pokemon-go-083-078"
+ },
+ "swsh10.5-084": {
+  "tc": 38499,
+  "slug": "professors-research-pokemon-go-084-078"
+ },
+ "swsh10.5-085": {
+  "tc": 38500,
+  "slug": "spark-pokemon-go-085-078"
+ },
+ "swsh11-153": {
+  "tc": 39000,
+  "slug": "arezu-lost-origin-153-196"
+ },
+ "swsh11-155": {
+  "tc": 39002,
+  "slug": "colresss-experiment-lost-origin-155-196"
+ },
+ "swsh11-157": {
+  "tc": 39004,
+  "slug": "fantina-lost-origin-157-196"
+ },
+ "swsh11-158": {
+  "tc": 39005,
+  "slug": "iscan-lost-origin-158-196"
+ },
+ "swsh11-159": {
+  "tc": 39006,
+  "slug": "lady-lost-origin-159-196"
+ },
+ "swsh11-164": {
+  "tc": 39011,
+  "slug": "miss-fortune-sisters-lost-origin-164-196"
+ },
+ "swsh11-166": {
+  "tc": 39013,
+  "slug": "riley-lost-origin-166-196"
+ },
+ "swsh11-167": {
+  "tc": 39014,
+  "slug": "thorton-lost-origin-167-196"
+ },
+ "swsh11-169": {
+  "tc": 39016,
+  "slug": "volo-lost-origin-169-196"
+ },
+ "swsh11-189": {
+  "tc": 39036,
+  "slug": "arezu-lost-origin-189-196"
+ },
+ "swsh11-190": {
+  "tc": 39037,
+  "slug": "colresss-experiment-lost-origin-190-196"
+ },
+ "swsh11-191": {
+  "tc": 39038,
+  "slug": "fantina-lost-origin-191-196"
+ },
+ "swsh11-192": {
+  "tc": 39039,
+  "slug": "iscan-lost-origin-192-196"
+ },
+ "swsh11-193": {
+  "tc": 39040,
+  "slug": "lady-lost-origin-193-196"
+ },
+ "swsh11-194": {
+  "tc": 39041,
+  "slug": "miss-fortune-sisters-lost-origin-194-196"
+ },
+ "swsh11-195": {
+  "tc": 39042,
+  "slug": "thorton-lost-origin-195-196"
+ },
+ "swsh11-196": {
+  "tc": 39043,
+  "slug": "volo-lost-origin-196-196"
+ },
+ "swsh11-204": {
+  "tc": 39051,
+  "slug": "arezu-lost-origin-204-196"
+ },
+ "swsh11-205": {
+  "tc": 39052,
+  "slug": "colresss-experiment-lost-origin-205-196"
+ },
+ "swsh11-206": {
+  "tc": 39053,
+  "slug": "fantina-lost-origin-206-196"
+ },
+ "swsh11-207": {
+  "tc": 39054,
+  "slug": "iscan-lost-origin-207-196"
+ },
+ "swsh11-208": {
+  "tc": 39055,
+  "slug": "lady-lost-origin-208-196"
+ },
+ "swsh11-209": {
+  "tc": 39056,
+  "slug": "miss-fortune-sisters-lost-origin-209-196"
+ },
+ "swsh11-210": {
+  "tc": 39057,
+  "slug": "thorton-lost-origin-210-196"
+ },
+ "swsh11-211": {
+  "tc": 39058,
+  "slug": "volo-lost-origin-211-196"
+ },
+ "swsh11tg-TG23": {
+  "tc": 39087,
+  "slug": "adventurers-discovery-lost-origin-tg23-tg30"
+ },
+ "swsh11tg-TG24": {
+  "tc": 39088,
+  "slug": "bosss-orders-lost-origin-tg24-tg30"
+ },
+ "swsh11tg-TG25": {
+  "tc": 39089,
+  "slug": "cook-lost-origin-tg25-tg30"
+ },
+ "swsh11tg-TG26": {
+  "tc": 39090,
+  "slug": "kabu-lost-origin-tg26-tg30"
+ },
+ "swsh11tg-TG27": {
+  "tc": 39091,
+  "slug": "nessa-lost-origin-tg27-tg30"
+ },
+ "swsh11tg-TG28": {
+  "tc": 39092,
+  "slug": "opal-lost-origin-tg28-tg30"
+ },
+ "swsh12-151": {
+  "tc": 39388,
+  "slug": "brandon-silver-tempest-151-195"
+ },
+ "swsh12-152": {
+  "tc": 39389,
+  "slug": "candice-silver-tempest-152-195"
+ },
+ "swsh12-157": {
+  "tc": 39394,
+  "slug": "furisode-girl-silver-tempest-157-195"
+ },
+ "swsh12-158": {
+  "tc": 39395,
+  "slug": "gym-trainer-silver-tempest-158-195"
+ },
+ "swsh12-159": {
+  "tc": 39396,
+  "slug": "lance-silver-tempest-159-195"
+ },
+ "swsh12-162": {
+  "tc": 39399,
+  "slug": "professor-laventon-silver-tempest-162-195"
+ },
+ "swsh12-164": {
+  "tc": 39401,
+  "slug": "serena-silver-tempest-164-195"
+ },
+ "swsh12-166": {
+  "tc": 39403,
+  "slug": "wallace-silver-tempest-166-195"
+ },
+ "swsh12-167": {
+  "tc": 39404,
+  "slug": "worker-silver-tempest-167-195"
+ },
+ "swsh12-188": {
+  "tc": 39425,
+  "slug": "brandon-silver-tempest-188-195"
+ },
+ "swsh12-189": {
+  "tc": 39426,
+  "slug": "candice-silver-tempest-189-195"
+ },
+ "swsh12-190": {
+  "tc": 39427,
+  "slug": "furisode-girl-silver-tempest-190-195"
+ },
+ "swsh12-191": {
+  "tc": 39428,
+  "slug": "gym-trainer-silver-tempest-191-195"
+ },
+ "swsh12-192": {
+  "tc": 39429,
+  "slug": "lance-silver-tempest-192-195"
+ },
+ "swsh12-193": {
+  "tc": 39430,
+  "slug": "serena-silver-tempest-193-195"
+ },
+ "swsh12-194": {
+  "tc": 39431,
+  "slug": "wallace-silver-tempest-194-195"
+ },
+ "swsh12-195": {
+  "tc": 39432,
+  "slug": "worker-silver-tempest-195-195"
+ },
+ "swsh12-203": {
+  "tc": 39440,
+  "slug": "brandon-silver-tempest-203-195"
+ },
+ "swsh12-204": {
+  "tc": 39441,
+  "slug": "candice-silver-tempest-204-195"
+ },
+ "swsh12-205": {
+  "tc": 39442,
+  "slug": "furisode-girl-silver-tempest-205-195"
+ },
+ "swsh12-206": {
+  "tc": 39443,
+  "slug": "lance-silver-tempest-206-195"
+ },
+ "swsh12-207": {
+  "tc": 39444,
+  "slug": "serena-silver-tempest-207-195"
+ },
+ "swsh12-208": {
+  "tc": 39445,
+  "slug": "wallace-silver-tempest-208-195"
+ },
+ "swsh12-209": {
+  "tc": 39446,
+  "slug": "worker-silver-tempest-209-195"
+ },
+ "swsh12tg-TG23": {
+  "tc": 39475,
+  "slug": "friends-in-galar-silver-tempest-tg23-tg30"
+ },
+ "swsh12tg-TG24": {
+  "tc": 39476,
+  "slug": "gordie-silver-tempest-tg24-tg30"
+ },
+ "swsh12tg-TG25": {
+  "tc": 39477,
+  "slug": "judge-silver-tempest-tg25-tg30"
+ },
+ "swsh12tg-TG26": {
+  "tc": 39478,
+  "slug": "professor-burnet-silver-tempest-tg26-tg30"
+ },
+ "swsh12tg-TG27": {
+  "tc": 39479,
+  "slug": "raihan-silver-tempest-tg27-tg30"
+ },
+ "swsh12tg-TG28": {
+  "tc": 39480,
+  "slug": "sordward-and-shielbert-silver-tempest-tg28-tg30"
+ },
+ "swsh12.5-123": {
+  "tc": 39971,
+  "slug": "bea-crown-zenith-123-159"
+ },
+ "swsh12.5-124": {
+  "tc": 39972,
+  "slug": "bede-crown-zenith-124-159"
+ },
+ "swsh12.5-126": {
+  "tc": 39974,
+  "slug": "digging-duo-crown-zenith-126-159"
+ },
+ "swsh12.5-130": {
+  "tc": 39978,
+  "slug": "friends-in-hisui-crown-zenith-130-159"
+ },
+ "swsh12.5-131": {
+  "tc": 39979,
+  "slug": "friends-in-sinnoh-crown-zenith-131-159"
+ },
+ "swsh12.5-133": {
+  "tc": 39981,
+  "slug": "hop-crown-zenith-133-159"
+ },
+ "swsh12.5-134": {
+  "tc": 39982,
+  "slug": "leon-crown-zenith-134-159"
+ },
+ "swsh12.5-136": {
+  "tc": 39984,
+  "slug": "nessa-crown-zenith-136-159"
+ },
+ "swsh12.5-140": {
+  "tc": 39988,
+  "slug": "raihan-crown-zenith-140-159"
+ },
+ "swsh12.5-147": {
+  "tc": 39995,
+  "slug": "elesas-sparkle-crown-zenith-147-159"
+ },
+ "swsh12.5-148": {
+  "tc": 39996,
+  "slug": "friends-in-hisui-crown-zenith-148-159"
+ },
+ "swsh12.5-149": {
+  "tc": 39997,
+  "slug": "friends-in-sinnoh-crown-zenith-149-159"
+ },
+ "swsh12.5-150": {
+  "tc": 39998,
+  "slug": "professors-research-crown-zenith-150-159"
+ },
+ "swsh12.5-151": {
+  "tc": 39999,
+  "slug": "volo-crown-zenith-151-159"
+ },
+ "swsh12.5gg-GG57": {
+  "tc": 40065,
+  "slug": "adaman-crown-zenith-gg57-gg70"
+ },
+ "swsh12.5gg-GG58": {
+  "tc": 40066,
+  "slug": "cherens-care-crown-zenith-gg58-gg70"
+ },
+ "swsh12.5gg-GG59": {
+  "tc": 40067,
+  "slug": "colresss-experiment-crown-zenith-gg59-gg70"
+ },
+ "swsh12.5gg-GG60": {
+  "tc": 40068,
+  "slug": "cynthias-ambition-crown-zenith-gg60-gg70"
+ },
+ "swsh12.5gg-GG61": {
+  "tc": 40069,
+  "slug": "gardenias-vigor-crown-zenith-gg61-gg70"
+ },
+ "swsh12.5gg-GG62": {
+  "tc": 40070,
+  "slug": "grant-crown-zenith-gg62-gg70"
+ },
+ "swsh12.5gg-GG63": {
+  "tc": 40071,
+  "slug": "irida-crown-zenith-gg63-gg70"
+ },
+ "swsh12.5gg-GG64": {
+  "tc": 40072,
+  "slug": "melony-crown-zenith-gg64-gg70"
+ },
+ "swsh12.5gg-GG65": {
+  "tc": 40073,
+  "slug": "raihan-crown-zenith-gg65-gg70"
+ },
+ "swsh12.5gg-GG66": {
+  "tc": 40074,
+  "slug": "roxanne-crown-zenith-gg66-gg70"
+ },
+ "sv01-166": {
+  "tc": 40777,
+  "slug": "arven-scarlet-and-violet-166-198"
+ },
+ "sv01-175": {
+  "tc": 40786,
+  "slug": "jacq-scarlet-and-violet-175-198"
+ },
+ "sv01-176": {
+  "tc": 40787,
+  "slug": "judge-scarlet-and-violet-176-198"
+ },
+ "sv01-177": {
+  "tc": 40788,
+  "slug": "katy-scarlet-and-violet-177-198"
+ },
+ "sv01-179": {
+  "tc": 40790,
+  "slug": "miriam-scarlet-and-violet-179-198"
+ },
+ "sv01-180": {
+  "tc": 40791,
+  "slug": "nemona-scarlet-and-violet-180-198"
+ },
+ "sv01-183": {
+  "tc": 40794,
+  "slug": "penny-scarlet-and-violet-183-198"
+ },
+ "sv01-189": {
+  "tc": 40800,
+  "slug": "professors-research-scarlet-and-violet-189-198"
+ },
+ "sv01-190": {
+  "tc": 40801,
+  "slug": "professors-research-scarlet-and-violet-190-198"
+ },
+ "sv01-195": {
+  "tc": 40806,
+  "slug": "team-star-grunt-scarlet-and-violet-195-198"
+ },
+ "sv01-198": {
+  "tc": 40809,
+  "slug": "youngster-scarlet-and-violet-198-198"
+ },
+ "sv01-235": {
+  "tc": 40846,
+  "slug": "arven-scarlet-and-violet-235-198"
+ },
+ "sv01-236": {
+  "tc": 40847,
+  "slug": "jacq-scarlet-and-violet-236-198"
+ },
+ "sv01-237": {
+  "tc": 40848,
+  "slug": "katy-scarlet-and-violet-237-198"
+ },
+ "sv01-238": {
+  "tc": 40849,
+  "slug": "miriam-scarlet-and-violet-238-198"
+ },
+ "sv01-239": {
+  "tc": 40850,
+  "slug": "penny-scarlet-and-violet-239-198"
+ },
+ "sv01-240": {
+  "tc": 40851,
+  "slug": "professors-research-scarlet-and-violet-240-198"
+ },
+ "sv01-241": {
+  "tc": 40852,
+  "slug": "professors-research-scarlet-and-violet-241-198"
+ },
+ "sv01-242": {
+  "tc": 40853,
+  "slug": "team-star-grunt-scarlet-and-violet-242-198"
+ },
+ "sv01-249": {
+  "tc": 40860,
+  "slug": "arven-scarlet-and-violet-249-198"
+ },
+ "sv01-250": {
+  "tc": 40861,
+  "slug": "jacq-scarlet-and-violet-250-198"
+ },
+ "sv01-251": {
+  "tc": 40862,
+  "slug": "miriam-scarlet-and-violet-251-198"
+ },
+ "sv01-252": {
+  "tc": 40863,
+  "slug": "penny-scarlet-and-violet-252-198"
+ },
+ "sv02-172": {
+  "tc": 41373,
+  "slug": "bosss-orders-paldea-evolved-172-193"
+ },
+ "sv02-177": {
+  "tc": 41378,
+  "slug": "clavell-paldea-evolved-177-193"
+ },
+ "sv02-179": {
+  "tc": 41380,
+  "slug": "dendra-paldea-evolved-179-193"
+ },
+ "sv02-180": {
+  "tc": 41381,
+  "slug": "falkner-paldea-evolved-180-193"
+ },
+ "sv02-182": {
+  "tc": 41383,
+  "slug": "giacomo-paldea-evolved-182-193"
+ },
+ "sv02-184": {
+  "tc": 41385,
+  "slug": "grusha-paldea-evolved-184-193"
+ },
+ "sv02-185": {
+  "tc": 41386,
+  "slug": "iono-paldea-evolved-185-193"
+ },
+ "sv02-187": {
+  "tc": 41388,
+  "slug": "saguaro-paldea-evolved-187-193"
+ },
+ "sv02-248": {
+  "tc": 41449,
+  "slug": "bosss-orders-paldea-evolved-248-193"
+ },
+ "sv02-249": {
+  "tc": 41450,
+  "slug": "clavell-paldea-evolved-249-193"
+ },
+ "sv02-250": {
+  "tc": 41451,
+  "slug": "dendra-paldea-evolved-250-193"
+ },
+ "sv02-251": {
+  "tc": 41452,
+  "slug": "falkner-paldea-evolved-251-193"
+ },
+ "sv02-252": {
+  "tc": 41453,
+  "slug": "giacomo-paldea-evolved-252-193"
+ },
+ "sv02-253": {
+  "tc": 41454,
+  "slug": "grusha-paldea-evolved-253-193"
+ },
+ "sv02-254": {
+  "tc": 41455,
+  "slug": "iono-paldea-evolved-254-193"
+ },
+ "sv02-255": {
+  "tc": 41456,
+  "slug": "saguaro-paldea-evolved-255-193"
+ },
+ "sv02-265": {
+  "tc": 41466,
+  "slug": "bosss-orders-paldea-evolved-265-193"
+ },
+ "sv02-266": {
+  "tc": 41467,
+  "slug": "dendra-paldea-evolved-266-193"
+ },
+ "sv02-267": {
+  "tc": 41468,
+  "slug": "giacomo-paldea-evolved-267-193"
+ },
+ "sv02-268": {
+  "tc": 41469,
+  "slug": "grusha-paldea-evolved-268-193"
+ },
+ "sv02-269": {
+  "tc": 41470,
+  "slug": "iono-paldea-evolved-269-193"
+ },
+ "sv02-270": {
+  "tc": 41471,
+  "slug": "saguaro-paldea-evolved-270-193"
+ },
+ "sv03-186": {
+  "tc": 42295,
+  "slug": "arven-obsidian-flames-186-197"
+ },
+ "sv03-187": {
+  "tc": 42296,
+  "slug": "brassius-obsidian-flames-187-197"
+ },
+ "sv03-188": {
+  "tc": 42297,
+  "slug": "geeta-obsidian-flames-188-197"
+ },
+ "sv03-190": {
+  "tc": 42299,
+  "slug": "ortega-obsidian-flames-190-197"
+ },
+ "sv03-193": {
+  "tc": 42302,
+  "slug": "poppy-obsidian-flames-193-197"
+ },
+ "sv03-194": {
+  "tc": 42303,
+  "slug": "ryme-obsidian-flames-194-197"
+ },
+ "sv03-195": {
+  "tc": 42304,
+  "slug": "team-star-grunt-obsidian-flames-195-197"
+ },
+ "sv03-218": {
+  "tc": 42327,
+  "slug": "geeta-obsidian-flames-218-197"
+ },
+ "sv03-219": {
+  "tc": 42328,
+  "slug": "ortega-obsidian-flames-219-197"
+ },
+ "sv03-220": {
+  "tc": 42329,
+  "slug": "poppy-obsidian-flames-220-197"
+ },
+ "sv03-221": {
+  "tc": 42330,
+  "slug": "ryme-obsidian-flames-221-197"
+ },
+ "sv03-226": {
+  "tc": 42335,
+  "slug": "geeta-obsidian-flames-226-197"
+ },
+ "sv03-227": {
+  "tc": 42336,
+  "slug": "poppy-obsidian-flames-227-197"
+ },
+ "sv03.5-156": {
+  "tc": 42525,
+  "slug": "bills-transfer-scarlet-and-violet-151-156-165"
+ },
+ "sv03.5-158": {
+  "tc": 42527,
+  "slug": "daisys-help-scarlet-and-violet-151-158-165"
+ },
+ "sv03.5-160": {
+  "tc": 42529,
+  "slug": "erikas-invitation-scarlet-and-violet-151-160-165"
+ },
+ "sv03.5-161": {
+  "tc": 42530,
+  "slug": "giovannis-charisma-scarlet-and-violet-151-161-165"
+ },
+ "sv03.5-194": {
+  "tc": 42563,
+  "slug": "bills-transfer-scarlet-and-violet-151-194-165"
+ },
+ "sv03.5-195": {
+  "tc": 42564,
+  "slug": "daisys-help-scarlet-and-violet-151-195-165"
+ },
+ "sv03.5-196": {
+  "tc": 42565,
+  "slug": "erikas-invitation-scarlet-and-violet-151-196-165"
+ },
+ "sv03.5-197": {
+  "tc": 42566,
+  "slug": "giovannis-charisma-scarlet-and-violet-151-197-165"
+ },
+ "sv03.5-203": {
+  "tc": 42572,
+  "slug": "erikas-invitation-scarlet-and-violet-151-203-165"
+ },
+ "sv03.5-204": {
+  "tc": 42573,
+  "slug": "giovannis-charisma-scarlet-and-violet-151-204-165"
+ },
+ "sv04-165": {
+  "tc": 43166,
+  "slug": "larry-paradox-rift-165-182"
+ },
+ "sv04-167": {
+  "tc": 43168,
+  "slug": "mela-paradox-rift-167-182"
+ },
+ "sv04-168": {
+  "tc": 43169,
+  "slug": "norman-paradox-rift-168-182"
+ },
+ "sv04-169": {
+  "tc": 43170,
+  "slug": "parasol-lady-paradox-rift-169-182"
+ },
+ "sv04-170": {
+  "tc": 43171,
+  "slug": "professor-sadas-vitality-paradox-rift-170-182"
+ },
+ "sv04-171": {
+  "tc": 43172,
+  "slug": "professor-turos-scenario-paradox-rift-171-182"
+ },
+ "sv04-172": {
+  "tc": 43173,
+  "slug": "rika-paradox-rift-172-182"
+ },
+ "sv04-173": {
+  "tc": 43174,
+  "slug": "roark-paradox-rift-173-182"
+ },
+ "sv04-174": {
+  "tc": 43175,
+  "slug": "shauntal-paradox-rift-174-182"
+ },
+ "sv04-181": {
+  "tc": 43182,
+  "slug": "tulip-paradox-rift-181-182"
+ },
+ "sv04-235": {
+  "tc": 43236,
+  "slug": "larry-paradox-rift-235-182"
+ },
+ "sv04-236": {
+  "tc": 43237,
+  "slug": "mela-paradox-rift-236-182"
+ },
+ "sv04-237": {
+  "tc": 43238,
+  "slug": "norman-paradox-rift-237-182"
+ },
+ "sv04-238": {
+  "tc": 43239,
+  "slug": "parasol-lady-paradox-rift-238-182"
+ },
+ "sv04-239": {
+  "tc": 43240,
+  "slug": "professor-sadas-vitality-paradox-rift-239-182"
+ },
+ "sv04-240": {
+  "tc": 43241,
+  "slug": "professor-turos-scenario-paradox-rift-240-182"
+ },
+ "sv04-241": {
+  "tc": 43242,
+  "slug": "rika-paradox-rift-241-182"
+ },
+ "sv04-242": {
+  "tc": 43243,
+  "slug": "roark-paradox-rift-242-182"
+ },
+ "sv04-243": {
+  "tc": 43244,
+  "slug": "shauntal-paradox-rift-243-182"
+ },
+ "sv04-244": {
+  "tc": 43245,
+  "slug": "tulip-paradox-rift-244-182"
+ },
+ "sv04-254": {
+  "tc": 43255,
+  "slug": "mela-paradox-rift-254-182"
+ },
+ "sv04-255": {
+  "tc": 43256,
+  "slug": "parasol-lady-paradox-rift-255-182"
+ },
+ "sv04-256": {
+  "tc": 43257,
+  "slug": "professor-sadas-vitality-paradox-rift-256-182"
+ },
+ "sv04-257": {
+  "tc": 43258,
+  "slug": "professor-turos-scenario-paradox-rift-257-182"
+ },
+ "sv04-258": {
+  "tc": 43259,
+  "slug": "rika-paradox-rift-258-182"
+ },
+ "sv04-259": {
+  "tc": 43260,
+  "slug": "tulip-paradox-rift-259-182"
+ },
+ "sv04.5-077": {
+  "tc": 43997,
+  "slug": "atticus-paldean-fates-077-091"
+ },
+ "sv04.5-078": {
+  "tc": 43998,
+  "slug": "clive-paldean-fates-078-091"
+ },
+ "sv04.5-080": {
+  "tc": 44000,
+  "slug": "iono-paldean-fates-080-091"
+ },
+ "sv04.5-082": {
+  "tc": 44002,
+  "slug": "nemona-paldean-fates-082-091"
+ },
+ "sv04.5-085": {
+  "tc": 44005,
+  "slug": "paldean-student-paldean-fates-085-091"
+ },
+ "sv04.5-086": {
+  "tc": 44006,
+  "slug": "paldean-student-paldean-fates-086-091"
+ },
+ "sv04.5-087": {
+  "tc": 44007,
+  "slug": "professors-research-paldean-fates-087-091"
+ },
+ "sv04.5-088": {
+  "tc": 44008,
+  "slug": "professors-research-paldean-fates-088-091"
+ },
+ "sv04.5-227": {
+  "tc": 44147,
+  "slug": "clive-paldean-fates-227-091"
+ },
+ "sv04.5-228": {
+  "tc": 44148,
+  "slug": "judge-paldean-fates-228-091"
+ },
+ "sv04.5-229": {
+  "tc": 44149,
+  "slug": "nemona-paldean-fates-229-091"
+ },
+ "sv04.5-230": {
+  "tc": 44150,
+  "slug": "paldean-student-paldean-fates-230-091"
+ },
+ "sv04.5-231": {
+  "tc": 44151,
+  "slug": "paldean-student-paldean-fates-231-091"
+ },
+ "sv04.5-235": {
+  "tc": 44155,
+  "slug": "arven-paldean-fates-235-091"
+ },
+ "sv04.5-236": {
+  "tc": 44156,
+  "slug": "clive-paldean-fates-236-091"
+ },
+ "sv04.5-237": {
+  "tc": 44157,
+  "slug": "iono-paldean-fates-237-091"
+ },
+ "sv04.5-238": {
+  "tc": 44158,
+  "slug": "nemona-paldean-fates-238-091"
+ },
+ "sv04.5-239": {
+  "tc": 44159,
+  "slug": "penny-paldean-fates-239-091"
+ },
+ "sv05-142": {
+  "tc": 44632,
+  "slug": "biancas-devotion-temporal-forces-142-162"
+ },
+ "sv05-145": {
+  "tc": 44635,
+  "slug": "ciphermaniacs-codebreaking-temporal-forces-145-162"
+ },
+ "sv05-146": {
+  "tc": 44636,
+  "slug": "eri-temporal-forces-146-162"
+ },
+ "sv05-147": {
+  "tc": 44637,
+  "slug": "explorers-guidance-temporal-forces-147-162"
+ },
+ "sv05-155": {
+  "tc": 44645,
+  "slug": "mortys-conviction-temporal-forces-155-162"
+ },
+ "sv05-160": {
+  "tc": 44650,
+  "slug": "salvatore-temporal-forces-160-162"
+ },
+ "sv05-197": {
+  "tc": 44687,
+  "slug": "biancas-devotion-temporal-forces-197-162"
+ },
+ "sv05-198": {
+  "tc": 44688,
+  "slug": "ciphermaniacs-codebreaking-temporal-forces-198-162"
+ },
+ "sv05-199": {
+  "tc": 44689,
+  "slug": "eri-temporal-forces-199-162"
+ },
+ "sv05-200": {
+  "tc": 44690,
+  "slug": "explorers-guidance-temporal-forces-200-162"
+ },
+ "sv05-201": {
+  "tc": 44691,
+  "slug": "mortys-conviction-temporal-forces-201-162"
+ },
+ "sv05-202": {
+  "tc": 44692,
+  "slug": "salvatore-temporal-forces-202-162"
+ },
+ "sv05-209": {
+  "tc": 44699,
+  "slug": "biancas-devotion-temporal-forces-209-162"
  }
 }

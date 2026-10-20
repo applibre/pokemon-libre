@@ -463,9 +463,12 @@ test('el número se enseña como en la carta', () => {
 });
 
 test('ninguna carta enseña un total que no está impreso', () => {
+  // las que sí lo llevan impreso, comprobadas mirando la foto (la Kids' WB «5/5»)
+  const impresos = require('../scripts/numeros-impresos.json');
   for (const c of CARTAS) {
+    if (impresos[c.id]) continue;
     const set = SETS[c.s] || {};
-    if (!/promos?/i.test(set.n || '')) continue;
+    if (!/\bpromos?\b/i.test(set.n || '')) continue;
     assert.ok(!D.numeroCompleto(c, SETS).includes('/'),
       `${c.id}: las promos no llevan total y enseña ${D.numeroCompleto(c, SETS)}`);
   }
@@ -586,7 +589,8 @@ test('cada variante especial (sello, Cosmos Holo, Jumbo…) es otra carta, con s
   }
   // las que no tenían foto siguen como contador en su base: son pocas
   const contadores = CARTAS.flatMap((c) => c.v.filter((k) => !D.NOMBRE_VARIANTE[k]));
-  assert.ok(contadores.length <= 20, `${contadores.length} variantes sin foto como contador`);
+  // (los Partidarios suman unas 40: premios de torneo de los que no hay foto en ninguna fuente)
+  assert.ok(contadores.length <= 60, `${contadores.length} variantes sin foto como contador`);
   for (const k of contadores) assert.ok(nv[k], `«${k}» sin nombre`);
 
   // las formas que TCGdex dejaba sin marcar y TCGplayer sí vende: la Haunter ex12-35 existe también en Reverse holo
@@ -599,4 +603,27 @@ test('cada variante especial (sello, Cosmos Holo, Jumbo…) es otra carta, con s
   // toda clave de nv la usa alguna carta (nada huérfano)
   const usadas = new Set(CARTAS.flatMap((c) => [...c.v, ...(c.vn ? [c.vn] : [])]));
   for (const k of Object.keys(nv)) assert.ok(usadas.has(k), `«${k}» está en nv pero ninguna carta la usa`);
+});
+
+test('los Entrenadores: solo Partidarios, solo en inglés, uno por personaje (Arturo, 19-10-2026)', () => {
+  const ents = new Set(manifiesto.pokemon.filter((p) => p.ent).map((p) => p.id));
+  const suyas = CARTAS.filter((c) => c.p.some((p) => p.startsWith('e-')));
+  assert.ok(ents.size > 300, `solo ${ents.size} personajes`);
+  assert.ok(suyas.length > 1000, `solo ${suyas.length} cartas de Partidarios`);
+  for (const c of suyas) {
+    assert.strictEqual(c.l, undefined, `${c.id}: hay Entrenadores en japonés`);
+    assert.ok(!c.s.startsWith('ja-'), `${c.id}: en una colección japonesa`);
+    assert.strictEqual(c.j?.e, 'Supporter', `${c.id} (${c.n}) no es un Partidario`);
+    assert.strictEqual(c.p.length, 1, `${c.id}: de varios personajes`);
+    assert.ok(ents.has(c.p[0]), `${c.id}: su personaje ${c.p[0]} no está en el manifiesto`);
+  }
+  // cada personaje junta sus cartas aunque el nombre cambie: «Brock's Grit» y «Brock» son de Brock
+  const de = (id) => suyas.filter((c) => c.p[0] === id).map((c) => c.n);
+  assert.ok(de('e-brock').some((n) => /Brock's/.test(n.replace('’', "'"))), 'las de Brock no se juntan');
+  assert.ok(de('e-professor-oak').some((n) => /Professor's Research \(Professor Oak\)/.test(n)), 'Professor Oak sin su Professor\'s Research');
+  assert.ok(de('e-iono').length >= 4, 'faltan cartas de Iono');
+  // ninguna de Pokémon TCG Pocket
+  assert.ok(!suyas.some((c) => /^(A\d|P-A|B\d)/.test(c.s)), 'se coló una de TCG Pocket');
+  // un Pokémon no es un Entrenador (la lista de TCGdex traía algunos por error)
+  assert.ok(!suyas.some((c) => c.j?.ps), 'un Partidario con PS: es un Pokémon');
 });

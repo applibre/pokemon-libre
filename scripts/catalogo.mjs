@@ -201,6 +201,33 @@ async function main() {
   console.log(`Por nombre, en sets recientes sin dexId: ${porNombreNuevas} cartas
 `);
 
+  /* 1c · los Entrenadores: solo los Partidarios (los personajes), solo en inglés
+     Arturo (19-10-2026): «solo entrenadores, no objetos, no estadios, solo inglés»,
+     una baldosa por personaje. El personaje sale del nombre de la carta:
+     «Brock's Grit» → Brock, «Professor's Research (Professor Oak)» → Professor Oak,
+     «Team Rocket's Petrel» → Petrel. La lista de TCGdex mete alguna carta de Pokémon
+     por error: manda la ficha de cada carta (paso 2). */
+  const ALIAS = { 'Prof. Oak': 'Professor Oak', 'Prof. Elm': 'Professor Elm', 'Prof. Birch': 'Professor Birch' };
+  const quien = (n) => {
+    n = String(n).replace(/[’`]/g, "'").replace(/\s*[◇☆★]$/, '').replace(/\s+/g, ' ').trim();
+    let m = /^(?:Professor's Research|Boss's Orders) \((.+)\)$/.exec(n);
+    if (m) n = m[1];
+    else if (/^(Professor's Research|Boss's Orders)$/.test(n)) return n;
+    else if ((m = /^Team (?:Rocket|Aqua|Magma|Galactic|Plasma|Flare|Skull|Yell|Star)'s (.+)$/.exec(n))) n = m[1];
+    else if ((m = /^(.+?)'s\s/.exec(n))) n = m[1];
+    return ALIAS[n] || n;
+  };
+  const slug = (t) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const partidarioDe = new Map();   // id de carta → id del personaje
+  const listaPartidarios = await conCache('partidarios', () => pedir(`${API}/cards?trainerType=eq:Supporter`)) || [];
+  for (const c of listaPartidarios) {
+    if (/^(A\d|P-A|B\d)/.test(c.id)) continue;   // TCG Pocket
+    if (porCarta.has(c.id)) continue;            // ya es de un Pokémon (la lista de TCGdex trae alguno)
+    porCarta.set(c.id, []);
+    partidarioDe.set(c.id, { id: `e-${slug(quien(c.name))}`, nombre: quien(c.name) });
+  }
+  console.log(`Partidarios (candidatos): ${partidarioDe.size} cartas\n`);
+
   const ids = [...porCarta.keys()].sort();
   console.log(`\nCartas únicas: ${ids.length}\n`);
 
@@ -212,7 +239,8 @@ async function main() {
   )).filter(Boolean);
   console.log('\n');
 
-  const cartasPokemon = fichas.filter((c) => c.category === 'Pokemon');
+  const esPartidario = (c) => partidarioDe.has(c.id) && c.category === 'Trainer' && c.trainerType === 'Supporter';
+  const cartasPokemon = fichas.filter((c) => (c.category === 'Pokemon' && !partidarioDe.has(c.id)) || esPartidario(c));
   const descartadas = fichas.length - cartasPokemon.length;
   if (descartadas) console.log(`Descartados ${descartadas} Entrenadores/Energías con nombre de Pokémon\n`);
 
@@ -271,7 +299,7 @@ async function main() {
   /* 5 · el catálogo compacto */
   let cartas = soloPokemon.map((c) => {
     const dexes = porCarta.get(c.id) || [];
-    const suyos = pokemon.filter((p) => dexes.includes(p.dex)).map((p) => p.id);
+    const suyos = partidarioDe.has(c.id) ? [partidarioDe.get(c.id).id] : pokemon.filter((p) => dexes.includes(p.dex)).map((p) => p.id);
     const ficha = {
       id: c.id,
       n: c.name,
@@ -289,6 +317,7 @@ async function main() {
        carta: Arturo los quitó, no le servían. */
     const ficha_juego = {};
     if (c.stage) ficha_juego.e = c.stage;
+    if (partidarioDe.has(c.id)) ficha_juego.e = 'Supporter';
     if (c.evolveFrom) ficha_juego.de = c.evolveFrom;
     if (c.hp) ficha_juego.ps = c.hp;
     if (c.types?.length) ficha_juego.t = c.types;
@@ -336,7 +365,8 @@ async function main() {
   let anadidas = 0;
   for (const e of extra) {
     if (cartas.some((c) => c.id === e.id)) continue;
-    const suyos = pokemon.filter((p) => p.nombre.toLowerCase() === String(e.n).toLowerCase()).map((p) => p.id);
+    // por palabra, no por nombre exacto: «Alolan Vulpix» también es Vulpix
+    const suyos = pokemon.filter((p) => new RegExp(`\\b${p.nombre}\\b`, 'i').test(String(e.n))).map((p) => p.id);
     if (!suyos.length) { console.log(`  ! ${e.id}: ${e.n} no es de los nuestros`); continue; }
     if (e.set_n && !sets[e.set]) {
       sets[e.set] = { n: e.set_n, rel: e.rel || '', tot: e.tot || 0 };
@@ -478,9 +508,12 @@ async function main() {
     const set = sets[c.s];
     if (!set) continue;
     if (esPromo(set.n)) { c.ni = String(c.num); arreglados++; continue; }
-    const m = /^([A-Za-z]+)\d/.exec(String(c.num));
+    const m = /^([A-Za-z]+)(\d+)/.exec(String(c.num));
     const n = m && (prefijos[c.s] || {})[m[1]];
-    if (n) { c.ni = `${c.num}/${m[1]}${n}`; arreglados++; }
+    // las «SH» de Platinum no llevan total impreso (pl1-SH6 dice solo «SH6»), y un número
+    // mayor que el total contado es que la lista de TCGdex está incompleta: mejor sin total
+    if (m && m[1].toUpperCase() === 'SH') { c.ni = String(c.num); arreglados++; continue; }
+    if (n && m[1].toUpperCase() !== 'SH' && Number(m[2]) <= n) { c.ni = `${c.num}/${m[1]}${n}`; arreglados++; }
   }
   console.log(`Números impresos ${arreglados} cartas con numeración propia
 `);
@@ -596,6 +629,19 @@ async function main() {
   console.log(`Gigantes    ${antesGigantes - cartas.length} cartas fuera
 `);
 
+  /* 5.94 · un Partidario sin foto real en ninguna fuente no entra (una carta que se ve vacía no sirve).
+     Misty y N de la 30th Classic Collection: ni TCGdex, ni pokemontcg.io, ni Bulbapedia, ni TCGplayer (19-10-2026). */
+  const SIN_FOTO_FUERA = new Set(['30th-c-005', '30th-c-021']);
+  cartas = cartas.filter((c) => !SIN_FOTO_FUERA.has(c.id));
+
+  /* 5.95 · los personajes de los Partidarios que tienen alguna carta */
+  const nombreDe = new Map([...partidarioDe.values()].map((e) => [e.id, e.nombre]));
+  const cuentaEnt = new Map();
+  for (const c of cartas) for (const p of c.p) if (p.startsWith('e-')) cuentaEnt.set(p, (cuentaEnt.get(p) || 0) + 1);
+  const entrenadores = [...cuentaEnt].map(([id, n]) => ({ id, nombre: nombreDe.get(id) || id.slice(2), n }))
+    .sort((a, b) => b.n - a.n || a.nombre.localeCompare(b.nombre));
+  console.log(`Entrenadores ${entrenadores.length} personajes · ${[...cuentaEnt.values()].reduce((a, b) => a + b, 0)} cartas\n`);
+
   /* 6 · escribir */
   const json = JSON.stringify({ sets, cartas, nv: Object.fromEntries(Object.entries(nv).sort()), nd: Object.fromEntries(Object.entries(nd).sort()), mv });
   const hash = createHash('sha256').update(json).digest('hex').slice(0, 12);
@@ -607,8 +653,12 @@ async function main() {
     preciosDe,
     cartas: cartas.length,
     sets: Object.keys(sets).length,
-    pokemon: pokemon.map(({ dex, id, nombre, tipo, linea, orden, de, principal }) =>
-      ({ dex, id, nombre, tipo, linea, orden, de, principal })),
+    pokemon: [
+      ...pokemon.map(({ dex, id, nombre, tipo, linea, orden, de, principal }) =>
+        ({ dex, id, nombre, tipo, linea, orden, de, principal })),
+      // los personajes de los Partidarios, de más a menos cartas: la app los enseña en su propia sección
+      ...entrenadores.map(({ id, nombre }) => ({ id, nombre, tipo: 'entrenador', ent: true })),
+    ],
   }, null, 1));
 
   /* 7 · el parte */

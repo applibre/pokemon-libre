@@ -1,9 +1,9 @@
 {
- "version": "7d107fcb0e4d",
- "generado": "2026-10-03",
+ "version": "2242a4dfdb5b",
+ "generado": "2026-10-20",
  "preciosDe": "2026-09-30",
- "cartas": 2358,
- "sets": 345,
+ "cartas": 4148,
+ "sets": 388,
  "pokemon": [
   {
    "dex": 25,
@@ -146,6 +146,2274 @@
    "tipo": "normal",
    "de": "snorlax",
    "principal": false
+  },
+  {
+   "id": "e-n",
+   "nombre": "N",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-professor-s-research",
+   "nombre": "Professor's Research",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-cynthia",
+   "nombre": "Cynthia",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-copycat",
+   "nombre": "Copycat",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-professor-oak",
+   "nombre": "Professor Oak",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-colress",
+   "nombre": "Colress",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-giovanni",
+   "nombre": "Giovanni",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-steven",
+   "nombre": "Steven",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-professor-elm",
+   "nombre": "Professor Elm",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-professor-sycamore",
+   "nombre": "Professor Sycamore",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-professor-juniper",
+   "nombre": "Professor Juniper",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-boss-s-orders",
+   "nombre": "Boss's Orders",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-judge",
+   "nombre": "Judge",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-lillie",
+   "nombre": "Lillie",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-roseanne",
+   "nombre": "Roseanne",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-hau",
+   "nombre": "Hau",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-lysandre",
+   "nombre": "Lysandre",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-bill",
+   "nombre": "Bill",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-black-belt",
+   "nombre": "Black Belt",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-shauna",
+   "nombre": "Shauna",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-bebe",
+   "nombre": "Bebe",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-bug-catcher",
+   "nombre": "Bug Catcher",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-celio",
+   "nombre": "Celio",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-guzma",
+   "nombre": "Guzma",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-hop",
+   "nombre": "Hop",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-wally",
+   "nombre": "Wally",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-acerola",
+   "nombre": "Acerola",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-pokemon-center-lady",
+   "nombre": "Pokémon Center Lady",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-pokemon-fan-club",
+   "nombre": "Pokémon Fan Club",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-skyla",
+   "nombre": "Skyla",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-iono",
+   "nombre": "Iono",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-misty",
+   "nombre": "Misty",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-pokemon-collector",
+   "nombre": "Pokémon Collector",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-rocket",
+   "nombre": "Rocket",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-rosa",
+   "nombre": "Rosa",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-az",
+   "nombre": "AZ",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-bianca",
+   "nombre": "Bianca",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-cheren",
+   "nombre": "Cheren",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-iris",
+   "nombre": "Iris",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-tv-reporter",
+   "nombre": "TV Reporter",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-arven",
+   "nombre": "Arven",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-brock",
+   "nombre": "Brock",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-marnie",
+   "nombre": "Marnie",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-professor-turo",
+   "nombre": "Professor Turo",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-scott",
+   "nombre": "Scott",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-tierno",
+   "nombre": "Tierno",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-briar",
+   "nombre": "Briar",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-dawn",
+   "nombre": "Dawn",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-janine",
+   "nombre": "Janine",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-korrina",
+   "nombre": "Korrina",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-nemona",
+   "nombre": "Nemona",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-brigette",
+   "nombre": "Brigette",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-crispin",
+   "nombre": "Crispin",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-erika",
+   "nombre": "Erika",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-explorer",
+   "nombre": "Explorer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-fisherman",
+   "nombre": "Fisherman",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-gardenia",
+   "nombre": "Gardenia",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-gladion",
+   "nombre": "Gladion",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-holon-mentor",
+   "nombre": "Holon Mentor",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-piers",
+   "nombre": "Piers",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-professor-sada",
+   "nombre": "Professor Sada",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-raihan",
+   "nombre": "Raihan",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-sonia",
+   "nombre": "Sonia",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-underground-expedition",
+   "nombre": "Underground Expedition",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-xerosic",
+   "nombre": "Xerosic",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-ace-trainer",
+   "nombre": "Ace Trainer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-carmine",
+   "nombre": "Carmine",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-castaway",
+   "nombre": "Castaway",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-ciphermaniac",
+   "nombre": "Ciphermaniac",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-cyrus",
+   "nombre": "Cyrus",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-elesa",
+   "nombre": "Elesa",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-grimsley",
+   "nombre": "Grimsley",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-holon-adventurer",
+   "nombre": "Holon Adventurer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-holon-scientist",
+   "nombre": "Holon Scientist",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-jacq",
+   "nombre": "Jacq",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-karen",
+   "nombre": "Karen",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-kieran",
+   "nombre": "Kieran",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-klara",
+   "nombre": "Klara",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-lacey",
+   "nombre": "Lacey",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-melony",
+   "nombre": "Melony",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-morty",
+   "nombre": "Morty",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-nessa",
+   "nombre": "Nessa",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-pokemon-ranger",
+   "nombre": "Pokémon Ranger",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-professor-magnolia",
+   "nombre": "Professor Magnolia",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-roxanne",
+   "nombre": "Roxanne",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-welder",
+   "nombre": "Welder",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-zinnia",
+   "nombre": "Zinnia",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-ariana",
+   "nombre": "Ariana",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-bea",
+   "nombre": "Bea",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-bede",
+   "nombre": "Bede",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-ethan",
+   "nombre": "Ethan",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-geeta",
+   "nombre": "Geeta",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-grant",
+   "nombre": "Grant",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-hex-maniac",
+   "nombre": "Hex Maniac",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-hilda",
+   "nombre": "Hilda",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-irida",
+   "nombre": "Irida",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-jasmine",
+   "nombre": "Jasmine",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-kabu",
+   "nombre": "Kabu",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-lady",
+   "nombre": "Lady",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-lana",
+   "nombre": "Lana",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-lance",
+   "nombre": "Lance",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-larry",
+   "nombre": "Larry",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-lisia",
+   "nombre": "Lisia",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-looker",
+   "nombre": "Looker",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-lt-surge",
+   "nombre": "Lt. Surge",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-lucian",
+   "nombre": "Lucian",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-mary",
+   "nombre": "Mary",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-mela",
+   "nombre": "Mela",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-milo",
+   "nombre": "Milo",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-penny",
+   "nombre": "Penny",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-petrel",
+   "nombre": "Petrel",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-pokemon-breeder",
+   "nombre": "Pokémon Breeder",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-professor-birch",
+   "nombre": "Professor Birch",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-professor-kukui",
+   "nombre": "Professor Kukui",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-serena",
+   "nombre": "Serena",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-volkner",
+   "nombre": "Volkner",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-adaman",
+   "nombre": "Adaman",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-allister",
+   "nombre": "Allister",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-amarys",
+   "nombre": "Amarys",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-archer",
+   "nombre": "Archer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-archie",
+   "nombre": "Archie",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-arezu",
+   "nombre": "Arezu",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-atticus",
+   "nombre": "Atticus",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-avery",
+   "nombre": "Avery",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-blaine",
+   "nombre": "Blaine",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-bruno",
+   "nombre": "Bruno",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-caitlin",
+   "nombre": "Caitlin",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-canari",
+   "nombre": "Canari",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-cheryl",
+   "nombre": "Cheryl",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-clemont",
+   "nombre": "Clemont",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-cook",
+   "nombre": "Cook",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-cyllene",
+   "nombre": "Cyllene",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-diantha",
+   "nombre": "Diantha",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-drayton",
+   "nombre": "Drayton",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-eri",
+   "nombre": "Eri",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-firebreather",
+   "nombre": "Firebreather",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-giacomo",
+   "nombre": "Giacomo",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-gordie",
+   "nombre": "Gordie",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-gym-trainer",
+   "nombre": "Gym Trainer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-hala",
+   "nombre": "Hala",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-kindler",
+   "nombre": "Kindler",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-leon",
+   "nombre": "Leon",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-lusamine",
+   "nombre": "Lusamine",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-maxie",
+   "nombre": "Maxie",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-miriam",
+   "nombre": "Miriam",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-mr-briney",
+   "nombre": "Mr. Briney",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-opal",
+   "nombre": "Opal",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-oracle",
+   "nombre": "Oracle",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-paldean-student",
+   "nombre": "Paldean Student",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-peonia",
+   "nombre": "Peonia",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-peony",
+   "nombre": "Peony",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-phoebe",
+   "nombre": "Phoebe",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-proton",
+   "nombre": "Proton",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-rapid-strike-style-mustard",
+   "nombre": "Rapid Strike Style Mustard",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-rose",
+   "nombre": "Rose",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-roxie",
+   "nombre": "Roxie",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-sage",
+   "nombre": "Sage",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-salvatore",
+   "nombre": "Salvatore",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-single-strike-style-mustard",
+   "nombre": "Single Strike Style Mustard",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-surfer",
+   "nombre": "Surfer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-team-star-grunt",
+   "nombre": "Team Star Grunt",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-team-yell-grunt",
+   "nombre": "Team Yell Grunt",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-teammates",
+   "nombre": "Teammates",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-thorton",
+   "nombre": "Thorton",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-tulip",
+   "nombre": "Tulip",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-volo",
+   "nombre": "Volo",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-worker",
+   "nombre": "Worker",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-youngster",
+   "nombre": "Youngster",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-aaron",
+   "nombre": "Aaron",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-adventurer",
+   "nombre": "Adventurer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-agatha",
+   "nombre": "Agatha",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-apricorn-maker",
+   "nombre": "Apricorn Maker",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-aroma-lady",
+   "nombre": "Aroma Lady",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-battle-reporter",
+   "nombre": "Battle Reporter",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-beauty",
+   "nombre": "Beauty",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-bird-keeper",
+   "nombre": "Bird Keeper",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-blacksmith",
+   "nombre": "Blacksmith",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-blanche",
+   "nombre": "Blanche",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-brandon",
+   "nombre": "Brandon",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-brawly",
+   "nombre": "Brawly",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-buck",
+   "nombre": "Buck",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-candela",
+   "nombre": "Candela",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-candice",
+   "nombre": "Candice",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-cassiopeia",
+   "nombre": "Cassiopeia",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-chili-cilan-cress",
+   "nombre": "Chili & Cilan & Cress",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-choy",
+   "nombre": "Choy",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-clavell",
+   "nombre": "Clavell",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-clive",
+   "nombre": "Clive",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-dancer",
+   "nombre": "Dancer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-delinquent",
+   "nombre": "Delinquent",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-dendra",
+   "nombre": "Dendra",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-doctor",
+   "nombre": "Doctor",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-emcee",
+   "nombre": "Emcee",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-fantina",
+   "nombre": "Fantina",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-felicity",
+   "nombre": "Felicity",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-flannery",
+   "nombre": "Flannery",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-fossil-researcher",
+   "nombre": "Fossil Researcher",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-friends-in-paldea",
+   "nombre": "Friends in Paldea",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-friends-in-sinnoh",
+   "nombre": "Friends in Sinnoh",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-furisode-girl",
+   "nombre": "Furisode Girl",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-gloria",
+   "nombre": "Gloria",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-grusha",
+   "nombre": "Grusha",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-gwynn",
+   "nombre": "Gwynn",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-here-comes-team-rocket",
+   "nombre": "Here Comes Team Rocket!",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-holon-farmer",
+   "nombre": "Holon Farmer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-iscan",
+   "nombre": "Iscan",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-jacinthe",
+   "nombre": "Jacinthe",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-kamado",
+   "nombre": "Kamado",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-koga",
+   "nombre": "Koga",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-lady-outing",
+   "nombre": "Lady Outing",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-mars",
+   "nombre": "Mars",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-miss-fortune-sisters",
+   "nombre": "Miss Fortune Sisters",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-mr-stone",
+   "nombre": "Mr. Stone",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-ninja-boy",
+   "nombre": "Ninja Boy",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-oleana",
+   "nombre": "Oleana",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-ortega",
+   "nombre": "Ortega",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-parasol-lady",
+   "nombre": "Parasol Lady",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-perrin",
+   "nombre": "Perrin",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-picnicker",
+   "nombre": "Picnicker",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-poppy",
+   "nombre": "Poppy",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-professor-cozmo",
+   "nombre": "Professor Cozmo",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-professor-rowan",
+   "nombre": "Professor Rowan",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-rika",
+   "nombre": "Rika",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-sabrina",
+   "nombre": "Sabrina",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-saguaro",
+   "nombre": "Saguaro",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-schoolboy",
+   "nombre": "Schoolboy",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-schoolgirl",
+   "nombre": "Schoolgirl",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-seeker",
+   "nombre": "Seeker",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-sidney",
+   "nombre": "Sidney",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-siebold",
+   "nombre": "Siebold",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-sophocles",
+   "nombre": "Sophocles",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-spark",
+   "nombre": "Spark",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-team-flare-grunt",
+   "nombre": "Team Flare Grunt",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-town-volunteers",
+   "nombre": "Town Volunteers",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-trevor",
+   "nombre": "Trevor",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-twins",
+   "nombre": "Twins",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-wager",
+   "nombre": "Wager",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-wallace",
+   "nombre": "Wallace",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-zisu",
+   "nombre": "Zisu",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-aether-foundation-employee",
+   "nombre": "Aether Foundation Employee",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-anthea-concordia",
+   "nombre": "Anthea & Concordia",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-ball-guy",
+   "nombre": "Ball Guy",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-barry",
+   "nombre": "Barry",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-blue",
+   "nombre": "Blue",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-bonnie",
+   "nombre": "Bonnie",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-brassius",
+   "nombre": "Brassius",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-cafe-master",
+   "nombre": "Café Master",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-cara-liss",
+   "nombre": "Cara Liss",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-caretaker",
+   "nombre": "Caretaker",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-channeler",
+   "nombre": "Channeler",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-cheer",
+   "nombre": "Cheer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-cheerleader",
+   "nombre": "Cheerleader",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-coach-trainer",
+   "nombre": "Coach Trainer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-crasher-wake",
+   "nombre": "Crasher Wake",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-cynthia-caitlin",
+   "nombre": "Cynthia & Caitlin",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-cyrano",
+   "nombre": "Cyrano",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-daisy",
+   "nombre": "Daisy",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-dana",
+   "nombre": "Dana",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-desert-shaman",
+   "nombre": "Desert Shaman",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-drasna",
+   "nombre": "Drasna",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-emma",
+   "nombre": "Emma",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-engineer",
+   "nombre": "Engineer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-evelyn",
+   "nombre": "Evelyn",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-faba",
+   "nombre": "Faba",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-falkner",
+   "nombre": "Falkner",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-fennel",
+   "nombre": "Fennel",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-fieldworker",
+   "nombre": "Fieldworker",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-fossil-excavator",
+   "nombre": "Fossil Excavator",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-friends-in-galar",
+   "nombre": "Friends in Galar",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-friends-in-hisui",
+   "nombre": "Friends in Hisui",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-ghetsis",
+   "nombre": "Ghetsis",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-green",
+   "nombre": "Green",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-guzma-hala",
+   "nombre": "Guzma & Hala",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-handiwork",
+   "nombre": "Handiwork",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-hapu",
+   "nombre": "Hapu",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-harlequin",
+   "nombre": "Harlequin",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-hassel",
+   "nombre": "Hassel",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-hiker",
+   "nombre": "Hiker",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-holon-researcher",
+   "nombre": "Holon Researcher",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-honey",
+   "nombre": "Honey",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-ilima",
+   "nombre": "Ilima",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-ingo-emmet",
+   "nombre": "Ingo & Emmet",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-interviewer",
+   "nombre": "Interviewer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-jessie-james",
+   "nombre": "Jessie & James",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-kahili",
+   "nombre": "Kahili",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-katy",
+   "nombre": "Katy",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-kiawe",
+   "nombre": "Kiawe",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-kofu",
+   "nombre": "Kofu",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-lanette",
+   "nombre": "Lanette",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-mallow",
+   "nombre": "Mallow",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-mallow-lana",
+   "nombre": "Mallow & Lana",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-mina",
+   "nombre": "Mina",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-molayne",
+   "nombre": "Molayne",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-morgan",
+   "nombre": "Morgan",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-nanu",
+   "nombre": "Nanu",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-naveen",
+   "nombre": "Naveen",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-nita",
+   "nombre": "Nita",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-norman",
+   "nombre": "Norman",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-olivia",
+   "nombre": "Olivia",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-philippe",
+   "nombre": "Philippe",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-plumeria",
+   "nombre": "Plumeria",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-poke-kid",
+   "nombre": "Poké Kid",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-poke-maniac",
+   "nombre": "Poké Maniac",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-pokemon-nurse",
+   "nombre": "Pokémon Nurse",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-professor-burnet",
+   "nombre": "Professor Burnet",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-raifort",
+   "nombre": "Raifort",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-red",
+   "nombre": "Red",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-red-blue",
+   "nombre": "Red & Blue",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-rival",
+   "nombre": "Rival",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-roark",
+   "nombre": "Roark",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-roller-skater",
+   "nombre": "Roller Skater",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-ruffian",
+   "nombre": "Ruffian",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-rust-syndicate-grunt",
+   "nombre": "Rust Syndicate Grunt",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-ryme",
+   "nombre": "Ryme",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-shadow-triad",
+   "nombre": "Shadow Triad",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-shauntal",
+   "nombre": "Shauntal",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-sordward-shielbert",
+   "nombre": "Sordward & Shielbert",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-tarragon",
+   "nombre": "Tarragon",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-tate-liza",
+   "nombre": "Tate & Liza",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-team-magma-conspirator",
+   "nombre": "Team Magma Conspirator",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-team-skull-grunt",
+   "nombre": "Team Skull Grunt",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-tyme",
+   "nombre": "Tyme",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-ultra-recon-squad",
+   "nombre": "Ultra Recon Squad",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-whitney",
+   "nombre": "Whitney",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-wicke",
+   "nombre": "Wicke",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-winona",
+   "nombre": "Winona",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-bellelba-brycen-man",
+   "nombre": "Bellelba & Brycen-Man",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-bertha",
+   "nombre": "Bertha",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-billy-o-nare",
+   "nombre": "Billy & O'Nare",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-cassius",
+   "nombre": "Cassius",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-cedric-juniper",
+   "nombre": "Cedric Juniper",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-charon",
+   "nombre": "Charon",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-cilan",
+   "nombre": "Cilan",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-clay",
+   "nombre": "Clay",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-dan",
+   "nombre": "Dan",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-department-store-girl",
+   "nombre": "Department Store Girl",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-digging-duo",
+   "nombre": "Digging Duo",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-flint",
+   "nombre": "Flint",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-flower-shop-lady",
+   "nombre": "Flower Shop Lady",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-forest-guardian",
+   "nombre": "Forest Guardian",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-holon-lass",
+   "nombre": "Holon Lass",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-hooligans-jim-cas",
+   "nombre": "Hooligans Jim & Cas",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-hugh",
+   "nombre": "Hugh",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-imakuni",
+   "nombre": "Imakuni?",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-imposter-professor-oak",
+   "nombre": "Imposter Professor Oak",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-island-hermit",
+   "nombre": "Island Hermit",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-jett",
+   "nombre": "Jett",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-juggler",
+   "nombre": "Juggler",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-lass",
+   "nombre": "Lass",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-league-staff",
+   "nombre": "League Staff",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-marley",
+   "nombre": "Marley",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-misty-lorelei",
+   "nombre": "Misty & Lorelei",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-mom",
+   "nombre": "Mom",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-olympia",
+   "nombre": "Olympia",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-palmer",
+   "nombre": "Palmer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-professor-laventon",
+   "nombre": "Professor Laventon",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-psychic",
+   "nombre": "Psychic",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-relic-hunter",
+   "nombre": "Relic Hunter",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-riley",
+   "nombre": "Riley",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-sabrina-brycen",
+   "nombre": "Sabrina & Brycen",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-samson-oak",
+   "nombre": "Samson Oak",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-seer",
+   "nombre": "Seer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-sightseer",
+   "nombre": "Sightseer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-team-aqua-admin",
+   "nombre": "Team Aqua Admin",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-team-aqua-conspirator",
+   "nombre": "Team Aqua Conspirator",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-team-aqua-grunt",
+   "nombre": "Team Aqua Grunt",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-team-aqua-schemer",
+   "nombre": "Team Aqua Schemer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-team-magma-admin",
+   "nombre": "Team Magma Admin",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-team-magma-grunt",
+   "nombre": "Team Magma Grunt",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-team-magma-schemer",
+   "nombre": "Team Magma Schemer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-team-plasma-grunt",
+   "nombre": "Team Plasma Grunt",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-the-masked-royal",
+   "nombre": "The Masked Royal",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-traveling-salesman",
+   "nombre": "Traveling Salesman",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-trickery",
+   "nombre": "Trickery",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-ultra-forest-kartenvoy",
+   "nombre": "Ultra Forest Kartenvoy",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-urbain",
+   "nombre": "Urbain",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-waitress",
+   "nombre": "Waitress",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-will",
+   "nombre": "Will",
+   "tipo": "entrenador",
+   "ent": true
   }
  ]
 }

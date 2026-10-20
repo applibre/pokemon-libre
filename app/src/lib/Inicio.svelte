@@ -9,20 +9,33 @@
 
   const COLOR: Record<string, string> = {
     fuego: '#ec6a2c', planta: '#3fa75a', agua: '#3a8ad8', electrico: '#eab21b', fantasma: '#7a55b8', normal: '#8892a8',
+    entrenador: '#d9601a',
   }
+  // los Entrenadores son cientos: se enseñan los que más cartas tienen y el resto a un toque
+  const TANDA_ENT = 12
+  let verTodosEnt = $state(false)
 
   const bloques = $derived.by(() => {
     const filas = app.pokemon.map((p) => {
       const cartas = cartasDe(p.id)
       return { p, cartas, ...progreso(cartas), color: COLOR[p.tipo] ?? COLOR.normal }
     }).filter((x) => x.total > 0)
+    const ents = filas.filter((x) => x.p.ent).sort((a, b) => b.total - a.total || a.p.nombre.localeCompare(b.p.nombre))
     return [
-      { titulo: 'Mis Pokémon', color: 'azul' as const, items: filas.filter((x) => x.p.principal) },
-      { titulo: 'Sus familias', color: 'verde' as const, items: filas.filter((x) => !x.p.principal) },
+      { titulo: 'Mis Pokémon', color: 'azul' as const, items: filas.filter((x) => x.p.principal && !x.p.ent), ent: false },
+      { titulo: 'Sus familias', color: 'verde' as const, items: filas.filter((x) => !x.p.principal && !x.p.ent), ent: false },
+      { titulo: 'Entrenadores', color: 'naranja' as const, items: ents, ent: true },
     ].filter((b) => b.items.length)
   })
-  const total = $derived(bloques.flatMap((b) => b.items).reduce((a, x) => a + x.total, 0))
-  const tengo = $derived(bloques.flatMap((b) => b.items).reduce((a, x) => a + x.tengo, 0))
+  // el resumen de arriba cuenta tus Pokémon; los Entrenadores llevan el suyo en su cinta
+  const pokes = $derived(bloques.filter((b) => !b.ent).flatMap((b) => b.items))
+  const total = $derived(pokes.reduce((a, x) => a + x.total, 0))
+  const tengo = $derived(pokes.reduce((a, x) => a + x.tengo, 0))
+  const sub = (b: (typeof bloques)[number]) => {
+    if (!b.ent) return `${b.items.length} Pokémon`
+    const t = b.items.reduce((a, x) => a + x.total, 0), h = b.items.reduce((a, x) => a + x.tengo, 0)
+    return `${b.items.length} personajes · ${h} de ${t} cartas`
+  }
 </script>
 
 <Novedades />
@@ -34,9 +47,9 @@
 
 {#each bloques as b (b.titulo)}
   <section class="panel">
-    <Cinta color={b.color} titulo={b.titulo} sub="{b.items.length} Pokémon" />
+    <Cinta color={b.color} titulo={b.titulo} sub={sub(b)} />
     <div class="rejilla">
-      {#each b.items as x, i (x.p.id)}
+      {#each b.ent && !verTodosEnt ? b.items.slice(0, TANDA_ENT) : b.items as x, i (x.p.id)}
         <button class="baldosa" style="--c:{x.color}; --r:{i * 28}ms" onclick={() => abrir(x.p.id)}>
           <span class="mazo">
             {#if x.cartas[1]}<img class="atras" src={rutas.carta(x.cartas[1].id)} alt="" loading="lazy" />{/if}
@@ -48,6 +61,11 @@
         </button>
       {/each}
     </div>
+    {#if b.ent && b.items.length > TANDA_ENT}
+      <button class="mas" onclick={() => (verTodosEnt = !verTodosEnt)}>
+        {verTodosEnt ? 'Ver menos' : `Ver los ${b.items.length} personajes`}
+      </button>
+    {/if}
   </section>
 {/each}
 
@@ -63,6 +81,11 @@
   .barra i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #f6c33a, #e9a10c); transition: width .5s cubic-bezier(.2,.8,.2,1); }
 
   .panel { background: var(--papel); border-radius: var(--radio-l); box-shadow: var(--sombra-1); overflow: hidden; }
+  .mas {
+    display: block; width: calc(100% - 24px); margin: 0 12px 14px; padding: 12px; border: 0; border-radius: var(--radio-m);
+    background: var(--hueco); color: var(--tinta); font: inherit; font-weight: 800; font-size: 15px;
+  }
+  .mas:active { transform: scale(.98); }
   .rejilla { display: grid; grid-template-columns: repeat(auto-fit, minmax(146px, 1fr)); gap: 10px; padding: 12px; }
 
   .baldosa {
