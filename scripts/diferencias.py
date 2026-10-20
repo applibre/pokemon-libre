@@ -89,6 +89,8 @@ OTRAS = [
     (r'Red Cheeks', 'Lleva el sello E3 y las mejillas ROJAS (las normales son amarillas).'),
     (r'^Shadowless$', 'Sin la sombra a la derecha del recuadro de la ilustración (la normal sí la tiene). '
                       'La 1.ª edición, que tampoco tiene sombra, se marca en la carta normal.'),
+    (r'^Mundial$', 'Carta de un mazo de los Mundiales: banda «NOT TOURNAMENT LEGAL», borde gris, la firma de un campeón '
+                   'y dorso distinto (no vale en torneo). Las de distintos años y jugadores se ven iguales: cuentan como una.'),
     (r'Mundial (\d{4}) · (.+)', r'Carta del mazo del Mundial \1 de \2: borde dorado, su firma y dorso distinto (no vale en torneo).'),
     (r'Black Dot Error', 'Error de impresión: un punto negro sobre la ilustración.'),
     (r'No Rarity Symbol', 'Error de impresión: sin el símbolo de rareza.'),

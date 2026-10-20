@@ -1,8 +1,8 @@
 {
- "version": "93daa5d8b706",
+ "version": "3b9127038b7d",
  "generado": "2026-10-20",
  "preciosDe": "2026-09-30",
- "cartas": 4148,
+ "cartas": 3934,
  "sets": 388,
  "pokemon": [
   {
@@ -148,12 +148,6 @@
    "principal": false
   },
   {
-   "id": "e-n",
-   "nombre": "N",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
    "id": "e-professor-s-research",
    "nombre": "Professor's Research",
    "tipo": "entrenador",
@@ -166,50 +160,8 @@
    "ent": true
   },
   {
-   "id": "e-copycat",
-   "nombre": "Copycat",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-professor-oak",
-   "nombre": "Professor Oak",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-colress",
-   "nombre": "Colress",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
    "id": "e-giovanni",
    "nombre": "Giovanni",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-steven",
-   "nombre": "Steven",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-professor-elm",
-   "nombre": "Professor Elm",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-professor-sycamore",
-   "nombre": "Professor Sycamore",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-professor-juniper",
-   "nombre": "Professor Juniper",
    "tipo": "entrenador",
    "ent": true
   },
@@ -220,20 +172,20 @@
    "ent": true
   },
   {
+   "id": "e-copycat",
+   "nombre": "Copycat",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
    "id": "e-judge",
    "nombre": "Judge",
    "tipo": "entrenador",
    "ent": true
   },
   {
-   "id": "e-lillie",
-   "nombre": "Lillie",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-roseanne",
-   "nombre": "Roseanne",
+   "id": "e-professor-oak",
+   "nombre": "Professor Oak",
    "tipo": "entrenador",
    "ent": true
   },
@@ -244,14 +196,8 @@
    "ent": true
   },
   {
-   "id": "e-lysandre",
-   "nombre": "Lysandre",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-bill",
-   "nombre": "Bill",
+   "id": "e-lillie",
+   "nombre": "Lillie",
    "tipo": "entrenador",
    "ent": true
   },
@@ -262,32 +208,38 @@
    "ent": true
   },
   {
+   "id": "e-colress",
+   "nombre": "Colress",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-professor-elm",
+   "nombre": "Professor Elm",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
    "id": "e-shauna",
    "nombre": "Shauna",
    "tipo": "entrenador",
    "ent": true
   },
   {
-   "id": "e-bebe",
-   "nombre": "Bebe",
+   "id": "e-bill",
+   "nombre": "Bill",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-n",
+   "nombre": "N",
    "tipo": "entrenador",
    "ent": true
   },
   {
    "id": "e-bug-catcher",
    "nombre": "Bug Catcher",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-celio",
-   "nombre": "Celio",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-guzma",
-   "nombre": "Guzma",
    "tipo": "entrenador",
    "ent": true
   },
@@ -304,26 +256,8 @@
    "ent": true
   },
   {
-   "id": "e-acerola",
-   "nombre": "Acerola",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-pokemon-center-lady",
-   "nombre": "Pokémon Center Lady",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
    "id": "e-pokemon-fan-club",
    "nombre": "Pokémon Fan Club",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-skyla",
-   "nombre": "Skyla",
    "tipo": "entrenador",
    "ent": true
   },
@@ -340,14 +274,8 @@
    "ent": true
   },
   {
-   "id": "e-pokemon-collector",
-   "nombre": "Pokémon Collector",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-rocket",
-   "nombre": "Rocket",
+   "id": "e-professor-juniper",
+   "nombre": "Professor Juniper",
    "tipo": "entrenador",
    "ent": true
   },
@@ -358,8 +286,8 @@
    "ent": true
   },
   {
-   "id": "e-az",
-   "nombre": "AZ",
+   "id": "e-acerola",
+   "nombre": "Acerola",
    "tipo": "entrenador",
    "ent": true
   },
@@ -382,8 +310,14 @@
    "ent": true
   },
   {
-   "id": "e-tv-reporter",
-   "nombre": "TV Reporter",
+   "id": "e-lysandre",
+   "nombre": "Lysandre",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-pokemon-center-lady",
+   "nombre": "Pokémon Center Lady",
    "tipo": "entrenador",
    "ent": true
   },
@@ -406,14 +340,20 @@
    "ent": true
   },
   {
+   "id": "e-professor-sycamore",
+   "nombre": "Professor Sycamore",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
    "id": "e-professor-turo",
    "nombre": "Professor Turo",
    "tipo": "entrenador",
    "ent": true
   },
   {
-   "id": "e-scott",
-   "nombre": "Scott",
+   "id": "e-steven",
+   "nombre": "Steven",
    "tipo": "entrenador",
    "ent": true
   },
@@ -442,20 +382,32 @@
    "ent": true
   },
   {
-   "id": "e-korrina",
-   "nombre": "Korrina",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
    "id": "e-nemona",
    "nombre": "Nemona",
    "tipo": "entrenador",
    "ent": true
   },
   {
-   "id": "e-brigette",
-   "nombre": "Brigette",
+   "id": "e-roseanne",
+   "nombre": "Roseanne",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-skyla",
+   "nombre": "Skyla",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-tv-reporter",
+   "nombre": "TV Reporter",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-bebe",
+   "nombre": "Bebe",
    "tipo": "entrenador",
    "ent": true
   },
@@ -496,8 +448,8 @@
    "ent": true
   },
   {
-   "id": "e-holon-mentor",
-   "nombre": "Holon Mentor",
+   "id": "e-korrina",
+   "nombre": "Korrina",
    "tipo": "entrenador",
    "ent": true
   },
@@ -526,20 +478,14 @@
    "ent": true
   },
   {
-   "id": "e-underground-expedition",
-   "nombre": "Underground Expedition",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-xerosic",
-   "nombre": "Xerosic",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
    "id": "e-ace-trainer",
    "nombre": "Ace Trainer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-az",
+   "nombre": "AZ",
    "tipo": "entrenador",
    "ent": true
   },
@@ -550,20 +496,8 @@
    "ent": true
   },
   {
-   "id": "e-castaway",
-   "nombre": "Castaway",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
    "id": "e-ciphermaniac",
    "nombre": "Ciphermaniac",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-cyrus",
-   "nombre": "Cyrus",
    "tipo": "entrenador",
    "ent": true
   },
@@ -580,14 +514,8 @@
    "ent": true
   },
   {
-   "id": "e-holon-adventurer",
-   "nombre": "Holon Adventurer",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-holon-scientist",
-   "nombre": "Holon Scientist",
+   "id": "e-guzma",
+   "nombre": "Guzma",
    "tipo": "entrenador",
    "ent": true
   },
@@ -640,12 +568,6 @@
    "ent": true
   },
   {
-   "id": "e-pokemon-ranger",
-   "nombre": "Pokémon Ranger",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
    "id": "e-professor-magnolia",
    "nombre": "Professor Magnolia",
    "tipo": "entrenador",
@@ -658,8 +580,8 @@
    "ent": true
   },
   {
-   "id": "e-welder",
-   "nombre": "Welder",
+   "id": "e-underground-expedition",
+   "nombre": "Underground Expedition",
    "tipo": "entrenador",
    "ent": true
   },
@@ -688,6 +610,12 @@
    "ent": true
   },
   {
+   "id": "e-celio",
+   "nombre": "Celio",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
    "id": "e-ethan",
    "nombre": "Ethan",
    "tipo": "entrenador",
@@ -702,12 +630,6 @@
   {
    "id": "e-grant",
    "nombre": "Grant",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-hex-maniac",
-   "nombre": "Hex Maniac",
    "tipo": "entrenador",
    "ent": true
   },
@@ -766,12 +688,6 @@
    "ent": true
   },
   {
-   "id": "e-looker",
-   "nombre": "Looker",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
    "id": "e-lt-surge",
    "nombre": "Lt. Surge",
    "tipo": "entrenador",
@@ -780,12 +696,6 @@
   {
    "id": "e-lucian",
    "nombre": "Lucian",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-mary",
-   "nombre": "Mary",
    "tipo": "entrenador",
    "ent": true
   },
@@ -820,6 +730,18 @@
    "ent": true
   },
   {
+   "id": "e-pokemon-collector",
+   "nombre": "Pokémon Collector",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-pokemon-ranger",
+   "nombre": "Pokémon Ranger",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
    "id": "e-professor-birch",
    "nombre": "Professor Birch",
    "tipo": "entrenador",
@@ -840,6 +762,12 @@
   {
    "id": "e-volkner",
    "nombre": "Volkner",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-xerosic",
+   "nombre": "Xerosic",
    "tipo": "entrenador",
    "ent": true
   },
@@ -940,6 +868,12 @@
    "ent": true
   },
   {
+   "id": "e-cyrus",
+   "nombre": "Cyrus",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
    "id": "e-diantha",
    "nombre": "Diantha",
    "tipo": "entrenador",
@@ -988,6 +922,12 @@
    "ent": true
   },
   {
+   "id": "e-holon-mentor",
+   "nombre": "Holon Mentor",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
    "id": "e-kindler",
    "nombre": "Kindler",
    "tipo": "entrenador",
@@ -996,6 +936,12 @@
   {
    "id": "e-leon",
    "nombre": "Leon",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-looker",
+   "nombre": "Looker",
    "tipo": "entrenador",
    "ent": true
   },
@@ -1018,20 +964,8 @@
    "ent": true
   },
   {
-   "id": "e-mr-briney",
-   "nombre": "Mr. Briney",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
    "id": "e-opal",
    "nombre": "Opal",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-oracle",
-   "nombre": "Oracle",
    "tipo": "entrenador",
    "ent": true
   },
@@ -1072,6 +1006,12 @@
    "ent": true
   },
   {
+   "id": "e-rocket",
+   "nombre": "Rocket",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
    "id": "e-rose",
    "nombre": "Rose",
    "tipo": "entrenador",
@@ -1092,6 +1032,12 @@
   {
    "id": "e-salvatore",
    "nombre": "Salvatore",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-scott",
+   "nombre": "Scott",
    "tipo": "entrenador",
    "ent": true
   },
@@ -1120,12 +1066,6 @@
    "ent": true
   },
   {
-   "id": "e-teammates",
-   "nombre": "Teammates",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
    "id": "e-thorton",
    "nombre": "Thorton",
    "tipo": "entrenador",
@@ -1144,6 +1084,12 @@
    "ent": true
   },
   {
+   "id": "e-welder",
+   "nombre": "Welder",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
    "id": "e-worker",
    "nombre": "Worker",
    "tipo": "entrenador",
@@ -1152,12 +1098,6 @@
   {
    "id": "e-youngster",
    "nombre": "Youngster",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-aaron",
-   "nombre": "Aaron",
    "tipo": "entrenador",
    "ent": true
   },
@@ -1224,6 +1164,12 @@
   {
    "id": "e-brawly",
    "nombre": "Brawly",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-brigette",
+   "nombre": "Brigette",
    "tipo": "entrenador",
    "ent": true
   },
@@ -1372,8 +1318,8 @@
    "ent": true
   },
   {
-   "id": "e-holon-farmer",
-   "nombre": "Holon Farmer",
+   "id": "e-hex-maniac",
+   "nombre": "Hex Maniac",
    "tipo": "entrenador",
    "ent": true
   },
@@ -1414,8 +1360,20 @@
    "ent": true
   },
   {
+   "id": "e-mary",
+   "nombre": "Mary",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
    "id": "e-miss-fortune-sisters",
    "nombre": "Miss Fortune Sisters",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-mr-briney",
+   "nombre": "Mr. Briney",
    "tipo": "entrenador",
    "ent": true
   },
@@ -1546,26 +1504,14 @@
    "ent": true
   },
   {
-   "id": "e-town-volunteers",
-   "nombre": "Town Volunteers",
+   "id": "e-teammates",
+   "nombre": "Teammates",
    "tipo": "entrenador",
    "ent": true
   },
   {
    "id": "e-trevor",
    "nombre": "Trevor",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-twins",
-   "nombre": "Twins",
-   "tipo": "entrenador",
-   "ent": true
-  },
-  {
-   "id": "e-wager",
-   "nombre": "Wager",
    "tipo": "entrenador",
    "ent": true
   },
@@ -1578,6 +1524,12 @@
   {
    "id": "e-zisu",
    "nombre": "Zisu",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-aaron",
+   "nombre": "Aaron",
    "tipo": "entrenador",
    "ent": true
   },
@@ -1638,6 +1590,12 @@
   {
    "id": "e-caretaker",
    "nombre": "Caretaker",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-castaway",
+   "nombre": "Castaway",
    "tipo": "entrenador",
    "ent": true
   },
@@ -1816,8 +1774,26 @@
    "ent": true
   },
   {
+   "id": "e-holon-adventurer",
+   "nombre": "Holon Adventurer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-holon-farmer",
+   "nombre": "Holon Farmer",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
    "id": "e-holon-researcher",
    "nombre": "Holon Researcher",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-holon-scientist",
+   "nombre": "Holon Scientist",
    "tipo": "entrenador",
    "ent": true
   },
@@ -1938,6 +1914,12 @@
   {
    "id": "e-olivia",
    "nombre": "Olivia",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-oracle",
+   "nombre": "Oracle",
    "tipo": "entrenador",
    "ent": true
   },
@@ -2074,6 +2056,18 @@
    "ent": true
   },
   {
+   "id": "e-town-volunteers",
+   "nombre": "Town Volunteers",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-twins",
+   "nombre": "Twins",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
    "id": "e-tyme",
    "nombre": "Tyme",
    "tipo": "entrenador",
@@ -2082,6 +2076,12 @@
   {
    "id": "e-ultra-recon-squad",
    "nombre": "Ultra Recon Squad",
+   "tipo": "entrenador",
+   "ent": true
+  },
+  {
+   "id": "e-wager",
+   "nombre": "Wager",
    "tipo": "entrenador",
    "ent": true
   },

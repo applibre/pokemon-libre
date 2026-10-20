@@ -627,3 +627,16 @@ test('los Entrenadores: solo Partidarios, solo en inglés, uno por personaje (Ar
   // un Pokémon no es un Entrenador (la lista de TCGdex traía algunos por error)
   assert.ok(!suyas.some((c) => c.j?.ps), 'un Partidario con PS: es un Pokémon');
 });
+
+test('las Mundiales de distintos años y jugadores son UNA sola variante por carta (Arturo, 20-10-2026)', () => {
+  const ids = new Set(CARTAS.map((c) => c.id));
+  assert.ok(!CARTAS.some((c) => /^mundial-/.test(c.vn || '')), 'queda una Mundial por año o jugador');
+  const porBase = {};
+  for (const c of CARTAS.filter((x) => x.vn === 'mundial')) porBase[c.id.split('~')[0]] = (porBase[c.id.split('~')[0]] || 0) + 1;
+  assert.ok(Object.values(porBase).every((n) => n === 1), 'alguna carta con dos Mundiales');
+  assert.ok(Object.keys(porBase).length > 50, 'faltan Mundiales');
+  // lo marcado en las viejas va a la que queda
+  const viejas = Object.entries(catalogo.mv || {}).filter(([k]) => /~mundial-/.test(k));
+  assert.ok(viejas.length > 100, 'las Mundiales viejas no tienen adónde mover las marcas');
+  for (const [, [destino]] of viejas) assert.ok(ids.has(destino), `${destino} no existe`);
+});
